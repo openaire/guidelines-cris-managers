@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd http://eurocris.org/cerif/annotations# http://eurocris.org/cerif/xml/schemas/annotations.xsd"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="http://openaire.eu/cerif/schema-1_1" xmlns="http://openaire.eu/cerif/schema-1_1">
+	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="http://openaire.eu/cerif-profile/schema-1_1" xmlns="http://openaire.eu/cerif-profile/schema-1_1">
 
 	<xs:annotation>
 		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group.

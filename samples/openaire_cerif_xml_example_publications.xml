@@ -16,7 +16,7 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="http://openaire.eu/cerif/schema-1_1" id="812348"><!-- Linking Data and Publications: Towards a Cross-Disciplinary Approach -->
+				<Publication xmlns="http://openaire.eu/cerif-profile/schema-1_1" id="812348"><!-- Linking Data and Publications: Towards a Cross-Disciplinary Approach -->
 					<Type xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">Linking Data and Publications: Towards a Cross-Disciplinary Approach</Title>
 					<PublishedIn>
@@ -139,7 +139,7 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="http://openaire.eu/cerif/schema-1_1" id="894491">
+				<Publication xmlns="http://openaire.eu/cerif-profile/schema-1_1" id="894491">
 					<Type xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
@@ -188,7 +188,7 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="http://openaire.eu/cerif/schema-1_1" id="4123451">
+				<Publication xmlns="http://openaire.eu/cerif-profile/schema-1_1" id="4123451">
 					<Type xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_5794<!-- conference paper --></Type>
 					<Title xml:lang="en">The Data Model of the OpenAIRE Scientific Communication e-Infrastructure</Title>
 					<PublicationDate>2012-11-30</PublicationDate>

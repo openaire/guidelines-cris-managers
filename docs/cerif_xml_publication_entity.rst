@@ -1,26 +1,97 @@
 .. _c:publicationentity:
 
-1. Publication Entity (cfResPubl)
-=================================
+Publication
+===========
 
-The CERIF entity cfResultPublication cfResPubl is used in the context of OpenAIRE to represent research results that are considered text publications. Metadata about scientific journals are also represented using the cfResPubl entity.
+Corresponding CERIF entity: ``cfResPubl``
+Representation: XML element ``Publication``
+Examples: openaire_cerif_xml_example_publications.xml
+Description: The CERIF entity cfResultPublication cfResPubl is used in the context of OpenAIRE to represent research results that are considered text publications. Metadata about scientific journals are also represented using the cfResPubl entity.
 
-Attributes
-----------
 
-Internal Identifier
-^^^^^^^^^^^^^^^^^^^
+OAI Identifier
+^^^^^^^^^^^^^^
 
-(occurences: 1)
+Corresponding CERIF attribute: ``cfResPubl.cfResPublId`` 
+Representation: XML Attribute ``id``
+Format: OAI identifier of the form ``oai:{service}:Publications/{internal ID}`` where ``{service}`` denotes the internet domain name of the institution which uses the CRIS and ``{internal ID}`` denotes an internal identifier of the publication within the CRIS
+Use: mandatory
 
-*cfResPubl.ResPublId*
+
+Type
+^^^^
+
+Corresponding CERIF classification: ``cfResPubl_Class`` with class scheme `http://openaire.eu/cerif/vocab/COAR_Publication_Types`
+Representation: XML element ``Type`` from namespace ``http://openaire.eu/cerif/vocab/COAR_Publication_Types``
+Format: URI
+Use: mandatory
+Applicable vocabulary: Part of the COAR Resource Types concept scheme: the concept ``text`` and its descendants except for ``patent``
+
+* `text <http://purl.org/coar/resource_type/c_18cf>`
+  * `annotation <http://purl.org/coar/resource_type/c_1162>`
+  * `bibliography <http://purl.org/coar/resource_type/c_86bc>`
+  * ...
+
+
+Title
+^^^^^
+
+Corresponding CERIF multilingual attribute: ``cfResPublTitle.cfTitle``
+Representation: XML element ``Title``
+Format: multilingual character string
+Use: value in at least one language shall be provided, translations in any number of languages can be provided as well
+
+
+Subtitle
+^^^^^^^^
+
+Corresponding CERIF multilingual attribute: ``cfResPublSubtitle.cfSubtitle``
+Representation: XML element ``Subtitle``
+Format: multilingual character string
+Use: optional, translations in any number of languages can be provided as well
+
+
+Published in Publishing Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Corresponding CERIF link: ``cfResPubl_ResPubl`` with type ``Published in`` from class scheme ``....``
+Representation: XML element ``PublishedIn`` with embedded XML element ``PublishingChannel``
+Use: mandatory where the publication appeared in a publishing channel (e.g. a journal, book series, conference series)
+Scope of information about the publishing channel: the basic data about the publishing channel 
+
+
+Published as a part of a larger publication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Corresponding CERIF link: ``cfResPubl_ResPubl`` with type ``Part`` from class scheme ``....``
+Representation: XML element ``PartOf`` with embedded XML element ``Publication``
+Use: mandatory where the publication appeared as a part of a larger publication (e.g. a chapter in a book, a conference paper in the conference proceedings)
+Scope of information about the larger publication: the necessary information to construct a bibliographic reference  
+
 
 Publication Date
 ^^^^^^^^^^^^^^^^
 
-(occurences: 0..1)
+Corresponding CERIF attribute: `cfResPubl.cfResPublDate`
+Representation: XML element `PublicationDate`
+Format: yyyy-mm-dd 
+Use: optional
 
-*cfResPubl.ResPublDate*
+
+
+**the example ends here**
+
+
+
+
+
+
+
+
+
+
+
+
 
 Federated Identifiers
 ^^^^^^^^^^^^^^^^^^^^^

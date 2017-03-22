@@ -56,3 +56,5 @@ target/
 
 # Eclipse stuff:
 .project
+/.pydevproject
+/.settings/

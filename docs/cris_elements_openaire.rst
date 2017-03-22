@@ -1,5 +1,6 @@
+***********************************************
 CRIS information elements relevant for OpenAIRE
------------------------------------------------
+***********************************************
 
 CERIF is a comprehensive domain model that allows for the formal description of many aspects (contexts) inherent in the Research domain, some of them not present in the OpenAIRE information space, which currently does not aim to represent the full range of information in CERIF. The Guidelines therefore focus on those information elements in a CRIS system that are considered relevant and can be utilised within the current scope and data model of the OpenAIRE infrastructure. The interoperability use case supported by the Guidelines is the harvesting of data from individual CRIS systems by the OpenAIRE infrastructure. The data harvested should be in CERIF XML and in particular comply with a specialisation of the CERIF XML Schema that defines an OpenAIRE-specific CERIF subset. This is an example of a point-to-point exchange of CRIS information in CERIF XML for a particular application domain. The specialised OpenAIRE CERIF XML Schema is designed so that every XML file that is valid according to it is also valid according to the standard CERIF XML Schema 1.6.
 

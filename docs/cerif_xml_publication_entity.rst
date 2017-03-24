@@ -3,34 +3,36 @@
 Publication
 ===========
 
-Corresponding CERIF entity: ``cfResPubl``
-Representation: XML element ``Publication``
-Examples: openaire_cerif_xml_example_publications.xml
-Description: The CERIF entity cfResultPublication cfResPubl is used in the context of OpenAIRE to represent research results that are considered text publications. Metadata about scientific journals are also represented using the cfResPubl entity.
+:Representation: XML element ``Publication``
+:Examples: openaire_cerif_xml_example_publications.xml
+:Description: The CERIF entity cfResultPublication cfResPubl is used in the context of OpenAIRE to represent research results that are considered text publications. Metadata about scientific journals are also represented using the cfResPubl entity.
+:CERIF: the Result Publication entity (``cfResPubl``) 
 
 
 Identifier
 ^^^^^^^^^^
 
-Corresponding CERIF attribute: ``cfResPubl.cfResPublId`` 
-Representation: XML Attribute ``id``
-Format: identifier of the publication (see a later section for instructions)
-Use: mandatory
+:Representation: XML Attribute ``id``
+:Format: identifier of the publication (see a later section for instructions)
+:Use: mandatory
+:CERIF: the Result Publication Identifier attribute (``cfResPubl.cfResPublId``)
 
 
 Type
 ^^^^
 
-Corresponding CERIF classification: ``cfResPubl_Class`` with class scheme `http://openaire.eu/cerif/vocab/COAR_Publication_Types`
-Representation: XML element ``Type`` from namespace ``http://openaire.eu/cerif/vocab/COAR_Publication_Types``
-Format: URI
-Use: mandatory
-Applicable vocabulary: Part of the COAR Resource Types concept scheme: the concept ``text`` and its descendants except for ``patent``
+:Representation: XML element ``Type`` from namespace ``http://openaire.eu/cerif/vocab/COAR_Publication_Types``
+:Format: URI
+:Use: mandatory
+:Vocabulary: Part of the COAR Resource Types concept scheme: the concept ``text`` and its descendants except for ``patent``
 
-* `text <http://purl.org/coar/resource_type/c_18cf>`
-  * `annotation <http://purl.org/coar/resource_type/c_1162>`
-  * `bibliography <http://purl.org/coar/resource_type/c_86bc>`
-  * ...
+  * `text <http://purl.org/coar/resource_type/c_18cf>`
+
+    * `annotation <http://purl.org/coar/resource_type/c_1162>`
+    * `bibliography <http://purl.org/coar/resource_type/c_86bc>`
+    * ...
+
+:CERIF: classification ``cfResPubl_Class`` with class scheme `http://openaire.eu/cerif/vocab/COAR_Publication_Types`
 
 
 Title

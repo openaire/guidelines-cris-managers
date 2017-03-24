@@ -114,6 +114,18 @@ b. An XML record for cfProj B. This XML record must contain, as a nested XML ele
 
 In case the two entity instances (cfOrgUnit A and cfProj B) are retrieved via the different sets **openaire_cris_orgunits** and **openaire_cris_projects**, the OAI-PMH service provider – in this case the OpenAIRE infrastructure – should combine and check the information in the two different sets of XML records to validate the source data in terms of referential integrity.
 
+OAI identifiers
+"""""""""""""""
+
+The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{type}/{internal ID}`` 
+where ``{service}`` denotes the internet domain name of the institution which uses the CRIS,
+``{type}`` stands for the type of the object,
+and ``{internal ID}`` denotes an internal identifier of the publication within the CRIS.
+
+The types are expressed in the plural form of the XML element that represents the object i.e., the name of the collection of all such objects.
+For example a publication with internal ID of 282349 from a CRIS running on behalf of the University of Exampleton (www.exampleton.ac.uk) 
+will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/282349``. 
+
 
 Transmission of CERIF XML as OAI-PMH payload
 """"""""""""""""""""""""""""""""""""""""""""

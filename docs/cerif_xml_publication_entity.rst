@@ -9,12 +9,12 @@ Examples: openaire_cerif_xml_example_publications.xml
 Description: The CERIF entity cfResultPublication cfResPubl is used in the context of OpenAIRE to represent research results that are considered text publications. Metadata about scientific journals are also represented using the cfResPubl entity.
 
 
-OAI Identifier
-^^^^^^^^^^^^^^
+Identifier
+^^^^^^^^^^
 
 Corresponding CERIF attribute: ``cfResPubl.cfResPublId`` 
 Representation: XML Attribute ``id``
-Format: OAI identifier of the form ``oai:{service}:Publications/{internal ID}`` where ``{service}`` denotes the internet domain name of the institution which uses the CRIS and ``{internal ID}`` denotes an internal identifier of the publication within the CRIS
+Format: identifier of the publication (see a later section for instructions)
 Use: mandatory
 
 

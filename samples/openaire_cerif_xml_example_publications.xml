@@ -99,6 +99,7 @@
 							</Person>
 						</Author>
 					</Authors>
+					<Access endDate="2017-05-31" xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!-- embargoed --></Access>
 					<License scheme="http://openaire.eu/cerif/vocab/LicenseTypes#">CCAttribution(CCBY)</License>
 					<Abstract xml:lang="en">In this paper, we tackle the challenge of linking scholarly information in multi-disciplinary research infrastructures. There is a trend towards linking
 						publications with research data and other information, but, as it is still emerging, this is handled differently by various initiatives and disciplines. For OpenAIRE, a European

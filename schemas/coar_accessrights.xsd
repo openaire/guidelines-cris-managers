@@ -4,18 +4,31 @@
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
            xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
            xmlns:cf="urn:xmlns:org.eurocris.cerif"
+           xmlns:dc-term="http://purl.org/dc/terms/"
            xmlns="http://purl.org/coar/access_right"
-           xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-           xmlns:dct="http://purl.org/dc/terms/"
-           xmlns:dc="http://purl.org/dc/elements/1.1/"
            targetNamespace="http://purl.org/coar/access_right">
    <xs:annotation>
       <xs:appinfo>
          <cf:ClassScheme id="http://purl.org/coar/access_right"/>
       </xs:appinfo>
    </xs:annotation>
-   <xs:element name="AccessRight" type="Enum"/>
+   <xs:element name="Access">
+      <xs:complexType>
+         <xs:simpleContent>
+            <xs:extension base="Enum">
+               <xs:attribute name="startDate" type="cfGenericDate__SimpleType" use="optional"/>
+               <xs:attribute name="endDate" type="cfGenericDate__SimpleType" use="optional"/>
+               <xs:anyAttribute namespace="##other"/>
+            </xs:extension>
+         </xs:simpleContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="cfGenericDate__SimpleType">
+      <xs:annotation>
+         <xs:documentation>A time instant in any precision supported by the Primitive Data Types of the XML Schema specification.</xs:documentation>
+      </xs:annotation>
+      <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
+   </xs:simpleType>
    <xs:simpleType name="Enum">
       <xs:restriction base="xs:string">
          <xs:enumeration value="http://purl.org/coar/access_right/c_abf2">

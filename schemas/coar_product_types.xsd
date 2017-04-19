@@ -17,7 +17,16 @@
          </cf:ClassScheme>
       </xs:appinfo>
    </xs:annotation>
-   <xs:element name="Type" type="Enum"/>
+   
+   <xs:element name="Type">
+      <xs:complexType>
+         <xs:simpleContent>
+            <xs:extension base="Enum">
+               <xs:anyAttribute namespace="##other"/>
+            </xs:extension>
+         </xs:simpleContent>
+      </xs:complexType>
+   </xs:element>
    <xs:simpleType name="Enum">
       <xs:restriction base="xs:string">
          <xs:enumeration value="http://purl.org/coar/resource_type/c_7ad9">

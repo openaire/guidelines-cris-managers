@@ -4,49 +4,23 @@
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
            xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
            xmlns:cf="urn:xmlns:org.eurocris.cerif"
-           xmlns="http://purl.org/coar/resource_type/"
-           xmlns:wordn-sc="http://www.w3.org/2006/03/wn/wn20/schema/"
-           xmlns:nytimes="http://data.nytimes.com/"
-           xmlns:geo-pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
-           xmlns:dbp-prop="http://dbpedia.org/property/"
-           xmlns:geonames="http://sws.geonames.org/"
-           xmlns:umbel-ac="http://umbel.org/umbel/ac/"
-           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-           xmlns:sw-vocab="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-           xmlns:ff="http://factforge.net/"
-           xmlns:music-ont="http://purl.org/ontology/mo/"
-           xmlns:opencyc-en="http://sw.opencyc.org/2008/06/10/concept/en/"
-           xmlns:om="http://www.ontotext.com/owlim/"
-           xmlns:dbpedia="http://dbpedia.org/resource/"
            xmlns:dc-term="http://purl.org/dc/terms/"
-           xmlns:factbook="http://www.daml.org/2001/12/factbook/factbook-ont#"
-           xmlns:ann="http://art.uniroma2.it/ontologies/annotation#"
-           xmlns:pext="http://proton.semanticweb.org/protonext#"
-           xmlns:oasis="http://psi.oasis-open.org/iso/639/#"
-           xmlns:dc="http://purl.org/dc/elements/1.1/"
-           xmlns:ot="http://www.ontotext.com/"
-           xmlns:geo-ont="http://www.geonames.org/ontology#"
-           xmlns:umbel-en="http://umbel.org/umbel/ne/wikipedia/"
-           xmlns:foaf="http://xmlns.com/foaf/0.1/"
-           xmlns:bbc-pont="http://purl.org/ontology/po/"
-           xmlns:ptop="http://proton.semanticweb.org/protontop#"
-           xmlns:lingvoj="http://www.lingvoj.org/ontology#"
-           xmlns:yago="http://mpii.de/yago/resource/"
-           xmlns:fb="http://rdf.freebase.com/ns/"
-           xmlns:dbtune="http://dbtune.org/bbc/peel/work/"
-           xmlns:psys="http://proton.semanticweb.org/protonsys#"
-           xmlns:umbel="http://umbel.org/umbel#"
-           xmlns:umbel-sc="http://umbel.org/umbel/sc/"
-           xmlns:pkm="http://proton.semanticweb.org/protonkm#"
-           xmlns:dbp-ont="http://dbpedia.org/ontology/"
-           xmlns:wordnet16="http://xmlns.com/wordnet/1.6/"
-           xmlns:owl="http://www.w3.org/2002/07/owl#"
-           xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-           xmlns:ub="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#"
-           xmlns:gr="http://purl.org/goodrelations/v1#"
-           xmlns:wordnet="http://www.w3.org/2006/03/wn/wn20/instances/"
-           xmlns:opencyc="http://sw.opencyc.org/concept/"
+           xmlns="http://purl.org/coar/resource_type"
            targetNamespace="http://purl.org/coar/resource_type">
+   <xs:annotation>
+      <xs:appinfo>
+         <cf:ClassScheme id="http://purl.org/coar/resource_type"/>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:element name="Type">
+      <xs:complexType>
+         <xs:simpleContent>
+            <xs:extension base="Enum">
+               <xs:anyAttribute namespace="##other"/>
+            </xs:extension>
+         </xs:simpleContent>
+      </xs:complexType>
+   </xs:element>
    <xs:simpleType name="Enum">
       <xs:restriction base="xs:string">
          <xs:enumeration value="http://purl.org/coar/resource_type/c_1162">
@@ -64,7 +38,8 @@
                <xs:documentation xml:lang="ja">注釈</xs:documentation>
                <xs:documentation xml:lang="tr">açıklama</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_1162">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_1162"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">annotation</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">标注</cf:Term>
                      <cf:Term xml:lang="es" trans="h">comentario</cf:Term>
@@ -344,7 +319,8 @@
                <xs:documentation xml:lang="ja">学術雑誌</xs:documentation>
                <xs:documentation xml:lang="tr">dergi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_0640">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_0640"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">journal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学术期刊</cf:Term>
                      <cf:Term xml:lang="es" trans="h">revista</cf:Term>
@@ -635,7 +611,8 @@
                <xs:documentation xml:lang="nl">wetenschappelijk artikel</xs:documentation>
                <xs:documentation xml:lang="ja">研究論文</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_6501">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_6501"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">journal article</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学术论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo</cf:Term>
@@ -1013,7 +990,8 @@
                <xs:documentation xml:lang="nl">voorwoord</xs:documentation>
                <xs:documentation xml:lang="ja">エディトリアル</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_b239">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_b239"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">editorial</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">社论</cf:Term>
                      <cf:Term xml:lang="es" trans="h">editorial</cf:Term>
@@ -1252,7 +1230,8 @@
                <xs:documentation xml:lang="ja">学士論文</xs:documentation>
                <xs:documentation xml:lang="tr">lisans tezi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_7a1f">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_7a1f"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">bachelor thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学士学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">proyecto fin de carrera</cf:Term>
@@ -1483,7 +1462,8 @@
                <xs:documentation xml:lang="ja">書誌</xs:documentation>
                <xs:documentation xml:lang="tr">kaynakça</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_86bc">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_86bc"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">bibliography</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">文献目录</cf:Term>
                      <cf:Term xml:lang="es" trans="h">bibliografía</cf:Term>
@@ -1701,7 +1681,8 @@
                <xs:documentation xml:lang="ja">図書</xs:documentation>
                <xs:documentation xml:lang="tr">kitap</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_2f33">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_2f33"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">book</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">书</cf:Term>
                      <cf:Term xml:lang="es" trans="h">libro</cf:Term>
@@ -2041,7 +2022,8 @@
                <xs:documentation xml:lang="ja">図書（部分）</xs:documentation>
                <xs:documentation xml:lang="tr">kitap bölümü</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_3248">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_3248"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">book part</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">章节</cf:Term>
                      <cf:Term xml:lang="es" trans="h">capítulo de libro</cf:Term>
@@ -2294,7 +2276,8 @@
                <xs:documentation xml:lang="ja">書評</xs:documentation>
                <xs:documentation xml:lang="tr">kitap eleştirisi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_ba08">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_ba08"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">book review</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">书评</cf:Term>
                      <cf:Term xml:lang="es" trans="h">reseña de libro</cf:Term>
@@ -2592,7 +2575,8 @@
                <xs:documentation xml:lang="ja">ウェブサイト</xs:documentation>
                <xs:documentation xml:lang="tr">web sitesi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_7ad9">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_7ad9"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">website</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">网站</cf:Term>
                      <cf:Term xml:lang="es" trans="h">sitio web</cf:Term>
@@ -2966,7 +2950,8 @@
                <xs:documentation xml:lang="ja">インタラクティブリソース</xs:documentation>
                <xs:documentation xml:lang="tr">etkileşimli kaynak</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_e9a0">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_e9a0"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">interactive resource</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">互动资源</cf:Term>
                      <cf:Term xml:lang="es" trans="h">recurso interactivo</cf:Term>
@@ -3189,7 +3174,8 @@
                <xs:documentation xml:lang="ja">会議録</xs:documentation>
                <xs:documentation xml:lang="tr">konferans bildirileri</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_f744">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_f744"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">conference proceedings</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议论文集</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">сборник материалов конференции</cf:Term>
@@ -3455,7 +3441,8 @@
                <xs:documentation xml:lang="ja">会議発表資料</xs:documentation>
                <xs:documentation xml:lang="tr">konferans nesnesi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_c94f">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_c94f"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">conference object</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议文档</cf:Term>
                      <cf:Term xml:lang="es" trans="h">contribución a congreso</cf:Term>
@@ -3689,7 +3676,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">会議発表論文</xs:documentation>
                <xs:documentation xml:lang="tr">konferans belgesi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_5794">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_5794"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">conference paper</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">comunicación de congreso</cf:Term>
@@ -3998,7 +3986,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">会議発表ポスター</xs:documentation>
                <xs:documentation xml:lang="tr">konferans posteri</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_6670">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_6670"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">conference poster</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议海报</cf:Term>
                      <cf:Term xml:lang="es" trans="h">póster de congreso</cf:Term>
@@ -4234,7 +4223,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="nl">bijdrage aan dag- en weekbladen</xs:documentation>
                <xs:documentation xml:lang="ja">学術雑誌掲載記事</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_3e5a">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">contribution to journal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊文献</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">contribució a revista</cf:Term>
@@ -4487,7 +4477,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="nl">datadocumentatie</xs:documentation>
                <xs:documentation xml:lang="ja">データ論文</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_beb9">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_beb9"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">data paper</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">数据文章</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo de datos</cf:Term>
@@ -4677,7 +4668,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">データセット</xs:documentation>
                <xs:documentation xml:lang="tr">veri seti</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_ddb1">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_ddb1"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">dataset</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">数据集</cf:Term>
                      <cf:Term xml:lang="es" trans="h">conjunto de datos</cf:Term>
@@ -4917,7 +4909,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">博士論文</xs:documentation>
                <xs:documentation xml:lang="tr">doktora tezi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_db06">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_db06"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">doctoral thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">博士学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">tesis doctoral</cf:Term>
@@ -5146,7 +5139,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">画像</xs:documentation>
                <xs:documentation xml:lang="tr">görüntü</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_c513">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_c513"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">image</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">图像</cf:Term>
                      <cf:Term xml:lang="es" trans="h">imagen</cf:Term>
@@ -5463,7 +5457,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">講演</xs:documentation>
                <xs:documentation xml:lang="tr">ders</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_8544">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_8544"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">lecture</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">讲座</cf:Term>
                      <cf:Term xml:lang="es" trans="h">ponencia</cf:Term>
@@ -5714,7 +5709,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">短報</xs:documentation>
                <xs:documentation xml:lang="tr">mektup</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_0857">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_0857"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">letter</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">信</cf:Term>
                      <cf:Term xml:lang="es" trans="h">carta</cf:Term>
@@ -5929,7 +5925,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">修士論文</xs:documentation>
                <xs:documentation xml:lang="tr">yüksek lisans tezi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_bdcc">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_bdcc"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">master thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">硕士学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">tesina</cf:Term>
@@ -6182,7 +6179,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">動画</xs:documentation>
                <xs:documentation xml:lang="tr">hareketli görüntü</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_8a7e">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_8a7e"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">moving image</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">运动图像</cf:Term>
                      <cf:Term xml:lang="es" trans="h">imagen dinámica</cf:Term>
@@ -6431,7 +6429,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">逐次刊行物</xs:documentation>
                <xs:documentation xml:lang="tr">süreli yayın</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_2659">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_2659"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">periodical</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊</cf:Term>
                      <cf:Term xml:lang="es" trans="h">publicación periódica</cf:Term>
@@ -6690,7 +6689,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="nl">ingezonden brief</xs:documentation>
                <xs:documentation xml:lang="ja">来信</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_545b">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_545b"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">letter to the editor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">读者来信</cf:Term>
                      <cf:Term xml:lang="it" trans="h">lettera al direttore</cf:Term>
@@ -7006,7 +7006,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">その他</xs:documentation>
                <xs:documentation xml:lang="tr">diğer</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_1843">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_1843"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">other</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">其他</cf:Term>
                      <cf:Term xml:lang="es" trans="h">otros</cf:Term>
@@ -7180,7 +7181,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">特許</xs:documentation>
                <xs:documentation xml:lang="tr">patent</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_15cd">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">patent</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">专利</cf:Term>
                      <cf:Term xml:lang="es" trans="h">patente</cf:Term>
@@ -7400,7 +7402,8 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">プレプリント</xs:documentation>
                <xs:documentation xml:lang="tr">ön baskı</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_816b">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_816b"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">preprint</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">预印本</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo preliminar</cf:Term>
@@ -7705,7 +7708,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">報告書</xs:documentation>
                <xs:documentation xml:lang="tr">rapor</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_93fc">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">report</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">报告</cf:Term>
                      <cf:Term xml:lang="es" trans="h">informe</cf:Term>
@@ -8050,7 +8054,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">報告書（部分）</xs:documentation>
                <xs:documentation xml:lang="tr">rapor bölümü</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_ba1f">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_ba1f"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">report part</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">报告部分</cf:Term>
                      <cf:Term xml:lang="es" trans="h">parte de un estudio</cf:Term>
@@ -8261,7 +8266,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">研究計画書</xs:documentation>
                <xs:documentation xml:lang="tr">araştırma önerisi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_baaf">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_baaf"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">research proposal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究计划</cf:Term>
                      <cf:Term xml:lang="es" trans="h">propuesta de investigación</cf:Term>
@@ -8498,7 +8504,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">レビュー</xs:documentation>
                <xs:documentation xml:lang="tr">eleştiri</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_efa0">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_efa0"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">review</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">评论</cf:Term>
                      <cf:Term xml:lang="es" trans="h">reseña</cf:Term>
@@ -8813,7 +8820,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">ソフトウェア</xs:documentation>
                <xs:documentation xml:lang="tr">yazılım</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_5ce6">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_5ce6"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">software</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">软件</cf:Term>
                      <cf:Term xml:lang="es" trans="h">software</cf:Term>
@@ -9065,7 +9073,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">静止画</xs:documentation>
                <xs:documentation xml:lang="tr">hareketsiz görüntü</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_ecc8">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_ecc8"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">still image</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">静态图像</cf:Term>
                      <cf:Term xml:lang="es" trans="h">imagen fija</cf:Term>
@@ -9363,7 +9372,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">技術文書</xs:documentation>
                <xs:documentation xml:lang="tr">teknik dokümantasyon</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_71bd">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_71bd"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">technical documentation</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">技术资料</cf:Term>
                      <cf:Term xml:lang="es" trans="h">documentación técnica</cf:Term>
@@ -9627,7 +9637,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">ワークフロー</xs:documentation>
                <xs:documentation xml:lang="tr">iş akışı</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_393c">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_393c"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">workflow</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">工作流程</cf:Term>
                      <cf:Term xml:lang="es" trans="h">flujo de trabajo</cf:Term>
@@ -9872,7 +9883,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">ワーキングペーパー</xs:documentation>
                <xs:documentation xml:lang="tr">ön rapor</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_8042">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_8042"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">working paper</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究手稿</cf:Term>
                      <cf:Term xml:lang="es" trans="h">documento de trabajo</cf:Term>
@@ -10207,7 +10219,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">学位論文</xs:documentation>
                <xs:documentation xml:lang="tr">tez</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_46ec">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_46ec"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">tesis</cf:Term>
@@ -10439,7 +10452,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">地図資料</xs:documentation>
                <xs:documentation xml:lang="tr">kartografik malzeme </xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_12cc">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_12cc"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">cartographic material</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">material cartogràfic</cf:Term>
                      <cf:Term xml:lang="es" trans="h">material cartográfico</cf:Term>
@@ -10643,7 +10657,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">harita</xs:documentation>
                <xs:documentation xml:lang="ja">地図</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_12cd">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_12cd"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">map</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">карта </cf:Term>
                      <cf:Term xml:lang="ca" trans="h">mapa</cf:Term>
@@ -10864,7 +10879,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">録画資料</xs:documentation>
                <xs:documentation xml:lang="tr">video</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_12ce">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_12ce"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">video</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">видео</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">视频</cf:Term>
@@ -11111,7 +11127,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">音声</xs:documentation>
                <xs:documentation xml:lang="tr">ses</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18cc">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18cc"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">sound</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">фонодокумент</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">so</cf:Term>
@@ -11314,7 +11331,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">音楽</xs:documentation>
                <xs:documentation xml:lang="tr">müzikal kompozisyon</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18cd">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18cd"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">musical composition</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">музыкальная композиция</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">composició musical</cf:Term>
@@ -11553,7 +11571,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">テキスト</xs:documentation>
                <xs:documentation xml:lang="tr">metin</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18cf">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">text</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">текстовый ресурс</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">texte</cf:Term>
@@ -11781,7 +11800,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">会議発表論文（会議録未掲載）</xs:documentation>
                <xs:documentation xml:lang="tr">yayınlanmamış konferans bildirisi</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18cp">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18cp"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">conference paper not in proceedings</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">неопубликованный доклад конференции</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">comunicació no publicada en actes de congrés</cf:Term>
@@ -12004,7 +12024,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">会議発表ポスター（会議録未掲載）</xs:documentation>
                <xs:documentation xml:lang="tr">yayınlanmamış konferans posteri</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18co">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18co"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">conference poster not in proceedings</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">неопубликованный постер конференции</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">poster no publicat en actes de congrés</cf:Term>
@@ -12211,7 +12232,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">楽譜</xs:documentation>
                <xs:documentation xml:lang="tr">nota</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18cw">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18cw"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">musical notation</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">музыкальная нотация</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">notació musical</cf:Term>
@@ -12450,7 +12472,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">内部報告書</xs:documentation>
                <xs:documentation xml:lang="tr">dahili rapor</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18ww">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18ww"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">internal report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">внутренний отчёт</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe intern</cf:Term>
@@ -12629,7 +12652,8 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="ja">メモランダム</xs:documentation>
                <xs:documentation xml:lang="tr">bilgi notu</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18wz">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18wz"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">memorandum</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">меморандум</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">memoràndum</cf:Term>
@@ -12880,7 +12904,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="nl">rapport overig</xs:documentation>
                <xs:documentation xml:lang="tr">diğer rapor türü</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18wq">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18wq"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">other type of report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">прочие отчёты</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">altre tipus d'informe</cf:Term>
@@ -13079,7 +13104,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="nl">beleidsrapport</xs:documentation>
                <xs:documentation xml:lang="tr">politika raporu</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_186u">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_186u"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">policy report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">общие положения</cf:Term>
                      <cf:Term xml:lang="ca" trans="h"> informe polític</cf:Term>
@@ -13310,7 +13336,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="nl"> projectresultaat</xs:documentation>
                <xs:documentation xml:lang="tr">proje çıktısı</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18op">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18op"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">project deliverable</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">результат проекта</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">entrega de projecte</cf:Term>
@@ -13525,7 +13552,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="ja">助成研究成果報告書</xs:documentation>
                <xs:documentation xml:lang="tr">fon sağlayıcıya rapor</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18hj">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18hj"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">report to funding agency</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe per una agència de finançament </cf:Term>
                      <cf:Term xml:lang="es" trans="h">informe a organismo financiador</cf:Term>
@@ -13754,7 +13782,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="ja">研究報告書</xs:documentation>
                <xs:documentation xml:lang="tr">araştırma raporu</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18ws">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18ws"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">research report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">научно-исследовательский отчёт</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe de recerca</cf:Term>
@@ -14080,7 +14109,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="ja">テクニカルレポート</xs:documentation>
                <xs:documentation xml:lang="tr">teknik rapor</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_18gh">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18gh"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">technical report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">технический отчёт</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe tècnic</cf:Term>
@@ -14261,7 +14291,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="es">artículo de revisión</xs:documentation>
                <xs:documentation xml:lang="zh">综述文章</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_dcae04bc">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_dcae04bc"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">review article</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo de revisión</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">综述文章</cf:Term>
@@ -14376,7 +14407,8 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="es">artículo original</xs:documentation>
                <xs:documentation xml:lang="zh">原创研究文章</xs:documentation>
                <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_2df8fbb1">
+                  <cf:Class id="http://purl.org/coar/resource_type/c_2df8fbb1"
+                            classSchemeId="http://purl.org/coar/resource_type">
                      <cf:Term xml:lang="en" trans="o">research article</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo original</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">原创研究文章</cf:Term>

@@ -50,9 +50,6 @@
 						</cf:ClassScheme>
 					</xs:appinfo>
 				</xs:annotation>
-				
-				<xs:element name="Type" type="Enum"/>
-				
 				<xsl:choose>
 					<xsl:when test="$type = 'Publication'">
 						<xsl:apply-templates mode="publication">
@@ -104,6 +101,8 @@
 		<xsl:param name="scheme-uri" as="xs:string"/>
 	</xsl:template>
 
+	<xsl:template match="xs:annotation[parent::xs:schema]" mode="#all"/>
+	
 	<xsl:variable name="root" select="/*"/>
 	
 	<xsl:function name="skos:reaches" as="xs:boolean">

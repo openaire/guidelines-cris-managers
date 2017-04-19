@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+           xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+           xmlns:cf="urn:xmlns:org.eurocris.cerif"
+           xmlns="http://purl.org/coar/access_right"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+           xmlns:dct="http://purl.org/dc/terms/"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           targetNamespace="http://purl.org/coar/access_right">
+   <xs:annotation>
+      <xs:appinfo>
+         <cf:ClassScheme id="http://purl.org/coar/access_right"/>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:element name="AccessRight" type="Enum"/>
+   <xs:simpleType name="Enum">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="http://purl.org/coar/access_right/c_abf2">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">open access</xs:documentation>
+               <xs:documentation xml:lang="es">acceso abierto</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/access_right/c_abf2"
+                            classSchemeId="http://purl.org/coar/access_right">
+                     <cf:Term xml:lang="en" trans="o">open access</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">acceso abierto</cf:Term>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/access_right/c_f1cf">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">embargoed access</xs:documentation>
+               <xs:documentation xml:lang="es">acceso embargado</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/access_right/c_f1cf"
+                            classSchemeId="http://purl.org/coar/access_right">
+                     <cf:Term xml:lang="en" trans="o">embargoed access</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">acceso embargado</cf:Term>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/access_right/c_16ec">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">restricted access</xs:documentation>
+               <xs:documentation xml:lang="es">acceso restringido</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/access_right/c_16ec"
+                            classSchemeId="http://purl.org/coar/access_right">
+                     <cf:Term xml:lang="en" trans="o">restricted access</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">acceso restringido</cf:Term>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/access_right/c_14cb">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">metadata only access</xs:documentation>
+               <xs:documentation xml:lang="es">acceso a metadatos</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/access_right/c_14cb"
+                            classSchemeId="http://purl.org/coar/access_right">
+                     <cf:Term xml:lang="en" trans="o">metadata only access</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">acceso a metadatos</cf:Term>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>guidelines-cris-managers</groupId>
+  <artifactId>guidelines-cris-managers</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xml-maven-plugin</artifactId>
+        <version>1.0.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>validate</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+         <validationSets>
+            <validationSet>
+              <dir>samples</dir>
+              <validating>true</validating>
+            </validationSet>
+            <validationSet>
+              <dir>schemas</dir>
+              <validating>true</validating>
+            </validationSet>
+          </validationSets>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

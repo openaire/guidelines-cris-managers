@@ -1,0 +1,7 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+	<public publicId="http://eurocris.org/cerif/annotations"
+		uri="https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/annotations.xsd" />
+	<system systemId="http://eurocris.org/cerif/xml/schemas/annotations.xsd"
+		uri="https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/annotations.xsd" />
+	<public publicId="http://openaire.eu/cerif-profile/schema-1_1" uri="./openaire-cerif-profile.xsd" />
+</catalog>

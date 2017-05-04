@@ -142,30 +142,6 @@
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element name="Parts" minOccurs="0">
-							<xs:annotation>
-								<xs:documentation>The list of parts (smaller units) of this unit (container element)</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Part" minOccurs="0" maxOccurs="unbounded" cflink:link="cfOrgUnit_OrgUnit(http://eurocris.org/cerif/vocab/Inter-­OrganisationRelations#Part):2">
-										<xs:annotation>
-											<xs:documentation>The relationship to the contained unit</xs:documentation>
-										</xs:annotation>
-										<xs:complexType>
-											<xs:complexContent>
-												<xs:extension base="cfLinkWithDisplayName__BaseType">
-													<xs:sequence>
-														<xs:element ref="OrgUnit" />
-													</xs:sequence>
-												</xs:extension>
-											</xs:complexContent>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
-
 						<!-- ... -->
 
 						<xs:group ref="__TheRestGroup"/>
@@ -210,14 +186,6 @@
 						<xs:element cflink:attribute="cfResPublSubtitle.cfSubtitle" name="Subtitle" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
 								<xs:documentation>The subtitle of the publication</xs:documentation>
-							</xs:annotation>
-						</xs:element>
-
-						<!-- TODO -->
-						<!-- any class scheme of the 'type' character -->
-						<xs:element cflink:link="cfResPubl_Class" name="Type" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cfprocess:expandBy="Classification(Type)">
-							<xs:annotation>
-								<xs:documentation>The type of the publication</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 
@@ -521,7 +489,7 @@
 							</xs:annotation>
 						</xs:element>
 
-						<xs:element minOccurs="0" name="Costs" cflink:unorderedConteiner="true">
+						<xs:element minOccurs="0" name="Costs" cflink:unorderedContainer="true">
 							<xs:annotation>
 								<xs:documentation>The costs of the project and the funding that covers them</xs:documentation>
 							</xs:annotation>

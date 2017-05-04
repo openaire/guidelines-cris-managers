@@ -8,3 +8,20 @@ CERIF is a comprehensive domain model that allows for the formal description of 
 
 The Guidelines describe the subset of the CERIF data model and the relevant specialisations that constitute the set of elements for harvesting from CRIS systems through OpenAIRE. The OpenAIRE-specific elements indicated in Figure 1 discern the identified objects (e.g. person), their attributes (e.g. gender) and some compounding sets of functional vocabularies (e.g. “Author” applicable in a person-publication relationship) for setting the boundaries. The formal model is defined as an OpenAIRE-specific CERIF XML Schema specification, which is provided separately from the present document. 
 The following tables define the CERIF data elements to be utilised for the exchange of data between individual CRIS systems and the OpenAIRE infrastructure. The exclusive use of the defined data elements and vocabularies is mandatory, i.e. no other data elements and vocabularies can be used in the CERIF XML data exposed by CRIS systems to the OpenAIRE infrastructure. The vocabularies as currently applied or listed in the below guideline tables are mostly based on the CERIF 1.5 Semantics. Extensions are possible and will be reflected in a release after the review.
+
+.. toctree::
+   :maxdepth: 1
+
+   cerif_xml_publication_entity
+   cerif_xml_product_entity
+   cerif_xml_patent_entity
+
+   cerif_xml_person_entity
+   cerif_xml_organisation_entity
+   cerif_xml_project_entity
+   cerif_xml_funding_entity
+   
+   cerif_xml_service_entity
+   cerif_xml_equipment_entity
+   
+   cerif_xml_event_entity

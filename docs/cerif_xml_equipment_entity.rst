@@ -1,71 +1,42 @@
-.. _c:equipmententity:
+.. _c:equipment
 
-8. Equipment Entity (cfEquip)
-=============================
+Equipment
+=========
+:Representation: XML element ``Equipment``
+:Examples: openaire_cerif_xml_example_publications.xml *TODO*
+:Description: 
+:CERIF: the *TODO* entity (``cfEquip``)
 
-The CERIF entity cfEquipment *cfEquip* is used in the context of OpenAIRE to represent equipment/devices that are used for the generation of data sets.
+Identifier
+^^^^^^^^^^
+:Representation: XML Attribute ``id``
+:Format: identifier of the publication (see a later section for instructions)
+:Use: mandatory
+:CERIF: the *TODO* Identifier attribute (``cfEquip.cfEquipId``)
 
-Attributes
-----------
-
-Internal Identifier
-^^^^^^^^^^^^^^^^^^^
-
-(occurences: 1)
-
- *cfEquip.cfEquipId*
-
-Federated Identifiers
-^^^^^^^^^^^^^^^^^^^^^
-
-(occurences: 0..N)
-
-*cfEquip.cfFedId.cfFedId* (where the type of identifier is given through *cfEquip.cfFedId.cfFedId_Class*)
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Institution assigned unique identifier** (such as an asset inventory number) 
-* **URL** (web resource giving information about the facility or equipment)
+Acronym
+^^^^^^^
+:Representation: XML element ``Acronym``
+:Description: 
+:CERIF: the *TODO* attribute (``cfEquip.cfAcro``)
 
 Name
 ^^^^
-
-(occurences: 1)
-
-*cfEquip.cfName*
-
-Acronym 
-^^^^^^^
-
-(occurences: 0..1)
-
-*cfEquip.cfAcro*
+:Representation: XML element ``Name``
+:Description: 
+:CERIF: the *TODO* attribute (``cfEquipName.cfName``)
 
 Description
 ^^^^^^^^^^^
+:Representation: XML element ``Description``
+:Description: 
+:CERIF: the *TODO* attribute (``cfEquipDescr.cfDescr``)
 
-(occurences: 0..1)
+Keywords
+^^^^^^^^
+:Representation: XML element ``Keywords``
+:Description: 
+:CERIF: the *TODO* attribute (``cfEquipKeyw.cfKeyw``)
 
-*cfEquip.cfDescr*
 
-Relationship(s) with
---------------------
 
-Dataset
-^^^^^^^
-
-(occurences: 1..N)
-
-*cfEquip.cfResProd_Equip*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Generation**
-
-as defined in CERIF Semantics “Infrastructure Output Relations” scheme.

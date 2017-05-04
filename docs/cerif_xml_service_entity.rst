@@ -1,43 +1,42 @@
-.. _c:serviceentity:
+.. _c:service
 
-6. Service Entity (cfSrv)
-=========================
+Service
+=======
+:Representation: XML element ``Service``
+:Examples: openaire_cerif_xml_example_publications.xml *TODO*
+:Description: 
+:CERIF: the *TODO* entity (``cfSrv``)
 
-The CERIF entity cfService *cfSrv* in the context of OpenAIRE can be used (a) to provide information for the CERIF-compliant system that exposes data to OpenAIRE in CERIF XML and (b) in relation to federated identifiers (e.g. for persons, projects, organisations), in particular to identify the service that has generated each federated identifier. Federated identifiers are linked with the corresponding service using cfSrv.FedId_Srv. Services are linked with organisations through cfSrv.cfOrgUnit_Srv.
+Identifier
+^^^^^^^^^^
+:Representation: XML Attribute ``id``
+:Format: identifier of the publication (see a later section for instructions)
+:Use: mandatory
+:CERIF: the *TODO* Identifier attribute (``cfSrv.cfSrvId``)
 
-Attributes
-----------
-
-Internal Identifier
-^^^^^^^^^^^^^^^^^^^
-
-(occurences: 1)
-
-*cfSrv.cfSrvId*
+Acronym
+^^^^^^^
+:Representation: XML element ``Acronym``
+:Description: 
+:CERIF: the *TODO* attribute (``cfSrv.cfAcro``)
 
 Name
 ^^^^
+:Representation: XML element ``Name``
+:Description: 
+:CERIF: the *TODO* attribute (``cfSrvName.cfName``)
 
-(occurences: 1)
+Description
+^^^^^^^^^^^
+:Representation: XML element ``Description``
+:Description: 
+:CERIF: the *TODO* attribute (``cfSrvDescr.cfDescr``)
 
-*cfSrv.cfName*
+Keywords
+^^^^^^^^
+:Representation: XML element ``Keywords``
+:Description: 
+:CERIF: the *TODO* attribute (``cfSrvKeyw.cfKeyw``)
 
-Relationship(s) with
---------------------
 
-Organisation
-^^^^^^^^^^^^
-
-(occurences: 1)
-
-*cfSrv.cfOrgUnit_Srv*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Owner**
-
-as defined in CERIF Semantics “Organisation Research Infrastructure Roles” scheme.
 

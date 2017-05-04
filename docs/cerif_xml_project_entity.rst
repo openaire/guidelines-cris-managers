@@ -1,180 +1,108 @@
-.. _c:projectentity:
+.. _c:project
 
-4. Project Entity (cfProj)
-==================================
+Project
+=======
+:Representation: XML element ``Project``
+:Examples: openaire_cerif_xml_example_publications.xml *TODO*
+:Description: 
+:CERIF: the *TODO* entity (``cfProj``)
 
-The CERIF entity cProject *cfProj* in the context of OpenAIRE is used to represent funded projects.
+Identifier
+^^^^^^^^^^
+:Representation: XML Attribute ``id``
+:Format: identifier of the publication (see a later section for instructions)
+:Use: mandatory
+:CERIF: the *TODO* Identifier attribute (``cfProj.cfProjId``)
 
-Attributes
-----------
+Type
+^^^^
+:Representation: XML element ``Type`` with embedded XML element
+:Description: The type of the project
+:CERIF: the *TODO* linking entity (``cfProj_Class``)
 
-Internal Identifier
-^^^^^^^^^^^^^^^^^^^
-
-(occurences: 1)
-
-*cfProj.cfProjId*
-
-Federated Identifiers
-^^^^^^^^^^^^^^^^^^^^^
-
-(occurences: 0..N)
-
-*cfProj.cfFedId.cfFedId* (where the type of identifier is given through *cfProj.cfFedId.cfFedId_Class*)
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Project Reference**
-* **URL (project web site URL)**
-
-as defined in CERIF Semantics “Identifier Types” scheme.
-
-Acronym 
+Acronym
 ^^^^^^^
-
-(occurences: 1)
-
-*cfProj.cfAcro*
+:Representation: XML element ``Acronym``
+:Description: The acronym of the project
+:CERIF: the *TODO* attribute (``cfProj.cfAcro``)
 
 Title
 ^^^^^
+:Representation: XML element ``Title``
+:Description: The title of the project
+:CERIF: the *TODO* attribute (``cfProjTitle.cfTitle``)
 
-(occurences: 1)
-
-*cfProj.cfTitle*
-
-Keywords 
-^^^^^^^^
-
-(occurences: 0..N)
-
-*cfProj.cfKeyw*
-
-Start Date
+Identifier
 ^^^^^^^^^^
+:Representation: XML element ``Identifier``
+:Description: An identifier of the project
+:CERIF: the Federated Identifier entity (``cfFedId``)
 
-(occurences: 1)
+StartDate
+^^^^^^^^^
+:Representation: XML element ``StartDate``
+:Description: The start date of the project
+:CERIF: the *TODO* attribute (``cfProj.cfStartDate``)
 
-*cfProj.cfStartDate*
-
-End Date
-^^^^^^^^
-
-(occurences: 1)
-
-*cfProj.cfEndDate*
-
-Open Access Requirements
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-(occurences: 0..1)
-
-*cfProj.cfProj_Class*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **OA mandated**
-* **OA not mandated**
-
-as defined in the “OpenAIRE Open Access Requirements” scheme.
-
-.. note::
-   The vocabulary term list is expected to be extended in the future through feedback regarding Open Access mandates internationally.
-
-Relationship(s) with
---------------------
-
-Publication 
-^^^^^^^^^^^
-
-(occurences: 0..N)
-
-*cfProj.Proj_ResPubl*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Originator**
-
-as defined in CERIF Semantics “Project Output Roles” scheme. i.e. Publication has originator Project.
-
-Product / Dataset
-^^^^^^^^^^^^^^^^^
-
-(occurences: 0..N)
-
-*cfProj.cfProj_ResProd*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Originator**
-
-as defined in CERIF Semantics “Project Output Roles” scheme. i.e. Dataset has originator Project.
-
-Organisation
-^^^^^^^^^^^^
-
-(occurences: 1..N)
-
-*cfProj.cfProj_OrgUnit*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Coordinator**
-* **Partner**
-* **Contractor**
-* **Funder**
-* **Inkind-Contributor**
-* **Applicant**
-
-as defined in CERIF Semantics “Organisation Project Engagements” scheme.
-
-Person
-^^^^^^
-
-(occurences: 0..N)
-
-*cfProj.Proj_Pers*
-
-Applicable Vocabularies
-"""""""""""""""""""""""
-
-The range of allowed values is limited to the following controlled vocabulary:
-
-* **Organisation Contact In Project**
-
-as defined in the “OpenAIRE Person Organisation Project Relationships” scheme.
-
-Funding
+EndDate
 ^^^^^^^
+:Representation: XML element ``EndDate``
+:Description: The end date of the project
+:CERIF: the *TODO* attribute (``cfProj.cfEndDate``)
 
-(occurences: 0..N)
+Funders
+^^^^^^^
+:Representation: XML element ``Funders`` with embedded XML elements ``Funder`` that can contain an embedded person or organisation unit structure
+:Description: The funders who provide funding to the project
+:CERIF: *TODO*
 
-*cfProj.Proj_Fund*
+Consortium
+^^^^^^^^^^
+:Representation: XML element ``Consortium`` with embedded XML elements ``Member`` that can contain an embedded person or organisation unit structure
+:Description: The consortium of the project: the organisations (persons) who are contractually bound to do the work in the project
+:CERIF: *TODO*
 
-Applicable Vocabularies
-"""""""""""""""""""""""
+Team
+^^^^
+:Representation: XML element ``Team`` with embedded XML elements ``PrincipalInvestigator`` or ``Contact`` or ``Member``
+:Description: The project team: the persons who carry out the work in the project, typically as a part of their job at the organisations from the consortium
+:CERIF: *TODO*
 
-The range of allowed values is limited to the following controlled vocabulary:
+Subject
+^^^^^^^
+:Representation: XML element ``Subject`` with embedded XML element
+:Description: The subject classification(s) of the project
+:CERIF: the *TODO* linking entity (``cfProj_Class``)
 
-* **Award**
-* **Grant**
-* **Contract**
+Keyword
+^^^^^^^
+:Representation: XML element ``Keyword``
+:Description: The keywords of the project
+:CERIF: the *TODO* attribute (``cfProjKeyw.cfKeyw``)
 
-as defined in CERIF Semantics “Activity Funding Types” scheme.
+Costs
+^^^^^
+:Representation: XML element ``Costs`` with embedded XML elements ``Cost``
+:Description: The costs of the project and the funding that covers them
+:CERIF: *TODO*
+
+Abstract
+^^^^^^^^
+:Representation: XML element ``Abstract``
+:Description: The abstract of the project
+:CERIF: the *TODO* attribute (``cfProjAbstr.cfAbstr``)
+
+Status
+^^^^^^
+:Representation: XML element ``Status`` with embedded XML element
+:Description: The status of the project
+:CERIF: the *TODO* linking entity (``cfProj_Class``)
+
+Originator
+^^^^^^^^^^
+:Representation: XML element ``Originator`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: The research outputs this project has contributed to
+:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
+
 
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types"
-		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
            xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
@@ -9,16 +8,19 @@
            xmlns:dc-term="http://purl.org/dc/terms/"
            xmlns:vocbench="http://art.uniroma2.it/ontologies/vocbench#"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://openaire.eu/cerif/vocab/COAR_Publication_Types">
+           xmlns:ns0="xsi"
+           targetNamespace="http://openaire.eu/cerif/vocab/COAR_Publication_Types"
+           ns0:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
-      <xs:documentation>Publication types extracted from the COAR Resource Types concept scheme</xs:documentation>
+      <xs:documentation>Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').</xs:documentation>
       <xs:appinfo>
          <cf:ClassScheme id="http://openaire.eu/cerif/vocab/COAR_Publication_Types">
             <cf:Term xmlns="en">Publication types extracted from the COAR Resource Types concept scheme</cf:Term>
-            <cf:Description xmlns="en">Types of publications as extracted from the COAR Resource Types concept scheme</cf:Description>
+            <cf:Description xmlns="en">Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').</cf:Description>
          </cf:ClassScheme>
       </xs:appinfo>
    </xs:annotation>
+   
    <xs:element name="Type">
       <xs:complexType>
          <xs:simpleContent>

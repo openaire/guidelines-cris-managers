@@ -19,7 +19,7 @@ Type
 :Representation: XML element ``Type`` from namespace ``http://openaire.eu/cerif/vocab/COAR_Publication_Types``
 :Description: 
 :CERIF: the *TODO* classification (``cfResPubl_Class``)
-:Vocabulary: Publication types extracted from the COAR Resource Types concept scheme
+:Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').
 
   * **text** (`<http://purl.org/coar/resource_type/c_18cf>`_): A resource consisting primarily of words for reading. Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text.
 

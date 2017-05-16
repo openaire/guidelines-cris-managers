@@ -11,17 +11,17 @@
 		<xsl:call-template name="produce-it">
 			<xsl:with-param name="type">Publication</xsl:with-param>
 			<xsl:with-param name="title">Publication types extracted from the COAR Resource Types concept scheme</xsl:with-param>
-			<xsl:with-param name="descr">Types of publications as extracted from the COAR Resource Types concept scheme</xsl:with-param>
+			<xsl:with-param name="descr">Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').</xsl:with-param>
 		</xsl:call-template>
 		<xsl:call-template name="produce-it">
 			<xsl:with-param name="type">Patent</xsl:with-param>
 			<xsl:with-param name="title">Patent types extracted from the COAR Resource Types concept scheme</xsl:with-param>
-			<xsl:with-param name="descr">Types of patents as extracted from the COAR Resource Types concept scheme</xsl:with-param>
+			<xsl:with-param name="descr">Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).</xsl:with-param>
 		</xsl:call-template>
 		<xsl:call-template name="produce-it">
 			<xsl:with-param name="type">Product</xsl:with-param>
 			<xsl:with-param name="title">Product types extracted from the COAR Resource Types concept scheme</xsl:with-param>
-			<xsl:with-param name="descr">Types of products as extracted from the COAR Resource Types concept scheme</xsl:with-param>
+			<xsl:with-param name="descr">Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
@@ -44,7 +44,7 @@
 				<xsl:namespace name="vocbench">http://art.uniroma2.it/ontologies/vocbench#</xsl:namespace>
 				
 				<xs:annotation>
-					<xs:documentation><xsl:value-of select="$title"/></xs:documentation>
+					<xs:documentation><xsl:value-of select="$title"/>: <xsl:value-of select="$descr"/></xs:documentation>
 					<xs:appinfo>
 						<cf:ClassScheme id="{$scheme-uri}">
 							<cf:Term xmlns="en"><xsl:value-of select="$title"/></cf:Term>

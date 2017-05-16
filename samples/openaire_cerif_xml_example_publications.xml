@@ -4,7 +4,7 @@
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ 
 			    http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd 
-			    http://openaire.eu/cerif-profile/schema-1_1 
+			    https://www.openaire.eu/cerif-profile/1.1/ 
 			    ../schemas/openaire-cerif-profile.xsd">
 	<responseDate>2014-01-12T14:00:00Z</responseDate>
 	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_publications">http://cris.example.org/openaire/connector</request>
@@ -16,14 +16,14 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="http://openaire.eu/cerif-profile/schema-1_1" id="oai:cris.example.org:Publications/812348"><!-- Linking Data and Publications: Towards a Cross-Disciplinary Approach -->
-					<Type xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="oai:cris.example.org:Publications/812348"><!-- Linking Data and Publications: Towards a Cross-Disciplinary Approach -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">Linking Data and Publications: Towards a Cross-Disciplinary Approach</Title>
 					<PublishedIn>
 						<PublishingChannel id="oai:cris.example.org:Publications/894490"><!-- Int J Digital Curation -->
 							<Title xml:lang="en">The International Journal of Digital Curation</Title>
-							<Type scheme="http://openaire.eu/cerif/vocab/PublishingChannelTypes#">Journal</Type>
-							<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ISSN">1746-8256</Identifier>
+							<Type scheme="https://www.openaire.eu/cerif-profile/1.1/vocab/PublishingChannelTypes#">Journal</Type>
+							<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ISSN">1746-8256</Identifier>
 						</PublishingChannel>
 					</PublishedIn>
 					<PublicationDate>2013-06-14</PublicationDate>
@@ -31,7 +31,7 @@
 					<Issue>1</Issue>
 					<StartPage>244</StartPage>
 					<EndPage>254</EndPage>
-					<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#DOI">10.2218/ijdc.v8i1.257</Identifier>
+					<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#DOI">10.2218/ijdc.v8i1.257</Identifier>
 					<Authors>
 						<Author>
 							<Person id="oai:cris.example.org:Persons/2123455"><!-- Maarten Hoogerwerf -->
@@ -71,7 +71,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
+								<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
 							</Person>
 						</Author>
 						<Author>
@@ -100,7 +100,7 @@
 						</Author>
 					</Authors>
 					<Access endDate="2017-05-31" xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!-- embargoed --></Access>
-					<License scheme="http://openaire.eu/cerif/vocab/LicenseTypes#">CCAttribution(CCBY)</License>
+					<License scheme="https://www.openaire.eu/cerif-profile/1.1/vocab/LicenseTypes#">CCAttribution(CCBY)</License>
 					<Abstract xml:lang="en">In this paper, we tackle the challenge of linking scholarly information in multi-disciplinary research infrastructures. There is a trend towards linking
 						publications with research data and other information, but, as it is still emerging, this is handled differently by various initiatives and disciplines. For OpenAIRE, a European
 						cross-disciplinary publication infrastructure, this poses the challenge of supporting these heterogeneous practices. Hence, OpenAIRE wants to contribute to the development of a common approach
@@ -113,7 +113,7 @@
 						<Project id="oai:cris.example.org:Projects/112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+                        	<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
@@ -121,7 +121,7 @@
                         			<OrgUnit id="oai:cris.example.org:OrgUnits/310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+				                        <Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
                         			</OrgUnit>
                         		</Funder>
                         	</Funders>
@@ -140,14 +140,14 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="http://openaire.eu/cerif-profile/schema-1_1" id="oai:cris.example.org:Publications/894491">
-					<Type xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="oai:cris.example.org:Publications/894491">
+					<Type xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
 						<PublishingChannel id="oai:cris.example.org:Publications/894490"><!-- Int J Digital Curation -->
 							<Title xml:lang="en">The International Journal of Digital Curation</Title>
-							<Type scheme="http://openaire.eu/cerif/vocab/PublishingChannelTypes#">Journal</Type>
-							<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ISSN">1746-8256</Identifier>
+							<Type scheme="https://www.openaire.eu/cerif-profile/1.1/vocab/PublishingChannelTypes#">Journal</Type>
+							<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ISSN">1746-8256</Identifier>
 						</PublishingChannel>
 					</PublishedIn>
 					<Editors>
@@ -157,7 +157,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
+								<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
 							</Person>
 						</Editor>
 					</Editors>
@@ -165,7 +165,7 @@
 						<Project id="oai:cris.example.org:Projects/112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+                        	<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
@@ -173,7 +173,7 @@
                         			<OrgUnit id="oai:cris.example.org:OrgUnits/310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+				                        <Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
                         			</OrgUnit>
                         		</Funder>
                         	</Funders>
@@ -189,14 +189,14 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="http://openaire.eu/cerif-profile/schema-1_1" id="oai:cris.example.org:Publications/4123451">
-					<Type xmlns="http://openaire.eu/cerif/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_5794<!-- conference paper --></Type>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="oai:cris.example.org:Publications/4123451">
+					<Type xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_5794<!-- conference paper --></Type>
 					<Title xml:lang="en">The Data Model of the OpenAIRE Scientific Communication e-Infrastructure</Title>
 					<PublicationDate>2012-11-30</PublicationDate>
 					<Volume>343</Volume>
 					<StartPage>168</StartPage>
 					<EndPage>180</EndPage>
-					<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#DOI">10.1007/978-3-642-35233-1_18</Identifier>
+					<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#DOI">10.1007/978-3-642-35233-1_18</Identifier>
 					<Authors>
 						<Author>
 							<Person id="oai:cris.example.org:Persons/2123452"><!-- Paolo Manghi -->
@@ -204,7 +204,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
+								<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="oai:cris.example.org:OrgUnits/312346"><!-- CNR -->
@@ -218,7 +218,7 @@
 									<FamilyNames>Houssos</FamilyNames>
 									<FirstNames>Nikos</FirstNames>
 								</PersonName>
-								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0002-5277-285X</Identifier>
+								<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0002-5277-285X</Identifier>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="oai:cris.example.org:OrgUnits/312347"><!-- EKT -->
@@ -240,7 +240,7 @@
 									<FamilyNames>Jörg</FamilyNames>
 									<FirstNames>Brigitte</FirstNames>
 								</PersonName>
-								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7941-8108</Identifier>
+								<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7941-8108</Identifier>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="oai:cris.example.org:OrgUnits/312348"><!-- UKOLN -->
@@ -265,7 +265,7 @@
 						<Project id="oai:cris.example.org:Projects/112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+                        	<Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
@@ -273,7 +273,7 @@
                         			<OrgUnit id="oai:cris.example.org:OrgUnits/310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+				                        <Identifier type="https://www.openaire.eu/cerif-profile/1.1/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
                         			</OrgUnit>
                         		</Funder>
                         	</Funders>

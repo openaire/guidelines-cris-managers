@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://openaire.eu/cerif/vocab/COAR_Patent_Types"
+<xs:schema xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -9,12 +9,12 @@
            xmlns:vocbench="http://art.uniroma2.it/ontologies/vocbench#"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:ns0="xsi"
-           targetNamespace="http://openaire.eu/cerif/vocab/COAR_Patent_Types"
+           targetNamespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types"
            ns0:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
       <xs:documentation>Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).</xs:documentation>
       <xs:appinfo>
-         <cf:ClassScheme id="http://openaire.eu/cerif/vocab/COAR_Patent_Types">
+         <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types">
             <cf:Term xmlns="en">Patent types extracted from the COAR Resource Types concept scheme</cf:Term>
             <cf:Description xmlns="en">Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).</cf:Description>
          </cf:ClassScheme>
@@ -48,7 +48,7 @@
                <xs:documentation xml:lang="tr">patent</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Patent_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types">
                      <cf:Term xml:lang="en" trans="o">patent</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">专利</cf:Term>
                      <cf:Term xml:lang="es" trans="h">patente</cf:Term>
@@ -65,7 +65,7 @@
                      <cf:Definition xml:lang="ru">Патент или заявка на изобретение. Предоставление эксклюзивного права на эксплуатацию изобретения.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Patent_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>

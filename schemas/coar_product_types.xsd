@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://openaire.eu/cerif/vocab/COAR_Product_Types"
+<xs:schema xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -9,12 +9,12 @@
            xmlns:vocbench="http://art.uniroma2.it/ontologies/vocbench#"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:ns0="xsi"
-           targetNamespace="http://openaire.eu/cerif/vocab/COAR_Product_Types"
+           targetNamespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"
            ns0:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
       <xs:documentation>Product types extracted from the COAR Resource Types concept scheme: Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').</xs:documentation>
       <xs:appinfo>
-         <cf:ClassScheme id="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+         <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
             <cf:Term xmlns="en">Product types extracted from the COAR Resource Types concept scheme</cf:Term>
             <cf:Description xmlns="en">Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').</cf:Description>
          </cf:ClassScheme>
@@ -48,7 +48,7 @@
                <xs:documentation xml:lang="tr">web sitesi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_7ad9"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">website</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">网站</cf:Term>
                      <cf:Term xml:lang="es" trans="h">sitio web</cf:Term>
@@ -64,7 +64,7 @@
                      <cf:Definition xml:lang="en">A website, also written as web site or simply site, is a set of related web pages typically served from a single web domain. A website is hosted on at least one web server, accessible via a network such as the Internet or a private local area network through an Internet address known as a uniform resource locator (URL). All publicly accessible websites collectively constitute the World Wide Web.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_e9a0"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -86,7 +86,7 @@
                <xs:documentation xml:lang="tr">etkileşimli kaynak</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_e9a0"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">interactive resource</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">互动资源</cf:Term>
                      <cf:Term xml:lang="es" trans="h">recurso interactivo</cf:Term>
@@ -120,7 +120,7 @@
                <xs:documentation xml:lang="tr">veri seti</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_ddb1"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">dataset</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">数据集</cf:Term>
                      <cf:Term xml:lang="es" trans="h">conjunto de datos</cf:Term>
@@ -155,7 +155,7 @@
                <xs:documentation xml:lang="tr">görüntü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_c513"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">image</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">图像</cf:Term>
                      <cf:Term xml:lang="es" trans="h">imagen</cf:Term>
@@ -189,7 +189,7 @@
                <xs:documentation xml:lang="tr">hareketli görüntü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_8a7e"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">moving image</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">运动图像</cf:Term>
                      <cf:Term xml:lang="es" trans="h">imagen dinámica</cf:Term>
@@ -206,7 +206,7 @@
 (adapted from fabio)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_c513"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -228,7 +228,7 @@
                <xs:documentation xml:lang="tr">diğer</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_1843"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">other</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">其他</cf:Term>
                      <cf:Term xml:lang="es" trans="h">otros</cf:Term>
@@ -262,7 +262,7 @@
                <xs:documentation xml:lang="tr">yazılım</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_5ce6"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">software</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">软件</cf:Term>
                      <cf:Term xml:lang="es" trans="h">software</cf:Term>
@@ -296,7 +296,7 @@
                <xs:documentation xml:lang="tr">hareketsiz görüntü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_ecc8"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">still image</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">静态图像</cf:Term>
                      <cf:Term xml:lang="es" trans="h">imagen fija</cf:Term>
@@ -312,7 +312,7 @@
                      <cf:Definition xml:lang="en">A recorded static visual representation. This class of image includes diagrams, drawings, graphs, graphic designs, plans, photographs and prints.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_c513"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -334,7 +334,7 @@
                <xs:documentation xml:lang="tr">iş akışı</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_393c"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">workflow</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">工作流程</cf:Term>
                      <cf:Term xml:lang="es" trans="h">flujo de trabajo</cf:Term>
@@ -368,7 +368,7 @@
                <xs:documentation xml:lang="tr">kartografik malzeme </xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_12cc"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">cartographic material</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">material cartogràfic</cf:Term>
                      <cf:Term xml:lang="es" trans="h">material cartográfico</cf:Term>
@@ -402,7 +402,7 @@
                <xs:documentation xml:lang="ja">地図</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_12cd"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">map</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">карта </cf:Term>
                      <cf:Term xml:lang="ca" trans="h">mapa</cf:Term>
@@ -419,7 +419,7 @@
                      <cf:Definition xml:lang="tr">harita</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_12cc"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -441,7 +441,7 @@
                <xs:documentation xml:lang="tr">video</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_12ce"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">video</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">видео</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">视频</cf:Term>
@@ -457,7 +457,7 @@
                      <cf:Definition xml:lang="en">A recording of visual images, usually in motion and with sound accompaniment.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_8a7e"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -478,7 +478,7 @@
                <xs:documentation xml:lang="tr">ses</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18cc"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">sound</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">фонодокумент</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">so</cf:Term>
@@ -511,7 +511,7 @@
                <xs:documentation xml:lang="tr">müzikal kompozisyon</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18cd"
-                            classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types">
                      <cf:Term xml:lang="en" trans="o">musical composition</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">музыкальная композиция</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">composició musical</cf:Term>
@@ -527,7 +527,7 @@
                      <cf:Definition xml:lang="en">Musical composition can refer to an original piece of music, the structure of a musical piece, or the process of creating a new piece of music.  </cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cc"
-                                  classSchemeId="http://openaire.eu/cerif/vocab/COAR_Product_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>

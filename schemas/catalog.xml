@@ -3,5 +3,5 @@
 		uri="https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/annotations.xsd" />
 	<system systemId="http://eurocris.org/cerif/xml/schemas/annotations.xsd"
 		uri="https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/annotations.xsd" />
-	<public publicId="http://openaire.eu/cerif-profile/schema-1_1" uri="./openaire-cerif-profile.xsd" />
+	<public publicId="https://www.openaire.eu/cerif-profile/1.1/" uri="./openaire-cerif-profile.xsd" />
 </catalog>

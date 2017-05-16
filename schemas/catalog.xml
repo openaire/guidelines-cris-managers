@@ -4,4 +4,7 @@
 	<system systemId="http://eurocris.org/cerif/xml/schemas/annotations.xsd"
 		uri="https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/annotations.xsd" />
 	<public publicId="https://www.openaire.eu/cerif-profile/1.1/" uri="./openaire-cerif-profile.xsd" />
+	
+	<public publicId="http://www.w3.org/2001/XMLSchema" uri="https://www.w3.org/2012/04/XMLSchema.xsd" />
+	
 </catalog>

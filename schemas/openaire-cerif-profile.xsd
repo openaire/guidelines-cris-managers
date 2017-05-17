@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://eurocris.org/cerif/annotations# http://eurocris.org/cerif/xml/schemas/annotations.xsd"
+	xsi:schemaLocation="http://eurocris.org/cerif/annotations# http://eurocris.org/cerif/xml/schemas/annotations.xsd http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd"
 	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 
 	<xs:annotation>

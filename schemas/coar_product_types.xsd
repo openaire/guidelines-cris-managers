@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
            xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
@@ -8,9 +7,9 @@
            xmlns:dc-term="http://purl.org/dc/terms/"
            xmlns:vocbench="http://art.uniroma2.it/ontologies/vocbench#"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:ns0="xsi"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            targetNamespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types"
-           ns0:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
+           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
       <xs:documentation>Product types extracted from the COAR Resource Types concept scheme: Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').</xs:documentation>
       <xs:appinfo>

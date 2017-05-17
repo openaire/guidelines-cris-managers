@@ -34,8 +34,7 @@
 			<xsl:element name="xs:schema">
 				<xsl:attribute name="targetNamespace" select="$scheme-uri"/>
 				<xsl:namespace name=""><xsl:value-of select="$scheme-uri"/></xsl:namespace>
-				<xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
-				<xsl:attribute name="schemaLocation" namespace="xsi">http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd</xsl:attribute>
+				<xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd</xsl:attribute>
 				<xsl:namespace name="rdf">http://www.w3.org/1999/02/22-rdf-syntax-ns#</xsl:namespace>
 		        <xsl:namespace name="skos">http://www.w3.org/2004/02/skos/core#</xsl:namespace>
 		        <xsl:namespace name="skosxl">http://www.w3.org/2008/05/skos-xl#</xsl:namespace>

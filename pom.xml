@@ -30,7 +30,9 @@
 							<validating>true</validating>
 							<excludes>
 								<exclude>catalog.xml</exclude>
+								<exclude>*.out.xml</exclude>
 								<exclude>scripts/*</exclude>
+								<exclude>cached/*</exclude>
 							</excludes>
 						</validationSet>
 					</validationSets>

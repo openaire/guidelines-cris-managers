@@ -16,7 +16,7 @@ Identifier
 
 Type
 ^^^^
-:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types``
+:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types``
 :Description: 
 :CERIF: the *TODO* classification (``cfResPubl_Class``)
 :Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').

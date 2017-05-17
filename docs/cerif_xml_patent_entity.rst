@@ -16,7 +16,7 @@ Identifier
 
 Type
 ^^^^
-:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types``
+:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types``
 :Description: 
 :CERIF: the *TODO* classification (``cfResPat_Class``)
 :Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).

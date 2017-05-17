@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"
+<xs:schema xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
            xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
@@ -8,12 +8,12 @@
            xmlns:vocbench="http://art.uniroma2.it/ontologies/vocbench#"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           targetNamespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"
+           targetNamespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"
            xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
       <xs:documentation>Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').</xs:documentation>
       <xs:appinfo>
-         <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+         <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
             <cf:Term xmlns="en">Publication types extracted from the COAR Resource Types concept scheme</cf:Term>
             <cf:Description xmlns="en">Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').</cf:Description>
          </cf:ClassScheme>
@@ -47,7 +47,7 @@
                <xs:documentation xml:lang="tr">açıklama</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_1162"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">annotation</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">标注</cf:Term>
                      <cf:Term xml:lang="es" trans="h">comentario</cf:Term>
@@ -63,7 +63,7 @@
                      <cf:Definition xml:lang="en">An annotation in the sense of a legal note is a legally explanatory comment on a decision handed down by a court or arbitral tribunal.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -85,7 +85,7 @@
                <xs:documentation xml:lang="tr">dergi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_0640"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">journal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学术期刊</cf:Term>
                      <cf:Term xml:lang="es" trans="h">revista</cf:Term>
@@ -102,7 +102,7 @@
 (Adapted from bibo)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_2659"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -123,7 +123,7 @@
                <xs:documentation xml:lang="ja">研究論文</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_6501"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">journal article</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学术论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo</cf:Term>
@@ -139,7 +139,7 @@
 (adapted from fabio)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -160,7 +160,7 @@
                <xs:documentation xml:lang="ja">エディトリアル</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_b239"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">editorial</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">社论</cf:Term>
                      <cf:Term xml:lang="es" trans="h">editorial</cf:Term>
@@ -175,7 +175,7 @@
                      <cf:Definition xml:lang="en">A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. Adapted from ODLIS</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -197,7 +197,7 @@
                <xs:documentation xml:lang="tr">lisans tezi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_7a1f"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">bachelor thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学士学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">proyecto fin de carrera</cf:Term>
@@ -213,7 +213,7 @@
                      <cf:Definition xml:lang="en">A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_46ec"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -235,7 +235,7 @@
                <xs:documentation xml:lang="tr">kaynakça</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_86bc"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">bibliography</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">文献目录</cf:Term>
                      <cf:Term xml:lang="es" trans="h">bibliografía</cf:Term>
@@ -252,7 +252,7 @@
                      <cf:Definition xml:lang="ru">Систематизированный перечень или список письменных работ/источников конкретного автора или на заданную тему.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -274,7 +274,7 @@
                <xs:documentation xml:lang="tr">kitap</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2f33"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">book</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">书</cf:Term>
                      <cf:Term xml:lang="es" trans="h">libro</cf:Term>
@@ -291,7 +291,7 @@
 (adapted from CiTO; EPrint Type vocabulary)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -313,7 +313,7 @@
                <xs:documentation xml:lang="tr">kitap bölümü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_3248"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">book part</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">章节</cf:Term>
                      <cf:Term xml:lang="es" trans="h">capítulo de libro</cf:Term>
@@ -329,7 +329,7 @@
                      <cf:Definition xml:lang="en">A defined chapter or section of a book, usually with a separate title or number.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_2f33"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -351,7 +351,7 @@
                <xs:documentation xml:lang="tr">kitap eleştirisi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_ba08"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">book review</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">书评</cf:Term>
                      <cf:Term xml:lang="es" trans="h">reseña de libro</cf:Term>
@@ -367,7 +367,7 @@
                      <cf:Definition xml:lang="en">A written review and critical analysis of the content, scope and quality of a book or other monographic work.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_efa0"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -389,7 +389,7 @@
                <xs:documentation xml:lang="tr">konferans bildirileri</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_f744"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">conference proceedings</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议论文集</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">сборник материалов конференции</cf:Term>
@@ -405,7 +405,7 @@
                      <cf:Definition xml:lang="en">Conference proceedings is the official record of a conference meeting. It is a collection of documents which corresponds to the presentations given at the conference. It may include additional content.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_c94f"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -427,7 +427,7 @@
                <xs:documentation xml:lang="tr">konferans nesnesi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_c94f"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">conference object</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议文档</cf:Term>
                      <cf:Term xml:lang="es" trans="h">contribución a congreso</cf:Term>
@@ -444,7 +444,7 @@
 For conference papers, posters or proceedings the specific concepts should be used..</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -466,7 +466,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">konferans belgesi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_5794"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">conference paper</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">comunicación de congreso</cf:Term>
@@ -482,7 +482,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A conference paper that is submitted to a conference and presented to the audience. The conference paper is published in proceedings.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_f744"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -504,7 +504,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">konferans posteri</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_6670"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">conference poster</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议海报</cf:Term>
                      <cf:Term xml:lang="es" trans="h">póster de congreso</cf:Term>
@@ -520,7 +520,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A conference poster that is submitted to a conference and presented there at a poster presentation. The conference poster is published in proceedings.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_f744"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -541,7 +541,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">学術雑誌掲載記事</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">contribution to journal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊文献</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">contribució a revista</cf:Term>
@@ -556,7 +556,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_0640"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -577,7 +577,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">データ論文</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_beb9"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">data paper</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">数据文章</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo de datos</cf:Term>
@@ -592,7 +592,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A data paper is a scholarly publication describing a particular dataset or group of dataset, published in the form of a peer-reviewed article in a scholarly journal. The main purpose of a data paper is to describe data, the circumstances of their collection, and information related to data features, access and potential reuse. Adapted from https://en.wikipedia.org/wiki/Data_paper and http://www.gbif.org/publishing-data/data-papers</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -614,7 +614,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">doktora tezi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_db06"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">doctoral thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">博士学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">tesis doctoral</cf:Term>
@@ -630,7 +630,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_46ec"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -652,7 +652,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">ders</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_8544"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">lecture</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">讲座</cf:Term>
                      <cf:Term xml:lang="es" trans="h">ponencia</cf:Term>
@@ -668,7 +668,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A transcription of a talk delivered during an academic event.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -690,7 +690,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">mektup</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_0857"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">letter</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">信</cf:Term>
                      <cf:Term xml:lang="es" trans="h">carta</cf:Term>
@@ -710,7 +710,7 @@ For conference papers, posters or proceedings the specific concepts should be us
 (adapted from EuroCRIS)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -732,7 +732,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">yüksek lisans tezi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_bdcc"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">master thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">硕士学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">tesina</cf:Term>
@@ -748,7 +748,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                      <cf:Definition xml:lang="en">A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_46ec"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -770,7 +770,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">süreli yayın</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2659"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">periodical</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊</cf:Term>
                      <cf:Term xml:lang="es" trans="h">publicación periódica</cf:Term>
@@ -787,7 +787,7 @@ For conference papers, posters or proceedings the specific concepts should be us
 (Adapted from fabio)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -808,7 +808,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="ja">来信</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_545b"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">letter to the editor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">读者来信</cf:Term>
                      <cf:Term xml:lang="it" trans="h">lettera al direttore</cf:Term>
@@ -824,7 +824,7 @@ For conference papers, posters or proceedings the specific concepts should be us
 (adapted from Wikipedia)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -846,7 +846,7 @@ For conference papers, posters or proceedings the specific concepts should be us
                <xs:documentation xml:lang="tr">ön baskı</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_816b"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">preprint</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">预印本</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo preliminar</cf:Term>
@@ -865,7 +865,7 @@ peer-review, even before any contact with a publisher. This use is common amongs
 Another use of the term pre-print is for the finished article, reviewed and amended, ready and accepted for publication - but separate from the version that is type-set or formatted by the publisher. This use is more common amongst publishers, for whom the final and significant stage of modification to an article is the arrangement of the material for putting to print.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -887,7 +887,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">rapor</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">report</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">报告</cf:Term>
                      <cf:Term xml:lang="es" trans="h">informe</cf:Term>
@@ -903,7 +903,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">A report is a separately published record of research findings, research still in progress, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency. Also, an official record of the activities of a committee or corporate entity, the proceedings of a government body, or an investigation by an agency, whether published or private, usually archived or submitted to a higher authority, voluntarily or under mandate. In a more general sense, any formal account of facts or information related to a specific event or phenomenon, sometimes given at regular intervals.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -925,7 +925,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">rapor bölümü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_ba1f"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">report part</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">报告部分</cf:Term>
                      <cf:Term xml:lang="es" trans="h">parte de un estudio</cf:Term>
@@ -941,7 +941,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">part of a report</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -963,7 +963,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">araştırma önerisi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_baaf"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">research proposal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究计划</cf:Term>
                      <cf:Term xml:lang="es" trans="h">propuesta de investigación</cf:Term>
@@ -979,7 +979,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">documentation for grant request</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1001,7 +1001,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">eleştiri</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_efa0"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">review</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">评论</cf:Term>
                      <cf:Term xml:lang="es" trans="h">reseña</cf:Term>
@@ -1017,7 +1017,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">A review of others' published work.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1039,7 +1039,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">teknik dokümantasyon</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_71bd"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">technical documentation</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">技术资料</cf:Term>
                      <cf:Term xml:lang="es" trans="h">documentación técnica</cf:Term>
@@ -1055,7 +1055,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">Technical documentation refers to any type of documentation that describes handling, functionality and architecture of a technical product or a product under development or use.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1077,7 +1077,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">ön rapor</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_8042"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">working paper</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究手稿</cf:Term>
                      <cf:Term xml:lang="es" trans="h">documento de trabajo</cf:Term>
@@ -1093,7 +1093,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">A working paper or preprint is a report on research that is still on-going or which has not yet been accepted for publication.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1115,7 +1115,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">tez</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_46ec"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">thesis</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学位论文</cf:Term>
                      <cf:Term xml:lang="es" trans="h">tesis</cf:Term>
@@ -1131,7 +1131,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">A thesis or dissertation is a document submitted in support of candidature for an academic degree or professional qualification presenting the author's research and findings.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1153,7 +1153,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">metin</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">text</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">текстовый ресурс</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">texte</cf:Term>
@@ -1187,7 +1187,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">yayınlanmamış konferans bildirisi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18cp"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">conference paper not in proceedings</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">неопубликованный доклад конференции</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">comunicació no publicada en actes de congrés</cf:Term>
@@ -1203,7 +1203,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">A conference paper that is submitted to a conference and presented to the audience. The conference paper is not published in proceedings.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_c94f"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1225,7 +1225,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">yayınlanmamış konferans posteri</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18co"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">conference poster not in proceedings</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">неопубликованный постер конференции</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">poster no publicat en actes de congrés</cf:Term>
@@ -1241,7 +1241,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">A conference poster that is submitted to a conference and presented there at a poster presentation. The conference poster is not published in proceedings.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_c94f"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1263,7 +1263,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">nota</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18cw"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">musical notation</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">музыкальная нотация</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">notació musical</cf:Term>
@@ -1279,7 +1279,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">Musical notation is any system used to visually represent aurally perceived music through the use of written symbols, including ancient or modern musical symbols.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1301,7 +1301,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">dahili rapor</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18ww"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">internal report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">внутренний отчёт</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe intern</cf:Term>
@@ -1317,7 +1317,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                      <cf:Definition xml:lang="en">An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1339,7 +1339,7 @@ Another use of the term pre-print is for the finished article, reviewed and amen
                <xs:documentation xml:lang="tr">bilgi notu</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18wz"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">memorandum</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">меморандум</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">memoràndum</cf:Term>
@@ -1357,7 +1357,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
 </cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1379,7 +1379,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="tr">diğer rapor türü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18wq"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">other type of report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">прочие отчёты</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">altre tipus d'informe</cf:Term>
@@ -1395,7 +1395,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                      <cf:Definition xml:lang="en">Other types of report may include Business Plans Technical Specifications, data management plans, recommendation reports, white papers, annual reports, auditor's reports, workplace reports, census reports, trip reports, progress reports, investigative reports, budget reports, policy reports, demographic reports, credit reports, appraisal reports, inspection reports, military reports, bound reports, etc.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1417,7 +1417,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="tr">politika raporu</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_186u"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">policy report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">общие положения</cf:Term>
                      <cf:Term xml:lang="ca" trans="h"> informe polític</cf:Term>
@@ -1433,7 +1433,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                      <cf:Definition xml:lang="en">A policy report is a type of report that provides an in-depth look at major policy developments and events</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1455,7 +1455,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="tr">proje çıktısı</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18op"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">project deliverable</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">результат проекта</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">entrega de projecte</cf:Term>
@@ -1471,7 +1471,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                      <cf:Definition xml:lang="en">A project deliverable is an “outcome” as a result of a project that is intended to be delivered to a customer (e.g. funder). Examples of deliverable are report, document, work package or any other building block of an overall project.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1492,7 +1492,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="tr">fon sağlayıcıya rapor</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18hj"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">report to funding agency</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe per una agència de finançament </cf:Term>
                      <cf:Term xml:lang="es" trans="h">informe a organismo financiador</cf:Term>
@@ -1507,7 +1507,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                      <cf:Definition xml:lang="en">A report to a funding agency is a document written by beneficiaries of project grants. The reporting documents can be e.g. periodic reports about progress of scientific and technical work and final report. For deliverables use ‘Project deliverable’.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1528,7 +1528,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="tr">araştırma raporu</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18ws"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">research report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">научно-исследовательский отчёт</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe de recerca</cf:Term>
@@ -1543,7 +1543,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                      <cf:Definition xml:lang="en">Research Reports are reports that typically provide an in-depth study of a particular topic or describe the results of a research project. </cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1565,7 +1565,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="tr">teknik rapor</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18gh"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">technical report</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">технический отчёт</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe tècnic</cf:Term>
@@ -1581,7 +1581,7 @@ A memorandum can have only a certain number of formats; it may have a format spe
                      <cf:Definition xml:lang="en">A technical report is a document that records the procedure adopted and results obtained from a scientific or technical activity or investigation.</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1594,14 +1594,14 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="zh">综述文章</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_dcae04bc"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">review article</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo de revisión</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">综述文章</cf:Term>
                      <cf:Definition xml:lang="en">A review article is a secondary source, that is, it is written about other articles, and does not report original research of its own. (adapted from http://apus.libanswers.com/faq/2324)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_6501"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -1614,14 +1614,14 @@ A memorandum can have only a certain number of formats; it may have a format spe
                <xs:documentation xml:lang="zh">原创研究文章</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2df8fbb1"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types">
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
                      <cf:Term xml:lang="en" trans="o">research article</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo original</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">原创研究文章</cf:Term>
                      <cf:Definition xml:lang="en">A research article is a primary source, that is, it reports the methods and results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_6501"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>

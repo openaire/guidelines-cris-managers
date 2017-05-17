@@ -16,9 +16,9 @@
 		</xs:annotation>
 	</xs:import>
 	
-	<xs:import namespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types" schemaLocation="coar_publication_types.xsd"/>
-	<xs:import namespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Product_Types" schemaLocation="coar_product_types.xsd"/>
-	<xs:import namespace="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types" schemaLocation="coar_patent_types.xsd"/>
+	<xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types" schemaLocation="coar_publication_types.xsd"/>
+	<xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types" schemaLocation="coar_product_types.xsd"/>
+	<xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types" schemaLocation="coar_patent_types.xsd"/>
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="coar_accessrights.xsd"/>
 	
 	<xs:element name="Individual__SubstitutionGroupHead" type="cfIdAttr__BaseType" abstract="true">
@@ -175,7 +175,7 @@
 			<xs:complexContent>
 				<xs:extension base="ResearchOutput__BaseType">
 					<xs:sequence>
-						<xs:element ref="Type" xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Publication_Types"/>
+						<xs:element ref="Type" xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
 
 						<xs:element cflink:attribute="cfResPublTitle.cfTitle" name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
@@ -554,7 +554,7 @@
 					
 						<!-- TODO -->
 						
-						<xs:element ref="Type" xmlns="https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_Patent_Types"/>
+						<xs:element ref="Type" xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
 						
 						<xs:element name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPatTitle.cfTitle"/>
 						

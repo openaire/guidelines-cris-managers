@@ -29,7 +29,7 @@
 		<xsl:param name="type" as="xs:string"/>
 		<xsl:param name="title" as="xs:string"/>
 		<xsl:param name="descr" as="xs:string"/>
-		<xsl:variable name="scheme-uri" select="concat( 'https://www.openaire.eu/cerif-profile/1.1/vocab/COAR_', $type, '_Types' )"/>
+		<xsl:variable name="scheme-uri" select="concat( 'https://www.openaire.eu/cerif-profile/vocab/COAR_', $type, '_Types' )"/>
 		<xsl:result-document href="coar_{lower-case($type)}_types.xsd">
 			<xsl:element name="xs:schema">
 				<xsl:attribute name="targetNamespace" select="$scheme-uri"/>

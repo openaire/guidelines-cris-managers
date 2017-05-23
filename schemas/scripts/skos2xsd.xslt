@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:dc-term="http://purl.org/dc/terms/">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:cf="urn:xmlns:org.eurocris.cerif"
+	xmlns:dc-term="http://purl.org/dc/terms/">
 	<!-- This stylesheet takes an RDF+XML file as input and outputs a XML Schema with an enumeration and an XML element in it -->
 
 	<xsl:output method="xml" indent="yes" />
@@ -26,7 +27,7 @@
 		<xsl:for-each select="$schemes">
 			<xsl:variable name="conceptScheme" select="." />
 			<xsl:message>Scheme <xsl:value-of select="$conceptScheme" /></xsl:message>
-			<xs:schema targetNamespace="{$conceptScheme}">
+			<xs:schema xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd" targetNamespace="{$conceptScheme}">
 				<xsl:namespace name="" select="$conceptScheme"/>
 
 				<xsl:variable name="titles" select="key( 'subject', $conceptScheme )/self::skos:prefLabel"/>

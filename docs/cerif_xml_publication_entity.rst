@@ -186,10 +186,10 @@ Access
 :CERIF: the *TODO* classification (``cfResPubl_Class``)
 :Vocabulary: 
 
-  * **open access** (`<http://purl.org/coar/access_right/c_abf2>`_): 
-  * **embargoed access** (`<http://purl.org/coar/access_right/c_f1cf>`_): 
-  * **restricted access** (`<http://purl.org/coar/access_right/c_16ec>`_): 
-  * **metadata only access** (`<http://purl.org/coar/access_right/c_14cb>`_): 
+  * **open access** (`<http://purl.org/coar/access_right/c_abf2>`_): Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.
+  * **embargoed access** (`<http://purl.org/coar/access_right/c_f1cf>`_): Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).
+  * **restricted access** (`<http://purl.org/coar/access_right/c_16ec>`_): Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g. limited to a university community)
+  * **metadata only access** (`<http://purl.org/coar/access_right/c_14cb>`_): Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but is not directly available through the system or platform. This type of access can occur in a number of different situations. Some examples are described below: There is no electronic copy of the resource available (record links to a physical resource) The resource is only available elsewhere for a fee (record links to a subscription-based publisher version) The resource is available open access but at a different location (record links to a version at an open access publisher or archive) The resource is available elsewhere, but not in a fully open access format (record links to a read only, or other type of resources that is not permanent or in some way restricted)
 
 
 License
@@ -227,6 +227,42 @@ Originator
 :Representation: XML element ``Originator`` with embedded XML element ``Project``
 :Description: 
 :CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
+
+CitedBy
+^^^^^^^
+:Representation: XML element ``CitedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2``)
+
+Cites
+^^^^^
+:Representation: XML element ``Cites`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1``)
+
+SupplementTo
+^^^^^^^^^^^^
+:Representation: XML element ``SupplementTo`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2``)
+
+SupplementedBy
+^^^^^^^^^^^^^^
+:Representation: XML element ``SupplementedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1``)
+
+References
+^^^^^^^^^^
+:Representation: XML element ``References`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2``)
+
+ReferencedBy
+^^^^^^^^^^^^
+:Representation: XML element ``ReferencedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1``)
 
 
 

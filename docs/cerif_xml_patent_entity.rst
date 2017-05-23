@@ -59,6 +59,12 @@ PatentNumber
 :Description: 
 :CERIF: the *TODO* attribute (``cfResPat.cfPatentNum``)
 
+Identifier
+^^^^^^^^^^
+:Representation: XML element ``Identifier``
+:Description: 
+:CERIF: the Federated Identifier entity (``cfFedId``)
+
 Abstract
 ^^^^^^^^
 :Representation: XML element ``Abstract``
@@ -70,6 +76,42 @@ Keywords
 :Representation: XML element ``Keywords``
 :Description: 
 :CERIF: the *TODO* attribute (``cfResPatKeyw.cfKeyw``)
+
+CitedBy
+^^^^^^^
+:Representation: XML element ``CitedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2``)
+
+Cites
+^^^^^
+:Representation: XML element ``Cites`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1``)
+
+SupplementTo
+^^^^^^^^^^^^
+:Representation: XML element ``SupplementTo`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2``)
+
+SupplementedBy
+^^^^^^^^^^^^^^
+:Representation: XML element ``SupplementedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1``)
+
+References
+^^^^^^^^^^
+:Representation: XML element ``References`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2``)
+
+ReferencedBy
+^^^^^^^^^^^^
+:Representation: XML element ``ReferencedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1``)
 
 
 

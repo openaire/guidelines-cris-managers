@@ -175,6 +175,7 @@
 			<xs:complexContent>
 				<xs:extension base="ResearchOutput__BaseType">
 					<xs:sequence>
+
 						<xs:element ref="Type" xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
 
 						<xs:element cflink:attribute="cfResPublTitle.cfTitle" name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
@@ -322,8 +323,7 @@
 
 						<xs:element name="Abstract" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublAbstr.cfAbstr" />
 
-						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" /><!-- any 
-							class scheme of the 'subject' character -->
+						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" />
 
 						<xs:element name="Originator" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)">
 							<xs:complexType>
@@ -337,6 +337,54 @@
 							</xs:complexType>
 						</xs:element>
 						
+						<xs:element name="CitedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Cites" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="SupplementTo" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="SupplementedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<!-- TODO ... and the rest of the DataCite Metadata Scheme v4.0 relationTypes -->
+
 						<xs:group ref="__TheRestGroup"/>
 						
 					</xs:sequence>
@@ -572,6 +620,54 @@
 						
 						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPatKeyw.cfKeyw"/>
 						
+						<xs:element name="CitedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Cites" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="SupplementTo" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="SupplementedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<!-- TODO ... and the rest of the DataCite Metadata Scheme v4.0 relationTypes -->
+						
 						<xs:group ref="__TheRestGroup"/>
 						
 					</xs:sequence>
@@ -586,7 +682,8 @@
 				<xs:extension base="ResearchOutput__BaseType">
 					<xs:sequence>
 						
-						<!-- TOOD -->
+						<xs:element ref="Type" xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types"/>
+						
 						<xs:element name="Name" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdName.cfName"/>
 
 						<xs:element name="AlternateName" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdName.cfAltName"/>
@@ -596,6 +693,54 @@
 						<xs:element name="Description" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdDescr.cfDescr"/>
 						
 						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdKeyw.cfKeyw"/>
+						
+						<xs:element name="CitedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Cites" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="SupplementTo" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="SupplementedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<!-- TODO ... and the rest of the DataCite Metadata Scheme v4.0 relationTypes -->
 						
 						<xs:group ref="__TheRestGroup"/>
 

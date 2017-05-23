@@ -639,6 +639,8 @@
 						
 						<xs:element name="PatentNumber" type="cfString__Type" minOccurs="0" cflink:attribute="cfResPat.cfPatentNum"/>
 						
+						<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" />
+
 						<xs:element name="Abstract" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPatAbstr.cfAbstr"/>
 						
 						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPatKeyw.cfKeyw"/>
@@ -736,6 +738,8 @@
 						
 						<xs:element name="VersionInfo" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdName.cfVersInfo"/>						
 						
+						<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" />
+
 						<xs:element name="Description" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdDescr.cfDescr"/>
 						
 						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdKeyw.cfKeyw"/>

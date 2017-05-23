@@ -285,5 +285,146 @@
 				</Publication>				
 			</metadata>
 		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Publications/852734</identifier>
+				<datestamp>2016-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_publications</setSpec>
+			</header>
+			<metadata>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="oai:cris.example.org:Publications/852734">
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
+					<Title xml:lang="en">Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Title>
+					<PublishedIn>
+						<PublishingChannel id="oai:cris.example.org:Publications/893204"><!-- Evolution -->
+							<Title xml:lang="en">Evolution</Title>
+							<Type scheme="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640</Type>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#EISSN">1558-5646</Identifier>
+							<Publishers>
+								<Publisher>
+									<OrgUnit>
+										<Name xml:lang="en">Society for the Study of Evolution</Name>
+									</OrgUnit>
+								</Publisher>
+							</Publishers>
+						</PublishingChannel>
+					</PublishedIn>
+					<Volume>66</Volume>
+					<Issue>5</Issue>
+					<StartPage>1474</StartPage>
+					<EndPage>1489</EndPage>
+					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.1111/J.1558-5646.2011.01539.X</Identifier>
+					<Authors>
+						<Author>
+							<Person>
+								<PersonName>
+									<FamilyNames>Singhal</FamilyNames>
+									<FirstNames>Sonal</FirstNames>
+								</PersonName>
+							</Person>
+							<Affiliation>
+								<OrgUnit id="301248">
+									<Name xml:lang="en">Museum of Vertebrate Zoology</Name>
+									<PartOf>
+										<OrgUnit id="329384">
+											<Name xml:lang="en">University of California, Berkeley</Name>
+										</OrgUnit>
+									</PartOf>
+								</OrgUnit>
+							</Affiliation>
+							<Affiliation>
+								<OrgUnit id="301249">
+									<Name xml:lang="en">Department of Integrative Biology</Name>
+									<PartOf>
+										<OrgUnit id="329384">
+											<Name xml:lang="en">University of California, Berkeley</Name>
+										</OrgUnit>
+									</PartOf>
+								</OrgUnit>
+							</Affiliation>
+						</Author>
+						<Author>
+							<Person>
+								<PersonName>
+									<FamilyNames>Moritz</FamilyNames>
+									<FirstNames>Craig</FirstNames>
+								</PersonName>
+							</Person>
+							<Affiliation>
+								<OrgUnit id="301248">
+									<Name xml:lang="en">Museum of Vertebrate Zoology</Name>
+									<PartOf>
+										<OrgUnit id="329384">
+											<Name xml:lang="en">University of California, Berkeley</Name>
+										</OrgUnit>
+									</PartOf>
+								</OrgUnit>
+							</Affiliation>
+							<Affiliation>
+								<OrgUnit id="301249">
+									<Name xml:lang="en">Department of Integrative Biology</Name>
+									<PartOf>
+										<OrgUnit id="329384">
+											<Name xml:lang="en">University of California, Berkeley</Name>
+										</OrgUnit>
+									</PartOf>
+								</OrgUnit>
+							</Affiliation>
+						</Author>
+					</Authors>
+					<Keyword xml:lang="en">hybrid zones</Keyword>
+					<Keyword xml:lang="en">phylogeography</Keyword>
+					<Keyword xml:lang="en">speciation</Keyword>
+					<Keyword xml:lang="en">Lampropholis coggeri</Keyword>
+					<Keyword xml:lang="en">simulations</Keyword>
+					<Abstract xml:lang="en">Phenotypically cryptic lineages comprise an important yet understudied part of biodiversity; in particular, we have much to
+						learn about how these lineages are formed and maintained. To better understand the evolutionary significance of such lineages,
+						we studied a hybrid zone between two morphologically cryptic phylogeographic lineages in the rainforest lizard, Lampropholis
+						coggeri. Analyzing a multilocus genetic dataset through cline inference, individual-based methods and population measures of
+						disequilibrium and using simulations to explore our genetic results in context of theoretical expectations, we inferred the processes
+						maintaining this hybrid zone. We find that these lineages meet in a hybrid zone that is narrow (≈400 m) relative to inferred
+						dispersal rate. Further, the hybrid zone exhibits substantial genetic disequilibrium and sharply coincident and largely concordant
+						clines. Based on our knowledge about the region’s biogeography, the species’ natural history, and our simulation results, we
+						suggest that strong selection against hybrids structures this system. As all clines show a relatively narrow range of introgression,
+						we posit that this hybrid zone might not yet be in equilibrium. Nonetheless, our results clearly show that phylogeographic lineages
+						can evolve substantial reproductive isolation without concomitant morphological diversification, suggesting that such lineages
+						can constitute a significant component of evolutionary diversity.</Abstract>
+					<References>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
+							<Parts>
+								<Part>
+									<Product id="729481">
+										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+										<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
+										<VersionInfo xml:lang="en">1</VersionInfo>
+										<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/1</Identifier>
+									</Product>
+								</Part>
+								<Part>
+									<Product id="729482">
+										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
+										<Name xml:lang="en">Base script used for simulations</Name>
+										<VersionInfo xml:lang="en">1</VersionInfo>
+										<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/2</Identifier>
+									</Product>
+								</Part>
+								<Part>
+									<Product id="729483">
+										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+										<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
+										<VersionInfo xml:lang="en">1</VersionInfo>
+										<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/3</Identifier>
+									</Product>
+								</Part>
+							</Parts>
+						</Product>
+					</References>
+				</Publication>
+			</metadata>
+		</record>
 	</ListRecords>
 </OAI-PMH>

@@ -744,6 +744,41 @@
 						
 						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResProdKeyw.cfKeyw"/>
 						
+						<xs:element name="PartOf" minOccurs="0" cflink:link="cfResProd_ResProd(http://eurocris.org/cerif/vocab/Inter-­ProductRelations#Part):1">
+							<xs:annotation>
+								<xs:documentation>Link to the Product of which this product is a part (e.g. a file in a dataset that contains it)</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLinkWithDisplayName__BaseType">
+										<xs:sequence>
+											<xs:element ref="Product" />
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Parts" minOccurs="0" cflink:container="ordered">
+							<xs:annotation>
+								<xs:documentation>Link to the Product of which this product is a part (e.g. a file in a dataset that contains it)</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Part" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResProd_ResProd(http://eurocris.org/cerif/vocab/Inter-­ProductRelations#Part):2">
+										<xs:complexType>
+											<xs:complexContent>
+												<xs:extension base="cfLinkWithDisplayName__BaseType">
+													<xs:sequence>
+														<xs:element ref="Product" />
+													</xs:sequence>
+												</xs:extension>
+											</xs:complexContent>
+										</xs:complexType>
+									</xs:element>
+							</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
 						<xs:element name="CitedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2">
 							<xs:complexType>
 								<xs:complexContent>

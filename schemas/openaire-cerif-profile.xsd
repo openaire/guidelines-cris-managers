@@ -325,7 +325,7 @@
 
 						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" />
 
-						<xs:element name="Originator" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)">
+						<xs:element name="OriginatesFrom" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">

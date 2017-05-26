@@ -109,7 +109,7 @@
 						research information to be managed independently in distributed systems and avoids redundant maintenance. Furthermore, it allows these disciplinary systems to manage the specialized structures
 						of their contents themselves.</Abstract>
 						
-					<Originator>
+					<OriginatesFrom>
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
@@ -126,7 +126,7 @@
                         		</Funder>
                         	</Funders>
     					</Project>
-					</Originator>
+					</OriginatesFrom>
 
 					<Classification scheme="685b398c-6246-4aab-9507-7f533e4085ae">en<!-- English from OpenAIRE Languages --></Classification>
 
@@ -161,7 +161,7 @@
 							</Person>
 						</Editor>
 					</Editors>
-					<Originator>
+					<OriginatesFrom>
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
@@ -178,7 +178,7 @@
                         		</Funder>
                         	</Funders>
     					</Project>
-					</Originator>
+					</OriginatesFrom>
 				</Publication>
 			</metadata>
 		</record>
@@ -261,7 +261,7 @@
 						to measure the impact of Open Access and funding schemes over research. In this paper, we introduce the functional requirements to be satisfied and describe the OpenAIREplus data model entities
 						and relationships required to represent information capable of meeting them.</Abstract>
 
-					<Originator>
+					<OriginatesFrom>
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
@@ -278,7 +278,7 @@
                         		</Funder>
                         	</Funders>
     					</Project>
-					</Originator>
+					</OriginatesFrom>
 
 					<Classification scheme="685b398c-6246-4aab-9507-7f533e4085ae">en<!-- English from OpenAIRE Languages --></Classification>
 

@@ -986,6 +986,12 @@
 
 						<xs:element name="Name" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfEquipName.cfName"/>
 						
+						<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#">
+							<xs:annotation>
+								<xs:documentation>An identifier of the equipment</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						
 						<xs:element name="Description" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfEquipDescr.cfDescr"/>
 						
 						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfEquipKeyw.cfKeyw"/>
@@ -1008,6 +1014,12 @@
 						<xs:element name="Acronym" type="cfString__Type" minOccurs="0" cflink:attribute="cfSrv.cfAcro"/>
 
 						<xs:element name="Name" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfSrvName.cfName"/>
+						
+						<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#">
+							<xs:annotation>
+								<xs:documentation>An identifier of the service</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 						
 						<xs:element name="Description" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfSrvDescr.cfDescr"/>
 						

@@ -26,6 +26,12 @@ Name
 :Description: 
 :CERIF: the *TODO* attribute (``cfEquipName.cfName``)
 
+Identifier
+^^^^^^^^^^
+:Representation: XML element ``Identifier``
+:Description: An identifier of the equipment
+:CERIF: the Federated Identifier entity (``cfFedId``)
+
 Description
 ^^^^^^^^^^^
 :Representation: XML element ``Description``

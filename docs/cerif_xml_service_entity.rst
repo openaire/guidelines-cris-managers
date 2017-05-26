@@ -26,6 +26,12 @@ Name
 :Description: 
 :CERIF: the *TODO* attribute (``cfSrvName.cfName``)
 
+Identifier
+^^^^^^^^^^
+:Representation: XML element ``Identifier``
+:Description: An identifier of the service
+:CERIF: the Federated Identifier entity (``cfFedId``)
+
 Description
 ^^^^^^^^^^^
 :Representation: XML element ``Description``

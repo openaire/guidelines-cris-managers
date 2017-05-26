@@ -222,9 +222,9 @@ Status
 :Description: 
 :CERIF: the *TODO* linking entity (``cfResPubl_Class``)
 
-Originator
-^^^^^^^^^^
-:Representation: XML element ``Originator`` with embedded XML element ``Project``
+OriginatesFrom
+^^^^^^^^^^^^^^
+:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project``
 :Description: 
 :CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
 

@@ -90,6 +90,24 @@ Parts
 :Description: Link to the Product of which this product is a part (e.g. a file in a dataset that contains it)
 :CERIF: *TODO*
 
+Contributors
+^^^^^^^^^^^^
+:Representation: XML element ``Contributors`` with embedded XML elements ``Creator`` that can contain an embedded person with affiliations or organisation unit structure or ``Distributor`` that can contain an embedded person or organisation unit structure
+:Description: Various links to Persons and OrgUnits: semantics from the DataCite Metadata Kernel v4.0 "contributorType" vocabulary
+:CERIF: *TODO*
+
+OriginatesFrom
+^^^^^^^^^^^^^^
+:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
+
+GeneratedBy
+^^^^^^^^^^^
+:Representation: XML element ``GeneratedBy`` with embedded XML element ``Infrastructure__SubstitutionGroupHead``
+:Description: 
+:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Output-Infrastructure_Roles#Generator)``)
+
 CitedBy
 ^^^^^^^
 :Representation: XML element ``CitedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``

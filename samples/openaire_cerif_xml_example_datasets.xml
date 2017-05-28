@@ -125,5 +125,152 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 				</Product>
         	</metadata>
         </record>
+        <record>
+        	<header>
+                <identifier>oai:cris.example.org:cfResProd/729481</identifier>
+                <datestamp>2017-05-23T23:00:01Z</datestamp>
+                <setSpec>openaire_cris_datasets</setSpec>
+        	</header>
+        	<metadata>
+				<Product id="729481" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+					<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+					<VersionInfo xml:lang="en">1</VersionInfo>
+					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
+					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<PartOf>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
+						</Product>
+					</PartOf>
+					<Contributors>
+						<Creator>
+							<Person>
+								<PersonName>
+									<FamilyNames>Singhal</FamilyNames>
+									<FirstNames>Sonal</FirstNames>
+								</PersonName>
+							</Person>
+						</Creator>
+						<Creator>
+							<Person>
+								<PersonName>
+									<FamilyNames>Moritz</FamilyNames>
+									<FirstNames>Craig</FirstNames>
+								</PersonName>
+							</Person>
+						</Creator>
+					</Contributors>
+				</Product>
+        	</metadata>
+        </record>
+        <record>
+        	<header>
+                <identifier>oai:cris.example.org:cfResProd/729482</identifier>
+                <datestamp>2017-05-23T23:00:02Z</datestamp>
+                <setSpec>openaire_cris_datasets</setSpec>
+        	</header>
+        	<metadata>
+				<Product id="729482" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
+					<Name xml:lang="en">Base script used for simulations</Name>
+					<VersionInfo xml:lang="en">1</VersionInfo>
+					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/2</Identifier>
+					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<PartOf>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
+						</Product>
+					</PartOf>
+					<Contributors>
+						<Creator>
+							<Person>
+								<PersonName>
+									<FamilyNames>Singhal</FamilyNames>
+									<FirstNames>Sonal</FirstNames>
+								</PersonName>
+							</Person>
+						</Creator>
+						<Creator>
+							<Person>
+								<PersonName>
+									<FamilyNames>Moritz</FamilyNames>
+									<FirstNames>Craig</FirstNames>
+								</PersonName>
+							</Person>
+						</Creator>
+					</Contributors>
+				</Product>
+        	</metadata>
+        </record>
+        <record>
+        	<header>
+                <identifier>oai:cris.example.org:cfResProd/729483</identifier>
+                <datestamp>2017-05-23T23:00:03Z</datestamp>
+                <setSpec>openaire_cris_datasets</setSpec>
+        	</header>
+        	<metadata>
+				<Product id="729483" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+					<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
+					<VersionInfo xml:lang="en">1</VersionInfo>
+					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/3</Identifier>
+					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<PartOf>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
+						</Product>
+					</PartOf>
+					<Contributors>
+						<Creator>
+							<Person>
+								<PersonName>
+									<FamilyNames>Singhal</FamilyNames>
+									<FirstNames>Sonal</FirstNames>
+								</PersonName>
+							</Person>
+						</Creator>
+						<Creator>
+							<Person>
+								<PersonName>
+									<FamilyNames>Moritz</FamilyNames>
+									<FirstNames>Craig</FirstNames>
+								</PersonName>
+							</Person>
+						</Creator>
+					</Contributors>
+				</Product>
+        	</metadata>
+        </record>
     </ListRecords>
 </OAI-PMH>

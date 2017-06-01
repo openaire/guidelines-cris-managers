@@ -4,9 +4,9 @@
 	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group.
+		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
+			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
-			For more information about CERIF and euroCRIS see http://www.eurocris.org/.
 		</xs:documentation>
 	</xs:annotation>
 

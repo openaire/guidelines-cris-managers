@@ -62,10 +62,7 @@
                      <cf:Term xml:lang="tr" trans="h">patent</cf:Term>
                      <cf:Definition xml:lang="en">A patent or patent application.</cf:Definition>
                      <cf:Definition xml:lang="ru">Патент или заявка на изобретение. Предоставление эксклюзивного права на эксплуатацию изобретения.</cf:Definition>
-                     <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
-                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
-                     </cf:Broader>
+                     
                   </cf:Class>
                </xs:appinfo>
             </xs:annotation>

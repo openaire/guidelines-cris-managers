@@ -75,7 +75,7 @@
 
 	<xsl:template match="xs:enumeration[ skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ]" mode="patent">
 		<xsl:param name="scheme-uri" as="xs:string"/>
-		<xsl:apply-templates select="." mode="copy">
+		<xsl:apply-templates select="." mode="copy-except-broader">
 			<xsl:with-param name="scheme-uri" select="$scheme-uri"/>
 		</xsl:apply-templates>
 	</xsl:template>
@@ -115,9 +115,25 @@
 			<xsl:otherwise><xsl:value-of select="false()"/></xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
-		
+
+	<xsl:template match="node()" mode="copy-except-broader">
+		<xsl:param name="scheme-uri" as="xs:string"/>
+		<xsl:copy copy-namespaces="no">
+			<xsl:apply-templates select="@*" mode="copy">
+				<xsl:with-param name="scheme-uri" select="$scheme-uri"/>
+			</xsl:apply-templates>
+			<xsl:apply-templates mode="#current">
+				<xsl:with-param name="scheme-uri" select="$scheme-uri"/>
+			</xsl:apply-templates>
+		</xsl:copy>
+	</xsl:template>
+
+	<xsl:template match="cf:Broader" mode="copy-except-broader">
+		<xsl:param name="scheme-uri" as="xs:string"/>
+	</xsl:template>
+
 	<!-- standard copy template -->
-	<xsl:template match="@*|node()" mode="#all">
+	<xsl:template match="@*|node()" mode="#all" priority="-0.7">
 		<xsl:param name="scheme-uri" as="xs:string"/>
 		<xsl:copy copy-namespaces="no">
 			<xsl:apply-templates select="@*" mode="#current">

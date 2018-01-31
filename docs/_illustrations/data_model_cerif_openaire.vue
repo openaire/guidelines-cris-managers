@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2018-01-23 -->
+<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2018-01-30 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.localized/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue Jan 23 17:04:30 CET 2018 by jdvorak on platform Mac OS X 10.13.2 in JVM 1.8.0_152-b16 -->
+<!-- Do Not Remove: Saved date Tue Jan 30 22:51:55 CET 2018 by jdvorak on platform Mac OS X 10.13.3 in JVM 1.8.0_152-b16 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="data_model_cerif_openaire.vue" created="1393077696638"
     x="0.0" y="0.0" width="785.0" height="584.10004" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1516723470988" size="97271"
+    <resource referenceCreated="1517349115949" size="97271"
         spec="/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/data_model_cerif_openaire.vue"
         type="1" xsi:type="URLResource">
         <title>data_model_cerif_openaire.vue</title>
@@ -390,11 +390,11 @@
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">20</ID2>
     </child>
-    <child ID="39" layerID="1" created="1393078256297" x="400.8529"
-        y="29.582947" width="14.998322" height="37.416992"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
+    <child ID="39" layerID="1" created="1393078256297" x="399.8529"
+        y="28.582947" width="16.998322" height="39.416992"
+        strokeWidth="3.0" autoSized="false" controlCount="0"
         arrowState="0" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#0AAD1D</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5a01a1d0c0a80005016fc94f2d29f530</URIString>
@@ -529,11 +529,11 @@
         <ID1 xsi:type="node">16</ID1>
         <ID2 xsi:type="node">19</ID2>
     </child>
-    <child ID="46" layerID="1" created="1393078281158" x="416.77667"
-        y="29.582947" width="114.904816" height="105.29758"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
+    <child ID="46" layerID="1" created="1393078281158" x="415.77667"
+        y="28.582947" width="116.904816" height="107.29758"
+        strokeWidth="3.0" autoSized="false" controlCount="0"
         arrowState="0" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#0AAD1D</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5a01a1d8c0a80005016fc94ffd25d956</URIString>
@@ -1357,11 +1357,11 @@
         <ID1 xsi:type="node">17</ID1>
         <ID2 xsi:type="node">18</ID2>
     </child>
-    <child ID="40" layerID="1" created="1393078262664" x="304.0871"
-        y="29.582947" width="74.52994" height="114.41705"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
+    <child ID="40" layerID="1" created="1393078262664" x="303.0871"
+        y="28.582947" width="76.52994" height="116.41705"
+        strokeWidth="3.0" autoSized="false" controlCount="0"
         arrowState="0" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#0AAD1D</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5a01a1d1c0a80005016fc94fd1ff4542</URIString>

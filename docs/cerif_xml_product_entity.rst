@@ -1,24 +1,26 @@
-.. _c:product
+.. _product:
+
 
 Product
 =======
-:Representation: XML element ``Product``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: 
-:CERIF: the *TODO* entity (``cfResProd``)
+:Representation: XML element ``Product``; the rest of this section documents children of this element
+:CERIF: the ResultProduct entity (`<https://w3id.org/cerif/model#ResultProduct>`_)
+
 
 Identifier
 ^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfResProd.cfResProdId``)
+:Format: internal identifier
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the ResultProductIdentifier attribute (`<https://w3id.org/cerif/model#ResultProduct.ResultProductIdentifier>`_)
+
 
 Type
 ^^^^
+:Description: The type of the resulting product (other than publication or patent)
+:Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types``
-:Description: 
-:CERIF: the *TODO* classification (``cfResProd_Class``)
+:CERIF: the ResultProduct_Classification (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_)
 :Vocabulary: Product types extracted from the COAR Resource Types concept scheme: Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').
 
   * **interactive resource** (`<http://purl.org/coar/resource_type/c_e9a0>`_): A resource requiring interaction from the user to be understood, executed, or experienced. Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments.
@@ -42,107 +44,167 @@ Type
     * **musical composition** (`<http://purl.org/coar/resource_type/c_18cd>`_): Musical composition can refer to an original piece of music, the structure of a musical piece, or the process of creating a new piece of music.
 
 
+
 Name
 ^^^^
-:Representation: XML element ``Name``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResProdName.cfName``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Name`` as a multilingual string
+:CERIF: the ResultProduct.Name attribute (`<https://w3id.org/cerif/model#ResultProduct.Name>`_)
 
-AlternateName
-^^^^^^^^^^^^^
-:Representation: XML element ``AlternateName``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResProdName.cfAltName``)
 
 VersionInfo
 ^^^^^^^^^^^
-:Representation: XML element ``VersionInfo``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResProdName.cfVersInfo``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``VersionInfo`` as a multilingual string
+:CERIF: the ResultProduct.VersionInfo attribute (`<https://w3id.org/cerif/model#ResultProduct.VersionInfo>`_)
 
-Identifier
+
+ARK
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``ARK``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+DOI
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``DOI``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+Handle
+^^^^^^
+:Use: optional (0..1)
+:Representation: XML element ``Handle``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+URL
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``URL``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+URN
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``URN``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+Creators
+^^^^^^^^
+:Description: The creators of this product
+:Representation: XML element ``Creators`` with ordered embedded XML elements ``Creator`` that can contain an embedded person with affiliations or organisation unit
+
+
+
+Creator
+-------
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Creator`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``
+:CERIF: the Person_ResultProduct linking entity (`<https://w3id.org/cerif/model#Person_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Creator>`_ semantics; the OrganisationUnit_ResultProduct linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Creator>`_ semantics
+
+
+Publishers
 ^^^^^^^^^^
-:Representation: XML element ``Identifier``
-:Description: 
-:CERIF: the Federated Identifier entity (``cfFedId``)
+:Description: The publisher or publishers of this product
+:Representation: XML element ``Publishers`` with ordered embedded XML elements ``Publisher`` that can contain an embedded organisation unit or person
+
+
+
+Publisher
+---------
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Publisher`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the OrganisationUnit_ResultProduct linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Publisher>`_ semantics; the Person_ResultProduct linking entity (`<https://w3id.org/cerif/model#Person_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Publisher>`_ semantics
+
+
+License
+^^^^^^^
+:Description: The license of the product
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``License`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the ResultProduct_Classification (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_)
+
 
 Description
 ^^^^^^^^^^^
-:Representation: XML element ``Description``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResProdDescr.cfDescr``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Description`` as a multilingual string
+:CERIF: the ResultProduct.Description attribute (`<https://w3id.org/cerif/model#ResultProduct.Description>`_)
+
+
+Subject
+^^^^^^^
+:Description: The subject of the product from a classification
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Subject`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the ResultProduct_Classification (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_)
+
 
 Keywords
 ^^^^^^^^
-:Representation: XML element ``Keywords``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResProdKeyw.cfKeyw``)
+:Description: A single keyword or key expression. Please repeat to serialize separate keywords or key expressions.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Keywords`` as a multilingual string
+:CERIF: the ResultProduct.Keyword attribute (`<https://w3id.org/cerif/model#ResultProduct.Keyword>`_)
+
 
 PartOf
 ^^^^^^
-:Representation: XML element ``PartOf`` with embedded XML element ``Product``
-:Description: Link to the Product of which this product is a part (e.g. a file in a dataset that contains it)
-:CERIF: the *TODO* linking entity (``cfResProd_ResProd(http://eurocris.org/cerif/vocab/Inter-­ProductRelations#Part):1``)
+:Description: Link to the research output of which this product is a part (e.g. a data set collection that contains it)
+:Use: optional (0..1)
+:Representation: XML element ``PartOf`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-ProductRelations#Part>`_ semantics (direction :1)
+
 
 Parts
 ^^^^^
-:Representation: XML element ``Parts`` with embedded XML elements ``Part``
-:Description: Link to the Product of which this product is a part (e.g. a file in a dataset that contains it)
-:CERIF: *TODO*
+:Description: The research products that make up this product (e.g. constituent parts of a data set)
+:Representation: XML element ``Parts`` with unordered embedded XML elements ``Part``
 
-Contributors
-^^^^^^^^^^^^
-:Representation: XML element ``Contributors`` with embedded XML elements ``Creator`` that can contain an embedded person with affiliations or organisation unit structure or ``Distributor`` that can contain an embedded person or organisation unit structure
-:Description: Various links to Persons and OrgUnits: semantics from the DataCite Metadata Kernel v4.0 "contributorType" vocabulary
-:CERIF: *TODO*
+
+
+Part
+----
+:Description: Links to the research outputs that make up this product
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Part`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-ProductRelations#Part>`_ semantics (direction :2); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Part>`_ semantics (direction :2); the ResultProduct_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Part>`_ semantics (direction :2)
+
 
 OriginatesFrom
 ^^^^^^^^^^^^^^
-:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
+:CERIF: the Project_ResultProduct linking entity (`<https://w3id.org/cerif/model#Project_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the ResultProduct_Funding linking entity (`<https://w3id.org/cerif/model#ResultProduct_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
+
 
 GeneratedBy
 ^^^^^^^^^^^
-:Representation: XML element ``GeneratedBy`` with embedded XML element ``Infrastructure__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Output-Infrastructure_Roles#Generator)``)
+:Description: The equipment that generated this product
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``GeneratedBy`` with embedded XML element ``Equipment``
+:CERIF: the ResultProduct_Equipment linking entity (`<https://w3id.org/cerif/model#ResultProduct_Equipment>`_) with the `<https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation>`_ semantics
 
-CitedBy
-^^^^^^^
-:Representation: XML element ``CitedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2``)
-
-Cites
-^^^^^
-:Representation: XML element ``Cites`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1``)
-
-SupplementTo
-^^^^^^^^^^^^
-:Representation: XML element ``SupplementTo`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2``)
-
-SupplementedBy
-^^^^^^^^^^^^^^
-:Representation: XML element ``SupplementedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1``)
 
 References
 ^^^^^^^^^^
-:Representation: XML element ``References`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2``)
+:Description: Result outputs that are referenced by this product
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultProduct_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1)
+
 
 ReferencedBy
 ^^^^^^^^^^^^
-:Representation: XML element ``ReferencedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1``)
+:Description: Result outputs that reference this product
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``ReferencedBy`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :2); the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :2); the ResultProduct_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :2)
 
 
 

@@ -20,7 +20,7 @@ Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers"
             	<Product id="7123451" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
                     <Name xml:lang="en">Airborne In-situ Atmospheric Instuments and Hyperspectral Instruments Data from the Projects Funded Under The European Facility for Airborne Research in Environmental and Geo-sciences (EUFAR) Project</Name>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#URL">http://catalogue.ceda.ac.uk/uuid/d40e4067ae0121b31bb1ba57e04707de</Identifier>
+					<URL>http://catalogue.ceda.ac.uk/uuid/d40e4067ae0121b31bb1ba57e04707de</URL>
                     <Description xml:lang="en">The dataset combines data from the projects and training courses funded under the European Facility for Airborne Research in Environmental and Geo-sciences (EUFAR) project.
 EUFAR is an Integrating Activity of the 7th Framework Program of the European Commission.
 EUFAR brings together 32 European institutions and companies involved in airborne research, operating 21 instrumented aircraft and providing access to 6 hyperspectral instruments. Data include measurements by airborne in situ atmospheric instuments and hyperspectral instruments operated on board aircraft of the EUFAR fleet during projects funded under the transnational access part of EUFAR and during training events.</Description>
@@ -57,42 +57,8 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
-					<Keywords xml:lang="en">Hybridization</Keywords>
-					<Keywords xml:lang="en">Speciation</Keywords>
-					<Keywords xml:lang="en">Phylogeography</Keywords>
-					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
-					<Keywords xml:lang="en">Models/Simulations</Keywords>
-					<Keywords xml:lang="en">Australia</Keywords>
-					<Keywords xml:lang="en">Northeast Queensland</Keywords>
-					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
-					<Parts>
-						<Part>
-							<Product id="729481">
-								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-								<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
-								<VersionInfo xml:lang="en">1</VersionInfo>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/1</Identifier>
-							</Product>
-						</Part>
-						<Part>
-							<Product id="729482">
-								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
-								<Name xml:lang="en">Base script used for simulations</Name>
-								<VersionInfo xml:lang="en">1</VersionInfo>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/2</Identifier>
-							</Product>
-						</Part>
-						<Part>
-							<Product id="729483">
-								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-								<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
-								<VersionInfo xml:lang="en">1</VersionInfo>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/3</Identifier>
-							</Product>
-						</Part>
-					</Parts>
-					<Contributors>
+					<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
+					<Creators>
 						<Creator>
 							<Person>
 								<PersonName>
@@ -109,17 +75,55 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 								</PersonName>
 							</Person>
 						</Creator>
-						<Distributor startDate="2011">
+					</Creators>
+<!-- 
+					<Contributors>
+						<HostingInstitution startDate="2011">
 							<OrgUnit>
 								<Name xml:lang="en">Dryad Digital Repository</Name>
 							</OrgUnit>
-						</Distributor>
+						</HostingInstitution>
 					</Contributors>
+ -->
+ 					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<Parts>
+						<Part>
+							<Product id="729481">
+								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+								<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
+								<VersionInfo xml:lang="en">1</VersionInfo>
+								<DOI>10.5061/DRYAD.4GH6HF5G/1</DOI>
+							</Product>
+						</Part>
+						<Part>
+							<Product id="729482">
+								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
+								<Name xml:lang="en">Base script used for simulations</Name>
+								<VersionInfo xml:lang="en">1</VersionInfo>
+								<DOI>10.5061/DRYAD.4GH6HF5G/2</DOI>
+							</Product>
+						</Part>
+						<Part>
+							<Product id="729483">
+								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+								<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
+								<VersionInfo xml:lang="en">1</VersionInfo>
+								<DOI>10.5061/DRYAD.4GH6HF5G/3</DOI>
+							</Product>
+						</Part>
+					</Parts>
 					<ReferencedBy>
 						<Publication id="852734">
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 							<Title xml:lang="en">Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Title>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.1111/J.1558-5646.2011.01539.X</Identifier>
+							<DOI>10.1111/J.1558-5646.2011.01539.X</DOI>
 						</Publication>
 					</ReferencedBy>
 				</Product>
@@ -134,26 +138,10 @@ EUFAR brings together 32 European institutions and companies involved in airborn
         	<metadata>
 				<Product id="729481" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-					<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+					<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
-					<Keywords xml:lang="en">Hybridization</Keywords>
-					<Keywords xml:lang="en">Speciation</Keywords>
-					<Keywords xml:lang="en">Phylogeography</Keywords>
-					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
-					<Keywords xml:lang="en">Models/Simulations</Keywords>
-					<Keywords xml:lang="en">Australia</Keywords>
-					<Keywords xml:lang="en">Northeast Queensland</Keywords>
-					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
-					<PartOf>
-						<Product id="729487">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
-							<VersionInfo xml:lang="en">1</VersionInfo>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
-						</Product>
-					</PartOf>
-					<Contributors>
+					<DOI>10.5061/DRYAD.4GH6HF5G/1</DOI>
+					<Creators>
 						<Creator>
 							<Person>
 								<PersonName>
@@ -170,7 +158,23 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 								</PersonName>
 							</Person>
 						</Creator>
-					</Contributors>
+					</Creators>
+					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<PartOf>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
+						</Product>
+					</PartOf>
 				</Product>
         	</metadata>
         </record>
@@ -185,24 +189,8 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
 					<Name xml:lang="en">Base script used for simulations</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/2</Identifier>
-					<Keywords xml:lang="en">Hybridization</Keywords>
-					<Keywords xml:lang="en">Speciation</Keywords>
-					<Keywords xml:lang="en">Phylogeography</Keywords>
-					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
-					<Keywords xml:lang="en">Models/Simulations</Keywords>
-					<Keywords xml:lang="en">Australia</Keywords>
-					<Keywords xml:lang="en">Northeast Queensland</Keywords>
-					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
-					<PartOf>
-						<Product id="729487">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
-							<VersionInfo xml:lang="en">1</VersionInfo>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
-						</Product>
-					</PartOf>
-					<Contributors>
+					<DOI>10.5061/DRYAD.4GH6HF5G/2</DOI>
+					<Creators>
 						<Creator>
 							<Person>
 								<PersonName>
@@ -219,7 +207,23 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 								</PersonName>
 							</Person>
 						</Creator>
-					</Contributors>
+					</Creators>
+					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<PartOf>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
+						</Product>
+					</PartOf>
 				</Product>
         	</metadata>
         </record>
@@ -234,24 +238,8 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/3</Identifier>
-					<Keywords xml:lang="en">Hybridization</Keywords>
-					<Keywords xml:lang="en">Speciation</Keywords>
-					<Keywords xml:lang="en">Phylogeography</Keywords>
-					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
-					<Keywords xml:lang="en">Models/Simulations</Keywords>
-					<Keywords xml:lang="en">Australia</Keywords>
-					<Keywords xml:lang="en">Northeast Queensland</Keywords>
-					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
-					<PartOf>
-						<Product id="729487">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
-							<VersionInfo xml:lang="en">1</VersionInfo>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
-						</Product>
-					</PartOf>
-					<Contributors>
+					<DOI>10.5061/DRYAD.4GH6HF5G/3</DOI>
+					<Creators>
 						<Creator>
 							<Person>
 								<PersonName>
@@ -268,7 +256,23 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 								</PersonName>
 							</Person>
 						</Creator>
-					</Contributors>
+					</Creators>
+					<Keywords xml:lang="en">Hybridization</Keywords>
+					<Keywords xml:lang="en">Speciation</Keywords>
+					<Keywords xml:lang="en">Phylogeography</Keywords>
+					<Keywords xml:lang="en">Reproductive Isolation</Keywords>
+					<Keywords xml:lang="en">Models/Simulations</Keywords>
+					<Keywords xml:lang="en">Australia</Keywords>
+					<Keywords xml:lang="en">Northeast Queensland</Keywords>
+					<Keywords xml:lang="en">Lampropholis coggeri</Keywords>
+					<PartOf>
+						<Product id="729487">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
+							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
+							<VersionInfo xml:lang="en">1</VersionInfo>
+							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
+						</Product>
+					</PartOf>
 				</Product>
         	</metadata>
         </record>

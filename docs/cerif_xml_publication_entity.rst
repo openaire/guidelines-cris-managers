@@ -1,24 +1,28 @@
-.. _c:publication
+.. _publication:
+
 
 Publication
 ===========
-:Representation: XML element ``Publication``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: Research or scholarly published output resulting from, or related to, research activities.
-:CERIF: the *TODO* entity (``cfResPubl``)
+:Description: A text based scholarly publication or publishing channel that contains results of research. CRISs typically record metadata about scholarly publications from the scope of the CRIS (institutional CRIS for the institution, funder CRIS for the funding it distributed, etc.) in the context of the research projects, infrastructure, funding, organization units and authors/contributors. This entity typically represents the granularity level of a single published item for which attribution information is attached (usually in the form of a list of authors and contributors). This entity is also used to represent publishing channels and sources: journals and book series (incl. continuing conference proceedings series). (Taken from https://doi.org/10.1016/j.procs.2014.06.008)
+:Examples: `<../../samples/openaire_cerif_xml_example_publications.xml>`_
+:Representation: XML element ``Publication``; the rest of this section documents children of this element
+:CERIF: the ResultPublication entity (`<https://w3id.org/cerif/model#ResultPublication>`_)
+
 
 Identifier
 ^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfResPubl.cfResPublId``)
+:Format: internal identifier
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the ResultPublicationIdentifier attribute (`<https://w3id.org/cerif/model#ResultPublication.ResultPublicationIdentifier>`_)
+
 
 Type
 ^^^^
+:Description: The type of the publication
+:Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types``
-:Description: 
-:CERIF: the *TODO* classification (``cfResPubl_Class``)
+:CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
 :Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').
 
   * **text** (`<http://purl.org/coar/resource_type/c_18cf>`_): A resource consisting primarily of words for reading. Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text.
@@ -77,192 +81,250 @@ Type
     * **musical notation** (`<http://purl.org/coar/resource_type/c_18cw>`_): Musical notation is any system used to visually represent aurally perceived music through the use of written symbols, including ancient or modern musical symbols.
 
 
+
 Title
 ^^^^^
-:Representation: XML element ``Title``
 :Description: The title of the publication
-:CERIF: the *TODO* attribute (``cfResPublTitle.cfTitle``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Title`` as a multilingual string
+:CERIF: the ResultPublication.Title attribute (`<https://w3id.org/cerif/model#ResultPublication.Title>`_)
+
 
 Subtitle
 ^^^^^^^^
-:Representation: XML element ``Subtitle``
 :Description: The subtitle of the publication
-:CERIF: the *TODO* attribute (``cfResPublSubtitle.cfSubtitle``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Subtitle`` as a multilingual string
+:CERIF: the ResultPublication.Subtitle attribute (`<https://w3id.org/cerif/model#ResultPublication.Subtitle>`_)
+
 
 PublishedIn
 ^^^^^^^^^^^
-:Representation: XML element ``PublishedIn`` with embedded XML element ``PublishingChannel``
-:Description: Link to the Publishing Channel where this publication appeared
-:CERIF: the *TODO* linking entity (``cfResPubl_PublChannel(http://eurocris.org/cerif/vocab/PublicationChannelLinks#PublishedIn)``)
+:Description: Link to the source (another Publication) where this publication appeared
+:Use: optional (0..1)
+:Representation: XML element ``PublishedIn`` with embedded XML element ``Publication``
+:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-PublicationRelations#Publication>`_ semantics (direction :1)
+
 
 PartOf
 ^^^^^^
-:Representation: XML element ``PartOf`` with embedded XML element ``Publication``
 :Description: Link to the Publication of which this publication is a part (e.g. a book chapter links to the book that contains it)
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-­PublicationRelations#Part):1``)
+:Use: optional (0..1)
+:Representation: XML element ``PartOf`` with embedded XML element ``Publication``
+:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-PublicationRelations#Part>`_ semantics (direction :1)
+
 
 PublicationDate
 ^^^^^^^^^^^^^^^
-:Representation: XML element ``PublicationDate``
 :Description: The date the publication appeared
-:CERIF: the *TODO* attribute (``cfResPubl.cfResPublDate``)
+:Use: optional (0..1)
+:Representation: XML element ``PublicationDate``
+:CERIF: the ResultPublication.ResPublDate attribute (`<https://w3id.org/cerif/model#ResultPublication.ResPublDate>`_)
+
 
 Number
 ^^^^^^
-:Representation: XML element ``Number``
 :Description: The number of the publication (e.g. Article Number)
-:CERIF: the *TODO* attribute (``cfResPubl.cfNum``)
+:Use: optional (0..1)
+:Representation: XML element ``Number``
+:CERIF: the ResultPublication.Number attribute (`<https://w3id.org/cerif/model#ResultPublication.Number>`_)
+
 
 Volume
 ^^^^^^
-:Representation: XML element ``Volume``
 :Description: The volume of the publishing channel where this publication appeared
-:CERIF: the *TODO* attribute (``cfResPubl.cfVol``)
+:Use: optional (0..1)
+:Representation: XML element ``Volume``
+:CERIF: the ResultPublication.Volume attribute (`<https://w3id.org/cerif/model#ResultPublication.Volume>`_)
+
 
 Issue
 ^^^^^
-:Representation: XML element ``Issue``
 :Description: The issue of the publishing channel where this publication appeared
-:CERIF: the *TODO* attribute (``cfResPubl.cfIssue``)
+:Use: optional (0..1)
+:Representation: XML element ``Issue``
+:CERIF: the ResultPublication.Issue attribute (`<https://w3id.org/cerif/model#ResultPublication.Issue>`_)
+
 
 Edition
 ^^^^^^^
-:Representation: XML element ``Edition``
 :Description: The edition of the publication
-:CERIF: the *TODO* attribute (``cfResPubl.cfEdition``)
+:Use: optional (0..1)
+:Representation: XML element ``Edition``
+:CERIF: the ResultPublication.Edition attribute (`<https://w3id.org/cerif/model#ResultPublication.Edition>`_)
 
-Series
-^^^^^^
-:Representation: XML element ``Series``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPubl.cfSeries``)
 
 StartPage
 ^^^^^^^^^
-:Representation: XML element ``StartPage``
 :Description: The page where this publication starts, in case the publishing channel or containing publication has numbered pages
-:CERIF: the *TODO* attribute (``cfResPubl.cfStartPage``)
+:Use: optional (0..1)
+:Representation: XML element ``StartPage``
+:CERIF: the ResultPublication.StartPage attribute (`<https://w3id.org/cerif/model#ResultPublication.StartPage>`_)
+
 
 EndPage
 ^^^^^^^
-:Representation: XML element ``EndPage``
 :Description: The page where this publication ends, in case the publishing channel or containing publication has numbered pages
-:CERIF: the *TODO* attribute (``cfResPubl.cfEndPage``)
+:Use: optional (0..1)
+:Representation: XML element ``EndPage``
+:CERIF: the ResultPublication.EndPage attribute (`<https://w3id.org/cerif/model#ResultPublication.EndPage>`_)
 
-TotalPages
-^^^^^^^^^^
-:Representation: XML element ``TotalPages``
-:Description: The number of pages of this publication
-:CERIF: the *TODO* attribute (``cfResPubl.cfTotalPages``)
 
-Identifier
+DOI
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``DOI``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+Handle
+^^^^^^
+:Use: optional (0..1)
+:Representation: XML element ``Handle``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+PMCID
+^^^^^
+:Use: optional (0..1)
+:Representation: XML element ``PMCID``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+ISI-Number
 ^^^^^^^^^^
-:Representation: XML element ``Identifier``
-:Description: 
-:CERIF: the Federated Identifier entity (``cfFedId``)
+:Use: optional (0..1)
+:Representation: XML element ``ISI-Number``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+SCP-Number
+^^^^^^^^^^
+:Use: optional (0..1)
+:Representation: XML element ``SCP-Number``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+ISSN
+^^^^
+:Use: optional (0..1)
+:Representation: XML element ``ISSN``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+ISBN
+^^^^
+:Use: optional (0..1)
+:Representation: XML element ``ISBN``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+URL
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``URL``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+URN
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``URN``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 Authors
 ^^^^^^^
-:Representation: XML element ``Authors`` with embedded XML elements ``Author`` that can contain an embedded person with affiliations or organisation unit structure
 :Description: The authors of this publication
-:CERIF: *TODO*
+:Representation: XML element ``Authors`` with ordered embedded XML elements ``Author`` that can contain an embedded person with affiliations or organisation unit
+
+
+
+Author
+------
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Author`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``
+:CERIF: the Person_ResultPublication linking entity (`<https://w3id.org/cerif/model#Person_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Author>`_ semantics; the OrganisationUnit_ResultPublication linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Author>`_ semantics
+
 
 Editors
 ^^^^^^^
-:Representation: XML element ``Editors`` with embedded XML elements ``Editor`` that can contain an embedded person with affiliations or organisation unit structure
 :Description: The editors of this publication
-:CERIF: *TODO*
+:Representation: XML element ``Editors`` with ordered embedded XML elements ``Editor`` that can contain an embedded person with affiliations or organisation unit
+
+
+
+Editor
+------
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Editor`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``
+:CERIF: the Person_ResultPublication linking entity (`<https://w3id.org/cerif/model#Person_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Editor>`_ semantics; the OrganisationUnit_ResultPublication linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Editor>`_ semantics
+
 
 Publishers
 ^^^^^^^^^^
-:Representation: XML element ``Publishers`` with embedded XML elements ``Publisher`` that can contain an embedded person or organisation unit structure
 :Description: The publishers of this publication
-:CERIF: *TODO*
+:Representation: XML element ``Publishers`` with ordered embedded XML elements ``Publisher`` that can contain an embedded organisation unit or person
 
-Access
-^^^^^^
-:Representation: XML element ``Access`` from namespace ``http://purl.org/coar/access_right``
-:Description: 
-:CERIF: the *TODO* classification (``cfResPubl_Class``)
-:Vocabulary: 
 
-  * **open access** (`<http://purl.org/coar/access_right/c_abf2>`_): Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.
-  * **embargoed access** (`<http://purl.org/coar/access_right/c_f1cf>`_): Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).
-  * **restricted access** (`<http://purl.org/coar/access_right/c_16ec>`_): Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g. limited to a university community)
-  * **metadata only access** (`<http://purl.org/coar/access_right/c_14cb>`_): Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but is not directly available through the system or platform. This type of access can occur in a number of different situations. Some examples are described below: There is no electronic copy of the resource available (record links to a physical resource) The resource is only available elsewhere for a fee (record links to a subscription-based publisher version) The resource is available open access but at a different location (record links to a version at an open access publisher or archive) The resource is available elsewhere, but not in a fully open access format (record links to a read only, or other type of resources that is not permanent or in some way restricted)
+
+Publisher
+---------
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Publisher`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the OrganisationUnit_ResultPublication linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Publisher>`_ semantics; the Person_ResultPublication linking entity (`<https://w3id.org/cerif/model#Person_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Publisher>`_ semantics
 
 
 License
 ^^^^^^^
-:Representation: XML element ``License`` with embedded XML element
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_Class``)
+:Description: The license of the publication
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``License`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
+
 
 Subject
 ^^^^^^^
-:Representation: XML element ``Subject`` with embedded XML element
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_Class``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Subject`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
+
 
 Keyword
 ^^^^^^^
-:Representation: XML element ``Keyword``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPublKeyw.cfKeyw``)
+:Description: A single keyword or key expression per XML element. Please repeat this element even if in the same language.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Keyword`` as a multilingual string
+:CERIF: the ResultPublication.Keyword attribute (`<https://w3id.org/cerif/model#ResultPublication.Keyword>`_)
+
 
 Abstract
 ^^^^^^^^
-:Representation: XML element ``Abstract``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPublAbstr.cfAbstr``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Abstract`` as a multilingual string
+:CERIF: the ResultPublication.Abstract attribute (`<https://w3id.org/cerif/model#ResultPublication.Abstract>`_)
+
 
 Status
 ^^^^^^
-:Representation: XML element ``Status`` with embedded XML element
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_Class``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Status`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
+
 
 OriginatesFrom
 ^^^^^^^^^^^^^^
-:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
+:CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics
 
-CitedBy
-^^^^^^^
-:Representation: XML element ``CitedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2``)
-
-Cites
-^^^^^
-:Representation: XML element ``Cites`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1``)
-
-SupplementTo
-^^^^^^^^^^^^
-:Representation: XML element ``SupplementTo`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2``)
-
-SupplementedBy
-^^^^^^^^^^^^^^
-:Representation: XML element ``SupplementedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1``)
 
 References
 ^^^^^^^^^^
-:Representation: XML element ``References`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2``)
-
-ReferencedBy
-^^^^^^^^^^^^
-:Representation: XML element ``ReferencedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPubl_ResProd(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1``)
+:Description: Result outputs that are referenced by this publication
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1)
 
 
 

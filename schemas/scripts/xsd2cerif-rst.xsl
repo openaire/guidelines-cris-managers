@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://my.xmlns.org" xmlns:cf="urn:xmlns:org.eurocris.cerif">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:cfprocess="https://w3id.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://my.xmlns.org" xmlns:cf="urn:xmlns:org.eurocris.cerif">
 
 	<xsl:output method="text" encoding="UTF-8"/>
 	
@@ -54,27 +54,26 @@
 		<xsl:param name="filename"/>
 		<xsl:result-document href="docs/{$filename}">
 			<xsl:for-each select="/xs:schema/xs:element[ @name = $elName ]">
-				<xsl:text>.. _c:</xsl:text><xsl:value-of select="lower-case( @name )"/><xsl:text>
+				<xsl:text>.. _</xsl:text><xsl:value-of select="lower-case( @name )"/>:<xsl:text>
 
 </xsl:text>
-				<xsl:value-of select="@name"/><xsl:text>
+			<xsl:apply-templates mode="make-title" select="@name"/>
+			<xsl:call-template name="make-description"/>
+			<xsl:variable name="example-uri" select="concat( 'samples/openaire_cerif_xml_example_', lower-case( $elName ), 's.xml' )"/>
+			<xsl:if test="doc-available( concat( '../../', $example-uri ) )">
+<xsl:text>:Examples: `&lt;</xsl:text><xsl:value-of select="$example-uri"/><xsl:text>&gt;`_
 </xsl:text>
-				<xsl:value-of select="my:repeat( '=', string-length(@name) )"/><xsl:text>
+			</xsl:if>
+<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``; the rest of this section documents children of this element
 </xsl:text>
-<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
-</xsl:text>
-<xsl:text>:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-</xsl:text>
-<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
-</xsl:text>
-<xsl:text>:CERIF: the </xsl:text>*TODO*<xsl:text> entity (``</xsl:text><xsl:value-of select="@cflink:entity"/><xsl:text>``)
+<xsl:text>:CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text> entity (`&lt;</xsl:text><xsl:value-of select="@cflink:entity"/><xsl:text>&gt;`_)
 
-Identifier
-^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the </xsl:text>*TODO*<xsl:text> Identifier attribute (``</xsl:text><xsl:value-of select="concat( @cflink:entity, '.', @cflink:entity, 'Id' )"/><xsl:text>``)
+
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text>Identifier attribute (`&lt;</xsl:text><xsl:value-of select="concat( @cflink:entity, '.', substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' ), 'Identifier' )"/><xsl:text>&gt;`_)
 
 </xsl:text>
 
@@ -90,17 +89,14 @@ Identifier
 	
 	<xsl:template match="xs:element[ @name and @cflink:attribute ]">
 		<xsl:param name="entityEl"/>
-		<xsl:value-of select="@name"/><xsl:text>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text><xsl:if test="@type='cfMLangString__Type'"><xsl:text> as a multilingual string</xsl:text></xsl:if><xsl:text>
 </xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
+		<xsl:text>:CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:attribute, 'https://w3id.org/cerif/model#' )"/><xsl:text> attribute (`&lt;</xsl:text><xsl:value-of select="@cflink:attribute"/><xsl:text>&gt;`_)
 </xsl:text>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
-</xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: the </xsl:text>*TODO*<xsl:text> attribute (``</xsl:text><xsl:value-of select="@cflink:attribute"/><xsl:text>``)
-
-</xsl:text>
+		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
 	<xsl:key name="import-by-namespace" match="/xs:schema/xs:import" use="@namespace"/>
@@ -111,15 +107,12 @@ Identifier
 		<xsl:variable name="localName" select="local-name-from-QName( $qName )"/>
 		<xsl:variable name="ns" select="namespace-uri-from-QName( $qName )"/>
 		<xsl:variable name="sch1" select="document( key( 'import-by-namespace', $ns )/@schemaLocation )/xs:schema"/>
-		<xsl:value-of select="@ref"/><xsl:text>
-</xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@ref) )"/><xsl:text>
-</xsl:text>
+		<xsl:apply-templates mode="make-title" select="@ref"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="$localName"/><xsl:text>`` from namespace ``</xsl:text><xsl:value-of select="$ns"/><xsl:text>``
 </xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:apply-templates select="xs:annotation/xs:documentation"/><xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: the </xsl:text>*TODO*<xsl:text> classification (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/><xsl:text>_Class``)
+		<xsl:text>:CERIF: the </xsl:text><xsl:value-of select="substring-after( $entityEl/@cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text>_Classification (`&lt;</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/><xsl:text>_Classification&gt;`_)
 </xsl:text>
 		<xsl:text>:Vocabulary: </xsl:text><xsl:value-of select="normalize-space( $sch1/xs:annotation/xs:documentation )"/><xsl:text>
 
@@ -129,9 +122,7 @@ Identifier
 			<xsl:with-param name="enumNodes" select="$sch1/xs:simpleType/xs:restriction/xs:enumeration"/>
 			<xsl:with-param name="indent" select="'  '"/>
 		</xsl:apply-templates>
-		<xsl:text>
-
-</xsl:text>
+		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
 	<xsl:template match="xs:enumeration">
@@ -158,86 +149,104 @@ Identifier
 		</xsl:apply-templates>
 	</xsl:template>
 
-	<xsl:template match="xs:element[ @name and @cflink:link ]">
+	<xsl:template match="xs:element[ @name and @cflink:link and @type ]">
 		<xsl:param name="entityEl"/>
-		<xsl:value-of select="@name"/><xsl:text>
-</xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` with embedded XML element</xsl:text>
-		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/(xs:sequence|xs:choice)/xs:element" mode="name-verbatim"/>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
+		<xsl:choose>
+			<xsl:when test="@type = 'cfGenericClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``</xsl:when>
+			<xsl:otherwise> *TODO*</xsl:otherwise>
+		</xsl:choose>
 		<xsl:text>
 </xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: the </xsl:text>*TODO*<xsl:text> linking entity (``</xsl:text><xsl:value-of select="@cflink:link"/><xsl:text>``)
-
-</xsl:text>
+		<xsl:text>:CERIF: </xsl:text>
+		<xsl:choose>
+			<xsl:when test="@type = 'cfGenericClassification__Type'">the <xsl:value-of select="substring-after( $entityEl/@cflink:entity, 'https://w3id.org/cerif/model#' )"/>_Classification (`&lt;<xsl:value-of select="$entityEl/@cflink:entity"/>_Classification&gt;`_)</xsl:when>
+			<xsl:otherwise>
+				<xsl:call-template name="process-link-annotation">
+					<xsl:with-param name="link-annotation" select="@cflink:link"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
-	<xsl:template match="xs:element[ @name and ( @cflink:container or @cflink:unorderedContainer ) ]">
+	<xsl:template match="xs:element[ @name and @cflink:link and not( @type ) ]">
 		<xsl:param name="entityEl"/>
-		<xsl:value-of select="@name"/><xsl:text>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
+		<xsl:variable name="s1">
+			<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/(xs:sequence|xs:choice)/xs:element" mode="name-verbatim"/>
+		</xsl:variable>
+		<xsl:value-of select="concat( ' with embedded XML element', substring-after( $s1, ' or' ) )"/>
+		<xsl:text>
 </xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` with embedded XML elements</xsl:text>
+		<xsl:text>:CERIF: </xsl:text>
+		<xsl:call-template name="process-link-annotation">
+			<xsl:with-param name="link-annotation" select="@cflink:link"/>
+		</xsl:call-template>
+		<xsl:call-template name="make-footnotes"/>
+	</xsl:template>
+
+	<xsl:template match="xs:element[ @name and @cflink:container ]">
+		<xsl:param name="entityEl"/>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` with </xsl:text><xsl:value-of select="@cflink:container"/><xsl:text> embedded XML elements</xsl:text>
 		<xsl:apply-templates select="xs:complexType/xs:sequence/xs:element" mode="link"/>
 		<xsl:text>
 </xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: </xsl:text>*TODO*<xsl:text>
-
-</xsl:text>
+		<xsl:call-template name="make-footnotes"/>
+		<xsl:apply-templates select="xs:complexType/xs:sequence/xs:element"/>
 	</xsl:template>
 
-	<xsl:template match="xs:element[ @name and @cflink:identifier ]">
+	<xsl:template match="xs:element[ @name and @cflink:identifier ]" priority="0.6">
 		<xsl:param name="entityEl"/>
-		<xsl:value-of select="@name"/><xsl:text>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
+		<xsl:if test="@type = 'cfGenericIdentifier__Type'">
+			<xsl:text> with mandatory ``type`` attribute</xsl:text>
+		</xsl:if>
+		<xsl:text>
 </xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
+		<xsl:text>:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 </xsl:text>
+		<xsl:call-template name="make-footnotes"/>
+	</xsl:template>
+
+	<xsl:template match="xs:element[ @name and @cflink:entity='https://w3id.org/cerif/model#ElectronicAddress' ]">
+		<xsl:param name="entityEl"/>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
 </xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
+		<xsl:text>:CERIF: the ElectronicAddress entity (``https://w3id.org/cerif/model#ElectronicAddress``) and the corresponding link (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_ElectronicAddress<xsl:text>``)
 </xsl:text>
-		<xsl:text>:CERIF: the Federated Identifier entity (``cfFedId``)
-
-</xsl:text>
+		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
-	<xsl:template match="xs:element[ @name and @cflink:entity='cfEAddr' ]">
+	<xsl:template match="xs:element[ @name and @cflink:entity='https://w3id.org/cerif/model#PersonName' ]">
 		<xsl:param name="entityEl"/>
-		<xsl:value-of select="@name"/><xsl:text>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` containing </xsl:text>
+		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element" mode="name-list"/><xsl:text>
 </xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
+		<xsl:text>:CERIF: the PersonName entity (``https://w3id.org/cerif/model#PersonName``) and the corresponding link (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_PersonName<xsl:text>``)
 </xsl:text>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
-</xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: the Electronic Address entity (``cfEAddr``) and the corresponding link (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_EAddr<xsl:text>``)
-
-</xsl:text>
+		<xsl:call-template name="make-footnotes"/>
+		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element"/>
 	</xsl:template>
-
-	<xsl:template match="xs:element[ @name='PersonName' and @type='cfPersName__Type' ]">
-		<xsl:param name="entityEl"/>
-		<xsl:value-of select="@name"/><xsl:text>
-</xsl:text>
-		<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` containing</xsl:text>
-		<xsl:apply-templates select="$entityEl/../xs:complexType[@name='cfPersName__Type']/xs:complexContent/xs:extension/xs:sequence/xs:element" mode="name-list"/><xsl:text>
-</xsl:text>
-		<xsl:text>:Description: </xsl:text><xsl:value-of select="normalize-space( xs:annotation/xs:documentation )"/><xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: the Electronic Address entity (``cfEAddr``) and the corresponding link (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_EAddr<xsl:text>``)
-
-</xsl:text>
-	</xsl:template>
-
 
 	<xsl:template match="xs:element" mode="link">
 		<xsl:if test="preceding-sibling::xs:element">
@@ -249,22 +258,27 @@ Identifier
 		<xsl:text>``</xsl:text>
 		<xsl:choose>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type'">
-				<xsl:text> that can contain an embedded person with affiliations or organisation unit structure</xsl:text>
+				<xsl:text> that can contain an embedded person with affiliations or organisation unit</xsl:text>
 			</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'">
-				<xsl:text> that can contain an embedded person or organisation unit structure</xsl:text>
+				<xsl:text> that can contain an embedded organisation unit or person</xsl:text>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="xs:element" mode="name-verbatim">
-		<xsl:if test="preceding-sibling::xs:element">
-			<xsl:text> or</xsl:text>
-		</xsl:if>
-		<xsl:text> ``</xsl:text>
-		<xsl:value-of select="@ref"/>
-		<xsl:value-of select=".[not( @ref )]/@name"/>
-		<xsl:text>``</xsl:text>
+		<xsl:choose>
+			<xsl:when test="ends-with( @ref, '__SubstitutionGroupHead' )">
+				<xsl:variable name="superclass" select="@ref"/>
+				<xsl:apply-templates mode="#current" select="/xs:schema/xs:element[ @substitutionGroup = $superclass ]"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text> or ``</xsl:text>
+				<xsl:value-of select="@ref"/>
+				<xsl:value-of select=".[not( @ref )]/@name"/>
+				<xsl:text>``</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="xs:element" mode="name-list">
@@ -284,6 +298,99 @@ Identifier
 		<xsl:text>``</xsl:text>
 	</xsl:template>
 
+
+	<xsl:template name="process-link-annotation">
+		<xsl:param name="link-annotation"/>
+		<xsl:param name="prefix" select="''"/>
+		<xsl:variable name="r1" select="substring-after( $link-annotation, ' ' )"/>		
+		<xsl:variable name="l1" select="normalize-space( substring( $link-annotation, 1, string-length($link-annotation) - string-length( $r1 ) ) )"/>
+		<xsl:if test="$l1">
+			<xsl:variable name="link-entity" select="substring-before( $l1, '(' )"/>
+			<xsl:variable name="semantics" select="substring-before( substring-after( $l1, '(' ), ')' )"/>
+			<xsl:variable name="direction" select="substring-after( substring-after( $l1, '(' ), ')' )"/>
+			<xsl:value-of select="$prefix"/><xsl:text>the </xsl:text><xsl:value-of select="substring-after( $link-entity, 'https://w3id.org/cerif/model#' )"/><xsl:text> linking entity (`&lt;</xsl:text><xsl:value-of select="$link-entity"/><xsl:text>&gt;`_) with the `&lt;</xsl:text><xsl:value-of select="$semantics"/><xsl:text>&gt;`_ semantics</xsl:text><xsl:if test="$direction"><xsl:text> (direction </xsl:text><xsl:value-of select="$direction"/>)</xsl:if>
+			<xsl:call-template name="process-link-annotation">
+				<xsl:with-param name="link-annotation" select="$r1"/>
+				<xsl:with-param name="prefix" select="'; '"/>
+			</xsl:call-template>
+		</xsl:if>
+    </xsl:template>
+	
+	<xsl:template name="document-use">
+		<xsl:text>:Use: </xsl:text><xsl:choose>
+			<xsl:when test="@minOccurs='0' and ( @maxOccurs='1' or not( @maxOccurs ) )">optional (0..1)</xsl:when>
+			<xsl:when test="@minOccurs='0' and @maxOccurs='unbounded'">optional, possibly multiple (0..*)</xsl:when>
+			<xsl:when test="( @minOccurs='1' or not( @minOccurs ) ) and ( @maxOccurs='1' or not( @maxOccurs ) )">mandatory (1)</xsl:when>
+			<xsl:when test="( @minOccurs='1' or not( @minOccurs ) ) and @maxOccurs='unbounded'">mandatory, possibly multiple (1..*)</xsl:when>
+			<xsl:otherwise><xsl:value-of select="@minOccurs"/>..<xsl:value-of select="@maxOccurs"/></xsl:otherwise>
+		</xsl:choose><xsl:text>
+</xsl:text>
+	</xsl:template>
+	
+	<xsl:template match="attribute::*" mode="make-title">
+		<xsl:variable name="element-depth" select="count( ancestor::xs:element )"/>
+		<xsl:variable name="underline-char">
+			<xsl:choose>
+				<xsl:when test="$element-depth = 1">=</xsl:when>
+				<xsl:when test="$element-depth = 2">^</xsl:when>
+				<xsl:when test="$element-depth = 3">-</xsl:when>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:text>
+</xsl:text>
+		<xsl:value-of select="string( . )"/><xsl:text>
+</xsl:text>
+		<xsl:value-of select="my:repeat( $underline-char, string-length( . ) )"/><xsl:text>
+</xsl:text>		
+	</xsl:template>
+	
+	<xsl:template name="make-description">
+		<xsl:variable name="t" select="normalize-space( xs:annotation/xs:documentation )"/>
+		<xsl:if test="$t">
+			<xsl:text>:Description: </xsl:text>
+			<xsl:call-template name="reference-description-footnotes">
+				<xsl:with-param name="t" select="$t"/>
+			</xsl:call-template>
+			<xsl:text>
+</xsl:text>
+		</xsl:if>
+	</xsl:template>
+	
+	<xsl:template name="reference-description-footnotes">
+		<xsl:param name="t"/>
+		<xsl:analyze-string regex="\[\[([^\]]*)\]\]" select="$t">
+			<xsl:matching-substring> [#]_ </xsl:matching-substring>
+			<xsl:non-matching-substring>
+				<xsl:value-of select="." />
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
+	</xsl:template>
+	
+	<xsl:template name="make-footnotes">
+		<xsl:variable name="t" select="normalize-space( xs:annotation/xs:documentation )"/>
+		<xsl:if test="$t">
+			<xsl:call-template name="process-description-footnotes">
+				<xsl:with-param name="t" select="$t"/>
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:text>
+
+</xsl:text>
+	</xsl:template>
+	
+	<xsl:template name="process-description-footnotes">
+		<xsl:param name="t"/>
+		<xsl:analyze-string regex="\[\[([^\]]*)\]\]" select="$t">
+			<xsl:matching-substring><xsl:text>
+
+.. [#] </xsl:text>
+				<xsl:value-of select="regex-group(1)"/>
+			</xsl:matching-substring>
+			<xsl:non-matching-substring>
+			</xsl:non-matching-substring>
+		</xsl:analyze-string>
+	</xsl:template>
+	
 	<xsl:function name="my:repeat">
 		<xsl:param name="str"/>
 		<xsl:param name="cnt"/>

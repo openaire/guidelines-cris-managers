@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Examples of metadata records in OpenAIRE CERIF XML format as OAI-PMH payload. OAI-PMH Set: openaire_cris_services Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1 -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ ../schemas/openaire-cerif-profile.xsd">
+	<responseDate>2018-01-12T14:00:00Z</responseDate>
+	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_services">http://cris.example.org/openaire/connector</request>
+	<ListRecords>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:cfSrv/8123451</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_services</setSpec>
+			</header>
+			<metadata>
+				<Service xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="8123451"><!-- cris.example.org -->
+					<Compatibility xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1</Compatibility>
+					<Name xml:lang="en">cris.example.org</Name>
+					<Description xml:lang="en">An example CRIS that complies with the OpenAIRE Guidelines for CRIS Managers v.1.0.</Description>
+
+					<WebsiteURL>https://cris.example.org/</WebsiteURL>
+					<OAIPMHBaseURL>https://cris.example.org/openaire/connector</OAIPMHBaseURL>
+					<SubjectHeadingsURL>https://cris.example.org/openaire/resources/subject-headings.xml</SubjectHeadingsURL>
+
+					<Owner>
+						<OrgUnit id="312347"><!-- EKT -->
+							<Acronym>EKT</Acronym>
+						</OrgUnit>
+					</Owner>
+				</Service>
+			</metadata>
+		</record>
+	</ListRecords>
+</OAI-PMH>

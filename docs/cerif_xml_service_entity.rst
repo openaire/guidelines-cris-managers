@@ -1,48 +1,95 @@
-.. _c:service
+.. _service:
+
 
 Service
 =======
-:Representation: XML element ``Service``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: 
-:CERIF: the *TODO* entity (``cfSrv``)
+:Examples: `<../../samples/openaire_cerif_xml_example_services.xml>`_
+:Representation: XML element ``Service``; the rest of this section documents children of this element
+:CERIF: the Service entity (`<https://w3id.org/cerif/model#Service>`_)
 
-Identifier
-^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfSrv.cfSrvId``)
+
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the ServiceIdentifier attribute (`<https://w3id.org/cerif/model#Service.ServiceIdentifier>`_)
+
+
+Compatibility
+^^^^^^^^^^^^^
+:Description: OpenAIRE compatibility of the CRIS
+:Use: mandatory, possibly multiple (1..*)
+:Representation: XML element ``Compatibility`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility``
+:CERIF: the Service_Classification (`<https://w3id.org/cerif/model#Service_Classification>`_)
+:Vocabulary: Compatibility of service with the OpenAIRE Guidelines for CRIS Managers
+
+  * **OpenAIRE Guidelines 1.1 compatible CRIS** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1>`_): CRIS compatible with OpenAIRE Guidelines for CRIS managers version 1.1
+  * **OpenAIRE Guidelines 1.0 compatible CRIS** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.0>`_): CRIS compatible with OpenAIRE Guidelines for CRIS managers version 1.0
+
+
 
 Acronym
 ^^^^^^^
+:Description: Acronym of the service
+:Use: optional (0..1)
 :Representation: XML element ``Acronym``
-:Description: 
-:CERIF: the *TODO* attribute (``cfSrv.cfAcro``)
+:CERIF: the Service.Acronym attribute (`<https://w3id.org/cerif/model#Service.Acronym>`_)
+
 
 Name
 ^^^^
-:Representation: XML element ``Name``
-:Description: 
-:CERIF: the *TODO* attribute (``cfSrvName.cfName``)
+:Description: Name of the service
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Name`` as a multilingual string
+:CERIF: the Service.Name attribute (`<https://w3id.org/cerif/model#Service.Name>`_)
+
 
 Identifier
 ^^^^^^^^^^
-:Representation: XML element ``Identifier``
-:Description: An identifier of the service
-:CERIF: the Federated Identifier entity (``cfFedId``)
+:Description: An identifier of this service
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 Description
 ^^^^^^^^^^^
-:Representation: XML element ``Description``
-:Description: 
-:CERIF: the *TODO* attribute (``cfSrvDescr.cfDescr``)
+:Description: Description of the service
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Description`` as a multilingual string
+:CERIF: the Service.Description attribute (`<https://w3id.org/cerif/model#Service.Description>`_)
 
-Keywords
-^^^^^^^^
-:Representation: XML element ``Keywords``
-:Description: 
-:CERIF: the *TODO* attribute (``cfSrvKeyw.cfKeyw``)
+
+WebsiteURL
+^^^^^^^^^^
+:Description: URL of the website of the CRIS
+:Use: mandatory (1)
+:Representation: XML element ``WebsiteURL`` *TODO*
+:CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/ElectronicAddressTypes#Website>`_ semantics
+
+
+OAIPMHBaseURL
+^^^^^^^^^^^^^
+:Description: Base URL for the OAI-PMH protocol endpoint of the CRIS
+:Use: mandatory (1)
+:Representation: XML element ``OAIPMHBaseURL`` *TODO*
+:CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/ElectronicAddressTypes#OAI-PMH_Base>`_ semantics
+
+
+SubjectHeadingsURL
+^^^^^^^^^^^^^^^^^^
+:Description: The URL where the subject classification used by the CRIS can be obtained (using the HTTP GET)
+:Use: mandatory (1)
+:Representation: XML element ``SubjectHeadingsURL`` *TODO*
+:CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/ElectronicAddressTypes#SubjectHeadings>`_ semantics
+
+
+Owner
+^^^^^
+:Description: The owner of the CRIS: The organisation the research of which the CRIS documents
+:Use: mandatory, possibly multiple (1..*)
+:Representation: XML element ``Owner`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the OrganisationUnit_Service linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Service>`_) with the `<https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner>`_ semantics
 
 
 

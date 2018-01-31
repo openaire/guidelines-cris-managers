@@ -20,18 +20,18 @@
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">Linking Data and Publications: Towards a Cross-Disciplinary Approach</Title>
 					<PublishedIn>
-						<PublishingChannel id="894490"><!-- Int J Digital Curation -->
+						<Publication id="894490"><!-- Int J Digital Curation -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 							<Title xml:lang="en">The International Journal of Digital Curation</Title>
-							<Type scheme="https://www.openaire.eu/cerif-profile/vocab/PublishingChannelTypes#">Journal</Type>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ISSN">1746-8256</Identifier>
-						</PublishingChannel>
+							<ISSN>1746-8256</ISSN>
+						</Publication>
 					</PublishedIn>
 					<PublicationDate>2013-06-14</PublicationDate>
 					<Volume>8</Volume>
 					<Issue>1</Issue>
 					<StartPage>244</StartPage>
 					<EndPage>254</EndPage>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.2218/ijdc.v8i1.257</Identifier>
+					<DOI>10.2218/ijdc.v8i1.257</DOI>
 					<Authors>
 						<Author>
 							<Person id="2123455"><!-- Maarten Hoogerwerf -->
@@ -71,7 +71,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
+								<ORCID>http://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 						</Author>
 						<Author>
@@ -99,7 +99,6 @@
 							</Person>
 						</Author>
 					</Authors>
-					<Access endDate="2017-05-31" xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!-- embargoed --></Access>
 					<License scheme="https://www.openaire.eu/cerif-profile/vocab/LicenseTypes#">CCAttribution(CCBY)</License>
 					<Abstract xml:lang="en">In this paper, we tackle the challenge of linking scholarly information in multi-disciplinary research infrastructures. There is a trend towards linking
 						publications with research data and other information, but, as it is still emerging, this is handled differently by various initiatives and disciplines. For OpenAIRE, a European
@@ -128,6 +127,8 @@
     					</Project>
 					</OriginatesFrom>
 
+					<Access endDate="2017-05-31" xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!-- embargoed --></Access>
+
 					<Classification scheme="685b398c-6246-4aab-9507-7f533e4085ae">en<!-- English from OpenAIRE Languages --></Classification>
 
 				</Publication>
@@ -144,11 +145,11 @@
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
-						<PublishingChannel id="894490"><!-- Int J Digital Curation -->
+						<Publication id="894490"><!-- Int J Digital Curation -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 							<Title xml:lang="en">The International Journal of Digital Curation</Title>
-							<Type scheme="https://www.openaire.eu/cerif-profile/vocab/PublishingChannelTypes#">Journal</Type>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ISSN">1746-8256</Identifier>
-						</PublishingChannel>
+							<ISSN>1746-8256</ISSN>
+						</Publication>
 					</PublishedIn>
 					<Editors>
 						<Editor>
@@ -157,7 +158,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
+								<ORCID>http://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 						</Editor>
 					</Editors>
@@ -165,19 +166,19 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+	                        	<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
-                        	<EndDate>2014-05-31</EndDate>
-                        	<Funders>
-                        		<Funder>
-                        			<OrgUnit id="310001"><!-- European Commission -->
+    		                    	<EndDate>2014-05-31</EndDate>
+        		                	<Funders>
+            		            		<Funder>
+                		        			<OrgUnit id="310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
 				                        <Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-                        			</OrgUnit>
-                        		</Funder>
-                        	</Funders>
-    					</Project>
+                    		    			</OrgUnit>
+                        			</Funder>
+                        		</Funders>
+    						</Project>
 					</OriginatesFrom>
 				</Publication>
 			</metadata>
@@ -196,7 +197,7 @@
 					<Volume>343</Volume>
 					<StartPage>168</StartPage>
 					<EndPage>180</EndPage>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.1007/978-3-642-35233-1_18</Identifier>
+					<DOI>10.1007/978-3-642-35233-1_18</DOI>
 					<Authors>
 						<Author>
 							<Person id="2123452"><!-- Paolo Manghi -->
@@ -204,7 +205,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
+								<ORCID>http://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312346"><!-- CNR -->
@@ -218,7 +219,7 @@
 									<FamilyNames>Houssos</FamilyNames>
 									<FirstNames>Nikos</FirstNames>
 								</PersonName>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0002-5277-285X</Identifier>
+								<ORCID>http://orcid.org/0000-0002-5277-285X</ORCID>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312347"><!-- EKT -->
@@ -240,7 +241,7 @@
 									<FamilyNames>Jörg</FamilyNames>
 									<FirstNames>Brigitte</FirstNames>
 								</PersonName>
-								<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7941-8108</Identifier>
+								<ORCID>http://orcid.org/0000-0001-7941-8108</ORCID>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312348"><!-- UKOLN -->
@@ -296,10 +297,10 @@
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Title>
 					<PublishedIn>
-						<PublishingChannel id="893204"><!-- Evolution -->
+						<Publication id="893204"><!-- Evolution -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 							<Title xml:lang="en">Evolution</Title>
-							<Type scheme="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640</Type>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#EISSN">1558-5646</Identifier>
+							<ISSN>1558-5646</ISSN>
 							<Publishers>
 								<Publisher>
 									<OrgUnit>
@@ -307,13 +308,13 @@
 									</OrgUnit>
 								</Publisher>
 							</Publishers>
-						</PublishingChannel>
+						</Publication>
 					</PublishedIn>
 					<Volume>66</Volume>
 					<Issue>5</Issue>
 					<StartPage>1474</StartPage>
 					<EndPage>1489</EndPage>
-					<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.1111/J.1558-5646.2011.01539.X</Identifier>
+					<DOI>10.1111/J.1558-5646.2011.01539.X</DOI>
 					<Authors>
 						<Author>
 							<Person>
@@ -394,14 +395,14 @@
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 							<VersionInfo xml:lang="en">1</VersionInfo>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G</Identifier>
+							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 							<Parts>
 								<Part>
 									<Product id="729481">
 										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 										<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
 										<VersionInfo xml:lang="en">1</VersionInfo>
-										<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/1</Identifier>
+										<DOI>10.5061/DRYAD.4GH6HF5G/1</DOI>
 									</Product>
 								</Part>
 								<Part>
@@ -409,7 +410,7 @@
 										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
 										<Name xml:lang="en">Base script used for simulations</Name>
 										<VersionInfo xml:lang="en">1</VersionInfo>
-										<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/2</Identifier>
+										<DOI>10.5061/DRYAD.4GH6HF5G/2</DOI>
 									</Product>
 								</Part>
 								<Part>
@@ -417,7 +418,7 @@
 										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 										<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
 										<VersionInfo xml:lang="en">1</VersionInfo>
-										<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#DOI">10.5061/DRYAD.4GH6HF5G/3</Identifier>
+										<DOI>10.5061/DRYAD.4GH6HF5G/3</DOI>
 									</Product>
 								</Part>
 							</Parts>

@@ -17,25 +17,14 @@ We wish to acknowledge the following contributors and also those who provided fe
 
 **Editors**
 
-- Nikos Houssos, National Documentation Centre (EKT)/NHRF, Greece
-- Brigitte Jörg, Jisc Innovation Support Center, UKOLN, University of Bath, United Kingdom 
 - Jan Dvořák, Charles University in Prague, Czech Republic
-
-
-**Experts & Reviewers**
-
-An earlier version of these guidelines was kindly reviewed by:
-
-- Paolo Manghi, ISTI-CNR, Italy
-- Mikael K. Elbæk, Technical University of Denmark, Denmark
-- Keith Jeffery, Keith G Jeffery Consultants, United Kingdom
-- Anne Asserson, University of Bergen, Norway
-- Teemu Kemppainen, CSC - IT Centre for Science, Finland
-- Thomas Vestdam, Elsevier, Denmark
-- Thorsten Höllrigl, Thomson Reuters, Germany
+- Andrea Bollini, 4Science, Italy
+- Laurent Rémy, IS4RI, France
+- Jochen Schirrwagen, Bielefeld University, Germany
 
 Versions
 ^^^^^^^^
+* 1.1 draft, January 2018
 * 1.0 December 2014
 
   * final document

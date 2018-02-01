@@ -1,108 +1,226 @@
-.. _c:project
+.. _project:
+
 
 Project
 =======
-:Representation: XML element ``Project``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: 
-:CERIF: the *TODO* entity (``cfProj``)
+:Description: A temporary endeavor undertaken to create a unique product, service or result. Source: the Project Management Institute, https://www.pmi.org/about/learn-about-pmi/what-is-project-management In the research information domain, one typically tracks: (1) research projects, where the result is an addition to the body of knowledge of the mankind, (2) technology development projects, where the result is a particular technology or product, (3) innovation projects, where the result is an improvement of a product or process, and (4) projects that create or enhance infrastructure for research, technology development or innovation. Depending on the scope one can also track finer levels of granularity: stages, work packages, sometimes even down to individual tasks. All such activities are also modelled using the Project entity and linked using the recursive link relationship. The Project entity only captures details of the project scope and plan. Information about the resources needed to execute the project such as the funding (i.e., the grants received), the people and organisations involved, the supporting infrastructures, the outputs produced, etc. is contained in separate entities (the Funding entity, the Person entity, the OrgUnit entity, the infrastructure entities, the result entities respectively) and is linked to the Project.
+:Examples: `<samples/openaire_cerif_xml_example_projects.xml>`_
+:Representation: XML element ``Project``; the rest of this section documents children of this element
+:CERIF: the Project entity (`<https://w3id.org/cerif/model#Project>`_)
 
-Identifier
-^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfProj.cfProjId``)
+
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the ProjectIdentifier attribute (`<https://w3id.org/cerif/model#Project.ProjectIdentifier>`_)
+
 
 Type
 ^^^^
-:Representation: XML element ``Type`` with embedded XML element
 :Description: The type of the project
-:CERIF: the *TODO* linking entity (``cfProj_Class``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Type`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the Project_Classification (`<https://w3id.org/cerif/model#Project_Classification>`_)
+
 
 Acronym
 ^^^^^^^
-:Representation: XML element ``Acronym``
 :Description: The acronym of the project
-:CERIF: the *TODO* attribute (``cfProj.cfAcro``)
+:Use: optional (0..1)
+:Representation: XML element ``Acronym``
+:CERIF: the Project.Acronym attribute (`<https://w3id.org/cerif/model#Project.Acronym>`_)
+
+
 
 Title
 ^^^^^
-:Representation: XML element ``Title``
 :Description: The title of the project
-:CERIF: the *TODO* attribute (``cfProjTitle.cfTitle``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Title`` as a multilingual string
+:CERIF: the Project.Title attribute (`<https://w3id.org/cerif/model#Project.Title>`_)
+
+
 
 Identifier
 ^^^^^^^^^^
-:Representation: XML element ``Identifier``
 :Description: An identifier of the project
-:CERIF: the Federated Identifier entity (``cfFedId``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
 
 StartDate
 ^^^^^^^^^
-:Representation: XML element ``StartDate``
 :Description: The start date of the project
-:CERIF: the *TODO* attribute (``cfProj.cfStartDate``)
+:Use: optional (0..1)
+:Representation: XML element ``StartDate``
+:CERIF: the Project.StartDate attribute (`<https://w3id.org/cerif/model#Project.StartDate>`_)
+
+
 
 EndDate
 ^^^^^^^
-:Representation: XML element ``EndDate``
 :Description: The end date of the project
-:CERIF: the *TODO* attribute (``cfProj.cfEndDate``)
+:Use: optional (0..1)
+:Representation: XML element ``EndDate``
+:CERIF: the Project.EndDate attribute (`<https://w3id.org/cerif/model#Project.EndDate>`_)
 
-Funders
-^^^^^^^
-:Representation: XML element ``Funders`` with embedded XML elements ``Funder`` that can contain an embedded person or organisation unit structure
-:Description: The funders who provide funding to the project
-:CERIF: *TODO*
+
 
 Consortium
 ^^^^^^^^^^
-:Representation: XML element ``Consortium`` with embedded XML elements ``Member`` that can contain an embedded person or organisation unit structure
 :Description: The consortium of the project: the organisations (persons) who are contractually bound to do the work in the project
-:CERIF: *TODO*
+:Use: optional (0..1)
+:Representation: XML element ``Consortium`` with unordered embedded XML elements ``Coordinator`` that can contain an embedded organisation unit or person or ``Partner`` that can contain an embedded organisation unit or person or ``Contractor`` that can contain an embedded organisation unit or person or ``InKindContributor`` that can contain an embedded organisation unit or person or ``Member`` that can contain an embedded organisation unit or person
+
+
+
+Coordinator
+-----------
+:Description: Project coordinator
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Coordinator`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Coordinator>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Coordinator>`_ semantics
+
+
+Partner
+-------
+:Description: Project partner
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Partner`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Partner>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Partner>`_ semantics
+
+
+Contractor
+----------
+:Description: Project contractor
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Contractor`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Contractor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Contractor>`_ semantics
+
+
+InKindContributor
+-----------------
+:Description: Project in kind contributor
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``InKindContributor`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InKindContributor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#InKindContributor>`_ semantics
+
+
+Member
+------
+:Description: A member of the project consortium
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Member`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#ConsortiumMember>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#ConsortiumMember>`_ semantics
+
 
 Team
 ^^^^
-:Representation: XML element ``Team`` with embedded XML elements ``PrincipalInvestigator`` or ``Contact`` or ``Member``
 :Description: The project team: the persons who carry out the work in the project, typically as a part of their job at the organisations from the consortium
-:CERIF: *TODO*
+:Use: optional (0..1)
+:Representation: XML element ``Team`` with unordered embedded XML elements ``PrincipalInvestigator`` or ``Contact`` or ``Member``
+
+
+
+PrincipalInvestigator
+---------------------
+:Description: The principal investigator: the person responsible for the whole project, the head of the project team
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``PrincipalInvestigator`` *TODO*
+:CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#PrincipalInvestigator>`_ semantics
+
+
+Contact
+-------
+:Description: A person to contact in matters connected with her/his organisations' participation in the project
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Contact`` *TODO*
+:CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#OrganisationContact>`_ semantics
+
+
+Member
+------
+:Description: A member of the project team
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Member`` *TODO*
+:CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#TeamMember>`_ semantics
+
+
+Funded
+^^^^^^
+:Description: Information about funding of this project
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Funded`` with unordered embedded XML elements ``By`` that can contain an embedded organisation unit or person or ``From`` or ``As``
+
+
+
+By
+--
+:Description: The funder of the project
+:Use: optional (0..1)
+:Representation: XML element ``By`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Funder>`_ semantics
+
+
+From
+----
+:Description: The funding programme from which the project was funded
+:Use: optional (0..1)
+:Representation: XML element ``From`` with embedded XML element ``Funding``
+:CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
+
+
+As
+--
+:Description: The specific funding device (grant, award, contract) for the project
+:Use: optional (0..1)
+:Representation: XML element ``As`` with embedded XML element ``Funding``
+:CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
+
 
 Subject
 ^^^^^^^
-:Representation: XML element ``Subject`` with embedded XML element
 :Description: The subject classification(s) of the project
-:CERIF: the *TODO* linking entity (``cfProj_Class``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Subject`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the Project_Classification (`<https://w3id.org/cerif/model#Project_Classification>`_)
+
 
 Keyword
 ^^^^^^^
-:Representation: XML element ``Keyword``
-:Description: The keywords of the project
-:CERIF: the *TODO* attribute (``cfProjKeyw.cfKeyw``)
+:Description: A single keyword or key expression that characterize the project. Please repeat to serialize separate keywords or key expressions.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Keyword`` as a multilingual string
+:CERIF: the Project.Keywords attribute (`<https://w3id.org/cerif/model#Project.Keywords>`_)
 
-Costs
-^^^^^
-:Representation: XML element ``Costs`` with embedded XML elements ``Cost``
-:Description: The costs of the project and the funding that covers them
-:CERIF: *TODO*
+
 
 Abstract
 ^^^^^^^^
-:Representation: XML element ``Abstract``
 :Description: The abstract of the project
-:CERIF: the *TODO* attribute (``cfProjAbstr.cfAbstr``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Abstract``
+:CERIF: the Project.Abstract attribute (`<https://w3id.org/cerif/model#Project.Abstract>`_)
+
+
 
 Status
 ^^^^^^
-:Representation: XML element ``Status`` with embedded XML element
 :Description: The status of the project
-:CERIF: the *TODO* linking entity (``cfProj_Class``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Status`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the Project_Classification (`<https://w3id.org/cerif/model#Project_Classification>`_)
 
-Originator
+
+Originated
 ^^^^^^^^^^
-:Representation: XML element ``Originator`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: The research outputs this project has contributed to
-:CERIF: the *TODO* linking entity (``cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)``)
+:Description: The research outputs this project has led to
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Originated`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the Project_ResultProduct linking entity (`<https://w3id.org/cerif/model#Project_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics
 
 
 

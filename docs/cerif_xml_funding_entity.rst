@@ -1,54 +1,121 @@
-.. _c:funding
+.. _funding:
+
 
 Funding
 =======
-:Representation: XML element ``Funding``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: 
-:CERIF: the *TODO* entity (``cfFund``)
+:Representation: XML element ``Funding``; the rest of this section documents children of this element
+:CERIF: the Funding entity (`<https://w3id.org/cerif/model#Funding>`_)
 
-Identifier
-^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfFund.cfFundId``)
+
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the FundingIdentifier attribute (`<https://w3id.org/cerif/model#Funding.FundingIdentifier>`_)
+
 
 Type
 ^^^^
-:Representation: XML element ``Type`` with embedded XML element
 :Description: The type of the funding
-:CERIF: the *TODO* linking entity (``cfFund_Class``)
+:Use: mandatory (1)
+:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types``
+:CERIF: the Funding_Classification (`<https://w3id.org/cerif/model#Funding_Classification>`_)
+:Vocabulary: Types of funding for the OpenAIRE Guidelines for CRIS Managers
+
+  * **Funding Programme** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme>`_): A funding programme or a similar scheme that funds some number of proposals. Funding programmes can be broken down into sub-programmes.
+  * **Call** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Call>`_): Call for proposals: a specific campaign for the funder to solicit proposals from interested researchers and institutions.
+  * **Tender** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Tender>`_): Tender for services or deliveries: a specific campaign for the funder to solicit offers for services or deliveries.
+  * **Gift** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Gift>`_): A donation connected with specific terms and conditions.
+  * **Internal Funding** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#InternalFunding>`_): Internal funds used to amend or replace external funding.
+  * **Contract** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract>`_): 
+  * **Award** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Award>`_): 
+  * **Grant** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Grant>`_): 
+
+
 
 Acronym
 ^^^^^^^
-:Representation: XML element ``Acronym``
 :Description: The acronym of the funding
-:CERIF: the *TODO* attribute (``cfFund.cfAcro``)
+:Use: optional (0..1)
+:Representation: XML element ``Acronym``
+:CERIF: the Funding.Acronym attribute (`<https://w3id.org/cerif/model#Funding.Acronym>`_)
+
+
 
 Name
 ^^^^
-:Representation: XML element ``Name``
 :Description: The name of the funding
-:CERIF: the *TODO* attribute (``cfFundName.cfName``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Name`` as a multilingual string
+:CERIF: the Funding.Name attribute (`<https://w3id.org/cerif/model#Funding.Name>`_)
+
+
 
 Amount
 ^^^^^^
+:Description: The amount of the funding and its currency
+:Use: optional (0..1)
 :Representation: XML element ``Amount``
-:Description: The amount of the funding
-:CERIF: the *TODO* attribute (``cfFund.cfAmount cfFund.cfCurrCode``)
+:CERIF: the Funding.Amount https://w3id.org/cerif/model#Funding.CurrencyCode attribute (`<https://w3id.org/cerif/model#Funding.Amount https://w3id.org/cerif/model#Funding.CurrencyCode>`_)
+
+
 
 Description
 ^^^^^^^^^^^
-:Representation: XML element ``Description``
 :Description: A description of the funding
-:CERIF: the *TODO* attribute (``cfFundDescr.cfDescr``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Description`` as a multilingual string
+:CERIF: the Funding.Description attribute (`<https://w3id.org/cerif/model#Funding.Description>`_)
 
-Keywords
+
+
+Keyword
+^^^^^^^
+:Description: A single keyword or key expression. Please repeat to serialize separate keywords or key expressions.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Keyword`` as a multilingual string
+:CERIF: the Funding.Keywords attribute (`<https://w3id.org/cerif/model#Funding.Keywords>`_)
+
+
+
+Funder
+^^^^^^
+:Description: The funder or funders
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Funder`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the OrganisationUnit_Funding linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Funding>`_) with the `<https://w3id.org/cerif/vocab/OrganisationFundingEngagements#Funder>`_ semantics
+
+
+PartOf
+^^^^^^
+:Description: Chain up to the larger funding that encompasses this funding
+:Use: optional (0..1)
+:Representation: XML element ``PartOf`` with embedded XML element ``Funding``
+:CERIF: the Funding_Funding linking entity (`<https://w3id.org/cerif/model#Funding_Funding>`_) with the `<https://w3id.org/cerif/vocab/Inter-­FundingRelations#Part>`_ semantics (direction :1)
+
+
+Supports
 ^^^^^^^^
-:Representation: XML element ``Keywords``
-:Description: Keywords tbat characterize the funding
-:CERIF: the *TODO* attribute (``cfFundKeyw.cfKeyw``)
+:Description: A project supported by this funding
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Supports`` with embedded XML element ``Project``
+:CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
+
+
+Originated
+^^^^^^^^^^
+:Description: The research outputs this funding has led to
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Originated`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultPublication_Funding linking entity (`<https://w3id.org/cerif/model#ResultPublication_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics; the ResultProduct_Funding linking entity (`<https://w3id.org/cerif/model#ResultProduct_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
+
+
+Duration
+^^^^^^^^
+:Description: Duration of the funding
+:Use: optional (0..1)
+:Representation: XML element ``Duration`` *TODO*
+:CERIF: the Funding_Classification linking entity (`<https://w3id.org/cerif/model#Funding_Classification>`_) with the `<https://w3id.org/cerif/vocab/Durations#FundingDuration>`_ semantics
 
 
 

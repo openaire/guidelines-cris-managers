@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../../git/CERIF-TG-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+	<xs:annotation>
+		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
+			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
+			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
+		</xs:documentation>
+	</xs:annotation>
+	
+	<TargetNamespace uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+	<Name>OpenAIRE Guidelines for CRIS Managers 1.1</Name>
+	<Description>The definition of the CERIF profile for the OpenAIRE Guidelines for CRIS Managers 1.1</Description>
+	<Entities>
+
+		<Entity uri="https://w3id.org/cerif/model#Service" leaveOut="Keyword">
+			<xs:annotation>
+				<xs:documentation>CRIS compatible with the OpenAIRE Guidelines for CRIS Managers</xs:documentation>
+			</xs:annotation>
+			<Classification kind="Type" schema="vocabularies/openaire_service_compatibilities.xsd" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>OpenAIRE compatibility of the CRIS</xs:documentation>
+				</xs:annotation>
+			</Classification>
+			<xs:element name="WebsiteURL" type="cfString__Type" minOccurs="0" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#Website)">
+				<xs:annotation>
+					<xs:documentation>URL of the website of the CRIS</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OAIPMHBaseURL" type="cfString__Type" minOccurs="0" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#OAI-PMH_Base)">
+				<xs:annotation>
+					<xs:documentation>Base URL for the OAI-PMH protocol endpoint of the CRIS</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SubjectHeadingsURL" type="cfString__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#SubjectHeadings)">
+				<xs:annotation>
+					<xs:documentation>The URL where the subject classification used by the CRIS can be obtained (using the HTTP GET)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Owner" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Service(https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner)">
+				<xs:annotation>
+					<xs:documentation>The owner of the CRIS: The organisation the research of which the CRIS documents</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Person" leaveOut="Type">
+			<Identifier name="ORCID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID"/>
+		</Entity>
+		<Entity uri="https://w3id.org/cerif/model#PersonName">
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#OrganisationUnit">
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#ElectronicAddress">
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Project" leaveOut="Costs Funders">
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Funding">
+			<Classification kind="Type" schema="vocabularies/openaire_funding_types.xsd" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The type of the funding</xs:documentation>
+				</xs:annotation>
+			</Classification>
+			<xs:element name="Duration" minOccurs="0" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/Durations#FundingDuration)" type="cfLink__BaseType">
+				<xs:annotation>
+					<xs:documentation>Duration of the funding</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages">
+			<Classification kind="Type" schema="vocabularies/coar_publication_types.xsd" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The type of the publication</xs:documentation>
+				</xs:annotation>
+			</Classification>
+			<Classification kind="Access" schema="vocabularies/coar_accessrights.xsd" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The type of the publication</xs:documentation>
+				</xs:annotation>
+			</Classification>
+			<Identifier name="DOI" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DOI"/>
+			<Identifier name="Handle" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#Handle"/>
+			<Identifier name="PMCID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#PMCID"/>
+			<Identifier name="ISI-Number" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISI-Number"/>
+			<Identifier name="SCP-Number" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#SCP-Number"/>
+			<Identifier name="ISSN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISSN"/>
+			<Identifier name="ISBN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISBN"/>
+			<Identifier name="URL" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URL"/>
+			<Identifier name="URN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URN"/>
+			<Link name="PresentedAt" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented)" target="Event">
+				<xs:annotation>
+					<xs:documentation>The event where this publication was presented. 
+						[[Note: Video recordings of conference presentations are stored as alternative representations of the primary object: the conference paper. It would be unneccessarily complex to represent them as separate, linked Products.]]</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="OutputFrom" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Output)" target="Event">
+				<xs:annotation>
+					<xs:documentation>This publication contains the proceedings from the linked event</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="Coverage" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage)" target="Event">
+				<xs:annotation>
+					<xs:documentation>The event that is covered by this publication (e.g. a report about the event)</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
+				<xs:annotation>
+					<xs:documentation>Result outputs that are referenced by this publication</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="ReferencedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2" target="ResearchOutput__SubstitutionGroupHead">
+				<xs:annotation>
+					<xs:documentation>Result outputs that reference this publication</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<xs:element xmlns="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="Access">
+				<xs:annotation>
+					<xs:documentation>The open access type of the publication</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+ 		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName">
+			<Classification kind="Type" schema="vocabularies/coar_product_types.xsd" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The type of the resulting product (other than publication or patent)</xs:documentation>
+				</xs:annotation>
+			</Classification>
+			<Identifier name="ARK" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ARK"/>
+			<Identifier name="DOI" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DOI"/>
+			<Identifier name="Handle" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#Handle"/>
+			<Identifier name="URL" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URL"/>
+			<Identifier name="URN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URN"/>
+			<Link name="GeneratedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultProduct_Equipment(https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation)" target="Equipment">
+				<xs:annotation>
+					<xs:documentation>The equipment that generated this product</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="PresentedAt" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultProduct_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented)" target="Event">
+				<xs:annotation>
+					<xs:documentation>The event where this product was presented</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="Coverage" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultProduct_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage)" target="Event">
+				<xs:annotation>
+					<xs:documentation>The event that is covered by this product (e.g. a video or audio interview about the event)</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
+				<xs:annotation>
+					<xs:documentation>Result outputs that are referenced by this product</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="ReferencedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2" target="ResearchOutput__SubstitutionGroupHead">
+				<xs:annotation>
+					<xs:documentation>Result outputs that reference this product</xs:documentation>
+				</xs:annotation>
+			</Link>
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#ResultPatent">
+			<Classification kind="Type" schema="vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>
+				</xs:annotation>
+			</Classification>
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Equipment" leaveOut="Keyword">
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Event">
+			<Link name="Organizer" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Event(https://w3id.org/cerif/vocab/EventRelationshipKinds#Organizer) https://w3id.org/cerif/model#Project_Event(https://w3id.org/cerif/vocab/EventRelationshipKinds#Organizer)" target="OrgUnit Project">
+				<xs:annotation>
+					<xs:documentation>The organizer of the event</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="Sponsor" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Event(https://w3id.org/cerif/vocab/EventRelationshipKinds#Sponsor) https://w3id.org/cerif/model#Project_Event(https://w3id.org/cerif/vocab/EventRelationshipKinds#Sponsor)" target="OrgUnit Project">
+				<xs:annotation>
+					<xs:documentation>The sponsor of the event</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="Partner" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Event(https://w3id.org/cerif/vocab/EventRelationshipKinds#Partner) https://w3id.org/cerif/model#Project_Event(https://w3id.org/cerif/vocab/EventRelationshipKinds#Partner)" target="OrgUnit Project">
+				<xs:annotation>
+					<xs:documentation>The partner of the event</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="OutputIn" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Output)" target="Publication">
+				<xs:annotation>
+					<xs:documentation>The publication that contains the proceedings from this event</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="Presented" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented) https://w3id.org/cerif/model#ResultProduct_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented) https://w3id.org/cerif/model#ResultPatent_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented)" target="ResearchOutput__SubstitutionGroupHead">
+				<xs:annotation>
+					<xs:documentation>The research output that was presented at this event</xs:documentation>
+				</xs:annotation>
+			</Link>
+			<Link name="CoveredIn" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage) https://w3id.org/cerif/model#ResultProduct_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage) https://w3id.org/cerif/model#ResultPatent_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage)" target="ResearchOutput__SubstitutionGroupHead">
+				<xs:annotation>
+					<xs:documentation>The research output (e.g. a report or a video) that covered this event</xs:documentation>
+				</xs:annotation>
+			</Link>
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Classification">
+		</Entity>
+		<Entity uri="https://w3id.org/cerif/model#ClassificationScheme">
+		</Entity>
+
+	</Entities>
+			<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
+</CERIF-profile>

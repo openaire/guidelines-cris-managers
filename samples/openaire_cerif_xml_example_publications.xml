@@ -102,24 +102,27 @@
 						differences. The results show the importance of stable and unique identifiers, and support a “by reference” approach of interlinking research results. This approach allows discipline-specific
 						research information to be managed independently in distributed systems and avoids redundant maintenance. Furthermore, it allows these disciplinary systems to manage the specialized structures
 						of their contents themselves.</Abstract>
-						
+
 					<OriginatesFrom>
 						<Project id="112345"><!-- OpenAIREplus -->
-		                    <Acronym>OpenAIREplus</Acronym>
-	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
-						    <StartDate>2011-12-01</StartDate>
-                        	<EndDate>2014-05-31</EndDate>
-                        	<Funders>
-                        		<Funder>
-                        			<OrgUnit id="310001"><!-- European Commission -->
-				                        <Acronym>EC</Acronym>
-				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-                        			</OrgUnit>
-                        		</Funder>
-                        	</Funders>
-    					</Project>
+							<Acronym>OpenAIREplus</Acronym>
+							<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+							<StartDate>2011-12-01</StartDate>
+							<EndDate>2014-05-31</EndDate>
+							<Funded>
+								<By>
+									<OrgUnit id="310001">
+										<Acronym>EC</Acronym>
+										<Name xml:lang="en">European Commission</Name>
+										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+									</OrgUnit>
+								</By>
+								<From>
+									<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
+								</From>
+							</Funded>
+						</Project>
 					</OriginatesFrom>
 
 					<Access endDate="2017-05-31" xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!-- embargoed --></Access>
@@ -181,15 +184,18 @@
 	                        	<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
     		                    	<EndDate>2014-05-31</EndDate>
-        		                	<Funders>
-            		            		<Funder>
-                		        			<OrgUnit id="310001"><!-- European Commission -->
-				                        <Acronym>EC</Acronym>
-				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-                    		    			</OrgUnit>
-                        			</Funder>
-                        		</Funders>
+							<Funded>
+								<By>
+									<OrgUnit id="310001">
+										<Acronym>EC</Acronym>
+							            <Name xml:lang="en">European Commission</Name>
+										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+			                			</OrgUnit>
+								</By>
+								<From>
+									<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
+								</From>
+							</Funded>
     						</Project>
 					</OriginatesFrom>
 				</Publication>
@@ -276,21 +282,24 @@
 
 					<OriginatesFrom>
 						<Project id="112345"><!-- OpenAIREplus -->
-		                    <Acronym>OpenAIREplus</Acronym>
-	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
-						    <StartDate>2011-12-01</StartDate>
-                        	<EndDate>2014-05-31</EndDate>
-                        	<Funders>
-                        		<Funder>
-                        			<OrgUnit id="310001"><!-- European Commission -->
-				                        <Acronym>EC</Acronym>
-				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-                        			</OrgUnit>
-                        		</Funder>
-                        	</Funders>
-    					</Project>
+							<Acronym>OpenAIREplus</Acronym>
+							<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
+							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+							<StartDate>2011-12-01</StartDate>
+							<EndDate>2014-05-31</EndDate>
+							<Funded>
+								<By>
+									<OrgUnit id="310001">
+										<Acronym>EC</Acronym>
+										<Name xml:lang="en">European Commission</Name>
+										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+									</OrgUnit>
+								</By>
+								<From>
+									<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
+								</From>
+							</Funded>
+						</Project>
 					</OriginatesFrom>
 
 					<Classification scheme="685b398c-6246-4aab-9507-7f533e4085ae">en<!-- English from OpenAIRE Languages --></Classification>

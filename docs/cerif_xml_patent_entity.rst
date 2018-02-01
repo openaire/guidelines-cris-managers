@@ -1,117 +1,119 @@
-.. _c:patent
+.. _patent:
+
 
 Patent
 ======
-:Representation: XML element ``Patent``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: 
-:CERIF: the *TODO* entity (``cfResPat``)
+:Description: A set of exclusive rights granted by a sovereign state to an inventor or assignee for a limited period of time in exchange for detailed public disclosure of an invention. Source: Wikipedia
+:Representation: XML element ``Patent``; the rest of this section documents children of this element
+:CERIF: the ResultPatent entity (`<https://w3id.org/cerif/model#ResultPatent>`_)
 
-Identifier
-^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfResPat.cfResPatId``)
+
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the ResultPatentIdentifier attribute (`<https://w3id.org/cerif/model#ResultPatent.ResultPatentIdentifier>`_)
+
 
 Type
 ^^^^
+:Description: The type of the patent (currently just one option)
+:Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types``
-:Description: 
-:CERIF: the *TODO* classification (``cfResPat_Class``)
+:CERIF: the ResultPatent_Classification (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_)
 :Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).
+
+  * **patent** (`<http://purl.org/coar/resource_type/c_15cd>`_): A patent or patent application.
 
 
 
 Title
 ^^^^^
-:Representation: XML element ``Title``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPatTitle.cfTitle``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Title`` as a multilingual string
+:CERIF: the ResultPatent.Title attribute (`<https://w3id.org/cerif/model#ResultPatent.Title>`_)
+
+
 
 VersionInfo
 ^^^^^^^^^^^
-:Representation: XML element ``VersionInfo``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPatVersInfo.cfVersInfo``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``VersionInfo`` as a multilingual string
+:CERIF: the ResultPatent.VersionInfo attribute (`<https://w3id.org/cerif/model#ResultPatent.VersionInfo>`_)
+
+
 
 RegistrationDate
 ^^^^^^^^^^^^^^^^
+:Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPat.cfRegistrDate``)
+:CERIF: the ResultPatent.RegistrationDate attribute (`<https://w3id.org/cerif/model#ResultPatent.RegistrationDate>`_)
+
+
 
 ApprovalDate
 ^^^^^^^^^^^^
+:Use: optional (0..1)
 :Representation: XML element ``ApprovalDate``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPat.cfApprovDate``)
+:CERIF: the ResultPatent.ApprovalDate attribute (`<https://w3id.org/cerif/model#ResultPatent.ApprovalDate>`_)
+
+
 
 CountryCode
 ^^^^^^^^^^^
+:Use: optional (0..1)
 :Representation: XML element ``CountryCode``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPat.cfCountryCode``)
+:CERIF: the ResultPatent.CountryCode attribute (`<https://w3id.org/cerif/model#ResultPatent.CountryCode>`_)
+
+
 
 PatentNumber
 ^^^^^^^^^^^^
+:Use: optional (0..1)
 :Representation: XML element ``PatentNumber``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPat.cfPatentNum``)
+:CERIF: the ResultPatent.PatentNumber attribute (`<https://w3id.org/cerif/model#ResultPatent.PatentNumber>`_)
+
+
 
 Identifier
 ^^^^^^^^^^
-:Representation: XML element ``Identifier``
-:Description: 
-:CERIF: the Federated Identifier entity (``cfFedId``)
+:Description: An identifier of this patent
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
 
 Abstract
 ^^^^^^^^
-:Representation: XML element ``Abstract``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPatAbstr.cfAbstr``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Abstract`` as a multilingual string
+:CERIF: the ResultPatent.Abstract attribute (`<https://w3id.org/cerif/model#ResultPatent.Abstract>`_)
 
-Keywords
-^^^^^^^^
-:Representation: XML element ``Keywords``
-:Description: 
-:CERIF: the *TODO* attribute (``cfResPatKeyw.cfKeyw``)
 
-CitedBy
+
+Subject
 ^^^^^^^
-:Representation: XML element ``CitedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):2``)
+:Description: The subject of the patent from a classification
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Subject`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the ResultPatent_Classification (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_)
 
-Cites
-^^^^^
-:Representation: XML element ``Cites`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Citation):1``)
 
-SupplementTo
-^^^^^^^^^^^^
-:Representation: XML element ``SupplementTo`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):2``)
+Keyword
+^^^^^^^
+:Description: A single keyword or key expression. Please repeat to serialize separate keywords or key expressions.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Keyword`` as a multilingual string
+:CERIF: the ResultPatent.Keywords attribute (`<https://w3id.org/cerif/model#ResultPatent.Keywords>`_)
 
-SupplementedBy
+
+
+OriginatesFrom
 ^^^^^^^^^^^^^^
-:Representation: XML element ``SupplementedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Supplement):1``)
-
-References
-^^^^^^^^^^
-:Representation: XML element ``References`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):2``)
-
-ReferencedBy
-^^^^^^^^^^^^
-:Representation: XML element ``ReferencedBy`` with embedded XML element ``ResearchOutput__SubstitutionGroupHead``
-:Description: 
-:CERIF: the *TODO* linking entity (``cfResPubl_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResPat_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1 cfResProd_ResPat(http://eurocris.org/cerif/vocab/Inter-Output_Roles#Reference):1``)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
+:CERIF: the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
 
 
 

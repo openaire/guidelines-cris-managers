@@ -253,6 +253,7 @@ URN
 Authors
 ^^^^^^^
 :Description: The authors of this publication
+:Use: optional (0..1)
 :Representation: XML element ``Authors`` with ordered embedded XML elements ``Author`` that can contain an embedded person with affiliations or organisation unit
 
 
@@ -267,6 +268,7 @@ Author
 Editors
 ^^^^^^^
 :Description: The editors of this publication
+:Use: optional (0..1)
 :Representation: XML element ``Editors`` with ordered embedded XML elements ``Editor`` that can contain an embedded person with affiliations or organisation unit
 
 
@@ -281,6 +283,7 @@ Editor
 Publishers
 ^^^^^^^^^^
 :Description: The publishers of this publication
+:Use: optional (0..1)
 :Representation: XML element ``Publishers`` with ordered embedded XML elements ``Publisher`` that can contain an embedded organisation unit or person
 
 

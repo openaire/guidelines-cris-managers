@@ -105,6 +105,7 @@ URN
 Creators
 ^^^^^^^^
 :Description: The creators of this product
+:Use: optional (0..1)
 :Representation: XML element ``Creators`` with ordered embedded XML elements ``Creator`` that can contain an embedded person with affiliations or organisation unit
 
 
@@ -119,6 +120,7 @@ Creator
 Publishers
 ^^^^^^^^^^
 :Description: The publisher or publishers of this product
+:Use: optional (0..1)
 :Representation: XML element ``Publishers`` with ordered embedded XML elements ``Publisher`` that can contain an embedded organisation unit or person
 
 
@@ -174,6 +176,7 @@ PartOf
 Parts
 ^^^^^
 :Description: The research products that make up this product (e.g. constituent parts of a data set)
+:Use: optional (0..1)
 :Representation: XML element ``Parts`` with unordered embedded XML elements ``Part``
 
 

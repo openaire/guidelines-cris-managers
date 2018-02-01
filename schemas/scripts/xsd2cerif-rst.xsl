@@ -198,6 +198,7 @@ Internal Identifier
 		<xsl:param name="entityEl"/>
 		<xsl:apply-templates mode="make-title" select="@name"/>
 		<xsl:call-template name="make-description"/>
+		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` with </xsl:text><xsl:value-of select="@cflink:container"/><xsl:text> embedded XML elements</xsl:text>
 		<xsl:apply-templates select="xs:complexType/xs:sequence/xs:element" mode="link"/>
 		<xsl:text>

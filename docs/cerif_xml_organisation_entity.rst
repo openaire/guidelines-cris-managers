@@ -63,6 +63,7 @@ PartOf
 Parts
 ^^^^^
 :Description: The list of parts (smaller units) of this unit (container element)
+:Use: optional (0..1)
 :Representation: XML element ``Parts`` with ordered embedded XML elements ``Part``
 
 

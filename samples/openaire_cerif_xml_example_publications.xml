@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Examples of metadata records in OpenAIRE CERIF XML format as OAI-PMH payload. OAI-PMH Set: openaire_cris_publications Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1 -->
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ 
-			    http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd 
-			    https://www.openaire.eu/cerif-profile/1.1/ 
-			    ../schemas/openaire-cerif-profile.xsd">
-	<responseDate>2014-01-12T14:00:00Z</responseDate>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ ../schemas/openaire-cerif-profile.xsd">
+	<responseDate>2018-01-12T14:00:00Z</responseDate>
 	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_publications">http://cris.example.org/openaire/connector</request>
 	<ListRecords>
 		<record>
 			<header>
 				<identifier>oai:cris.example.org:Publications/812348</identifier>
-				<datestamp>2014-01-07T14:00:00Z</datestamp>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
@@ -70,7 +66,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<ORCID>http://orcid.org/0000-0001-7291-3210</ORCID>
+								<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 						</Author>
 						<Author>
@@ -133,15 +129,32 @@
 				</Publication>
 			</metadata>
 		</record>
+
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Publications/894490</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_publications</setSpec>
+			</header>
+			<metadata>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894490"><!-- Int J Digital Curation -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
+					<Title xml:lang="en">The International Journal of Digital Curation</Title>
+					<ISSN>1746-8256</ISSN>
+					<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_14cb<!-- metadata only access --></Access>
+				</Publication>
+			</metadata>
+		</record>
+
 		<record>
 			<header>
 				<identifier>oai:cris.example.org:Publications/894491</identifier>
-				<datestamp>2014-01-07T14:00:00Z</datestamp>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
 				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894491">
-					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_3e5a<!-- contribution to journal --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
 						<Publication id="894490"><!-- Int J Digital Curation -->
@@ -157,7 +170,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<ORCID>http://orcid.org/0000-0001-7291-3210</ORCID>
+								<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 						</Editor>
 					</Editors>
@@ -185,7 +198,7 @@
 		<record>
 			<header>
 				<identifier>oai:cris.example.org:Publications/4123451</identifier>
-				<datestamp>2014-01-07T14:00:00Z</datestamp>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
@@ -204,7 +217,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
-								<ORCID>http://orcid.org/0000-0001-7291-3210</ORCID>
+								<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312346"><!-- CNR -->
@@ -218,7 +231,7 @@
 									<FamilyNames>Houssos</FamilyNames>
 									<FirstNames>Nikos</FirstNames>
 								</PersonName>
-								<ORCID>http://orcid.org/0000-0002-5277-285X</ORCID>
+								<ORCID>https://orcid.org/0000-0002-5277-285X</ORCID>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312347"><!-- EKT -->
@@ -240,7 +253,7 @@
 									<FamilyNames>Jörg</FamilyNames>
 									<FirstNames>Brigitte</FirstNames>
 								</PersonName>
-								<ORCID>http://orcid.org/0000-0001-7941-8108</ORCID>
+								<ORCID>https://orcid.org/0000-0001-7941-8108</ORCID>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312348"><!-- UKOLN -->

@@ -154,12 +154,12 @@ Subject
 :CERIF: the ResultProduct_Classification (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_)
 
 
-Keywords
-^^^^^^^^
+Keyword
+^^^^^^^
 :Description: A single keyword or key expression. Please repeat to serialize separate keywords or key expressions.
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Keywords`` as a multilingual string
-:CERIF: the ResultProduct.Keyword attribute (`<https://w3id.org/cerif/model#ResultProduct.Keyword>`_)
+:Representation: XML element ``Keyword`` as a multilingual string
+:CERIF: the ResultProduct.Keywords attribute (`<https://w3id.org/cerif/model#ResultProduct.Keywords>`_)
 
 
 

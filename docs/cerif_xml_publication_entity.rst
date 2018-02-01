@@ -313,7 +313,7 @@ Keyword
 :Description: A single keyword or key expression. Please repeat to serialize separate keywords or key expressions.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Keyword`` as a multilingual string
-:CERIF: the ResultPublication.Keyword attribute (`<https://w3id.org/cerif/model#ResultPublication.Keyword>`_)
+:CERIF: the ResultPublication.Keywords attribute (`<https://w3id.org/cerif/model#ResultPublication.Keywords>`_)
 
 
 

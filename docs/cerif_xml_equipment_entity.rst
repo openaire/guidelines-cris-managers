@@ -1,48 +1,62 @@
-.. _c:equipment
+.. _equipment:
+
 
 Equipment
 =========
-:Representation: XML element ``Equipment``
-:Examples: openaire_cerif_xml_example_publications.xml *TODO*
-:Description: 
-:CERIF: the *TODO* entity (``cfEquip``)
+:Description: An equipment is an instrumentality needed for an undertaking or to perform a service: Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
+:Representation: XML element ``Equipment``; the rest of this section documents children of this element
+:CERIF: the Equipment entity (`<https://w3id.org/cerif/model#Equipment>`_)
 
-Identifier
-^^^^^^^^^^
-:Representation: XML Attribute ``id``
-:Format: identifier of the publication (see a later section for instructions)
-:Use: mandatory
-:CERIF: the *TODO* Identifier attribute (``cfEquip.cfEquipId``)
+
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
+:Use: mandatory (1)
+:Representation: XML attribute ``id``
+:CERIF: the EquipmentIdentifier attribute (`<https://w3id.org/cerif/model#Equipment.EquipmentIdentifier>`_)
+
+
+Type
+^^^^
+:Description: The type of the equipment
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Type`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the Equipment_Classification (`<https://w3id.org/cerif/model#Equipment_Classification>`_)
+
 
 Acronym
 ^^^^^^^
+:Description: Acronym of the equipment
+:Use: optional (0..1)
 :Representation: XML element ``Acronym``
-:Description: 
-:CERIF: the *TODO* attribute (``cfEquip.cfAcro``)
+:CERIF: the Equipment.Acronym attribute (`<https://w3id.org/cerif/model#Equipment.Acronym>`_)
+
+
 
 Name
 ^^^^
-:Representation: XML element ``Name``
-:Description: 
-:CERIF: the *TODO* attribute (``cfEquipName.cfName``)
+:Description: Name of the equipment
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Name`` as a multilingual string
+:CERIF: the Equipment.Name attribute (`<https://w3id.org/cerif/model#Equipment.Name>`_)
+
+
 
 Identifier
 ^^^^^^^^^^
-:Representation: XML element ``Identifier``
-:Description: An identifier of the equipment
-:CERIF: the Federated Identifier entity (``cfFedId``)
+:Description: An identifier of this equipment
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
 
 Description
 ^^^^^^^^^^^
-:Representation: XML element ``Description``
-:Description: 
-:CERIF: the *TODO* attribute (``cfEquipDescr.cfDescr``)
+:Description: Description of the equipment
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Description`` as a multilingual string
+:CERIF: the Equipment.Description attribute (`<https://w3id.org/cerif/model#Equipment.Description>`_)
 
-Keywords
-^^^^^^^^
-:Representation: XML element ``Keywords``
-:Description: 
-:CERIF: the *TODO* attribute (``cfEquipKeyw.cfKeyw``)
 
 
 

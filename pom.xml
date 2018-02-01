@@ -29,8 +29,9 @@
 							<dir>schemas</dir>
 							<validating>true</validating>
 							<excludes>
-								<exclude>catalog.xml</exclude>
-								<exclude>*.out.xml</exclude>
+								<exclude>**/catalog.xml</exclude>
+								<exclude>**/*.out.xml</exclude>
+								<exclude>**/*.txt</exclude>
 								<exclude>scripts/*</exclude>
 								<exclude>cached/*</exclude>
 							</excludes>

@@ -3,13 +3,14 @@
 
 Product
 =======
+:Description: Any result of research other than Publication or Patent. This includes: (1) research datasets, (2) software, (3) visualisations: still or moving images, including maps and other cartographic material, (4) audio recordings, (5) other objects that can be perceived through human senses.
+:Examples: `<samples/openaire_cerif_xml_example_products.xml>`_
 :Representation: XML element ``Product``; the rest of this section documents children of this element
 :CERIF: the ResultProduct entity (`<https://w3id.org/cerif/model#ResultProduct>`_)
 
 
-Identifier
-^^^^^^^^^^
-:Format: internal identifier
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
 :Use: mandatory (1)
 :Representation: XML attribute ``id``
 :CERIF: the ResultProductIdentifier attribute (`<https://w3id.org/cerif/model#ResultProduct.ResultProductIdentifier>`_)
@@ -52,11 +53,13 @@ Name
 :CERIF: the ResultProduct.Name attribute (`<https://w3id.org/cerif/model#ResultProduct.Name>`_)
 
 
+
 VersionInfo
 ^^^^^^^^^^^
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``VersionInfo`` as a multilingual string
 :CERIF: the ResultProduct.VersionInfo attribute (`<https://w3id.org/cerif/model#ResultProduct.VersionInfo>`_)
+
 
 
 ARK
@@ -66,11 +69,13 @@ ARK
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 DOI
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``DOI``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 Handle
@@ -80,6 +85,7 @@ Handle
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 URL
 ^^^
 :Use: optional (0..1)
@@ -87,11 +93,13 @@ URL
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 URN
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``URN``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 Creators
@@ -137,6 +145,7 @@ Description
 :CERIF: the ResultProduct.Description attribute (`<https://w3id.org/cerif/model#ResultProduct.Description>`_)
 
 
+
 Subject
 ^^^^^^^
 :Description: The subject of the product from a classification
@@ -151,6 +160,7 @@ Keywords
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Keywords`` as a multilingual string
 :CERIF: the ResultProduct.Keyword attribute (`<https://w3id.org/cerif/model#ResultProduct.Keyword>`_)
+
 
 
 PartOf
@@ -189,6 +199,22 @@ GeneratedBy
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``GeneratedBy`` with embedded XML element ``Equipment``
 :CERIF: the ResultProduct_Equipment linking entity (`<https://w3id.org/cerif/model#ResultProduct_Equipment>`_) with the `<https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation>`_ semantics
+
+
+PresentedAt
+^^^^^^^^^^^
+:Description: The event where this product was presented
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``PresentedAt`` with embedded XML element ``Event``
+:CERIF: the ResultProduct_Event linking entity (`<https://w3id.org/cerif/model#ResultProduct_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics
+
+
+Coverage
+^^^^^^^^
+:Description: The event that is covered by this product (e.g. a video or audio interview about the event)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Coverage`` with embedded XML element ``Event``
+:CERIF: the ResultProduct_Event linking entity (`<https://w3id.org/cerif/model#ResultProduct_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics
 
 
 References

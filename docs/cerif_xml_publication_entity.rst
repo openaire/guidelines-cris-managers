@@ -4,14 +4,13 @@
 Publication
 ===========
 :Description: A text based scholarly publication or publishing channel that contains results of research. CRISs typically record metadata about scholarly publications from the scope of the CRIS (institutional CRIS for the institution, funder CRIS for the funding it distributed, etc.) in the context of the research projects, infrastructure, funding, organization units and authors/contributors. This entity typically represents the granularity level of a single published item for which attribution information is attached (usually in the form of a list of authors and contributors). This entity is also used to represent publishing channels and sources: journals and book series (incl. continuing conference proceedings series). (Taken from https://doi.org/10.1016/j.procs.2014.06.008)
-:Examples: `<../../samples/openaire_cerif_xml_example_publications.xml>`_
+:Examples: `<samples/openaire_cerif_xml_example_publications.xml>`_
 :Representation: XML element ``Publication``; the rest of this section documents children of this element
 :CERIF: the ResultPublication entity (`<https://w3id.org/cerif/model#ResultPublication>`_)
 
 
-Identifier
-^^^^^^^^^^
-:Format: internal identifier
+Internal Identifier
+^^^^^^^^^^^^^^^^^^^
 :Use: mandatory (1)
 :Representation: XML attribute ``id``
 :CERIF: the ResultPublicationIdentifier attribute (`<https://w3id.org/cerif/model#ResultPublication.ResultPublicationIdentifier>`_)
@@ -90,12 +89,14 @@ Title
 :CERIF: the ResultPublication.Title attribute (`<https://w3id.org/cerif/model#ResultPublication.Title>`_)
 
 
+
 Subtitle
 ^^^^^^^^
 :Description: The subtitle of the publication
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Subtitle`` as a multilingual string
 :CERIF: the ResultPublication.Subtitle attribute (`<https://w3id.org/cerif/model#ResultPublication.Subtitle>`_)
+
 
 
 PublishedIn
@@ -122,12 +123,14 @@ PublicationDate
 :CERIF: the ResultPublication.ResPublDate attribute (`<https://w3id.org/cerif/model#ResultPublication.ResPublDate>`_)
 
 
+
 Number
 ^^^^^^
 :Description: The number of the publication (e.g. Article Number)
 :Use: optional (0..1)
 :Representation: XML element ``Number``
 :CERIF: the ResultPublication.Number attribute (`<https://w3id.org/cerif/model#ResultPublication.Number>`_)
+
 
 
 Volume
@@ -138,12 +141,14 @@ Volume
 :CERIF: the ResultPublication.Volume attribute (`<https://w3id.org/cerif/model#ResultPublication.Volume>`_)
 
 
+
 Issue
 ^^^^^
 :Description: The issue of the publishing channel where this publication appeared
 :Use: optional (0..1)
 :Representation: XML element ``Issue``
 :CERIF: the ResultPublication.Issue attribute (`<https://w3id.org/cerif/model#ResultPublication.Issue>`_)
+
 
 
 Edition
@@ -154,12 +159,14 @@ Edition
 :CERIF: the ResultPublication.Edition attribute (`<https://w3id.org/cerif/model#ResultPublication.Edition>`_)
 
 
+
 StartPage
 ^^^^^^^^^
 :Description: The page where this publication starts, in case the publishing channel or containing publication has numbered pages
 :Use: optional (0..1)
 :Representation: XML element ``StartPage``
 :CERIF: the ResultPublication.StartPage attribute (`<https://w3id.org/cerif/model#ResultPublication.StartPage>`_)
+
 
 
 EndPage
@@ -170,11 +177,13 @@ EndPage
 :CERIF: the ResultPublication.EndPage attribute (`<https://w3id.org/cerif/model#ResultPublication.EndPage>`_)
 
 
+
 DOI
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``DOI``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 Handle
@@ -184,11 +193,13 @@ Handle
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 PMCID
 ^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``PMCID``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 ISI-Number
@@ -198,11 +209,13 @@ ISI-Number
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 SCP-Number
 ^^^^^^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``SCP-Number``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 ISSN
@@ -212,11 +225,13 @@ ISSN
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 ISBN
 ^^^^
 :Use: optional (0..1)
 :Representation: XML element ``ISBN``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 URL
@@ -226,11 +241,13 @@ URL
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 
+
 URN
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``URN``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
 
 
 Authors
@@ -299,11 +316,13 @@ Keyword
 :CERIF: the ResultPublication.Keyword attribute (`<https://w3id.org/cerif/model#ResultPublication.Keyword>`_)
 
 
+
 Abstract
 ^^^^^^^^
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Abstract`` as a multilingual string
 :CERIF: the ResultPublication.Abstract attribute (`<https://w3id.org/cerif/model#ResultPublication.Abstract>`_)
+
 
 
 Status
@@ -320,6 +339,32 @@ OriginatesFrom
 :CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the ResultPublication_Funding linking entity (`<https://w3id.org/cerif/model#ResultPublication_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
 
 
+PresentedAt
+^^^^^^^^^^^
+:Description: The event where this publication was presented.  [#]_ 
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``PresentedAt`` with embedded XML element ``Event``
+:CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics
+
+.. [#] Note: Video recordings of conference presentations are stored as alternative representations of the primary object: the conference paper. It would be unneccessarily complex to represent them as separate, linked Products.
+
+
+OutputFrom
+^^^^^^^^^^
+:Description: This publication contains the proceedings from the linked event
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``OutputFrom`` with embedded XML element ``Event``
+:CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Output>`_ semantics
+
+
+Coverage
+^^^^^^^^
+:Description: The event that is covered by this publication (e.g. a report about the event)
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Coverage`` with embedded XML element ``Event``
+:CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics
+
+
 References
 ^^^^^^^^^^
 :Description: Result outputs that are referenced by this publication
@@ -334,6 +379,21 @@ ReferencedBy
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ReferencedBy`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
 :CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :2); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :2); the ResultPublication_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :2)
+
+
+ns4:Access
+^^^^^^^^^^
+:Description: The open access type of the publication
+:Use: optional (0..1)
+:Representation: XML element ``Access`` from namespace ``http://purl.org/coar/access_right``
+:CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
+:Vocabulary: 
+
+  * **open access** (`<http://purl.org/coar/access_right/c_abf2>`_): Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.
+  * **embargoed access** (`<http://purl.org/coar/access_right/c_f1cf>`_): Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).
+  * **restricted access** (`<http://purl.org/coar/access_right/c_16ec>`_): Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g. limited to a university community)
+  * **metadata only access** (`<http://purl.org/coar/access_right/c_14cb>`_): Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but is not directly available through the system or platform. This type of access can occur in a number of different situations. Some examples are described below: There is no electronic copy of the resource available (record links to a physical resource) The resource is only available elsewhere for a fee (record links to a subscription-based publisher version) The resource is available open access but at a different location (record links to a version at an open access publisher or archive) The resource is available elsewhere, but not in a fully open access format (record links to a read only, or other type of resources that is not permanent or in some way restricted)
+
 
 
 

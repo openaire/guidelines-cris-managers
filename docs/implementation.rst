@@ -4,7 +4,8 @@ Technical Implementation Guidelines
 Data representation in CERIF XML
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The CERIF XML style allowed is the one defined in CERIF 1.6 XML specification. The following rules apply – however we refer to the full specification for the details [#f1]_ :
+The CERIF XML style allowed is the one defined in CERIF 1.6 XML specification. 
+The following rules apply – however we refer to the full specification for the details [#f1]_ :
 
 #. The CERIF data must be represented as descendants of a root XML element, “CERIF”.
 #. Direct descendants of the CERIF elements must be only simple CERIF Entities [#f2]_ (such as Person; Project; OrganisationUnit; ResultPublication; ResultProduct) not multi-lingual or link entities or federated identifiers. The list of CERIF Research Entities relevant to OpenAIREplus is the following:
@@ -106,13 +107,19 @@ For harvesting the records relevant to OpenAIRE, the use of specific OAI-PMH set
 || and link entities.                                     |                                         |
 +---------------------------------------------------------+-----------------------------------------+
 
-Referential integrity constraints for all relationships among entities should be satisfied in the CERIF XML data provided by the CRIS system, as mentioned in the “Data representation in CERIF XML” sub-section above. This holds also for the case that entity instances related via link entities are retrieved through different OAI-PMH sets. For example, consider the case of a relationship between cfOrgUnit A and cfProject B that is included in the source CRIS system. To accomplish this, the CERIF XML data exported by the CRIS system must contain:
+Referential integrity constraints for all relationships among entities should be satisfied in the CERIF XML data provided by the CRIS system, 
+as mentioned in the “Data representation in CERIF XML” sub-section above. 
+This holds also for the case that entity instances related via link entities are retrieved through different OAI-PMH sets. 
+For example, consider the case of a relationship between cfOrgUnit A and cfProject B that is included in the source CRIS system. 
+To accomplish this, the CERIF XML data exported by the CRIS system must contain:
 
 a. An XML record for cfOrgUnit A. This XML record must contain, as a nested XML element, the link entity cfProj_OrgUnit. The XML record of cfOrgUnit A must be available through both sets **openaire_cris** and **openaire_cris_orgunits**.
 
 b. An XML record for cfProj B. This XML record must contain, as a nested XML element, the link entity cfProj_OrgUnit. The XML record of cfProj B must be available through both sets **openaire_cris** and **openaire_cris_projects**.
 
-In case the two entity instances (cfOrgUnit A and cfProj B) are retrieved via the different sets **openaire_cris_orgunits** and **openaire_cris_projects**, the OAI-PMH service provider – in this case the OpenAIRE infrastructure – should combine and check the information in the two different sets of XML records to validate the source data in terms of referential integrity.
+In case the two entity instances (cfOrgUnit A and cfProj B) are retrieved via the different sets **openaire_cris_orgunits** and **openaire_cris_projects**, 
+the OAI-PMH service provider – in this case the OpenAIRE infrastructure – should combine and check the information in the two different sets of XML records 
+to validate the source data in terms of referential integrity.
 
 OAI identifiers
 """""""""""""""
@@ -130,9 +137,17 @@ will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/282349``.
 Transmission of CERIF XML as OAI-PMH payload
 """"""""""""""""""""""""""""""""""""""""""""
 
-OAI-PMH is a protocol for exposing information from data providers to clients (service providers). Data provided through OAI-PMH must be encoded in XML and is organised into a sequence of records. The protocol uses the resumption token mechanism to enable control over the flow of data from the data provider towards the service provider, for example, it allows the split of a large chunk of records into fragments of manageable size (e.g. 100 records). This helps avoid overload of both the data and service provider.
+OAI-PMH is a protocol for exposing information from data providers to clients (service providers). 
+Data provided through OAI-PMH must be encoded in XML and is organised into a sequence of records. 
+The protocol uses the resumption token mechanism to enable control over the flow of data from the data provider towards the service provider, 
+for example, it allows the split of a large chunk of records into fragments of manageable size (e.g. 100 records). 
+This helps avoid overload of both the data and service provider.
 
-Data in CERIF CRIS systems follows a normalised graph structure. Therefore, the transmission of CERIF XML as OAI-PMH payload requires a mechanism of fitting the graph structure into a sequence of records. The CERIF XML structure should be decomposed into a sequence of XML records. Each OAI-PMH XML record should represent a single instance of a CERIF Research Entity, embedding multi-lingual entities, federated identifiers and link entities, but with no nested records for other CERIF Research Entity instances. 
+Data in CERIF CRIS systems follows a normalised graph structure. 
+Therefore, the transmission of CERIF XML as OAI-PMH payload requires a mechanism of fitting the graph structure into a sequence of records. 
+The CERIF XML structure should be decomposed into a sequence of XML records. 
+Each OAI-PMH XML record should represent a single instance of a CERIF Research Entity, embedding multi-lingual entities, federated identifiers and link entities, 
+but with no nested records for other CERIF Research Entity instances. 
 
 **Date stamps in CERIF XML records**
 
@@ -164,4 +179,7 @@ k. An existing cfOrgUnit instance is modified (e.g. cfOrgUnit.cfAcro). This part
 
 **Deleted records**
 
-OpenAIRE does **not** require CRIS systems to provide information about deleted records via OAI-PMH. Therefore, it is acceptable for a CRIS system exposing metadata records to the OpenAIRE infrastructure to provide any of the three levels of support of deleted records, as defined in the OAI-PMH 2.0 specification: “**no**”, “**persistent**” or “**transient**”. As mandated in the OAI-PMH 2.0 specification, CRIS systems must declare the level of support of deleted records in the deletedRecord element of the Identify response.
+OpenAIRE does **not** require CRIS systems to provide information about deleted records via OAI-PMH. 
+Therefore, it is acceptable for a CRIS system exposing metadata records to the OpenAIRE infrastructure to provide any of the three levels of support of deleted records, 
+as defined in the OAI-PMH 2.0 specification: “**no**”, “**persistent**” or “**transient**”. 
+As mandated in the OAI-PMH 2.0 specification, CRIS systems must declare the level of support of deleted records in the deletedRecord element of the Identify response.

@@ -47,7 +47,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
         </record>
         <record>
         	<header>
-                <identifier>oai:cris.example.org:cfResProd/729487</identifier>
+                <identifier>oai:cris.example.org:Products/729487</identifier>
                 <datestamp>2017-05-23T23:00:00Z</datestamp>
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
@@ -59,7 +59,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 					<Creators>
 						<Creator>
-							<Person>
+							<Person id="21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -67,7 +67,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person>
+							<Person id="21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -130,7 +130,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
         </record>
         <record>
         	<header>
-                <identifier>oai:cris.example.org:cfResProd/729481</identifier>
+                <identifier>oai:cris.example.org:Products/729481</identifier>
                 <datestamp>2017-05-23T23:00:01Z</datestamp>
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
@@ -142,7 +142,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<DOI>10.5061/DRYAD.4GH6HF5G/1</DOI>
 					<Creators>
 						<Creator>
-							<Person>
+							<Person id="21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -150,7 +150,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person>
+							<Person id="21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -179,7 +179,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
         </record>
         <record>
         	<header>
-                <identifier>oai:cris.example.org:cfResProd/729482</identifier>
+                <identifier>oai:cris.example.org:Products/729482</identifier>
                 <datestamp>2017-05-23T23:00:02Z</datestamp>
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
@@ -191,7 +191,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<DOI>10.5061/DRYAD.4GH6HF5G/2</DOI>
 					<Creators>
 						<Creator>
-							<Person>
+							<Person id="21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -199,7 +199,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person>
+							<Person id="21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -228,7 +228,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
         </record>
         <record>
         	<header>
-                <identifier>oai:cris.example.org:cfResProd/729483</identifier>
+                <identifier>oai:cris.example.org:Products/729483</identifier>
                 <datestamp>2017-05-23T23:00:03Z</datestamp>
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
@@ -240,7 +240,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<DOI>10.5061/DRYAD.4GH6HF5G/3</DOI>
 					<Creators>
 						<Creator>
-							<Person>
+							<Person id="21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -248,7 +248,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person>
+							<Person id="21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>

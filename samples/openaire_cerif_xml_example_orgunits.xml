@@ -130,5 +130,76 @@
 				</OrgUnit>
 			</metadata>
 		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:OrgUnits/329384</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_orgunits</setSpec>
+			</header>
+			<metadata>
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="329384">
+					<Name xml:lang="en">University of California, Berkeley</Name>
+				</OrgUnit>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:OrgUnits/301248</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_orgunits</setSpec>
+			</header>
+			<metadata>
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301248">
+					<Name xml:lang="en">Museum of Vertebrate Zoology</Name>
+					<PartOf>
+						<OrgUnit id="329384">
+							<Name xml:lang="en">University of California, Berkeley</Name>
+						</OrgUnit>
+					</PartOf>
+				</OrgUnit>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:OrgUnits/301249</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_orgunits</setSpec>
+			</header>
+			<metadata>
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301249">
+					<Name xml:lang="en">Department of Integrative Biology</Name>
+					<PartOf>
+						<OrgUnit id="329384">
+							<Name xml:lang="en">University of California, Berkeley</Name>
+						</OrgUnit>
+					</PartOf>
+				</OrgUnit>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:OrgUnits/301250</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_orgunits</setSpec>
+			</header>
+			<metadata>
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301250">
+					<Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
+					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Classification>
+				</OrgUnit>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:OrgUnits/301253</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_orgunits</setSpec>
+			</header>
+			<metadata>
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301253">
+					<Name xml:lang="en">Society for the Study of Evolution</Name>
+				</OrgUnit>
+			</metadata>
+		</record>
 	</ListRecords>
 </OAI-PMH>

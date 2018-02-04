@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Examples of metadata records in OpenAIRE CERIF XML format as OAI-PMH payload. OAI-PMH Set: openaire_cris_events Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1 -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ ../schemas/openaire-cerif-profile.xsd">
+	<responseDate>2018-01-12T14:00:00Z</responseDate>
+	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_events">http://cris.example.org/openaire/connector</request>
+	<ListRecords>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Events/583475</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_events</setSpec>
+			</header>
+			<metadata>
+				<Event xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="583475">
+					<Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
+					<Acronym>MTSR 2012</Acronym>
+					<Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>
+					<OutputIn>
+						<Publication id="895501">
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_f744</Type><!-- conference proceedings -->
+							<Title xml:lang="en">Metadata and Semantics Research</Title>
+							<Subtitle xml:lang="en">6th Research Conference, MTSR 2012, Cádiz, Spain, November 28-30, 2012. Proceedings</Subtitle>
+							<DOI>https://doi.org/10.1007/978-3-642-35233-1</DOI>
+						</Publication>
+					</OutputIn>
+				</Event>
+			</metadata>
+		</record>
+
+	</ListRecords>
+</OAI-PMH>

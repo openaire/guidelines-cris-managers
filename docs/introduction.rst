@@ -14,8 +14,8 @@ CERIF-CRIS
 CERIF (Common European Research Information Format) is a standard data model for research information and a recommendation by the European Union to Member States. 
 The care and custody of CERIF was handed over by the European Union to euroCRIS (http://www.eurocris.org), 
 a non-for-profit organisation dedicated to the interoperability of Research Information Systems (CRISs). 
-In addition to a domain model and a formal relational (ERM) data model, CERIF defines a XML format for data exchange. 
-The OpenAIRE data model is CERIF-compliant and CERIF XML has been adopted by OpenAIRE as the basis for harvesting and importing metadata from CRIS systems. 
+In addition to a domain model and a formal data model, CERIF includes a mechanism to construct XML profiles (specialized subsets) for specific information interchange scenarios. 
+The OpenAIRE profile of CERIF supports harvesting and importing metadata from CRIS systems. 
 
 Acknowledgements
 ^^^^^^^^^^^^^^^^

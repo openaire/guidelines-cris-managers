@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (OpenAIRE-examples-map.vue) 2018-02-05 -->
+<!-- Tufts VUE 3.3.0 concept-map (OpenAIRE-examples-map.vue) 2018-02-09 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.localized/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Mon Feb 05 07:14:20 CET 2018 by jdvorak on platform Mac OS X 10.13.3 in JVM 1.8.0_152-b16 -->
+<!-- Do Not Remove: Saved date Fri Feb 09 13:51:42 CET 2018 by jdvorak on platform Mac OS X 10.13.3 in JVM 1.8.0_152-b16 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="OpenAIRE-examples-map.vue" created="1434792177028" x="0.0"
     y="0.0" width="992.4211" height="1399.0116" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1517811260632" size="186377"
+    <resource referenceCreated="1518180702177" size="186314"
         spec="/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue"
         type="1" xsi:type="URLResource">
         <title>OpenAIRE-examples-map.vue</title>
@@ -1178,7 +1178,7 @@
         <ID2 xsi:type="text">89</ID2>
     </child>
     <child ID="93"
-        label="The examples depict some real-world objects in their &#xa;      (limited) contexts. Dashed lines and edges denote illustrative claims &#xa;      that are there for the sake of the example."
+        label="The examples depict some real-world objects in their &#xa;      (limited) contexts. Dashed lines and edges denote illustrative claims that are there for the sake of the example."
         layerID="1" created="1434799807095" x="202.47324" y="133.16626"
         width="501.0" height="44.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
@@ -1213,8 +1213,7 @@
 &lt;/html&gt;
 </richText>
         <label>The examples depict some real-world objects in their 
-      (limited) contexts. Dashed lines and edges denote illustrative claims 
-      that are there for the sake of the example.</label>
+      (limited) contexts. Dashed lines and edges denote illustrative claims that are there for the sake of the example.</label>
     </child>
     <child ID="94" label="Partner" layerID="1" created="1434800119995"
         x="656.24414" y="390.53467" width="126.7937" height="493.529"
@@ -1638,8 +1637,8 @@
         <ID2 xsi:type="text">128</ID2>
     </child>
     <child ID="135" label="         (since 2008-08-20)" layerID="1"
-        created="1435508805025" x="1301.1232" y="284.64355"
-        width="121.0" height="204.13428" strokeWidth="1.0"
+        created="1435508805025" x="1301.6232" y="284.64355"
+        width="120.0" height="204.13428" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#404040</textColor>
@@ -2279,7 +2278,7 @@
         <ctrlPoint1 x="1194.1172" y="616.5732" xsi:type="point"/>
     </child>
     <child ID="179" label="Part" layerID="1" created="1517503878755"
-        x="1314.5768" y="284.64062" width="24.64978" height="414.2881"
+        x="1314.5768" y="284.64062" width="24.14978" height="414.2881"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
@@ -2726,7 +2725,7 @@
         <label>Conference</label>
     </child>
     <child ID="209" label="Output" layerID="1" created="1517514519919"
-        x="1332.5509" y="1115.7991" width="34.744507" height="57.115723"
+        x="1332.5509" y="1115.7991" width="34.244507" height="57.115723"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
@@ -2780,8 +2779,8 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="213" label="Publisher" layerID="1"
-        created="1517584140866" x="1257.259" y="892.25903"
-        width="49.031128" height="118.539795" strokeWidth="1.0"
+        created="1517584140866" x="1257.759" y="892.25903"
+        width="48.531128" height="118.539795" strokeWidth="1.0"
         autoSized="false" controlCount="2" arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#404040</textColor>
@@ -3032,7 +3031,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="235" label="Part" layerID="1" created="1517670462252"
-        x="341.64926" y="1592.4043" width="21.0" height="22.789917"
+        x="342.14926" y="1592.4043" width="20.0" height="22.789917"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
@@ -3045,7 +3044,7 @@
         <ID2 xsi:type="node">229</ID2>
     </child>
     <child ID="236" label="Part" layerID="1" created="1517670471358"
-        x="213.59918" y="1592.4044" width="41.368652" height="92.289795"
+        x="214.09918" y="1592.4044" width="40.868652" height="92.289795"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
@@ -3060,7 +3059,7 @@
         <ctrlPoint1 x="225.82625" y="1681.4869" xsi:type="point"/>
     </child>
     <child ID="237" label="Part" layerID="1" created="1517670478776"
-        x="199.33493" y="1592.4044" width="48.258698" height="165.70166"
+        x="199.83493" y="1592.4044" width="47.758698" height="165.70166"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
@@ -3282,7 +3281,7 @@
     </child>
     <child ID="251" label="Author #1" layerID="1"
         created="1517671224669" x="846.94727" y="1578.0872"
-        width="129.93243" height="96.7229" strokeWidth="1.0"
+        width="129.43243" height="96.7229" strokeWidth="1.0"
         autoSized="false" controlCount="2" arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#404040</textColor>
@@ -3297,7 +3296,7 @@
     </child>
     <child ID="252" label="Author #2" layerID="1"
         created="1517671265454" x="855.37604" y="1564.8381"
-        width="147.40326" height="197.93994" strokeWidth="1.0"
+        width="146.90326" height="197.93994" strokeWidth="1.0"
         autoSized="false" controlCount="2" arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#404040</textColor>
@@ -3366,8 +3365,8 @@
 </richText>
         <label>Dataset</label>
     </child>
-    <child ID="261" label="Dataset" layerID="1" created="1517672472935"
-        x="510.1628" y="1689.6969" width="45.0" height="13.0"
+    <child ID="261" label="Software" layerID="1" created="1517672472935"
+        x="510.1628" y="1689.6969" width="51.0" height="21.0"
         strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -3387,12 +3386,12 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;p color="#000000" style="color: #000000"&gt;
-      Dataset
+      Software
     &lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </richText>
-        <label>Dataset</label>
+        <label>Software</label>
     </child>
     <child ID="262" label="Dataset" layerID="1" created="1517672477195"
         x="555.10504" y="1784.2781" width="45.0" height="14.0"
@@ -3422,9 +3421,9 @@
 </richText>
         <label>Dataset</label>
     </child>
-    <child ID="263" label="Journal &#xa;    &#xa;    &#xa;      Article"
-        layerID="1" created="1517672482119" x="783.8207" y="1605.7256"
-        width="47.0" height="30.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+    <child ID="263" label="Journal Article" layerID="1"
+        created="1517672482119" x="783.8207" y="1605.7256" width="47.0"
+        height="30.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
@@ -3443,7 +3442,7 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;p color="#000000" style="color: #000000"&gt;
-      Journal 
+      Journal
     &lt;/p&gt;
     &lt;p color="#000000" style="color: #000000"&gt;
       Article
@@ -3451,10 +3450,7 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </richText>
-        <label>Journal 
-    
-    
-      Article</label>
+        <label>Journal Article</label>
     </child>
     <child ID="264" label="Journal" layerID="1" created="1517672489428"
         x="976.15826" y="1560.3698" width="44.0" height="15.0"
@@ -3511,15 +3507,15 @@
         <ID2 xsi:type="text">260</ID2>
     </child>
     <child ID="267" layerID="1" created="1517672528298" x="484.51523"
-        y="1697.0574" width="26.147583" height="2.520874"
+        y="1700.623" width="26.147583" height="1.9134521"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5c5c3a98c0a8006c68078cdd2f836908</URIString>
-        <point1 x="485.01523" y="1699.0784"/>
-        <point2 x="510.1628" y="1697.5575"/>
+        <point1 x="485.01523" y="1702.0365"/>
+        <point2 x="510.1628" y="1701.123"/>
         <ID1 xsi:type="node">231</ID1>
         <ID2 xsi:type="text">261</ID2>
     </child>
@@ -3596,7 +3592,7 @@
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/10595862c0a801c361bf61a0192370fd</URIString>
     </layer>
-    <userZoom>0.5890585819910296</userZoom>
+    <userZoom>0.5908257577370026</userZoom>
     <userOrigin x="-439.1433" y="39.585697"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">

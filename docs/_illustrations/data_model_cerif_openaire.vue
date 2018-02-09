@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2018-01-30 -->
+<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2018-02-09 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.localized/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue Jan 30 22:51:55 CET 2018 by jdvorak on platform Mac OS X 10.13.3 in JVM 1.8.0_152-b16 -->
+<!-- Do Not Remove: Saved date Fri Feb 09 16:11:06 CET 2018 by jdvorak on platform Mac OS X 10.13.3 in JVM 1.8.0_152-b16 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="data_model_cerif_openaire.vue" created="1393077696638"
     x="0.0" y="0.0" width="785.0" height="584.10004" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1517349115949" size="97271"
+    <resource referenceCreated="1518189066551" size="97271"
         spec="/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/data_model_cerif_openaire.vue"
         type="1" xsi:type="URLResource">
         <title>data_model_cerif_openaire.vue</title>
@@ -126,9 +126,9 @@
     </child>
     <child ID="26" label="cfCountry" layerID="1" created="1393078020366"
         x="585.28876" y="475.197" width="124.0" height="45.0"
-        strokeWidth="1.0" autoSized="false" xsi:type="node">
+        strokeWidth="3.0" autoSized="false" xsi:type="node">
         <fillColor>#D0D0D0</fillColor>
-        <strokeColor>#000000</strokeColor>
+        <strokeColor>#0AAD1D</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5a01a201c0a80005016fc94fbdfe6685</URIString>

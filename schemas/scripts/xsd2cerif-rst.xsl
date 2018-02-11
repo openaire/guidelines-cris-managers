@@ -59,9 +59,9 @@
 </xsl:text>
 			<xsl:apply-templates mode="make-title" select="@name"/>
 			<xsl:call-template name="make-description"/>
-			<xsl:variable name="example-uri" select="concat( 'samples/openaire_cerif_xml_example_', lower-case( $elName ), 's.xml' )"/>
-			<xsl:if test="doc-available( concat( '../../', $example-uri ) )">
-<xsl:text>:Examples: `&lt;</xsl:text><xsl:value-of select="$example-uri"/><xsl:text>&gt;`_
+			<xsl:variable name="example-uri" select="concat( 'openaire_cerif_xml_example_', lower-case( $elName ), 's.xml' )"/>
+			<xsl:if test="doc-available( concat( '../../samples/', $example-uri ) )">
+<xsl:text>:Examples: `</xsl:text><xsl:value-of select="$example-uri"/><xsl:text> &lt;</xsl:text><xsl:value-of select="concat( 'https://github.com/openaire/guidelines-cris-managers/blob/master/samples/', $example-uri )"/><xsl:text>&gt;`_
 </xsl:text>
 			</xsl:if>
 <xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``; the rest of this section documents children of this element

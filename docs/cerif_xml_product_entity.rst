@@ -4,7 +4,7 @@
 Product
 =======
 :Description: Any result of research other than Publication or Patent. This includes: (1) research datasets, (2) software, (3) visualisations: still or moving images, including maps and other cartographic material, (4) audio recordings, (5) other objects that can be perceived through human senses.
-:Examples: `<samples/openaire_cerif_xml_example_products.xml>`_
+:Examples: `openaire_cerif_xml_example_products.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_cerif_xml_example_products.xml>`_
 :Representation: XML element ``Product``; the rest of this section documents children of this element
 :CERIF: the ResultProduct entity (`<https://w3id.org/cerif/model#ResultProduct>`_)
 

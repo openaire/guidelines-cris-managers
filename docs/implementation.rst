@@ -48,9 +48,6 @@ The description and required characteristics of the sets are provided in the fol
 +---------------------------------------------------------+-----------------------------------------+
 |Description                                              |Required characteristics                 |
 +=========================================================+=========================================+
-| | The entire graph of CERIF entities in the source      | | **setName:** OpenAIRE_CRIS            |
-| | CRIS system of relevance to OpenAIRE.                 | | **setSpec:** openaire_cris            |
-+---------------------------------------------------------+-----------------------------------------+
 | | The list of CERIF XML records for publications.       || **setName:** OpenAIRE_CRIS_publications|
 | |                                                       || **setSpec:** openaire_cris_publications|
 +---------------------------------------------------------+-----------------------------------------+

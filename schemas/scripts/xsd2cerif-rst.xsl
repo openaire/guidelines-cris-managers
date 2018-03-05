@@ -96,6 +96,15 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:attribute, 'https://w3id.org/cerif/model#' )"/><xsl:text> attribute (`&lt;</xsl:text><xsl:value-of select="@cflink:attribute"/><xsl:text>&gt;`_)
 </xsl:text>
+		<xsl:if test="descendant::xs:restriction">
+			<xsl:text>:Vocabulary: </xsl:text><xsl:value-of select="normalize-space( xs:simpleType/xs:annotation/xs:documentation )"/><xsl:text>
+
+</xsl:text>
+			<xsl:apply-templates select="xs:simpleType/xs:restriction/xs:enumeration">
+				<xsl:with-param name="enum-nodes" select="xs:simpleType/xs:restriction/xs:enumeration"/>
+				<xsl:with-param name="indent" select="'  '"/>
+			</xsl:apply-templates>
+		</xsl:if>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
@@ -126,16 +135,16 @@ Internal Identifier
 	</xsl:template>
 
 	<xsl:template match="xs:enumeration">
-		<xsl:param name="enumNodes"/>
-		<xsl:param name="indent"/>
-		<xsl:variable name="thisValue" select="@value"/>
+		<xsl:param name="enumNodes" as="element(xs:enumeration)*"/>
+		<xsl:param name="indent" as="xs:string"/>
+		<xsl:variable name="thisValue" select="@value" as="xs:string"/>
 		<xsl:value-of select="$indent"/>
 		<xsl:text>* **</xsl:text>
-		<xsl:value-of select="normalize-space( xs:annotation/xs:documentation[@xml:lang='en'] )"/>
-		<xsl:text>** (`&lt;</xsl:text>
-		<xsl:value-of select="$thisValue"/>
-		<xsl:text>&gt;`_): </xsl:text>
-		<xsl:value-of select="normalize-space( xs:annotation/xs:appinfo/cf:Class/cf:Definition[@xml:lang='en'] )"/>
+		<xsl:value-of select="normalize-space( xs:annotation/xs:documentation[ancestor-or-self::*/@xml:lang[1]='en'] )"/>
+		<xsl:text>** (</xsl:text>
+		<xsl:value-of select="cf:formatUrl( $thisValue )"/>
+		<xsl:text>): </xsl:text>
+		<xsl:value-of select="normalize-space( xs:annotation/xs:appinfo/cf:Class/cf:Definition[ancestor-or-self::*/@xml:lang[1]='en'] )"/>
 		<xsl:text>
 </xsl:text>
 		<xsl:variable name="children" select="$enumNodes[ xs:annotation/xs:appinfo/cf:Class/cf:Broader/cf:Class/@id = $thisValue ]"/>
@@ -148,6 +157,23 @@ Internal Identifier
 			<xsl:with-param name="indent" select="concat( $indent, '  ' )"/>
 		</xsl:apply-templates>
 	</xsl:template>
+
+	<xsl:function name="cf:formatUrl">
+		<xsl:param name="value" as="xs:string"/>
+		<xsl:choose>
+			<xsl:when test="starts-with( $value, 'http:' ) or starts-with( $value, 'https:' ) or starts-with( $value, 'urn:' )">
+				<xsl:text>`&lt;</xsl:text>
+				<xsl:value-of select="$value"/>
+				<xsl:text>&gt;`_</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>``</xsl:text>
+				<xsl:value-of select="$value"/>
+				<xsl:text>``</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+		
+	</xsl:function>
 
 	<xsl:template match="xs:element[ @name and @cflink:link and @type ]">
 		<xsl:param name="entityEl"/>

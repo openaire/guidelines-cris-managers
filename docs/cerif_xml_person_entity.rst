@@ -51,10 +51,15 @@ OtherNames
 
 Gender
 ^^^^^^
-:Description: The gender of the person
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Gender`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
-:CERIF: the Person_Classification (`<https://w3id.org/cerif/model#Person_Classification>`_)
+:Description: The gender of the person. Leave out in case the gender is unknown or not communicated.
+:Use: optional (0..1)
+:Representation: XML element ``Gender``
+:CERIF: the Person.Gender attribute (`<https://w3id.org/cerif/model#Person.Gender>`_)
+:Vocabulary: Genders (sociocultural, not linguistic)
+
+  * **Masculine** (``m``): Man
+  * **Feminine** (``f``): Woman
+
 
 
 ORCID

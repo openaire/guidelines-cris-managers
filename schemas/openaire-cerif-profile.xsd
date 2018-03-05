@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.openaire.eu/cerif-profile/1.1/" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:cfprocess="https://w3id.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.openaire.eu/cerif-profile/1.1/" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:cfprocess="https://w3id.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
 <xs:annotation>
 <xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
 			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
@@ -94,10 +94,44 @@ One Person typically has many of these relationships.
 
 						
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Person_Classification" maxOccurs="unbounded" minOccurs="0" name="Gender" type="cfGenericClassification__Type">
+						<xs:element cflink:attribute="https://w3id.org/cerif/model#Person.Gender" minOccurs="0" name="Gender">
 							<xs:annotation>
-								<xs:documentation>The gender of the person</xs:documentation>
+								<xs:documentation>The gender of the person. Leave out in case the gender is unknown or not communicated.</xs:documentation>
 							</xs:annotation>
+							<xs:simpleType>
+								<xs:annotation>
+									<xs:documentation>Genders (sociocultural, not linguistic)</xs:documentation>
+									<xs:appinfo>
+										<cf:ClassScheme id="https://w3id.org/cerif/vocab/Genders">
+											<cf:Name xml:lang="en">Genders (sociocultural, not linguistic)</cf:Name>
+										</cf:ClassScheme>
+									</xs:appinfo>
+								</xs:annotation>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="m">
+										<xs:annotation>
+											<xs:documentation>Masculine</xs:documentation>
+											<xs:appinfo>
+												<cf:Class classSchemeId="https://w3id.org/cerif/vocab/Genders" id="https://w3id.org/cerif/vocab/Genders#Masculine">
+													<cf:Term xml:lang="en">Masculine</cf:Term>
+													<cf:Definition xml:lang="en">Man</cf:Definition>
+												</cf:Class>
+											</xs:appinfo>
+										</xs:annotation>
+									</xs:enumeration>
+									<xs:enumeration value="f">
+										<xs:annotation>
+											<xs:documentation>Feminine</xs:documentation>
+											<xs:appinfo>
+												<cf:Class classSchemeId="https://w3id.org/cerif/vocab/Genders" id="https://w3id.org/cerif/vocab/Genders#Feminine">
+													<cf:Term xml:lang="en">Feminine</cf:Term>
+													<cf:Definition xml:lang="en">Woman</cf:Definition>
+												</cf:Class>
+											</xs:appinfo>
+										</xs:annotation>
+									</xs:enumeration>
+								</xs:restriction>
+							</xs:simpleType>
 						</xs:element>
 
 						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID" minOccurs="0" name="ORCID" type="cfString__Type"/>

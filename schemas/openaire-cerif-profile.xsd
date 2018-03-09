@@ -21,33 +21,19 @@
 
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
-<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd">
+	<xs:include schemaLocation="includes/person-identifiers.xsd">
 		<xs:annotation>
-			<xs:documentation>The `xml:lang` attribute.</xs:documentation>
+			<xs:documentation>The person identifiers.</xs:documentation>
 		</xs:annotation>
-	</xs:import>
-	
-	<xs:element abstract="true" name="Individual__SubstitutionGroupHead" type="cfIdAttr__BaseType">
-		<xs:annotation>
-			<xs:documentation>Any CERIF base object</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	
-	<xs:element abstract="true" name="PersonOrOrgUnit__SubstitutionGroupHead" substitutionGroup="Individual__SubstitutionGroupHead" type="PersonOrOrgUnit__BaseType">
-		<xs:annotation>
-			<xs:documentation>A person or an organisational unit</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:complexType name="PersonOrOrgUnit__BaseType">
-		<xs:annotation>
-			<xs:documentation>A common supertype for persons and organisational units</xs:documentation>
-		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="cfIdAttr__BaseType"/>
-		</xs:complexContent>
-	</xs:complexType>
+	</xs:include>
 
-	<xs:element cflink:entity="https://w3id.org/cerif/model#Person" name="Person" substitutionGroup="PersonOrOrgUnit__SubstitutionGroupHead">
+	<xs:include schemaLocation="includes/cerif-commons.xsd">
+		<xs:annotation>
+			<xs:documentation>The common building blocks for any CERIF XML Schema.</xs:documentation>
+		</xs:annotation>
+	</xs:include>
+
+	<xs:element cflink:entity="https://w3id.org/cerif/model#Person" name="Person" substitutionGroup="Person__SubstitutionGroupHead">
 		<xs:annotation>
 			<xs:documentation><![CDATA[
 A human being as an individual.
@@ -64,7 +50,7 @@ One Person typically has many of these relationships.
 		</xs:annotation>
 		<xs:complexType>
 			<xs:complexContent>
-				<xs:extension base="PersonOrOrgUnit__BaseType">
+				<xs:extension base="Person__BaseType">
 					<xs:sequence minOccurs="0">
 
 						<xs:element cflink:entity="https://w3id.org/cerif/model#PersonName" minOccurs="0" name="PersonName">
@@ -134,73 +120,8 @@ One Person typically has many of these relationships.
 							</xs:simpleType>
 						</xs:element>
 
-						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID" minOccurs="0" name="ORCID">
-							<xs:annotation>
-								<xs:documentation xml:lang="en">The ORCID identifier</xs:documentation>
-								<xs:appinfo>
-									<cf:Service id="???">
-										<cf:Name xml:lang="en">The ORCID identifier</cf:Name>
-										<cf:Description xml:lang="en">The service of registering researchers and contributors to research and assigning identifiers to them.  See https://orcid.org for more details.</cf:Description>
-									</cf:Service>
-								</xs:appinfo>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="cfString__Type">
-										<xs:pattern value="https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]">
-											<xs:annotation>
-												<xs:documentation source="http://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier"/>
-											</xs:annotation>
-										</xs:pattern>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID" minOccurs="0" name="ResearcherID">
-							<xs:annotation>
-								<xs:documentation xml:lang="en">The ResearcherID identifier</xs:documentation>
-								<xs:appinfo>
-									<cf:Service id="???">
-										<cf:Name xml:lang="en">The ResearcherID identifier</cf:Name>
-										<cf:Description xml:lang="en">The service of registering researchers (authors of scholarly publications) and assigning identifiers to them, connected to the Web of Science publication database and citation index.  See http://www.researcherid.com/ for more details.</cf:Description>
-									</cf:Service>
-								</xs:appinfo>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="cfString__Type">
-										<xs:pattern value="[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]">
-											<xs:annotation>
-												<xs:documentation source="https://www.wikidata.org/wiki/Property:P1053"/>
-											</xs:annotation>
-										</xs:pattern>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>						
-						</xs:element>
-						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ScopusAuthorID" minOccurs="0" name="ScopusAuthorID">
-							<xs:annotation>
-								<xs:documentation xml:lang="en">The Scopus Author ID identifier</xs:documentation>
-								<xs:appinfo>
-									<cf:Service id="???">
-										<cf:Name xml:lang="en">The Scopus Author ID identifier</cf:Name>
-										<cf:Description xml:lang="en">The service of registering researchers (authors of scholarly publications) and assigning identifiers to them, connected to the Scopus publication database and citation index.  See http://www.researcherid.com/ for more details.</cf:Description>
-									</cf:Service>
-								</xs:appinfo>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="cfString__Type">
-										<xs:pattern value="[0-9]{10,11}">
-											<xs:annotation>
-												<xs:documentation source="https://www.wikidata.org/wiki/Property:P1153"/>
-											</xs:annotation>
-										</xs:pattern>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>						
-						</xs:element>
-
+						<xs:group ref="PersonIdentifiers__Group"/>
+						
 						<xs:element cflink:entity="https://w3id.org/cerif/model#ElectronicAddress" maxOccurs="unbounded" minOccurs="0" name="ElectronicAddress" type="xs:anyURI">
 							<xs:annotation>
 								<xs:documentation>An electronic address associated with the person</xs:documentation>
@@ -217,7 +138,7 @@ One Person typically has many of these relationships.
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element cflink:entity="https://w3id.org/cerif/model#OrganisationUnit" name="OrgUnit" substitutionGroup="PersonOrOrgUnit__SubstitutionGroupHead">
+	<xs:element cflink:entity="https://w3id.org/cerif/model#OrganisationUnit" name="OrgUnit" substitutionGroup="OrgUnit__SubstitutionGroupHead">
 		<xs:annotation>
 			<xs:documentation><![CDATA[Organisation Unit: an organisation, a unit therein, a committee or any other group of people that has a collective goal. Organisation Units are not necessarily formalized as legal entities.
 
@@ -232,7 +153,7 @@ In the research information domain Organisation Units typically represents:
 		</xs:annotation>
 		<xs:complexType>
 			<xs:complexContent>
-				<xs:extension base="PersonOrOrgUnit__BaseType">
+				<xs:extension base="OrgUnit__BaseType">
 					<xs:sequence minOccurs="0">
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#OrganisationUnit.Acronym" minOccurs="0" name="Acronym" type="cfString__Type">
@@ -1790,275 +1711,5 @@ Other Classification specify the type of relationship between two objects (e.g. 
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-
-	<!-- =================================================================== -->
-	
-	<xs:annotation>
-		<xs:documentation>The rest of the XML Schema file contains basic building blocks.</xs:documentation>
-	</xs:annotation>
-
-	<xs:complexType name="cfIdAttr__BaseType">
-		<xs:sequence/>
-		<xs:attribute name="id" type="cfId__SimpleType"/>
-		<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
-	</xs:complexType>
-
-	<xs:simpleType name="cfId__SimpleType">
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="128"/>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:complexType name="cfDate__Type">
-		<xs:simpleContent>
-			<xs:extension base="xs:date">
-				<xs:anyAttribute namespace="##other"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfString__Type">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:anyAttribute namespace="##other"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfMLangString__Type">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute ref="xml:lang" use="required"/>
-				<xs:attribute default="o" name="trans" type="cfTrans__Type" use="optional"/>
-				<xs:anyAttribute namespace="##other"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	
-	<xs:complexType name="cfMLangStringWithOptionalSource__Type">
-		<xs:simpleContent>
-			<xs:extension base="cfMLangString__Type">
-				<xs:attribute name="source" type="xs:string" use="optional"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	
-	<xs:complexType mixed="true" name="cfMLangAnyMixed__Type">
-		<xs:sequence>
-			<xs:any maxOccurs="unbounded" minOccurs="0" namespace="##any" processContents="lax"/>
-		</xs:sequence>
-		<xs:attribute ref="xml:lang" use="required"/>
-		<xs:attribute default="o" name="trans" type="cfTrans__Type" use="optional"/>
-	</xs:complexType>
-
-	<xs:complexType name="cfNonnegativeInteger__Type">
-		<xs:simpleContent>
-			<xs:extension base="xs:nonNegativeInteger">
-				<xs:anyAttribute namespace="##other"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:simpleType name="cfTrans__Type">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="o">
-				<xs:annotation>
-					<xs:documentation>Value in the original language</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="h">
-				<xs:annotation>
-					<xs:documentation>Human-translated value</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-			<xs:enumeration value="m">
-				<xs:annotation>
-					<xs:documentation>Machine-translated value</xs:documentation>
-				</xs:annotation>
-			</xs:enumeration>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:group name="PersonWithAffiliations__Group">
-		<xs:sequence>
-			<xs:element ref="Person"/>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="Affiliation">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element minOccurs="0" name="DisplayName" type="xs:string"/>
-						<xs:element ref="OrgUnit"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:group>
-
-	<xs:group name="__TheRestGroup">
-		<xs:sequence>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="Classification" type="cfGenericClassification__Type"/>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="Link" type="cfGenericLink__Type"/>
-		</xs:sequence>
-	</xs:group>
-
-
-	<xs:complexType name="cfLink__BaseType">
-		<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
-	</xs:complexType>
-
-	<xs:complexType name="cfSimpleLink__Type">
-		<xs:simpleContent>
-			<xs:extension base="cfString__Type">
-				<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfLinkWithDisplayName__BaseType">
-		<xs:complexContent>
-			<xs:extension base="cfLink__BaseType">
-				<xs:sequence>
-					<xs:element minOccurs="0" name="DisplayName" type="xs:string"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfLinkWithDisplayNameToPersonWithAffiliations__Type">
-		<xs:complexContent>
-			<xs:extension base="cfLinkWithDisplayName__BaseType">
-				<xs:sequence>
-					<xs:group ref="PersonWithAffiliations__Group"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type">
-		<xs:complexContent>
-			<xs:extension base="cfLinkWithDisplayName__BaseType">
-				<xs:choice>
-					<xs:group ref="PersonWithAffiliations__Group"/>
-					<xs:element ref="OrgUnit"/>
-				</xs:choice>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
-		<xs:complexContent>
-			<xs:extension base="cfLinkWithDisplayName__BaseType">
-				<xs:sequence>
-					<xs:element ref="PersonOrOrgUnit__SubstitutionGroupHead"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfGenericClassification__Type">
-		<xs:simpleContent>
-			<xs:extension base="cfSimpleLink__Type">
-				<xs:attribute name="scheme" type="xs:anyURI" use="required"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfGenericLink__Type">
-		<xs:complexContent>
-			<xs:extension base="cfLink__BaseType">
-				<xs:sequence>
-					<xs:element ref="Individual__SubstitutionGroupHead"/>
-				</xs:sequence>
-				<xs:attribute name="type" type="xs:string" use="required">
-					<xs:annotation>
-						<xs:documentation>The type of the relationship</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfGenericIdentifier__Type">
-		<xs:annotation>
-			<xs:documentation>A generic federated identifier, the type of the identifier is expressed using the `type` attribute</xs:documentation>
-		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="cfIdentifier__Type">
-				<xs:attribute name="type" type="xs:anyURI" use="required">
-					<xs:annotation>
-						<xs:documentation>The type of the identifier</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfIdentifier__Type">
-		<xs:annotation>
-			<xs:documentation>A federated identifier of a specific type: the type is expressed in the type of the XML Element.</xs:documentation>
-		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="cfString__Type">
-				<xs:attribute name="issuerServiceId" type="cfId__SimpleType" use="optional">
-					<xs:annotation>
-						<xs:documentation>The identifier optionally links to the Service that issued it by specifying the Service ID in this attribute.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:complexType name="cfAmount__Type">
-		<xs:annotation>
-			<xs:documentation>A monetary amount in a specified currency.</xs:documentation>
-		</xs:annotation>
-		<xs:simpleContent>
-			<xs:extension base="xs:float">
-				<xs:attribute name="currency" type="xs:string" use="required">
-					<xs:annotation>
-						<xs:documentation>The code of the currency</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-
-	<xs:attributeGroup name="cfStartDateEndDate__AttributeGroup">
-		<xs:annotation>
-			<xs:documentation>The validity interval specification.</xs:documentation>
-		</xs:annotation>
-		<xs:attribute name="startDate" type="cfGenericDate__SimpleType" use="optional">
-			<xs:annotation>
-				<xs:documentation>The instant when the particular fact or relationship starts being true.
-					When specified, the validity starts at the beginning of the datetime value (e.g. startDate="2016" means "from the beginning of the year 2016"). 
-					When missing, minus infinity is assumed, with the meaning of "from time immemorial", or from times beyond the reach of record.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-		<xs:attribute name="endDate" type="cfGenericDate__SimpleType" use="optional">
-			<xs:annotation>
-				<xs:documentation>The instant when the particular fact or relationship stops being true.
-					When specified, the validity extends up to the end of the datetime value, but it does not include the very last instant (e.g. endDate="2016" means "until the end of the year 2016" i.e., anything before 2017-01-01 00:00:00).
-					When missing, plus infinity is assumed, with the meaning of "until things change" (effectively "forever" for links with semantics that cannot change).
-					Note that translating this value to the cfEndDate attribute from the CERIF Data Model is non-trivial.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
-	</xs:attributeGroup>
-
-	<xs:simpleType name="cfGenericDate__SimpleType">
-		<xs:annotation>
-			<xs:documentation>A time instant in any precision supported by the Primitive Data Types of the XML Schema specification.</xs:documentation>
-		</xs:annotation>
-		<xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-	</xs:simpleType>
-
-	<xs:attributeGroup name="cfExtension__AttributeGroup">
-		<xs:annotation>
-			<xs:documentation>Extension mechanism: Any CERIF XML element type includes this attribute group.</xs:documentation>
-		</xs:annotation>
-		<xs:anyAttribute namespace="##other">
-			<xs:annotation>
-				<xs:documentation>Any CERIF XML element supports attributes from other namespaces.</xs:documentation>
-			</xs:annotation>
-		</xs:anyAttribute>
-	</xs:attributeGroup>
 
 </xs:schema>

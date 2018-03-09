@@ -134,7 +134,30 @@ One Person typically has many of these relationships.
 							</xs:simpleType>
 						</xs:element>
 
-						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID" minOccurs="0" name="ORCID" type="cfString__Type"/>
+						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID" minOccurs="0" name="ORCID">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">The ORCID identifier</xs:documentation>
+								<xs:appinfo>
+									<cf:Service id="???">
+										<cf:Name xml:lang="en">The ORCID identifier</cf:Name>
+										<cf:Description xml:lang="en">The service of registering persons (researchers and contributors to research) and assigning them person identifiers.  See https://orcid.org for more details.</cf:Description>
+									</cf:Service>
+								</xs:appinfo>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="cfString__Type">
+										<xs:pattern value="https://orcid\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]">
+											<xs:annotation>
+												<xs:documentation source="http://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier"/>
+											</xs:annotation>
+										</xs:pattern>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID" minOccurs="0" name="ResearcherID">
+						</xs:element>
 
 						<xs:element cflink:entity="https://w3id.org/cerif/model#ElectronicAddress" maxOccurs="unbounded" minOccurs="0" name="ElectronicAddress" type="xs:anyURI">
 							<xs:annotation>

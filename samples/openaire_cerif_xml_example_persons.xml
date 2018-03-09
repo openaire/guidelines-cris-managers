@@ -17,6 +17,8 @@
 						<FirstNames>Nikos</FirstNames>
 					</PersonName>
 					<ORCID>https://orcid.org/0000-0002-5277-285X</ORCID>
+					<ResearcherID>F-8684-2012</ResearcherID>
+					<ScopusAuthorID>6508266266</ScopusAuthorID>
 					<ElectronicAddress>mailto:email1@example.org</ElectronicAddress>
 					<ElectronicAddress>tel:+301234567890</ElectronicAddress>
 					<ElectronicAddress>fax:+301234567891</ElectronicAddress>

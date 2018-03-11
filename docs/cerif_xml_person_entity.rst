@@ -64,8 +64,27 @@ Gender
 
 ORCID
 ^^^^^
+:Description: The ORCID identifier
 :Use: optional (0..1)
 :Representation: XML element ``ORCID``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+
+ResearcherID
+^^^^^^^^^^^^
+:Description: The ResearcherID identifier
+:Use: optional (0..1)
+:Representation: XML element ``ResearcherID``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+
+ScopusAuthorID
+^^^^^^^^^^^^^^
+:Description: The Scopus Author ID identifier
+:Use: optional (0..1)
+:Representation: XML element ``ScopusAuthorID``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
 

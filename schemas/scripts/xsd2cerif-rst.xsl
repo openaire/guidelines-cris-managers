@@ -257,6 +257,12 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 </xsl:text>
+		<xsl:for-each select="descendant::xs:pattern">
+			<xsl:text>:Format: regular expression ``</xsl:text>
+			<xsl:value-of select="@value"/>
+			<xsl:text>``
+</xsl:text>
+		</xsl:for-each>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 

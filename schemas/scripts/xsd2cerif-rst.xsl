@@ -109,6 +109,8 @@ Internal Identifier
 	</xsl:template>
 
 	<xsl:key name="import-by-namespace" match="/xs:schema/xs:import" use="@namespace"/>
+	
+	<xsl:variable name="included-groups" select="/xs:schema/xs:group, for $l in /xs:schema/xs:include/@schemaLocation return document( $l )/xs:schema/xs:group"/>
 
 	<xsl:template match="xs:element[ @ref ]">
 		<xsl:param name="entityEl"/>
@@ -172,9 +174,18 @@ Internal Identifier
 				<xsl:text>``</xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
-		
 	</xsl:function>
 
+	<xsl:template match="xs:group[ @ref ]" mode="#all">
+		<xsl:param name="entityEl"/>
+		<xsl:variable name="ref" select="string(@ref)"/>
+		<xsl:for-each select="$included-groups[ @name = $ref ]">
+			<xsl:apply-templates select="xs:sequence/*" mode="#current">
+ 				<xsl:with-param name="entityEl" select="$entityEl"/> 
+			</xsl:apply-templates>
+		</xsl:for-each>
+	</xsl:template>
+	
 	<xsl:template match="xs:element[ @name and @cflink:link and @type ]">
 		<xsl:param name="entityEl"/>
 		<xsl:apply-templates mode="make-title" select="@name"/>
@@ -325,7 +336,6 @@ Internal Identifier
 		<xsl:text>``</xsl:text>
 	</xsl:template>
 
-
 	<xsl:template name="process-link-annotation">
 		<xsl:param name="link-annotation"/>
 		<xsl:param name="prefix" select="''"/>
@@ -355,7 +365,12 @@ Internal Identifier
 	</xsl:template>
 	
 	<xsl:template match="attribute::*" mode="make-title">
-		<xsl:variable name="element-depth" select="count( ancestor::xs:element )"/>
+		<xsl:variable name="element-depth">
+			<xsl:choose>
+				<xsl:when test="/xs:schema/xs:element"><xsl:value-of select="count( ancestor::xs:element )"/></xsl:when>
+				<xsl:otherwise><xsl:value-of select="count( ancestor::xs:element ) + 1"/></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<xsl:variable name="underline-char">
 			<xsl:choose>
 				<xsl:when test="$element-depth = 1">=</xsl:when>

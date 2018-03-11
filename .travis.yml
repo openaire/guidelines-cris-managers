@@ -1,8 +1,9 @@
-# Travis build file for building the documentation and checking for errors.
+# Travis build file for checking for errors.
 
 sudo: false
 
 language: java
 
 script:
+    # this runs two Maven goals: transform and validate
     - mvn test -B

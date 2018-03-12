@@ -1,13 +1,16 @@
 OpenAIRE Guidelines for CRIS Managers based on CERIF-XML
 ========================================================
 
-The **OpenAIRE Guidelines for CRIS Managers 1.1**, an update of version 1.0
+This repository is about the **OpenAIRE Guidelines for CRIS Managers 1.1**, 
+
+under review until the end of February 2018.
+
+They are an update of version 1.0 published
 
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.17065.svg
    :target: https://doi.org/10.5281/zenodo.17065
    :alt: v.1.0 DOI
 
-Under review until the end of February 2018.
 
 
 Contents

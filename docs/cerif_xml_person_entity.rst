@@ -64,9 +64,41 @@ Gender
 
 ORCID
 ^^^^^
+:Description: The ORCID identifier
 :Use: optional (0..1)
 :Representation: XML element ``ORCID``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]``
+
+
+
+ResearcherID
+^^^^^^^^^^^^
+:Description: The ResearcherID identifier
+:Use: optional (0..1)
+:Representation: XML element ``ResearcherID``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]``
+
+
+
+ScopusAuthorID
+^^^^^^^^^^^^^^
+:Description: The Scopus Author ID identifier
+:Use: optional (0..1)
+:Representation: XML element ``ScopusAuthorID``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:Format: regular expression ``[0-9]{10,11}``
+
+
+
+ISNI
+^^^^
+:Description: The ISNI identifier
+:Use: optional (0..1)
+:Representation: XML element ``ISNI``
+:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]``
 
 
 

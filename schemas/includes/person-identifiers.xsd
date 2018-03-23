@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:cfprocess="https://w3id.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xml:lang="en"
+	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
+	<xs:annotation>
+		<xs:documentation>This is the XML Schema component for the OpenAIRE CERIF profile 1.1 which specifies the admissible person identifiers.
+			For further description please see the main schema file.
+			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:import schemaLocation="../includes/cerif-commons.xsd">
+		<xs:annotation>
+			<xs:documentation>The common building blocks for any CERIF XML Schema.</xs:documentation>
+		</xs:annotation>
+	</xs:import>
+
+	<xs:group name="PersonIdentifiers__Group">
+		<xs:sequence>
+
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID" minOccurs="0" name="ORCID">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">The ORCID identifier</xs:documentation>
+					<xs:appinfo>
+						<cf:Service id="284ef409-28e8-4d73-9437-5d310befa158">
+							<cf:Name xml:lang="en">The ORCID identifier</cf:Name>
+							<cf:Description xml:lang="en">The service of registering researchers and contributors to research and assigning identifiers to them.  See https://orcid.org for more details.</cf:Description>
+						</cf:Service>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:restriction base="cfString__Type">
+							<xs:pattern value="https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]">
+								<xs:annotation>
+									<xs:documentation source="https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier"/>
+								</xs:annotation>
+							</xs:pattern>
+						</xs:restriction>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID" minOccurs="0" name="ResearcherID">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">The ResearcherID identifier</xs:documentation>
+					<xs:appinfo>
+						<cf:Service id="65e9b592-c406-4717-ad1c-1a1cad3bd89a">
+							<cf:Name xml:lang="en">The ResearcherID identifier</cf:Name>
+							<cf:Description xml:lang="en">The service of registering researchers (authors of scholarly publications) and assigning identifiers to them, connected to the Web of Science publication database and citation index.  See http://www.researcherid.com/ for more details.</cf:Description>
+						</cf:Service>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:restriction base="cfString__Type">
+							<xs:pattern value="[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]">
+								<xs:annotation>
+									<xs:documentation source="https://www.wikidata.org/wiki/Property:P1053"/>
+								</xs:annotation>
+							</xs:pattern>
+						</xs:restriction>
+					</xs:simpleContent>
+				</xs:complexType>						
+			</xs:element>
+
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ScopusAuthorID" minOccurs="0" name="ScopusAuthorID">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">The Scopus Author ID identifier</xs:documentation>
+					<xs:appinfo>
+						<cf:Service id="580d5a0c-bdb0-475d-b67a-df62b0aea90b">
+							<cf:Name xml:lang="en">The Scopus Author ID identifier</cf:Name>
+							<cf:Description xml:lang="en">The service of registering researchers (authors of scholarly publications) and assigning identifiers to them, connected to the Scopus publication database and citation index.  See http://www.researcherid.com/ for more details.</cf:Description>
+						</cf:Service>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:restriction base="cfString__Type">
+							<xs:pattern value="[0-9]{10,11}">
+								<xs:annotation>
+									<xs:documentation source="https://www.wikidata.org/wiki/Property:P1153"/>
+								</xs:annotation>
+							</xs:pattern>
+						</xs:restriction>
+					</xs:simpleContent>
+				</xs:complexType>						
+			</xs:element>
+
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISNI" minOccurs="0" name="ISNI">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">The ISNI identifier</xs:documentation>
+					<xs:appinfo>
+						<cf:Service id="01ceb044-45b0-4ac9-91c1-d72edc5c9ed8">
+							<cf:Name xml:lang="en">The ISNI identifier</cf:Name>
+							<cf:Description xml:lang="en">The identifiers assigned to persons, legal entities and other named objects.  See http://www.isni.org/ for more details.</cf:Description>
+						</cf:Service>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:restriction base="cfString__Type">
+							<xs:pattern value="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]">
+								<xs:annotation>
+									<xs:documentation source="https://www.wikidata.org/wiki/Property:P213"/>
+								</xs:annotation>
+							</xs:pattern>
+						</xs:restriction>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+
+<!-- a skeleton
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#XXX" minOccurs="0" name="XXX">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">The XXX identifier</xs:documentation>
+					<xs:appinfo>
+						## @id: please generate a fresh Version 4 UUID (e.g. through the 'uuidgen | tr A-F a-f' linux or macOS commands or online at https://www.uuidgenerator.net/version4)
+						<cf:Service id="">
+							## please keep the cf:Name equal to the xs:documentation above, per @xml:lang
+							<cf:Name xml:lang="en">The XXX identifier</cf:Name>
+							## please provide a short description of the scope of the identifier service and supply a pointer to a webpage with more details
+							<cf:Description xml:lang="en">The service of registering YYY and assigning identifiers to them.  See ZZZ for more details.</cf:Description>
+						</cf:Service>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:restriction base="cfString__Type">
+							## @value: supply a regular expression the values shall match
+							<xs:pattern value="">
+								<xs:annotation>
+									## and document where you got it from
+									<xs:documentation source=""/>
+								</xs:annotation>
+							</xs:pattern>
+						</xs:restriction>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+ -->
+		</xs:sequence>
+	</xs:group>
+
+</xs:schema>

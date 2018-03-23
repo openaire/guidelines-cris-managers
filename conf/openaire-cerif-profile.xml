@@ -45,6 +45,7 @@
 
 		<Entity uri="https://w3id.org/cerif/model#Person" leaveOut="Type">
 			<Identifier name="ORCID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID"/>
+			<Identifier name="ResearcherID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID"/>
 		</Entity>
 		<Entity uri="https://w3id.org/cerif/model#PersonName">
 		</Entity>

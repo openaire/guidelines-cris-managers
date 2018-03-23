@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.openaire</groupId>
 	<artifactId>guidelines-cris-managers</artifactId>
@@ -16,6 +15,7 @@
 					<execution>
 						<goals>
 							<goal>validate</goal>
+							<goal>transform</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -37,10 +37,27 @@
 							</excludes>
 						</validationSet>
 					</validationSets>
+					<transformationSets>
+						<transformationSet>
+							<dir>schemas</dir>
+							<includes>
+								<include>openaire-cerif-profile.xsd</include>
+							</includes>
+							<outputDir>docs/_build</outputDir>
+							<stylesheet>schemas/scripts/xsd2cerif-rst.xsl</stylesheet>
+						</transformationSet>
+					</transformationSets>
 					<catalogs>
 						<catalog>schemas/catalog.xml</catalog>
 					</catalogs>
 				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.saxon</groupId>
+						<artifactId>Saxon-HE</artifactId>
+						<version>9.8.0-8</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>

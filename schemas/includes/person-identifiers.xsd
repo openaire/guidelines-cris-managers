@@ -109,8 +109,10 @@
 				</xs:complexType>
 			</xs:element>
 
-<!-- a skeleton
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#XXX" minOccurs="0" name="XXX">
+<!-- A skeleton for contributing new identifier types
+			## ideally please submit a GitHub pull request with branch called 'add-XXX'
+			## but we will welcome your contribution no matter how you choose to communicate it to us  
+			<xs:element cflink:identifier="true" minOccurs="0" name="XXX">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The XXX identifier.  Contributed by ## developer name (an identifier such as GitHub account or ORCID iD).</xs:documentation>
 					<xs:appinfo>

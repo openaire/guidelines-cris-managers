@@ -25,10 +25,10 @@ We wish to acknowledge the following contributors and also those who provided fe
 
 **Editors**
 
-- Jan Dvořák, Charles University in Prague, Czech Republic
-- Andrea Bollini, 4Science, Italy
-- Laurent Rémy, IS4RI, France
-- Jochen Schirrwagen, Bielefeld University, Germany
+- Jan Dvořák, https://orcid.org/0000-0001-8985-152X, Charles University, Czech Republic
+- Andrea Bollini, https://orcid.org/0000-0002-9029-1854, 4Science, Italy
+- Laurent Rémy, https://orcid.org/0000-0003-1143-2645, IS4RI, France
+- Jochen Schirrwagen, https://orcid.org/0000-0002-0458-1004, Bielefeld University, Germany
 
 Versions
 ^^^^^^^^

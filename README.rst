@@ -26,3 +26,9 @@ Contents
 XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
 
 Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
+
+
+
+Contributing
+~~~~~~~~~~~~
+

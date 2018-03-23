@@ -114,7 +114,7 @@
 			## but we will welcome your contribution no matter how you choose to communicate it to us  
 			<xs:element cflink:identifier="true" minOccurs="0" name="XXX">
 				<xs:annotation>
-					<xs:documentation xml:lang="en">The XXX identifier.  Contributed by ## developer name (an identifier such as GitHub account or ORCID iD).</xs:documentation>
+					<xs:documentation xml:lang="en">The XXX identifier</xs:documentation>
 					<xs:appinfo>
 						## @id: please generate a fresh Version 4 UUID (e.g. through the 'uuidgen | tr A-F a-f' linux or macOS commands or online at https://www.uuidgenerator.net/version4)
 						<cf:Service id="">

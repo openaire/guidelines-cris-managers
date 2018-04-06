@@ -30,14 +30,22 @@ We wish to acknowledge the following contributors and also those who provided fe
 - Laurent Rémy, https://orcid.org/0000-0003-1143-2645, IS4RI, France
 - Jochen Schirrwagen, https://orcid.org/0000-0002-0458-1004, Bielefeld University, Germany
 
+
+**Contributors**
+
+- Wilko Steinhof, DANS, The Netherlands
+
+
 Versions
 ^^^^^^^^
-* 1.1 draft, January 2018
-* 1.0 December 2014
 
-  * final document
+- 1.1, currently in finalization
 
-* 0.95 Febrary 2014
+- 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
 
-  * Initial document
 
+Contributing
+^^^^^^^^^^^^
+
+We welcome your comments and suggestions. 
+Please see https://github.com/openaire/guidelines-cris-managers#contributing

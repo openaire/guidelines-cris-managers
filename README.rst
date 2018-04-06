@@ -26,3 +26,13 @@ Contents
 XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
 
 Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
+
+
+
+Contributing
+~~~~~~~~~~~~
+
+Your feedback, esp. as a CRIS manager or developer of a CRIS platform, is important for us. You can provide us feedback using the following channels:
+
+* by creating an issue in our guidelines github repository (you need to have a github account): https://github.com/openaire/guidelines-cris-managers/issues
+* by sending an e-mail: info@openaire.eu

@@ -64,6 +64,10 @@
 <xsl:text>:Examples: `</xsl:text><xsl:value-of select="$example-uri"/><xsl:text> &lt;</xsl:text><xsl:value-of select="concat( 'https://github.com/openaire/guidelines-cris-managers/blob/master/samples/', $example-uri )"/><xsl:text>&gt;`_
 </xsl:text>
 			</xsl:if>
+			<xsl:if test="$elName = 'Service'">
+<xsl:text>:Examples: `sample Identify response &lt;https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_Identify.xml&gt;`_
+</xsl:text>
+			</xsl:if>
 <xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``; the rest of this section documents children of this element
 </xsl:text>
 <xsl:text>:CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text> entity (`&lt;</xsl:text><xsl:value-of select="@cflink:entity"/><xsl:text>&gt;`_)

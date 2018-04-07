@@ -4,7 +4,7 @@
 Service
 =======
 :Description: CRIS compatible with the OpenAIRE Guidelines for CRIS Managers
-:Examples: `openaire_cerif_xml_example_services.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_cerif_xml_example_services.xml>`_
+:Examples: `sample Identify response <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_Identify.xml>`_
 :Representation: XML element ``Service``; the rest of this section documents children of this element
 :CERIF: the Service entity (`<https://w3id.org/cerif/model#Service>`_)
 

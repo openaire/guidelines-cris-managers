@@ -75,9 +75,6 @@ The description and required characteristics of the sets are provided in the fol
 || The list of CERIF XML records for equipment.           || **setName:** OpenAIRE_CRIS_equipments  |
 ||                                                        || **setSpec:** openaire_cris_equipments  |
 +---------------------------------------------------------+-----------------------------------------+
-|| The list of CERIF XML records for services.            || **setName:** OpenAIRE_CRIS_services    |
-||                                                        || **setSpec:** openaire_cris_services    |
-+---------------------------------------------------------+-----------------------------------------+
 
 Referential integrity constraints for all relationships among entities must be satisfied in the CERIF XML data provided by the CRIS system. 
 

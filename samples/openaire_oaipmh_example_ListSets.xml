@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+
+	<responseDate>2018-04-07T13:37:47Z</responseDate>
+	<request verb="ListSets">http://api.openaire.eu/oai_pmh</request>
+
+	<ListSets>
+
+		<set>
+			<setSpec>openaire_cris_publications</setSpec>
+			<setName>OpenAIRE_CRIS_publications</setName>
+		</set>
+		
+		<set>
+			<setSpec>openaire_cris_products</setSpec>
+			<setName>OpenAIRE_CRIS_products</setName>
+		</set>		
+		
+		<set>
+			<setSpec>openaire_cris_patents</setSpec>
+			<setName>OpenAIRE_CRIS_patents</setName>
+		</set>		
+		
+		<set>
+			<setSpec>openaire_cris_persons</setSpec>
+			<setName>OpenAIRE_CRIS_persons</setName>
+		</set>		
+
+		<set>
+			<setSpec>openaire_cris_orgunits</setSpec>
+			<setName>OpenAIRE_CRIS_orgunits</setName>
+		</set>		
+		
+		<set>
+			<setSpec>openaire_cris_projects</setSpec>
+			<setName>OpenAIRE_CRIS_projects</setName>
+		</set>		
+		
+		<set>
+			<setSpec>openaire_cris_funding</setSpec>
+			<setName>OpenAIRE_CRIS_funding</setName>
+		</set>		
+		
+		<set>
+			<setSpec>openaire_cris_events</setSpec>
+			<setName>OpenAIRE_CRIS_events</setName>
+		</set>		
+		
+		<set>
+			<setSpec>openaire_cris_equipments</setSpec>
+			<setName>OpenAIRE_CRIS_equipments</setName>
+		</set>		
+		
+	</ListSets>
+
+</OAI-PMH>

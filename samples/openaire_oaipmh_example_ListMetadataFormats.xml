@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+
+	<responseDate>2018-04-07T13:27:20Z</responseDate>
+	<request verb="ListMetadataFormats">http://api.openaire.eu/oai_pmh</request>
+
+	<ListMetadataFormats>
+
+		<metadataFormat>
+			<metadataPrefix>oai_cerif_openaire</metadataPrefix>
+			<schema>https://github.com/openaire/guidelines-cris-managers/raw/master/schemas/openaire-cerif-profile.xsd</schema>
+			<metadataNamespace>https://www.openaire.eu/cerif-profile/1.1/</metadataNamespace>
+		</metadataFormat>
+
+	</ListMetadataFormats>
+
+</OAI-PMH>

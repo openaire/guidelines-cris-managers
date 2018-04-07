@@ -7,6 +7,12 @@
 
 	<public publicId="https://www.openaire.eu/cerif-profile/1.1/" uri="./openaire-cerif-profile.xsd" />
 	
+	<public publicId="http://www.openarchives.org/OAI/2.0/" uri="./cached/OAI-PMH.xsd" />
+	<system systemId="http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd" uri="./cached/OAI-PMH.xsd" />
+	
+	<public publicId="http://www.openarchives.org/OAI/2.0/oai-identifier" uri="./cached/oai-identifier.xsd" />
+	<system systemId="http://www.openarchives.org/OAI/2.0/oai-identifier.xsd" uri="./cached/oai-identifier.xsd" />
+	
 	<public publicId="http://www.w3.org/2001/XMLSchema" uri="./cached/XMLSchema.xsd" />
 	<system systemId="https://www.w3.org/2012/04/XMLSchema.xsd" uri="./cached/XMLSchema.xsd" />
 	

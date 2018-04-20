@@ -19,13 +19,13 @@
 
 	<xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility" schemaLocation="vocabularies/openaire_service_compatibilities.xsd"/>
 
-	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
-
 	<xs:include schemaLocation="includes/person-identifiers.xsd">
 		<xs:annotation>
 			<xs:documentation>The person identifiers.</xs:documentation>
 		</xs:annotation>
 	</xs:include>
+
+	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
 <xs:include schemaLocation="includes/cerif-commons.xsd">
 		<xs:annotation>

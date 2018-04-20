@@ -50,7 +50,7 @@
 		<Entity uri="https://w3id.org/cerif/model#PersonName">
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#OrganisationUnit">
+		<Entity uri="https://w3id.org/cerif/model#OrganisationUnit" leaveOut="Parts">
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ElectronicAddress">

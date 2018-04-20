@@ -199,29 +199,6 @@ In the research information domain Organisation Units typically represents:
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:container="ordered" minOccurs="0" name="Parts">
-							<xs:annotation>
-								<xs:documentation>The list of parts (smaller units) of this unit (container element)</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit(https://w3id.org/cerif/vocab/Inter-­OrganisationRelations#Part):2" maxOccurs="unbounded" minOccurs="0" name="Part">
-										<xs:annotation>
-											<xs:documentation>The relationship to the contained unit</xs:documentation>
-										</xs:annotation>
-										<xs:complexType>
-											<xs:complexContent>
-												<xs:extension base="cfLinkWithDisplayName__BaseType">
-													<xs:sequence>
-														<xs:element ref="OrgUnit"/>
-													</xs:sequence>
-												</xs:extension>
-											</xs:complexContent>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
 
 						<!-- ... -->
 

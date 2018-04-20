@@ -60,20 +60,4 @@ PartOf
 :CERIF: the OrganisationUnit_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/Inter-­OrganisationRelations#Part>`_ semantics (direction :1)
 
 
-Parts
-^^^^^
-:Description: The list of parts (smaller units) of this unit (container element)
-:Use: optional (0..1)
-:Representation: XML element ``Parts`` with ordered embedded XML elements ``Part``
-
-
-
-Part
-----
-:Description: The relationship to the contained unit
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Part`` with embedded XML element ``OrgUnit``
-:CERIF: the OrganisationUnit_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/Inter-­OrganisationRelations#Part>`_ semantics (direction :2)
-
-
 

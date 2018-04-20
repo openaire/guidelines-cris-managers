@@ -215,12 +215,4 @@ Status
 :CERIF: the Project_Classification (`<https://w3id.org/cerif/model#Project_Classification>`_)
 
 
-Originated
-^^^^^^^^^^
-:Description: The research outputs this project has led to
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Originated`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
-:CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the Project_ResultProduct linking entity (`<https://w3id.org/cerif/model#Project_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics
-
-
 

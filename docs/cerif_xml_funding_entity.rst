@@ -103,14 +103,6 @@ Supports
 :CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
 
 
-Originated
-^^^^^^^^^^
-:Description: The research outputs this funding has led to
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Originated`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
-:CERIF: the ResultPublication_Funding linking entity (`<https://w3id.org/cerif/model#ResultPublication_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics; the ResultProduct_Funding linking entity (`<https://w3id.org/cerif/model#ResultProduct_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
-
-
 Duration
 ^^^^^^^^
 :Description: Duration of the funding

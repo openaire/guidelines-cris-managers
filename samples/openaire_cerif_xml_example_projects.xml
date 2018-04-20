@@ -88,40 +88,6 @@
 						the OpenAIRE portal, together with any available relevant information on associated project funding and usage statistics.
 						OpenAIREplus will retain its European footprint, engaging people and scientific repositories in almost all 27 EU member states and beyond. The technical work will be complemented by a suite of studies and associated research efforts that will partly proceed in collaboration with different European initiatives and investigate issues of intellectual property rights,
 						efficient financing models, and standards.</Abstract>
-					<Originated>
-						<Publication id="4123451">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_5794</Type><!-- conference paper -->
-							<Title xml:lang="en">The Data Model of the OpenAIRE Scientific Communication e-Infrastructure</Title>
-							<DOI>10.1007/978-3-642-35233-1_18</DOI>
-						</Publication>
-					</Originated>
-					<Originated>
-						<Publication id="894491">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_3e5a</Type><!-- contribution to journal -->
-							<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
-							<PublishedIn>
-								<Publication id="894490"><!-- Int J Digital Curation -->
-									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640</Type><!-- journal -->
-									<Title xml:lang="en">The International Journal of Digital Curation</Title>
-									<ISSN>1746-8256</ISSN>
-								</Publication>
-							</PublishedIn>
-						</Publication>
-					</Originated>
-					<Originated>
-						<Publication id="812348">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501</Type><!-- journal article -->
-							<Title xml:lang="en">Linking Data and Publications: Towards a Cross-Disciplinary Approach</Title>
-							<PublishedIn>
-								<Publication id="894490"><!-- Int J Digital Curation -->
-									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640</Type><!-- journal -->
-									<Title xml:lang="en">The International Journal of Digital Curation</Title>
-									<ISSN>1746-8256</ISSN>
-								</Publication>
-							</PublishedIn>
-							<DOI>10.2218/ijdc.v8i1.257</DOI>
-						</Publication>
-					</Originated>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 					<Link type="https://w3id.org/cerif/vocab/ActivityFundingTypes#Contract">
 						<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
@@ -294,12 +260,6 @@
 						facilitate a wider sharing of knowledge and technologies across fields. The activity for Education and Training provides training courses to new users. The working group on Standards and Protocols contributes to better structure the way research infrastructures operate. The development of a distributed data base for airborne activities improves the access to the data collected by the aircraft. All these activities rely on an unique web portal to airborne research in Europe. The working
 						group on the Sustainable Structure aims at promoting solutions for the long term sustainability of EUFAR. Among the JRA, one will develop and characterize airborne hygrometers, the second one will develop and implement quality layers in the processing chains of hyperspectral imagery, and the third one will develop an airborne drop spectrometer based on a new principle.
 					</Abstract>
-					<Originated>
-						<Product id="7123451">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1</Type><!-- dataset -->
-							<Name xml:lang="en">Airborne In-situ Atmospheric Instuments and Hyperspectral Instruments Data from the Projects Funded Under The European Facility for Airborne Research in Environmental and Geo-sciences (EUFAR) Project</Name>
-						</Product>
-					</Originated>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 				</Project>
 			</metadata>

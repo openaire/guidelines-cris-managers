@@ -417,20 +417,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:annotation>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPublication(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#Project_ResultPatent(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#Project_ResultProduct(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="Originated">	
-							<xs:annotation>
-								<xs:documentation>The research outputs this project has led to</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="cfLink__BaseType">
-										<xs:sequence>
-											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
+						
 						
 						<xs:group ref="__TheRestGroup"/>
 						

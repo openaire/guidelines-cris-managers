@@ -59,7 +59,7 @@
 		<Entity uri="https://w3id.org/cerif/model#Project" leaveOut="Costs Funders">
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#Funding">
+		<Entity uri="https://w3id.org/cerif/model#Funding" leaveOut="Originated">
 			<Classification kind="Type" schema="vocabularies/openaire_funding_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the funding</xs:documentation>

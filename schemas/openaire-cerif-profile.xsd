@@ -27,7 +27,7 @@
 		</xs:annotation>
 	</xs:include>
 
-	<xs:include schemaLocation="includes/cerif-commons.xsd">
+<xs:include schemaLocation="includes/cerif-commons.xsd">
 		<xs:annotation>
 			<xs:documentation>The common building blocks for any CERIF XML Schema.</xs:documentation>
 		</xs:annotation>
@@ -121,7 +121,7 @@ One Person typically has many of these relationships.
 						</xs:element>
 
 						<xs:group ref="PersonIdentifiers__Group"/>
-						
+
 						<xs:element cflink:entity="https://w3id.org/cerif/model#ElectronicAddress" maxOccurs="unbounded" minOccurs="0" name="ElectronicAddress" type="xs:anyURI">
 							<xs:annotation>
 								<xs:documentation>An electronic address associated with the person</xs:documentation>
@@ -199,6 +199,7 @@ In the research information domain Organisation Units typically represents:
 							</xs:complexType>
 						</xs:element>
 
+						
 
 						<!-- ... -->
 
@@ -522,20 +523,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator) https://w3id.org/cerif/model#ResultPatent_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator) https://w3id.org/cerif/model#ResultProduct_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="Originated">
-							<xs:annotation>
-								<xs:documentation>The research outputs this funding has led to</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="cfLink__BaseType">
-										<xs:sequence>
-											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
+						
 						
 						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/Durations#FundingDuration)" minOccurs="0" name="Duration" type="cfLink__BaseType">
 <xs:annotation>

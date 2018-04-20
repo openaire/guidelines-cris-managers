@@ -93,15 +93,6 @@
 							</PartOf>
 						</Funding>
 					</PartOf>
-					<Supports>
-						<Project id="112345"/><!-- OpenAIREplus -->
-					</Supports>
-					<Supports>
-						<Project id="112346"/><!-- OpenAIRE -->
-					</Supports>
-					<Supports>
-						<Project id="112347"/><!-- EUFAR -->
-					</Supports>
 					<Duration startDate="2007-01-01" endDate="2013-12-31" />
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements" startDate="2008-08-20">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification><!-- the current record -->
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements" endDate="2008-08-20">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAnotMandated</Classification><!-- history -->
@@ -137,9 +128,6 @@
 							</PartOf>
 						</Funding>
 					</PartOf>
-					<Supports>
-						<Project id="112346"/><!-- OpenAIRE -->
-					</Supports>
 					<Duration startDate="2009-12" endDate="2012-11"/>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 				</Funding>
@@ -174,9 +162,6 @@
 							</PartOf>
 						</Funding>
 					</PartOf>
-					<Supports>
-						<Project id="112345"/><!-- OpenAIREplus -->
-					</Supports>
 					<Duration startDate="2011-12" endDate="2014-05"/>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 				</Funding>
@@ -211,9 +196,6 @@
 							</PartOf>
 						</Funding>
 					</PartOf>
-					<Supports>
-						<Project id="112347"/><!-- EUFAR -->
-					</Supports>
 					<Duration startDate="2008-09-22" endDate="2013-09-30"/>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 				</Funding>

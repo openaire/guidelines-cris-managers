@@ -95,14 +95,6 @@ PartOf
 :CERIF: the Funding_Funding linking entity (`<https://w3id.org/cerif/model#Funding_Funding>`_) with the `<https://w3id.org/cerif/vocab/Inter-­FundingRelations#Part>`_ semantics (direction :1)
 
 
-Supports
-^^^^^^^^
-:Description: A project supported by this funding
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Supports`` with embedded XML element ``Project``
-:CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
-
-
 Duration
 ^^^^^^^^
 :Description: Duration of the funding

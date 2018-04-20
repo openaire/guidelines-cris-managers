@@ -495,20 +495,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:complexType>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Funding(https://w3id.org/cerif/vocab/ProjectFundingRelations#Support)" maxOccurs="unbounded" minOccurs="0" name="Supports">
-							<xs:annotation>
-								<xs:documentation>A project supported by this funding</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="cfLink__BaseType">
-										<xs:sequence>
-											<xs:element ref="Project"/>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
+						
 
 						
 						

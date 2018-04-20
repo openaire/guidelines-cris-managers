@@ -44,8 +44,11 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Person" leaveOut="Type">
-			<Identifier name="ORCID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ORCID"/>
-			<Identifier name="ResearcherID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID"/>
+			<IdentifiersFrom schemaLocation="includes/person-identifiers.xsd">
+				<xs:annotation>
+					<xs:documentation>The person identifiers.</xs:documentation>
+				</xs:annotation>
+			</IdentifiersFrom>
 		</Entity>
 		<Entity uri="https://w3id.org/cerif/model#PersonName">
 		</Entity>

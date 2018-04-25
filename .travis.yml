@@ -6,4 +6,4 @@ language: java
 
 script:
     # this runs two Maven goals: transform and validate
-    - mvn test -B
+    - travis_wait mvn test -B

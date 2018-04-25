@@ -75,7 +75,7 @@
 			</xs:element>
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages">
+		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages ReferencedBy">
 			<Classification kind="Type" schema="vocabularies/coar_publication_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the publication</xs:documentation>
@@ -116,11 +116,6 @@
 					<xs:documentation>Result outputs that are referenced by this publication</xs:documentation>
 				</xs:annotation>
 			</Link>
-			<Link name="ReferencedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2" target="ResearchOutput__SubstitutionGroupHead">
-				<xs:annotation>
-					<xs:documentation>Result outputs that reference this publication</xs:documentation>
-				</xs:annotation>
-			</Link>
 			<xs:element xmlns="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="Access">
 				<xs:annotation>
 					<xs:documentation>The open access type of the publication</xs:documentation>
@@ -128,7 +123,7 @@
 			</xs:element>
  		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName">
+		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName ReferencedBy">
 			<Classification kind="Type" schema="vocabularies/coar_product_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the resulting product (other than publication or patent)</xs:documentation>
@@ -159,14 +154,9 @@
 					<xs:documentation>Result outputs that are referenced by this product</xs:documentation>
 				</xs:annotation>
 			</Link>
-			<Link name="ReferencedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2" target="ResearchOutput__SubstitutionGroupHead">
-				<xs:annotation>
-					<xs:documentation>Result outputs that reference this product</xs:documentation>
-				</xs:annotation>
-			</Link>
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultPatent">
+		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy">
 			<Classification kind="Type" schema="vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>

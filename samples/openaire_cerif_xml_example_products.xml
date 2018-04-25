@@ -118,13 +118,6 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Product>
 						</Part>
 					</Parts>
-					<ReferencedBy>
-						<Publication id="852734">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
-							<Title xml:lang="en">Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Title>
-							<DOI>10.1111/J.1558-5646.2011.01539.X</DOI>
-						</Publication>
-					</ReferencedBy>
 				</Product>
         	</metadata>
         </record>

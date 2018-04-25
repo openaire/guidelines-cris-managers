@@ -780,21 +780,6 @@ This entity typically represents the granularity level of a single published ite
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2" maxOccurs="unbounded" minOccurs="0" name="ReferencedBy">
-<xs:annotation>
-<xs:documentation>Result outputs that reference this publication</xs:documentation>
-</xs:annotation>
-<xs:complexType>
-<xs:complexContent>
-<xs:extension base="cfLink__BaseType">
-<xs:choice>
-<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
-</xs:choice>
-</xs:extension>
-</xs:complexContent>
-</xs:complexType>
-</xs:element>
-
 <xs:element xmlns:ns4="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="ns4:Access">
 <xs:annotation>
 <xs:documentation>The open access type of the publication</xs:documentation>
@@ -1060,21 +1045,6 @@ This includes:
 <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this product</xs:documentation>
-</xs:annotation>
-<xs:complexType>
-<xs:complexContent>
-<xs:extension base="cfLink__BaseType">
-<xs:choice>
-<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
-</xs:choice>
-</xs:extension>
-</xs:complexContent>
-</xs:complexType>
-</xs:element>
-
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):2" maxOccurs="unbounded" minOccurs="0" name="ReferencedBy">
-<xs:annotation>
-<xs:documentation>Result outputs that reference this product</xs:documentation>
 </xs:annotation>
 <xs:complexType>
 <xs:complexContent>

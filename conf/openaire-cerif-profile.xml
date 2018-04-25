@@ -193,21 +193,6 @@
 					<xs:documentation>The partner of the event</xs:documentation>
 				</xs:annotation>
 			</Link>
-			<Link name="OutputIn" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Output)" target="Publication">
-				<xs:annotation>
-					<xs:documentation>The publication that contains the proceedings from this event</xs:documentation>
-				</xs:annotation>
-			</Link>
-			<Link name="Presented" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented) https://w3id.org/cerif/model#ResultProduct_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented) https://w3id.org/cerif/model#ResultPatent_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented)" target="ResearchOutput__SubstitutionGroupHead">
-				<xs:annotation>
-					<xs:documentation>The research output that was presented at this event</xs:documentation>
-				</xs:annotation>
-			</Link>
-			<Link name="CoveredIn" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage) https://w3id.org/cerif/model#ResultProduct_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage) https://w3id.org/cerif/model#ResultPatent_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage)" target="ResearchOutput__SubstitutionGroupHead">
-				<xs:annotation>
-					<xs:documentation>The research output (e.g. a report or a video) that covered this event</xs:documentation>
-				</xs:annotation>
-			</Link>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Classification">

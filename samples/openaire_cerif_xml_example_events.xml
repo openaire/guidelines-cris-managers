@@ -15,14 +15,6 @@
 					<Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
 					<Acronym>MTSR 2012</Acronym>
 					<Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>
-					<OutputIn>
-						<Publication id="895501">
-							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_f744</Type><!-- conference proceedings -->
-							<Title xml:lang="en">Metadata and Semantics Research</Title>
-							<Subtitle xml:lang="en">6th Research Conference, MTSR 2012, Cádiz, Spain, November 28-30, 2012. Proceedings</Subtitle>
-							<DOI>https://doi.org/10.1007/978-3-642-35233-1</DOI>
-						</Publication>
-					</OutputIn>
 				</Event>
 			</metadata>
 		</record>

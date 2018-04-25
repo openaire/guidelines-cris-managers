@@ -128,28 +128,4 @@ Partner
 :CERIF: the OrganisationUnit_Event linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Partner>`_ semantics; the Project_Event linking entity (`<https://w3id.org/cerif/model#Project_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Partner>`_ semantics
 
 
-OutputIn
-^^^^^^^^
-:Description: The publication that contains the proceedings from this event
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``OutputIn`` with embedded XML element ``Publication``
-:CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Output>`_ semantics
-
-
-Presented
-^^^^^^^^^
-:Description: The research output that was presented at this event
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Presented`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
-:CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics; the ResultProduct_Event linking entity (`<https://w3id.org/cerif/model#ResultProduct_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics; the ResultPatent_Event linking entity (`<https://w3id.org/cerif/model#ResultPatent_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics
-
-
-CoveredIn
-^^^^^^^^^
-:Description: The research output (e.g. a report or a video) that covered this event
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``CoveredIn`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
-:CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics; the ResultProduct_Event linking entity (`<https://w3id.org/cerif/model#ResultProduct_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics; the ResultPatent_Event linking entity (`<https://w3id.org/cerif/model#ResultPatent_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics
-
-
 

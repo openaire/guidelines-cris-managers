@@ -118,9 +118,9 @@
 										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
 									</OrgUnit>
 								</By>
-								<From>
-									<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
-								</From>
+								<As>
+									<Funding id="612352"/><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+								</As>
 							</Funded>
 						</Project>
 					</OriginatesFrom>
@@ -192,9 +192,9 @@
 										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
 			                			</OrgUnit>
 								</By>
-								<From>
-									<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
-								</From>
+								<As>
+									<Funding id="612352"/><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+								</As>
 							</Funded>
     						</Project>
 					</OriginatesFrom>
@@ -327,9 +327,9 @@
 										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
 									</OrgUnit>
 								</By>
-								<From>
-									<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
-								</From>
+								<As>
+									<Funding id="612352" /><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+								</As>
 							</Funded>
 						</Project>
 					</OriginatesFrom>

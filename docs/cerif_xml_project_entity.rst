@@ -153,7 +153,7 @@ Funded
 ^^^^^^
 :Description: Information about funding of this project
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Funded`` with unordered embedded XML elements ``By`` that can contain an embedded organisation unit or person or ``From`` or ``As``
+:Representation: XML element ``Funded`` with unordered embedded XML elements ``By`` that can contain an embedded organisation unit or person or ``As``
 
 
 
@@ -163,14 +163,6 @@ By
 :Use: optional (0..1)
 :Representation: XML element ``By`` with embedded XML element ``OrgUnit`` or ``Person``
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Funder>`_ semantics
-
-
-From
-----
-:Description: The funding programme from which the project was funded
-:Use: optional (0..1)
-:Representation: XML element ``From`` with embedded XML element ``Funding``
-:CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
 
 
 As

@@ -59,7 +59,7 @@
 		<Entity uri="https://w3id.org/cerif/model#ElectronicAddress">
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#Project" leaveOut="Costs Funders Originated">
+		<Entity uri="https://w3id.org/cerif/model#Project" leaveOut="Costs Funders Originated Funded/From">
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Funding" leaveOut="Originated Supports">

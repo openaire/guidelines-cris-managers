@@ -961,29 +961,7 @@ This includes:
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:container="unordered" minOccurs="0" name="Parts">
-							<xs:annotation>
-								<xs:documentation>The research products that make up this product (e.g. constituent parts of a data set)</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-ProductRelations#Part):2 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Part):2 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Part):2" maxOccurs="unbounded" minOccurs="0" name="Part">
-										<xs:annotation>
-											<xs:documentation>Links to the research outputs that make up this product</xs:documentation>
-										</xs:annotation>
-										<xs:complexType>
-											<xs:complexContent>
-												<xs:extension base="cfLinkWithDisplayName__BaseType">
-													<xs:sequence>
-														<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
-													</xs:sequence>
-												</xs:extension>
-											</xs:complexContent>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						
 
 						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultProduct(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#ResultProduct_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>

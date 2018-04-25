@@ -75,7 +75,7 @@
 			</xs:element>
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages ReferencedBy">
+		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages ReferencedBy Parts">
 			<Classification kind="Type" schema="vocabularies/coar_publication_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the publication</xs:documentation>
@@ -123,7 +123,7 @@
 			</xs:element>
  		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName ReferencedBy">
+		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName ReferencedBy Parts">
 			<Classification kind="Type" schema="vocabularies/coar_product_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the resulting product (other than publication or patent)</xs:documentation>
@@ -156,7 +156,7 @@
 			</Link>
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy">
+		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts">
 			<Classification kind="Type" schema="vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>

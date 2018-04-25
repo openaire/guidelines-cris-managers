@@ -92,32 +92,6 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Keyword xml:lang="en">Australia</Keyword>
 					<Keyword xml:lang="en">Northeast Queensland</Keyword>
 					<Keyword xml:lang="en">Lampropholis coggeri</Keyword>
-					<Parts>
-						<Part>
-							<Product id="729481">
-								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-								<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
-								<VersionInfo xml:lang="en">1</VersionInfo>
-								<DOI>10.5061/DRYAD.4GH6HF5G/1</DOI>
-							</Product>
-						</Part>
-						<Part>
-							<Product id="729482">
-								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
-								<Name xml:lang="en">Base script used for simulations</Name>
-								<VersionInfo xml:lang="en">1</VersionInfo>
-								<DOI>10.5061/DRYAD.4GH6HF5G/2</DOI>
-							</Product>
-						</Part>
-						<Part>
-							<Product id="729483">
-								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-								<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
-								<VersionInfo xml:lang="en">1</VersionInfo>
-								<DOI>10.5061/DRYAD.4GH6HF5G/3</DOI>
-							</Product>
-						</Part>
-					</Parts>
 				</Product>
         	</metadata>
         </record>

@@ -173,22 +173,6 @@ PartOf
 :CERIF: the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-ProductRelations#Part>`_ semantics (direction :1)
 
 
-Parts
-^^^^^
-:Description: The research products that make up this product (e.g. constituent parts of a data set)
-:Use: optional (0..1)
-:Representation: XML element ``Parts`` with unordered embedded XML elements ``Part``
-
-
-
-Part
-----
-:Description: Links to the research outputs that make up this product
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Part`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
-:CERIF: the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-ProductRelations#Part>`_ semantics (direction :2); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Part>`_ semantics (direction :2); the ResultProduct_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Part>`_ semantics (direction :2)
-
-
 OriginatesFrom
 ^^^^^^^^^^^^^^
 :Use: optional, possibly multiple (0..*)

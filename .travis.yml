@@ -4,6 +4,8 @@ sudo: false
 
 language: java
 
+install: true
+
 script:
     # this runs two Maven goals: transform and validate
     - travis_wait mvn test -B

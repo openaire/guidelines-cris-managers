@@ -846,7 +846,22 @@ Source: Wikipedia
 							</xs:complexType>
 						</xs:element>
 												
-						<xs:group ref="__TheRestGroup"/>
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:annotation>
+<xs:documentation>Result outputs that are referenced by this patent</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:complexContent>
+<xs:extension base="cfLink__BaseType">
+<xs:choice>
+<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+</xs:choice>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+</xs:element>
+
+<xs:group ref="__TheRestGroup"/>
 						
 					</xs:sequence>
 				</xs:extension>

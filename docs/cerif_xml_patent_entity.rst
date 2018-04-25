@@ -116,4 +116,12 @@ OriginatesFrom
 :CERIF: the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
 
 
+References
+^^^^^^^^^^
+:Description: Result outputs that are referenced by this patent
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
+:CERIF: the ResultPatent_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultPatent_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultPatent_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1)
+
+
 

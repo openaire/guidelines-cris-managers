@@ -67,6 +67,14 @@ CountryCode
 
 
 
+Issuer
+^^^^^^
+:Description: The issuer of the patent: the patent office
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Issuer`` with embedded XML element ``OrgUnit``
+:CERIF: the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentIssuer>`_ semantics
+
+
 PatentNumber
 ^^^^^^^^^^^^
 :Use: optional (0..1)

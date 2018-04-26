@@ -217,6 +217,16 @@
 		</xs:complexContent>
 	</xs:complexType>
 
+	<xs:complexType name="cfLinkWithDisplayNameToOrgUnit__Type">
+		<xs:complexContent>
+			<xs:extension base="cfLinkWithDisplayName__BaseType">
+				<xs:sequence>
+					<xs:element ref="OrgUnit__SubstitutionGroupHead"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
 	<xs:complexType name="cfGenericClassification__Type">
 		<xs:simpleContent>
 			<xs:extension base="cfSimpleLink__Type">

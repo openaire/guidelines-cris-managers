@@ -1284,7 +1284,13 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
 												
 						
 
-						<xs:group ref="__TheRestGroup"/>
+						<xs:element cflink:link="https://w3id.org/cerif/model#Person_Service(https://w3id.org/cerif/vocab/PersonResearchInfrastructureRoles#Owner) https://w3id.org/cerif/model#OrganisationUnit_Service(https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner)" maxOccurs="unbounded" minOccurs="0" name="Owner" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
+<xs:annotation>
+<xs:documentation>The owner of the piece of equipment</xs:documentation>
+</xs:annotation>
+</xs:element>
+
+<xs:group ref="__TheRestGroup"/>
 
 					</xs:sequence>
 				</xs:extension>

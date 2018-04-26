@@ -27,7 +27,7 @@
 
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
-<xs:include schemaLocation="includes/cerif-commons.xsd">
+<xs:include schemaLocation="./includes/cerif-commons.xsd">
 		<xs:annotation>
 			<xs:documentation>The common building blocks for any CERIF XML Schema.</xs:documentation>
 		</xs:annotation>
@@ -811,11 +811,26 @@ Source: Wikipedia
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.CountryCode" minOccurs="0" name="CountryCode" type="cfString__Type"/>
 						
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.PatentNumber" minOccurs="0" name="PatentNumber" type="cfString__Type"/>
-						
+
 						<xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
 							<xs:annotation>
 								<xs:documentation>An identifier of this patent</xs:documentation>
 							</xs:annotation>
+						</xs:element>
+
+						<xs:element cflink:container="ordered" minOccurs="0" name="Inventors">
+							<xs:annotation>
+								<xs:documentation>The inventors of this patent</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="https://w3id.org/cerif/model#Person_ResultPatent(https://w3id.org/cerif/vocab/PersonOutputContributions#Inventor)" maxOccurs="unbounded" minOccurs="0" name="Inventor" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type">
+										<xs:annotation>
+											<xs:documentation>The inventor: The actual devisor of an invention that is the subject of a patent.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
 						</xs:element>
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.Abstract" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangString__Type"/>

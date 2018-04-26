@@ -84,6 +84,22 @@ Identifier
 
 
 
+Inventors
+^^^^^^^^^
+:Description: The inventors of this patent
+:Use: optional (0..1)
+:Representation: XML element ``Inventors`` with ordered embedded XML elements ``Inventor``
+
+
+
+Inventor
+--------
+:Description: The inventor: The actual devisor of an invention that is the subject of a patent.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Inventor`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
+:CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Inventor>`_ semantics
+
+
 Abstract
 ^^^^^^^^
 :Use: optional, possibly multiple (0..*)

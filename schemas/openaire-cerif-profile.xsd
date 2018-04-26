@@ -406,7 +406,22 @@ The Project entity only captures details of the project scope and plan. Informat
 
 						
 						
-						<xs:group ref="__TheRestGroup"/>
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Equipment(https://w3id.org/cerif/vocab/ProjectResearchInfrastructureRelations#User)" maxOccurs="unbounded" minOccurs="0" name="Uses">
+<xs:annotation>
+<xs:documentation>The equipment this project uses</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:complexContent>
+<xs:extension base="cfLink__BaseType">
+<xs:choice>
+<xs:element ref="Equipment"/>
+</xs:choice>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+</xs:element>
+
+<xs:group ref="__TheRestGroup"/>
 						
 					</xs:sequence>
 				</xs:extension>

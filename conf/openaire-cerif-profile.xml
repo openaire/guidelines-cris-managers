@@ -60,6 +60,11 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Project" leaveOut="Costs Funders Originated Funded/From">
+			<Link name="Uses" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#Project_Equipment(https://w3id.org/cerif/vocab/ProjectResearchInfrastructureRelations#User)" target="Equipment">
+				<xs:annotation>
+					<xs:documentation>The equipment this project uses</xs:documentation>
+				</xs:annotation>
+			</Link>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Funding" leaveOut="Originated Supports">

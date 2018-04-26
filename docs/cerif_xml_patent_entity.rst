@@ -100,6 +100,22 @@ Inventor
 :CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Inventor>`_ semantics
 
 
+Holders
+^^^^^^^
+:Description: The holders of this patent
+:Use: optional (0..1)
+:Representation: XML element ``Holders`` with ordered embedded XML elements ``Holder`` that can contain an embedded organisation unit or person
+
+
+
+Holder
+------
+:Description: The patent rights holder, also known as the patentee or assignee
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Holder`` with embedded XML element ``OrgUnit`` or ``Person``
+:CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#PatentHolder>`_ semantics; the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentHolder>`_ semantics
+
+
 Abstract
 ^^^^^^^^
 :Use: optional, possibly multiple (0..*)

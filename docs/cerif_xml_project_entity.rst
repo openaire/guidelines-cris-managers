@@ -207,4 +207,12 @@ Status
 :CERIF: the Project_Classification (`<https://w3id.org/cerif/model#Project_Classification>`_)
 
 
+Uses
+^^^^
+:Description: The equipment this project uses
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Uses`` with embedded XML element ``Equipment``
+:CERIF: the Project_Equipment linking entity (`<https://w3id.org/cerif/model#Project_Equipment>`_) with the `<https://w3id.org/cerif/vocab/ProjectResearchInfrastructureRelations#User>`_ semantics
+
+
 

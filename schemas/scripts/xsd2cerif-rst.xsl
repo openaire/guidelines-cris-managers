@@ -199,6 +199,7 @@ Internal Identifier
 		<xsl:choose>
 			<xsl:when test="@type = 'cfGenericClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliations__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``</xsl:when>
 			<xsl:otherwise> *TODO*</xsl:otherwise>
 		</xsl:choose>

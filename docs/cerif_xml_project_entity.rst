@@ -129,7 +129,7 @@ PrincipalInvestigator
 ---------------------
 :Description: The principal investigator: the person responsible for the whole project, the head of the project team
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``PrincipalInvestigator`` *TODO*
+:Representation: XML element ``PrincipalInvestigator`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#PrincipalInvestigator>`_ semantics
 
 
@@ -137,7 +137,7 @@ Contact
 -------
 :Description: A person to contact in matters connected with her/his organisations' participation in the project
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Contact`` *TODO*
+:Representation: XML element ``Contact`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#OrganisationContact>`_ semantics
 
 
@@ -145,7 +145,7 @@ Member
 ------
 :Description: A member of the project team
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Member`` *TODO*
+:Representation: XML element ``Member`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#TeamMember>`_ semantics
 
 

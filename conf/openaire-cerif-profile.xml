@@ -49,6 +49,11 @@
 					<xs:documentation>The person identifiers.</xs:documentation>
 				</xs:annotation>
 			</IdentifiersFrom>
+			<Link name="Affiliation" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#Person_OrganisationUnit(https://w3id.org/cerif/vocab/PersonOrganisationRoles#Affiliation)" target="OrgUnit">
+				<xs:annotation>
+					<xs:documentation>The organisation or organisation unit the person is affiliated with</xs:documentation>
+				</xs:annotation>
+			</Link>
 		</Entity>
 		<Entity uri="https://w3id.org/cerif/model#PersonName">
 		</Entity>

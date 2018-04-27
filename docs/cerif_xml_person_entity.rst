@@ -111,4 +111,12 @@ ElectronicAddress
 
 
 
+Affiliation
+^^^^^^^^^^^
+:Description: The organisation or organisation unit the person is affiliated with
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Affiliation`` with embedded XML element ``OrgUnit``
+:CERIF: the Person_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Person_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/PersonOrganisationRoles#Affiliation>`_ semantics
+
+
 

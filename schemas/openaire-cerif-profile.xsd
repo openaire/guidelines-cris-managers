@@ -130,7 +130,22 @@ One Person typically has many of these relationships.
 
 						<!-- ... -->
 
-						<xs:group ref="__TheRestGroup"/>
+						<xs:element cflink:link="https://w3id.org/cerif/model#Person_OrganisationUnit(https://w3id.org/cerif/vocab/PersonOrganisationRoles#Affiliation)" maxOccurs="unbounded" minOccurs="0" name="Affiliation">
+<xs:annotation>
+<xs:documentation>The organisation or organisation unit the person is affiliated with</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:complexContent>
+<xs:extension base="cfLink__BaseType">
+<xs:choice>
+<xs:element ref="OrgUnit"/>
+</xs:choice>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+</xs:element>
+
+<xs:group ref="__TheRestGroup"/>
 						
 					</xs:sequence>
 				</xs:extension>

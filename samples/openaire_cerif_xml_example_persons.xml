@@ -22,6 +22,11 @@
 					<ElectronicAddress>mailto:email1@example.org</ElectronicAddress>
 					<ElectronicAddress>tel:+301234567890</ElectronicAddress>
 					<ElectronicAddress>fax:+301234567891</ElectronicAddress>
+					<Affiliation>
+						<OrgUnit id="312347">
+							<Acronym>EKT</Acronym>
+						</OrgUnit>
+					</Affiliation>
 				</Person>
 			</metadata>
 		</record>

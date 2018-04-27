@@ -15,6 +15,13 @@
 					<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
 					<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
 					<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
+					<Owner>
+						<OrgUnit id="312346">
+							<Acronym>CNR</Acronym>
+							<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
+							<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
+						</OrgUnit>
+					</Owner>
 				</Equipment>
 			</metadata>
 		</record>

@@ -583,7 +583,7 @@ This entity typically represents the granularity level of a single published ite
 
 						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-PublicationRelations#Publication):1" minOccurs="0" name="PublishedIn">
 							<xs:annotation>
-								<xs:documentation>Link to the source (another Publication) where this publication appeared</xs:documentation>
+								<xs:documentation>Link to the source (another Publication) where this publication appeared. Should be used to link to the publishing channel.</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:complexContent>
@@ -598,7 +598,7 @@ This entity typically represents the granularity level of a single published ite
 
 						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-PublicationRelations#Part):1" minOccurs="0" name="PartOf">
 							<xs:annotation>
-								<xs:documentation>Link to the Publication of which this publication is a part (e.g. a book chapter links to the book that contains it)</xs:documentation>
+								<xs:documentation>Link to the Publication of which this publication is a part (e.g. a book chapter links to the book that contains it). Should be used to link to the containing publication.</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:complexContent>

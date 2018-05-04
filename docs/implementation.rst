@@ -96,3 +96,9 @@ For example a publication with internal ID of 560d48b6-42c3-4ef9-81d6-32c949fb2c
 on behalf of the University of Exampleton (www.exampleton.ac.uk with a cris running at cris.exampleton.ac.uk) 
 will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/560d48b6-42c3-4ef9-81d6-32c949fb2cdb``. 
 
+Compatibility of aggregators
+""""""""""""""""""""""""""""
+
+Aggregating CRISs (e.g. at the regional or national levels) can also become compliant to these Guidelines.
+These CRISs should provide additional provenance information about its records.
+The relevant [section of the Literature Repository Guidelines](https://guidelines.openaire.eu/en/latest/literature/use_of_oai_pmh.html#compatibility-of-aggregators) should be followed.

@@ -261,7 +261,7 @@ The Project entity only captures details of the project scope and plan. Informat
 				<xs:extension base="ProjectFunding__BaseType">
 					<xs:sequence minOccurs="0">
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The type of the project</xs:documentation>
 							</xs:annotation>
@@ -393,7 +393,7 @@ The Project entity only captures details of the project scope and plan. Informat
 						</xs:element>
 
 						<xs:sequence/>
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The subject classification(s) of the project</xs:documentation>
 							</xs:annotation>
@@ -413,7 +413,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:annotation>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Classification" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_Classification" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The status of the project</xs:documentation>
 							</xs:annotation>
@@ -700,13 +700,13 @@ This entity typically represents the granularity level of a single published ite
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification" maxOccurs="unbounded" minOccurs="0" name="License" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification" maxOccurs="unbounded" minOccurs="0" name="License" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The license of the publication</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The subject of the publication from a classification</xs:documentation>
 							</xs:annotation>
@@ -720,7 +720,7 @@ This entity typically represents the granularity level of a single published ite
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPublication.Abstract" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangString__Type"/>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericURIClassification__Type">
 							<!-- any class scheme of the 'status' character -->
 						</xs:element>
 
@@ -886,7 +886,7 @@ Source: Wikipedia
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.Abstract" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangString__Type"/>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The subject of the patent from a classification</xs:documentation>
 							</xs:annotation>
@@ -994,7 +994,7 @@ This includes:
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification" maxOccurs="unbounded" minOccurs="0" name="License" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification" maxOccurs="unbounded" minOccurs="0" name="License" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The license of the product</xs:documentation>
 							</xs:annotation>
@@ -1002,7 +1002,7 @@ This includes:
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultProduct.Description" maxOccurs="unbounded" minOccurs="0" name="Description" type="cfMLangString__Type"/>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The subject of the product from a classification</xs:documentation>
 							</xs:annotation>
@@ -1123,7 +1123,7 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=event
 				<xs:extension base="cfIdAttr__BaseType">
 					<xs:sequence minOccurs="0">
  						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Event_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Event_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The type of the event</xs:documentation>
 							</xs:annotation>
@@ -1171,7 +1171,7 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=event
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Event_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Event_Classification" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The subject category of the event from a classification</xs:documentation>
 							</xs:annotation>
@@ -1267,7 +1267,7 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
 				<xs:extension base="Infrastructure__BaseType">
 					<xs:sequence minOccurs="0">
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Equipment_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericClassification__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Equipment_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericURIClassification__Type">
 							<xs:annotation>
 								<xs:documentation>The type of the equipment</xs:documentation>
 							</xs:annotation>

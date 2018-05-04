@@ -76,9 +76,9 @@
 					<Subject scheme="http://www.wipo.int/classifications/ipc/en/">A61M1/00</Subject>
 					<Subject scheme="http://www.wipo.int/classifications/ipc/en/">A61M1/34</Subject>
 					<Subject scheme="http://www.wipo.int/classifications/ipc/en/">A61M1/36</Subject>
-					<!--
-					Priority number(s): WO2014IB66015 20141113 ; IT2013TO00925 20131114
-					-->
+					<Link type="https://w3id.org/cerif/vocab/InterProjectRelation#Priority">
+						<Patent id="712179" /><!-- WO2014IB66015 -->
+					</Link>
 				</Patent>
 			</metadata>
 		</record>
@@ -152,9 +152,6 @@
 					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0218</Subject>
 					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0236</Subject>
 					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M2202/0427</Subject>
-					<!--
-					Priority number(s): IT2013TO00925 20131114
-					-->
 				</Patent>
 			</metadata>
 		</record>

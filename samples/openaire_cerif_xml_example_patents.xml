@@ -15,8 +15,8 @@
 					<!--https://worldwide.espacenet.com/publicationDetails/biblio?FT=D&date=20170808&DB=EPODOC&locale=en_EP&CC=BR&NR=112016010203A2&KC=A2&ND=4-->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">http://purl.org/coar/resource_type/c_15cd</Type>
 					<Title xml:lang="en">MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID</Title>
-					<RegistrationDate>2016</RegistrationDate>
-					<ApprovalDate>20141113</ApprovalDate>
+					<RegistrationDate>2016-01-01</RegistrationDate>
+					<ApprovalDate>2014-11-13</ApprovalDate>
 					<CountryCode>BR</CountryCode>
 					<Issuer>
 						<OrgUnit id="12345">
@@ -93,8 +93,7 @@
 					<!--https://worldwide.espacenet.com/publicationDetails/biblio?FT=D&date=20150521&DB=EPODOC&locale=en_EP&CC=WO&NR=2015071852A2&KC=A2&ND=4-->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">http://purl.org/coar/resource_type/c_15cd</Type>
 					<Title xml:lang="en">MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID</Title>
-					<RegistrationDate>2014</RegistrationDate>
-					<ApprovalDate>20141113</ApprovalDate>
+					<ApprovalDate>2014-11-13</ApprovalDate>
 					<CountryCode>WO</CountryCode>
 					<Issuer>
 						<OrgUnit id="12345">
@@ -143,7 +142,7 @@
 							</OrgUnit>
 						</Holder>
 					</Holders>
-					<Abstract>A medical device for separating a fluid, in particular for separating platelet-rich plasma from whole blood, comprises three containers (10, 20, 30) and at least one corresponding connection line (40) having an intermediate bifurcation (41). Provided on the connection line (40) are valve means (42, 45, 47a, 48a-48b) for enabling or preventing a flow of fluid. At least one container (10) comprises a hollow container body (11) and a plunger (12) associated in a movable way to the container body (11). The device (1) has a modular structure comprising a plurality of modules (A, B, C), which are connected together in a separable way, for enabling separation thereof according to the step of use of the device (1), and include at least one first module (A), which comprises at least the first container (10) and a corresponding portion (40a) of the first connection line (40), and a second module (B), which comprises at least one between the second and third containers (30, 20) with a corresponding portion (40b, 40c) of the first connection line (40). Provided at least at the interface between two modules (A, B, C) of the modular structure are releasable connectors (43, 44), in particular hydraulic connectors comprising at least two parts that can be coupled together, each of which belongs to a corresponding module (A, B, C).</Abstract>
+					<Abstract xml:lang="en">A medical device for separating a fluid, in particular for separating platelet-rich plasma from whole blood, comprises three containers (10, 20, 30) and at least one corresponding connection line (40) having an intermediate bifurcation (41). Provided on the connection line (40) are valve means (42, 45, 47a, 48a-48b) for enabling or preventing a flow of fluid. At least one container (10) comprises a hollow container body (11) and a plunger (12) associated in a movable way to the container body (11). The device (1) has a modular structure comprising a plurality of modules (A, B, C), which are connected together in a separable way, for enabling separation thereof according to the step of use of the device (1), and include at least one first module (A), which comprises at least the first container (10) and a corresponding portion (40a) of the first connection line (40), and a second module (B), which comprises at least one between the second and third containers (30, 20) with a corresponding portion (40b, 40c) of the first connection line (40). Provided at least at the interface between two modules (A, B, C) of the modular structure are releasable connectors (43, 44), in particular hydraulic connectors comprising at least two parts that can be coupled together, each of which belongs to a corresponding module (A, B, C).</Abstract>
 					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61B5/150755</Subject>
 					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0009</Subject>
 					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0272</Subject>

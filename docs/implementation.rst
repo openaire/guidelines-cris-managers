@@ -10,7 +10,7 @@ This CERIF XML uses the namespace `<https://www.openaire.eu/cerif-profile/1.1/>`
 Its structure is defined and constrained by the corresponding XML Schema. [#f0]_
 Accompanying these Guidelines is a comprehensive set of examples. [#f1]_
 
-Each metadata object is represented as a top-level XML element: ``Publication``, ``Product``, ``Patent``, ``Person``, ``OrgUnit``, ``Project``, ``Funding``, ``Event``, ``Equipment``, ``Service``.
+Each metadata object is represented as a top-level XML element: ``Publication``, ``Product``, ``Patent``, ``Person``, ``OrgUnit``, ``Project``, ``Funding``, ``Event``, ``Equipment``.
 The content model for each of these elements is specified in the previous section; the rest of this subsection gives guidelines to its usage.
 
 CERIF represents titles, names, abstracts and similar text attributes as multi-lingual. 

@@ -101,4 +101,4 @@ Compatibility of aggregators
 
 Aggregating CRISs (e.g. at the regional or national levels) can also become compliant to these Guidelines.
 These CRISs should provide additional provenance information about its records.
-The relevant [section of the Literature Repository Guidelines](https://guidelines.openaire.eu/en/latest/literature/use_of_oai_pmh.html#compatibility-of-aggregators) should be followed.
+The relevant `section of the Literature Repository Guidelines <https://guidelines.openaire.eu/en/latest/literature/use_of_oai_pmh.html#compatibility-of-aggregators>`_ should be followed.

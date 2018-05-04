@@ -18,4 +18,5 @@
 	
 	<public publicId="http://www.w3.org/XML/1998/namespace" uri="./cached/xml.xsd" />
 	<system systemId="https://www.w3.org/2001/xml.xsd" uri="./cached/xml.xsd" />
+	<system systemId="http://www.w3.org/2001/xml.xsd" uri="./cached/xml.xsd" />
 </catalog>

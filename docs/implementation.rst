@@ -10,7 +10,7 @@ This CERIF XML uses the namespace `<https://www.openaire.eu/cerif-profile/1.1/>`
 Its structure is defined and constrained by the corresponding XML Schema. [#f0]_
 Accompanying these Guidelines is a comprehensive set of examples. [#f1]_
 
-Each metadata object is represented as a top-level XML element: ``Publication``, ``Product``, ``Patent``, ``Person``, ``OrgUnit``, ``Project``, ``Funding``, ``Event``, ``Equipment``, ``Service``.
+Each metadata object is represented as a top-level XML element: ``Publication``, ``Product``, ``Patent``, ``Person``, ``OrgUnit``, ``Project``, ``Funding``, ``Event``, ``Equipment``.
 The content model for each of these elements is specified in the previous section; the rest of this subsection gives guidelines to its usage.
 
 CERIF represents titles, names, abstracts and similar text attributes as multi-lingual. 
@@ -82,11 +82,23 @@ OAI identifiers
 """""""""""""""
 
 The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{type}/{internal ID}`` 
-where ``{service}`` denotes the internet domain name of the institution which uses the CRIS,
+where ``{service}`` denotes the internet domain name of the CRIS,
 ``{type}`` stands for the type of the object,
-and ``{internal ID}`` denotes an internal identifier of the publication within the CRIS.
+and ``{internal ID}`` denotes an internal identifier of the object within the CRIS.
 
-The types are expressed in the plural form of the XML element that represents the object i.e., the name of the collection of all such objects.
-For example a publication with internal ID of 282349 from a CRIS running on behalf of the University of Exampleton (www.exampleton.ac.uk with a cris running at cris.exampleton.ac.uk) 
-will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/282349``. 
+The types are expressed by the plural form of the XML element that represents the object i.e., the name of the collection of all such objects.
 
+The internal identifiers are also used in the ``id`` attributes in the CERIF XML mark-up.
+If several candidate internal identifiers are available, the most persistent one should be preferred.
+In many cases a UUID – if it is assigned – is more likely to be persistent than integer IDs.
+
+For example a publication with internal ID of 560d48b6-42c3-4ef9-81d6-32c949fb2cdb (a UUID) from a CRIS running 
+on behalf of the University of Exampleton (www.exampleton.ac.uk with a cris running at cris.exampleton.ac.uk) 
+will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/560d48b6-42c3-4ef9-81d6-32c949fb2cdb``. 
+
+Compatibility of aggregators
+""""""""""""""""""""""""""""
+
+Aggregating CRISs (e.g. at the regional or national levels) can also become compliant to these Guidelines.
+These CRISs should provide additional provenance information about its records.
+The relevant `section of the Literature Repository Guidelines <https://guidelines.openaire.eu/en/latest/literature/use_of_oai_pmh.html#compatibility-of-aggregators>`_ should be followed.

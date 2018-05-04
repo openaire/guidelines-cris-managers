@@ -69,9 +69,6 @@
 					<Identifier type="">http://www.ekt.gr</Identifier><!-- FIXME -->
 					<Classification scheme="">GR</Classification><!-- Greece -->
 					<Classification scheme="">EL303</Classification><!-- Κεντρικός Τομέας Αθηνών (Kentrikos Tomeas Athinon) -->
-					<Link type="https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner">
-						<Service id="8123451" /><!-- cris.example.org -->
-					</Link>
 				</OrgUnit>
 			</metadata>
 		</record>

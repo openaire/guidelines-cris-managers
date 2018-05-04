@@ -242,6 +242,16 @@
 						facilitate a wider sharing of knowledge and technologies across fields. The activity for Education and Training provides training courses to new users. The working group on Standards and Protocols contributes to better structure the way research infrastructures operate. The development of a distributed data base for airborne activities improves the access to the data collected by the aircraft. All these activities rely on an unique web portal to airborne research in Europe. The working
 						group on the Sustainable Structure aims at promoting solutions for the long term sustainability of EUFAR. Among the JRA, one will develop and characterize airborne hygrometers, the second one will develop and implement quality layers in the processing chains of hyperspectral imagery, and the third one will develop an airborne drop spectrometer based on a new principle.
 					</Abstract>
+					<Uses>
+						<Equipment id="82394874">
+							<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
+						</Equipment>
+					</Uses>
+					<Uses>
+						<Equipment id="82394875">
+							<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
+						</Equipment>
+					</Uses>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 				</Project>
 			</metadata>

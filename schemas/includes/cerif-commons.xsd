@@ -88,6 +88,14 @@
 		</xs:simpleContent>
 	</xs:complexType>
 
+    <xs:complexType name="cfURI__Type">
+        <xs:simpleContent>
+            <xs:extension base="xs:anyURI">
+                <xs:anyAttribute namespace="##other"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
 	<xs:complexType name="cfMLangString__Type">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
@@ -158,7 +166,7 @@
 
 	<xs:group name="__TheRestGroup">
 		<xs:sequence>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="Classification" type="cfGenericClassification__Type"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Classification" type="cfGenericURIClassification__Type"/>
 			<xs:element maxOccurs="unbounded" minOccurs="0" name="Link" type="cfGenericLink__Type"/>
 		</xs:sequence>
 	</xs:group>
@@ -168,13 +176,21 @@
 		<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
 	</xs:complexType>
 
-	<xs:complexType name="cfSimpleLink__Type">
+	<xs:complexType name="cfSimpleStringLink__Type">
 		<xs:simpleContent>
 			<xs:extension base="cfString__Type">
 				<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+
+    <xs:complexType name="cfSimpleURILink__Type">
+        <xs:simpleContent>
+            <xs:extension base="cfURI__Type">
+                <xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
 
 	<xs:complexType name="cfLinkWithDisplayName__BaseType">
 		<xs:complexContent>
@@ -227,13 +243,21 @@
 		</xs:complexContent>
 	</xs:complexType>
 
-	<xs:complexType name="cfGenericClassification__Type">
+	<xs:complexType name="cfGenericStringClassification__Type">
 		<xs:simpleContent>
-			<xs:extension base="cfSimpleLink__Type">
+			<xs:extension base="cfSimpleStringLink__Type">
 				<xs:attribute name="scheme" type="xs:anyURI" use="required"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+
+    <xs:complexType name="cfGenericURIClassification__Type">
+        <xs:simpleContent>
+            <xs:extension base="cfSimpleURILink__Type">
+                <xs:attribute name="scheme" type="xs:anyURI" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
 
 	<xs:complexType name="cfGenericLink__Type">
 		<xs:complexContent>

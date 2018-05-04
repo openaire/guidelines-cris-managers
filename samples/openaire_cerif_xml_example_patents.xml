@@ -65,20 +65,20 @@
 							</OrgUnit>
 						</Holder>
 					</Holders>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61B5/150755</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0009</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0272</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/3693</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">B01D21/262</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0218</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0236</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M2202/0427</Subject>
-					<Subject scheme="http://www.wipo.int/classifications/ipc/en/">A61M1/00</Subject>
-					<Subject scheme="http://www.wipo.int/classifications/ipc/en/">A61M1/34</Subject>
-					<Subject scheme="http://www.wipo.int/classifications/ipc/en/">A61M1/36</Subject>
-					<Link type="https://w3id.org/cerif/vocab/InterProjectRelation#Priority">
+					<Subject scheme="https://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61B5-150755</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0009</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0272</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-3693</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/B01D21-262</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0218</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0236</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M2202-0427</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-00</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-34</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-36</Subject>
+					<Predecessors>
 						<Patent id="712179" /><!-- WO2014IB66015 -->
-					</Link>
+					</Predecessors>
 				</Patent>
 			</metadata>
 		</record>
@@ -143,14 +143,14 @@
 						</Holder>
 					</Holders>
 					<Abstract xml:lang="en">A medical device for separating a fluid, in particular for separating platelet-rich plasma from whole blood, comprises three containers (10, 20, 30) and at least one corresponding connection line (40) having an intermediate bifurcation (41). Provided on the connection line (40) are valve means (42, 45, 47a, 48a-48b) for enabling or preventing a flow of fluid. At least one container (10) comprises a hollow container body (11) and a plunger (12) associated in a movable way to the container body (11). The device (1) has a modular structure comprising a plurality of modules (A, B, C), which are connected together in a separable way, for enabling separation thereof according to the step of use of the device (1), and include at least one first module (A), which comprises at least the first container (10) and a corresponding portion (40a) of the first connection line (40), and a second module (B), which comprises at least one between the second and third containers (30, 20) with a corresponding portion (40b, 40c) of the first connection line (40). Provided at least at the interface between two modules (A, B, C) of the modular structure are releasable connectors (43, 44), in particular hydraulic connectors comprising at least two parts that can be coupled together, each of which belongs to a corresponding module (A, B, C).</Abstract>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61B5/150755</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0009</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0272</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/3693</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">B01D21/262</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0218</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M1/0236</Subject>
-					<Subject scheme="http://www.cooperativepatentclassification.org/cpcSchemeAndDefinitions.html">A61M2202/0427</Subject>
+					<Subject scheme="https://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61B5-150755</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0009</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0272</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-3693</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/B01D21-262</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0218</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M1-0236</Subject>
+					<Subject scheme="http://data.epo.org/linked-data/def/cpc/scheme">https://data.epo.org/linked-data/def/cpc/A61M2202-0427</Subject>
 				</Patent>
 			</metadata>
 		</record>

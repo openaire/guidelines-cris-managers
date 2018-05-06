@@ -101,7 +101,7 @@ Subtitle
 
 PublishedIn
 ^^^^^^^^^^^
-:Description: Link to the source (another Publication) where this publication appeared
+:Description: Link to the source (another Publication) where this publication appeared. Should be used to link to the publishing channel.
 :Use: optional (0..1)
 :Representation: XML element ``PublishedIn`` with embedded XML element ``Publication``
 :CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-PublicationRelations#Publication>`_ semantics (direction :1)
@@ -109,7 +109,7 @@ PublishedIn
 
 PartOf
 ^^^^^^
-:Description: Link to the Publication of which this publication is a part (e.g. a book chapter links to the book that contains it)
+:Description: Link to the Publication of which this publication is a part (e.g. a book chapter links to the book that contains it). Should be used to link to the containing publication.
 :Use: optional (0..1)
 :Representation: XML element ``PartOf`` with embedded XML element ``Publication``
 :CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-PublicationRelations#Part>`_ semantics (direction :1)

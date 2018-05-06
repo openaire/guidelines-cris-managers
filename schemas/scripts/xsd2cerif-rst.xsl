@@ -197,7 +197,8 @@ Internal Identifier
 		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
 		<xsl:choose>
-			<xsl:when test="@type = 'cfGenericClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
+			<xsl:when test="@type = 'cfGenericURIClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
+            <xsl:when test="@type = 'cfGenericStringClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliations__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``</xsl:when>
@@ -208,7 +209,8 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: </xsl:text>
 		<xsl:choose>
-			<xsl:when test="@type = 'cfGenericClassification__Type'">the <xsl:value-of select="substring-after( $entityEl/@cflink:entity, 'https://w3id.org/cerif/model#' )"/>_Classification (`&lt;<xsl:value-of select="$entityEl/@cflink:entity"/>_Classification&gt;`_)</xsl:when>
+			<xsl:when test="@type = 'cfGenericURIClassification__Type'">the <xsl:value-of select="substring-after( $entityEl/@cflink:entity, 'https://w3id.org/cerif/model#' )"/>_Classification (`&lt;<xsl:value-of select="$entityEl/@cflink:entity"/>_Classification&gt;`_)</xsl:when>
+            <xsl:when test="@type = 'cfGenericStringClassification__Type'">the <xsl:value-of select="substring-after( $entityEl/@cflink:entity, 'https://w3id.org/cerif/model#' )"/>_Classification (`&lt;<xsl:value-of select="$entityEl/@cflink:entity"/>_Classification&gt;`_)</xsl:when>
 			<xsl:otherwise>
 				<xsl:call-template name="process-link-annotation">
 					<xsl:with-param name="link-annotation" select="@cflink:link"/>

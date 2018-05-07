@@ -76,9 +76,9 @@
 					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-00</Subject>
 					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-34</Subject>
 					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-36</Subject>
-					<Predecessors>
+					<Predecessor>
 						<Patent id="712179" /><!-- WO2014IB66015 -->
-					</Predecessors>
+					</Predecessor>
 				</Patent>
 			</metadata>
 		</record>

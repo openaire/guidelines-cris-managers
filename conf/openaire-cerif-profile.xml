@@ -172,6 +172,11 @@
 					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>
 				</xs:annotation>
 			</Classification>
+            <Link name="Predecessor" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Predecessor):1" target="Patent">
+                <xs:annotation>
+                    <xs:documentation>Patents that precede (i.e., have priority over) this patent</xs:documentation>
+                </xs:annotation>
+            </Link>
 			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
 				<xs:annotation>
 					<xs:documentation>Result outputs that are referenced by this patent</xs:documentation>

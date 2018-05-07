@@ -157,6 +157,14 @@ OriginatesFrom
 :CERIF: the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
 
 
+Predecessor
+^^^^^^^^^^^
+:Description: Patents that precede (i.e., have priority over) this patent
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Predecessor`` with embedded XML element ``Patent``
+:CERIF: the ResultPatent_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Predecessor>`_ semantics (direction :1)
+
+
 References
 ^^^^^^^^^^
 :Description: Result outputs that are referenced by this patent

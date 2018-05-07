@@ -900,21 +900,6 @@ Source: Wikipedia
 						
 						<!-- TODO -->
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter_Patent_Relations#Predecessor)" minOccurs="0" name="Predecessors">
-							<xs:annotation>
-								<xs:documentation>Link to the patent(s) that is(are) prior to the current patent.</xs:documentation>
-							</xs:annotation>
-							<xs:complexType>
-								<xs:complexContent>
-									<xs:extension base="cfLinkWithDisplayName__BaseType">
-										<xs:sequence>
-											<xs:element ref="Patent"/>
-										</xs:sequence>
-									</xs:extension>
-								</xs:complexContent>
-							</xs:complexType>
-						</xs:element>
-												
 						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPatent(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#ResultPatent_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
@@ -927,7 +912,22 @@ Source: Wikipedia
 							</xs:complexType>
 						</xs:element>
 												
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
+<xs:annotation>
+<xs:documentation>Patents that precede (i.e., have priority over) this patent</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:complexContent>
+<xs:extension base="cfLink__BaseType">
+<xs:choice>
+<xs:element ref="Patent"/>
+</xs:choice>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+</xs:element>
+
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this patent</xs:documentation>
 </xs:annotation>

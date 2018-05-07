@@ -96,15 +96,11 @@
 					<xs:documentation>The type of the publication</xs:documentation>
 				</xs:annotation>
 			</Classification>
-			<Identifier name="DOI" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DOI"/>
-			<Identifier name="Handle" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#Handle"/>
-			<Identifier name="PMCID" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#PMCID"/>
-			<Identifier name="ISI-Number" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISI-Number"/>
-			<Identifier name="SCP-Number" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#SCP-Number"/>
-			<Identifier name="ISSN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISSN"/>
-			<Identifier name="ISBN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISBN"/>
-			<Identifier name="URL" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URL"/>
-			<Identifier name="URN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URN"/>
+            <IdentifiersFrom schemaLocation="includes/publication-identifiers.xsd">
+                <xs:annotation>
+                    <xs:documentation>The publication identifiers.</xs:documentation>
+                </xs:annotation>
+            </IdentifiersFrom>
 			<Link name="PresentedAt" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_Event(https://w3id.org/cerif/vocab/EventOutputRelationships#Presented)" target="Event">
 				<xs:annotation>
 					<xs:documentation>The event where this publication was presented. 

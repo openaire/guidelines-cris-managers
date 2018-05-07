@@ -237,6 +237,70 @@
 				</Person>
 			</metadata>
 		</record>
+        
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2018964</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018964">
+                    <PersonName>
+                        <FamilyNames>Mazzucco</FamilyNames>
+                        <FirstNames>Laura</FirstNames>
+                    </PersonName>
+                </Person>
+            </metadata>
+        </record>
+
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2018965</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018965">
+                    <PersonName>
+                        <FamilyNames>Bertoni</FamilyNames>
+                        <FirstNames>Marco</FirstNames>
+                    </PersonName>
+                </Person>
+            </metadata>
+        </record>
+
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2018966</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018966">
+                    <PersonName>
+                        <FamilyNames>Pizzi</FamilyNames>
+                        <FirstNames>Marco</FirstNames>
+                    </PersonName>
+                </Person>
+            </metadata>
+        </record>
+
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2018967</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018967">
+                    <PersonName>
+                        <FamilyNames>Zanin</FamilyNames>
+                        <FirstNames>Massimo</FirstNames>
+                    </PersonName>
+                </Person>
+            </metadata>
+        </record>
 
 	</ListRecords>
 </OAI-PMH>

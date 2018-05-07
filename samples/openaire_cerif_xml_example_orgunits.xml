@@ -198,5 +198,32 @@
 				</OrgUnit>
 			</metadata>
 		</record>
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:OrgUnits/330001</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_orgunits</setSpec>
+            </header>
+            <metadata>
+                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="330001">
+                    <Name xml:lang="en">European Patent Office</Name>
+                    <Name xml:lang="fr">Office européen des brevets</Name>
+                    <Name xml:lang="de">Europäisches Patentamt</Name>
+                </OrgUnit>
+            </metadata>
+        </record>
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:OrgUnits/341234</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_orgunits</setSpec>
+            </header>
+            <metadata>
+                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="341234">
+                    <Name xml:lang="en">Eltek S.P.A</Name>
+                </OrgUnit>
+            </metadata>
+        </record>
+        
 	</ListRecords>
 </OAI-PMH>

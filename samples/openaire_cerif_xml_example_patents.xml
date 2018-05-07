@@ -19,12 +19,28 @@
 					<ApprovalDate>2014-11-13</ApprovalDate>
 					<CountryCode>BR</CountryCode>
 					<Issuer>
-						<OrgUnit id="12345">
+						<OrgUnit id="330001">
 							<Name xml:lang="en">European Patent Office</Name>
 						</OrgUnit>
 					</Issuer>
 					<PatentNumber>BR20161110203</PatentNumber>
 					<Inventors>
+                        <Inventor>
+                            <Person id="2018967">
+                                <PersonName>
+                                    <FamilyNames>Zanin</FamilyNames>
+                                    <FirstNames>Massimo</FirstNames>
+                                </PersonName>
+                            </Person>
+                        </Inventor>
+                        <Inventor>
+                            <Person id="2018966">
+                                <PersonName>
+                                    <FamilyNames>Pizzi</FamilyNames>
+                                    <FirstNames>Marco</FirstNames>
+                                </PersonName>
+                            </Person>
+                        </Inventor>
 						<Inventor>
 							<Person id="2018964">
 								<PersonName>
@@ -41,26 +57,10 @@
 								</PersonName>
 							</Person>
 						</Inventor>
-						<Inventor>
-							<Person id="2018966">
-								<PersonName>
-									<FamilyNames>Pizzi</FamilyNames>
-									<FirstNames>Marco</FirstNames>
-								</PersonName>
-							</Person>
-						</Inventor>
-						<Inventor>
-							<Person id="2018967">
-								<PersonName>
-									<FamilyNames>Zanin</FamilyNames>
-									<FirstNames>Massimo</FirstNames>
-								</PersonName>
-							</Person>
-						</Inventor>
 					</Inventors>
 					<Holders>
 						<Holder>
-							<OrgUnit id="12345">
+							<OrgUnit id="331234">
 								<Name xml:lang="en">Eltek S.P.A</Name>
 							</OrgUnit>
 						</Holder>
@@ -96,12 +96,28 @@
 					<ApprovalDate>2014-11-13</ApprovalDate>
 					<CountryCode>WO</CountryCode>
 					<Issuer>
-						<OrgUnit id="12345">
+						<OrgUnit id="330001">
 							<Name xml:lang="en">European Patent Office</Name>
 						</OrgUnit>
 					</Issuer>
 					<PatentNumber>WO2014IB66015</PatentNumber>
 					<Inventors>
+                        <Inventor>
+                            <Person id="2018967">
+                                <PersonName>
+                                    <FamilyNames>Zanin</FamilyNames>
+                                    <FirstNames>Massimo</FirstNames>
+                                </PersonName>
+                            </Person>
+                        </Inventor>
+                        <Inventor>
+                            <Person id="2018966">
+                                <PersonName>
+                                    <FamilyNames>Pizzi</FamilyNames>
+                                    <FirstNames>Marco</FirstNames>
+                                </PersonName>
+                            </Person>
+                        </Inventor>
 						<Inventor>
 							<Person id="2018964">
 								<PersonName>
@@ -118,26 +134,10 @@
 								</PersonName>
 							</Person>
 						</Inventor>
-						<Inventor>
-							<Person id="2018966">
-								<PersonName>
-									<FamilyNames>Pizzi</FamilyNames>
-									<FirstNames>Marco</FirstNames>
-								</PersonName>
-							</Person>
-						</Inventor>
-						<Inventor>
-							<Person id="2018967">
-								<PersonName>
-									<FamilyNames>Zanin</FamilyNames>
-									<FirstNames>Massimo</FirstNames>
-								</PersonName>
-							</Person>
-						</Inventor>
 					</Inventors>
 					<Holders>
 						<Holder>
-							<OrgUnit id="12345">
+							<OrgUnit id="341234">
 								<Name xml:lang="en">Eltek S.P.A</Name>
 							</OrgUnit>
 						</Holder>

@@ -220,7 +220,8 @@ SCP-Number
 
 ISSN
 ^^^^
-:Use: optional (0..1)
+:Description: The International Standard Serial Number
+:Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISSN``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 
@@ -228,7 +229,8 @@ ISSN
 
 ISBN
 ^^^^
-:Use: optional (0..1)
+:Description: The International Standard Book Number
+:Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISBN``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
 

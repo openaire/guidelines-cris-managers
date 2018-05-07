@@ -216,11 +216,9 @@
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_f744</Type><!-- conference proceedings -->
 							<Title xml:lang="en">Metadata and Semantics Research</Title>
 							<Subtitle xml:lang="en">6th Research Conference, MTSR 2012, Cádiz, Spain, November 28-30, 2012. Proceedings</Subtitle>
-							<DOI>https://doi.org/10.1007/978-3-642-35233-1</DOI>
-<!-- 
-							<ISBN publicationForm="print">978-3-642-35232-4</ISBN>
-							<ISBN publicationForm="online">978-3-642-35233-1</ISBN>
- -->
+							<DOI>10.1007/978-3-642-35233-1</DOI>
+							<ISBN medium="http://issn.org/vocabularies/Medium#Print">978-3-642-35232-4</ISBN>
+							<ISBN medium="http://issn.org/vocabularies/Medium#Online">978-3-642-35233-1</ISBN>
  							<Publishers>
 								<Publisher>
 									<OrgUnit id="301250">

@@ -25,6 +25,12 @@
 </xs:annotation>
 </xs:include>
 
+	<xs:include schemaLocation="includes/publication-identifiers.xsd">
+<xs:annotation>
+<xs:documentation>The publication identifiers.</xs:documentation>
+</xs:annotation>
+</xs:include>
+
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
 <xs:include schemaLocation="./includes/cerif-commons.xsd">
@@ -657,15 +663,7 @@ This entity typically represents the granularity level of a single published ite
 
 						
 
-						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DOI" minOccurs="0" name="DOI" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#Handle" minOccurs="0" name="Handle" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#PMCID" minOccurs="0" name="PMCID" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISI-Number" minOccurs="0" name="ISI-Number" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#SCP-Number" minOccurs="0" name="SCP-Number" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISSN" minOccurs="0" name="ISSN" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISBN" minOccurs="0" name="ISBN" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URL" minOccurs="0" name="URL" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URN" minOccurs="0" name="URN" type="cfString__Type"/>
+						<xs:group ref="PublicationIdentifiers__Group"/>
 
 						<xs:element cflink:container="ordered" minOccurs="0" name="Authors">
 							<xs:annotation>

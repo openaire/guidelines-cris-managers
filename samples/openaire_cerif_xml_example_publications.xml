@@ -466,7 +466,7 @@
 					<ISSN>1558-5646</ISSN>
 					<Publishers>
 						<Publisher>
-							<OrgUnit>
+							<OrgUnit id="301253">
 								<Name xml:lang="en">Society for the Study of Evolution</Name>
 							</OrgUnit>
 						</Publisher>
@@ -474,5 +474,42 @@
 				</Publication>
 			</metadata>
 		</record>
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Publications/895501</identifier>
+                <datestamp>2016-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_publications</setSpec>
+            </header>
+            <metadata>
+                <Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="895501">
+                    <Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_f744</Type><!-- conference proceedings -->
+                    <Title xml:lang="en">Metadata and Semantics Research</Title>
+                    <Subtitle xml:lang="en">6th Research Conference, MTSR 2012, Cádiz, Spain, November 28-30, 2012. Proceedings</Subtitle>
+                    <DOI>10.1007/978-3-642-35233-1</DOI>
+                    <ISBN medium="http://issn.org/vocabularies/Medium#Print">978-3-642-35232-4</ISBN>
+                    <ISBN medium="http://issn.org/vocabularies/Medium#Online">978-3-642-35233-1</ISBN>
+                    <Publishers>
+                        <Publisher>
+                            <OrgUnit id="301250">
+                                <Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
+                                <Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Classification>
+                            </OrgUnit>
+                        </Publisher>
+                    </Publishers>
+                    <Keyword xml:lang="en">cultural heritage</Keyword>
+                    <Keyword xml:lang="en">digital libraries</Keyword>
+                    <Keyword xml:lang="en">learning objects</Keyword>
+                    <Keyword xml:lang="en">linked open data</Keyword>
+                    <Keyword xml:lang="en">scholarly publications</Keyword>
+                    <OutputFrom>
+                        <Event id="583475">
+                            <Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
+                            <Acronym>MTSR 2012</Acronym>
+                            <Name xml:lang="en">Metadata and Semantics Research</Name>
+                        </Event>
+                    </OutputFrom>
+                </Publication>
+            </metadata>
+        </record>
 	</ListRecords>
 </OAI-PMH>

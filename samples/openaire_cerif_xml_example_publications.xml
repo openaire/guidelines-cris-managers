@@ -107,7 +107,7 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 							<Acronym>OpenAIREplus</Acronym>
 							<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 							<StartDate>2011-12-01</StartDate>
 							<EndDate>2014-05-31</EndDate>
 							<Funded>
@@ -181,7 +181,7 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-	                        	<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+	                        	<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
     		                    	<EndDate>2014-05-31</EndDate>
 							<Funded>
@@ -236,7 +236,7 @@
 								<Event id="583475">
 									<Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
 									<Acronym>MTSR 2012</Acronym>
-									<Name xml:lang="en">Metadata and Semantics Research</Name>
+									<Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>
 								</Event>
 							</OutputFrom>
 						</Publication>
@@ -314,7 +314,7 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 							<Acronym>OpenAIREplus</Acronym>
 							<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-							<Identifier type="https://www.openaire.eu/cerif-profile/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 							<StartDate>2011-12-01</StartDate>
 							<EndDate>2014-05-31</EndDate>
 							<Funded>
@@ -505,7 +505,7 @@
                         <Event id="583475">
                             <Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
                             <Acronym>MTSR 2012</Acronym>
-                            <Name xml:lang="en">Metadata and Semantics Research</Name>
+                            <Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>
                         </Event>
                     </OutputFrom>
                 </Publication>

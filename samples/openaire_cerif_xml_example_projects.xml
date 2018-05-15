@@ -62,10 +62,10 @@
 												</PartOf>
 											</Funding>
 										</PartOf>
-										<Duration startDate="2011-12" endDate="2014-05" />
-										<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
-									</Funding>
+ 									</Funding>
 								</PartOf>
+                                <Duration startDate="2011-12" endDate="2014-05" />
+                                <Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
 							</Funding>
 						</As>
 					</Funded>
@@ -98,7 +98,7 @@
 			</header>
 			<metadata>
 				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="112346"><!-- OpenAIRE -->
-					<Acronym>OPENAIRE</Acronym>
+					<Acronym>OpenAIRE</Acronym>
 					<Title xml:lang="en">Open Access Infrastructure for Research in Europe</Title>
 					<Title xml:lang="el">Υποδομή Ανοικτής Πρόσβασης για την Έρευνα στην Ευρώπη</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">246686</Identifier>

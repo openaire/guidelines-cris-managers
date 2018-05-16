@@ -511,5 +511,12 @@
                 </Publication>
             </metadata>
         </record>
+        <record>
+            <header status="deleted">
+                <identifier>oai:cris.example.org:Publications/899999</identifier>
+                <datestamp>2018-05-15T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_publications</setSpec>
+            </header>
+        </record>
 	</ListRecords>
 </OAI-PMH>

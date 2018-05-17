@@ -83,9 +83,6 @@
 						OpenAIREplus will retain its European footprint, engaging people and scientific repositories in almost all 27 EU member states and beyond. The technical work will be complemented by a suite of studies and associated research efforts that will partly proceed in collaboration with different European initiatives and investigate issues of intellectual property rights,
 						efficient financing models, and standards.</Abstract>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
-					<Link type="https://w3id.org/cerif/vocab/ActivityFundingTypes#Contract">
-						<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
-					</Link>
 				</Project>
 			</metadata>
 		</record>
@@ -169,9 +166,6 @@
 						The electronic infrastructure built by the project will be based on state-of-the-art software services of the D-NET package developed within the DRIVER and DRIVER-II projects and the Invenio digital repository software developed at CERN. These will be further enhanced and complemented with services developed within OpenAIRE to address critical requirements and issues that arise in the target environment and require further
 						investigation.</Abstract>
 					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
-					<Link type="https://w3id.org/cerif/vocab/ActivityFundingTypes#Contract">
-						<Funding id="612347" /><!-- FP7 / Capacities / Research Infrastructures -->
-					</Link>
 				</Project>
 			</metadata>
 		</record>

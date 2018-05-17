@@ -17,16 +17,6 @@
 					<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 					<Identifier type="">http://www.uoa.gr</Identifier><!-- FIXME -->
 					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#HigherEducation</Classification>
-					<Link type="https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Coordinator">
-						<Project id="112346"><!-- OpenAIRE -->
-							<Acronym>OpenAIRE</Acronym>
-						</Project>
-					</Link>
-					<Link type="https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Coordinator">
-						<Project id="112345"><!-- OpenAIREplus -->
-							<Acronym>OpenAIREplus</Acronym>
-						</Project>
-					</Link>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -43,15 +33,6 @@
 					<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
 					<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
 					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#ResearchInstitute</Classification>
-					<Link type="https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Partner">
-						<Project id="112346" /><!-- OpenAIRE -->
-					</Link>
-					<Link type="https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Partner">
-						<Project id="112345" /><!-- OpenAIREplus -->
-					</Link>
-					<Link type="https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Partner">
-						<Project id="112347" /><!-- EUFAR -->
-					</Link>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -121,9 +102,6 @@
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
 					<Identifier type="">https://europa.eu/</Identifier><!-- FIXME -->
 					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Intergovernmental</Classification>
-					<Link type="https://w3id.org/cerif/vocab/OrganisationFundingRoles#Funder">
-						<Funding id="612345"/><!-- FP7 -->
-					</Link>
 				</OrgUnit>
 			</metadata>
 		</record>

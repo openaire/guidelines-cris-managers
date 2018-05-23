@@ -162,7 +162,7 @@
 			</Link>
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts">
+		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts Identifier">
 			<Classification kind="Type" schema="vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>

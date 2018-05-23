@@ -846,11 +846,7 @@ Source: Wikipedia
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.PatentNumber" minOccurs="0" name="PatentNumber" type="cfString__Type"/>
 
-						<xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
-							<xs:annotation>
-								<xs:documentation>An identifier of this patent</xs:documentation>
-							</xs:annotation>
-						</xs:element>
+						
 
 						<xs:element cflink:container="ordered" minOccurs="0" name="Inventors">
 							<xs:annotation>

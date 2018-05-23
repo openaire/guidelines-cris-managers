@@ -228,12 +228,38 @@ ISSN
 
 
 
+medium
+------
+:Use: optional
+:Representation: XML attribute ``medium``
+:Vocabulary: ISSN Media List
+
+  * **Print** (`<http://issn.org/vocabularies/Medium#Print>`_): Print (paper)
+  * **Online** (`<http://issn.org/vocabularies/Medium#Online>`_): Online (online publication)
+  * **Digital carrier** (`<http://issn.org/vocabularies/Medium#DigitalCarrier>`_): Digital carrier (CD-ROM, USB keys)
+  * **Other** (`<http://issn.org/vocabularies/Medium#Other>`_): Other (Loose-leaf publications, braille, etc.)
+
+
+
 ISBN
 ^^^^
 :Description: The International Standard Book Number
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISBN``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+
+
+
+medium
+------
+:Use: optional
+:Representation: XML attribute ``medium``
+:Vocabulary: ISSN Media List
+
+  * **Print** (`<http://issn.org/vocabularies/Medium#Print>`_): Print (paper)
+  * **Online** (`<http://issn.org/vocabularies/Medium#Online>`_): Online (online publication)
+  * **Digital carrier** (`<http://issn.org/vocabularies/Medium#DigitalCarrier>`_): Digital carrier (CD-ROM, USB keys)
+  * **Other** (`<http://issn.org/vocabularies/Medium#Other>`_): Other (Loose-leaf publications, braille, etc.)
 
 
 

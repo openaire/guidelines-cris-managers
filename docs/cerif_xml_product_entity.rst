@@ -72,6 +72,7 @@ ARK
 
 DOI
 ^^^
+:Description: The Digital Object Identifier
 :Use: optional (0..1)
 :Representation: XML element ``DOI``
 :CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)

@@ -135,11 +135,11 @@
 					<xs:documentation>The type of the resulting product (other than publication or patent)</xs:documentation>
 				</xs:annotation>
 			</Classification>
-			<Identifier name="ARK" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ARK"/>
-			<Identifier name="DOI" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DOI"/>
-			<Identifier name="Handle" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#Handle"/>
-			<Identifier name="URL" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URL"/>
-			<Identifier name="URN" minOccurs="0" maxOccurs="1" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URN"/>
+            <IdentifiersFrom schemaLocation="includes/product-identifiers.xsd">
+                <xs:annotation>
+                    <xs:documentation>The product identifiers.</xs:documentation>
+                </xs:annotation>
+            </IdentifiersFrom>
 			<Link name="GeneratedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultProduct_Equipment(https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation)" target="Equipment">
 				<xs:annotation>
 					<xs:documentation>The equipment that generated this product</xs:documentation>

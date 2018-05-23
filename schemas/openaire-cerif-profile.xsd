@@ -31,6 +31,12 @@
 </xs:annotation>
 </xs:include>
 
+	<xs:include schemaLocation="includes/product-identifiers.xsd">
+<xs:annotation>
+<xs:documentation>The product identifiers.</xs:documentation>
+</xs:annotation>
+</xs:include>
+
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
 <xs:include schemaLocation="./includes/cerif-commons.xsd">
@@ -975,11 +981,7 @@ This includes:
 						
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultProduct.VersionInfo" maxOccurs="unbounded" minOccurs="0" name="VersionInfo" type="cfMLangString__Type"/>
 						
-						<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ARK" minOccurs="0" name="ARK" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DOI" minOccurs="0" name="DOI" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#Handle" minOccurs="0" name="Handle" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URL" minOccurs="0" name="URL" type="cfString__Type"/>
-<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#URN" minOccurs="0" name="URN" type="cfString__Type"/>
+						<xs:group ref="ProductIdentifiers__Group"/>
 
 						<xs:element cflink:container="ordered" minOccurs="0" name="Creators">
 							<xs:annotation>

@@ -272,6 +272,7 @@ Internal Identifier
 </xsl:text>
 		</xsl:for-each>
 		<xsl:call-template name="make-footnotes"/>
+        <xsl:apply-templates select="descendant::xs:attribute"/>
 	</xsl:template>
 
 	<xsl:template match="xs:element[ @name and @cflink:entity='https://w3id.org/cerif/model#ElectronicAddress' ]">
@@ -299,6 +300,27 @@ Internal Identifier
 		<xsl:call-template name="make-footnotes"/>
 		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element"/>
 	</xsl:template>
+
+    <xsl:template match="xs:attribute">
+        <xsl:variable name="qName" select="resolve-QName( @type, . )"/>
+        <xsl:variable name="localName" select="local-name-from-QName( $qName )"/>
+        <xsl:variable name="ns" select="namespace-uri-from-QName( $qName )"/>
+        <xsl:variable name="sch1" select="document( key( 'import-by-namespace', $ns )/@schemaLocation )/xs:schema"/>
+		<xsl:apply-templates mode="make-title" select="@name"/>
+        <xsl:call-template name="make-description"/>
+        <xsl:call-template name="document-use"/>
+        <xsl:text>:Representation: XML attribute ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
+</xsl:text>
+        <xsl:text>:Vocabulary: </xsl:text><xsl:value-of select="normalize-space( $sch1/xs:annotation/xs:documentation )"/><xsl:text>
+
+</xsl:text>
+
+        <xsl:apply-templates select="$sch1/xs:simpleType/xs:restriction/xs:enumeration[ not( xs:annotation/xs:appinfo/cf:Class/cf:Broader/cf:Class/@id ) ]">
+            <xsl:with-param name="enumNodes" select="$sch1/xs:simpleType/xs:restriction/xs:enumeration"/>
+            <xsl:with-param name="indent" select="'  '"/>
+        </xsl:apply-templates>
+        <xsl:call-template name="make-footnotes"/>
+    </xsl:template>
 
 	<xsl:template match="xs:element" mode="link">
 		<xsl:if test="preceding-sibling::xs:element">
@@ -349,7 +371,7 @@ Internal Identifier
 		<xsl:value-of select=".[not( @ref )]/@name"/>
 		<xsl:text>``</xsl:text>
 	</xsl:template>
-
+    
 	<xsl:template name="process-link-annotation">
 		<xsl:param name="link-annotation"/>
 		<xsl:param name="prefix" select="''"/>
@@ -369,6 +391,8 @@ Internal Identifier
 	
 	<xsl:template name="document-use">
 		<xsl:text>:Use: </xsl:text><xsl:choose>
+            <xsl:when test="self::xs:attribute and @use='optional'">optional</xsl:when>
+            <xsl:when test="self::xs:attribute">required</xsl:when>            
 			<xsl:when test="@minOccurs='0' and ( @maxOccurs='1' or not( @maxOccurs ) )">optional (0..1)</xsl:when>
 			<xsl:when test="@minOccurs='0' and @maxOccurs='unbounded'">optional, possibly multiple (0..*)</xsl:when>
 			<xsl:when test="( @minOccurs='1' or not( @minOccurs ) ) and ( @maxOccurs='1' or not( @maxOccurs ) )">mandatory (1)</xsl:when>
@@ -382,6 +406,7 @@ Internal Identifier
 		<xsl:variable name="element-depth">
 			<xsl:choose>
 				<xsl:when test="/xs:schema/xs:element"><xsl:value-of select="count( ancestor::xs:element )"/></xsl:when>
+                <xsl:when test="parent::xs:attribute"><xsl:value-of select="count( ancestor::xs:element ) + 2"/></xsl:when>
 				<xsl:otherwise><xsl:value-of select="count( ancestor::xs:element ) + 1"/></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>

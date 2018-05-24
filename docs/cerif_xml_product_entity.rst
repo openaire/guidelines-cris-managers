@@ -46,6 +46,14 @@ Type
 
 
 
+Language
+^^^^^^^^
+:Description: The language or languages of the product, if applicable. Please use the IETF language tags as described in the IETF BCP 47 document.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Language``
+:CERIF: the ResultProduct_Classification linking entity (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_) with the `<https://w3id.org/cerif/vocab/LanguageTags>`_ semantics
+
+
 Name
 ^^^^
 :Use: optional, possibly multiple (0..*)

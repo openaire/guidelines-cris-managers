@@ -987,6 +987,12 @@ This includes:
 						
 						
 
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/LanguageTags)" maxOccurs="unbounded" minOccurs="0" name="Language" type="cfString__Type">
+                            <xs:annotation>
+                                <xs:documentation>The language or languages of the product, if applicable.  Please use the IETF language tags as described in the IETF BCP 47 document.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultProduct.Name" maxOccurs="unbounded" minOccurs="0" name="Name" type="cfMLangString__Type"/>
 
 						

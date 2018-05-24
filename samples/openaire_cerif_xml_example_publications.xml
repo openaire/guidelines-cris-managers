@@ -223,7 +223,6 @@
 								<Publisher>
 									<OrgUnit id="301250">
 										<Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
-										<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Classification>
 									</OrgUnit>
 								</Publisher>
 							</Publishers>
@@ -492,7 +491,6 @@
                         <Publisher>
                             <OrgUnit id="301250">
                                 <Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
-                                <Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Classification>
                             </OrgUnit>
                         </Publisher>
                     </Publishers>

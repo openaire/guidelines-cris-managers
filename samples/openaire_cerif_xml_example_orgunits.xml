@@ -12,11 +12,11 @@
 			</header>
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="312345">
+                    <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#HigherEducation</Type>
 					<Acronym>NKUA</Acronym>
 					<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
 					<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 					<Identifier type="">http://www.uoa.gr</Identifier><!-- FIXME -->
-					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#HigherEducation</Classification>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -28,11 +28,11 @@
 			</header>
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="312346">
+                    <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#ResearchInstitute</Type>
 					<Acronym>CNR</Acronym>
 					<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 					<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
 					<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
-					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#ResearchInstitute</Classification>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -48,8 +48,6 @@
 					<Name xml:lang="en" trans="h">National Documentation Centre</Name>
 					<Name xml:lang="el">Εθνικό Κέντρο Τεκμηρίωσης</Name>
 					<Identifier type="">http://www.ekt.gr</Identifier><!-- FIXME -->
-					<Classification scheme="">GR</Classification><!-- Greece -->
-					<Classification scheme="">EL303</Classification><!-- Κεντρικός Τομέας Αθηνών (Kentrikos Tomeas Athinon) -->
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -75,6 +73,7 @@
 			</header>
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="310001">
+                    <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Intergovernmental</Type>
 					<Acronym>EC</Acronym>
 		            <Name xml:lang="en">European Commission</Name>
 		            <Name xml:lang="bg">Европейска комисия</Name>
@@ -101,7 +100,6 @@
 		            <Name xml:lang="hr">Europska komisija</Name>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
 					<Identifier type="">https://europa.eu/</Identifier><!-- FIXME -->
-					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Intergovernmental</Classification>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -159,8 +157,8 @@
 			</header>
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301250">
+                    <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Type>
 					<Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
-					<Classification scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Classification>
 				</OrgUnit>
 			</metadata>
 		</record>

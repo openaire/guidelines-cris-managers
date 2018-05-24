@@ -16,6 +16,14 @@ Internal Identifier
 :CERIF: the OrganisationUnitIdentifier attribute (`<https://w3id.org/cerif/model#OrganisationUnit.OrganisationUnitIdentifier>`_)
 
 
+Type
+^^^^
+:Description: The type of the organisation unit
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Type`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the OrganisationUnit_Classification (`<https://w3id.org/cerif/model#OrganisationUnit_Classification>`_)
+
+
 Acronym
 ^^^^^^^
 :Description: The acronym of the organisation unit

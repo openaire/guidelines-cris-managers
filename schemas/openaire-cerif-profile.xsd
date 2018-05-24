@@ -183,6 +183,12 @@ In the research information domain Organisation Units typically represents:
 				<xs:extension base="OrgUnit__BaseType">
 					<xs:sequence minOccurs="0">
 
+                        <xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericURIClassification__Type">
+                            <xs:annotation>
+                                <xs:documentation>The type of the organisation unit</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#OrganisationUnit.Acronym" minOccurs="0" name="Acronym" type="cfString__Type">
 							<xs:annotation>
 								<xs:documentation>The acronym of the organisation unit</xs:documentation>

@@ -203,6 +203,7 @@ Internal Identifier
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliations__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToOrgUnit__Type'"> with embedded XML element ``OrgUnit``</xsl:when>
+            <xsl:when test="@type = 'cfString__Type'"/>
 			<xsl:otherwise> *TODO*</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>

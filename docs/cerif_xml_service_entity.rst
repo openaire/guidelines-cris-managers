@@ -69,7 +69,7 @@ WebsiteURL
 ^^^^^^^^^^
 :Description: URL of the website of the CRIS
 :Use: optional (0..1)
-:Representation: XML element ``WebsiteURL`` *TODO*
+:Representation: XML element ``WebsiteURL``
 :CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/ElectronicAddressTypes#Website>`_ semantics
 
 
@@ -77,7 +77,7 @@ OAIPMHBaseURL
 ^^^^^^^^^^^^^
 :Description: Base URL for the OAI-PMH protocol endpoint of the CRIS
 :Use: optional (0..1)
-:Representation: XML element ``OAIPMHBaseURL`` *TODO*
+:Representation: XML element ``OAIPMHBaseURL``
 :CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/ElectronicAddressTypes#OAI-PMH_Base>`_ semantics
 
 
@@ -85,7 +85,7 @@ SubjectHeadingsURL
 ^^^^^^^^^^^^^^^^^^
 :Description: The URL where the subject classification used by the CRIS can be obtained (using the HTTP GET)
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``SubjectHeadingsURL`` *TODO*
+:Representation: XML element ``SubjectHeadingsURL``
 :CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/ElectronicAddressTypes#SubjectHeadings>`_ semantics
 
 

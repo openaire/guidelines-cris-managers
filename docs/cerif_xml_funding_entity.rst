@@ -19,7 +19,7 @@ Type
 ^^^^
 :Description: The type of the funding
 :Use: mandatory (1)
-:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types``
+:Representation: XML element ``Type`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types>`_
 :CERIF: the Funding_Classification (`<https://w3id.org/cerif/model#Funding_Classification>`_)
 :Vocabulary: Types of funding for the OpenAIRE Guidelines for CRIS Managers
 

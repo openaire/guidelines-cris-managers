@@ -20,7 +20,7 @@ Type
 ^^^^
 :Description: The type of the publication
 :Use: mandatory (1)
-:Representation: XML element ``Type`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types``
+:Representation: XML element ``Type`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types>`_
 :CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
 :Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').
 
@@ -417,7 +417,7 @@ ns4:Access
 ^^^^^^^^^^
 :Description: The open access type of the publication
 :Use: optional (0..1)
-:Representation: XML element ``Access`` from namespace ``http://purl.org/coar/access_right``
+:Representation: XML element ``Access`` from namespace `<http://purl.org/coar/access_right>`_
 :CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
 :Vocabulary: 
 

@@ -125,7 +125,7 @@ Internal Identifier
 		<xsl:apply-templates mode="make-title" select="@ref"/>
 		<xsl:call-template name="make-description"/>
 		<xsl:call-template name="document-use"/>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="$localName"/><xsl:text>`` from namespace ``</xsl:text><xsl:value-of select="$ns"/><xsl:text>``
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="$localName"/><xsl:text>`` from namespace `&lt;</xsl:text><xsl:value-of select="$ns"/><xsl:text>&gt;`_
 </xsl:text>
 		<xsl:text>:CERIF: the </xsl:text><xsl:value-of select="substring-after( $entityEl/@cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text>_Classification (`&lt;</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/><xsl:text>_Classification&gt;`_)
 </xsl:text>

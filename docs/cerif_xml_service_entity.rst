@@ -20,7 +20,7 @@ Compatibility
 ^^^^^^^^^^^^^
 :Description: OpenAIRE compatibility of the CRIS
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Compatibility`` from namespace ``https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility``
+:Representation: XML element ``Compatibility`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility>`_
 :CERIF: the Service_Classification (`<https://w3id.org/cerif/model#Service_Classification>`_)
 :Vocabulary: Compatibility of service with the OpenAIRE Guidelines for CRIS Managers
 

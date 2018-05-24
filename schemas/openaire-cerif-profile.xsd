@@ -623,7 +623,7 @@ This entity typically represents the granularity level of a single published ite
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPublication.ResPublDate" minOccurs="0" name="PublicationDate" type="cfDate__Type">
+						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPublication.ResPublDate" minOccurs="0" name="PublicationDate" type="cfGenericDate__SimpleType">
 							<xs:annotation>
 								<xs:documentation>The date the publication appeared</xs:documentation>
 							</xs:annotation>

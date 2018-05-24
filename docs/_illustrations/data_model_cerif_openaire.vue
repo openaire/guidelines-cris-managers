@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2018-04-07 -->
+<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2018-05-24 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.localized/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sat Apr 07 15:40:48 CEST 2018 by jdvorak on platform Mac OS X 10.13.4 in JVM 1.8.0_152-b16 -->
+<!-- Do Not Remove: Saved date Thu May 24 19:28:50 CEST 2018 by jdvorak on platform Mac OS X 10.13.4 in JVM 9.0.4+11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="data_model_cerif_openaire.vue" created="1393077696638"
     x="0.0" y="0.0" width="785.0" height="584.10004" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1523108448846" size="100399"
+    <resource referenceCreated="1527182930427" size="99988"
         spec="/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/data_model_cerif_openaire.vue"
         type="1" xsi:type="URLResource">
         <title>data_model_cerif_openaire.vue</title>
@@ -126,9 +126,9 @@
     </child>
     <child ID="26" label="cfCountry" layerID="1" created="1393078020366"
         x="585.28876" y="475.197" width="124.0" height="45.0"
-        strokeWidth="3.0" autoSized="false" xsi:type="node">
+        strokeWidth="1.0" autoSized="false" xsi:type="node">
         <fillColor>#D0D0D0</fillColor>
-        <strokeColor>#0AAD1D</strokeColor>
+        <strokeColor>#000000</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5a01a201c0a80005016fc94fbdfe6685</URIString>
@@ -443,9 +443,9 @@
         <ID2 xsi:type="node">28</ID2>
     </child>
     <child ID="87" layerID="1" created="1393078404656" x="461.9041"
-        y="42.0" width="89.19174" height="175.0" strokeWidth="1.0"
+        y="42.0" width="89.19174" height="175.0" strokeWidth="3.0"
         autoSized="false" controlCount="0" arrowState="0" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#0AAD1D</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5a01a1ebc0a80005016fc94f4033e17e</URIString>
@@ -1861,7 +1861,7 @@
         </child>
     </child>
     <child ID="228"
-        label="Note: The Service entity&#xa;    &#xa;    &#xa;       is used to represent&#xa;    &#xa;    &#xa;      the source CRIS itself.&#xa;    &#xa;    &#xa;       It is placed in the response&#xa;    &#xa;    &#xa;       to the OAI-PMH&#xa;    &#xa;    &#xa;      Identify request.&#xa;    &#xa;    &#xa;      No separate set&#xa;    &#xa;    &#xa;      for harvesting&#xa;    &#xa;    &#xa;      Services&#xa;    &#xa;    &#xa;      is specified."
+        label="Note: The Service entity is used to represent the source CRIS itself. It is placed in the response to the OAI-PMH Identify request. No separate set for harvesting Services is specified."
         layerID="1" created="1523101581415" x="700.484" y="-5.563843"
         width="148.0" height="156.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
@@ -1885,16 +1885,16 @@
       Note: The Service entity
     &lt;/p&gt;
     &lt;p color="#000000" style="color: #000000; text-align: right"&gt;
-       is used to represent
+      is used to represent
     &lt;/p&gt;
     &lt;p color="#000000" style="color: #000000; text-align: right"&gt;
       the source CRIS itself.
     &lt;/p&gt;
     &lt;p color="#000000" style="color: #000000; text-align: right"&gt;
-       It is placed in the response
+      It is placed in the response
     &lt;/p&gt;
     &lt;p color="#000000" style="color: #000000; text-align: right"&gt;
-       to the OAI-PMH
+      to the OAI-PMH
     &lt;/p&gt;
     &lt;p color="#000000" style="color: #000000; text-align: right"&gt;
       Identify request.
@@ -1914,34 +1914,7 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </richText>
-        <label>Note: The Service entity
-    
-    
-       is used to represent
-    
-    
-      the source CRIS itself.
-    
-    
-       It is placed in the response
-    
-    
-       to the OAI-PMH
-    
-    
-      Identify request.
-    
-    
-      No separate set
-    
-    
-      for harvesting
-    
-    
-      Services
-    
-    
-      is specified.</label>
+        <label>Note: The Service entity is used to represent the source CRIS itself. It is placed in the response to the OAI-PMH Identify request. No separate set for harvesting Services is specified.</label>
     </child>
     <layer ID="1" label="Layer 1" created="1393077696661" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
@@ -1968,7 +1941,7 @@
                 <URIString>http://vue.tufts.edu/rdf/resource/5a01a20bc0a80005016fc94f272ce6d9</URIString>
                 <titleStyle ID="3" label="Header"
                     created="1393077697623" x="341.0" y="175.0"
-                    width="118.0" height="50.0" strokeWidth="0.0"
+                    width="119.0" height="50.0" strokeWidth="0.0"
                     autoSized="true" isStyle="true" xsi:type="node">
                     <strokeColor>#404040</strokeColor>
                     <textColor>#FFFFFF</textColor>
@@ -1978,7 +1951,7 @@
                 </titleStyle>
                 <textStyle ID="4" label="Slide Text"
                     created="1393077697624" x="349.5" y="282.5"
-                    width="101.0" height="35.0" strokeWidth="0.0"
+                    width="102.0" height="35.0" strokeWidth="0.0"
                     autoSized="true" isStyle="true" xsi:type="node">
                     <strokeColor>#404040</strokeColor>
                     <textColor>#FFFFFF</textColor>
@@ -1987,7 +1960,7 @@
                     <shape xsi:type="rectangle"/>
                 </textStyle>
                 <linkStyle ID="5" label="Links" created="1393077697625"
-                    x="375.5" y="385.0" width="49.0" height="30.0"
+                    x="375.5" y="385.0" width="50.0" height="30.0"
                     strokeWidth="0.0" autoSized="true" isStyle="true" xsi:type="node">
                     <strokeColor>#404040</strokeColor>
                     <textColor>#B3BFE3</textColor>

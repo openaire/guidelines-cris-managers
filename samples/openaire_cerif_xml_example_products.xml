@@ -42,6 +42,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<Description xml:lang="en">The Cessna T207A operated by Freie Universität Berlin, Institut für Weltraumwissenschaften, for the EUFAR project</Description>
 						</Equipment>
 					</GeneratedBy>
+                    <Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_16ec<!-- restricted access --></Access>
             	</Product>
             </metadata>
         </record>

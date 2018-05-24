@@ -160,6 +160,11 @@
 					<xs:documentation>Result outputs that are referenced by this product</xs:documentation>
 				</xs:annotation>
 			</Link>
+            <xs:element xmlns="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="Access">
+                <xs:annotation>
+                    <xs:documentation>The open access type of the product</xs:documentation>
+                </xs:annotation>
+            </xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts Identifier">

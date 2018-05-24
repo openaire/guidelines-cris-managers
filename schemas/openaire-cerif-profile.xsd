@@ -1132,6 +1132,12 @@ This includes:
 </xs:complexType>
 </xs:element>
 
+<xs:element xmlns:ns4="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="ns4:Access">
+<xs:annotation>
+<xs:documentation>The open access type of the product</xs:documentation>
+</xs:annotation>
+</xs:element>
+
 <xs:group ref="__TheRestGroup"/>
 
 					</xs:sequence>

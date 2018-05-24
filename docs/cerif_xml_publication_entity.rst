@@ -191,7 +191,7 @@ DOI
 :Description: The Digital Object Identifier
 :Use: optional (0..1)
 :Representation: XML element ``DOI``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -199,7 +199,7 @@ Handle
 ^^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``Handle``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -207,7 +207,7 @@ PMCID
 ^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``PMCID``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -215,7 +215,7 @@ ISI-Number
 ^^^^^^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``ISI-Number``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -223,7 +223,7 @@ SCP-Number
 ^^^^^^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``SCP-Number``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -232,7 +232,7 @@ ISSN
 :Description: The International Standard Serial Number
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISSN``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -254,7 +254,7 @@ ISBN
 :Description: The International Standard Book Number
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISBN``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -275,7 +275,7 @@ URL
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``URL``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -283,7 +283,7 @@ URN
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``URN``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 

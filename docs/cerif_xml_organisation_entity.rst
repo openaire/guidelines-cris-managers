@@ -47,7 +47,7 @@ Identifier
 :Description: An identifier of the organisation unit
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Identifier`` with mandatory ``type`` attribute
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -56,7 +56,7 @@ ElectronicAddress
 :Description: An electronic address associated with the organisation unit
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ElectronicAddress``
-:CERIF: the ElectronicAddress entity (``https://w3id.org/cerif/model#ElectronicAddress``) and the corresponding link (``https://w3id.org/cerif/model#OrganisationUnit_ElectronicAddress``)
+:CERIF: the ElectronicAddress entity (`<https://w3id.org/cerif/model#ElectronicAddress>`_) and the corresponding link (`<https://w3id.org/cerif/model#OrganisationUnit_ElectronicAddress>`_)
 
 
 

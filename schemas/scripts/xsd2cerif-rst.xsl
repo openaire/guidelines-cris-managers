@@ -264,7 +264,7 @@ Internal Identifier
 		</xsl:if>
 		<xsl:text>
 </xsl:text>
-		<xsl:text>:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+		<xsl:text>:CERIF: the FederatedIdentifier entity (`&lt;https://w3id.org/cerif/model#FederatedIdentifier&gt;`_)
 </xsl:text>
 		<xsl:for-each select="descendant::xs:pattern">
 			<xsl:text>:Format: regular expression ``</xsl:text>
@@ -283,7 +283,7 @@ Internal Identifier
 		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
 </xsl:text>
-		<xsl:text>:CERIF: the ElectronicAddress entity (``https://w3id.org/cerif/model#ElectronicAddress``) and the corresponding link (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_ElectronicAddress<xsl:text>``)
+		<xsl:text>:CERIF: the ElectronicAddress entity (`&lt;https://w3id.org/cerif/model#ElectronicAddress&gt;`_) and the corresponding link (`&lt;</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_ElectronicAddress<xsl:text>&gt;`_)
 </xsl:text>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
@@ -296,7 +296,7 @@ Internal Identifier
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` containing </xsl:text>
 		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element" mode="name-list"/><xsl:text>
 </xsl:text>
-		<xsl:text>:CERIF: the PersonName entity (``https://w3id.org/cerif/model#PersonName``) and the corresponding link (``</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_PersonName<xsl:text>``)
+		<xsl:text>:CERIF: the PersonName entity (`&lt;https://w3id.org/cerif/model#PersonName&gt;`_) and the corresponding link (`&lt;</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_PersonName<xsl:text>&gt;`_)
 </xsl:text>
 		<xsl:call-template name="make-footnotes"/>
 		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element"/>

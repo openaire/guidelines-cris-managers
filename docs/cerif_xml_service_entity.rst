@@ -52,7 +52,7 @@ Identifier
 :Description: An identifier of this service
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Identifier`` with mandatory ``type`` attribute
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 

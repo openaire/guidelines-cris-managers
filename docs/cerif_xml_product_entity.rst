@@ -66,7 +66,7 @@ ARK
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``ARK``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -75,7 +75,7 @@ DOI
 :Description: The Digital Object Identifier
 :Use: optional (0..1)
 :Representation: XML element ``DOI``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -83,7 +83,7 @@ Handle
 ^^^^^^
 :Use: optional (0..1)
 :Representation: XML element ``Handle``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -91,7 +91,7 @@ URL
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``URL``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 
@@ -99,7 +99,7 @@ URN
 ^^^
 :Use: optional (0..1)
 :Representation: XML element ``URN``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 
 

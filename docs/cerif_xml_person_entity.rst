@@ -21,7 +21,7 @@ PersonName
 :Description: The name of the person
 :Use: optional (0..1)
 :Representation: XML element ``PersonName`` containing optional ``FamilyNames``, optional ``FirstNames`` and optional ``OtherNames``
-:CERIF: the PersonName entity (``https://w3id.org/cerif/model#PersonName``) and the corresponding link (``https://w3id.org/cerif/model#Person_PersonName``)
+:CERIF: the PersonName entity (`<https://w3id.org/cerif/model#PersonName>`_) and the corresponding link (`<https://w3id.org/cerif/model#Person_PersonName>`_)
 
 
 
@@ -67,7 +67,7 @@ ORCID
 :Description: The ORCID identifier
 :Use: optional (0..1)
 :Representation: XML element ``ORCID``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]``
 
 
@@ -77,7 +77,7 @@ ResearcherID
 :Description: The ResearcherID identifier
 :Use: optional (0..1)
 :Representation: XML element ``ResearcherID``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]``
 
 
@@ -87,7 +87,7 @@ ScopusAuthorID
 :Description: The Scopus Author ID identifier
 :Use: optional (0..1)
 :Representation: XML element ``ScopusAuthorID``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``[0-9]{10,11}``
 
 
@@ -97,7 +97,7 @@ ISNI
 :Description: The ISNI identifier
 :Use: optional (0..1)
 :Representation: XML element ``ISNI``
-:CERIF: the FederatedIdentifier entity (``https://w3id.org/cerif/model#FederatedIdentifier``)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]``
 
 
@@ -107,7 +107,7 @@ ElectronicAddress
 :Description: An electronic address associated with the person
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ElectronicAddress``
-:CERIF: the ElectronicAddress entity (``https://w3id.org/cerif/model#ElectronicAddress``) and the corresponding link (``https://w3id.org/cerif/model#Person_ElectronicAddress``)
+:CERIF: the ElectronicAddress entity (`<https://w3id.org/cerif/model#ElectronicAddress>`_) and the corresponding link (`<https://w3id.org/cerif/model#Person_ElectronicAddress>`_)
 
 
 

@@ -70,9 +70,17 @@ Description
 
 
 
+Subject
+^^^^^^^
+:Description: The subject classification(s) of the funding
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Subject`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
+:CERIF: the Funding_Classification (`<https://w3id.org/cerif/model#Funding_Classification>`_)
+
+
 Keyword
 ^^^^^^^
-:Description: A single keyword or key expression. Please repeat to serialize separate keywords or key expressions.
+:Description: A single keyword or key expression that characterize the funding. Please repeat to serialize separate keywords or key expressions.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Keyword`` as a multilingual string
 :CERIF: the Funding.Keywords attribute (`<https://w3id.org/cerif/model#Funding.Keywords>`_)

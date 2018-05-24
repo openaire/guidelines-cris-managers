@@ -81,6 +81,14 @@ Type
 
 
 
+Language
+^^^^^^^^
+:Description: The language of the publication. Please use the IETF language tags as described in the IETF BCP 47 document.
+:Use: optional (0..1)
+:Representation: XML element ``Language``
+:CERIF: the ResultPublication_Classification linking entity (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_) with the `<https://w3id.org/cerif/vocab/LanguageTags>`_ semantics
+
+
 Title
 ^^^^^
 :Description: The title of the publication

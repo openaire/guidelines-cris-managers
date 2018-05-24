@@ -587,6 +587,12 @@ This entity typically represents the granularity level of a single published ite
 
 						
 
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(https://w3id.org/cerif/vocab/LanguageTags)" minOccurs="0" name="Language" type="cfString__Type">
+                            <xs:annotation>
+                                <xs:documentation>The language of the publication.  Please use the IETF language tags as described in the IETF BCP 47 document.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPublication.Title" maxOccurs="unbounded" minOccurs="0" name="Title" type="cfMLangString__Type">
 							<xs:annotation>
 								<xs:documentation>The title of the publication</xs:documentation>

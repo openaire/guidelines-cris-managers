@@ -19,15 +19,16 @@ Unless stated otherwise this is considered to be the value in the original langu
 
 While syntactically, the CERIF profile XML allows to construct structures of any depth, 
 the contents of each metadata record should be kept limited to the nearest objects that are representable by a top-level element. 
-These objects should be expressed using as much detail as is practical to identify them. 
+These neighboring objects should be expressed using as much detail as is practical to identify them. 
 This includes links to any higher level structures of which the object is part, e.g. to an institution of which an organisation unit is part.
+
+However, the neighboring object XML shall never contain more information or different information from what is expressed in the main record for that object 
+i.e., where the object is retrieved as a top-level object. This is a stronger form of a requirement of functional dependency.
 
 .. rubric:: Footnotes
 
 .. [#f0] For the period of the review the XML schema is located at `<https://github.com/openaire/guidelines-cris-managers/blob/master/schemas/openaire-cerif-profile.xsd>`_. After the review the schema will be published as a permanent resource in a final location.
 .. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/master/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/master/samples>`_
-
-# .. [#f2] CERIF 1.6 XML: http://www.eurocris.org/Index.php?page=CERIF-1.6&t=1
 
 OAI-PMH for Harvesting
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -76,7 +77,7 @@ The description and required characteristics of the sets are provided in the fol
 ||                                                        || **setSpec:** openaire_cris_equipments  |
 +---------------------------------------------------------+-----------------------------------------+
 
-Referential integrity constraints for all relationships among entities must be satisfied in the CERIF XML data provided by the CRIS system. 
+Referential integrity constraints for all relationships among entities must be satisfied in the CERIF XML data provided by the CRIS system.
 
 OAI identifiers
 """""""""""""""

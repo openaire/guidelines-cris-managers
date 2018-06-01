@@ -52,29 +52,21 @@
 					</xs:appinfo>
 				</xs:annotation>
 
+                <xs:include schemaLocation="../includes/cerif-commons.xsd"/>
+
 				<xs:element name="{$tagType}">
 					<xs:complexType>
 						<xs:simpleContent>
 							<xs:extension base="Enum">
 								<xsl:if test="$startEndDates">
-									<xs:attribute name="startDate" type="cfGenericDate__SimpleType" use="optional" />
-									<xs:attribute name="endDate" type="cfGenericDate__SimpleType" use="optional" />
+                                    <xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
 								</xsl:if>
-								<xs:anyAttribute namespace="##other" />
+                                <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 							</xs:extension>
 						</xs:simpleContent>
 					</xs:complexType>
 				</xs:element>
 
-				<xsl:if test="$startEndDates">
-					<xs:simpleType name="cfGenericDate__SimpleType">
-						<xs:annotation>
-							<xs:documentation>A time instant in any precision supported by the Primitive Data Types of the XML Schema specification.</xs:documentation>
-						</xs:annotation>
-						<xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime" />
-					</xs:simpleType>
-				</xsl:if>				
-				
 				<xs:simpleType name="Enum">
 					<xs:restriction base="xs:string">
 						<xsl:for-each select="skos:object-property( $conceptScheme, 'http://www.w3.org/2004/02/skos/core#inScheme' ) ">

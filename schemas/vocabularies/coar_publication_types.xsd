@@ -20,11 +20,12 @@
       </xs:appinfo>
    </xs:annotation>
    
+   <xs:include schemaLocation="../includes/cerif-commons.xsd"/>
    <xs:element name="Type">
       <xs:complexType>
          <xs:simpleContent>
             <xs:extension base="Enum">
-               <xs:anyAttribute namespace="##other"/>
+               <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
             </xs:extension>
          </xs:simpleContent>
       </xs:complexType>

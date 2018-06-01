@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
            xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
            xmlns:cf="urn:xmlns:org.eurocris.cerif"
            xmlns:dc-term="http://purl.org/dc/terms/"
            xmlns="http://purl.org/coar/resource_type"
+           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd"
            targetNamespace="http://purl.org/coar/resource_type">
    <xs:annotation>
       <xs:appinfo>
          <cf:ClassScheme id="http://purl.org/coar/resource_type"/>
       </xs:appinfo>
    </xs:annotation>
+   <xs:include schemaLocation="../includes/cerif-commons.xsd"/>
    <xs:element name="Type">
       <xs:complexType>
          <xs:simpleContent>
             <xs:extension base="Enum">
-               <xs:anyAttribute namespace="##other"/>
+               <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
             </xs:extension>
          </xs:simpleContent>
       </xs:complexType>

@@ -93,7 +93,7 @@
 			</Classification>
 			<Classification kind="Access" schema="vocabularies/coar_accessrights.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
-					<xs:documentation>The type of the publication</xs:documentation>
+					<xs:documentation>The open access type of the publication</xs:documentation>
 				</xs:annotation>
 			</Classification>
             <IdentifiersFrom schemaLocation="includes/publication-identifiers.xsd">

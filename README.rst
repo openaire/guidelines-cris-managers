@@ -31,14 +31,15 @@ Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<
 Checking out this project
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This project adds [Schematron](https://github.com/Schematron/schematron) as a submodule.
-Until [this issue](https://github.com/Schematron/schematron/issues/65) is resolved, we recommend the following way of checking out this project:
-1. Checkout `<https://github.com/openaire/guidelines-cris-managers/>`_ **without** submodules. 
-2. Checkout the submodules using the following command:
- git submodule update --init --remote --recursive
+This project adds `Schematron <https://github.com/Schematron/schematron>`_ as a submodule.
+Until `<https://github.com/Schematron/schematron/issues/65>`_ is resolved, we recommend the following way of checking out this project:
 
-After you made changes to your submodules configuration, do not forget to run:
- git submodule foreach git submodule sync
+#. Checkout `<https://github.com/openaire/guidelines-cris-managers/>`_ **without** submodules. 
+#. Checkout the submodules using the following command: 
+``git submodule update --init --remote --recursive``
+
+After you made changes to your submodules configuration, do not forget to run: 
+``git submodule foreach git submodule sync``
 
 
 Contributing

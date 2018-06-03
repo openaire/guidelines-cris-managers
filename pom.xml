@@ -20,10 +20,14 @@
 					</execution>
 				</executions>
 				<configuration>
+                    <forceCreation>true</forceCreation>
 					<validationSets>
 						<validationSet>
 							<dir>samples</dir>
 							<validating>true</validating>
+                            <excludes>
+                                <exclude>_schematron_output/**/*.xml</exclude>
+                            </excludes>
 						</validationSet>
 						<validationSet>
 							<dir>schemas</dir>
@@ -32,6 +36,8 @@
 								<exclude>**/catalog.xml</exclude>
 								<exclude>**/*.out.xml</exclude>
 								<exclude>**/*.txt</exclude>
+                                <exclude>**/*.sch</exclude>
+                                <exclude>**/*.xslt</exclude>
 								<exclude>scripts/*</exclude>
 								<exclude>cached/*</exclude>
 							</excludes>
@@ -46,6 +52,45 @@
 							<outputDir>docs/_build</outputDir>
 							<stylesheet>schemas/scripts/xsd2cerif-rst.xsl</stylesheet>
 						</transformationSet>
+                        <transformationSet>
+                            <dir>schemas</dir>
+                            <includes>
+                                <include>openaire-cerif-profile.xsd</include>
+                            </includes>
+                            <outputDir>schemas/schematron</outputDir>
+                            <stylesheet>tools/schematron/trunk/converters/code/ToSchematron/ExtractSchFromXSD-2.xsl</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>.sch</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <dir>schemas/schematron</dir>
+                            <includes>
+                                <include>openaire-cerif-profile.sch</include>
+                            </includes>
+                            <outputDir>schemas/schematron</outputDir>
+                            <stylesheet>tools/schematron/trunk/schematron/code/iso_svrl_for_xslt2.xsl</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>validate.xslt</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <dir>samples</dir>
+                            <includes>
+                                <include>*.xml</include>
+                            </includes>
+                            <outputDir>samples/_schematron_output</outputDir>
+                            <stylesheet>schemas/schematron/openaire-cerif-profile.validate.xslt</stylesheet>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>validation-report.xml</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
 					</transformationSets>
 					<catalogs>
 						<catalog>schemas/catalog.xml</catalog>

@@ -6,12 +6,6 @@ language: java
 
 install: true
 
-git:
-    submodules: false
-
-before_install:
-    - git submodule update --init --recursive --remote
-
 script:
     # this runs two Maven goals: transform and validate
     - travis_wait mvn test -B

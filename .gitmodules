@@ -1,4 +1,3 @@
 [submodule "tools/schematron"]
 	path = tools/schematron
-	url = https://github.com/jdvorak001/schematron.git
-	branch = travis-compatible-test-submodule
+	url = https://github.com/Schematron/schematron.git

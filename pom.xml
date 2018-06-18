@@ -93,6 +93,7 @@
                         </transformationSet>
 					</transformationSets>
 					<catalogs>
+						<catalog>schemas/cached/catalog.xml</catalog>
 						<catalog>schemas/catalog.xml</catalog>
 					</catalogs>
 				</configuration>

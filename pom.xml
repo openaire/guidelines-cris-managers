@@ -65,32 +65,6 @@
                                 </fileMapper>
                             </fileMappers>
                         </transformationSet>
-                        <transformationSet>
-                            <dir>schemas/schematron</dir>
-                            <includes>
-                                <include>openaire-cerif-profile.sch</include>
-                            </includes>
-                            <outputDir>schemas/schematron</outputDir>
-                            <stylesheet>tools/schematron/trunk/schematron/code/iso_svrl_for_xslt2.xsl</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>validate.xslt</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
-                        <transformationSet>
-                            <dir>samples</dir>
-                            <includes>
-                                <include>*.xml</include>
-                            </includes>
-                            <outputDir>samples/_schematron_output</outputDir>
-                            <stylesheet>schemas/schematron/openaire-cerif-profile.validate.xslt</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>validation-report.xml</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
 					</transformationSets>
 					<catalogs>
 						<catalog>schemas/cached/catalog.xml</catalog>
@@ -104,6 +78,26 @@
 						<version>9.8.0-12</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+			  <groupId>com.helger.maven</groupId>
+			  <artifactId>ph-schematron-maven-plugin</artifactId>
+			  <version>5.0.4</version>
+			  <executions>
+			    <execution>
+			      <goals>
+			        <goal>validate</goal>
+			      </goals>
+			      <configuration>
+			      	<schematronFile>schemas/schematron/openaire-cerif-profile.sch</schematronFile>
+			      	<schematronProcessingEngine>pure</schematronProcessingEngine>
+			      	<xmlDirectory>samples</xmlDirectory>
+					<catalogs>
+						<catalog>schemas/catalog.xml</catalog>
+					</catalogs>
+			      </configuration>
+			    </execution>
+			  </executions>
 			</plugin>
 		</plugins>
 	</build>

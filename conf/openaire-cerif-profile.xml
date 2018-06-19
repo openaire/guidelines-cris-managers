@@ -70,6 +70,24 @@
 					<xs:documentation>The equipment this project uses</xs:documentation>
 				</xs:annotation>
 			</Link>
+            <xs:element name="OAMandate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Information about the Open Access mandate that applies to this project</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:attribute name="mandated" type="xs:boolean" use="required" cflink:link="https://w3id.org/cerif/model#Project_Classification(https://w3id.org/cerif/vocab/OpenAccessMandatedFlag)">
+                        <xs:annotation>
+                            <xs:documentation>The flag if Open Access is mandated in the project</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attribute name="uri" type="xs:anyURI" use="optional" cflink:link="https://w3id.org/cerif/model#Project_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)">
+                        <xs:annotation>
+                            <xs:documentation>The Open Access policy that applies to the project</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
+                </xs:complexType>
+            </xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Funding" leaveOut="Originated Supports">
@@ -83,6 +101,24 @@
 					<xs:documentation>Duration of the funding</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+            <xs:element name="OAMandate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Information about the Open Access mandate that applies to this funding</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:attribute name="mandated" type="xs:boolean" use="required" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandatedFlag)">
+                        <xs:annotation>
+                            <xs:documentation>The flag if Open Access is mandated for this funding</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attribute name="uri" type="xs:anyURI" use="optional" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)">
+                        <xs:annotation>
+                            <xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                    <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
+                </xs:complexType>
+            </xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages ReferencedBy Parts">

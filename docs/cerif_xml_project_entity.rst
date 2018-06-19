@@ -215,4 +215,30 @@ Uses
 :CERIF: the Project_Equipment linking entity (`<https://w3id.org/cerif/model#Project_Equipment>`_) with the `<https://w3id.org/cerif/vocab/ProjectResearchInfrastructureRelations#User>`_ semantics
 
 
+OAMandate
+^^^^^^^^^
+:Description: Information about the Open Access mandate that applies to this project
+:Use: optional (0..1)
+:Representation: XML element ``OAMandate``
+
+
+
+mandated
+--------
+:Description: The flag if Open Access is mandated in the project
+:Use: required
+:Representation: XML attribute ``mandated``
+:Format: ``true`` or ``false`` (data type ``xs:boolean``)
+
+
+
+uri
+---
+:Description: The Open Access policy that applies to the project
+:Use: optional
+:Representation: XML attribute ``uri``
+:Format: URI (data type ``xs:anyURI``)
+
+
+
 

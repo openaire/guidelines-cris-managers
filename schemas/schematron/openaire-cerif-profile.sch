@@ -2,6 +2,15 @@
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
             queryBinding="xslt2">
+   <sch:ns xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           xmlns="https://www.openaire.eu/cerif-profile/1.1/"
+           xmlns:cf="urn:xmlns:org.eurocris.cerif"
+           xmlns:cflink="https://w3id.org/cerif/annotations#"
+           xmlns:cfprocess="https://w3id.org/cerif/preprocessing#"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           prefix="oacf"
+           uri="https://www.openaire.eu/cerif-profile/1.1/"/>
    <sch:ns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -11,6 +20,18 @@
            xmlns="http://purl.org/coar/access_right"
            prefix="coar-access-right"
            uri="http://purl.org/coar/access_right"/>
+   <sch:pattern xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+                xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+                xmlns="https://www.openaire.eu/cerif-profile/1.1/"
+                xmlns:cf="urn:xmlns:org.eurocris.cerif"
+                xmlns:cflink="https://w3id.org/cerif/annotations#"
+                xmlns:cfprocess="https://w3id.org/cerif/preprocessing#"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <sch:title>Occurrence of "uri" implies an OAMandate is mandated</sch:title>
+      <sch:rule context="oacf:OAMandate">
+         <sch:report test="@uri and not ( @mandated = 'true' )">If the URI of an Open Access policy is given, "mandated" must be set true</sch:report>
+              </sch:rule>
+           </sch:pattern>
    <sch:pattern xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:skos="http://www.w3.org/2004/02/skos/core#"

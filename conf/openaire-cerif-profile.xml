@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../../git/CERIF-TG-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../../git/CERIF-TG-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
 	<xs:annotation>
 		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
 			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
+        <xs:appinfo>
+            <!-- oacf = OpenAIRE CERIF -->
+            <sch:ns prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+        </xs:appinfo>
+        <xs:appinfo>
+           <sch:pattern>
+              <sch:title>Occurrence of "uri" implies an OAMandate is mandated</sch:title>
+              <sch:rule context="oacf:OAMandate">
+                 <sch:report test="@uri and not ( @mandated = 'true' )">If the URI of an Open Access policy is given, "mandated" must be set true</sch:report>
+              </sch:rule>
+           </sch:pattern>
+        </xs:appinfo>
 	</xs:annotation>
 	
 	<TargetNamespace uri="https://www.openaire.eu/cerif-profile/1.1/"/>
@@ -70,7 +82,7 @@
 					<xs:documentation>The equipment this project uses</xs:documentation>
 				</xs:annotation>
 			</Link>
-            <xs:element name="OAMandate" minOccurs="0">
+            <xs:element name="OAMandate" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Information about the Open Access mandate that applies to this project</xs:documentation>
                 </xs:annotation>
@@ -85,6 +97,7 @@
                             <xs:documentation>The Open Access policy that applies to the project</xs:documentation>
                         </xs:annotation>
                     </xs:attribute>
+                    <xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
                     <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
                 </xs:complexType>
             </xs:element>
@@ -101,7 +114,7 @@
 					<xs:documentation>Duration of the funding</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-            <xs:element name="OAMandate" minOccurs="0">
+            <xs:element name="OAMandate" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Information about the Open Access mandate that applies to this funding</xs:documentation>
                 </xs:annotation>
@@ -116,6 +129,7 @@
                             <xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
                         </xs:annotation>
                     </xs:attribute>
+                    <xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
                     <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
                 </xs:complexType>
             </xs:element>

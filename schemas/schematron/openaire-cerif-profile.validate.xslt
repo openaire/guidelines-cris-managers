@@ -6,6 +6,7 @@
                 xmlns:schold="http://www.ascc.net/xml/schematron"
                 xmlns:iso="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                xmlns:oacf="https://www.openaire.eu/cerif-profile/1.1/"
                 xmlns:coar-access-right="http://purl.org/coar/access_right"
                 version="2.0"><!--Implementers: please note that overriding process-prolog or process-root is 
     the preferred method for meta-stylesheets to use where possible. -->
@@ -171,7 +172,16 @@
 		 <xsl:value-of select="$fileNameParameter"/>  
 		 <xsl:value-of select="$fileDirParameter"/>
          </xsl:comment>
+         <svrl:ns-prefix-in-attribute-values uri="https://www.openaire.eu/cerif-profile/1.1/" prefix="oacf"/>
          <svrl:ns-prefix-in-attribute-values uri="http://purl.org/coar/access_right" prefix="coar-access-right"/>
+         <svrl:active-pattern>
+            <xsl:attribute name="document">
+               <xsl:value-of select="document-uri(/)"/>
+            </xsl:attribute>
+            <xsl:attribute name="name">Occurrence of "uri" implies an OAMandate is mandated</xsl:attribute>
+            <xsl:apply-templates/>
+         </svrl:active-pattern>
+         <xsl:apply-templates select="/" mode="M2"/>
          <svrl:active-pattern>
             <xsl:attribute name="document">
                <xsl:value-of select="document-uri(/)"/>
@@ -179,18 +189,42 @@
             <xsl:attribute name="name">Occurrence of "startDate" and "endDate" with the COAR Access Rights vocabulary</xsl:attribute>
             <xsl:apply-templates/>
          </svrl:active-pattern>
-         <xsl:apply-templates select="/" mode="M1"/>
+         <xsl:apply-templates select="/" mode="M3"/>
       </svrl:schematron-output>
    </xsl:template>
 
    <!--SCHEMATRON PATTERNS-->
 
 
+   <!--PATTERN Occurrence of "uri" implies an OAMandate is mandated-->
+   <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Occurrence of "uri" implies an OAMandate is mandated</svrl:text>
+
+	  <!--RULE -->
+   <xsl:template match="oacf:OAMandate" priority="1000" mode="M2">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl" context="oacf:OAMandate"/>
+
+		    <!--REPORT -->
+      <xsl:if test="@uri and not ( @mandated = 'true' )">
+         <svrl:successful-report xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                                 test="@uri and not ( @mandated = 'true' )">
+            <xsl:attribute name="location">
+               <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+            </xsl:attribute>
+            <svrl:text>If the URI of an Open Access policy is given, "mandated" must be set true</svrl:text>
+         </svrl:successful-report>
+      </xsl:if>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M2"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M2"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M2">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M2"/>
+   </xsl:template>
+
    <!--PATTERN Occurrence of "startDate" and "endDate" with the COAR Access Rights vocabulary-->
    <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">Occurrence of "startDate" and "endDate" with the COAR Access Rights vocabulary</svrl:text>
 
 	  <!--RULE -->
-   <xsl:template match="coar-access-right:Access" priority="1000" mode="M1">
+   <xsl:template match="coar-access-right:Access" priority="1000" mode="M3">
       <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
                        context="coar-access-right:Access"/>
 
@@ -231,10 +265,10 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M1"/>
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M3"/>
    </xsl:template>
-   <xsl:template match="text()" priority="-1" mode="M1"/>
-   <xsl:template match="@*|node()" priority="-2" mode="M1">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M1"/>
+   <xsl:template match="text()" priority="-1" mode="M3"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M3">
+      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M3"/>
    </xsl:template>
 </xsl:stylesheet>

@@ -123,7 +123,7 @@ Duration
 OAMandate
 ^^^^^^^^^
 :Description: Information about the Open Access mandate that applies to this funding
-:Use: optional (0..1)
+:Use: optional, possibly multiple (0..*)
 :Representation: XML element ``OAMandate``
 
 

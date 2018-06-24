@@ -190,6 +190,14 @@
             <xsl:apply-templates/>
          </svrl:active-pattern>
          <xsl:apply-templates select="/" mode="M3"/>
+         <svrl:active-pattern>
+            <xsl:attribute name="document">
+               <xsl:value-of select="document-uri(/)"/>
+            </xsl:attribute>
+            <xsl:attribute name="name">"startDate" precedes the corresponding "endDate"</xsl:attribute>
+            <xsl:apply-templates/>
+         </svrl:active-pattern>
+         <xsl:apply-templates select="/" mode="M4"/>
       </svrl:schematron-output>
    </xsl:template>
 
@@ -213,11 +221,11 @@
             <svrl:text>If the URI of an Open Access policy is given, "mandated" must be set true</svrl:text>
          </svrl:successful-report>
       </xsl:if>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M2"/>
+      <xsl:apply-templates select="*" mode="M2"/>
    </xsl:template>
    <xsl:template match="text()" priority="-1" mode="M2"/>
    <xsl:template match="@*|node()" priority="-2" mode="M2">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M2"/>
+      <xsl:apply-templates select="*" mode="M2"/>
    </xsl:template>
 
    <!--PATTERN Occurrence of "startDate" and "endDate" with the COAR Access Rights vocabulary-->
@@ -265,10 +273,89 @@
             </svrl:failed-assert>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M3"/>
+      <xsl:apply-templates select="*" mode="M3"/>
    </xsl:template>
    <xsl:template match="text()" priority="-1" mode="M3"/>
    <xsl:template match="@*|node()" priority="-2" mode="M3">
-      <xsl:apply-templates select="*|comment()|processing-instruction()" mode="M3"/>
+      <xsl:apply-templates select="*" mode="M3"/>
+   </xsl:template>
+
+   <!--PATTERN "startDate" precedes the corresponding "endDate"-->
+   <svrl:text xmlns:svrl="http://purl.oclc.org/dsdl/svrl">"startDate" precedes the corresponding "endDate"</svrl:text>
+
+	  <!--RULE -->
+   <xsl:template match="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 4 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]"
+                 priority="1002"
+                 mode="M4">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                       context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 4 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]"/>
+
+		    <!--REPORT -->
+      <xsl:if test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1Y' ) )">
+         <svrl:successful-report xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                                 test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1Y' ) )">
+            <xsl:attribute name="location">
+               <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+            </xsl:attribute>
+            <svrl:text>The "startDate" (<xsl:text/>
+               <xsl:value-of select="@startDate"/>
+               <xsl:text/>) must not be later than the end of the corresponding "endDate" (<xsl:text/>
+               <xsl:value-of select="@endDate"/>
+               <xsl:text/>) period</svrl:text>
+         </svrl:successful-report>
+      </xsl:if>
+      <xsl:apply-templates select="*" mode="M4"/>
+   </xsl:template>
+
+	  <!--RULE -->
+   <xsl:template match="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 7 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]"
+                 priority="1001"
+                 mode="M4">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                       context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 7 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]"/>
+
+		    <!--REPORT -->
+      <xsl:if test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1M' ) )">
+         <svrl:successful-report xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                                 test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1M' ) )">
+            <xsl:attribute name="location">
+               <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+            </xsl:attribute>
+            <svrl:text>The "startDate" (<xsl:text/>
+               <xsl:value-of select="@startDate"/>
+               <xsl:text/>) must not be later than the end of the corresponding "endDate" (<xsl:text/>
+               <xsl:value-of select="@endDate"/>
+               <xsl:text/>) period</svrl:text>
+         </svrl:successful-report>
+      </xsl:if>
+      <xsl:apply-templates select="*" mode="M4"/>
+   </xsl:template>
+
+	  <!--RULE -->
+   <xsl:template match="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 10 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]"
+                 priority="1000"
+                 mode="M4">
+      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                       context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 10 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]"/>
+
+		    <!--REPORT -->
+      <xsl:if test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( @endDate cast as xs:date ) + xs:dayTimeDuration( 'P1D' ) )">
+         <svrl:successful-report xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                                 test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( @endDate cast as xs:date ) + xs:dayTimeDuration( 'P1D' ) )">
+            <xsl:attribute name="location">
+               <xsl:apply-templates select="." mode="schematron-select-full-path"/>
+            </xsl:attribute>
+            <svrl:text>The "startDate" (<xsl:text/>
+               <xsl:value-of select="@startDate"/>
+               <xsl:text/>) must not be later than the end of the corresponding "endDate" (<xsl:text/>
+               <xsl:value-of select="@endDate"/>
+               <xsl:text/>) period</svrl:text>
+         </svrl:successful-report>
+      </xsl:if>
+      <xsl:apply-templates select="*" mode="M4"/>
+   </xsl:template>
+   <xsl:template match="text()" priority="-1" mode="M4"/>
+   <xsl:template match="@*|node()" priority="-2" mode="M4">
+      <xsl:apply-templates select="*" mode="M4"/>
    </xsl:template>
 </xsl:stylesheet>

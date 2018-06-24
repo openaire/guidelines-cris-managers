@@ -46,5 +46,20 @@
                      <sch:assert test="not( @endDate ) or ( string(.) = 'http://purl.org/coar/access_right/c_f1cf' )">No "endDate" may be specified for an item with other than embargoed access</sch:assert>
                   </sch:rule>
                </sch:pattern>
+   <sch:pattern xmlns:cf="urn:xmlns:org.eurocris.cerif"
+                xmlns:cflink="https://w3id.org/cerif/annotations#"
+                xmlns:cfprocess="https://w3id.org/cerif/preprocessing#"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <sch:title>"startDate" precedes the corresponding "endDate"</sch:title>
+                <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 4 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
+                    <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1Y' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
+                </sch:rule>
+                <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 7 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
+                    <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1M' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
+                </sch:rule>
+                <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 10 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
+                    <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( @endDate cast as xs:date ) + xs:dayTimeDuration( 'P1D' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
+                </sch:rule>
+            </sch:pattern>
    <sch:diagnostics/>
 </sch:schema>

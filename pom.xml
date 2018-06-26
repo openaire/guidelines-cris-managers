@@ -25,9 +25,6 @@
 						<validationSet>
 							<dir>samples</dir>
 							<validating>true</validating>
-                            <excludes>
-                                <exclude>_schematron_output/**/*.xml</exclude>
-                            </excludes>
 						</validationSet>
 						<validationSet>
 							<dir>schemas</dir>
@@ -52,19 +49,6 @@
 							<outputDir>docs/_build</outputDir>
 							<stylesheet>schemas/scripts/xsd2cerif-rst.xsl</stylesheet>
 						</transformationSet>
-                        <transformationSet>
-                            <dir>schemas</dir>
-                            <includes>
-                                <include>openaire-cerif-profile.xsd</include>
-                            </includes>
-                            <outputDir>schemas/schematron</outputDir>
-                            <stylesheet>tools/schematron/trunk/converters/code/ToSchematron/ExtractSchFromXSD-2.xsl</stylesheet>
-                            <fileMappers>
-                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-                                    <targetExtension>.sch</targetExtension>
-                                </fileMapper>
-                            </fileMappers>
-                        </transformationSet>
 					</transformationSets>
 					<catalogs>
 						<catalog>schemas/cached/catalog.xml</catalog>
@@ -89,10 +73,11 @@
 			        <goal>validate</goal>
 			      </goals>
 			      <configuration>
-			      	<schematronFile>schemas/schematron/openaire-cerif-profile.sch</schematronFile>
+			      	<schematronFile>schemas/openaire-cerif-profile.sch</schematronFile>
 			      	<schematronProcessingEngine>pure</schematronProcessingEngine>
 			      	<xmlDirectory>samples</xmlDirectory>
 					<catalogs>
+						<catalog>schemas/cached/catalog.xml</catalog>
 						<catalog>schemas/catalog.xml</catalog>
 					</catalogs>
 			      </configuration>

@@ -1,4 +1,0 @@
-[submodule "tools/schematron"]
-	path = tools/schematron
-	url = https://github.com/Schematron/schematron.git
-	update = merge

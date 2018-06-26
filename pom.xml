@@ -25,6 +25,9 @@
 						<validationSet>
 							<dir>samples</dir>
 							<validating>true</validating>
+							<excludes>
+								<exclude>_schematron_output/*.xml</exclude>
+							</excludes>
 						</validationSet>
 						<validationSet>
 							<dir>schemas</dir>
@@ -74,8 +77,9 @@
 			      </goals>
 			      <configuration>
 			      	<schematronFile>schemas/openaire-cerif-profile.sch</schematronFile>
-			      	<schematronProcessingEngine>pure</schematronProcessingEngine>
+			      	<schematronProcessingEngine>schematron</schematronProcessingEngine>
 			      	<xmlDirectory>samples</xmlDirectory>
+			      	<svrlErrorDirectory>samples/_schematron_output</svrlErrorDirectory>
 					<catalogs>
 						<catalog>schemas/cached/catalog.xml</catalog>
 						<catalog>schemas/catalog.xml</catalog>

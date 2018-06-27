@@ -33,51 +33,46 @@ i.e., where the object is retrieved as a top-level object. This is a stronger fo
 OAI-PMH for Harvesting
 ^^^^^^^^^^^^^^^^^^^^^^
 
-OpenAIRE uses the OAI-PMH v2.0 protocol for harvesting metadata from CRIS systems.
+OpenAIRE uses the OAI-PMH 2.0 protocol for harvesting metadata from CRIS systems.
 
 Metadata Format and Prefix
 """"""""""""""""""""""""""
 
 OpenAIRE Guidelines 1.1 compatible CRIS should use the OAI-PMH metadata prefix ``oai_cerif_openaire`` and XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ namespace.
 
+A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
+
 OpenAIRE OAI-PMH Sets
 """""""""""""""""""""
 
-For harvesting the records relevant to OpenAIRE, the use of specific OAI-PMH sets at the local CRIS system is mandatory. 
-The description and required characteristics of the sets are provided in the following table:
+For harvesting the records relevant to OpenAIRE, the use of specific OAI-PMH sets at the local CRIS system is mandatory.
+All of the following OAI-PMH sets shall be recognized by the CRIS, even if not all of them are populated.
 
-+---------------------------------------------------------+-----------------------------------------+
-|Description                                              |Required characteristics                 |
-+=========================================================+=========================================+
-| | The list of CERIF XML records for publications.       || **setName:** OpenAIRE_CRIS_publications|
-| |                                                       || **setSpec:** openaire_cris_publications|
-+---------------------------------------------------------+-----------------------------------------+
-|| The list of CERIF XML records for datasets and         || **setName:** OpenAIRE_CRIS_products    |
-|| other research products.                               || **setSpec:** openaire_cris_products    |
-+---------------------------------------------------------+-----------------------------------------+
-| | The list of CERIF XML records for patents.            || **setName:** OpenAIRE_CRIS_patents     |
-| |                                                       || **setSpec:** openaire_cris_patents     |
-+---------------------------------------------------------+-----------------------------------------+
-| | The list of CERIF XML records for persons.            | | **setName:** OpenAIRE_CRIS_persons    |
-| |                                                       | | **setSpec:** openaire_cris_persons    |
-+---------------------------------------------------------+-----------------------------------------+
-| | The list of CERIF XML records for organisations and   | | **setName:** OpenAIRE_CRIS_orgunits   |
-| | organisation units.                                   | | **setSpec:** openaire_cris_orgunits   |
-+---------------------------------------------------------+-----------------------------------------+
-| | The list of CERIF XML records for projects.           | | **setName:** OpenAIRE_CRIS_projects   |
-| |                                                       | | **setSpec:** openaire_cris_projects   |
-+---------------------------------------------------------+-----------------------------------------+
-| | The list of CERIF XML records for funding.            | | **setName:** OpenAIRE_CRIS_funding    |
-| |                                                       | | **setSpec:** openaire_cris_funding    |
-+---------------------------------------------------------+-----------------------------------------+
-|| The list of CERIF XML records for events.              || **setName:** OpenAIRE_CRIS_events      |
-||                                                        || **setSpec:** openaire_cris_events      |
-+---------------------------------------------------------+-----------------------------------------+
-|| The list of CERIF XML records for equipment.           || **setName:** OpenAIRE_CRIS_equipments  |
-||                                                        || **setSpec:** openaire_cris_equipments  |
-+---------------------------------------------------------+-----------------------------------------+
+**OpenAIRE_CRIS_publications** (setSpec: ``openaire_cris_publications``): The list of CERIF XML records for publications and publishing channels.
+
+**OpenAIRE_CRIS_products** (setSpec: ``openaire_cris_products``): The list of CERIF XML records for datasets and other research products.
+
+**OpenAIRE_CRIS_patents** (setSpec: ``openaire_cris_patents``): The list of CERIF XML records for patents.
+
+**OpenAIRE_CRIS_persons** (setSpec: ``openaire_cris_persons``): The list of CERIF XML records for persons.
+
+**OpenAIRE_CRIS_orgunits** (setSpec: ``openaire_cris_orgunits``): The list of CERIF XML records for organisations and organisation units.
+
+**OpenAIRE_CRIS_projects** (setSpec: ``openaire_cris_projects``): The list of CERIF XML records for projects.
+
+**OpenAIRE_CRIS_funding** (setSpec: ``openaire_cris_funding``): The list of CERIF XML records for funding.
+
+**OpenAIRE_CRIS_events** (setSpec: ``openaire_cris_events``): The list of CERIF XML records for events.
+
+**OpenAIRE_CRIS_equipments** (setSpec: ``openaire_cris_equipments``): The list of CERIF XML records for equipment.
+
+A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_ListSets.xml>`_.
 
 Referential integrity constraints for all relationships among entities must be satisfied in the CERIF XML data provided by the CRIS system.
+
+Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
+For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_Identify.xml>`_.
+
 
 OAI identifiers
 """""""""""""""

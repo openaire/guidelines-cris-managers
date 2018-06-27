@@ -33,8 +33,8 @@ We wish to acknowledge the following contributors and also those who provided fe
 - Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
 
 .. |ORCIDlogo| image:: _static/orcid_128x128.png
-   :height: 12pt
-   :width: 12pt
+   :height: 10pt
+   :width: 10pt
 
 
 **Contributors**

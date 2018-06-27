@@ -44,8 +44,8 @@ Versions
 - 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
 
 
-Contributing
-^^^^^^^^^^^^
+Feedback
+^^^^^^^^
 
 We welcome your comments and suggestions. 
 Please see https://github.com/openaire/guidelines-cris-managers#contributing

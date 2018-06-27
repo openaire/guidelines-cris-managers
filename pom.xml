@@ -89,5 +89,9 @@
 			  </executions>
 			</plugin>
 		</plugins>
+		<!--
+ls samples/*.xml | sort | xargs zip -9jr target/OpenAIRE_Guidelines_for_CRIS_Managers-samples_v1.1.0.zip
+find schemas -name \*.xsd -o -name \*.sch | grep -v schemas/vocabularies/coar_resourcetypes.xsd | sort | xargs zip -9r target/OpenAIRE_Guidelines_for_CRIS_Managers-schemas_v1.1.0.zip		
+		-->
 	</build>
 </project>

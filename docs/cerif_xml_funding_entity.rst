@@ -120,4 +120,30 @@ Duration
 :CERIF: the Funding_Classification linking entity (`<https://w3id.org/cerif/model#Funding_Classification>`_) with the `<https://w3id.org/cerif/vocab/Durations#FundingDuration>`_ semantics
 
 
+OAMandate
+^^^^^^^^^
+:Description: Information about the Open Access mandate that applies to this funding
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``OAMandate``
+
+
+
+mandated
+--------
+:Description: The flag if Open Access is mandated for this funding
+:Use: required
+:Representation: XML attribute ``mandated``
+:Format: ``true`` or ``false`` (data type ``xs:boolean``)
+
+
+
+uri
+---
+:Description: The Open Access policy that applies to this funding
+:Use: optional
+:Representation: XML attribute ``uri``
+:Format: URI (data type ``xs:anyURI``)
+
+
+
 

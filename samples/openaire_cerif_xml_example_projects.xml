@@ -65,7 +65,7 @@
  									</Funding>
 								</PartOf>
                                 <Duration startDate="2011-12" endDate="2014-05" />
-                                <Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                                <OAMandate mandated="true"/>
 							</Funding>
 						</As>
 					</Funded>
@@ -82,7 +82,7 @@
 						the OpenAIRE portal, together with any available relevant information on associated project funding and usage statistics.
 						OpenAIREplus will retain its European footprint, engaging people and scientific repositories in almost all 27 EU member states and beyond. The technical work will be complemented by a suite of studies and associated research efforts that will partly proceed in collaboration with different European initiatives and investigate issues of intellectual property rights,
 						efficient financing models, and standards.</Abstract>
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                    <OAMandate mandated="true"/>
 				</Project>
 			</metadata>
 		</record>
@@ -149,7 +149,7 @@
 									</Funding>
 								</PartOf>
 								<Duration startDate="2009-12" endDate="2012-11" />
-								<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                                <OAMandate mandated="true"/>
 							</Funding>
 						</As>
 					</Funded>
@@ -165,7 +165,7 @@
 						scientific repositories in almost all 27 member states and beyond.
 						The electronic infrastructure built by the project will be based on state-of-the-art software services of the D-NET package developed within the DRIVER and DRIVER-II projects and the Invenio digital repository software developed at CERN. These will be further enhanced and complemented with services developed within OpenAIRE to address critical requirements and issues that arise in the target environment and require further
 						investigation.</Abstract>
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                    <OAMandate mandated="true"/>
 				</Project>
 			</metadata>
 		</record>
@@ -225,7 +225,7 @@
 									</Funding>
 								</PartOf>
 								<Duration startDate="2008-09-22" endDate="2013-09-30" />
-								<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                                <OAMandate mandated="true"/>
 							</Funding>
 						</As>
 					</Funded>
@@ -246,7 +246,7 @@
 							<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
 						</Equipment>
 					</Uses>
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                    <OAMandate mandated="true"/>
 				</Project>
 			</metadata>
 		</record>

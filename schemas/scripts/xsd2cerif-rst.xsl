@@ -240,17 +240,19 @@ Internal Identifier
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
-	<xsl:template match="xs:element[ @name and @cflink:container ]">
+	<xsl:template match="xs:element[ @name != 'Classification' and @name != 'Link' ]" priority="0.1">
 		<xsl:param name="entityEl"/>
 		<xsl:apply-templates mode="make-title" select="@name"/>
 		<xsl:call-template name="make-description"/>
 		<xsl:call-template name="document-use"/>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>`` with </xsl:text><xsl:value-of select="@cflink:container"/><xsl:text> embedded XML elements</xsl:text>
+		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
+        <xsl:if test="descendant::xs:element"><xsl:text> with </xsl:text><xsl:value-of select="@cflink:container"/><xsl:text> embedded XML elements</xsl:text></xsl:if>
 		<xsl:apply-templates select="xs:complexType/xs:sequence/xs:element" mode="link"/>
 		<xsl:text>
 </xsl:text>
 		<xsl:call-template name="make-footnotes"/>
 		<xsl:apply-templates select="xs:complexType/xs:sequence/xs:element"/>
+        <xsl:apply-templates select="xs:complexType/xs:attribute"/>
 	</xsl:template>
 
 	<xsl:template match="xs:element[ @name and @cflink:identifier ]" priority="0.6">
@@ -312,15 +314,33 @@ Internal Identifier
         <xsl:call-template name="document-use"/>
         <xsl:text>:Representation: XML attribute ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``
 </xsl:text>
-        <xsl:text>:Vocabulary: </xsl:text><xsl:value-of select="normalize-space( $sch1/xs:annotation/xs:documentation )"/><xsl:text>
+        <xsl:choose>
+            <xsl:when test="@type = 'xs:boolean'">
+                <xsl:text>:Format: </xsl:text>
+                <xsl:text>``true`` or ``false`` (data type ``xs:boolean``)
+
 
 </xsl:text>
+            </xsl:when>
+            <xsl:when test="@type = 'xs:anyURI'">
+                <xsl:text>:Format: </xsl:text>
+                <xsl:text>URI (data type ``xs:anyURI``)
 
-        <xsl:apply-templates select="$sch1/xs:simpleType/xs:restriction/xs:enumeration[ not( xs:annotation/xs:appinfo/cf:Class/cf:Broader/cf:Class/@id ) ]">
-            <xsl:with-param name="enumNodes" select="$sch1/xs:simpleType/xs:restriction/xs:enumeration"/>
-            <xsl:with-param name="indent" select="'  '"/>
-        </xsl:apply-templates>
-        <xsl:call-template name="make-footnotes"/>
+
+</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>:Vocabulary: </xsl:text>
+                <xsl:value-of select="normalize-space( $sch1/xs:annotation/xs:documentation )"/><xsl:text>
+
+</xsl:text>
+                <xsl:apply-templates select="$sch1/xs:simpleType/xs:restriction/xs:enumeration[ not( xs:annotation/xs:appinfo/cf:Class/cf:Broader/cf:Class/@id ) ]">
+                    <xsl:with-param name="enumNodes" select="$sch1/xs:simpleType/xs:restriction/xs:enumeration"/>
+                    <xsl:with-param name="indent" select="'  '"/>
+                </xsl:apply-templates>
+                <xsl:call-template name="make-footnotes"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 	<xsl:template match="xs:element" mode="link">
@@ -406,7 +426,8 @@ Internal Identifier
 	<xsl:template match="attribute::*" mode="make-title">
 		<xsl:variable name="element-depth">
 			<xsl:choose>
-				<xsl:when test="/xs:schema/xs:element"><xsl:value-of select="count( ancestor::xs:element )"/></xsl:when>
+                <xsl:when test="/xs:schema/xs:element and parent::xs:attribute"><xsl:value-of select="count( ancestor::xs:element ) + 1"/></xsl:when>
+                <xsl:when test="/xs:schema/xs:element"><xsl:value-of select="count( ancestor::xs:element )"/></xsl:when>
                 <xsl:when test="parent::xs:attribute"><xsl:value-of select="count( ancestor::xs:element ) + 2"/></xsl:when>
 				<xsl:otherwise><xsl:value-of select="count( ancestor::xs:element ) + 1"/></xsl:otherwise>
 			</xsl:choose>
@@ -416,6 +437,7 @@ Internal Identifier
 				<xsl:when test="$element-depth = 1">=</xsl:when>
 				<xsl:when test="$element-depth = 2">^</xsl:when>
 				<xsl:when test="$element-depth = 3">-</xsl:when>
+                <xsl:when test="$element-depth = 4">~</xsl:when>
 			</xsl:choose>
 		</xsl:variable>
 		<xsl:text>
@@ -423,7 +445,7 @@ Internal Identifier
 		<xsl:value-of select="string( . )"/><xsl:text>
 </xsl:text>
 		<xsl:value-of select="my:repeat( $underline-char, string-length( . ) )"/><xsl:text>
-</xsl:text>		
+</xsl:text>
 	</xsl:template>
 	
 	<xsl:template name="make-description">

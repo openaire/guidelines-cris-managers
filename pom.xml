@@ -20,10 +20,14 @@
 					</execution>
 				</executions>
 				<configuration>
+                    <forceCreation>true</forceCreation>
 					<validationSets>
 						<validationSet>
 							<dir>samples</dir>
 							<validating>true</validating>
+							<excludes>
+								<exclude>_schematron_output/*.xml</exclude>
+							</excludes>
 						</validationSet>
 						<validationSet>
 							<dir>schemas</dir>
@@ -32,6 +36,8 @@
 								<exclude>**/catalog.xml</exclude>
 								<exclude>**/*.out.xml</exclude>
 								<exclude>**/*.txt</exclude>
+                                <exclude>**/*.sch</exclude>
+                                <exclude>**/*.xslt</exclude>
 								<exclude>scripts/*</exclude>
 								<exclude>cached/*</exclude>
 							</excludes>
@@ -48,6 +54,7 @@
 						</transformationSet>
 					</transformationSets>
 					<catalogs>
+						<catalog>schemas/cached/catalog.xml</catalog>
 						<catalog>schemas/catalog.xml</catalog>
 					</catalogs>
 				</configuration>
@@ -58,6 +65,28 @@
 						<version>9.8.0-12</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+			  <groupId>com.helger.maven</groupId>
+			  <artifactId>ph-schematron-maven-plugin</artifactId>
+			  <version>5.0.4</version>
+			  <executions>
+			    <execution>
+			      <goals>
+			        <goal>validate</goal>
+			      </goals>
+			      <configuration>
+			      	<schematronFile>schemas/openaire-cerif-profile.sch</schematronFile>
+			      	<schematronProcessingEngine>schematron</schematronProcessingEngine>
+			      	<xmlDirectory>samples</xmlDirectory>
+			      	<svrlErrorDirectory>samples/_schematron_output</svrlErrorDirectory>
+					<catalogs>
+						<catalog>schemas/cached/catalog.xml</catalog>
+						<catalog>schemas/catalog.xml</catalog>
+					</catalogs>
+			      </configuration>
+			    </execution>
+			  </executions>
 			</plugin>
 		</plugins>
 	</build>

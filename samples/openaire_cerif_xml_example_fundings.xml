@@ -94,8 +94,8 @@
 						</Funding>
 					</PartOf>
 					<Duration startDate="2007-01-01" endDate="2013-12-31" />
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements" startDate="2008-08-20">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification><!-- the current record -->
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements" endDate="2008-08-20">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAnotMandated</Classification><!-- history -->
+                    <OAMandate mandated="true" startDate="2008-08-20"/>
+                    <OAMandate mandated="false" endDate="2008-08-19"/>
 				</Funding>
 			</metadata>
 		</record>
@@ -129,7 +129,7 @@
 						</Funding>
 					</PartOf>
 					<Duration startDate="2009-12" endDate="2012-11"/>
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                    <OAMandate mandated="true"/>
 				</Funding>
 			</metadata>
 		</record>
@@ -163,7 +163,7 @@
 						</Funding>
 					</PartOf>
 					<Duration startDate="2011-12" endDate="2014-05"/>
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                    <OAMandate mandated="true"/>
 				</Funding>
 			</metadata>
 		</record>
@@ -197,7 +197,7 @@
 						</Funding>
 					</PartOf>
 					<Duration startDate="2008-09-22" endDate="2013-09-30"/>
-					<Classification scheme="https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements">https://www.openaire.eu/cerif-profile/vocab/OpenAIREOpenAccessRequirements#OAmandated</Classification>
+                    <OAMandate mandated="true"/>
 				</Funding>
 			</metadata>
 		</record>

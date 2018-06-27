@@ -5,6 +5,18 @@
 			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
+<xs:appinfo>
+            
+            <sch:ns xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+        </xs:appinfo>
+<xs:appinfo>
+           <sch:pattern xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
+<sch:title>Occurrence of "uri" implies an OAMandate is mandated</sch:title>
+<sch:rule context="oacf:OAMandate">
+<sch:report test="@uri and not ( @mandated = 'true' )">If the URI of an Open Access policy is given, "mandated" must be set true</sch:report>
+              </sch:rule>
+           </sch:pattern>
+        </xs:appinfo>
 </xs:annotation>
 
 	
@@ -454,6 +466,26 @@ The Project entity only captures details of the project scope and plan. Informat
 </xs:complexType>
 </xs:element>
 
+<xs:element maxOccurs="unbounded" minOccurs="0" name="OAMandate">
+<xs:annotation>
+<xs:documentation>Information about the Open Access mandate that applies to this project</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:attribute cflink:link="https://w3id.org/cerif/model#Project_Classification(https://w3id.org/cerif/vocab/OpenAccessMandatedFlag)" name="mandated" type="xs:boolean" use="required">
+<xs:annotation>
+<xs:documentation>The flag if Open Access is mandated in the project</xs:documentation>
+</xs:annotation>
+</xs:attribute>
+<xs:attribute cflink:link="https://w3id.org/cerif/model#Project_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)" name="uri" type="xs:anyURI" use="optional">
+<xs:annotation>
+<xs:documentation>The Open Access policy that applies to the project</xs:documentation>
+</xs:annotation>
+</xs:attribute>
+<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
+<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
+</xs:complexType>
+</xs:element>
+
 <xs:group ref="__TheRestGroup"/>
 						
 					</xs:sequence>
@@ -551,6 +583,26 @@ The Project entity only captures details of the project scope and plan. Informat
 <xs:annotation>
 <xs:documentation>Duration of the funding</xs:documentation>
 </xs:annotation>
+</xs:element>
+
+<xs:element maxOccurs="unbounded" minOccurs="0" name="OAMandate">
+<xs:annotation>
+<xs:documentation>Information about the Open Access mandate that applies to this funding</xs:documentation>
+</xs:annotation>
+<xs:complexType>
+<xs:attribute cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandatedFlag)" name="mandated" type="xs:boolean" use="required">
+<xs:annotation>
+<xs:documentation>The flag if Open Access is mandated for this funding</xs:documentation>
+</xs:annotation>
+</xs:attribute>
+<xs:attribute cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)" name="uri" type="xs:anyURI" use="optional">
+<xs:annotation>
+<xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
+</xs:annotation>
+</xs:attribute>
+<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
+<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
+</xs:complexType>
 </xs:element>
 
 <xs:group ref="__TheRestGroup"/>

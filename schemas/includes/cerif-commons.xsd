@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:cfprocess="https://w3id.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:cfprocess="https://w3id.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
 	<xs:annotation>
 		<xs:documentation>Basic building blocks for CERIF XML Schemas. To be xs:included by other XML Schemas.
 			Created by the CERIF and CRIS Architecture Task Group of euroCRIS.</xs:documentation>
+        <xs:appinfo>
+            <sch:pattern>
+                <sch:title>"startDate" precedes the corresponding "endDate"</sch:title>
+                <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 4 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
+                    <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1Y' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
+                </sch:rule>
+                <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 7 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
+                    <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1M' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
+                </sch:rule>
+                <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 10 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
+                    <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( @endDate cast as xs:date ) + xs:dayTimeDuration( 'P1D' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
+                </sch:rule>
+            </sch:pattern>
+        </xs:appinfo>
 	</xs:annotation>
 
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd">

@@ -1,6 +1,8 @@
 Introduction
 ------------
 
+These guidelines describe the CERIF-XML profile for CRIS managers to be compatible with OpenAIRE.
+
 Aim
 ^^^
 The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure. 

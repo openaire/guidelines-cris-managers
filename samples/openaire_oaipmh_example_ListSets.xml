@@ -2,7 +2,7 @@
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
 
 	<responseDate>2018-04-07T13:37:47Z</responseDate>
-	<request verb="ListSets">http://api.openaire.eu/oai_pmh</request>
+	<request verb="ListSets">http://cris.example.org/openaire/connector</request>
 
 	<ListSets>
 

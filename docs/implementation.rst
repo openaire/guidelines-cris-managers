@@ -27,7 +27,7 @@ i.e., where the object is retrieved as a top-level object. This is a stronger fo
 
 .. rubric:: Footnotes
 
-.. [#f0] For the period of the review the XML schema is located at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.1/schemas/openaire-cerif-profile.xsd>`_. After the review the schema will be published as a permanent resource in a final location.
+.. [#f0] The XML schema is located at `<https://github.com/openaire/guidelines-cris-managers/raw/v1.1/schemas/openaire-cerif-profile.xsd>`_.
 .. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.1/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/v1.1/samples>`_
 
 OAI-PMH for Harvesting

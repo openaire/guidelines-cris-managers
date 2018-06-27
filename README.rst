@@ -22,17 +22,6 @@ XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
 Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
 
 
-Checking out this project
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This project has `Schematron <https://github.com/Schematron/schematron>`_ as a submodule (in the <tools/schematron/>_ subdirectory).
-
-Please check this project out **including** submodules:
-
- git checkout https://github.com/openaire/guidelines-cris-managers.git --branch=add-schematron-rules --recurse-submodules=.
-
-For Eclipse use the *File > Import > Projects from Git* wizard, check the "Clone submodules" checkbox.
-
 Contributing
 ~~~~~~~~~~~~
 

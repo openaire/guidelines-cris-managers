@@ -1,7 +1,8 @@
 OpenAIRE Guidelines for CRIS Managers based on CERIF-XML
 ========================================================
 
-This repository is about the **OpenAIRE Guidelines for CRIS Managers 1.1**, 
+This repository contains the project of the **OpenAIRE Guidelines for CRIS Managers 1.1**, 
+
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1298650.svg
    :target: https://doi.org/10.5281/zenodo.1298650
    :alt: v.1.1 DOI
@@ -21,17 +22,6 @@ XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
 
 Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
 
-
-Checking out this project
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This project has `Schematron <https://github.com/Schematron/schematron>`_ as a submodule (in the <tools/schematron/>_ subdirectory).
-
-Please check this project out **including** submodules:
-
- git checkout https://github.com/openaire/guidelines-cris-managers.git --branch=add-schematron-rules --recurse-submodules=.
-
-For Eclipse use the *File > Import > Projects from Git* wizard, check the "Clone submodules" checkbox.
 
 Contributing
 ~~~~~~~~~~~~

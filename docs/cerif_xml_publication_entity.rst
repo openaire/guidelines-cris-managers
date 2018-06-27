@@ -4,7 +4,7 @@
 Publication
 ===========
 :Description: A text based scholarly publication or publishing channel that contains results of research. CRISs typically record metadata about scholarly publications from the scope of the CRIS (institutional CRIS for the institution, funder CRIS for the funding it distributed, etc.) in the context of the research projects, infrastructure, funding, organization units and authors/contributors. This entity typically represents the granularity level of a single published item for which attribution information is attached (usually in the form of a list of authors and contributors). This entity is also used to represent publishing channels and sources: journals and book series (incl. continuing conference proceedings series). (Taken from https://doi.org/10.1016/j.procs.2014.06.008)
-:Examples: `openaire_cerif_xml_example_publications.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_cerif_xml_example_publications.xml>`_
+:Examples: `openaire_cerif_xml_example_publications.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_publications.xml>`_
 :Representation: XML element ``Publication``; the rest of this section documents children of this element
 :CERIF: the ResultPublication entity (`<https://w3id.org/cerif/model#ResultPublication>`_)
 

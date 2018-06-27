@@ -27,8 +27,8 @@ i.e., where the object is retrieved as a top-level object. This is a stronger fo
 
 .. rubric:: Footnotes
 
-.. [#f0] For the period of the review the XML schema is located at `<https://github.com/openaire/guidelines-cris-managers/blob/master/schemas/openaire-cerif-profile.xsd>`_. After the review the schema will be published as a permanent resource in a final location.
-.. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/master/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/master/samples>`_
+.. [#f0] For the period of the review the XML schema is located at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.1/schemas/openaire-cerif-profile.xsd>`_. After the review the schema will be published as a permanent resource in a final location.
+.. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.1/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/v1.1/samples>`_
 
 OAI-PMH for Harvesting
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -40,7 +40,7 @@ Metadata Format and Prefix
 
 OpenAIRE Guidelines 1.1 compatible CRIS should use the OAI-PMH metadata prefix ``oai_cerif_openaire`` and XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ namespace.
 
-A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
+A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
 
 OpenAIRE OAI-PMH Sets
 """""""""""""""""""""
@@ -66,12 +66,12 @@ All of the following OAI-PMH sets shall be recognized by the CRIS, even if not a
 
 **OpenAIRE_CRIS_equipments** (setSpec: ``openaire_cris_equipments``): The list of CERIF XML records for equipment.
 
-A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_ListSets.xml>`_.
+A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListSets.xml>`_.
 
 Referential integrity constraints for all relationships among entities must be satisfied in the CERIF XML data provided by the CRIS system.
 
 Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
-For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_Identify.xml>`_.
+For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml>`_.
 
 
 OAI identifiers

@@ -3,7 +3,7 @@
 
 Funding
 =======
-:Examples: `openaire_cerif_xml_example_fundings.xml <https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_cerif_xml_example_fundings.xml>`_
+:Examples: `openaire_cerif_xml_example_fundings.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_fundings.xml>`_
 :Representation: XML element ``Funding``; the rest of this section documents children of this element
 :CERIF: the Funding entity (`<https://w3id.org/cerif/model#Funding>`_)
 

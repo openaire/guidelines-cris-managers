@@ -61,11 +61,11 @@
 			<xsl:call-template name="make-description"/>
 			<xsl:variable name="example-uri" select="concat( 'openaire_cerif_xml_example_', lower-case( $elName ), 's.xml' )"/>
 			<xsl:if test="doc-available( concat( '../../samples/', $example-uri ) )">
-<xsl:text>:Examples: `</xsl:text><xsl:value-of select="$example-uri"/><xsl:text> &lt;</xsl:text><xsl:value-of select="concat( 'https://github.com/openaire/guidelines-cris-managers/blob/master/samples/', $example-uri )"/><xsl:text>&gt;`_
+<xsl:text>:Examples: `</xsl:text><xsl:value-of select="$example-uri"/><xsl:text> &lt;</xsl:text><xsl:value-of select="concat( 'https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/', $example-uri )"/><xsl:text>&gt;`_
 </xsl:text>
 			</xsl:if>
 			<xsl:if test="$elName = 'Service'">
-<xsl:text>:Examples: `sample Identify response &lt;https://github.com/openaire/guidelines-cris-managers/blob/master/samples/openaire_oaipmh_example_Identify.xml&gt;`_
+<xsl:text>:Examples: `sample Identify response &lt;https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml&gt;`_
 </xsl:text>
 			</xsl:if>
 <xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``; the rest of this section documents children of this element

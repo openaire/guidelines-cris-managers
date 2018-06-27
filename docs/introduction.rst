@@ -27,12 +27,12 @@ We wish to acknowledge the following contributors and also those who provided fe
 
 **Editors**
 
-- Jan Dvořák `|ORCID_logo| https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia + euroCRIS)
-- Andrea Bollini `|ORCID_logo| https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
-- Laurent Rémy `|ORCID_logo| https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
-- Jochen Schirrwagen `|ORCID_logo| https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
+- Jan Dvořák `|ORCIDlogo| https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia + euroCRIS)
+- Andrea Bollini `|ORCIDlogo| https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
+- Laurent Rémy `|ORCIDlogo| https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
+- Jochen Schirrwagen `|ORCIDlogo| https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
 
-.. |ORCID_logo| image:: _static/orcid_128x128.png
+.. |ORCIDlogo| image:: _static/orcid_128x128.png
    :height: 12pt
    :width: 12pt
 

@@ -40,7 +40,7 @@
 				</xs:complexType>
 			</xs:element>
 
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID" minOccurs="0" name="ResearcherID">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ResearcherID" minOccurs="0" maxOccurs="unbounded" name="ResearcherID">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The ResearcherID identifier</xs:documentation>
 					<xs:appinfo>
@@ -63,7 +63,7 @@
 				</xs:complexType>						
 			</xs:element>
 
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ScopusAuthorID" minOccurs="0" name="ScopusAuthorID">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ScopusAuthorID" minOccurs="0" maxOccurs="unbounded" name="ScopusAuthorID">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The Scopus Author ID identifier</xs:documentation>
 					<xs:appinfo>
@@ -86,7 +86,7 @@
 				</xs:complexType>						
 			</xs:element>
 
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISNI" minOccurs="0" name="ISNI">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ISNI" minOccurs="0" maxOccurs="unbounded" name="ISNI">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The ISNI identifier</xs:documentation>
 					<xs:appinfo>

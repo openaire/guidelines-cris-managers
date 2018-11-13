@@ -122,7 +122,7 @@
 				<xs:complexType>
 					<xs:simpleContent>
 						<xs:restriction base="cfString__Type">
-							<xs:pattern value="info\:eu\-repo/dai/[a-zA-Z]{2}/[a-zA-Z0-9]{3,}">
+							<xs:pattern value="info\:eu\-repo/dai/nl/\d{8}[\dxX]">
 								<xs:annotation>
 									<xs:documentation source="https://wiki.surfnet.nl/display/standards/DAI"/>
 								</xs:annotation>

@@ -8,7 +8,7 @@
            xmlns:dc-term="http://purl.org/dc/terms/"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
            xmlns="http://purl.org/coar/access_right"
-           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd http://purl.oclc.org/dsdl/schematron https://raw.githubusercontent.com/oxygenxml/sqf/master/schemas/iso-schematron.xsd"
+           xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd http://purl.oclc.org/dsdl/schematron https://raw.githubusercontent.com/schematron-quickfix/sqf/master/schemas/iso-schematron.xsd"
            targetNamespace="http://purl.org/coar/access_right">
    <xs:annotation>
       <xs:appinfo>

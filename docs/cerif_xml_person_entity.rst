@@ -102,6 +102,16 @@ ISNI
 
 
 
+DAI
+^^^
+:Description: The Digital Author Identifier
+:Use: optional (0..1)
+:Representation: XML element ``DAI``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]``
+
+
+
 ElectronicAddress
 ^^^^^^^^^^^^^^^^^
 :Description: An electronic address associated with the person

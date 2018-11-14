@@ -1,18 +1,18 @@
-<!-- Tufts VUE 3.3.0 concept-map (OpenAIRE-examples-map.vue) 2018-05-25 -->
+<!-- Tufts VUE 3.3.0 concept-map (OpenAIRE-examples-map.vue) 2018-11-14 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
-<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.localized/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Fri May 25 12:09:13 CEST 2018 by jdvorak on platform Mac OS X 10.13.4 in JVM 9.0.4+11 -->
+<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
+<!-- Do Not Remove: Saved date Wed Nov 14 11:32:17 CET 2018 by jdvorak on platform Mac OS X 10.14.1 in JVM 10.0.1+10 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="OpenAIRE-examples-map.vue" created="1434792177028" x="0.0"
     y="0.0" width="992.4211" height="1399.0116" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1527242953258" size="204305"
-        spec="/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue"
+    <resource referenceCreated="1542191537473" size="204305"
+        spec="/Users/jdvorak/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue"
         type="1" xsi:type="URLResource">
         <title>OpenAIRE-examples-map.vue</title>
-        <property key="File" value="/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue"/>
+        <property key="File" value="/Users/jdvorak/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
@@ -706,13 +706,33 @@
     </child>
     <child ID="55"
         label="Maarten Hoogerwerf&#xa;oai:cris.example.org:Persons/2123455"
-        layerID="1" created="1434794328883" x="201.05338" y="1078.2336"
-        width="222.0" height="36.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        layerID="1" created="1434794328883" x="202.47324" y="1044.2443"
+        width="250.0" height="78.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
         <fillColor>#E0FFE4</fillColor>
         <strokeColor>#7F7F7F</strokeColor>
         <textColor>#4C4C4C</textColor>
         <font>Arial-plain-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/10846af2c0a801c361bf61a0596cd9b1</URIString>
+        <child ID="306" label="DAI = info-eu:repo/dai/nl/30407618X"
+            created="1542191269123" x="34.0" y="36.0" width="211.0"
+            height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+            <fillColor>#FFFFFF</fillColor>
+            <strokeColor>#7F7F7F</strokeColor>
+            <textColor>#4C4C4C</textColor>
+            <font>Arial-plain-12</font>
+            <URIString>http://vue.tufts.edu/rdf/resource/11c770fec0a8006d052dd1be576b77d7</URIString>
+            <shape xsi:type="rectangle"/>
+        </child>
+        <child ID="307" label="ISNI = 0000 0003 9448 2436"
+            created="1542191345072" x="34.0" y="55.5" width="169.0"
+            height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+            <fillColor>#FFFFFF</fillColor>
+            <strokeColor>#7F7F7F</strokeColor>
+            <textColor>#4C4C4C</textColor>
+            <font>Arial-plain-12</font>
+            <URIString>http://vue.tufts.edu/rdf/resource/11c770ffc0a8006d052dd1be1bf8d833</URIString>
+            <shape xsi:type="rectangle"/>
+        </child>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="56"
@@ -793,63 +813,63 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="62" label="Author #1" layerID="1" created="1434795399914"
-        x="347.21573" y="967.6741" width="62.279205" height="111.05957"
+        x="366.91492" y="967.6741" width="48.0" height="77.07019"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#4C4C4C</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/10846af6c0a801c361bf61a08d276bff</URIString>
-        <point1 x="405.08078" y="968.1741"/>
-        <point2 x="347.71573" y="1078.2336"/>
+        <point1 x="400.90808" y="968.1741"/>
+        <point2 x="367.62082" y="1044.2443"/>
         <ID1 xsi:type="node">33</ID1>
         <ID2 xsi:type="node">55</ID2>
-        <ctrlPoint0 x="378.5034" y="1046.7583" xsi:type="point"/>
-        <ctrlPoint1 x="398.5509" y="1052.5753" xsi:type="point"/>
+        <ctrlPoint0 x="381.68716" y="1008.1462" xsi:type="point"/>
+        <ctrlPoint1 x="404.57635" y="1008.345" xsi:type="point"/>
     </child>
     <child ID="63" label="Author #2" layerID="1" created="1434795414471"
-        x="395.0897" y="967.6738" width="60.324615" height="186.55981"
+        x="410.51367" y="967.6741" width="73.44751" height="186.55957"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#4C4C4C</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/10846af6c0a801c361bf61a07abb62ff</URIString>
-        <point1 x="412.9001" y="968.1738"/>
-        <point2 x="395.5897" y="1153.7336"/>
+        <point1 x="426.90073" y="968.1741"/>
+        <point2 x="411.01367" y="1153.7336"/>
         <ID1 xsi:type="node">33</ID1>
         <ID2 xsi:type="node">56</ID2>
-        <ctrlPoint0 x="407.08856" y="1050.1676" xsi:type="point"/>
-        <ctrlPoint1 x="473.85294" y="1081.4961" xsi:type="point"/>
+        <ctrlPoint0 x="508.18954" y="1167.5201" xsi:type="point"/>
+        <ctrlPoint1 x="439.0688" y="1139.2745" xsi:type="point"/>
     </child>
     <child ID="64" label="Author #3" layerID="1" created="1434795460615"
-        x="421.90463" y="967.6741" width="87.68164" height="248.24048"
+        x="428.5095" y="967.6741" width="101.93213" height="248.24048"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#4C4C4C</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/10846af7c0a801c361bf61a03b8a57f1</URIString>
-        <point1 x="422.40463" y="968.1741"/>
-        <point2 x="482.43668" y="1215.4146"/>
+        <point1 x="429.0095" y="968.1741"/>
+        <point2 x="481.09882" y="1215.4146"/>
         <ID1 xsi:type="node">33</ID1>
         <ID2 xsi:type="node">57</ID2>
-        <ctrlPoint0 x="452.0775" y="1084.967" xsi:type="point"/>
-        <ctrlPoint1 x="541.20544" y="1138.4972" xsi:type="point"/>
+        <ctrlPoint0 x="504.2393" y="1124.9445" xsi:type="point"/>
+        <ctrlPoint1 x="542.9023" y="1129.375" xsi:type="point"/>
     </child>
     <child ID="65" label="Author #4" layerID="1" created="1434795475492"
-        x="428.26486" y="967.674" width="165.0214" height="318.4422"
+        x="431.48032" y="967.6741" width="161.88327" height="318.44214"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="0" xsi:type="link">
         <strokeColor>#4C4C4C</strokeColor>
         <textColor>#4C4C4C</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/10846af8c0a801c361bf61a05539fccd</URIString>
-        <point1 x="428.76486" y="968.174"/>
+        <point1 x="431.98032" y="968.1741"/>
         <point2 x="591.99414" y="1285.6162"/>
         <ID1 xsi:type="node">33</ID1>
         <ID2 xsi:type="node">58</ID2>
-        <ctrlPoint0 x="530.0603" y="1183.0066" xsi:type="point"/>
+        <ctrlPoint0 x="556.57007" y="1182.4528" xsi:type="point"/>
         <ctrlPoint1 x="601.17145" y="1103.29" xsi:type="point"/>
     </child>
     <child ID="67" label="Author #6" layerID="1" created="1434795536729"
@@ -3935,8 +3955,8 @@
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/10595862c0a801c361bf61a0192370fd</URIString>
     </layer>
-    <userZoom>0.36321359407119924</userZoom>
-    <userOrigin x="-37.137917" y="87.15411"/>
+    <userZoom>1.9475352399275172</userZoom>
+    <userOrigin x="210.15277" y="179.21106"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1434792177026"
@@ -3988,6 +4008,6 @@
     </PathwayList>
     <date>2015-06-20</date>
     <modelVersion>6</modelVersion>
-    <saveLocation>/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations</saveLocation>
-    <saveFile>/Users/jdvorak/Documents/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue</saveFile>
+    <saveLocation>/Users/jdvorak/workspace/guidelines-cris-managers/docs/_illustrations</saveLocation>
+    <saveFile>/Users/jdvorak/workspace/guidelines-cris-managers/docs/_illustrations/OpenAIRE-examples-map.vue</saveFile>
 </LW-MAP>

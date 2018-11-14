@@ -109,7 +109,7 @@
 				</xs:complexType>
 			</xs:element>
 
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DAI" minOccurs="0" name="DAI">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#DAI" minOccurs="0" maxOccurs="unbounded" name="DAI">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The Digital Author Identifier</xs:documentation>
 					<xs:appinfo>

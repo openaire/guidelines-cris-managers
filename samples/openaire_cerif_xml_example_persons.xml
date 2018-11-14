@@ -102,6 +102,9 @@
 						<FamilyNames>Hoogerwerf</FamilyNames>
 						<FirstNames>Maarten</FirstNames>
 					</PersonName>
+					<!-- ISNI and DAI source: https://www.narcis.nl/person/RecordID/PRS1321378 -->
+					<ISNI>0000 0003 9448 2436</ISNI>
+					<DAI>info:eu-repo/dai/nl/30407618X</DAI>
 					<ElectronicAddress>tel:+390123456789</ElectronicAddress>
 				</Person>
 			</metadata>

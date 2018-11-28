@@ -19,9 +19,13 @@ Contents
    :target: https://readthedocs.org/projects/openaire-guidelines-for-cris-managers/?badge=latest
    :alt: Documentation Status
 
-XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
 
-Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
+Accompanying artefacts
+~~~~~~~~~~~~~~~~~~~~~~
+
+* XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
+* Prototype validator: a project at `<https://github.com/jdvorak001/openaire-cris-validator#readme>`_
+* Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
 
 
 Contributing

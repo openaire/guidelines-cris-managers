@@ -62,8 +62,8 @@ ElectronicAddress
 
 PartOf
 ^^^^^^
-:Description: Chain up to the larger unit that encompasses this unit
-:Use: optional (0..1)
+:Description: Link to the larger unit that encompasses this unit. To be used for the immediate parents only. In order to represent the full path up through the hierarchy of an institution, use this construct recursively. In specific cases there may be several such parents at one time in parallel. An example: a interdisciplinary research centre within a university can be subordinated to several faculties.
+:Use: optional, possibly multiple (0..*)
 :Representation: XML element ``PartOf`` with embedded XML element ``OrgUnit``
 :CERIF: the OrganisationUnit_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/Inter-­OrganisationRelations#Part>`_ semantics (direction :1)
 

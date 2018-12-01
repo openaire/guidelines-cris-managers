@@ -202,7 +202,7 @@ Internal Identifier
 		</xsl:for-each>
 	</xsl:template>
 	
-	<xsl:template match="xs:element[ @name and @cflink:link and @type ]">
+	<xsl:template match="xs:element[ @name and @cflink:link ]">
 		<xsl:param name="entityEl"/>
 		<xsl:apply-templates mode="make-title" select="@name"/>
 		<xsl:call-template name="make-description"/>
@@ -216,6 +216,12 @@ Internal Identifier
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``</xsl:when>
 			<xsl:when test="@type = 'cfLinkWithDisplayNameToOrgUnit__Type'"> with embedded XML element ``OrgUnit``</xsl:when>
             <xsl:when test="@type = 'cfString__Type'"/>
+            <xsl:when test="not( @type )">
+				<xsl:variable name="s1">
+					<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/(xs:sequence|xs:choice)/xs:element" mode="name-verbatim"/>
+				</xsl:variable>
+				<xsl:value-of select="concat( ' with embedded XML element', substring-after( $s1, ' or' ) )"/>
+            </xsl:when>
 			<xsl:otherwise> *TODO*</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>
@@ -230,25 +236,6 @@ Internal Identifier
 				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
-		<xsl:call-template name="make-footnotes"/>
-	</xsl:template>
-
-	<xsl:template match="xs:element[ @name and @cflink:link and not( @type ) ]">
-		<xsl:param name="entityEl"/>
-		<xsl:apply-templates mode="make-title" select="@name"/>
-		<xsl:call-template name="make-description"/>
-		<xsl:call-template name="document-use"/>
-		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
-		<xsl:variable name="s1">
-			<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/(xs:sequence|xs:choice)/xs:element" mode="name-verbatim"/>
-		</xsl:variable>
-		<xsl:value-of select="concat( ' with embedded XML element', substring-after( $s1, ' or' ) )"/>
-		<xsl:text>
-</xsl:text>
-		<xsl:text>:CERIF: </xsl:text>
-		<xsl:call-template name="process-link-annotation">
-			<xsl:with-param name="link-annotation" select="@cflink:link"/>
-		</xsl:call-template>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 

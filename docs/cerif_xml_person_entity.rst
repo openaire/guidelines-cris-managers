@@ -68,7 +68,7 @@ ORCID
 :Use: optional (0..1)
 :Representation: XML element ``ORCID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]``
+:Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
 
 
 
@@ -78,7 +78,7 @@ AlternativeORCID
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeORCID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]``
+:Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
 
 
 
@@ -88,7 +88,7 @@ ResearcherID
 :Use: optional (0..1)
 :Representation: XML element ``ResearcherID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]``
+:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
 
 
 
@@ -98,7 +98,7 @@ AlternativeResearcherID
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeResearcherID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]``
+:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
 
 
 
@@ -108,7 +108,7 @@ ScopusAuthorID
 :Use: optional (0..1)
 :Representation: XML element ``ScopusAuthorID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[0-9]{10,11}``
+:Format: regular expression ``[0-9]{10,11}`` (as per `<https://www.wikidata.org/wiki/Property:P1153>`_)
 
 
 
@@ -118,7 +118,7 @@ AlternativeScopusAuthorID
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeScopusAuthorID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[0-9]{10,11}``
+:Format: regular expression ``[0-9]{10,11}`` (as per `<https://www.wikidata.org/wiki/Property:P1153>`_)
 
 
 
@@ -128,7 +128,7 @@ ISNI
 :Use: optional (0..1)
 :Representation: XML element ``ISNI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]``
+:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
 
 
 
@@ -138,7 +138,7 @@ AlternativeISNI
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeISNI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]``
+:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
 
 
 
@@ -148,7 +148,7 @@ DAI
 :Use: optional (0..1)
 :Representation: XML element ``DAI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]``
+:Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]`` (as per `<https://wiki.surfnet.nl/display/standards/DAI>`_)
 
 
 
@@ -158,7 +158,7 @@ AlternativeDAI
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeDAI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]``
+:Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]`` (as per `<https://wiki.surfnet.nl/display/standards/DAI>`_)
 
 
 

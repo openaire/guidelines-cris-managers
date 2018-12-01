@@ -192,6 +192,7 @@ DOI
 :Use: optional (0..1)
 :Representation: XML element ``DOI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``10\.\d{4,}(\.\d+)*/[^\s]+`` (as per `<https://www.crossref.org/blog/dois-and-matching-regular-expressions/>`_)
 
 
 
@@ -233,6 +234,7 @@ ISSN
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISSN``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``\d{4}-?\d{3}[\dX]`` and length between 8 and 9 characters (as per `<https://data.crossref.org/reports/help/schema_doc/4.4.1/schema_4_4_1.html#issn_t>`_)
 
 
 
@@ -255,6 +257,17 @@ ISBN
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``ISBN``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: any of:
+
+  * regular expression ``978-\d+-\d+-\d+-\d`` and length of exactly 17 characters (ISBN-13, human readable form)
+  * regular expression ``978 \d+ \d+ \d+ \d`` and length of exactly 17 characters (ISBN-13, human readable form)
+  * regular expression ``979-[1-9]\d*-\d+-\d+-\d`` and length of exactly 17 characters (ISBN-13, human readable form)
+  * regular expression ``979 [1-9]\d* \d+ \d+ \d`` and length of exactly 17 characters (ISBN-13, human readable form)
+  * regular expression ``978\d{10}`` and length of exactly 13 characters (ISBN-13, concise form)
+  * regular expression ``979[1-9]\d{9}`` and length of exactly 13 characters (ISBN-13, concise form)
+  * regular expression ``\d+-\d+-\d+-[\dX]`` and length of exactly 13 characters (ISBN-10, human readable form)
+  * regular expression ``\d+ \d+ \d+ [\dX]`` and length of exactly 13 characters (ISBN-10, human readable form)
+  * regular expression ``\d{9}[\dX]`` and length of exactly 10 characters (ISBN-10, concise form)
 
 
 

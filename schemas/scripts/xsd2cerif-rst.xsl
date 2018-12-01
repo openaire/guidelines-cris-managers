@@ -268,7 +268,8 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: the FederatedIdentifier entity (`&lt;https://w3id.org/cerif/model#FederatedIdentifier&gt;`_)
 </xsl:text>
-		<xsl:for-each select="descendant::xs:pattern">
+		<xsl:variable name="type" select="resolve-QName( @type, . )"/>
+		<xsl:for-each select="descendant::xs:pattern|/xs:schema/xs:complexType[ resolve-QName( @name, . ) = $type ]/descendant::xs:pattern">
 			<xsl:text>:Format: regular expression ``</xsl:text>
 			<xsl:value-of select="@value"/>
 			<xsl:text>``

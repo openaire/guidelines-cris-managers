@@ -14,6 +14,13 @@
 	<xsl:key name="schema-components-by-name" match="$all-named-schema-components" use="string( @name )" />
 	
 	<xsl:template match="xs:schema">
+		<xsl:message>Schema contents is:</xsl:message>
+		<xsl:for-each select="distinct-values( $all-named-schema-components/local-name() )">
+			<xsl:variable name="type" select="string(.)"/>
+			<xsl:variable name="components" select="$all-named-schema-components[ local-name() = $type ]"/>
+			<xsl:message><xsl:text> </xsl:text><xsl:value-of select="count( $components )"/><xsl:text> global </xsl:text><xsl:value-of select="$type"/><xsl:text>s: </xsl:text><xsl:value-of select="$components/@name"/></xsl:message>
+		</xsl:for-each>
+	
 		<xsl:call-template name="document-entity">
 			<xsl:with-param name="elName" select="'Publication'"/>
 			<xsl:with-param name="filename" select="'cerif_xml_publication_entity.rst'"/>

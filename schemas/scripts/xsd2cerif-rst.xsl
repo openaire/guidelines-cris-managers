@@ -236,9 +236,10 @@ Internal Identifier
 				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
+		<xsl:call-template name="format2Rst"/>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
-
+	
 	<xsl:template match="xs:element[ @name != 'Classification' and @name != 'Link' ]" priority="0.1">
 		<xsl:param name="entityEl"/>
 		<xsl:apply-templates mode="make-title" select="@name"/>
@@ -267,13 +268,7 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: the FederatedIdentifier entity (`&lt;https://w3id.org/cerif/model#FederatedIdentifier&gt;`_)
 </xsl:text>
-		<xsl:variable name="type" select="resolve-QName( @type, . )"/>
-		<xsl:for-each select="descendant::xs:pattern|/xs:schema/xs:complexType[ resolve-QName( @name, . ) = $type ]/descendant::xs:pattern">
-			<xsl:text>:Format: regular expression ``</xsl:text>
-			<xsl:value-of select="@value"/>
-			<xsl:text>``
-</xsl:text>
-		</xsl:for-each>
+		<xsl:call-template name="format2Rst"/>
 		<xsl:call-template name="make-footnotes"/>
         <xsl:apply-templates select="descendant::xs:attribute"/>
 	</xsl:template>
@@ -287,6 +282,7 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: the ElectronicAddress entity (`&lt;https://w3id.org/cerif/model#ElectronicAddress&gt;`_) and the corresponding link (`&lt;</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_ElectronicAddress<xsl:text>&gt;`_)
 </xsl:text>
+		<xsl:call-template name="format2Rst"/>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
@@ -300,6 +296,7 @@ Internal Identifier
 </xsl:text>
 		<xsl:text>:CERIF: the PersonName entity (`&lt;https://w3id.org/cerif/model#PersonName&gt;`_) and the corresponding link (`&lt;</xsl:text><xsl:value-of select="$entityEl/@cflink:entity"/>_PersonName<xsl:text>&gt;`_)
 </xsl:text>
+		<xsl:call-template name="format2Rst"/>
 		<xsl:call-template name="make-footnotes"/>
 		<xsl:apply-templates select="xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element"/>
 	</xsl:template>
@@ -330,6 +327,7 @@ Internal Identifier
 </xsl:text>
             </xsl:when>
             <xsl:otherwise>
+				<xsl:call-template name="format2Rst"/>
                 <xsl:text>:Vocabulary: </xsl:text>
                 <xsl:value-of select="normalize-space( $sch1/xs:annotation/xs:documentation )"/><xsl:text>
 
@@ -448,6 +446,97 @@ Internal Identifier
 </xsl:text>
 	</xsl:template>
 	
+	<xsl:template name="format2Rst">
+		<xsl:variable name="x">
+			<xsl:apply-templates select="( if ( @type ) then key( 'schema-components-by-name', string(@type) ) else ( xs:complexType | xs:simpleType ) )" mode="format"/>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="count($x/*) &gt; 1">
+				<xsl:text>:Format: any of:
+
+</xsl:text>
+				<xsl:for-each select="$x/*">
+					<xsl:text>  * </xsl:text>
+					<xsl:value-of select="."/>
+					<xsl:text>
+</xsl:text>
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:when test="count($x/*) = 1">
+				<xsl:text>:Format: </xsl:text>
+				<xsl:value-of select="$x/*"/>
+				<xsl:text>
+</xsl:text>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="xs:union" mode="format">
+		<xsl:apply-templates select="key( 'schema-components-by-name', tokenize( @memberTypes ) )" mode="#current"/>
+		<xsl:apply-templates mode="#current"/>
+	</xsl:template>
+
+	<xsl:template match="xs:extension" mode="format">
+		<xsl:apply-templates select="key( 'schema-components-by-name', string(@base) )" mode="#current"/>
+		<xsl:apply-templates mode="#current"/>
+	</xsl:template>
+
+	<xsl:template match="xs:restriction" mode="format">
+		<xsl:apply-templates select="key( 'schema-components-by-name', string(@base) )" mode="#current"/>
+		<xsl:apply-templates mode="#current"/>
+	</xsl:template>
+
+	<xsl:template match="text()" mode="format"/>
+
+	<xsl:template match="xs:pattern" mode="format">
+		<xsl:element name="regexp">
+			<xsl:text>regular expression ``</xsl:text>
+			<xsl:value-of select="@value"/>
+			<xsl:text>``</xsl:text>
+			<xsl:choose>
+				<xsl:when test="../xs:length">
+					<xsl:text> and length of exactly </xsl:text>
+					<xsl:value-of select="../xs:length/@value"/>
+					<xsl:text> characters</xsl:text>
+				</xsl:when>
+				<xsl:when test="../xs:minLength and ../xs:maxLength">
+					<xsl:text> and length between </xsl:text>
+					<xsl:value-of select="../xs:minLength/@value"/>
+					<xsl:text> and </xsl:text>
+					<xsl:value-of select="../xs:maxLength/@value"/>
+					<xsl:text> characters</xsl:text>
+				</xsl:when>
+				<xsl:when test="../xs:maxLength">
+					<xsl:text> and maximum length of </xsl:text>
+					<xsl:value-of select="../xs:maxLength/@value"/>
+					<xsl:text> characters</xsl:text>
+				</xsl:when>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="xs:annotation/xs:documentation/@source">
+					<xsl:text> (as per </xsl:text>
+					<xsl:value-of select="cf:formatUrl( xs:annotation/xs:documentation/@source )"/>
+					<xsl:text>)</xsl:text>
+				</xsl:when>
+				<xsl:when test="string-length( xs:annotation/xs:documentation ) &gt; 0">
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="xs:annotation/xs:documentation"/>
+					<xsl:text>)</xsl:text>
+				</xsl:when>
+				<xsl:when test="../../xs:annotation/xs:documentation/@source">
+					<xsl:text> (as per </xsl:text>
+					<xsl:value-of select="cf:formatUrl( ../../xs:annotation/xs:documentation/@source )"/>
+					<xsl:text>)</xsl:text>
+				</xsl:when>
+				<xsl:when test="string-length( ../../xs:annotation/xs:documentation ) &gt; 0">
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select="../../xs:annotation/xs:documentation"/>
+					<xsl:text>)</xsl:text>
+				</xsl:when>
+			</xsl:choose>
+		</xsl:element>
+	</xsl:template>
+
 	<xsl:template name="make-description">
 		<xsl:variable name="t" select="normalize-space( xs:annotation/xs:documentation )"/>
 		<xsl:if test="$t">

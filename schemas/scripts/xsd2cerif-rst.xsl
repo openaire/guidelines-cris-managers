@@ -3,6 +3,16 @@
 
 	<xsl:output method="text" encoding="UTF-8"/>
 	
+	<xsl:key name="import-by-namespace" match="/xs:schema/xs:import" use="@namespace"/>
+	
+	<xsl:function name="cf:schema-named-contents">
+		<xsl:param name="schema-node"/>
+		<xsl:sequence select="( for $i in $schema-node/xs:include return cf:schema-named-contents( document( $i/@schemaLocation )/xs:schema ) ) 
+		                      | $schema-node/xs:*[ @name and local-name() != 'xs:annotation' ]"/>
+	</xsl:function>
+	<xsl:variable name="all-named-schema-components" select="cf:schema-named-contents( /xs:schema )"/>
+	<xsl:key name="schema-components-by-name" match="$all-named-schema-components" use="string( @name )" />
+	
 	<xsl:template match="xs:schema">
 		<xsl:call-template name="document-entity">
 			<xsl:with-param name="elName" select="'Publication'"/>
@@ -112,10 +122,6 @@ Internal Identifier
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
-	<xsl:key name="import-by-namespace" match="/xs:schema/xs:import" use="@namespace"/>
-	
-	<xsl:variable name="included-groups" select="/xs:schema/xs:group, for $l in /xs:schema/xs:include/@schemaLocation return document( $l )/xs:schema/xs:group"/>
-
 	<xsl:template match="xs:element[ @ref ]">
 		<xsl:param name="entityEl"/>
 		<xsl:variable name="qName" select="resolve-QName( @ref, . )"/>
@@ -182,8 +188,7 @@ Internal Identifier
 
 	<xsl:template match="xs:group[ @ref ]" mode="#all">
 		<xsl:param name="entityEl"/>
-		<xsl:variable name="ref" select="string(@ref)"/>
-		<xsl:for-each select="$included-groups[ @name = $ref ]">
+		<xsl:for-each select="key( 'schema-components-by-name', string( @ref ) )">
 			<xsl:apply-templates select="xs:sequence/*" mode="#current">
  				<xsl:with-param name="entityEl" select="$entityEl"/> 
 			</xsl:apply-templates>

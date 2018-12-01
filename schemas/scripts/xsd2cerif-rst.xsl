@@ -501,7 +501,13 @@ Internal Identifier
 	</xsl:template>
 
 	<xsl:template match="xs:union" mode="format">
-		<xsl:apply-templates select="key( 'schema-components-by-name', tokenize( @memberTypes ) )" mode="#current"/>
+		<xsl:variable name="currentNode" select="."/>
+		<xsl:for-each select="tokenize( @memberTypes )">
+			<xsl:variable name="typeName" select="string(.)"/>
+			<xsl:for-each select="$currentNode">
+				<xsl:apply-templates select="key( 'schema-components-by-name', $typeName )" mode="#current"/>
+			</xsl:for-each>
+		</xsl:for-each>
 		<xsl:apply-templates mode="#current"/>
 	</xsl:template>
 

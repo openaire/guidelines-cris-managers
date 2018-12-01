@@ -7,7 +7,7 @@
            xmlns="https://www.openaire.eu/cerif-profile/1.1/"
            xmlns:cf="urn:xmlns:org.eurocris.cerif"
            xmlns:cflink="https://w3id.org/cerif/annotations#"
-           xmlns:cfprocess="https://w3id.org/cerif/preprocessing#"
+           
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            prefix="oacf"
            uri="https://www.openaire.eu/cerif-profile/1.1/"/>
@@ -25,7 +25,7 @@
                 xmlns="https://www.openaire.eu/cerif-profile/1.1/"
                 xmlns:cf="urn:xmlns:org.eurocris.cerif"
                 xmlns:cflink="https://w3id.org/cerif/annotations#"
-                xmlns:cfprocess="https://w3id.org/cerif/preprocessing#"
+                
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <sch:title>Occurrence of "uri" implies an OAMandate is mandated</sch:title>
       <sch:rule context="oacf:OAMandate">
@@ -48,7 +48,7 @@
                </sch:pattern>
    <sch:pattern xmlns:cf="urn:xmlns:org.eurocris.cerif"
                 xmlns:cflink="https://w3id.org/cerif/annotations#"
-                xmlns:cfprocess="https://w3id.org/cerif/preprocessing#"
+                
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                 <sch:title>"startDate" precedes the corresponding "endDate"</sch:title>
                 <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 4 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">

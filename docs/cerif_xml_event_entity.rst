@@ -66,6 +66,7 @@ StartDate
 :Use: optional (0..1)
 :Representation: XML element ``StartDate``
 :CERIF: the Event.StartDate attribute (`<https://w3id.org/cerif/model#Event.StartDate>`_)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 
@@ -75,6 +76,7 @@ EndDate
 :Use: optional (0..1)
 :Representation: XML element ``EndDate``
 :CERIF: the Event.EndDate attribute (`<https://w3id.org/cerif/model#Event.EndDate>`_)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 

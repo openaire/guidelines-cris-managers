@@ -10,7 +10,29 @@
 		<xsl:sequence select="( for $i in $schema-node/xs:include return cf:schema-named-contents( document( $i/@schemaLocation )/xs:schema ) ) 
 		                      | $schema-node/xs:*[ @name and local-name() != 'xs:annotation' ]"/>
 	</xsl:function>
-	<xsl:variable name="all-named-schema-components" select="cf:schema-named-contents( /xs:schema )"/>
+	<xsl:variable name="builtin-type-components">
+		<xs:simpleType name="xs:gYear">
+			<xs:annotation>
+				<xs:documentation>year (``YYYY``) with optional time zone indication</xs:documentation>
+			</xs:annotation>
+		</xs:simpleType>
+		<xs:simpleType name="xs:gYearMonth">
+			<xs:annotation>
+				<xs:documentation>year and month (``YYYY-MM``) with optional time zone indication</xs:documentation>
+			</xs:annotation>
+		</xs:simpleType>
+		<xs:simpleType name="xs:date">
+			<xs:annotation>
+				<xs:documentation>full date (``YYYY-MM-DD``) with optional time zone indication</xs:documentation>
+			</xs:annotation>
+		</xs:simpleType>
+		<xs:simpleType name="xs:dateTime">
+			<xs:annotation>
+				<xs:documentation>date and time (``YYYY-MM-DD'T'hh:mm:ss(.SSS)``) with optional time zone indication</xs:documentation>
+			</xs:annotation>
+		</xs:simpleType>
+	</xsl:variable>
+	<xsl:variable name="all-named-schema-components" select="cf:schema-named-contents( /xs:schema ) | $builtin-type-components/*"/>
 	<xsl:key name="schema-components-by-name" match="$all-named-schema-components" use="string( @name )" />
 	
 	<xsl:template match="xs:schema">
@@ -126,6 +148,7 @@ Internal Identifier
 				<xsl:with-param name="indent" select="'  '"/>
 			</xsl:apply-templates>
 		</xsl:if>
+		<xsl:call-template name="format2Rst"/>
 		<xsl:call-template name="make-footnotes"/>
 	</xsl:template>
 
@@ -469,6 +492,12 @@ Internal Identifier
 </xsl:text>
 			</xsl:when>
 		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="xs:simpleType[ starts-with( @name, 'xs:' ) ]" mode="format">
+		<xsl:element name="date">
+			<xsl:value-of select="xs:annotation/xs:documentation"/>
+		</xsl:element>
 	</xsl:template>
 
 	<xsl:template match="xs:union" mode="format">

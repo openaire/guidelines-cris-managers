@@ -57,6 +57,7 @@ StartDate
 :Use: optional (0..1)
 :Representation: XML element ``StartDate``
 :CERIF: the Project.StartDate attribute (`<https://w3id.org/cerif/model#Project.StartDate>`_)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 
@@ -66,6 +67,7 @@ EndDate
 :Use: optional (0..1)
 :Representation: XML element ``EndDate``
 :CERIF: the Project.EndDate attribute (`<https://w3id.org/cerif/model#Project.EndDate>`_)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 

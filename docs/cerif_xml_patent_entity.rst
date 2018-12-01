@@ -49,6 +49,7 @@ RegistrationDate
 :Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
 :CERIF: the ResultPatent.RegistrationDate attribute (`<https://w3id.org/cerif/model#ResultPatent.RegistrationDate>`_)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 
@@ -57,6 +58,7 @@ ApprovalDate
 :Use: optional (0..1)
 :Representation: XML element ``ApprovalDate``
 :CERIF: the ResultPatent.ApprovalDate attribute (`<https://w3id.org/cerif/model#ResultPatent.ApprovalDate>`_)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 

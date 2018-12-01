@@ -129,6 +129,12 @@ PublicationDate
 :Use: optional (0..1)
 :Representation: XML element ``PublicationDate``
 :CERIF: the ResultPublication.ResPublDate attribute (`<https://w3id.org/cerif/model#ResultPublication.ResPublDate>`_)
+:Format: any of:
+
+  * year (``YYYY``) with optional time zone indication
+  * year and month (``YYYY-MM``) with optional time zone indication
+  * full date (``YYYY-MM-DD``) with optional time zone indication
+  * date and time (``YYYY-MM-DD'T'hh:mm:ss(.SSS)``) with optional time zone indication
 
 
 

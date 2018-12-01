@@ -6,6 +6,8 @@
         <xs:appinfo>
             <sch:pattern>
                 <sch:title>"startDate" precedes the corresponding "endDate"</sch:title>
+                <!-- TODO add xs:dateTime -->
+                <!-- TODO cases where timezones are specified -->
                 <sch:rule context="*[@startDate][@endDate][ string-length( @startDate ) le 10 and not( contains( @startDate, 'Z' ) or contains( @startDate, ':' ) ) ][ string-length( @endDate ) = 4 and not( contains( @endDate, 'Z' ) or contains( @endDate, ':' ) ) ]">
                     <sch:report test="( substring( concat( @startDate, '-01-01' ), 1, 10 ) cast as xs:date ) gt ( ( concat( @endDate, '-01-01' ) cast as xs:date ) + xs:yearMonthDuration( 'P1Y' ) )">The "startDate" (<sch:value-of select="@startDate"/>) must not be later than the end of the corresponding "endDate" (<sch:value-of select="@endDate"/>) period</sch:report>
                 </sch:rule>
@@ -89,7 +91,7 @@
 	<xs:complexType name="cfDate__Type">
 		<xs:simpleContent>
 			<xs:extension base="xs:date">
-				<xs:anyAttribute namespace="##other"/>
+				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
@@ -97,7 +99,7 @@
 	<xs:complexType name="cfString__Type">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
-				<xs:anyAttribute namespace="##other"/>
+				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
@@ -105,7 +107,7 @@
     <xs:complexType name="cfURI__Type">
         <xs:simpleContent>
             <xs:extension base="xs:anyURI">
-                <xs:anyAttribute namespace="##other"/>
+                <xs:attributeGroup ref="cfExtension__AttributeGroup"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -115,7 +117,7 @@
 			<xs:extension base="xs:string">
 				<xs:attribute ref="xml:lang" use="required"/>
 				<xs:attribute default="o" name="trans" type="cfTrans__Type" use="optional"/>
-				<xs:anyAttribute namespace="##other"/>
+				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
@@ -139,7 +141,7 @@
 	<xs:complexType name="cfNonnegativeInteger__Type">
 		<xs:simpleContent>
 			<xs:extension base="xs:nonNegativeInteger">
-				<xs:anyAttribute namespace="##other"/>
+				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
@@ -337,14 +339,14 @@
 		<xs:annotation>
 			<xs:documentation>The validity interval specification.</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="startDate" type="cfGenericDate__SimpleType" use="optional">
+		<xs:attribute name="startDate" type="cfGenericDateTime__SimpleType" use="optional">
 			<xs:annotation>
 				<xs:documentation>The instant when the particular fact or relationship starts being true.
 					When specified, the validity starts at the beginning of the datetime value (e.g. startDate="2016" means "from the beginning of the year 2016"). 
 					When missing, minus infinity is assumed, with the meaning of "from time immemorial", or from times beyond the reach of record.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="endDate" type="cfGenericDate__SimpleType" use="optional">
+		<xs:attribute name="endDate" type="cfGenericDateTime__SimpleType" use="optional">
 			<xs:annotation>
 				<xs:documentation>The instant when the particular fact or relationship stops being true.
 					When specified, the validity extends up to the end of the datetime value, but it does not include the very last instant (e.g. endDate="2016" means "until the end of the year 2016" i.e., anything before 2017-01-01 00:00:00).
@@ -354,11 +356,40 @@
 		</xs:attribute>
 	</xs:attributeGroup>
 
+	<xs:complexType name="cfGenericDate__Type">
+		<xs:annotation>
+			<xs:documentation>A year (xs:gYear), year and month (xs:gYearMonth) or full date (xs:date). All cases can include an optional time zone specification.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="cfGenericDate__SimpleType">
+				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfGenericDateTime__Type">
+		<xs:annotation>
+			<xs:documentation>A year (xs:gYear), year and month (xs:gYearMonth), full date (xs:date) or date and time instant (xs:dateTime). All cases can include an optional time zone specification.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="cfGenericDateTime__SimpleType">
+				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
 	<xs:simpleType name="cfGenericDate__SimpleType">
 		<xs:annotation>
-			<xs:documentation>A time instant in any precision supported by the Primitive Data Types of the XML Schema specification.</xs:documentation>
+			<xs:documentation>A year (xs:gYear), year and month (xs:gYearMonth) or full date (xs:date). All cases can include an optional time zone specification.</xs:documentation>
 		</xs:annotation>
-		<xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
+		<xs:union memberTypes="xs:gYear xs:gYearMonth xs:date"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="cfGenericDateTime__SimpleType">
+		<xs:annotation>
+			<xs:documentation>A year (xs:gYear), year and month (xs:gYearMonth), full date (xs:date) or date and time instant (xs:dateTime). All cases can include an optional time zone specification.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="cfGenericDate__SimpleType xs:dateTime"/>
 	</xs:simpleType>
 
 	<xs:attributeGroup name="cfExtension__AttributeGroup">

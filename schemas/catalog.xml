@@ -7,5 +7,6 @@
 		uri="https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/annotations.xsd" />
 
 	<public publicId="https://www.openaire.eu/cerif-profile/1.1/" uri="./openaire-cerif-profile.xsd" />
+    <system systemId="https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd" uri="./openaire-cerif-profile.xsd" />
 
 </catalog>

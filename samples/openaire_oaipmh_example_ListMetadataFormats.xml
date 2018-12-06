@@ -8,7 +8,7 @@
 
 		<metadataFormat>
 			<metadataPrefix>oai_cerif_openaire</metadataPrefix>
-			<schema>https://github.com/openaire/guidelines-cris-managers/raw/v1.1/schemas/openaire-cerif-profile.xsd</schema>
+			<schema>https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd</schema>
 			<metadataNamespace>https://www.openaire.eu/cerif-profile/1.1/</metadataNamespace>
 		</metadataFormat>
 

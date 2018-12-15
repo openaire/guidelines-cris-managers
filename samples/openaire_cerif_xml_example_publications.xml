@@ -30,6 +30,7 @@
 					<DOI>10.2218/ijdc.v8i1.257</DOI>
 					<Authors>
 						<Author>
+							<DisplayName>Maarten Hoogerwerf</DisplayName>
 							<Person id="2123455"><!-- Maarten Hoogerwerf -->
 								<PersonName>
 									<FamilyNames>Hoogerwerf</FamilyNames>
@@ -38,6 +39,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Mathias Lösch</DisplayName>
 							<Person id="2123456"><!-- Mathias Lösch -->
 								<PersonName>
 									<FamilyNames>Lösch</FamilyNames>
@@ -46,6 +48,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Jochen Schirrwagen</DisplayName>
 							<Person id="2123457"><!-- Jochen Schirrwagen -->
 								<PersonName>
 									<FamilyNames>Schirrwagen</FamilyNames>
@@ -54,6 +57,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Sarah Callaghan</DisplayName>
 							<Person id="2123458"><!-- Sarah Callaghan -->
 								<PersonName>
 									<FamilyNames>Callaghan</FamilyNames>
@@ -62,6 +66,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Paolo Manghi</DisplayName>
 							<Person id="2123452"><!-- Paolo Manghi -->
 								<PersonName>
 									<FamilyNames>Manghi</FamilyNames>
@@ -70,7 +75,8 @@
 								<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 						</Author>
-						<Author>
+						<Author>	
+							<DisplayName>Katerina Iatropoulou</DisplayName>
 							<Person id="2123459"><!-- Katerina Iatropoulou -->
 								<PersonName>
 									<FamilyNames>Iatropoulou</FamilyNames>
@@ -79,6 +85,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Dimitra Keramida</DisplayName>
 							<Person id="21234510"><!-- Dimitra Keramida -->
 								<PersonName>
 									<FamilyNames>Keramida</FamilyNames>
@@ -87,6 +94,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Najla Rettberg</DisplayName>
 							<Person id="21234511"><!-- Najla Rettberg -->
 								<PersonName>
 									<FamilyNames>Rettberg</FamilyNames>
@@ -221,7 +229,7 @@
  							<Publishers>
 								<Publisher>
 									<OrgUnit id="301250">
-										<Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
+										<Name xml:lang="en">Springer</Name>
 									</OrgUnit>
 								</Publisher>
 							</Publishers>
@@ -246,6 +254,7 @@
 					<DOI>10.1007/978-3-642-35233-1_18</DOI>
 					<Authors>
 						<Author>
+							<DisplayName>Paolo Manghi</DisplayName>
 							<Person id="2123452"><!-- Paolo Manghi -->
 								<PersonName>
 									<FamilyNames>Manghi</FamilyNames>
@@ -260,6 +269,7 @@
 							</Affiliation>
 						</Author>
 						<Author>
+							<DisplayName>Nikos Houssos</DisplayName>
 							<Person id="2123451"><!-- Nikos Houssos -->
 								<PersonName>
 									<FamilyNames>Houssos</FamilyNames>
@@ -274,6 +284,7 @@
 							</Affiliation>
 						</Author>
 						<Author>
+							<DisplayName>Marko Mikulicic</DisplayName>
 							<Person id="2123454"><!-- Marko Mikulicic -->
 								<PersonName>
 									<FamilyNames>Mikulicic</FamilyNames>
@@ -282,6 +293,7 @@
 							</Person>
 						</Author>
 						<Author>
+							<DisplayName>Brigitte Jörg</DisplayName>
 							<Person id="2123453"><!-- Brigitte Jörg -->
 								<PersonName>
 									<FamilyNames>Jörg</FamilyNames>
@@ -363,6 +375,7 @@
 					<DOI>10.1111/J.1558-5646.2011.01539.X</DOI>
 					<Authors>
 						<Author>
+							<DisplayName>Sonal Singhal</DisplayName>
 							<Person id="21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
@@ -391,6 +404,7 @@
 							</Affiliation>
 						</Author>
 						<Author>
+							<DisplayName>Craig Moritz</DisplayName>
 							<Person id="21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
@@ -485,8 +499,9 @@
                     <ISBN medium="http://issn.org/vocabularies/Medium#Online">978-3-642-35233-1</ISBN>
                     <Publishers>
                         <Publisher>
+                        	<DisplayName>Springer, Berlin, Heidelberg</DisplayName>
                             <OrgUnit id="301250">
-                                <Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
+                                <Name xml:lang="en">Springer</Name>
                             </OrgUnit>
                         </Publisher>
                     </Publishers>

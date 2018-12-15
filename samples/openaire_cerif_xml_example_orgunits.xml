@@ -158,7 +158,7 @@
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301250">
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Type>
-					<Name xml:lang="en">Springer, Berlin, Heidelberg</Name>
+					<Name xml:lang="en">Springer</Name>
 				</OrgUnit>
 			</metadata>
 		</record>

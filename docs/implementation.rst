@@ -25,6 +25,16 @@ This includes links to any higher level structures of which the object is part, 
 However, the neighboring object XML shall never contain more information or different information from what is expressed in the main record for that object 
 i.e., where the object is retrieved as a top-level object. This is a stronger form of a requirement of functional dependency.
 
+**Display names.**
+In some cases it is important to represent the name of a person or organisation as it appeared in a document (e.g. in the list of authors of a journal article): 
+it can differ from the current official name.
+The OpenAIRE CERIF profile XML Schema allows to place such a name in a ``DisplayName`` XML element on some links.
+Where admissible, it shall occur before the ``Person`` or ``OrgUnit`` XML element.
+
+In the extreme case where just the display name of a person or an organisation is known, 
+the ``DisplayName`` with an empty ``Person`` or ``OrgUnit`` XML element can be used.
+However, it is recommended that CRIS managers keep curated authority lists everywhere where these are feasible.
+
 .. rubric:: Footnotes
 
 .. [#f0] The XML schema is located at `<https://github.com/openaire/guidelines-cris-managers/raw/v1.1/schemas/openaire-cerif-profile.xsd>`_.

@@ -100,7 +100,7 @@ Funder
 ^^^^^^
 :Description: The funder or funders
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Funder`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Funder`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_Funding linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Funding>`_) with the `<https://w3id.org/cerif/vocab/OrganisationFundingEngagements#Funder>`_ semantics
 
 

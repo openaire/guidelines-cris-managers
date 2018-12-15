@@ -83,7 +83,7 @@ Coordinator
 -----------
 :Description: Project coordinator
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Coordinator`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Coordinator`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Coordinator>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Coordinator>`_ semantics
 
 
@@ -91,7 +91,7 @@ Partner
 -------
 :Description: Project partner
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Partner`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Partner`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Partner>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Partner>`_ semantics
 
 
@@ -99,7 +99,7 @@ Contractor
 ----------
 :Description: Project contractor
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Contractor`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Contractor`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Contractor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Contractor>`_ semantics
 
 
@@ -107,7 +107,7 @@ InKindContributor
 -----------------
 :Description: Project in kind contributor
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``InKindContributor`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``InKindContributor`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InKindContributor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#InKindContributor>`_ semantics
 
 
@@ -115,7 +115,7 @@ Member
 ------
 :Description: A member of the project consortium
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Member`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Member`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#ConsortiumMember>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#ConsortiumMember>`_ semantics
 
 
@@ -131,7 +131,7 @@ PrincipalInvestigator
 ---------------------
 :Description: The principal investigator: the person responsible for the whole project, the head of the project team
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``PrincipalInvestigator`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
+:Representation: XML element ``PrincipalInvestigator`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#PrincipalInvestigator>`_ semantics
 
 
@@ -139,7 +139,7 @@ Contact
 -------
 :Description: A person to contact in matters connected with her/his organisations' participation in the project
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Contact`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
+:Representation: XML element ``Contact`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#OrganisationContact>`_ semantics
 
 
@@ -147,7 +147,7 @@ Member
 ------
 :Description: A member of the project team
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Member`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
+:Representation: XML element ``Member`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#TeamMember>`_ semantics
 
 
@@ -163,7 +163,7 @@ By
 --
 :Description: The funder of the project
 :Use: optional (0..1)
-:Representation: XML element ``By`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``By`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Funder>`_ semantics
 
 

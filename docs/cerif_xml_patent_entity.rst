@@ -74,7 +74,7 @@ Issuer
 ^^^^^^
 :Description: The issuer of the patent: the patent office
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Issuer`` with embedded XML element ``OrgUnit``
+:Representation: XML element ``Issuer`` with embedded XML element ``OrgUnit``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentIssuer>`_ semantics
 
 
@@ -98,7 +98,7 @@ Inventor
 --------
 :Description: The inventor: The actual devisor of an invention that is the subject of a patent.
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Inventor`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements
+:Representation: XML element ``Inventor`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements. A ``DisplayName`` may be specified, too.
 :CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Inventor>`_ semantics
 
 
@@ -114,7 +114,7 @@ Holder
 ------
 :Description: The patent rights holder, also known as the patentee or assignee
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Holder`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Holder`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#PatentHolder>`_ semantics; the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentHolder>`_ semantics
 
 

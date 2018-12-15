@@ -234,10 +234,10 @@ Internal Identifier
 		<xsl:choose>
 			<xsl:when test="@type = 'cfGenericURIClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
             <xsl:when test="@type = 'cfGenericStringClassification__Type'"> containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier</xsl:when>
-			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``</xsl:when>
-			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliations__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements</xsl:when>
-			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``</xsl:when>
-			<xsl:when test="@type = 'cfLinkWithDisplayNameToOrgUnit__Type'"> with embedded XML element ``OrgUnit``</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``. A ``DisplayName`` may be specified, too.</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonWithAffiliations__Type'"> with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements. A ``DisplayName`` may be specified, too.</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToPersonOrOrgUnit__Type'"> with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.</xsl:when>
+			<xsl:when test="@type = 'cfLinkWithDisplayNameToOrgUnit__Type'"> with embedded XML element ``OrgUnit``. A ``DisplayName`` may be specified, too.</xsl:when>
             <xsl:when test="@type = 'cfString__Type'"/>
             <xsl:when test="not( @type )">
 				<xsl:variable name="s1">

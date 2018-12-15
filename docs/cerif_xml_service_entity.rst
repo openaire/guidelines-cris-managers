@@ -93,7 +93,7 @@ Owner
 ^^^^^
 :Description: The owner of the CRIS: The organisation the research of which the CRIS documents
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Owner`` with embedded XML element ``OrgUnit`` or ``Person``
+:Representation: XML element ``Owner`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_Service linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Service>`_) with the `<https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner>`_ semantics
 
 

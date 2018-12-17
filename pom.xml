@@ -4,7 +4,10 @@
 	<artifactId>guidelines-cris-managers</artifactId>
 	<version>1.1.1</version>
 	<packaging>pom</packaging>
-
+	<properties>
+		<doi>-</doi><!-- the DOI of the release or "-" for no DOI -->
+	</properties>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -52,6 +55,34 @@
 							<outputDir>docs/_build</outputDir>
 							<stylesheet>schemas/scripts/xsd2cerif-rst.xsl</stylesheet>
 						</transformationSet>
+						<transformationSet>
+							<dir>.</dir>
+							<includes>
+								<include>schemas/**/*.xsd</include>
+								<include>samples/*.xml</include>
+							</includes>
+							<excludes>
+								<exclude>**/catalog.xml</exclude>
+								<exclude>**/*.out.xml</exclude>
+								<exclude>**/*.txt</exclude>
+                                <exclude>**/*.sch</exclude>
+                                <exclude>**/*.xslt</exclude>
+								<exclude>schemas/scripts/*</exclude>
+								<exclude>schemas/vocabularies/coar_resourcetypes.xsd</exclude>
+							</excludes>
+							<outputDir>target</outputDir>
+							<stylesheet>tools/xslt/add-version-notice-to-xsd.xsl</stylesheet>
+							<parameters>
+								<parameter>
+									<name>version</name>
+									<value>${project.version}</value>
+								</parameter>
+								<parameter>
+									<name>doi</name>
+									<value>${doi}</value>
+								</parameter>
+							</parameters>
+						</transformationSet>
 					</transformationSets>
 					<catalogs>
 						<catalog>schemas/cached/catalog.xml</catalog>
@@ -65,6 +96,33 @@
 						<version>9.8.0-12</version>
 					</dependency>
 				</dependencies>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>target/schemas</outputDirectory>
+							<encoding>UTF-8</encoding>
+							<resources>
+								<resource>
+									<directory>schemas</directory>
+									<filtering>false</filtering>
+									<includes>
+										<include>**/catalog.xml</include>
+										<include>**/*.sch</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 			  <groupId>com.helger.maven</groupId>
@@ -89,9 +147,5 @@
 			  </executions>
 			</plugin>
 		</plugins>
-		<!--
-ls samples/*.xml | sort | xargs zip -9jr target/OpenAIRE_Guidelines_for_CRIS_Managers-samples_v1.1.1.zip
-find schemas -name \*.xsd -o -name \*.sch | grep -v schemas/vocabularies/coar_resourcetypes.xsd | sort | xargs zip -9r target/OpenAIRE_Guidelines_for_CRIS_Managers-schemas_v1.1.1.zip		
-		-->
 	</build>
 </project>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Examples of metadata records in OpenAIRE CERIF XML format as OAI-PMH payload. OAI-PMH Set: openaire_cris_funding Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1 -->
+<!-- 
+	Examples of metadata records in OpenAIRE CERIF XML format as OAI-PMH payload. 
+	OAI-PMH Set: openaire_cris_funding 
+	Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1 
+-->
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
 	<responseDate>2018-01-12T14:00:00Z</responseDate>
 	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_funding">http://cris.example.org/openaire/connector</request>

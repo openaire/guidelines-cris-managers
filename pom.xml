@@ -5,7 +5,7 @@
 	<version>1.1.1</version>
 	<packaging>pom</packaging>
 	<properties>
-		<doi>-</doi><!-- the DOI of the release or "-" for no DOI -->
+		<doi>10.5281/zenodo.2316420</doi><!-- the DOI of the release or "-" for no DOI -->
 	</properties>
 	
 	<build>

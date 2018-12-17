@@ -45,7 +45,9 @@ We wish to acknowledge the following contributors and also those who provided fe
 Versions
 ^^^^^^^^
 
-- 1.1, June 2018, `doi:10.5281/zenodo.1298650 <https://doi.org/10.5281/zenodo.1298650>`_
+- 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
+
+- 1.1.0, June 2018, `doi:10.5281/zenodo.1298650 <https://doi.org/10.5281/zenodo.1298650>`_
 
 - 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
 

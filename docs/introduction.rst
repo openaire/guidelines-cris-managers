@@ -52,6 +52,19 @@ Versions
 - 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
 
 
+List of changes in the 1.1.1 version (since 1.1.0)
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+1. **Digital Author Identifier** (DAI) is added as a person identifier type. (`#49 <https://github.com/openaire/guidelines-cris-managers/issues/49>`_)
+2. **Multiple person identifiers** of the same kind are allowed: where ambiguous or uncertain information is available, it should be listed in ``<AlternativeXXX>`` elements (where XXX is the identifier type). (`#48 <https://github.com/openaire/guidelines-cris-managers/issues/48>`_)
+3. **Multiple parents of an OrgUnit** are allowed so that e.g. interdisciplinary research centres can be represented faithfully. (`#45 <https://github.com/openaire/guidelines-cris-managers/issues/45>`_)
+4. The ``xmlns:cfprocess`` declaration was removed where it was not needed. (`#43 <https://github.com/openaire/guidelines-cris-managers/issues/43>`_)
+5. The upstream development of CERIF XML introduced changes in the ``includes/cerif-commons.xsd`` schema component.
+6. Cached Schematron schemas are now being taken from a more authoritative source.
+7. The documentation was improved regarding the precision of date/datetime fields (`#47 <https://github.com/openaire/guidelines-cris-managers/issues/47>`_), regular expression constraints in the XML Schema (`#50 <https://github.com/openaire/guidelines-cris-managers/issues/50>`_) and the DisplayName feature (`#52 <https://github.com/openaire/guidelines-cris-managers/issues/52>`_).
+8. The official location of the XML Schema files is now at https://www.openaire.eu/schema/cris/1.1/ (`#51 <https://github.com/openaire/guidelines-cris-managers/issues/51>`_)
+
+
 Feedback
 ^^^^^^^^
 

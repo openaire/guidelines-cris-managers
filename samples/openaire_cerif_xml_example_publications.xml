@@ -512,5 +512,61 @@
                 <setSpec>openaire_cris_publications</setSpec>
             </header>
         </record>
+        <record>
+			<header>
+				<identifier>oai:cris.example.org:Publications/1</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_publications</setSpec>
+			</header>
+			<metadata>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="1"><!--Diseño de un servicio de Internet para el hogar adecuado al segmento del mercado de NSE C/D -->
+				<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_7a1f<!-- Tesis --></Type>
+					<Language>sp</Language>
+					<Title xml:lang="sp">Diseño de un servicio de Internet para el hogar adecuado al segmento del mercado de NSE C/D</Title>
+					<PublicationDate>2013-03-19</PublicationDate>
+					<Handle>10757/273436</Handle>
+					<URL>http://repositorioacademico.upc.edu.pe/upc/handle/10757/273436</URL>
+					<Authors>
+						<Author>
+							<Person id="273436"><!--Vallejo Santa María, Helí Jesús -->
+								<PersonName>
+									<FamilyNames>Vallejo Santa María</FamilyNames>
+									<FirstNames>Helí Jesús</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+					</Authors>
+					<!--Falta agregar al asesor de la tesis (Advisor) -->
+					<Publishers>
+						<Publisher>
+							<OrgUnit id="UPC-123">
+								<Name xml:lang="sp">Universidad Peruana de Ciencias Aplicadas
+									(UPC)</Name>
+							</OrgUnit>
+						</Publisher>
+					</Publishers>
+					<License
+						scheme="https://www.openaire.eu/cerif-profile/vocab/LicenseTypes#">CCAttribution(BY-NC-ND/4.0/)</License>
+					<Subject scheme="https://www.ocde.com/vocab/areasocde"><!--ejemplo de área OCDE - se ha simulado un vocabulario controlado para representar a Ingeniería Industrial -->
+						http://purl.org/ocde/areas/2114
+					</Subject>
+					<Keyword xml:lang="sp">Acceso a Internet</Keyword>
+					<Keyword xml:lang="sp">Diseño de servicios</Keyword>
+					<Keyword xml:lang="sp">Marketing de servicios</Keyword>
+					<Abstract xml:lang="sp">El presente trabajo consiste en el análisis de un servicio de Internet para el hogar, con el propósito de determinar el plan estratégico de TI que apoye al cumplimiento de los objetivos estratégicos. Para ello se hará una descripción del segmento estudiado y el dfiseño que mejor se adecue a sus necesidades</Abstract>
+					<Access endDate="2083-01-01" xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!-- embargoed --></Access>
+					<ThesisDegree scheme="https://sunedu.gob.pe/vocab/tesis/"><!--elemento raíz e hijos nuevos agregados para los datos ThesisDegree (universidad, título, facultad, carrera, disciplina, nivel) --><!--se requiere vocabularios controlados de SUNEDU, se coloca los nombres como ejemplo -->						<DegreeName>Ingeniero industrial </DegreeName>
+						<DegreeGrantor>Universidad Peruana de Ciencias Aplicadas (UPC)</DegreeGrantor>
+						<DegrreProgram>Facultad de Ingeniería</DegrreProgram>
+						<DegreeDiscipline>Ingeniería industrial </DegreeDiscipline>
+						<DegreeLevel>Título profesional</DegreeLevel>
+					</ThesisDegree>
+					<PublicationCountry><!--elemento nuevo agregado para el dato de país de la publicación - vocabulario controlado de códigos de países (ISO o MARC) -->pe</PublicationCountry>
+					<Source><!--elemento nuevo agregado para el campo source (nombre del repositorio) -->Repositorio Academico UPC</Source>
+					<Format scheme="http://www.iana.org/assignments/media-types"><!--elemento nuevo agregado para definir el tipo de formato del documento -->application/html</Format>
+				</Publication>
+			</metadata>
+		</record>
+		
 	</ListRecords>
 </OAI-PMH>

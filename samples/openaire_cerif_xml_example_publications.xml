@@ -638,6 +638,73 @@
 				</Publication>
 			</metadata>
 		</record>
-		
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Publications/3</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_publications</setSpec>
+			</header>
+			<metadata>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="3"><!--Desarrollo rural y recursos naturales -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_2f33<!--book --></Type>
+					<Language>sp</Language>
+					<Title xml:lang="sp">Desarrollo rural y recursos naturales</Title>
+					<PublicationDate>2012-08-01</PublicationDate>
+					<ISBN medium="http://issn.org/vocabularies/Medium#Online">978-9972-615-63-4</ISBN>
+					<URL>http://repositorio.grade.org.pe/handle/GRADE/49</URL>
+					<Authors>
+						<Author>
+							<Person id="2135456"><!--Escobal, Javier -->
+								<PersonName>
+									<FamilyNames>Escobal</FamilyNames>
+									<FirstNames>Javier</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+						<Author>
+							<Person id="2135457"><!--Damonte, Gerardo -->
+								<PersonName>
+									<FamilyNames>Damonte</FamilyNames>
+									<FirstNames>Gerardo</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+						<Author>
+							<Person id="2135458"><!--Glave, Manuel -->
+								<PersonName>
+									<FamilyNames>Glave</FamilyNames>
+									<FirstNames>Manuel</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+						<Author>
+							<Person id="2135459"><!--Ponce, Carmen -->
+								<PersonName>
+									<FamilyNames>Ponce</FamilyNames>
+									<FirstNames>Carmen</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+					</Authors>
+					<Publishers>
+						<Publisher>
+							<OrgUnit id="3758">
+								<Name xml:lang="sp">Grupo de Análisis para el Desarrollo (GRADE)</Name>
+							</OrgUnit>
+						</Publisher>
+					</Publishers>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"><!--especificar el scheme a utilizar -->Desarrollo rural</Subject>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"><!--especificar el scheme a utilizar -->Economía rural</Subject>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"><!--especificar el scheme a utilizar -->Minería</Subject>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"><!--especificar el scheme a utilizar -->Comunidades campesinas</Subject>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"><!--especificar el scheme a utilizar -->Planificación regional</Subject>
+					<Abstract xml:lang="sp">En un contexto de debate acerca del futuro de la sociedad rural en el Perú, esta publicación busca contribuir con algunas conclusiones y hallazgos de investigaciones realizadas en el seno del Grupo de Análisis para el Desarrollo (GRADE). Aquí, se publican tres Mimeos del Seminario Recursos naturales y desarrollo rural en el Perú (1980-2010) realizado en Lima en noviembre del 2010 con el auspicio de la Fundación Ford, a través del Instituto de Educación Internacional y del Centro Internacional de Investigaciones para el Desarrollo (IDRC). El seminario formó parte de una serie de actividades de diálogo y debate académico con los que GRADE celebró sus treinta años de actividad académica profesional. Manuel Glave, Investigador principal de GRADE, resume en la introducción de este libro los objetivos que motivan su divulgación a la comunidad de investigadores, hacedores de políticas y público en general: “GRADE quiere contribuir en el debate acerca de la modernización de la sociedad rural de los Andes peruanos, en un momento en que las transformaciones sociales, económicas y ambientales que se vienen dando en el país presentan una oportunidad no solo para reducir la pobreza extrema rural en un modelo de sociedad más inclusiva, sino también para construir una institucionalidad adecuada para la gobernanza ambiental de un territorio tan heterogéneo y complejo como el mundo andino</Abstract>
+					<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!--open access --></Access>
+					<Source><!--elemento nuevo agregado para el campo source (nombre del repositorio) -->GRADE-Institucional</Source>
+					<PublicationCountry><!--elemento nuevo agregado para el dato de país de la publicación - podría usarse el vocabulario controlado de códigos de países (ISO o MARC) -->pe</PublicationCountry>
+				</Publication>
+			</metadata>
+		</record>
+
 	</ListRecords>
 </OAI-PMH>

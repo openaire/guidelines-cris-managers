@@ -705,6 +705,55 @@
 				</Publication>
 			</metadata>
 		</record>
-
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Publications/4</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_publications</setSpec>
+			</header>
+			<metadata>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="4"><!--La orientación al mercado en las universidades : el constructo y su validación exploratoria -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_71bd<!--technical documentation --></Type>
+					<Language>sp</Language>
+					<Title xml:lang="sp">La orientación al mercado en las universidades : el constructo y su validación exploratoria</Title>
+					<PublicationDate>2009-01-19</PublicationDate>
+					<PartOf>
+						<Publication id="24800"><!--Documentos de trabajo 24 -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_2f33<!--book --></Type>
+							<Title xml:lang="sp">Documentos de trabajo 24</Title>
+							<ISSN>1746-9056</ISSN>
+						</Publication>
+					</PartOf>
+					<URL>http://repositorio.esan.edu.pe/handle/ESAN/509</URL>
+					<Authors>
+						<Author>
+							<Person id="4135456"><!--Rivera-Camino, Jaime -->
+								<PersonName>
+									<FamilyNames>Rivera-Camino</FamilyNames>
+									<FirstNames>Jaime</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+					</Authors>
+					<Publishers>
+						<Publisher>
+							<OrgUnit id="10977">
+								<Name xml:lang="sp">Universidad ESAN</Name>
+							</OrgUnit>
+						</Publisher>
+					</Publishers>
+					<License scheme="https://www.openaire.eu/cerif-profile/vocab/LicenseTypes#">CCAttribution(BY-NC-ND/4.0/)</License>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes"><!--especificar el scheme a utilizar -->Universidades</Subject>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes"><!--especificar el scheme a utilizar -->Enseñanza superior</Subject>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes"><!--especificar el scheme a utilizar -->Competitividad</Subject>
+					<Abstract xml:lang="sp">Ante un panorama de competitividad creciente en el cual las universidades están obligadas a conseguir recursos por su propio desempeño, el concepto de Orientación al Mercado se presenta como una solución respaldada por amplia literatura. Sin embargo, la literatura existente se basa principalmente en el sector con fines de lucro, mientras las	publicaciones sobre el sector educativo aún son escasas. El propósito de esta investigación exploratoria es desarrollar y validar un instrumento de medida de la Orientación al Mercado en una muestra de universidades españolas. La escala integra y expande las proposiciones teóricas de investigaciones previas, muestra aceptables niveles de fiabilidad y validez y permite establecer futuras líneas de investigaciones en el área.</Abstract> 
+					<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!--open access --></Access>
+					<Source><!--elemento nuevo agregado para el campo source (nombre del repositorio) -->GRADE-Institucional</Source>
+					<Format scheme="http://www.iana.org/assignments/media-types"><!--elemento nuevo agregado para el campo de formato del documento -->application/pdf</Format>
+					<PublicationCountry><!--elemento nuevo agregado para el dato de país de la publicación - podría usarse el vocabulario controlado de códigos de países (ISO o MARC) -->pe</PublicationCountry>
+					<!--Falta agregar el contenido del original "coverage", ya hay un elemento en las Guidelines, llamado del mismo modo -->
+				</Publication>
+			</metadata>
+		</record>
 	</ListRecords>
 </OAI-PMH>

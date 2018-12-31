@@ -567,6 +567,77 @@
 				</Publication>
 			</metadata>
 		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Publications/2</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_publications</setSpec>
+			</header>
+			<metadata>
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2"><!--Motivation, giftedness and talent -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
+					<Language>en</Language>
+					<Title xml:lang="en">Motivation, giftedness and talent</Title>
+					<Subtitle xml:lang="en">A challenge to success</Subtitle>
+					<PublishedIn>
+						<Publication id="02549247"><!--Revista de Psicología -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
+							<Title xml:lang="sp">Revista de Psicología</Title>
+							<ISSN>0254-9247</ISSN>
+						</Publication>
+					</PublishedIn>
+					<PublicationDate>2008-03-22</PublicationDate>
+					<Volume>26</Volume>
+					<Issue>1</Issue>
+					<StartPage>147</StartPage>
+					<EndPage>184</EndPage>
+					<URL>http://revistas.pucp.edu.pe/index.php/psicologia/article/view/1138/1099</URL>
+					<Authors>
+						<Author>
+							<Person id="2135455"><!--Blumen, Sheyla -->
+								<PersonName>
+									<FamilyNames>Blumen</FamilyNames>
+									<FirstNames>Sheyla</FirstNames>
+								</PersonName>
+							</Person>
+						</Author>
+					</Authors>
+					<Publishers>
+						<Publisher>
+							<OrgUnit id="3733">
+								<Name xml:lang="sp">Pontificia Universidad Católica del Perú</Name>
+							</OrgUnit>
+						</Publisher>
+					</Publishers>
+					<License scheme="https://www.openaire.eu/cerif-profile/vocab/LicenseTypes#">CCAttribution(BY/4.0)</License>
+					<Subject scheme="http://id.loc.gov/vocabulary/subjectSchemes"><!--falta especificar scheme a utilizar -->Psicología</Subject>
+					<Abstract xml:lang="en">Definitions about giftedness and talent involving motivation as a significant variable either in the genesis of giftedness or in the development of intellectual talent are analyzed. An analysis on the influence of motivation in successful achievers, underachievers, as well as in the socialemotional development of the gifted is presented. An update view of the goals achieved by Peru as a country, as well as the actual challenges that faces Peru in the development of giftedness and talent in multicultural and poverty conditions, at the conceptualization, identification, and program levels are presented. Moreover, an economic and viable project of advocacy on the development of giftedness in Peru within the regular educational system along Elementary, Secondary and College level is presented. Finally, conclusions and recommendations for the development of state policies in order to promote giftedness in Peru are presented.</Abstract>
+					<Status scheme="https://w3id.org/cerif/vocab/status">publishedVersion</Status>
+					<OriginatesFrom>
+						<Project id="111145"><!--Validación del cuestionario de riesgos psicosociales -->
+							<Acronym>ISTAS21 COPSOQ</Acronym>
+							<Title xml:lang="sp">ISTAS21 COPSOQ</Title>
+							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">124</Identifier>
+							<StartDate>2006-11-01</StartDate>
+							<EndDate>2008-05-01</EndDate>
+							<Funded>
+								<By>
+									<OrgUnit id="310011">
+										<Name xml:lang="sp">Instituto Nacional de Salud</Name>
+									</OrgUnit>
+								</By>
+								<As>
+									<Funding id="612385" /><!--INS-RINA -->
+								</As>
+							</Funded>
+						</Project>
+					</OriginatesFrom>
+					<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_f1cf<!--open access --></Access>
+					<Source><!--elemento nuevo agregado para el campo source (nombre del repositorio) -->PUCP-Revistas</Source>
+					<PublicationCountry><!--elemento nuevo agregado para el dato de país de la publicación - podría usarse el vocabulario controlado de códigos de países (ISO o MARC) -->pe</PublicationCountry>
+				</Publication>
+			</metadata>
+		</record>
 		
 	</ListRecords>
 </OAI-PMH>

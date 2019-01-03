@@ -154,5 +154,44 @@
 				</Patent>
 			</metadata>
 		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Patents/711234</identifier>
+				<datestamp>2018-01-07T14:00:00Z</datestamp>
+				<setSpec>openaire_cris_patents</setSpec>
+			</header>
+			<metadata>
+				<Patent xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="711234"><!--PROCESO INDUSTRIAL PARA LA OBTENCION DE BIODIESEL-->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">http://purl.org/coar/resource_type/c_15cd</Type>
+					<Title xml:lang="es ">PROCESO INDUSTRIAL PARA LA OBTENCION DE BIODIESEL</Title>
+					
+					<RegistrationDate>2006-07-10</RegistrationDate>
+					<ApprovalDate>2010-09-21</ApprovalDate>
+					<CountryCode>pe</CountryCode>
+					<PatentNumber>000819-2006</PatentNumber>
+					<Inventors>
+                        <Inventor>
+                            <Person id="2001001">
+                                <PersonName>
+                                    <FamilyNames>Abusayeh Giha</FamilyNames>
+                                    <FirstNames>Samir George</FirstNames>
+                                </PersonName>
+                            </Person>
+                        </Inventor>
+					</Inventors>
+					<Holders>
+						<Holder>
+							<OrgUnit id="349999">
+								<Name xml:lang="en">HEAVEN PETROLEUM OPERATORS S.A.C.</Name>
+							</OrgUnit>
+						</Holder>
+					</Holders>
+					<PatentClass>Patente de invención</PatentClass>
+					<CurrentStatus>Otorgado<!--vocabulario controlado--><StatusDate>2010-09-21</StatusDate>
+					</CurrentStatus>
+
+				</Patent>
+			</metadata>
+		</record>
 	</ListRecords>
 </OAI-PMH>

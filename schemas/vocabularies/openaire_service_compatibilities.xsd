@@ -26,6 +26,18 @@
     <xs:simpleType name="Enum">
         <xs:restriction base="xs:string">
 
+            <xs:enumeration value="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1.1">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">OpenAIRE Guidelines 1.1.1 compatible CRIS</xs:documentation>
+                    <xs:appinfo>
+                        <cf:Class id="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1.1" classSchemeId="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility">
+                            <cf:Term xml:lang="en">OpenAIRE Guidelines 1.1.1 compatible CRIS</cf:Term>
+                            <cf:Definition xml:lang="en">CRIS compatible with OpenAIRE Guidelines for CRIS managers version 1.1.1</cf:Definition>
+                        </cf:Class>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:enumeration>
+
             <xs:enumeration value="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1">
                 <xs:annotation>
                     <xs:documentation xml:lang="en">OpenAIRE Guidelines 1.1 compatible CRIS</xs:documentation>

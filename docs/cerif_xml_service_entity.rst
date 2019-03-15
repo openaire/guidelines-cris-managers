@@ -24,6 +24,7 @@ Compatibility
 :CERIF: the Service_Classification (`<https://w3id.org/cerif/model#Service_Classification>`_)
 :Vocabulary: Compatibility of service with the OpenAIRE Guidelines for CRIS Managers
 
+  * **OpenAIRE Guidelines 1.1.1 compatible CRIS** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1.1>`_): CRIS compatible with OpenAIRE Guidelines for CRIS managers version 1.1.1
   * **OpenAIRE Guidelines 1.1 compatible CRIS** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1>`_): CRIS compatible with OpenAIRE Guidelines for CRIS managers version 1.1
   * **OpenAIRE Guidelines 1.0 compatible CRIS** (`<https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.0>`_): CRIS compatible with OpenAIRE Guidelines for CRIS managers version 1.0
 

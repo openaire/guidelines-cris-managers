@@ -33,5 +33,7 @@ Contributing
 
 Your feedback, esp. as a CRIS manager or developer of a CRIS platform, is important for us. You can provide us feedback using the following channels:
 
+* by contribution to our feedback document under https://docs.google.com/document/d/1BkkO3ysr5Pmsqt7kZ118ZxBv1wE9Md3TYvp9vtUUV-c/edit
+  (no account is needed)
 * by creating an `issue in the github repository <https://github.com/openaire/guidelines-cris-managers/issues>`_ (you need to have a github account);
 * by sending an e-mail: guidelines@openaire.eu

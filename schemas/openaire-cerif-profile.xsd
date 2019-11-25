@@ -676,7 +676,7 @@ This entity typically represents the granularity level of a single published ite
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPublication.NameAbbreviation" maxOccurs="unbounded" minOccurs="0" name="NameAbbreviation" type="cfMLangString__Type">
 							<xs:annotation>
-								<xs:documentation>The abbreviation of the title of the publication</xs:documentation>
+								<xs:documentation>The abbreviation of the title of the publication. E.g. the acronym of a journal.</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 

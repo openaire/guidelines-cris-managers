@@ -19,7 +19,7 @@
 					<Acronym>OpenAIREplus</Acronym>
 					<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
-					<Identifier type="">http://www.openaire.eu</Identifier><!-- FIXME -->
+					<Identifier type="https://w3id.org/cerif/IdentifierTypes#Website">http://www.openaire.eu</Identifier>
 					<StartDate>2011-12-01</StartDate>
 					<EndDate>2014-05-31</EndDate>
 					<Consortium>
@@ -103,7 +103,7 @@
 					<Title xml:lang="en">Open Access Infrastructure for Research in Europe</Title>
 					<Title xml:lang="el">Υποδομή Ανοικτής Πρόσβασης για την Έρευνα στην Ευρώπη</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">246686</Identifier>
-					<Identifier type="">http://www.openaire.eu</Identifier><!-- FIXME -->
+					<Identifier type="https://w3id.org/cerif/IdentifierTypes#Website">http://www.openaire.eu</Identifier>
 					<StartDate>2009-12-01</StartDate>
 					<EndDate>2012-11-30</EndDate>
 					<Consortium>
@@ -185,7 +185,7 @@
 					<Acronym>EUFAR</Acronym>
 					<Title xml:lang="en">European Facility for Airborne Research in Environmental and Geoscience</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">227159</Identifier>
-					<Identifier type="">http://www.eufar.net</Identifier><!-- FIXME -->
+					<Identifier type="https://w3id.org/cerif/IdentifierTypes#Website">http://www.eufar.net</Identifier>
 					<StartDate>2008-09-22</StartDate>
 					<EndDate>2013-09-30</EndDate>
 					<Consortium>
@@ -194,7 +194,7 @@
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
-								<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
+								<Identifier type="https://w3id.org/cerif/IdentifierTypes#Website">http://www.cnr.it</Identifier>
 							</OrgUnit>
 						</Partner>
 					</Consortium>

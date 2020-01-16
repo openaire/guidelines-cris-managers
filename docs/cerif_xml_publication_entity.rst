@@ -107,6 +107,15 @@ Subtitle
 
 
 
+NameAbbreviation
+^^^^^^^^
+:Description: The abbreviation of the title of the publication
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``NameAbbreviation`` as a multilingual string
+:CERIF: the ResultPublication.NameAbbreviation attribute (`<https://w3id.org/cerif/model#ResultPublication.NameAbbreviation>`_)
+
+
+
 PublishedIn
 ^^^^^^^^^^^
 :Description: The source (another Publication) where this publication appeared. E.g. a journal article lists here the journal where it appeared. To be used for a publishing channel.
@@ -241,6 +250,16 @@ ISSN
 :Representation: XML element ``ISSN``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``\d{4}-?\d{3}[\dX]`` and length between 8 and 9 characters (as per `<https://data.crossref.org/reports/help/schema_doc/4.4.1/schema_4_4_1.html#issn_t>`_)
+
+
+
+ZDB-ID
+^^^^^^
+:Description: The German National Serials Database identifier
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``ZDB-ID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``\d{1,7}-[Xx\d]`` (as per `<https://www.wikidata.org/wiki/Property:P1042>`_)
 
 
 

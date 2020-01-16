@@ -115,7 +115,7 @@
 	<xs:complexType name="cfMLangString__Type">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
-				<xs:attribute ref="xml:lang" use="required"/>
+				<xs:attribute ref="xml:lang" use="optional"/>
 				<xs:attribute default="o" name="trans" type="cfTrans__Type" use="optional"/>
 				<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 			</xs:extension>

@@ -85,6 +85,12 @@ PatentNumber
 :CERIF: the ResultPatent.PatentNumber attribute (`<https://w3id.org/cerif/model#ResultPatent.PatentNumber>`_)
 
 
+URL
+^^^
+:Use: optional (0..1)
+:Representation: XML element ``URL``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+
 
 Inventors
 ^^^^^^^^^

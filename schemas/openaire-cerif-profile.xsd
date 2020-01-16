@@ -43,11 +43,17 @@
 </xs:annotation>
 </xs:include>
 
-	<xs:include schemaLocation="includes/product-identifiers.xsd">
+<xs:include schemaLocation="includes/product-identifiers.xsd">
 <xs:annotation>
 <xs:documentation>The product identifiers.</xs:documentation>
 </xs:annotation>
 </xs:include>
+
+	<xs:include schemaLocation="includes/patent-identifiers.xsd">
+		<xs:annotation>
+			<xs:documentation>The patent identifiers.</xs:documentation>
+		</xs:annotation>
+	</xs:include>
 
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
@@ -939,7 +945,7 @@ Source: Wikipedia
 
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.PatentNumber" minOccurs="0" name="PatentNumber" type="cfString__Type"/>
 
-						
+						<xs:group ref="PatentIdentifiers__Group"/>
 
 						<xs:element cflink:container="ordered" minOccurs="0" name="Inventors">
 							<xs:annotation>

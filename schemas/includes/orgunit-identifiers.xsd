@@ -23,12 +23,12 @@
 	<xs:group name="OrgUnitIdentifiers__Group">
 		<xs:sequence>
 
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ROR" minOccurs="0" name="ROR" type="ROR__Type">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#RORID" minOccurs="0" name="RORID" type="RORID__Type">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The ROR identifier in case its value is certain or known to be a preferred one.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#ROR https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeROR" type="ROR__Type">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#RORID https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeRORID" type="RORID__Type">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The ROR identifiers in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.</xs:documentation>
 				</xs:annotation>
@@ -56,12 +56,12 @@
 				</xs:annotation>
 			</xs:element>
 
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefRegistry" minOccurs="0" name="FundRefRegistry" type="FundRefRegistry__Type">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID" minOccurs="0" name="FundRefID" type="FundRefID__Type">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The FundRef Registry Identifier in case its value is certain or known to be a preferred one.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefRegistry https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeFundRefRegistry" type="FundRefRegistry__Type">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefRegistryID https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeFundRefID" type="FundRefID__Type">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The FundRef Registry Identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.</xs:documentation>
 				</xs:annotation>
@@ -88,7 +88,7 @@
 		</xs:sequence>
 	</xs:group>
 
-	<xs:complexType name="ROR__Type">
+	<xs:complexType name="RORID__Type">
 		<xs:annotation>
 			<xs:documentation xml:lang="en">The XML Schema type for the ROR identifier</xs:documentation>
 			<xs:appinfo>
@@ -130,7 +130,7 @@
 		</xs:simpleContent>
 	</xs:complexType>						
 
-	<xs:complexType name="FundRefRegistry__Type">
+	<xs:complexType name="FundRefID__Type">
 		<xs:annotation>
 			<xs:documentation xml:lang="en">The XML Schema type for the FundRef Registry Identifier</xs:documentation>
 			<xs:appinfo>

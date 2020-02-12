@@ -1473,19 +1473,19 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
 						
 						
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#Website)" minOccurs="0" name="WebsiteURL" type="cfString__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/ElectronicAddressTypes#Website)" minOccurs="0" name="WebsiteURL" type="cfString__Type">
 <xs:annotation>
 <xs:documentation>URL of the website of the CRIS</xs:documentation>
 </xs:annotation>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#OAI-PMH_Base)" minOccurs="0" name="OAIPMHBaseURL" type="cfString__Type">
+<xs:element cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/ElectronicAddressTypes#OAI-PMH_Base)" minOccurs="0" name="OAIPMHBaseURL" type="cfString__Type">
 <xs:annotation>
 <xs:documentation>Base URL for the OAI-PMH protocol endpoint of the CRIS</xs:documentation>
 </xs:annotation>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#SubjectHeadings)" maxOccurs="unbounded" minOccurs="0" name="SubjectHeadingsURL" type="cfString__Type">
+<xs:element cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/ElectronicAddressTypes#SubjectHeadings)" maxOccurs="unbounded" minOccurs="0" name="SubjectHeadingsURL" type="cfString__Type">
 <xs:annotation>
 <xs:documentation>The URL where the subject classification used by the CRIS can be obtained (using the HTTP GET)</xs:documentation>
 </xs:annotation>

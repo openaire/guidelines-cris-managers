@@ -235,7 +235,7 @@ In the research information domain Organisation Units typically represents:
 
 						<!-- ... -->
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit(https://w3id.org/cerif/vocab/Inter-­OrganisationRelations#Part):1" maxOccurs="unbounded" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit(https://w3id.org/cerif/vocab/Inter-OrganisationalStructure#Part):1" maxOccurs="unbounded" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>Link to the larger unit that encompasses this unit.
 								To be used for the immediate parents only. In order to represent the full path up through the hierarchy of an institution, use this construct recursively.
@@ -360,7 +360,7 @@ The Project entity only captures details of the project scope and plan. Informat
 											<xs:documentation>Project contractor</xs:documentation>
 										</xs:annotation>
 									</xs:element>
-									<xs:element cflink:link="https://w3id.org/cerif/model#Project_OrganisationUnit(https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InKindContributor) https://w3id.org/cerif/model#Project_Person(https://w3id.org/cerif/vocab/PersonProjectEngagements#InKindContributor)" maxOccurs="unbounded" minOccurs="0" name="InKindContributor" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
+									<xs:element cflink:link="https://w3id.org/cerif/model#Project_OrganisationUnit(https://w3id.org/cerif/vocab/OrganisationProjectEngagements#In-kindContributor) https://w3id.org/cerif/model#Project_Person(https://w3id.org/cerif/vocab/PersonProjectEngagements#In-kindContributor)" maxOccurs="unbounded" minOccurs="0" name="In-kindContributor" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
 										<xs:annotation>
 											<xs:documentation>Project in kind contributor</xs:documentation>
 										</xs:annotation>
@@ -821,7 +821,7 @@ This entity typically represents the granularity level of a single published ite
 							<!-- any class scheme of the 'status' character -->
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPublication(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#ResultPublication_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPublication(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultPublication_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">
@@ -993,7 +993,7 @@ Source: Wikipedia
 						
 						<!-- TODO -->
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPatent(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#ResultPatent_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPatent(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultPatent_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">
@@ -1141,7 +1141,7 @@ This includes:
 
 						
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultProduct(https://w3id.org/cerif/vocab/Project_Output_Roles#Originator) https://w3id.org/cerif/model#ResultProduct_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultProduct(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultProduct_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">

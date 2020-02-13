@@ -235,7 +235,7 @@ In the research information domain Organisation Units typically represents:
 
 						<!-- ... -->
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit(https://w3id.org/cerif/vocab/Inter-OrganisationalStructure#Part):1" maxOccurs="unbounded" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit(https://w3id.org/cerif/vocab/InterOrganisationalStructure#Part):1" maxOccurs="unbounded" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>Link to the larger unit that encompasses this unit.
 								To be used for the immediate parents only. In order to represent the full path up through the hierarchy of an institution, use this construct recursively.
@@ -360,7 +360,7 @@ The Project entity only captures details of the project scope and plan. Informat
 											<xs:documentation>Project contractor</xs:documentation>
 										</xs:annotation>
 									</xs:element>
-									<xs:element cflink:link="https://w3id.org/cerif/model#Project_OrganisationUnit(https://w3id.org/cerif/vocab/OrganisationProjectEngagements#In-kindContributor) https://w3id.org/cerif/model#Project_Person(https://w3id.org/cerif/vocab/PersonProjectEngagements#In-kindContributor)" maxOccurs="unbounded" minOccurs="0" name="In-kindContributor" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
+									<xs:element cflink:link="https://w3id.org/cerif/model#Project_OrganisationUnit(https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InkindContributor) https://w3id.org/cerif/model#Project_Person(https://w3id.org/cerif/vocab/PersonProjectEngagements#InkindContributor)" maxOccurs="unbounded" minOccurs="0" name="InkindContributor" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
 										<xs:annotation>
 											<xs:documentation>Project in kind contributor</xs:documentation>
 										</xs:annotation>
@@ -570,7 +570,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Funding(https://w3id.org/cerif/vocab/Inter-­FundingRelations#Part):1" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Funding(https://w3id.org/cerif/vocab/Inter­FundingRelations#Part):1" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>Chain up to the larger funding that encompasses this funding</xs:documentation>
 							</xs:annotation>
@@ -686,7 +686,7 @@ This entity typically represents the granularity level of a single published ite
 							</xs:annotation>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-PublicationRelations#Publication):1" minOccurs="0" name="PublishedIn">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/InterPublicationRelations#Publication):1" minOccurs="0" name="PublishedIn">
 							<xs:annotation>
 								<xs:documentation>The source (another Publication) where this publication appeared. E.g. a journal article lists here the journal where it appeared. To be used for a publishing channel.</xs:documentation>
 							</xs:annotation>
@@ -701,7 +701,7 @@ This entity typically represents the granularity level of a single published ite
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-PublicationRelations#Part):1" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/InterPublicationRelations#Part):1" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>The Publication of which this publication is a part. E.g. a book chapter lists here the book that contains it. To be used for a containing publication.</xs:documentation>
 							</xs:annotation>
@@ -879,7 +879,7 @@ This entity typically represents the granularity level of a single published ite
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this publication</xs:documentation>
 </xs:annotation>
@@ -1005,7 +1005,7 @@ Source: Wikipedia
 							</xs:complexType>
 						</xs:element>
 												
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
 <xs:annotation>
 <xs:documentation>Patents that precede (i.e., have priority over) this patent</xs:documentation>
 </xs:annotation>
@@ -1020,7 +1020,7 @@ Source: Wikipedia
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this patent</xs:documentation>
 </xs:annotation>
@@ -1124,7 +1124,7 @@ This includes:
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-ProductRelations#Part):1" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/InterProductRelations#Part):1" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>Link to the research output of which this product is a part (e.g. a data set collection that contains it)</xs:documentation>
 							</xs:annotation>
@@ -1198,7 +1198,7 @@ This includes:
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this product</xs:documentation>
 </xs:annotation>

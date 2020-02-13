@@ -61,7 +61,7 @@
 					<xs:documentation xml:lang="en">The FundRef Registry Identifier in case its value is certain or known to be a preferred one.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefRegistryID https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeFundRefID" type="FundRefID__Type">
+			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeFundRefID" type="FundRefID__Type">
 				<xs:annotation>
 					<xs:documentation xml:lang="en">The FundRef Registry Identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.</xs:documentation>
 				</xs:annotation>
@@ -115,7 +115,7 @@
 			<xs:appinfo>
 				<cf:Service id="7d46009d-cf86-494d-9f48-a24dbdd11941">
 					<cf:Name xml:lang="en">The GRID identifier</cf:Name>
-					<cf:Description xml:lang="en">The service of registering research organizations and assigning identifiers to them. See https://www.grid.ac/ for more details.</cf:Description>
+					<cf:Description xml:lang="en">The service of registering research objects and assigning identifiers to them. See https://www.grid.ac/ for more details.</cf:Description>
 				</cf:Service>
 			</xs:appinfo>
 		</xs:annotation>

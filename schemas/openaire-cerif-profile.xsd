@@ -118,8 +118,7 @@ One Person typically has many of these relationships.
 								<xs:annotation>
 									<xs:documentation>Genders (sociocultural, not linguistic)</xs:documentation>
 									<xs:appinfo>
-										<cf:ClassScheme id="https://w3id.org/cerif/vocab/Genders">
-											<cf:Name xml:lang="en">Genders (sociocultural, not linguistic)</cf:Name>
+										<cf:ClassScheme id="http://publications.europa.eu/resource/authority/human-sex">
 										</cf:ClassScheme>
 									</xs:appinfo>
 								</xs:annotation>
@@ -128,9 +127,7 @@ One Person typically has many of these relationships.
 										<xs:annotation>
 											<xs:documentation>Masculine</xs:documentation>
 											<xs:appinfo>
-												<cf:Class classSchemeId="https://w3id.org/cerif/vocab/Genders" id="https://w3id.org/cerif/vocab/Genders#Masculine">
-													<cf:Term xml:lang="en">Masculine</cf:Term>
-													<cf:Definition xml:lang="en">Man</cf:Definition>
+												<cf:Class classSchemeId="http://publications.europa.eu/resource/authority/human-sex" id="http://publications.europa.eu/resource/authority/human-sex/MALE">
 												</cf:Class>
 											</xs:appinfo>
 										</xs:annotation>
@@ -139,9 +136,7 @@ One Person typically has many of these relationships.
 										<xs:annotation>
 											<xs:documentation>Feminine</xs:documentation>
 											<xs:appinfo>
-												<cf:Class classSchemeId="https://w3id.org/cerif/vocab/Genders" id="https://w3id.org/cerif/vocab/Genders#Feminine">
-													<cf:Term xml:lang="en">Feminine</cf:Term>
-													<cf:Definition xml:lang="en">Woman</cf:Definition>
+												<cf:Class classSchemeId="http://publications.europa.eu/resource/authority/human-sex" id="http://publications.europa.eu/resource/authority/human-sex/FEMALE">
 												</cf:Class>
 											</xs:appinfo>
 										</xs:annotation>

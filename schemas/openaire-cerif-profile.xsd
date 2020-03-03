@@ -874,7 +874,7 @@ This entity typically represents the granularity level of a single published ite
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this publication</xs:documentation>
 </xs:annotation>
@@ -1000,7 +1000,7 @@ Source: Wikipedia
 							</xs:complexType>
 						</xs:element>
 												
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterPatentRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
 <xs:annotation>
 <xs:documentation>Patents that precede (i.e., have priority over) this patent</xs:documentation>
 </xs:annotation>
@@ -1015,7 +1015,7 @@ Source: Wikipedia
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this patent</xs:documentation>
 </xs:annotation>
@@ -1193,7 +1193,7 @@ This includes:
 </xs:complexType>
 </xs:element>
 
-<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" maxOccurs="unbounded" minOccurs="0" name="References">
+<xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Relation):1" maxOccurs="unbounded" minOccurs="0" name="References">
 <xs:annotation>
 <xs:documentation>Result outputs that are referenced by this product</xs:documentation>
 </xs:annotation>

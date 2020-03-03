@@ -559,7 +559,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Funding(https://w3id.org/cerif/vocab/OrganisationFundingEngagements#Funder)" maxOccurs="unbounded" minOccurs="0" name="Funder" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Funding(https://w3id.org/cerif/vocab/OrganisationFundingRoles#Financier)" maxOccurs="unbounded" minOccurs="0" name="Funder" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
 							<xs:annotation>
 								<xs:documentation>The funder or funders</xs:documentation>
 							</xs:annotation>

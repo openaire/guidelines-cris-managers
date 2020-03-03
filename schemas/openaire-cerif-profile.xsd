@@ -565,7 +565,7 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Funding(https://w3id.org/cerif/vocab/Inter­FundingRelations#Part):1" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Funding(https://w3id.org/cerif/vocab/InterFundingRelations#Part):1" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>Chain up to the larger funding that encompasses this funding</xs:documentation>
 							</xs:annotation>

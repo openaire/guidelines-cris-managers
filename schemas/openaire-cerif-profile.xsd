@@ -657,7 +657,7 @@ This entity typically represents the granularity level of a single published ite
 
 						
 
-                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(https://w3id.org/cerif/vocab/LanguageTags)" minOccurs="0" name="Language" type="cfString__Type">
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(http://publications.europa.eu/resource/authority/language)" minOccurs="0" name="Language" type="cfString__Type">
                             <xs:annotation>
                                 <xs:documentation>The language of the publication.  Please use the IETF language tags as described in the IETF BCP 47 document.</xs:documentation>
                             </xs:annotation>
@@ -1063,7 +1063,7 @@ This includes:
 						
 						
 
-                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/LanguageTags)" maxOccurs="unbounded" minOccurs="0" name="Language" type="cfString__Type">
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(http://publications.europa.eu/resource/authority/language)" maxOccurs="unbounded" minOccurs="0" name="Language" type="cfString__Type">
                             <xs:annotation>
                                 <xs:documentation>The language or languages of the product, if applicable.  Please use the IETF language tags as described in the IETF BCP 47 document.</xs:documentation>
                             </xs:annotation>

@@ -600,7 +600,7 @@ The Project entity only captures details of the project scope and plan. Informat
 <xs:documentation>The flag if Open Access is mandated for this funding</xs:documentation>
 </xs:annotation>
 </xs:attribute>
-<xs:attribute cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)" name="uri" type="xs:anyURI" use="optional">
+<xs:attribute cflink:link="https://w3id.org/cerif/model#Funding_Classification(http://roarmap.eprints.org/)" name="uri" type="xs:anyURI" use="optional">
 <xs:annotation>
 <xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
 </xs:annotation>

@@ -13,6 +13,10 @@
 	xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 
+<rdf:Description rdf:about="http://purl.org/coar/access_right">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 </rdf:Description>

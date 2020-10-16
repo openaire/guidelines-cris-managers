@@ -46,6 +46,7 @@ VersionInfo
 
 RegistrationDate
 ^^^^^^^^^^^^^^^^
+:Description: Date on which the application was physically received at the Patent Authority. Application Date in the EPO document, also named Priority Date
 :Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
 :CERIF: the ResultPatent.RegistrationDate attribute (`<https://w3id.org/cerif/model#ResultPatent.RegistrationDate>`_)
@@ -55,6 +56,7 @@ RegistrationDate
 
 ApprovalDate
 ^^^^^^^^^^^^
+:Description: Date on which the application has been published. It appears in the EPODOC Publication field
 :Use: optional (0..1)
 :Representation: XML element ``ApprovalDate``
 :CERIF: the ResultPatent.ApprovalDate attribute (`<https://w3id.org/cerif/model#ResultPatent.ApprovalDate>`_)

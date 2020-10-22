@@ -90,7 +90,7 @@ OAI identifiers
 The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{internal ID}`` 
 where ``{service}`` denotes the internet domain name of the CRIS,
 and ``{internal ID}`` denotes an internal identifier of the object that MUST be unique within the CRIS across all the entity types. 
-This is usually the case when an uuid is used but it can be achieved also adding the entity type as a prefix when not available as done in the samples (i.e. Publications/1234, etc).
+This is usually the case when a UUID is used, but it can also be achieved by adding the entity type as a prefix to serially generated id numbers (when other distinction is not available and there is a possibility of conflicts), as illustrated in the accompanying examples (e.g. Publications/893204).
 
 The types are expressed by the plural form of the XML element that represents the object i.e., the name of the collection of all such objects.
 

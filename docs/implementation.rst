@@ -87,10 +87,10 @@ For an example please see `openaire_oaipmh_example_Identify.xml <https://github.
 OAI identifiers
 """""""""""""""
 
-The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{type}/{internal ID}`` 
+The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{internal ID}`` 
 where ``{service}`` denotes the internet domain name of the CRIS,
-``{type}`` stands for the type of the object,
-and ``{internal ID}`` denotes an internal identifier of the object within the CRIS.
+and ``{internal ID}`` denotes an internal identifier of the object that MUST be unique within the CRIS across all the entity types. 
+This is usually the case when an uuid is used but it can be achieved also adding the entity type as a prefix when not available as done in the samples (i.e. Publications/1234, etc).
 
 The types are expressed by the plural form of the XML element that represents the object i.e., the name of the collection of all such objects.
 
@@ -100,7 +100,10 @@ In many cases a UUID – if it is assigned – is more likely to be persistent t
 
 For example a publication with internal ID of 560d48b6-42c3-4ef9-81d6-32c949fb2cdb (a UUID) from a CRIS running 
 on behalf of the University of Exampleton (www.exampleton.ac.uk with a cris running at cris.exampleton.ac.uk) 
-will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/560d48b6-42c3-4ef9-81d6-32c949fb2cdb``. 
+could have the OAI identifier ``oai:cris.exampleton.ac.uk:560d48b6-42c3-4ef9-81d6-32c949fb2cdb``
+
+If the CRIS system provides also PID such as an handle, for instance 123456789/1, the OAI identifier could be ``oai:cris.exampleton.ac.uk:123456789/1``
+Finally, in the case the CRIS system has only numeric ID not unique across the whole system, the OAI identifier could be ``oai:cris.exampleton.ac.uk:Publications/1``  
 
 Compatibility of aggregators
 """"""""""""""""""""""""""""

@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_patents</setSpec>
 			</header>
 			<metadata>
-				<Patent xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="712178"><!-- MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID -->
+				<Patent xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Patents/712178"><!-- MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID -->
 					<!--https://worldwide.espacenet.com/publicationDetails/biblio?FT=D&date=20170808&DB=EPODOC&locale=en_EP&CC=BR&NR=112016010203A2&KC=A2&ND=4-->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">http://purl.org/coar/resource_type/c_15cd</Type>
 					<Title xml:lang="en">MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID</Title>
@@ -23,7 +23,7 @@
 					<ApprovalDate>2014-11-13</ApprovalDate>
 					<CountryCode>BR</CountryCode>
 					<Issuer>
-						<OrgUnit id="330001">
+						<OrgUnit id="OrgUnits/330001">
 							<Name xml:lang="en">European Patent Office</Name>
 						</OrgUnit>
 					</Issuer>
@@ -31,7 +31,7 @@
 					<URL>https://worldwide.espacenet.com/patent/search?q=pn%3DBR112016010203A2</URL>
 					<Inventors>
                         <Inventor>
-                            <Person id="2018967">
+                            <Person id="Persons/2018967">
                                 <PersonName>
                                     <FamilyNames>Zanin</FamilyNames>
                                     <FirstNames>Massimo</FirstNames>
@@ -39,7 +39,7 @@
                             </Person>
                         </Inventor>
                         <Inventor>
-                            <Person id="2018966">
+                            <Person id="Persons/2018966">
                                 <PersonName>
                                     <FamilyNames>Pizzi</FamilyNames>
                                     <FirstNames>Marco</FirstNames>
@@ -47,7 +47,7 @@
                             </Person>
                         </Inventor>
 						<Inventor>
-							<Person id="2018964">
+							<Person id="Persons/2018964">
 								<PersonName>
 									<FamilyNames>Mazzucco</FamilyNames>
 									<FirstNames>Laura</FirstNames>
@@ -55,7 +55,7 @@
 							</Person>
 						</Inventor>
 						<Inventor>
-							<Person id="2018965">
+							<Person id="Persons/2018965">
 								<PersonName>
 									<FamilyNames>Bertoni</FamilyNames>
 									<FirstNames>Marco</FirstNames>
@@ -101,7 +101,7 @@
 					<ApprovalDate>2014-11-13</ApprovalDate>
 					<CountryCode>WO</CountryCode>
 					<Issuer>
-						<OrgUnit id="330001">
+						<OrgUnit id="OrgUnits/330001">
 							<Name xml:lang="en">European Patent Office</Name>
 						</OrgUnit>
 					</Issuer>
@@ -109,7 +109,7 @@
 					<URL>https://worldwide.espacenet.com/patent/search?q=pn%3DWO2015071852A2</URL>
 					<Inventors>
                         <Inventor>
-                            <Person id="2018967">
+                            <Person id="Persons/2018967">
                                 <PersonName>
                                     <FamilyNames>Zanin</FamilyNames>
                                     <FirstNames>Massimo</FirstNames>
@@ -117,7 +117,7 @@
                             </Person>
                         </Inventor>
                         <Inventor>
-                            <Person id="2018966">
+                            <Person id="Persons/2018966">
                                 <PersonName>
                                     <FamilyNames>Pizzi</FamilyNames>
                                     <FirstNames>Marco</FirstNames>
@@ -125,7 +125,7 @@
                             </Person>
                         </Inventor>
 						<Inventor>
-							<Person id="2018964">
+							<Person id="Persons/2018964">
 								<PersonName>
 									<FamilyNames>Mazzucco</FamilyNames>
 									<FirstNames>Laura</FirstNames>
@@ -133,7 +133,7 @@
 							</Person>
 						</Inventor>
 						<Inventor>
-							<Person id="2018965">
+							<Person id="Persons/2018965">
 								<PersonName>
 									<FamilyNames>Bertoni</FamilyNames>
 									<FirstNames>Marco</FirstNames>
@@ -143,7 +143,7 @@
 					</Inventors>
 					<Holders>
 						<Holder>
-							<OrgUnit id="341234">
+							<OrgUnit id="OrgUnits/341234">
 								<Name xml:lang="en">Eltek S.P.A</Name>
 							</OrgUnit>
 						</Holder>

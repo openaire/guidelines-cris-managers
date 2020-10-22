@@ -65,7 +65,7 @@
 					</Inventors>
 					<Holders>
 						<Holder>
-							<OrgUnit id="341234">
+							<OrgUnit id="OrgUnits/341234">
 								<Name xml:lang="en">Eltek S.P.A</Name>
 							</OrgUnit>
 						</Holder>
@@ -82,7 +82,7 @@
 					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-34</Subject>
 					<Subject scheme="http://data.epo.org/linked-data/def/ipc/">http://data.epo.org/linked-data/def/ipc/A61M1-36</Subject>
 					<Predecessor>
-						<Patent id="712179" /><!-- WO2014IB66015 -->
+						<Patent id="Patents/712179" /><!-- WO2014IB66015 -->
 					</Predecessor>
 				</Patent>
 			</metadata>

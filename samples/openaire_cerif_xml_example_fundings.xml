@@ -27,7 +27,7 @@
 					<Keyword xml:lang="en">European Union</Keyword>
 					<Keyword xml:lang="en">Framework Programme</Keyword>
 					<Funder>
-						<OrgUnit id="OrgUnit/310001">
+						<OrgUnit id="OrgUnits/310001">
 							<Acronym>EC</Acronym>
 							<Name xml:lang="en">European Commission</Name>
 							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
@@ -54,7 +54,7 @@
 					<Keyword xml:lang="en">Research capacities</Keyword>
 					<Keyword xml:lang="en">Innovation capacities</Keyword>
 					<Funder>
-						<OrgUnit id="OrgUnit/310001">
+						<OrgUnit id="OrgUnits/310001">
 							<Acronym>EC</Acronym>
 							<Name xml:lang="en">European Commission</Name>
 							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>

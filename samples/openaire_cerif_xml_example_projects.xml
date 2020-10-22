@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="112345"><!-- OpenAIREplus -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112345"><!-- OpenAIREplus -->
 					<Acronym>OpenAIREplus</Acronym>
 					<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>

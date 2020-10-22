@@ -94,7 +94,7 @@
 				<setSpec>openaire_cris_patents</setSpec>
 			</header>
 			<metadata>
-				<Patent xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="712179"><!-- MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID -->
+				<Patent xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Patents/712179"><!-- MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID -->
 					<!--https://worldwide.espacenet.com/publicationDetails/biblio?FT=D&date=20150521&DB=EPODOC&locale=en_EP&CC=WO&NR=2015071852A2&KC=A2&ND=4-->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">http://purl.org/coar/resource_type/c_15cd</Type>
 					<Title xml:lang="en">MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID</Title>

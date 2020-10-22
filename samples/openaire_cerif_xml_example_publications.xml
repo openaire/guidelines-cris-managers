@@ -152,7 +152,7 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894490"><!-- Int J Digital Curation -->
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/894490"><!-- Int J Digital Curation -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation</Title>
 					<ISSN>1746-8256</ISSN>
@@ -168,7 +168,7 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894491">
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/894491">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_3e5a<!-- contribution to journal --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
@@ -220,7 +220,7 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="4123451">
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/4123451">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_5794<!-- conference paper --></Type>
                     <Language>en</Language>
 					<Title xml:lang="en">The Data Model of the OpenAIRE Scientific Communication e-Infrastructure</Title>

@@ -28,7 +28,7 @@
 		</description>
 
 		<description>
-			<Service xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="8123451"><!-- cris.example.org -->
+			<Service xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Services/8123451"><!-- cris.example.org -->
 				<Compatibility xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1</Compatibility>
                 <Acronym>cris.example.org</Acronym>
 				<Name xml:lang="en">The example CRIS</Name>

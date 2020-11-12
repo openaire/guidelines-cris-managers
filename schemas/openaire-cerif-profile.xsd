@@ -119,6 +119,7 @@ One Person typically has many of these relationships.
 									<xs:documentation>Genders (sociocultural, not linguistic)</xs:documentation>
 									<xs:appinfo>
 										<cf:ClassScheme id="http://publications.europa.eu/resource/authority/human-sex">
+											<cf:Name xml:lang="en">Genders (sociocultural, not linguistic)</cf:Name>
 										</cf:ClassScheme>
 									</xs:appinfo>
 								</xs:annotation>
@@ -128,6 +129,7 @@ One Person typically has many of these relationships.
 											<xs:documentation>Masculine</xs:documentation>
 											<xs:appinfo>
 												<cf:Class classSchemeId="http://publications.europa.eu/resource/authority/human-sex" id="http://publications.europa.eu/resource/authority/human-sex/MALE">
+													<cf:Term xml:lang="en">Male</cf:Term>
 												</cf:Class>
 											</xs:appinfo>
 										</xs:annotation>
@@ -137,6 +139,7 @@ One Person typically has many of these relationships.
 											<xs:documentation>Feminine</xs:documentation>
 											<xs:appinfo>
 												<cf:Class classSchemeId="http://publications.europa.eu/resource/authority/human-sex" id="http://publications.europa.eu/resource/authority/human-sex/FEMALE">
+													<cf:Term xml:lang="en">Female</cf:Term>
 												</cf:Class>
 											</xs:appinfo>
 										</xs:annotation>

@@ -115,7 +115,7 @@
 			<xs:appinfo>
 				<cf:Service id="7d46009d-cf86-494d-9f48-a24dbdd11941">
 					<cf:Name xml:lang="en">The GRID identifier</cf:Name>
-					<cf:Description xml:lang="en">The service of registering research objects and assigning identifiers to them. See https://www.grid.ac/ for more details.</cf:Description>
+					<cf:Description xml:lang="en">The service of registering research organizations and assigning identifiers to them. See https://www.grid.ac/ for more details.</cf:Description>
 				</cf:Service>
 			</xs:appinfo>
 		</xs:annotation>

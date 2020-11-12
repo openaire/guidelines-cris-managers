@@ -124,7 +124,7 @@
                             <xs:documentation>The flag if Open Access is mandated for this funding</xs:documentation>
                         </xs:annotation>
                     </xs:attribute>
-                    <xs:attribute name="uri" type="xs:anyURI" use="optional" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)">
+                    <xs:attribute name="uri" type="xs:anyURI" use="optional" cflink:link="https://w3id.org/cerif/model#Funding_Classification(http://roarmap.eprints.org/)">
                         <xs:annotation>
                             <xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
                         </xs:annotation>

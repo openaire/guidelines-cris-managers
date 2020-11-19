@@ -201,19 +201,24 @@ Internal Identifier
 	</xsl:template>
 
 	<xsl:function name="cf:formatUrl">
-		<xsl:param name="value" as="xs:string"/>
-		<xsl:choose>
-			<xsl:when test="starts-with( $value, 'http:' ) or starts-with( $value, 'https:' ) or starts-with( $value, 'urn:' )">
-				<xsl:text>`&lt;</xsl:text>
-				<xsl:value-of select="$value"/>
-				<xsl:text>&gt;`_</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>``</xsl:text>
-				<xsl:value-of select="$value"/>
-				<xsl:text>``</xsl:text>
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:param name="values" as="xs:string+"/>
+		<xsl:for-each select="$values">
+			<xsl:if test="position() &gt; 1">
+				<xsl:text> </xsl:text>
+			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="starts-with( ., 'http:' ) or starts-with( ., 'https:' ) or starts-with( ., 'urn:' )">
+					<xsl:text>`&lt;</xsl:text>
+					<xsl:value-of select="."/>
+					<xsl:text>&gt;`_</xsl:text>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:text>``</xsl:text>
+					<xsl:value-of select="."/>
+					<xsl:text>``</xsl:text>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:for-each>
 	</xsl:function>
 
 	<xsl:template match="xs:group[ @ref ]" mode="#all">

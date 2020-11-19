@@ -57,8 +57,8 @@ Gender
 :CERIF: the Person.Gender attribute (`<https://w3id.org/cerif/model#Person.Gender>`_)
 :Vocabulary: Genders (sociocultural, not linguistic)
 
-  * **Masculine** (``m``): Man
-  * **Feminine** (``f``): Woman
+  * **Masculine** (``m``): 
+  * **Feminine** (``f``): 
 
 
 

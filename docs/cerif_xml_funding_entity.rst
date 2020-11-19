@@ -101,7 +101,7 @@ Funder
 :Description: The funder or funders
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Funder`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
-:CERIF: the OrganisationUnit_Funding linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Funding>`_) with the `<https://w3id.org/cerif/vocab/OrganisationFundingEngagements#Funder>`_ semantics
+:CERIF: the OrganisationUnit_Funding linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Funding>`_) with the `<https://w3id.org/cerif/vocab/OrganisationFundingRoles#Financier>`_ semantics
 
 
 PartOf
@@ -109,7 +109,7 @@ PartOf
 :Description: Chain up to the larger funding that encompasses this funding
 :Use: optional (0..1)
 :Representation: XML element ``PartOf`` with embedded XML element ``Funding``
-:CERIF: the Funding_Funding linking entity (`<https://w3id.org/cerif/model#Funding_Funding>`_) with the `<https://w3id.org/cerif/vocab/Inter­FundingRelations#Part>`_ semantics (direction :1)
+:CERIF: the Funding_Funding linking entity (`<https://w3id.org/cerif/model#Funding_Funding>`_) with the `<https://w3id.org/cerif/vocab/InterFundingRelations#Part>`_ semantics (direction :1)
 
 
 Duration

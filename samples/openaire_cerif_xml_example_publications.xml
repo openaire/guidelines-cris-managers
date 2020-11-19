@@ -155,7 +155,9 @@
 				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894490"><!-- Int J Digital Curation -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation</Title>
+					<NameAbbreviation xml:lang="en">IJDC</NameAbbreviation>
 					<ISSN>1746-8256</ISSN>
+					<ZDB-ID>2266735-0</ZDB-ID>
 					<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_14cb<!-- metadata only access --></Access>
 				</Publication>
 			</metadata>

@@ -102,7 +102,7 @@
 		            <Name xml:lang="fi">Euroopan komissio</Name>
 		            <Name xml:lang="sv">Europeiska kommissionen</Name>
 		            <Name xml:lang="hr">Europska komisija</Name>
-					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+					<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 					<Identifier type="">https://europa.eu/</Identifier><!-- FIXME -->
 				</OrgUnit>
 			</metadata>

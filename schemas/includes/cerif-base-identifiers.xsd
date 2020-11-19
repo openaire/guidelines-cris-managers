@@ -98,5 +98,26 @@
             </xs:simpleType>
         </xs:union>
     </xs:simpleType>
+    
+    <xs:complexType name="ISNI__Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">The XML Schema type for the ISNI identifier</xs:documentation>
+			<xs:appinfo>
+				<cf:Service id="01ceb044-45b0-4ac9-91c1-d72edc5c9ed8">
+					<cf:Name xml:lang="en">The ISNI identifier</cf:Name>
+					<cf:Description xml:lang="en">The identifiers assigned to persons, legal entities and other named objects.  See http://www.isni.org/ for more details.</cf:Description>
+				</cf:Service>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:restriction base="cfString__Type">
+				<xs:pattern value="\d{4} \d{4} \d{4} \d{3}[\dX]">
+					<xs:annotation>
+						<xs:documentation source="https://www.wikidata.org/wiki/Property:P213"/>
+					</xs:annotation>
+				</xs:pattern>
+			</xs:restriction>
+		</xs:simpleContent>
+	</xs:complexType>
 
 </xs:schema>

@@ -42,12 +42,91 @@ Name
 
 
 
+RORID
+^^^^^
+:Description: The ROR identifier in case its value is certain or known to be a preferred one.
+:Use: optional (0..1)
+:Representation: XML element ``RORID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``https:\/\/ror\.org\/0[\da-hj-km-np-tv-zA-HJ-KM-NP-TV-Z]{6}\d{2}`` (as per `<https://ror.org/facts/>`_)
+
+
+
+AlternativeRORID
+^^^^^^^^^^^^^^^^
+:Description: The ROR identifiers in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``AlternativeRORID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``https:\/\/ror\.org\/0[\da-hj-km-np-tv-zA-HJ-KM-NP-TV-Z]{6}\d{2}`` (as per `<https://ror.org/facts/>`_)
+
+
+
+GRID
+^^^^
+:Description: The GRID identifier in case its value is certain or known to be a preferred one.
+:Use: optional (0..1)
+:Representation: XML element ``GRID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``grid\.\d{4,}\.[0-9a-f]{1,2}`` (as per `<https://www.wikidata.org/wiki/Property_talk:P2427>`_)
+
+
+
+AlternativeGRID
+^^^^^^^^^^^^^^^
+:Description: The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``AlternativeGRID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``grid\.\d{4,}\.[0-9a-f]{1,2}`` (as per `<https://www.wikidata.org/wiki/Property_talk:P2427>`_)
+
+
+
+ISNI
+^^^^
+:Description: The ISNI identifier in case its value is certain or known to be a preferred one.
+:Use: optional (0..1)
+:Representation: XML element ``ISNI``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
+
+
+
+AlternativeISNI
+^^^^^^^^^^^^^^^
+:Description: The ISNI identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``AlternativeISNI``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
+
+
+
+FundRefID
+^^^^^^^^^
+:Description: The FundRef Registry Identifier in case its value is certain or known to be a preferred one.
+:Use: optional (0..1)
+:Representation: XML element ``FundRefID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``https:\/\/doi.org\/10\.13039\/\d+`` (as per `<https://www.crossref.org/display-guidelines/>`_ `<https://www.wikidata.org/wiki/Q19822542>`_)
+
+
+
+AlternativeFundRefID
+^^^^^^^^^^^^^^^^^^^^
+:Description: The FundRef Registry Identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``AlternativeFundRefID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``https:\/\/doi.org\/10\.13039\/\d+`` (as per `<https://www.crossref.org/display-guidelines/>`_ `<https://www.wikidata.org/wiki/Q19822542>`_)
+
+
+
 Identifier
 ^^^^^^^^^^
-:Description: An identifier of the organisation unit
+:Description: A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types.
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
-:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Representation: XML element ``Identifier``
 
 
 

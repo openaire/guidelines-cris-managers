@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../../git/CERIF-TG-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../CERIF-TG-Tools/CERIF-Model-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
 	<xs:annotation>
 		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
 			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
@@ -71,6 +71,11 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#OrganisationUnit" leaveOut="Parts">
+			<IdentifiersFrom schemaLocation="includes/orgunit-identifiers.xsd">
+				<xs:annotation>
+					<xs:documentation>The orgunit identifiers.</xs:documentation>
+				</xs:annotation>
+			</IdentifiersFrom>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ElectronicAddress">

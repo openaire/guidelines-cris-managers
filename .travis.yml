@@ -2,6 +2,10 @@
 
 sudo: false
 
+before_install:
+- git clone https://github.com/eurocris/CERIF-TG-Tools.git ../CERIF-TG-Tools
+- git clone https://github.com/jdvorak001/openaire-cris-validator.git ../openaire-cris-validator
+
 language: java
 
 jdk:

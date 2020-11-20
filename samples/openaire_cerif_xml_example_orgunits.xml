@@ -20,7 +20,7 @@
 					<Acronym>NKUA</Acronym>
 					<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
 					<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
-					<Identifier type="">http://www.uoa.gr</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.uoa.gr</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -36,7 +36,7 @@
 					<Acronym>CNR</Acronym>
 					<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 					<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
-					<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -103,7 +103,7 @@
 		            <Name xml:lang="sv">Europeiska kommissionen</Name>
 		            <Name xml:lang="hr">Europska komisija</Name>
 					<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
-					<Identifier type="">https://europa.eu/</Identifier><!-- FIXME -->
+					<ElectronicAddress>https://europa.eu/</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>

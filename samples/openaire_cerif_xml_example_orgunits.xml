@@ -20,7 +20,7 @@
 					<Acronym>NKUA</Acronym>
 					<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
 					<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
-					<Identifier type="">http://www.uoa.gr</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.uoa.gr</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -36,7 +36,7 @@
 					<Acronym>CNR</Acronym>
 					<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 					<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
-					<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -51,7 +51,7 @@
 					<Acronym>EKT</Acronym>
 					<Name xml:lang="en" trans="h">National Documentation Centre</Name>
 					<Name xml:lang="el">Εθνικό Κέντρο Τεκμηρίωσης</Name>
-					<Identifier type="">http://www.ekt.gr</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.ekt.gr</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -65,7 +65,7 @@
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/312348">
 					<Acronym>UKOLN</Acronym>
 					<Name xml:lang="en">UKOLN</Name>
-					<Identifier type="">http://www.ukoln.ac.uk</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.ukoln.ac.uk</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -102,8 +102,8 @@
 		            <Name xml:lang="fi">Euroopan komissio</Name>
 		            <Name xml:lang="sv">Europeiska kommissionen</Name>
 		            <Name xml:lang="hr">Europska komisija</Name>
-					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-					<Identifier type="">https://europa.eu/</Identifier><!-- FIXME -->
+					<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
+					<ElectronicAddress>https://europa.eu/</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>

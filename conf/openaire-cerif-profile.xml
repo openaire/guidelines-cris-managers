@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../../git/CERIF-TG-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../CERIF-TG-Tools/CERIF-Model-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
 	<xs:annotation>
 		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
 			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
@@ -33,17 +33,17 @@
 					<xs:documentation>OpenAIRE compatibility of the CRIS</xs:documentation>
 				</xs:annotation>
 			</Classification>
-			<xs:element name="WebsiteURL" type="cfString__Type" minOccurs="0" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#Website)">
+			<xs:element name="WebsiteURL" type="cfString__Type" minOccurs="0" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/ElectronicAddressTypes#Website)">
 				<xs:annotation>
 					<xs:documentation>URL of the website of the CRIS</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="OAIPMHBaseURL" type="cfString__Type" minOccurs="0" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#OAI-PMH_Base)">
+			<xs:element name="OAIPMHBaseURL" type="cfString__Type" minOccurs="0" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/ElectronicAddressTypes#OAI-PMH_Base)">
 				<xs:annotation>
 					<xs:documentation>Base URL for the OAI-PMH protocol endpoint of the CRIS</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="SubjectHeadingsURL" type="cfString__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/ElectronicAddressTypes#SubjectHeadings)">
+			<xs:element name="SubjectHeadingsURL" type="cfString__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/IdentifierTypes#URL) https://w3id.org/cerif/model#FederatedIdentifier(https://w3id.org/cerif/vocab/ElectronicAddressTypes#SubjectHeadings)">
 				<xs:annotation>
 					<xs:documentation>The URL where the subject classification used by the CRIS can be obtained (using the HTTP GET)</xs:documentation>
 				</xs:annotation>
@@ -71,6 +71,11 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#OrganisationUnit" leaveOut="Parts">
+			<IdentifiersFrom schemaLocation="includes/orgunit-identifiers.xsd">
+				<xs:annotation>
+					<xs:documentation>The orgunit identifiers.</xs:documentation>
+				</xs:annotation>
+			</IdentifiersFrom>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ElectronicAddress">
@@ -124,7 +129,7 @@
                             <xs:documentation>The flag if Open Access is mandated for this funding</xs:documentation>
                         </xs:annotation>
                     </xs:attribute>
-                    <xs:attribute name="uri" type="xs:anyURI" use="optional" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)">
+                    <xs:attribute name="uri" type="xs:anyURI" use="optional" cflink:link="https://w3id.org/cerif/model#Funding_Classification(http://roarmap.eprints.org/)">
                         <xs:annotation>
                             <xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
                         </xs:annotation>
@@ -167,7 +172,7 @@
 					<xs:documentation>The event that is covered by this publication (e.g. a report about the event)</xs:documentation>
 				</xs:annotation>
 			</Link>
-			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
+			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPublication(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
 				<xs:annotation>
 					<xs:documentation>Result outputs that are referenced by this publication</xs:documentation>
 				</xs:annotation>
@@ -190,7 +195,7 @@
                     <xs:documentation>The product identifiers.</xs:documentation>
                 </xs:annotation>
             </IdentifiersFrom>
-			<Link name="GeneratedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultProduct_Equipment(https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation)" target="Equipment">
+			<Link name="GeneratedBy" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultProduct_Equipment(https://w3id.org/cerif/vocab/OutputResearchInfrastructureRelations#Generation)" target="Equipment">
 				<xs:annotation>
 					<xs:documentation>The equipment that generated this product</xs:documentation>
 				</xs:annotation>
@@ -205,7 +210,7 @@
 					<xs:documentation>The event that is covered by this product (e.g. a video or audio interview about the event)</xs:documentation>
 				</xs:annotation>
 			</Link>
-			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
+			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultProduct(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
 				<xs:annotation>
 					<xs:documentation>Result outputs that are referenced by this product</xs:documentation>
 				</xs:annotation>
@@ -217,18 +222,23 @@
             </xs:element>
 		</Entity>
 
-		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts Identifier">
+		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts">
 			<Classification kind="Type" schema="vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>
 				</xs:annotation>
 			</Classification>
-            <Link name="Predecessor" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Predecessor):1" target="Patent">
+            <IdentifiersFrom schemaLocation="includes/patent-identifiers.xsd">
+                <xs:annotation>
+                    <xs:documentation>The patent identifiers.</xs:documentation>
+                </xs:annotation>
+            </IdentifiersFrom>
+            <Link name="Predecessor" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterPatentRelations#Predecessor):1" target="Patent">
                 <xs:annotation>
                     <xs:documentation>Patents that precede (i.e., have priority over) this patent</xs:documentation>
                 </xs:annotation>
             </Link>
-			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPublication(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultProduct(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
+			<Link name="References" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#ResultPublication_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultProduct_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1 https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Reference):1" target="ResearchOutput__SubstitutionGroupHead">
 				<xs:annotation>
 					<xs:documentation>Result outputs that are referenced by this patent</xs:documentation>
 				</xs:annotation>

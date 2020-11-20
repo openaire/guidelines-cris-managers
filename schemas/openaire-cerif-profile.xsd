@@ -37,23 +37,29 @@
 </xs:annotation>
 </xs:include>
 
+	<xs:include schemaLocation="includes/orgunit-identifiers.xsd">
+<xs:annotation>
+<xs:documentation>The orgunit identifiers.</xs:documentation>
+</xs:annotation>
+</xs:include>
+
 	<xs:include schemaLocation="includes/publication-identifiers.xsd">
 <xs:annotation>
 <xs:documentation>The publication identifiers.</xs:documentation>
 </xs:annotation>
 </xs:include>
 
-<xs:include schemaLocation="includes/product-identifiers.xsd">
+	<xs:include schemaLocation="includes/patent-identifiers.xsd">
+<xs:annotation>
+<xs:documentation>The patent identifiers.</xs:documentation>
+</xs:annotation>
+</xs:include>
+
+	<xs:include schemaLocation="includes/product-identifiers.xsd">
 <xs:annotation>
 <xs:documentation>The product identifiers.</xs:documentation>
 </xs:annotation>
 </xs:include>
-
-	<xs:include schemaLocation="includes/patent-identifiers.xsd">
-		<xs:annotation>
-			<xs:documentation>The patent identifiers.</xs:documentation>
-		</xs:annotation>
-	</xs:include>
 
 	<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
 
@@ -118,7 +124,7 @@ One Person typically has many of these relationships.
 								<xs:annotation>
 									<xs:documentation>Genders (sociocultural, not linguistic)</xs:documentation>
 									<xs:appinfo>
-										<cf:ClassScheme id="https://w3id.org/cerif/vocab/Genders">
+										<cf:ClassScheme id="http://publications.europa.eu/resource/authority/human-sex">
 											<cf:Name xml:lang="en">Genders (sociocultural, not linguistic)</cf:Name>
 										</cf:ClassScheme>
 									</xs:appinfo>
@@ -128,9 +134,8 @@ One Person typically has many of these relationships.
 										<xs:annotation>
 											<xs:documentation>Masculine</xs:documentation>
 											<xs:appinfo>
-												<cf:Class classSchemeId="https://w3id.org/cerif/vocab/Genders" id="https://w3id.org/cerif/vocab/Genders#Masculine">
-													<cf:Term xml:lang="en">Masculine</cf:Term>
-													<cf:Definition xml:lang="en">Man</cf:Definition>
+												<cf:Class classSchemeId="http://publications.europa.eu/resource/authority/human-sex" id="http://publications.europa.eu/resource/authority/human-sex/MALE">
+													<cf:Term xml:lang="en">Male</cf:Term>
 												</cf:Class>
 											</xs:appinfo>
 										</xs:annotation>
@@ -139,9 +144,8 @@ One Person typically has many of these relationships.
 										<xs:annotation>
 											<xs:documentation>Feminine</xs:documentation>
 											<xs:appinfo>
-												<cf:Class classSchemeId="https://w3id.org/cerif/vocab/Genders" id="https://w3id.org/cerif/vocab/Genders#Feminine">
-													<cf:Term xml:lang="en">Feminine</cf:Term>
-													<cf:Definition xml:lang="en">Woman</cf:Definition>
+												<cf:Class classSchemeId="http://publications.europa.eu/resource/authority/human-sex" id="http://publications.europa.eu/resource/authority/human-sex/FEMALE">
+													<cf:Term xml:lang="en">Female</cf:Term>
 												</cf:Class>
 											</xs:appinfo>
 										</xs:annotation>
@@ -219,11 +223,7 @@ In the research information domain Organisation Units typically represents:
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
-							<xs:annotation>
-								<xs:documentation>An identifier of the organisation unit</xs:documentation>
-							</xs:annotation>
-						</xs:element>
+						<xs:group ref="OrgUnitIdentifiers__Group"/>
 
 						<!-- ... -->
 
@@ -564,13 +564,13 @@ The Project entity only captures details of the project scope and plan. Informat
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Funding(https://w3id.org/cerif/vocab/OrganisationFundingEngagements#Funder)" maxOccurs="unbounded" minOccurs="0" name="Funder" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
+						<xs:element cflink:link="https://w3id.org/cerif/model#OrganisationUnit_Funding(https://w3id.org/cerif/vocab/OrganisationFundingRoles#Financier)" maxOccurs="unbounded" minOccurs="0" name="Funder" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
 							<xs:annotation>
 								<xs:documentation>The funder or funders</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Funding(https://w3id.org/cerif/vocab/Inter­FundingRelations#Part):1" minOccurs="0" name="PartOf">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Funding_Funding(https://w3id.org/cerif/vocab/InterFundingRelations#Part):1" minOccurs="0" name="PartOf">
 							<xs:annotation>
 								<xs:documentation>Chain up to the larger funding that encompasses this funding</xs:documentation>
 							</xs:annotation>
@@ -605,7 +605,7 @@ The Project entity only captures details of the project scope and plan. Informat
 <xs:documentation>The flag if Open Access is mandated for this funding</xs:documentation>
 </xs:annotation>
 </xs:attribute>
-<xs:attribute cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/OpenAccessMandate)" name="uri" type="xs:anyURI" use="optional">
+<xs:attribute cflink:link="https://w3id.org/cerif/model#Funding_Classification(http://roarmap.eprints.org/)" name="uri" type="xs:anyURI" use="optional">
 <xs:annotation>
 <xs:documentation>The Open Access policy that applies to this funding</xs:documentation>
 </xs:annotation>
@@ -662,7 +662,7 @@ This entity typically represents the granularity level of a single published ite
 
 						
 
-                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(https://w3id.org/cerif/vocab/LanguageTags)" minOccurs="0" name="Language" type="cfString__Type">
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Classification(http://publications.europa.eu/resource/authority/language)" minOccurs="0" name="Language" type="cfString__Type">
                             <xs:annotation>
                                 <xs:documentation>The language of the publication.  Please use the IETF language tags as described in the IETF BCP 47 document.</xs:documentation>
                             </xs:annotation>
@@ -821,7 +821,7 @@ This entity typically represents the granularity level of a single published ite
 							<!-- any class scheme of the 'status' character -->
 						</xs:element>
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPublication(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultPublication_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPublication(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultPublication_Funding(https://w3id.org/cerif/vocab/OutputFundingRoles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">
@@ -993,7 +993,7 @@ Source: Wikipedia
 						
 						<!-- TODO -->
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPatent(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultPatent_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultPatent(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultPatent_Funding(https://w3id.org/cerif/vocab/OutputFundingRoles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">
@@ -1005,7 +1005,7 @@ Source: Wikipedia
 							</xs:complexType>
 						</xs:element>
 												
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterOutputRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_ResultPatent(https://w3id.org/cerif/vocab/InterPatentRelations#Predecessor):1" maxOccurs="unbounded" minOccurs="0" name="Predecessor">
 <xs:annotation>
 <xs:documentation>Patents that precede (i.e., have priority over) this patent</xs:documentation>
 </xs:annotation>
@@ -1068,7 +1068,7 @@ This includes:
 						
 						
 
-                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/LanguageTags)" maxOccurs="unbounded" minOccurs="0" name="Language" type="cfString__Type">
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(http://publications.europa.eu/resource/authority/language)" maxOccurs="unbounded" minOccurs="0" name="Language" type="cfString__Type">
                             <xs:annotation>
                                 <xs:documentation>The language or languages of the product, if applicable.  Please use the IETF language tags as described in the IETF BCP 47 document.</xs:documentation>
                             </xs:annotation>
@@ -1141,7 +1141,7 @@ This includes:
 
 						
 
-						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultProduct(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultProduct_Funding(https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
+						<xs:element cflink:link="https://w3id.org/cerif/model#Project_ResultProduct(https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator) https://w3id.org/cerif/model#ResultProduct_Funding(https://w3id.org/cerif/vocab/OutputFundingRoles#Originator)" maxOccurs="unbounded" minOccurs="0" name="OriginatesFrom">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">
@@ -1153,7 +1153,7 @@ This includes:
 							</xs:complexType>
 						</xs:element>
 						
-						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Equipment(https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation)" maxOccurs="unbounded" minOccurs="0" name="GeneratedBy">
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Equipment(https://w3id.org/cerif/vocab/OutputResearchInfrastructureRelations#Generation)" maxOccurs="unbounded" minOccurs="0" name="GeneratedBy">
 <xs:annotation>
 <xs:documentation>The equipment that generated this product</xs:documentation>
 </xs:annotation>

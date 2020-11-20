@@ -155,7 +155,7 @@ OriginatesFrom
 ^^^^^^^^^^^^^^
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
-:CERIF: the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
+:CERIF: the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/OutputFundingRoles#Originator>`_ semantics
 
 
 Predecessor
@@ -163,7 +163,7 @@ Predecessor
 :Description: Patents that precede (i.e., have priority over) this patent
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Predecessor`` with embedded XML element ``Patent``
-:CERIF: the ResultPatent_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Predecessor>`_ semantics (direction :1)
+:CERIF: the ResultPatent_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterPatentRelations#Predecessor>`_ semantics (direction :1)
 
 
 References

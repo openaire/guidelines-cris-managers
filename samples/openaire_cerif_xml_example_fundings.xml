@@ -30,7 +30,7 @@
 						<OrgUnit id="OrgUnits/310001">
 							<Acronym>EC</Acronym>
 							<Name xml:lang="en">European Commission</Name>
-							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+							<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 						</OrgUnit>
 					</Funder>
 					<Duration startDate="2007-01-01" endDate="2013-12-31" />
@@ -57,7 +57,7 @@
 						<OrgUnit id="OrgUnits/310001">
 							<Acronym>EC</Acronym>
 							<Name xml:lang="en">European Commission</Name>
-							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+							<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 						</OrgUnit>
 					</Funder>
 					<PartOf>

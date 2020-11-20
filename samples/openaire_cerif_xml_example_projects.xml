@@ -194,7 +194,7 @@
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
-								<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
+								<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 							</OrgUnit>
 						</Partner>
 					</Consortium>

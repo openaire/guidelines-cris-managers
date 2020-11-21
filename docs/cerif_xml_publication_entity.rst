@@ -86,7 +86,7 @@ Language
 :Description: The language of the publication. Please use the IETF language tags as described in the IETF BCP 47 document.
 :Use: optional (0..1)
 :Representation: XML element ``Language``
-:CERIF: the ResultPublication_Classification linking entity (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_) with the `<https://w3id.org/cerif/vocab/LanguageTags>`_ semantics
+:CERIF: the ResultPublication_Classification linking entity (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_) with the `<http://publications.europa.eu/resource/authority/language>`_ semantics
 
 
 Title
@@ -108,8 +108,8 @@ Subtitle
 
 
 NameAbbreviation
-^^^^^^^^
-:Description: The abbreviation of the title of the publication
+^^^^^^^^^^^^^^^^
+:Description: The abbreviation of the title of the publication. E.g. the acronym of a journal.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``NameAbbreviation`` as a multilingual string
 :CERIF: the ResultPublication.NameAbbreviation attribute (`<https://w3id.org/cerif/model#ResultPublication.NameAbbreviation>`_)
@@ -121,7 +121,7 @@ PublishedIn
 :Description: The source (another Publication) where this publication appeared. E.g. a journal article lists here the journal where it appeared. To be used for a publishing channel.
 :Use: optional (0..1)
 :Representation: XML element ``PublishedIn`` with embedded XML element ``Publication``
-:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-PublicationRelations#Publication>`_ semantics (direction :1)
+:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/InterPublicationRelations#Publication>`_ semantics (direction :1)
 
 
 PartOf
@@ -129,7 +129,7 @@ PartOf
 :Description: The Publication of which this publication is a part. E.g. a book chapter lists here the book that contains it. To be used for a containing publication.
 :Use: optional (0..1)
 :Representation: XML element ``PartOf`` with embedded XML element ``Publication``
-:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-PublicationRelations#Part>`_ semantics (direction :1)
+:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/InterPublicationRelations#Part>`_ semantics (direction :1)
 
 
 PublicationDate
@@ -137,7 +137,7 @@ PublicationDate
 :Description: The date the publication appeared
 :Use: optional (0..1)
 :Representation: XML element ``PublicationDate``
-:CERIF: the ResultPublication.ResPublDate attribute (`<https://w3id.org/cerif/model#ResultPublication.ResPublDate>`_)
+:CERIF: the ResultPublication.ResultPublicationDate attribute (`<https://w3id.org/cerif/model#ResultPublication.ResultPublicationDate>`_)
 :Format: any of:
 
   * year (``YYYY``) with optional time zone indication
@@ -253,16 +253,6 @@ ISSN
 
 
 
-ZDB-ID
-^^^^^^
-:Description: The German National Serials Database identifier
-:Use: optional, possibly multiple (0..*)
-:Representation: XML element ``ZDB-ID``
-:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``\d{1,7}-[Xx\d]`` (as per `<https://www.wikidata.org/wiki/Property:P1042>`_)
-
-
-
 medium
 ------
 :Use: optional
@@ -322,6 +312,15 @@ URN
 :Use: optional (0..1)
 :Representation: XML element ``URN``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+
+
+
+ZDB-ID
+^^^^^^
+:Use: optional (0..1)
+:Representation: XML element ``ZDB-ID``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``\d{1,7}-[Xx\d]`` (as per `<https://www.wikidata.org/wiki/Property:P1042>`_)
 
 
 
@@ -414,7 +413,7 @@ OriginatesFrom
 ^^^^^^^^^^^^^^
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
-:CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Project_Output_Roles#Originator>`_ semantics; the ResultPublication_Funding linking entity (`<https://w3id.org/cerif/model#ResultPublication_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
+:CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultPublication_Funding linking entity (`<https://w3id.org/cerif/model#ResultPublication_Funding>`_) with the `<https://w3id.org/cerif/vocab/OutputFundingRoles#Originator>`_ semantics
 
 
 PresentedAt
@@ -448,7 +447,7 @@ References
 :Description: Result outputs that are referenced by this publication
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
-:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/Inter-OutputRelations#Reference>`_ semantics (direction :1)
+:CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1)
 
 
 ns4:Access
@@ -459,10 +458,10 @@ ns4:Access
 :CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
 :Vocabulary: 
 
-  * **open access** (`<http://purl.org/coar/access_right/c_abf2>`_): Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.
+  * **open access** (`<http://purl.org/coar/access_right/c_abf2>`_): Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.The resource is either stored in the repository or referenced to an external journal or trustworthy archive.
   * **embargoed access** (`<http://purl.org/coar/access_right/c_f1cf>`_): Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).
   * **restricted access** (`<http://purl.org/coar/access_right/c_16ec>`_): Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g. limited to a university community)
-  * **metadata only access** (`<http://purl.org/coar/access_right/c_14cb>`_): Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but is not directly available through the system or platform. This type of access can occur in a number of different situations. Some examples are described below: There is no electronic copy of the resource available (record links to a physical resource) The resource is only available elsewhere for a fee (record links to a subscription-based publisher version) The resource is available open access but at a different location (record links to a version at an open access publisher or archive) The resource is available elsewhere, but not in a fully open access format (record links to a read only, or other type of resources that is not permanent or in some way restricted)
+  * **metadata only access** (`<http://purl.org/coar/access_right/c_14cb>`_): Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but neither is directly available through the system or platform nor can be referenced to an open access copy in an external journal or trustworthy archive.
 
 
 

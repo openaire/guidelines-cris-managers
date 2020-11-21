@@ -57,8 +57,8 @@ Gender
 :CERIF: the Person.Gender attribute (`<https://w3id.org/cerif/model#Person.Gender>`_)
 :Vocabulary: Genders (sociocultural, not linguistic)
 
-  * **Masculine** (``m``): Man
-  * **Feminine** (``f``): Woman
+  * **Masculine** (``m``): 
+  * **Feminine** (``f``): 
 
 
 
@@ -128,7 +128,7 @@ ISNI
 :Use: optional (0..1)
 :Representation: XML element ``ISNI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
+:Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
 
 
 
@@ -138,7 +138,7 @@ AlternativeISNI
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeISNI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{3}[0-9X]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
+:Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
 
 
 

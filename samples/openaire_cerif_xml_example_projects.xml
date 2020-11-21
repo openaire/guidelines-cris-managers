@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="112345"><!-- OpenAIREplus -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112345"><!-- OpenAIREplus -->
 					<Acronym>OpenAIREplus</Acronym>
 					<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
@@ -24,14 +24,14 @@
 					<EndDate>2014-05-31</EndDate>
 					<Consortium>
 						<Coordinator>
-							<OrgUnit id="312345">
+							<OrgUnit id="OrgUnits/312345">
 								<Acronym>NKUA</Acronym>
 								<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
 								<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 							</OrgUnit>
 						</Coordinator>
 						<Partner>
-							<OrgUnit id="312346">
+							<OrgUnit id="OrgUnits/312346">
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
@@ -40,26 +40,26 @@
 					</Consortium>
 					<Funded>
 						<By>
-							<OrgUnit id="310001">
+							<OrgUnit id="OrgUnits/310001">
 								<Acronym>EC</Acronym>
 								<Name xml:lang="en">European Commission</Name>
-								<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+								<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 							</OrgUnit>
 						</By>
 						<As>
-							<Funding id="612352"><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+							<Funding id="Fundings/612352"><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
 								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 								<Name xml:lang="en">FP7 funding for the OpenAIREplus project</Name>
 								<PartOf>
-									<Funding id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+									<Funding id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 										<Name xml:lang="en">Research infrastructures</Name>
 										<PartOf>
-											<Funding id="612346"><!-- FP7 / Capacities -->
+											<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 												<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 												<Name xml:lang="en">Capacities</Name>
 												<PartOf>
-													<Funding id="612345"><!-- FP7 -->
+													<Funding id="Fundings/612345"><!-- FP7 -->
 														<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 														<Acronym>FP7</Acronym>
 													</Funding>
@@ -98,7 +98,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="112346"><!-- OpenAIRE -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112346"><!-- OpenAIRE -->
 					<Acronym>OpenAIRE</Acronym>
 					<Title xml:lang="en">Open Access Infrastructure for Research in Europe</Title>
 					<Title xml:lang="el">Υποδομή Ανοικτής Πρόσβασης για την Έρευνα στην Ευρώπη</Title>
@@ -108,14 +108,14 @@
 					<EndDate>2012-11-30</EndDate>
 					<Consortium>
 						<Coordinator>
-							<OrgUnit id="312345">
+							<OrgUnit id="OrgUnits/312345">
 								<Acronym>NKUA</Acronym>
 								<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
 								<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 							</OrgUnit>
 						</Coordinator>
 						<Partner>
-							<OrgUnit id="312346">
+							<OrgUnit id="OrgUnits/312346">
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
@@ -124,26 +124,26 @@
 					</Consortium>
 					<Funded>
 						<By>
-							<OrgUnit id="310001">
+							<OrgUnit id="OrgUnits/310001">
 								<Acronym>EC</Acronym>
 								<Name xml:lang="en">European Commission</Name>
-								<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+								<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 							</OrgUnit>
 						</By>
 						<As>
-							<Funding id="612351"><!-- FP7 / Capacities / Research Infrastructures / OpenAIRE -->
+							<Funding id="Fundings/612351"><!-- FP7 / Capacities / Research Infrastructures / OpenAIRE -->
 								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 								<Name xml:lang="en">FP7 funding for the OpenAIRE project</Name>
 								<PartOf>
-									<Funding id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+									<Funding id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 										<Name xml:lang="en">Research infrastructures</Name>
 										<PartOf>
-											<Funding id="612346"><!-- FP7 / Capacities -->
+											<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 												<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 												<Name xml:lang="en">Capacities</Name>
 												<PartOf>
-													<Funding id="612345"><!-- FP7 -->
+													<Funding id="Fundings/612345"><!-- FP7 -->
 														<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 														<Acronym>FP7</Acronym>
 													</Funding>
@@ -181,7 +181,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="112347"><!-- EUFAR -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112347"><!-- EUFAR -->
 					<Acronym>EUFAR</Acronym>
 					<Title xml:lang="en">European Facility for Airborne Research in Environmental and Geoscience</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">227159</Identifier>
@@ -190,36 +190,36 @@
 					<EndDate>2013-09-30</EndDate>
 					<Consortium>
 						<Partner>
-							<OrgUnit id="312346">
+							<OrgUnit id="OrgUnits/312346">
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
-								<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
+								<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 							</OrgUnit>
 						</Partner>
 					</Consortium>
 					<Funded>
 						<By>
-							<OrgUnit id="310001">
+							<OrgUnit id="OrgUnits/310001">
 								<Acronym>EC</Acronym>
 								<Name xml:lang="en">European Commission</Name>
-								<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+								<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 							</OrgUnit>
 						</By>
 						<As>
-							<Funding id="612353"><!-- FP7 / Capacities / Research Infrastructures / EUFAR -->
+							<Funding id="Fundings/612353"><!-- FP7 / Capacities / Research Infrastructures / EUFAR -->
 								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 								<Name xml:lang="en">FP7 funding for the EUFAR project</Name>
 								<PartOf>
-									<Funding id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+									<Funding id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 										<Name xml:lang="en">Research infrastructures</Name>
 										<PartOf>
-											<Funding id="612346"><!-- FP7 / Capacities -->
+											<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 												<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 												<Name xml:lang="en">Capacities</Name>
 												<PartOf>
-													<Funding id="612345"><!-- FP7 -->
+													<Funding id="Fundings/612345"><!-- FP7 -->
 														<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 														<Acronym>FP7</Acronym>
 													</Funding>
@@ -241,12 +241,12 @@
 						group on the Sustainable Structure aims at promoting solutions for the long term sustainability of EUFAR. Among the JRA, one will develop and characterize airborne hygrometers, the second one will develop and implement quality layers in the processing chains of hyperspectral imagery, and the third one will develop an airborne drop spectrometer based on a new principle.
 					</Abstract>
 					<Uses>
-						<Equipment id="82394874">
+						<Equipment id="Equipments/82394874">
 							<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
 						</Equipment>
 					</Uses>
 					<Uses>
-						<Equipment id="82394875">
+						<Equipment id="Equipments/82394875">
 							<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
 						</Equipment>
 					</Uses>

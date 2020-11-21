@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_events</setSpec>
 			</header>
 			<metadata>
-				<Event xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="583475">
+				<Event xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Events/583475">
 					<Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
 					<Acronym>MTSR 2012</Acronym>
 					<Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>

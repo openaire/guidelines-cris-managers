@@ -15,7 +15,7 @@
                 <setSpec>openaire_cris_datasets</setSpec>
             </header>
             <metadata>
-            	<Product id="7123451" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+            	<Product id="Products/7123451" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
                     <Name xml:lang="en">Airborne In-situ Atmospheric Instruments and Hyperspectral Instruments Data from the Projects Funded Under The European Facility for Airborne Research in Environmental and Geo-sciences (EUFAR) Project</Name>
 					<URL>http://catalogue.ceda.ac.uk/uuid/d40e4067ae0121b31bb1ba57e04707de</URL>
@@ -23,19 +23,19 @@
 EUFAR is an Integrating Activity of the 7th Framework Program of the European Commission.
 EUFAR brings together 32 European institutions and companies involved in airborne research, operating 21 instrumented aircraft and providing access to 6 hyperspectral instruments. Data include measurements by airborne in situ atmospheric instuments and hyperspectral instruments operated on board aircraft of the EUFAR fleet during projects funded under the transnational access part of EUFAR and during training events.</Description>
 					<OriginatesFrom>
-						<Project id="112347">
+						<Project id="Projects/112347">
 							<Acronym>EUFAR</Acronym>
 						</Project>
 					</OriginatesFrom>
 					<GeneratedBy>
-						<Equipment id="82394874">
+						<Equipment id="Equipments/82394874">
 							<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
 							<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
 							<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
 						</Equipment>
 					</GeneratedBy>
 					<GeneratedBy>
-						<Equipment id="82394875">
+						<Equipment id="Equipments/82394875">
 							<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
 							<Identifier type="Institution assigned unique equipment identifier">2005:192834/11A</Identifier>
 							<Description xml:lang="en">The Cessna T207A operated by Freie Universität Berlin, Institut für Weltraumwissenschaften, for the EUFAR project</Description>
@@ -52,14 +52,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="729487" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729487" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
 					<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 					<Creators>
 						<Creator>
-							<Person id="21234512">
+							<Person id="Persons/21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -67,7 +67,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person id="21234513">
+							<Person id="Persons/21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -102,14 +102,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="729481" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729481" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
 					<DOI>10.5061/DRYAD.4GH6HF5G/1</DOI>
 					<Creators>
 						<Creator>
-							<Person id="21234512">
+							<Person id="Persons/21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -117,7 +117,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person id="21234513">
+							<Person id="Persons/21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -134,7 +134,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Keyword xml:lang="en">Northeast Queensland</Keyword>
 					<Keyword xml:lang="en">Lampropholis coggeri</Keyword>
 					<PartOf>
-						<Product id="729487">
+						<Product id="Products/729487">
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 							<VersionInfo xml:lang="en">1</VersionInfo>
@@ -151,14 +151,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="729482" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729482" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
 					<Name xml:lang="en">Base script used for simulations</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
 					<DOI>10.5061/DRYAD.4GH6HF5G/2</DOI>
 					<Creators>
 						<Creator>
-							<Person id="21234512">
+							<Person id="Persons/21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -166,7 +166,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person id="21234513">
+							<Person id="Persons/21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -183,7 +183,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Keyword xml:lang="en">Northeast Queensland</Keyword>
 					<Keyword xml:lang="en">Lampropholis coggeri</Keyword>
 					<PartOf>
-						<Product id="729487">
+						<Product id="Products/729487">
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 							<VersionInfo xml:lang="en">1</VersionInfo>
@@ -200,14 +200,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="729483" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729483" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
 					<DOI>10.5061/DRYAD.4GH6HF5G/3</DOI>
 					<Creators>
 						<Creator>
-							<Person id="21234512">
+							<Person id="Persons/21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
@@ -215,7 +215,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 						<Creator>
-							<Person id="21234513">
+							<Person id="Persons/21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
@@ -232,7 +232,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Keyword xml:lang="en">Northeast Queensland</Keyword>
 					<Keyword xml:lang="en">Lampropholis coggeri</Keyword>
 					<PartOf>
-						<Product id="729487">
+						<Product id="Products/729487">
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 							<VersionInfo xml:lang="en">1</VersionInfo>

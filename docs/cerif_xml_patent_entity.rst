@@ -46,6 +46,8 @@ VersionInfo
 
 RegistrationDate
 ^^^^^^^^^^^^^^^^
+:Deprecated: since v1.1.2
+:Description: Date on which the application was (physically) submitted to/received at the Patent Authority.
 :Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
 :CERIF: the ResultPatent.RegistrationDate attribute (`<https://w3id.org/cerif/model#ResultPatent.RegistrationDate>`_)
@@ -55,11 +57,12 @@ RegistrationDate
 
 ApprovalDate
 ^^^^^^^^^^^^
+:Deprecated: since v1.1.2
+:Description: Date on which the granted publication was made available to the public.
 :Use: optional (0..1)
 :Representation: XML element ``ApprovalDate``
 :CERIF: the ResultPatent.ApprovalDate attribute (`<https://w3id.org/cerif/model#ResultPatent.ApprovalDate>`_)
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
-
 
 
 CountryCode

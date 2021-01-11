@@ -31,6 +31,7 @@ We wish to acknowledge the following contributors and also those who provided fe
 - Andrea Bollini |ORCIDlogo| `https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
 - Laurent Rémy |ORCIDlogo| `https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
 - Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
+- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany + OpenAIRE)
 
 .. |ORCIDlogo| image:: _static/orcid_128x128.png
    :height: 10pt
@@ -40,16 +41,29 @@ We wish to acknowledge the following contributors and also those who provided fe
 **Contributors**
 
 - Wilko Steinhof, DANS, The Netherlands
-
+- Oliver Goldschmidt, Hamburg University of Technology, Germany
+- Petra Černohlávková, National Library of Technology, Czechia
+- Aenne Löhden, Bielefeld University, Germany 
 
 Versions
 ^^^^^^^^
+
+- 1.1.2-draft, October 2020
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 
 - 1.1.0, June 2018, `doi:10.5281/zenodo.1298650 <https://doi.org/10.5281/zenodo.1298650>`_
 
 - 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
+
+
+List of changes in the 1.1.2-draft version (since 1.1.1)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+1. Description of **ApprovalDate** and **RegistrationDate** are added and mark both as depracted. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
+2. Updating COAR vocabulary of access rights. (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
+3. Documentation for using OAI-PMH identifier was improved. (`#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_)
+4. Adding more examples. (`#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_)
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

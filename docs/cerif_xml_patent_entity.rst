@@ -46,22 +46,29 @@ VersionInfo
 
 RegistrationDate
 ^^^^^^^^^^^^^^^^
-:Description: Date on which the application was physically received at the Patent Authority. Application Date in the EPO document, also named Priority Date
+:Description: Date on which the application was physically received at the Patent Authority. Also named Filling Date
 :Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
-:CERIF: the ResultPatent.RegistrationDate attribute (`<https://w3id.org/cerif/model#ResultPatent.RegistrationDate>`_)
+:CERIF: the ResultPatent_Classification.startDate (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Filed>`_ semantics (direction :1)
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
-
 
 
 ApprovalDate
 ^^^^^^^^^^^^
-:Description: Date on which the application has been published. It appears in the EPODOC Publication field
+:Description: Date on which the application has been granted by the Patent Office.
 :Use: optional (0..1)
 :Representation: XML element ``ApprovalDate``
-:CERIF: the ResultPatent.ApprovalDate attribute (`<https://w3id.org/cerif/model#ResultPatent.ApprovalDate>`_)
+:CERIF: the ResultPatent_Classification.startDate (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Granted>`_ semantics (direction :1)
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
+
+PublicationDate
+^^^^^^^^^^^^
+:Description: Date of making available to the public by printing or similar process of a patent document on which grant has taken place on or before the said date
+:Use: optional (0..1)
+:Representation: XML element ``PublicationDate``
+:CERIF: the ResultPatent_Classification.startDate (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Published>`_ semantics (direction :1)
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 CountryCode
@@ -77,7 +84,7 @@ Issuer
 :Description: The issuer of the patent: the patent office
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Issuer`` with embedded XML element ``OrgUnit``. A ``DisplayName`` may be specified, too.
-:CERIF: the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentIssuer>`_ semantics
+:CERIF: the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https	://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentIssuer>`_ semantics
 
 
 PatentNumber

@@ -81,8 +81,8 @@
 										</PartOf>
  									</Funding>
 								</PartOf>
-                                				<Duration startDate="2018-01" endDate="2021-02" />
-                                				<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
+								<Duration startDate="2018-01" endDate="2021-02" />
+								<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
 							</Funding>
 						</As>
 					</Funded>
@@ -110,7 +110,7 @@
 						outreach activities with concrete pilots with three major RIs,citizen science initiatives, and innovators via a 
 						rigorous Open Innovation programme. Finally, viaits partnership with COAR, OpenAIRE-Advance consolidates OpenAIRE’s 
 						global roleextending its collaborations with Latin America, US, Japan, Canada, and Africa.</Abstract>
-                    			<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
+					<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
 				</Project>
 			</metadata>
 		</record>

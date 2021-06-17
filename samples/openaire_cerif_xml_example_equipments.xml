@@ -10,12 +10,12 @@
 	<ListRecords>
 		<record>
 			<header>
-				<identifier>oai:cris.example.org:Equipments/82394874</identifier>
+				<identifier>oai:cris.example.org:82394874</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_equipments</setSpec>
 			</header>
 			<metadata>
-				<Equipment xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Equipments/82394874">
+				<Equipment xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="82394874">
 					<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
 					<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
 					<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
@@ -32,12 +32,12 @@
 
 		<record>
 			<header>
-				<identifier>oai:cris.example.org:Equipments/82394875</identifier>
+				<identifier>oai:cris.example.org:82394875</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_equipments</setSpec>
 			</header>
 			<metadata>
-				<Equipment xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Equipments/82394875">
+				<Equipment xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="82394875">
 					<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
 					<Identifier type="Institution assigned unique equipment identifier">2005:192834/11A</Identifier>
 					<Description xml:lang="en">The Cessna T207A operated by Freie Universität Berlin, Institut für Weltraumwissenschaften, for the EUFAR project</Description>

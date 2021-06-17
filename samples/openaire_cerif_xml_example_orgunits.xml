@@ -127,14 +127,14 @@
 			</header>
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/350001">
-                    			<Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#University</Type>
+					<Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#University</Type>
 					<Acronym>UNIBI</Acronym>
 					<Name xml:lang="de">Universität Bielefeld</Name>
 					<Name xml:lang="en">Bielefeld University</Name>
+					<RORID>https://ror.org/02hpadn98</RORID>
+					<GRID>grid.7491.b</GRID>
 					<ElectronicAddress>http://www.uni-bielefeld.de</ElectronicAddress>
-					<ElectronicAddress>post@uni-bielefeld.de</ElectronicAddress>
-					<Identifier type="RORID">https://ror.org/02hpadn98</Identifier>
-					<Identifier type="GRID">grid.7491.b</Identifier>
+					<ElectronicAddress>mailto:post@uni-bielefeld.de</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>		

@@ -23,7 +23,7 @@
 						<OrgUnit id="OrgUnits/312346">
 							<Acronym>CNR</Acronym>
 							<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
-							<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
+							<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
 						</OrgUnit>
 					</Owner>
 				</Equipment>

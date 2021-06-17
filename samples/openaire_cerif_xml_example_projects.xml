@@ -133,14 +133,14 @@
 							<OrgUnit id="OrgUnits/312345">
 								<Acronym>NKUA</Acronym>
 								<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
-								<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
+								<Name xml:lang="en">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 							</OrgUnit>
 						</Coordinator>
 						<Partner>
 							<OrgUnit id="OrgUnits/312346">
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
-								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
+								<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
 							</OrgUnit>
 						</Partner>
 					</Consortium>
@@ -217,14 +217,14 @@
 							<OrgUnit id="OrgUnits/312345">
 								<Acronym>NKUA</Acronym>
 								<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
-								<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
+								<Name xml:lang="en">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 							</OrgUnit>
 						</Coordinator>
 						<Partner>
 							<OrgUnit id="OrgUnits/312346">
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
-								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
+								<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
 							</OrgUnit>
 						</Partner>
 					</Consortium>
@@ -299,7 +299,7 @@
 							<OrgUnit id="OrgUnits/312346">
 								<Acronym>CNR</Acronym>
 								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
-								<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
+								<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
 								<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 							</OrgUnit>
 						</Partner>

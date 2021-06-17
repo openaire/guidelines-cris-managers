@@ -10,6 +10,112 @@
 	<ListRecords>
 		<record>
 			<header>
+				<identifier>oai:cris.example.org:Projects/112348</identifier>
+				<datestamp>2021-06-17T09:56:00Z</datestamp>
+				<setSpec>openaire_cris_projects</setSpec>
+			</header>
+			<metadata>
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112348"><!-- OpenAIRE-Advance -->
+					<Acronym>OpenAIRE-Advance</Acronym>
+					<Title xml:lang="en">OpenAIRE Advancing Open Scholarship</Title>
+					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">777541</Identifier>
+					<Identifier type="">http://www.openaire.eu</Identifier><!-- FIXME -->
+					<StartDate>2018-01-01</StartDate>
+					<EndDate>2021-02-28</EndDate>
+					<Consortium>
+						<Coordinator>
+							<OrgUnit id="OrgUnits/312345">
+								<Acronym>NKUA</Acronym>
+								<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
+								<Name xml:lang="en">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
+							</OrgUnit>
+						</Coordinator>
+						<Partner>
+							<OrgUnit id="OrgUnits/312346">
+								<Acronym>CNR</Acronym>
+								<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
+								<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
+							</OrgUnit>
+						</Partner>
+						<Partner>
+							<OrgUnit id="OrgUnits/350001">
+								<Acronym>UNIBI</Acronym>
+								<Name xml:lang="de">Universität Bielefeld</Name>
+								<Name xml:lang="en">Bielefeld University</Name>
+							</OrgUnit>
+						</Partner>
+					</Consortium>
+					<Funded>
+						<By>
+							<OrgUnit id="OrgUnits/310001">
+								<Acronym>EC</Acronym>
+								<Name xml:lang="en">European Commission</Name>
+								<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
+							</OrgUnit>
+						</By>
+						<As>
+							<Funding id="Fundings/620005"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017s / OpenAIRE-Advance -->
+								<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
+								<Name xml:lang="en">H2020 funding for the OpenAIRE-Advance project</Name>
+								<PartOf>
+									<Funding id="Fundings/620004"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017 -->
+										<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Call</Type>
+										<Name xml:lang="en">H2020-EINFRA-2017</Name>
+										<PartOf>
+											<Funding id="Fundings/620003"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science  -->
+												<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+												<Name xml:lang="en">EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science</Name>
+												<PartOf>
+													<Funding id="Fundings/620002"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  -->
+														<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+														<Name xml:lang="en">H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures</Name>
+														<PartOf>
+															<Funding id="Fundings/620001"><!-- H2020 -->
+																<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+																<Acronym>H2020</Acronym>
+															</Funding>
+														</PartOf>
+													</Funding>
+												</PartOf>
+ 											</Funding>
+										</PartOf>
+ 									</Funding>
+								</PartOf>
+                                				<Duration startDate="2018-01" endDate="2021-02" />
+                                				<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
+							</Funding>
+						</As>
+					</Funded>
+					<Keyword xml:lang="en">open access</Keyword>
+					<Keyword xml:lang="en">scholarly communication</Keyword>
+					<Keyword xml:lang="en">research</Keyword>
+					<Keyword xml:lang="en">publications</Keyword>
+					<Keyword xml:lang="en">datasets</Keyword>
+					<Keyword xml:lang="en">openaire</Keyword>
+					<Keyword xml:lang="en">current research information systems</Keyword>
+					<Abstract xml:lang="en">OpenAIRE-Advance continues the mission of OpenAIRE to support the Open Access/Open Data mandatesinEurope. 
+						By sustaining the current successful infrastructure, comprised of a human network and robust technical services, 
+						it consolidates its achievements while working to shift the momentum among its communities to Open Science, aiming 
+						to be a trusted e-Infrastructurewithin the realms of the European Open Science Cloud.In this next phase, OpenAIRE-Advance 
+						strives to empower its National Open Access Desks (NOADs) so they become a pivotal part within their own national data 
+						infrastructures, positioningOA and open science onto national agendas. The capacity building activities bring 
+						together experts ontopical task groups in thematic areas(open policies, RDM, legal issues, TDM), promoting a train the 
+						trainer approach, strengthening and expanding the pan-European Helpdesk with support and training toolkits, training 
+						resources and workshops.It examines key elements of scholarly communication, i.e. co-operative OA publishing and next 
+						generation repositories, to develop essential building blocks of the scholarly commons.On the technical level OpenAIRE-Advance 
+						focuses on the operation and maintenance of the OpenAIRE technical TRL8/9 services,and radically improvesthe OpenAIRE 
+						services on offer by: a) optimizing their performance and scalability, b) refining their functionality based on end-user 
+						feedback, c) repackagingthem into products, taking a professional marketing approach  with well-defined KPIs, d) consolidating 
+						the range of services/products into a common e-Infra catalogue to enable a wider uptake.OpenAIRE-Advancesteps up its 
+						outreach activities with concrete pilots with three major RIs,citizen science initiatives, and innovators via a 
+						rigorous Open Innovation programme. Finally, viaits partnership with COAR, OpenAIRE-Advance consolidates OpenAIRE’s 
+						global roleextending its collaborations with Latin America, US, Japan, Canada, and Africa.</Abstract>
+                    			<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
+				</Project>
+			</metadata>
+		</record>
+		<record>
+			<header>
 				<identifier>oai:cris.example.org:Projects/112345</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_projects</setSpec>

@@ -77,25 +77,6 @@
 
 		<record>
 			<header>
-				<identifier>oai:cris.example.org:Persons/2123454</identifier>
-				<datestamp>2018-01-07T14:00:00Z</datestamp>
-				<setSpec>openaire_cris_persons</setSpec>
-			</header>
-			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123454">
-					<PersonName>
-						<FamilyNames>Mikulicic</FamilyNames>
-						<FirstNames>Marko</FirstNames>
-					</PersonName>
-					<ElectronicAddress>mailto:email@example4.org</ElectronicAddress>
-					<ElectronicAddress>tel:+390123456789</ElectronicAddress>
-					<ElectronicAddress>fax:+390123456781</ElectronicAddress>
-				</Person>
-			</metadata>
-		</record>
-
-		<record>
-			<header>
 				<identifier>oai:cris.example.org:Persons/2123455</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_persons</setSpec>

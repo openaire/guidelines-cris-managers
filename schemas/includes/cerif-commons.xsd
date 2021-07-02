@@ -78,7 +78,7 @@
 
 	<xs:complexType name="cfIdAttr__BaseType">
 		<xs:sequence/>
-		<xs:attribute name="id" type="cfId__SimpleType"/>
+		<xs:attribute name="id" type="cfId__SimpleType" use="optional"/>
 		<xs:attributeGroup ref="cfExtension__AttributeGroup"/>
 	</xs:complexType>
 

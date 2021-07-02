@@ -241,12 +241,12 @@
 						group on the Sustainable Structure aims at promoting solutions for the long term sustainability of EUFAR. Among the JRA, one will develop and characterize airborne hygrometers, the second one will develop and implement quality layers in the processing chains of hyperspectral imagery, and the third one will develop an airborne drop spectrometer based on a new principle.
 					</Abstract>
 					<Uses>
-						<Equipment id="Equipments/82394874">
+						<Equipment id="82394874">
 							<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
 						</Equipment>
 					</Uses>
 					<Uses>
-						<Equipment id="Equipments/82394875">
+						<Equipment id="82394875">
 							<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
 						</Equipment>
 					</Uses>

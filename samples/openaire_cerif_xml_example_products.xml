@@ -28,14 +28,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 						</Project>
 					</OriginatesFrom>
 					<GeneratedBy>
-						<Equipment id="Equipments/82394874">
+						<Equipment id="82394874">
 							<Name xml:lang="en">SkyArrow 650 TCNS operated by IBIMET CNR</Name>
 							<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
 							<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
 						</Equipment>
 					</GeneratedBy>
 					<GeneratedBy>
-						<Equipment id="Equipments/82394875">
+						<Equipment id="82394875">
 							<Name xml:lang="en">Cessna T207A operated by Freie Universität Berlin</Name>
 							<Identifier type="Institution assigned unique equipment identifier">2005:192834/11A</Identifier>
 							<Description xml:lang="en">The Cessna T207A operated by Freie Universität Berlin, Institut für Weltraumwissenschaften, for the EUFAR project</Description>

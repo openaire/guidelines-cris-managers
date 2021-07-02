@@ -40,8 +40,9 @@ Also intermediate cases are supported such as the case where the CRIS system doe
 However, it is recommended that CRIS managers keep managed authority lists everywhere where these are feasible.
 
 **Embedded entities**
-In some cases CRIS system doesn't maintains authority for entities that are linked by entities that are instead of primary interest of the institution and so completely managed. This is usually the case for the publication channel that is represented in CERIF as a ``Publication`` but could apply also to other entities such the ``Events``, ``Person``, ``Funding`` and each other.
-In these case, similary to what discussed in the Display names section above, the use of an embedded Entity without Internal Identifier is allowed. 
+In some cases the CRIS doesn't maintain authority over entities that are only of secondary interest for the institution and thus are not managed. 
+This is often the case for publication channels that are represented in CERIF as a ``Publication``, but could apply also to parts of other entities such as the ``Event``, ``Person``, ``Funding`` and others.
+In these cases, in analogy with the Display names section above, the use of an embedded entity without an internal identifier is allowed.
 
 .. rubric:: Footnotes
 

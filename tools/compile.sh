@@ -36,9 +36,3 @@ echo '==========================================================================
 echo '*  Running the Prototype OpenAIRE Validator                                    *'
 echo '================================================================================'
 ( cd ../openaire-cris-validator/ && mvn --no-transfer-progress clean package )
-
-echo
-echo '================================================================================'
-echo '*  Producing the HTML documentation                                            *'
-echo '================================================================================'
-( cd docs/ && make html )

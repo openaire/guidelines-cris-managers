@@ -3,7 +3,7 @@
 echo '================================================================================'
 echo '*  Compiling the CERIF-Model-Tools                                             *'
 echo '================================================================================'
-( cd ../CERIF-TG-Tools/CERIF-Model-Tools/ && mvn package )
+( cd ../CERIF-TG-Tools/CERIF-Model-Tools/ && mvn --no-transfer-progress package )
 
 echo
 echo '================================================================================'
@@ -28,14 +28,14 @@ mv docs/conf1.py docs/conf.py || \
 exit 1
 
 # run the maven script
-mvn -B clean package || \
+mvn -B --no-transfer-progress clean package || \
 exit 2
 
 echo
 echo '================================================================================'
 echo '*  Running the Prototype OpenAIRE Validator                                    *'
 echo '================================================================================'
-( cd ../openaire-cris-validator/ && mvn clean package )
+( cd ../openaire-cris-validator/ && mvn --no-transfer-progress clean package )
 
 echo
 echo '================================================================================'

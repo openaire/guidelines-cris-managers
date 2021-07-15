@@ -11,5 +11,9 @@ jobs:
         run: |
           git clone https://github.com/eurocris/CERIF-TG-Tools.git ../CERIF-TG-Tools
           git clone https://github.com/jdvorak001/openaire-cris-validator.git ../openaire-cris-validator
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: '8'
       - name: Run the Validation Script
         run: ./tools/compile.sh

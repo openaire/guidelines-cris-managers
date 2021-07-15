@@ -1,0 +1,15 @@
+name: Validate the schemas and examples
+on: push
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: validate
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Checkout Supporting Repos
+        run: |
+          git clone https://github.com/eurocris/CERIF-TG-Tools.git ../CERIF-TG-Tools
+          git clone https://github.com/jdvorak001/openaire-cris-validator.git ../openaire-cris-validator
+      - name: Run the Validation Script
+        run: ./tools/compile.sh

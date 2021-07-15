@@ -24,7 +24,7 @@ Accompanying artefacts
 ~~~~~~~~~~~~~~~~~~~~~~
 
 * XML Schema: `<schemas/openaire-cerif-profile.xsd>`_
-* Prototype validator: a project at `<https://github.com/jdvorak001/openaire-cris-validator#readme>`_
+* Prototype validator: a project at `<https://github.com/EuroCRIS/openaire-cris-validator#readme>`_
 * Examples: map at `<docs/_illustrations/OpenAIRE-examples-map.png>`_, files at `<samples/>`_
 
 

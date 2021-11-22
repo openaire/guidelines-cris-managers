@@ -11,7 +11,7 @@ Project
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1)
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the ProjectIdentifier attribute (`<https://w3id.org/cerif/model#Project.ProjectIdentifier>`_)
 
@@ -75,7 +75,7 @@ Consortium
 ^^^^^^^^^^
 :Description: The consortium of the project: the organisations (persons) who are contractually bound to do the work in the project
 :Use: optional (0..1)
-:Representation: XML element ``Consortium`` with unordered embedded XML elements ``Coordinator`` that can contain an embedded organisation unit or person or ``Partner`` that can contain an embedded organisation unit or person or ``Contractor`` that can contain an embedded organisation unit or person or ``InKindContributor`` that can contain an embedded organisation unit or person or ``Member`` that can contain an embedded organisation unit or person
+:Representation: XML element ``Consortium`` with unordered embedded XML elements ``Coordinator`` that can contain an embedded organisation unit or person or ``Partner`` that can contain an embedded organisation unit or person or ``Contractor`` that can contain an embedded organisation unit or person or ``InkindContributor`` that can contain an embedded organisation unit or person or ``Member`` that can contain an embedded organisation unit or person
 
 
 
@@ -103,12 +103,12 @@ Contractor
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Contractor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Contractor>`_ semantics
 
 
-InKindContributor
+InkindContributor
 -----------------
 :Description: Project in kind contributor
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``InKindContributor`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
-:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InKindContributor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#InKindContributor>`_ semantics
+:Representation: XML element ``InkindContributor`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
+:CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InkindContributor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#InkindContributor>`_ semantics
 
 
 Member

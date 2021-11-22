@@ -15,15 +15,17 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="812348"><!-- Linking Data and Publications: Towards a Cross-Disciplinary Approach -->
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/812348"><!-- Linking Data and Publications: Towards a Cross-Disciplinary Approach -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
                     <Language>en</Language>
 					<Title xml:lang="en">Linking Data and Publications: Towards a Cross-Disciplinary Approach</Title>
 					<PublishedIn>
-						<Publication id="894490"><!-- Int J Digital Curation -->
+						<Publication id="Publications/894490"><!-- Int J Digital Curation -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 							<Title xml:lang="en">The International Journal of Digital Curation</Title>
+							<NameAbbreviation xml:lang="en">IJDC</NameAbbreviation>
 							<ISSN>1746-8256</ISSN>
+							<ZDB-ID>2266735-0</ZDB-ID>
 						</Publication>
 					</PublishedIn>
 					<PublicationDate>2013-06-14</PublicationDate>
@@ -35,7 +37,7 @@
 					<Authors>
 						<Author>
 							<DisplayName>Maarten Hoogerwerf</DisplayName>
-							<Person id="2123455"><!-- Maarten Hoogerwerf -->
+							<Person id="Persons/2123455"><!-- Maarten Hoogerwerf -->
 								<PersonName>
 									<FamilyNames>Hoogerwerf</FamilyNames>
 									<FirstNames>Maarten</FirstNames>
@@ -44,7 +46,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Mathias Lösch</DisplayName>
-							<Person id="2123456"><!-- Mathias Lösch -->
+							<Person id="Persons/2123456"><!-- Mathias Lösch -->
 								<PersonName>
 									<FamilyNames>Lösch</FamilyNames>
 									<FirstNames>Mathias</FirstNames>
@@ -53,7 +55,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Jochen Schirrwagen</DisplayName>
-							<Person id="2123457"><!-- Jochen Schirrwagen -->
+							<Person id="Persons/2123457"><!-- Jochen Schirrwagen -->
 								<PersonName>
 									<FamilyNames>Schirrwagen</FamilyNames>
 									<FirstNames>Jochen</FirstNames>
@@ -62,7 +64,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Sarah Callaghan</DisplayName>
-							<Person id="2123458"><!-- Sarah Callaghan -->
+							<Person id="Persons/2123458"><!-- Sarah Callaghan -->
 								<PersonName>
 									<FamilyNames>Callaghan</FamilyNames>
 									<FirstNames>Sarah</FirstNames>
@@ -71,7 +73,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Paolo Manghi</DisplayName>
-							<Person id="2123452"><!-- Paolo Manghi -->
+							<Person id="Persons/2123452"><!-- Paolo Manghi -->
 								<PersonName>
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
@@ -81,7 +83,7 @@
 						</Author>
 						<Author>	
 							<DisplayName>Katerina Iatropoulou</DisplayName>
-							<Person id="2123459"><!-- Katerina Iatropoulou -->
+							<Person id="Persons/2123459"><!-- Katerina Iatropoulou -->
 								<PersonName>
 									<FamilyNames>Iatropoulou</FamilyNames>
 									<FirstNames>Katerina</FirstNames>
@@ -90,7 +92,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Dimitra Keramida</DisplayName>
-							<Person id="21234510"><!-- Dimitra Keramida -->
+							<Person id="Persons/21234510"><!-- Dimitra Keramida -->
 								<PersonName>
 									<FamilyNames>Keramida</FamilyNames>
 									<FirstNames>Dimitra</FirstNames>
@@ -99,7 +101,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Najla Rettberg</DisplayName>
-							<Person id="21234511"><!-- Najla Rettberg -->
+							<Person id="Persons/21234511"><!-- Najla Rettberg -->
 								<PersonName>
 									<FamilyNames>Rettberg</FamilyNames>
 									<FirstNames>Najla</FirstNames>
@@ -117,7 +119,7 @@
 						of their contents themselves.</Abstract>
 
 					<OriginatesFrom>
-						<Project id="112345"><!-- OpenAIREplus -->
+						<Project id="Projects/112345"><!-- OpenAIREplus -->
 							<Acronym>OpenAIREplus</Acronym>
 							<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
@@ -125,14 +127,14 @@
 							<EndDate>2014-05-31</EndDate>
 							<Funded>
 								<By>
-									<OrgUnit id="310001">
+									<OrgUnit id="OrgUnits/310001">
 										<Acronym>EC</Acronym>
 										<Name xml:lang="en">European Commission</Name>
-										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+										<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 									</OrgUnit>
 								</By>
 								<As>
-									<Funding id="612352"/><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+									<Funding id="Fundings/612352"/><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
 								</As>
 							</Funded>
 						</Project>
@@ -150,10 +152,12 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894490"><!-- Int J Digital Curation -->
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/894490"><!-- Int J Digital Curation -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation</Title>
+					<NameAbbreviation xml:lang="en">IJDC</NameAbbreviation>
 					<ISSN>1746-8256</ISSN>
+					<ZDB-ID>2266735-0</ZDB-ID>
 					<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_14cb<!-- metadata only access --></Access>
 				</Publication>
 			</metadata>
@@ -166,11 +170,11 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="894491">
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/894491">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_3e5a<!-- contribution to journal --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
-						<Publication id="894490"><!-- Int J Digital Curation -->
+						<Publication id="Publications/894490"><!-- Int J Digital Curation -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 							<Title xml:lang="en">The International Journal of Digital Curation</Title>
 							<ISSN>1746-8256</ISSN>
@@ -178,7 +182,7 @@
 					</PublishedIn>
 					<Editors>
 						<Editor>
-							<Person id="2123452"><!-- Paolo Manghi -->
+							<Person id="Persons/2123452"><!-- Paolo Manghi -->
 								<PersonName>
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
@@ -188,7 +192,7 @@
 						</Editor>
 					</Editors>
 					<OriginatesFrom>
-						<Project id="112345"><!-- OpenAIREplus -->
+						<Project id="Projects/112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 	                        	<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
@@ -196,14 +200,14 @@
     		                    	<EndDate>2014-05-31</EndDate>
 							<Funded>
 								<By>
-									<OrgUnit id="310001">
+									<OrgUnit id="OrgUnits/310001">
 										<Acronym>EC</Acronym>
 							            <Name xml:lang="en">European Commission</Name>
-										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-			                			</OrgUnit>
+										<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
+			                		</OrgUnit>
 								</By>
 								<As>
-									<Funding id="612352"/><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+									<Funding id="Fundings/612352"/><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
 								</As>
 							</Funded>
     						</Project>
@@ -218,12 +222,12 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="4123451">
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/4123451">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_5794<!-- conference paper --></Type>
                     <Language>en</Language>
 					<Title xml:lang="en">The Data Model of the OpenAIRE Scientific Communication e-Infrastructure</Title>
 					<PublishedIn>
-						<Publication id="895501">
+						<Publication id="Publications/895501">
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_f744</Type><!-- conference proceedings -->
 							<Title xml:lang="en">Metadata and Semantics Research</Title>
 							<Subtitle xml:lang="en">6th Research Conference, MTSR 2012, Cádiz, Spain, November 28-30, 2012. Proceedings</Subtitle>
@@ -232,7 +236,7 @@
 							<ISBN medium="http://issn.org/vocabularies/Medium#Online">978-3-642-35233-1</ISBN>
  							<Publishers>
 								<Publisher>
-									<OrgUnit id="301250">
+									<OrgUnit id="OrgUnits/301250">
 										<Name xml:lang="en">Springer</Name>
 									</OrgUnit>
 								</Publisher>
@@ -243,7 +247,7 @@
 							<Keyword xml:lang="en">linked open data</Keyword>
 							<Keyword xml:lang="en">scholarly publications</Keyword>
 							<OutputFrom>
-								<Event id="583475">
+								<Event id="Events/583475">
 									<Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
 									<Acronym>MTSR 2012</Acronym>
 									<Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>
@@ -259,7 +263,7 @@
 					<Authors>
 						<Author>
 							<DisplayName>Paolo Manghi</DisplayName>
-							<Person id="2123452"><!-- Paolo Manghi -->
+							<Person id="Persons/2123452"><!-- Paolo Manghi -->
 								<PersonName>
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
@@ -267,14 +271,14 @@
 								<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
 							</Person>
 							<Affiliation>
-								<OrgUnit id="312346"><!-- CNR -->
+								<OrgUnit id="OrgUnits/312346"><!-- CNR -->
 									<Acronym>CNR</Acronym>
 								</OrgUnit>
 							</Affiliation>
 						</Author>
 						<Author>
 							<DisplayName>Nikos Houssos</DisplayName>
-							<Person id="2123451"><!-- Nikos Houssos -->
+							<Person id="Persons/2123451"><!-- Nikos Houssos -->
 								<PersonName>
 									<FamilyNames>Houssos</FamilyNames>
 									<FirstNames>Nikos</FirstNames>
@@ -282,14 +286,14 @@
 								<ORCID>https://orcid.org/0000-0002-5277-285X</ORCID>
 							</Person>
 							<Affiliation>
-								<OrgUnit id="312347"><!-- EKT -->
+								<OrgUnit id="OrgUnits/312347"><!-- EKT -->
 									<Acronym>EKT</Acronym>
 								</OrgUnit>
 							</Affiliation>
 						</Author>
 						<Author>
 							<DisplayName>Marko Mikulicic</DisplayName>
-							<Person id="2123454"><!-- Marko Mikulicic -->
+							<Person>
 								<PersonName>
 									<FamilyNames>Mikulicic</FamilyNames>
 									<FirstNames>Marko</FirstNames>
@@ -298,7 +302,7 @@
 						</Author>
 						<Author>
 							<DisplayName>Brigitte Jörg</DisplayName>
-							<Person id="2123453"><!-- Brigitte Jörg -->
+							<Person id="Persons/2123453"><!-- Brigitte Jörg -->
 								<PersonName>
 									<FamilyNames>Jörg</FamilyNames>
 									<FirstNames>Brigitte</FirstNames>
@@ -306,7 +310,7 @@
 								<ORCID>https://orcid.org/0000-0001-7941-8108</ORCID>
 							</Person>
 							<Affiliation>
-								<OrgUnit id="312348"><!-- UKOLN -->
+								<OrgUnit id="OrgUnits/312348"><!-- UKOLN -->
 									<Acronym>UKOLN</Acronym>
 								</OrgUnit>
 							</Affiliation>
@@ -325,7 +329,7 @@
 						and relationships required to represent information capable of meeting them.</Abstract>
 
 					<OriginatesFrom>
-						<Project id="112345"><!-- OpenAIREplus -->
+						<Project id="Projects/112345"><!-- OpenAIREplus -->
 							<Acronym>OpenAIREplus</Acronym>
 							<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
@@ -333,14 +337,14 @@
 							<EndDate>2014-05-31</EndDate>
 							<Funded>
 								<By>
-									<OrgUnit id="310001">
+									<OrgUnit id="OrgUnits/310001">
 										<Acronym>EC</Acronym>
 										<Name xml:lang="en">European Commission</Name>
-										<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+										<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 									</OrgUnit>
 								</By>
 								<As>
-									<Funding id="612352" /><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+									<Funding id="Fundings/612352" /><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
 								</As>
 							</Funded>
 						</Project>
@@ -355,17 +359,17 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="852734">
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/852734">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_6501<!-- journal article --></Type>
 					<Title xml:lang="en">Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Title>
 					<PublishedIn>
-						<Publication id="893204"><!-- Evolution -->
+						<Publication id="Publications/893204"><!-- Evolution -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 							<Title xml:lang="en">Evolution</Title>
 							<ISSN>1558-5646</ISSN>
 							<Publishers>
 								<Publisher>
-									<OrgUnit id="301253">
+									<OrgUnit id="OrgUnits/301253">
 										<Name xml:lang="en">Society for the Study of Evolution</Name>
 									</OrgUnit>
 								</Publisher>
@@ -380,27 +384,27 @@
 					<Authors>
 						<Author>
 							<DisplayName>Sonal Singhal</DisplayName>
-							<Person id="21234512">
+							<Person id="Persons/21234512">
 								<PersonName>
 									<FamilyNames>Singhal</FamilyNames>
 									<FirstNames>Sonal</FirstNames>
 								</PersonName>
 							</Person>
 							<Affiliation>
-								<OrgUnit id="301248">
+								<OrgUnit id="OrgUnits/301248">
 									<Name xml:lang="en">Museum of Vertebrate Zoology</Name>
 									<PartOf>
-										<OrgUnit id="329384">
+										<OrgUnit id="OrgUnits/329384">
 											<Name xml:lang="en">University of California, Berkeley</Name>
 										</OrgUnit>
 									</PartOf>
 								</OrgUnit>
 							</Affiliation>
 							<Affiliation>
-								<OrgUnit id="301249">
+								<OrgUnit id="OrgUnits/301249">
 									<Name xml:lang="en">Department of Integrative Biology</Name>
 									<PartOf>
-										<OrgUnit id="329384">
+										<OrgUnit id="OrgUnits/329384">
 											<Name xml:lang="en">University of California, Berkeley</Name>
 										</OrgUnit>
 									</PartOf>
@@ -409,27 +413,27 @@
 						</Author>
 						<Author>
 							<DisplayName>Craig Moritz</DisplayName>
-							<Person id="21234513">
+							<Person id="Persons/21234513">
 								<PersonName>
 									<FamilyNames>Moritz</FamilyNames>
 									<FirstNames>Craig</FirstNames>
 								</PersonName>
 							</Person>
 							<Affiliation>
-								<OrgUnit id="301248">
+								<OrgUnit id="OrgUnits/301248">
 									<Name xml:lang="en">Museum of Vertebrate Zoology</Name>
 									<PartOf>
-										<OrgUnit id="329384">
+										<OrgUnit id="OrgUnits/329384">
 											<Name xml:lang="en">University of California, Berkeley</Name>
 										</OrgUnit>
 									</PartOf>
 								</OrgUnit>
 							</Affiliation>
 							<Affiliation>
-								<OrgUnit id="301249">
+								<OrgUnit id="OrgUnits/301249">
 									<Name xml:lang="en">Department of Integrative Biology</Name>
 									<PartOf>
-										<OrgUnit id="329384">
+										<OrgUnit id="OrgUnits/329384">
 											<Name xml:lang="en">University of California, Berkeley</Name>
 										</OrgUnit>
 									</PartOf>
@@ -455,7 +459,7 @@
 						can evolve substantial reproductive isolation without concomitant morphological diversification, suggesting that such lineages
 						can constitute a significant component of evolutionary diversity.</Abstract>
 					<References>
-						<Product id="729487">
+						<Product id="Products/729487">
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 							<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 							<VersionInfo xml:lang="en">1</VersionInfo>
@@ -473,13 +477,13 @@
 				<setSpec>openaire_cris_publications</setSpec>
 			</header>
 			<metadata>
-				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="893204">
+				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/893204">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_0640<!-- journal --></Type>
 					<Title xml:lang="en">Evolution</Title>
 					<ISSN>1558-5646</ISSN>
 					<Publishers>
 						<Publisher>
-							<OrgUnit id="301253">
+							<OrgUnit id="OrgUnits/301253">
 								<Name xml:lang="en">Society for the Study of Evolution</Name>
 							</OrgUnit>
 						</Publisher>
@@ -494,7 +498,7 @@
                 <setSpec>openaire_cris_publications</setSpec>
             </header>
             <metadata>
-                <Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="895501">
+                <Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/895501">
                     <Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_f744</Type><!-- conference proceedings -->
                     <Title xml:lang="en">Metadata and Semantics Research</Title>
                     <Subtitle xml:lang="en">6th Research Conference, MTSR 2012, Cádiz, Spain, November 28-30, 2012. Proceedings</Subtitle>
@@ -504,7 +508,7 @@
                     <Publishers>
                         <Publisher>
                         	<DisplayName>Springer, Berlin, Heidelberg</DisplayName>
-                            <OrgUnit id="301250">
+                            <OrgUnit id="OrgUnits/301250">
                                 <Name xml:lang="en">Springer</Name>
                             </OrgUnit>
                         </Publisher>
@@ -515,7 +519,7 @@
                     <Keyword xml:lang="en">linked open data</Keyword>
                     <Keyword xml:lang="en">scholarly publications</Keyword>
                     <OutputFrom>
-                        <Event id="583475">
+                        <Event id="Events/583475">
                             <Type scheme="https://w3id.org/cerif/vocab/EventTypes">https://w3id.org/cerif/vocab/EventTypes#Conference</Type>
                             <Acronym>MTSR 2012</Acronym>
                             <Name xml:lang="en">6th Research Conference on Metadata and Semantics Research</Name>

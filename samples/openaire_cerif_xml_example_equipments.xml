@@ -10,7 +10,7 @@
 	<ListRecords>
 		<record>
 			<header>
-				<identifier>oai:cris.example.org:Equipments/82394874</identifier>
+				<identifier>oai:cris.example.org:82394874</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_equipments</setSpec>
 			</header>
@@ -20,7 +20,7 @@
 					<Identifier type="Institution assigned unique equipment identifier">982340-29481/1999</Identifier>
 					<Description xml:lang="en">The SkyArrow 650 TCNS operated by IBIMET (CNR - Institute of Biometeorology) for the EUFAR project</Description>
 					<Owner>
-						<OrgUnit id="312346">
+						<OrgUnit id="OrgUnits/312346">
 							<Acronym>CNR</Acronym>
 							<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 							<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
@@ -32,7 +32,7 @@
 
 		<record>
 			<header>
-				<identifier>oai:cris.example.org:Equipments/82394875</identifier>
+				<identifier>oai:cris.example.org:82394875</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_equipments</setSpec>
 			</header>

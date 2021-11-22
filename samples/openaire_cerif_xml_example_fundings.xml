@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_funding</setSpec>
 			</header>
 			<metadata>
-				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="612345"><!-- FP7 -->
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/612345"><!-- FP7 -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 					<Acronym>FP7</Acronym>
 					<Name xml:lang="en">Seventh Framework Programme</Name>
@@ -27,10 +27,10 @@
 					<Keyword xml:lang="en">European Union</Keyword>
 					<Keyword xml:lang="en">Framework Programme</Keyword>
 					<Funder>
-						<OrgUnit id="310001">
+						<OrgUnit id="OrgUnits/310001">
 							<Acronym>EC</Acronym>
 							<Name xml:lang="en">European Commission</Name>
-							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+							<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 						</OrgUnit>
 					</Funder>
 					<Duration startDate="2007-01-01" endDate="2013-12-31" />
@@ -45,7 +45,7 @@
 				<setSpec>openaire_cris_funding</setSpec>
 			</header>
 			<metadata>
-				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="612346"><!-- FP7 / Capacities -->
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/612346"><!-- FP7 / Capacities -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 					<Name xml:lang="en">Capacities</Name>
 					<Amount currency="EUR">40970000000</Amount>
@@ -54,14 +54,14 @@
 					<Keyword xml:lang="en">Research capacities</Keyword>
 					<Keyword xml:lang="en">Innovation capacities</Keyword>
 					<Funder>
-						<OrgUnit id="310001">
+						<OrgUnit id="OrgUnits/310001">
 							<Acronym>EC</Acronym>
 							<Name xml:lang="en">European Commission</Name>
-							<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+							<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
 						</OrgUnit>
 					</Funder>
 					<PartOf>
-						<Funding id="612345"><!-- FP7 -->
+						<Funding id="Fundings/612345"><!-- FP7 -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 							<Acronym>FP7</Acronym>
 						</Funding>
@@ -78,7 +78,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 					<Name xml:lang="en">Research infrastructures</Name>
 					<Amount currency="EUR">1715000000</Amount>
@@ -86,11 +86,11 @@
 						strengthen its base of knowledge and technological know how.</Description>
 					<Keyword xml:lang="en">Research infrastructures</Keyword>
 					<PartOf>
-						<Funding id="612346"><!-- FP7 / Capacities -->
+						<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 							<Name xml:lang="en">Capacities</Name>
 							<PartOf>
-								<Funding id="612345"><!-- FP7 -->
+								<Funding id="Fundings/612345"><!-- FP7 -->
 									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 									<Acronym>FP7</Acronym>
 								</Funding>
@@ -111,19 +111,19 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="612351"><!-- FP7 / Capacities / Research Infrastructures / OpenAIRE -->
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/612351"><!-- FP7 / Capacities / Research Infrastructures / OpenAIRE -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 					<Name xml:lang="en">FP7 funding for the OpenAIRE project</Name>
 					<PartOf>
-						<Funding id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+						<Funding id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 							<Name xml:lang="en">Research infrastructures</Name>
 							<PartOf>
-								<Funding id="612346"><!-- FP7 / Capacities -->
+								<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 									<Name xml:lang="en">Capacities</Name>
 									<PartOf>
-										<Funding id="612345"><!-- FP7 -->
+										<Funding id="Fundings/612345"><!-- FP7 -->
 											<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 											<Acronym>FP7</Acronym>
 										</Funding>
@@ -145,19 +145,19 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="612352"><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/612352"><!-- FP7 / Capacities / Research Infrastructures / OpenAIREplus -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 					<Name xml:lang="en">FP7 funding for the OpenAIREplus project</Name>
 					<PartOf>
-						<Funding id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+						<Funding id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 							<Name xml:lang="en">Research infrastructures</Name>
 							<PartOf>
-								<Funding id="612346"><!-- FP7 / Capacities -->
+								<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 									<Name xml:lang="en">Capacities</Name>
 									<PartOf>
-										<Funding id="612345"><!-- FP7 -->
+										<Funding id="Fundings/612345"><!-- FP7 -->
 											<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 											<Acronym>FP7</Acronym>
 										</Funding>
@@ -179,19 +179,19 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="612353"><!-- FP7 / Capacities / Research Infrastructures / EUFAR -->
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/612353"><!-- FP7 / Capacities / Research Infrastructures / EUFAR -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 					<Name xml:lang="en">FP7 funding for the EUFAR project</Name>
 					<PartOf>
-						<Funding id="612347"><!-- FP7 / Capacities / Research Infrastructures -->
+						<Funding id="Fundings/612347"><!-- FP7 / Capacities / Research Infrastructures -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 							<Name xml:lang="en">Research infrastructures</Name>
 							<PartOf>
-								<Funding id="612346"><!-- FP7 / Capacities -->
+								<Funding id="Fundings/612346"><!-- FP7 / Capacities -->
 									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 									<Name xml:lang="en">Capacities</Name>
 									<PartOf>
-										<Funding id="612345"><!-- FP7 -->
+										<Funding id="Fundings/612345"><!-- FP7 -->
 											<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
 											<Acronym>FP7</Acronym>
 										</Funding>

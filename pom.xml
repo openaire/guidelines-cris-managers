@@ -43,6 +43,7 @@
                                 <exclude>**/*.xslt</exclude>
 								<exclude>scripts/*</exclude>
 								<exclude>cached/*</exclude>
+								<exclude>**/00-preparations/**/*</exclude>
 							</excludes>
 						</validationSet>
 					</validationSets>

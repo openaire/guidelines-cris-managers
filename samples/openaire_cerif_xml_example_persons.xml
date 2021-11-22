@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123451">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123451">
 					<PersonName>
 						<FamilyNames>Houssos</FamilyNames>
 						<FirstNames>Nikos</FirstNames>
@@ -27,7 +27,7 @@
 					<ElectronicAddress>tel:+301234567890</ElectronicAddress>
 					<ElectronicAddress>fax:+301234567891</ElectronicAddress>
 					<Affiliation>
-						<OrgUnit id="312347">
+						<OrgUnit id="OrgUnits/312347">
 							<Acronym>EKT</Acronym>
 						</OrgUnit>
 					</Affiliation>
@@ -42,7 +42,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123452">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123452">
 					<PersonName>
 						<FamilyNames>Manghi</FamilyNames>
 						<FirstNames>Paolo</FirstNames>
@@ -62,7 +62,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123453">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123453">
 					<PersonName>
 						<FamilyNames>Jörg</FamilyNames>
 						<FirstNames>Brigitte</FirstNames>
@@ -77,31 +77,12 @@
 
 		<record>
 			<header>
-				<identifier>oai:cris.example.org:Persons/2123454</identifier>
-				<datestamp>2018-01-07T14:00:00Z</datestamp>
-				<setSpec>openaire_cris_persons</setSpec>
-			</header>
-			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123454">
-					<PersonName>
-						<FamilyNames>Mikulicic</FamilyNames>
-						<FirstNames>Marko</FirstNames>
-					</PersonName>
-					<ElectronicAddress>mailto:email@example4.org</ElectronicAddress>
-					<ElectronicAddress>tel:+390123456789</ElectronicAddress>
-					<ElectronicAddress>fax:+390123456781</ElectronicAddress>
-				</Person>
-			</metadata>
-		</record>
-
-		<record>
-			<header>
 				<identifier>oai:cris.example.org:Persons/2123455</identifier>
 				<datestamp>2018-01-07T14:00:00Z</datestamp>
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123455">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123455">
 					<PersonName>
 						<FamilyNames>Hoogerwerf</FamilyNames>
 						<FirstNames>Maarten</FirstNames>
@@ -121,7 +102,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123456">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123456">
 					<PersonName>
 						<FamilyNames>Lösch</FamilyNames>
 						<FirstNames>Mathias</FirstNames>
@@ -137,7 +118,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123457">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123457">
 					<PersonName>
 						<FamilyNames>Schirrwagen</FamilyNames>
 						<FirstNames>Jochen</FirstNames>
@@ -155,7 +136,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123458">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123458">
 					<PersonName>
 						<FamilyNames>Callaghan</FamilyNames>
 						<FirstNames>Sarah</FirstNames>
@@ -172,7 +153,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2123459">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123459">
 					<PersonName>
 						<FamilyNames>Iatropoulou</FamilyNames>
 						<FirstNames>Katerina</FirstNames>
@@ -188,7 +169,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="21234510">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/21234510">
 					<PersonName>
 						<FamilyNames>Keramida</FamilyNames>
 						<FirstNames>Dimitra</FirstNames>
@@ -204,7 +185,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="21234511">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/21234511">
 					<PersonName>
 						<FamilyNames>Rettberg</FamilyNames>
 						<FirstNames>Najla</FirstNames>
@@ -220,7 +201,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="21234512">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/21234512">
 					<PersonName>
 						<FamilyNames>Singhal</FamilyNames>
 						<FirstNames>Sonal</FirstNames>
@@ -236,7 +217,7 @@
 				<setSpec>openaire_cris_persons</setSpec>
 			</header>
 			<metadata>
-				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="21234513">
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/21234513">
 					<PersonName>
 						<FamilyNames>Moritz</FamilyNames>
 						<FirstNames>Craig</FirstNames>
@@ -252,7 +233,7 @@
                 <setSpec>openaire_cris_persons</setSpec>
             </header>
             <metadata>
-                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018964">
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2018964">
                     <PersonName>
                         <FamilyNames>Mazzucco</FamilyNames>
                         <FirstNames>Laura</FirstNames>
@@ -268,7 +249,7 @@
                 <setSpec>openaire_cris_persons</setSpec>
             </header>
             <metadata>
-                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018965">
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2018965">
                     <PersonName>
                         <FamilyNames>Bertoni</FamilyNames>
                         <FirstNames>Marco</FirstNames>
@@ -284,7 +265,7 @@
                 <setSpec>openaire_cris_persons</setSpec>
             </header>
             <metadata>
-                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018966">
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2018966">
                     <PersonName>
                         <FamilyNames>Pizzi</FamilyNames>
                         <FirstNames>Marco</FirstNames>
@@ -300,7 +281,7 @@
                 <setSpec>openaire_cris_persons</setSpec>
             </header>
             <metadata>
-                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="2018967">
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2018967">
                     <PersonName>
                         <FamilyNames>Zanin</FamilyNames>
                         <FirstNames>Massimo</FirstNames>

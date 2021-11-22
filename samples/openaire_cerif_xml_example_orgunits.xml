@@ -15,12 +15,12 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="312345">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/312345">
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#HigherEducation</Type>
 					<Acronym>NKUA</Acronym>
 					<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
 					<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
-					<Identifier type="">http://www.uoa.gr</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.uoa.gr</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -31,12 +31,12 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="312346">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/312346">
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#ResearchInstitute</Type>
 					<Acronym>CNR</Acronym>
 					<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
 					<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
-					<Identifier type="">http://www.cnr.it</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -47,11 +47,11 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="312347">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/312347">
 					<Acronym>EKT</Acronym>
 					<Name xml:lang="en" trans="h">National Documentation Centre</Name>
 					<Name xml:lang="el">Εθνικό Κέντρο Τεκμηρίωσης</Name>
-					<Identifier type="">http://www.ekt.gr</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.ekt.gr</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -62,10 +62,10 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="312348">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/312348">
 					<Acronym>UKOLN</Acronym>
 					<Name xml:lang="en">UKOLN</Name>
-					<Identifier type="">http://www.ukoln.ac.uk</Identifier><!-- FIXME -->
+					<ElectronicAddress>http://www.ukoln.ac.uk</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -76,7 +76,7 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="310001">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/310001">
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Intergovernmental</Type>
 					<Acronym>EC</Acronym>
 		            <Name xml:lang="en">European Commission</Name>
@@ -102,8 +102,8 @@
 		            <Name xml:lang="fi">Euroopan komissio</Name>
 		            <Name xml:lang="sv">Europeiska kommissionen</Name>
 		            <Name xml:lang="hr">Europska komisija</Name>
-					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
-					<Identifier type="">https://europa.eu/</Identifier><!-- FIXME -->
+					<FundRefID>https://doi.org/10.13039/501100000780</FundRefID>
+					<ElectronicAddress>https://europa.eu/</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
 		</record>
@@ -114,7 +114,7 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="329384">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/329384">
 					<Name xml:lang="en">University of California, Berkeley</Name>
 				</OrgUnit>
 			</metadata>
@@ -126,10 +126,10 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301248">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/301248">
 					<Name xml:lang="en">Museum of Vertebrate Zoology</Name>
 					<PartOf>
-						<OrgUnit id="329384">
+						<OrgUnit id="OrgUnits/329384">
 							<Name xml:lang="en">University of California, Berkeley</Name>
 						</OrgUnit>
 					</PartOf>
@@ -143,10 +143,10 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301249">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/301249">
 					<Name xml:lang="en">Department of Integrative Biology</Name>
 					<PartOf>
-						<OrgUnit id="329384">
+						<OrgUnit id="OrgUnits/329384">
 							<Name xml:lang="en">University of California, Berkeley</Name>
 						</OrgUnit>
 					</PartOf>
@@ -160,7 +160,7 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301250">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/301250">
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#Commercial</Type>
 					<Name xml:lang="en">Springer</Name>
 				</OrgUnit>
@@ -173,7 +173,7 @@
 				<setSpec>openaire_cris_orgunits</setSpec>
 			</header>
 			<metadata>
-				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="301253">
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/301253">
 					<Name xml:lang="en">Society for the Study of Evolution</Name>
 				</OrgUnit>
 			</metadata>
@@ -185,7 +185,7 @@
                 <setSpec>openaire_cris_orgunits</setSpec>
             </header>
             <metadata>
-                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="330001">
+                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/330001">
                     <Name xml:lang="en">European Patent Office</Name>
                     <Name xml:lang="fr">Office européen des brevets</Name>
                     <Name xml:lang="de">Europäisches Patentamt</Name>
@@ -199,7 +199,7 @@
                 <setSpec>openaire_cris_orgunits</setSpec>
             </header>
             <metadata>
-                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="341234">
+                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/341234">
                     <Name xml:lang="en">Eltek S.P.A</Name>
                 </OrgUnit>
             </metadata>

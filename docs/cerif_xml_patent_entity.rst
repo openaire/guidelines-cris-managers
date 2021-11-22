@@ -22,11 +22,16 @@ Type
 :Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types>`_
 :CERIF: the ResultPatent_Classification (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_)
-:Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).
+:Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/, the term 'patent' only).
 
   * **patent** (`<http://purl.org/coar/resource_type/c_15cd>`_): A patent or patent application.
 
-
+    * **PCT application** (`<http://purl.org/coar/resource_type/SB3Y-W4EH>`_): A patent application filed through the WIPO-administered Patent Cooperation Treaty (PCT), also known as an international application.
+    * **design patent** (`<http://purl.org/coar/resource_type/C53B-JCY5>`_): A patent granted to any person who has invented any new and non-obvious ornamental design for an article of manufacture. The design patent protects only the appearance of an article, but not its structural or functional features.
+    * **plant patent** (`<http://purl.org/coar/resource_type/Z907-YMBB>`_): A patent granted to anyone who has invented or discovered and asexually reproduced any distinct and new variety of plant, including cultivated sports, mutants, hybrids, and newly found seedlings, other than a tuber-propagated plant or a plant found in an uncultivated state.
+    * **plant variety protection** (`<http://purl.org/coar/resource_type/GPQ7-G5VE>`_): Plant variety protection, also called a "plant breeder's right" (PBR), is a form of intellectual property right granted to the breeder of a new plant variety . According to this right, certain acts concerning the exploitation of the protected variety require the prior authorization of the breeder. Plant variety protection is an independent sui generis form of protection, tailored to protect new plant varieties and has certain features in common with other intellectual property rights.
+    * **software patent** (`<http://purl.org/coar/resource_type/MW8G-3CR8>`_): In order to obtain a patent, a software invention must not fall under other non-patentable subject matter (for example, abstract ideas or mathematical theories) and has to fulfill the other substantive patentability criteria (for example, novelty, inventive step \[non-obviousness\] and industrial applicability [usefulness]).
+    * **utility model** (`<http://purl.org/coar/resource_type/9DKX-KSAF>`_): A special form of patent right granted by a state or jurisdiction to an inventor or the inventor’s assignee for a fixed period of time. The terms and conditions for granting a utility model are slightly different from those for normal patents (including a shorter term of protection and less stringent patentability requirements). The term can also describe what are known in certain countries as “petty patents,” “short-term patents” or “innovation patents.”.
 
 Title
 ^^^^^

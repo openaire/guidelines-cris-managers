@@ -14,7 +14,7 @@ Internal Identifier
 :Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the ResultPublicationIdentifier attribute (`<https://w3id.org/cerif/model#ResultPublication.ResultPublicationIdentifier>`_)
-
+  
 
 Type
 ^^^^
@@ -22,7 +22,7 @@ Type
 :Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types>`_
 :CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
-:Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').
+:Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent').
 
   * **text** (`<http://purl.org/coar/resource_type/c_18cf>`_): A resource consisting primarily of words for reading. Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text.
 
@@ -31,20 +31,25 @@ Type
     * **book** (`<http://purl.org/coar/resource_type/c_2f33>`_): A non-serial publication that is complete in one volume or a designated finite number of volumes. (adapted from CiTO; EPrint Type vocabulary)
 
       * **book part** (`<http://purl.org/coar/resource_type/c_3248>`_): A defined chapter or section of a book, usually with a separate title or number.
-    * **conference object** (`<http://purl.org/coar/resource_type/c_c94f>`_): All kind of digital resources contributed to a conference, like conference presentation (slides), conference report, conference lecture, abstracts, demonstrations. For conference papers, posters or proceedings the specific concepts should be used..
 
+    * **conference output** (`<http://purl.org/coar/resource_type/c_c94f>`_): All kind of digital resources contributed to a conference, like conference presentation (slides), conference report, conference lecture, abstracts, demonstrations. For conference papers, posters or proceedings the specific concepts should be used..
+
+      * **conference presentation** (`<http://purl.org/coar/resource_type/R60J-J5BD>`_): A set of slides containing text, tables or figures, designed to communicate ideas or research results, for projection and viewing by an audience at a conference, symposium, seminar, lecture, workshop or other gatherings.
       * **conference proceedings** (`<http://purl.org/coar/resource_type/c_f744>`_): Conference proceedings is the official record of a conference meeting. It is a collection of documents which corresponds to the presentations given at the conference. It may include additional content.
 
         * **conference paper** (`<http://purl.org/coar/resource_type/c_5794>`_): A conference paper that is submitted to a conference and presented to the audience. The conference paper is published in proceedings.
         * **conference poster** (`<http://purl.org/coar/resource_type/c_6670>`_): A conference poster that is submitted to a conference and presented there at a poster presentation. The conference poster is published in proceedings.
+
       * **conference paper not in proceedings** (`<http://purl.org/coar/resource_type/c_18cp>`_): A conference paper that is submitted to a conference and presented to the audience. The conference paper is not published in proceedings.
       * **conference poster not in proceedings** (`<http://purl.org/coar/resource_type/c_18co>`_): A conference poster that is submitted to a conference and presented there at a poster presentation. The conference poster is not published in proceedings.
+
     * **lecture** (`<http://purl.org/coar/resource_type/c_8544>`_): A transcription of a talk delivered during an academic event.
     * **letter** (`<http://purl.org/coar/resource_type/c_0857>`_): A brief description of important new research, also known as “communication”. (adapted from EuroCRIS)
+    * **musical notation** (`<http://purl.org/coar/resource_type/c_18cw>`_): Musical notation is any system used to visually represent aurally perceived music through the use of written symbols, including ancient or modern musical symbols.
     * **periodical** (`<http://purl.org/coar/resource_type/c_2659>`_): A periodical is a publication issued on a regular and ongoing basis as a series of issues. (Adapted from fabio)
 
       * **journal** (`<http://purl.org/coar/resource_type/c_0640>`_): A periodical of (academic) journal articles. (Adapted from bibo)
-
+  
         * **contribution to journal** (`<http://purl.org/coar/resource_type/c_3e5a>`_): A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.
 
           * **journal article** (`<http://purl.org/coar/resource_type/c_6501>`_): An article on a particular topic and published in a journal issue. (adapted from fabio)
@@ -54,9 +59,12 @@ Type
           * **editorial** (`<http://purl.org/coar/resource_type/c_b239>`_): A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. Adapted from ODLIS
           * **data paper** (`<http://purl.org/coar/resource_type/c_beb9>`_): A data paper is a scholarly publication describing a particular dataset or group of dataset, published in the form of a peer-reviewed article in a scholarly journal. The main purpose of a data paper is to describe data, the circumstances of their collection, and information related to data features, access and potential reuse. Adapted from https://en.wikipedia.org/wiki/Data_paper and http://www.gbif.org/publishing-data/data-papers
           * **letter to the editor** (`<http://purl.org/coar/resource_type/c_545b>`_): A letter to the editor is a letter sent to a periodical about issues of concern from its readers. (adapted from Wikipedia)
+
     * **preprint** (`<http://purl.org/coar/resource_type/c_816b>`_): Pre-print describes the first draft of the article - before peer-review, even before any contact with a publisher. This use is common amongst academics for whom the key modification of an article is the peer-review process. Another use of the term pre-print is for the finished article, reviewed and amended, ready and accepted for publication - but separate from the version that is type-set or formatted by the publisher. This use is more common amongst publishers, for whom the final and significant stage of modification to an article is the arrangement of the material for putting to print.
     * **report** (`<http://purl.org/coar/resource_type/c_93fc>`_): A report is a separately published record of research findings, research still in progress, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency. Also, an official record of the activities of a committee or corporate entity, the proceedings of a government body, or an investigation by an agency, whether published or private, usually archived or submitted to a higher authority, voluntarily or under mandate. In a more general sense, any formal account of facts or information related to a specific event or phenomenon, sometimes given at regular intervals.
 
+      * **clinical study** (`<http://purl.org/coar/resource_type/c_7877>`_): A work that reports on the results of a research study to evaluate interventions or exposures on biomedical or health-related outcomes. The two main types of clinical studies are interventional studies (clinical trials) and observational studies. While most clinical studies concern humans, this publication type may be used for clinical veterinary articles meeting the requisites for humans. 
+      * **data management plan** (`<http://purl.org/coar/resource_type/c_ab20>`_): A formal statement describing how research data will be managed and documented throughout a research project and the terms regarding the subsequent deposit of the data with a data repository for long-term management and preservation. 
       * **report part** (`<http://purl.org/coar/resource_type/c_ba1f>`_): part of a report
       * **internal report** (`<http://purl.org/coar/resource_type/c_18ww>`_): An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.
       * **memorandum** (`<http://purl.org/coar/resource_type/c_18wz>`_): It is a note, document or other communication that helps the memory by recording events or observations on a topic. A memorandum can have only a certain number of formats; it may have a format specific to an office or institution.
@@ -67,17 +75,19 @@ Type
       * **research report** (`<http://purl.org/coar/resource_type/c_18ws>`_): Research Reports are reports that typically provide an in-depth study of a particular topic or describe the results of a research project.
       * **technical report** (`<http://purl.org/coar/resource_type/c_18gh>`_): A technical report is a document that records the procedure adopted and results obtained from a scientific or technical activity or investigation.
     * **research proposal** (`<http://purl.org/coar/resource_type/c_baaf>`_): documentation for grant request
+
     * **review** (`<http://purl.org/coar/resource_type/c_efa0>`_): A review of others' published work.
-
       * **book review** (`<http://purl.org/coar/resource_type/c_ba08>`_): A written review and critical analysis of the content, scope and quality of a book or other monographic work.
-    * **technical documentation** (`<http://purl.org/coar/resource_type/c_71bd>`_): Technical documentation refers to any type of documentation that describes handling, functionality and architecture of a technical product or a product under development or use.
-    * **working paper** (`<http://purl.org/coar/resource_type/c_8042>`_): A working paper or preprint is a report on research that is still on-going or which has not yet been accepted for publication.
-    * **thesis** (`<http://purl.org/coar/resource_type/c_46ec>`_): A thesis or dissertation is a document submitted in support of candidature for an academic degree or professional qualification presenting the author's research and findings.
+      * **commentary** (`<http://purl.org/coar/resource_type/D97F-VB57>`): A commentary is a more in-depth analysis written to draw attention to a work already published. Commentaries are somewhat like “reviews” in that the author presents his or her analysis of a work and why it would be of interest to a specific audience.
+      * **peer_review** (`<http://purl.org/coar/resource_type/H9BQ-739P>`): An evaluation of scientific, academic, or professional work by others working in the same field.
 
+    * **technical documentation** (`<http://purl.org/coar/resource_type/c_71bd>`_): Technical documentation refers to any type of documentation that describes handling, functionality and architecture of a technical product or a product under development or use.
+
+    * **thesis** (`<http://purl.org/coar/resource_type/c_46ec>`_): A thesis or dissertation is a document submitted in support of candidature for an academic degree or professional qualification presenting the author's research and findings.
       * **bachelor thesis** (`<http://purl.org/coar/resource_type/c_7a1f>`_): A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree.
       * **doctoral thesis** (`<http://purl.org/coar/resource_type/c_db06>`_): A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree.
       * **master thesis** (`<http://purl.org/coar/resource_type/c_bdcc>`_): A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree.
-    * **musical notation** (`<http://purl.org/coar/resource_type/c_18cw>`_): Musical notation is any system used to visually represent aurally perceived music through the use of written symbols, including ancient or modern musical symbols.
+    * **working paper** (`<http://purl.org/coar/resource_type/c_8042>`_): A working paper or preprint is a report on research that is still on-going or which has not yet been accepted for publication.
 
 
 

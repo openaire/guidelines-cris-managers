@@ -46,7 +46,7 @@ VersionInfo
 
 RegistrationDate
 ^^^^^^^^^^^^^^^^
-:Description: Date on which the application was physically received at the Patent Authority. Also named Filling Date
+:Description: Date on which the application was physically received at the Patent Authority. Also named Filing Date
 :Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
 :CERIF: the ResultPatent_Classification.startDate (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Filed>`_ semantics (direction :1)

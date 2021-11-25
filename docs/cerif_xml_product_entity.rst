@@ -11,7 +11,7 @@ Product
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1)
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the ResultProductIdentifier attribute (`<https://w3id.org/cerif/model#ResultProduct.ResultProductIdentifier>`_)
 
@@ -51,7 +51,7 @@ Language
 :Description: The language or languages of the product, if applicable. Please use the IETF language tags as described in the IETF BCP 47 document.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Language``
-:CERIF: the ResultProduct_Classification linking entity (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_) with the `<https://w3id.org/cerif/vocab/LanguageTags>`_ semantics
+:CERIF: the ResultProduct_Classification linking entity (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_) with the `<http://publications.europa.eu/resource/authority/language>`_ semantics
 
 
 Name
@@ -187,7 +187,7 @@ OriginatesFrom
 ^^^^^^^^^^^^^^
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
-:CERIF: the Project_ResultProduct linking entity (`<https://w3id.org/cerif/model#Project_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultProduct_Funding linking entity (`<https://w3id.org/cerif/model#ResultProduct_Funding>`_) with the `<https://w3id.org/cerif/vocab/Funding_Output_Roles#Originator>`_ semantics
+:CERIF: the Project_ResultProduct linking entity (`<https://w3id.org/cerif/model#Project_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultProduct_Funding linking entity (`<https://w3id.org/cerif/model#ResultProduct_Funding>`_) with the `<https://w3id.org/cerif/vocab/OutputFundingRoles#Originator>`_ semantics
 
 
 GeneratedBy
@@ -195,7 +195,7 @@ GeneratedBy
 :Description: The equipment that generated this product
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``GeneratedBy`` with embedded XML element ``Equipment``
-:CERIF: the ResultProduct_Equipment linking entity (`<https://w3id.org/cerif/model#ResultProduct_Equipment>`_) with the `<https://w3id.org/cerif/vocab/InfrastructureOutputRelations#Generation>`_ semantics
+:CERIF: the ResultProduct_Equipment linking entity (`<https://w3id.org/cerif/model#ResultProduct_Equipment>`_) with the `<https://w3id.org/cerif/vocab/OutputResearchInfrastructureRelations#Generation>`_ semantics
 
 
 PresentedAt

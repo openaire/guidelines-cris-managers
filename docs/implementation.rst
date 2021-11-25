@@ -21,6 +21,7 @@ While syntactically, the CERIF profile XML allows to construct structures of any
 the contents of each metadata record should be kept limited to the nearest objects that are representable by a top-level element. 
 These neighboring objects should be expressed using as much detail as is practical to identify them. 
 This includes links to any higher level structures of which the object is part, e.g. to an institution of which an organisation unit is part.
+More specifically, the Person record eventually embedded in the ``Author`` element of a ``Publication`` should not include any affiliation information (but also Editors and similar scenario in other entities). Instead, the ``Affiliation`` element inside the ``Author`` tag should keep all the ``OrgUnit`` up to the root organisation including for intermediate level only the name and identifiers.
 
 However, the neighboring object XML shall never contain more information or different information from what is expressed in the main record for that object 
 i.e., where the object is retrieved as a top-level object. This is a stronger form of a requirement of functional dependency.
@@ -33,7 +34,15 @@ Where admissible, it shall occur before the ``Person`` or ``OrgUnit`` XML elemen
 
 In the extreme case where just the display name of a person or an organisation is known, 
 the ``DisplayName`` with an empty ``Person`` or ``OrgUnit`` XML element can be used.
-However, it is recommended that CRIS managers keep curated authority lists everywhere where these are feasible.
+
+Also intermediate cases are supported such as the case where the CRIS system doesn't maintains an authority for external people but has additional information about it such as an ORCID. In such case an embedded ``Person`` without an Internal Identifier is allowed with the known information about the person.
+
+However, it is recommended that CRIS managers keep managed authority lists everywhere where these are feasible.
+
+**Embedded entities**
+In some cases the CRIS doesn't maintain authority over entities that are only of secondary interest for the institution and thus are not managed. 
+This is often the case for publication channels that are represented in CERIF as a ``Publication``, but could apply also to parts of other entities such as the ``Event``, ``Person``, ``Funding`` and others.
+In these cases, in analogy with the Display names section above, the use of an embedded entity without an internal identifier is allowed.
 
 .. rubric:: Footnotes
 
@@ -78,7 +87,7 @@ All of the following OAI-PMH sets shall be recognized by the CRIS, even if not a
 
 A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListSets.xml>`_.
 
-Referential integrity constraints for all relationships among entities must be satisfied in the CERIF XML data provided by the CRIS system.
+Referential integrity constraints for all relationships among entities that have an internal identifiers (Id attribute) must be satisfied in the CERIF XML data provided by the CRIS system.
 
 Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
 For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml>`_.
@@ -87,10 +96,10 @@ For an example please see `openaire_oaipmh_example_Identify.xml <https://github.
 OAI identifiers
 """""""""""""""
 
-The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{type}/{internal ID}`` 
+The identifiers of objects from the source CRIS shall be represented as OAI identifier of the form ``oai:{service}:{internal ID}`` 
 where ``{service}`` denotes the internet domain name of the CRIS,
-``{type}`` stands for the type of the object,
-and ``{internal ID}`` denotes an internal identifier of the object within the CRIS.
+and ``{internal ID}`` denotes an internal identifier of the object that MUST be unique within the CRIS across all the entity types. 
+This is usually the case when UUIDs are used, but it can also be achieved by adding the entity type as a prefix to serially generated id numbers (when other distinction is not available and there is a possibility of conflicts), as illustrated in the accompanying examples (e.g. Publications/893204).
 
 The types are expressed by the plural form of the XML element that represents the object i.e., the name of the collection of all such objects.
 
@@ -100,7 +109,10 @@ In many cases a UUID – if it is assigned – is more likely to be persistent t
 
 For example a publication with internal ID of 560d48b6-42c3-4ef9-81d6-32c949fb2cdb (a UUID) from a CRIS running 
 on behalf of the University of Exampleton (www.exampleton.ac.uk with a cris running at cris.exampleton.ac.uk) 
-will have the OAI identifier ``oai:cris.exampleton.ac.uk:Publications/560d48b6-42c3-4ef9-81d6-32c949fb2cdb``. 
+could have the OAI identifier ``oai:cris.exampleton.ac.uk:560d48b6-42c3-4ef9-81d6-32c949fb2cdb``
+
+If the CRIS system provides also PID such as an handle, for instance 123456789/1, the OAI identifier could be ``oai:cris.exampleton.ac.uk:123456789/1``
+Finally, in the case the CRIS system has only numeric ID not unique across the whole system, the OAI identifier could be ``oai:cris.exampleton.ac.uk:Publications/1``  
 
 Compatibility of aggregators
 """"""""""""""""""""""""""""

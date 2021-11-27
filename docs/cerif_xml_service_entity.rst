@@ -74,12 +74,14 @@ WebsiteURL
 :CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/ElectronicAddressTypes#Website>`_ semantics
 
 
+
 OAIPMHBaseURL
 ^^^^^^^^^^^^^
 :Description: Base URL for the OAI-PMH protocol endpoint of the CRIS
 :Use: optional (0..1)
 :Representation: XML element ``OAIPMHBaseURL``
 :CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/ElectronicAddressTypes#OAI-PMH_Base>`_ semantics
+
 
 
 SubjectHeadingsURL
@@ -90,12 +92,14 @@ SubjectHeadingsURL
 :CERIF: the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/IdentifierTypes#URL>`_ semantics; the FederatedIdentifier linking entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_) with the `<https://w3id.org/cerif/vocab/ElectronicAddressTypes#SubjectHeadings>`_ semantics
 
 
+
 Owner
 ^^^^^
 :Description: The owner of the CRIS: The organisation the research of which the CRIS documents
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Owner`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_Service linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Service>`_) with the `<https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner>`_ semantics
+
 
 
 

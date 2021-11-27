@@ -89,6 +89,7 @@ Language
 :CERIF: the ResultPublication_Classification linking entity (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_) with the `<http://publications.europa.eu/resource/authority/language>`_ semantics
 
 
+
 Title
 ^^^^^
 :Description: The title of the publication
@@ -124,12 +125,14 @@ PublishedIn
 :CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/InterPublicationRelations#Publication>`_ semantics (direction :1)
 
 
+
 PartOf
 ^^^^^^
 :Description: The Publication of which this publication is a part. E.g. a book chapter lists here the book that contains it. To be used for a containing publication.
 :Use: optional (0..1)
 :Representation: XML element ``PartOf`` with embedded XML element ``Publication``
 :CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/InterPublicationRelations#Part>`_ semantics (direction :1)
+
 
 
 PublicationDate
@@ -144,7 +147,6 @@ PublicationDate
   * year and month (``YYYY-MM``) with optional time zone indication
   * full date (``YYYY-MM-DD``) with optional time zone indication
   * date and time (``YYYY-MM-DD'T'hh:mm:ss(.SSS)``) with optional time zone indication
-
 
 
 Number
@@ -210,7 +212,6 @@ DOI
 :Format: regular expression ``10\.\d{4,}(\.\d+)*/[^\s]+`` (as per `<https://www.crossref.org/blog/dois-and-matching-regular-expressions/>`_)
 
 
-
 Handle
 ^^^^^^
 :Use: optional (0..1)
@@ -252,7 +253,6 @@ ISSN
 :Format: regular expression ``\d{4}-?\d{3}[\dX]`` and length between 8 and 9 characters (as per `<https://data.crossref.org/reports/help/schema_doc/4.4.1/schema_4_4_1.html#issn_t>`_)
 
 
-
 medium
 ------
 :Use: optional
@@ -283,7 +283,6 @@ ISBN
   * regular expression ``\d+-\d+-\d+-[\dX]`` and length of exactly 13 characters (ISBN-10, human readable form)
   * regular expression ``\d+ \d+ \d+ [\dX]`` and length of exactly 13 characters (ISBN-10, human readable form)
   * regular expression ``\d{9}[\dX]`` and length of exactly 10 characters (ISBN-10, concise form)
-
 
 
 medium
@@ -323,7 +322,6 @@ ZDB-ID
 :Format: regular expression ``\d{1,7}-[Xx\d]`` (as per `<https://www.wikidata.org/wiki/Property:P1042>`_)
 
 
-
 Authors
 ^^^^^^^
 :Description: The authors of this publication
@@ -337,6 +335,7 @@ Author
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Author`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements, or ``OrgUnit``. A ``DisplayName`` may be specified, too.
 :CERIF: the Person_ResultPublication linking entity (`<https://w3id.org/cerif/model#Person_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Author>`_ semantics; the OrganisationUnit_ResultPublication linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Author>`_ semantics
+
 
 
 Editors
@@ -354,6 +353,7 @@ Editor
 :CERIF: the Person_ResultPublication linking entity (`<https://w3id.org/cerif/model#Person_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Editor>`_ semantics; the OrganisationUnit_ResultPublication linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Editor>`_ semantics
 
 
+
 Publishers
 ^^^^^^^^^^
 :Description: The publishers of this publication
@@ -367,6 +367,7 @@ Publisher
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Publisher`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_ResultPublication linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Publisher>`_ semantics; the Person_ResultPublication linking entity (`<https://w3id.org/cerif/model#Person_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Publisher>`_ semantics
+
 
 
 License
@@ -416,12 +417,14 @@ OriginatesFrom
 :CERIF: the Project_ResultPublication linking entity (`<https://w3id.org/cerif/model#Project_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultPublication_Funding linking entity (`<https://w3id.org/cerif/model#ResultPublication_Funding>`_) with the `<https://w3id.org/cerif/vocab/OutputFundingRoles#Originator>`_ semantics
 
 
+
 PresentedAt
 ^^^^^^^^^^^
 :Description: The event where this publication was presented.  [#]_ 
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``PresentedAt`` with embedded XML element ``Event``
 :CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics
+
 
 .. [#] Note: Video recordings of conference presentations are stored as alternative representations of the primary object: the conference paper. It would be unneccessarily complex to represent them as separate, linked Products.
 
@@ -434,6 +437,7 @@ OutputFrom
 :CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Output>`_ semantics
 
 
+
 Coverage
 ^^^^^^^^
 :Description: The event that is covered by this publication (e.g. a report about the event)
@@ -442,12 +446,14 @@ Coverage
 :CERIF: the ResultPublication_Event linking entity (`<https://w3id.org/cerif/model#ResultPublication_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics
 
 
+
 References
 ^^^^^^^^^^
 :Description: Result outputs that are referenced by this publication
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
 :CERIF: the ResultPublication_ResultPublication linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPublication>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultPublication_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1)
+
 
 
 ns4:Access

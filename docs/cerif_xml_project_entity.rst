@@ -60,7 +60,6 @@ StartDate
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
-
 EndDate
 ^^^^^^^
 :Description: The end date of the project
@@ -68,7 +67,6 @@ EndDate
 :Representation: XML element ``EndDate``
 :CERIF: the Project.EndDate attribute (`<https://w3id.org/cerif/model#Project.EndDate>`_)
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
-
 
 
 Consortium
@@ -87,12 +85,14 @@ Coordinator
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Coordinator>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Coordinator>`_ semantics
 
 
+
 Partner
 -------
 :Description: Project partner
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Partner`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Partner>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Partner>`_ semantics
+
 
 
 Contractor
@@ -103,6 +103,7 @@ Contractor
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Contractor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#Contractor>`_ semantics
 
 
+
 InkindContributor
 -----------------
 :Description: Project in kind contributor
@@ -111,12 +112,14 @@ InkindContributor
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#InkindContributor>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#InkindContributor>`_ semantics
 
 
+
 Member
 ------
 :Description: A member of the project consortium
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Member`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#ConsortiumMember>`_ semantics; the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#ConsortiumMember>`_ semantics
+
 
 
 Team
@@ -135,6 +138,7 @@ PrincipalInvestigator
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#PrincipalInvestigator>`_ semantics
 
 
+
 Contact
 -------
 :Description: A person to contact in matters connected with her/his organisations' participation in the project
@@ -143,12 +147,14 @@ Contact
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#OrganisationContact>`_ semantics
 
 
+
 Member
 ------
 :Description: A member of the project team
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Member`` with embedded XML element ``Person`` optionally followed by one or several ``Affiliation`` elements. A ``DisplayName`` may be specified, too.
 :CERIF: the Project_Person linking entity (`<https://w3id.org/cerif/model#Project_Person>`_) with the `<https://w3id.org/cerif/vocab/PersonProjectEngagements#TeamMember>`_ semantics
+
 
 
 Funded
@@ -167,12 +173,14 @@ By
 :CERIF: the Project_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Project_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/OrganisationProjectEngagements#Funder>`_ semantics
 
 
+
 As
 --
 :Description: The specific funding device (grant, award, contract) for the project
 :Use: optional (0..1)
 :Representation: XML element ``As`` with embedded XML element ``Funding``
 :CERIF: the Project_Funding linking entity (`<https://w3id.org/cerif/model#Project_Funding>`_) with the `<https://w3id.org/cerif/vocab/ProjectFundingRelations#Support>`_ semantics
+
 
 
 Subject
@@ -215,6 +223,7 @@ Uses
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Uses`` with embedded XML element ``Equipment``
 :CERIF: the Project_Equipment linking entity (`<https://w3id.org/cerif/model#Project_Equipment>`_) with the `<https://w3id.org/cerif/vocab/ProjectResearchInfrastructureRelations#User>`_ semantics
+
 
 
 OAMandate

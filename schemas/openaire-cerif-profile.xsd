@@ -931,9 +931,23 @@ Source: Wikipedia
 						
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.VersionInfo" maxOccurs="unbounded" minOccurs="0" name="VersionInfo" type="cfMLangString__Type"/>
 						
-						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.RegistrationDate" minOccurs="0" name="RegistrationDate" type="cfDate__Type"/>
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Classification.StartDate(https://w3id.org/cerif/vocab/PatentStatuses#Filed)" minOccurs="0" name="RegistrationDate" type="cfDate__Type">
+							<xs:annotation>
+								<xs:documentation>Date on which the application was physically received at the Patent Authority. Also named Filing Date</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 						
-						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.ApprovalDate" minOccurs="0" name="ApprovalDate" type="cfDate__Type"/>
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Classification.StartDate(https://w3id.org/cerif/vocab/PatentStatuses#Granted)" minOccurs="0" name="ApprovalDate" type="cfDate__Type">
+							<xs:annotation>
+								<xs:documentation>Date on which the application has been granted by the Patent Office</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						
+						<xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Classification.StartDate(https://w3id.org/cerif/vocab/PatentStatuses#Published)" minOccurs="0" name="PublicationDate" type="cfDate__Type">
+							<xs:annotation>
+								<xs:documentation>Date of making available to the public by printing or similar process of a patent document on which grant has taken place on or before the said date</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 						
 						<xs:element cflink:attribute="https://w3id.org/cerif/model#ResultPatent.CountryCode" minOccurs="0" name="CountryCode" type="cfString__Type"/>
 						

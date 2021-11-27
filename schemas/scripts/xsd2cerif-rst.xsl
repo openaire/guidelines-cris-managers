@@ -525,6 +525,10 @@ Internal Identifier
 		<xsl:apply-templates select="key( 'schema-components-by-name', string(@base) )" mode="#current"/>
 		<xsl:apply-templates mode="#current"/>
 	</xsl:template>
+	
+	<xsl:template match="xs:simpleContent" mode="format">
+		<xsl:apply-templates mode="#current"/>
+	</xsl:template>
 
 	<xsl:template match="text()" mode="format"/>
 

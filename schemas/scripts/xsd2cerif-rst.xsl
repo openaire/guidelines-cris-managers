@@ -430,7 +430,7 @@ Internal Identifier
 				<xsl:variable name="link-entity" select="substring-before( $l1, '(' )"/>
 				<xsl:variable name="semantics" select="substring-before( substring-after( $l1, '(' ), ')' )"/>
 				<xsl:variable name="direction" select="substring-after( substring-after( $l1, '(' ), ')' )"/>
-				<xsl:value-of select="$prefix"/><xsl:text>the </xsl:text><xsl:value-of select="substring-after( $link-entity, 'https://w3id.org/cerif/model#' )"/><xsl:text> linking entity (`&lt;</xsl:text><xsl:value-of select="$link-entity"/><xsl:text>&gt;`_) with the `&lt;</xsl:text><xsl:value-of select="$semantics"/><xsl:text>&gt;`_ semantics</xsl:text><xsl:if test="$direction"><xsl:text> (direction </xsl:text><xsl:value-of select="$direction"/>)</xsl:if>
+				<xsl:value-of select="$prefix"/><xsl:text>the </xsl:text><xsl:value-of select="substring-after( $link-entity, 'https://w3id.org/cerif/model#' )"/><xsl:text> linking entity </xsl:text><xsl:if test="contains( substring-after( $link-entity, 'https://w3id.org/cerif/model#' ), '.' )">attribute </xsl:if><xsl:text>(`&lt;</xsl:text><xsl:value-of select="$link-entity"/><xsl:text>&gt;`_) with the `&lt;</xsl:text><xsl:value-of select="$semantics"/><xsl:text>&gt;`_ semantics</xsl:text><xsl:if test="$direction"><xsl:text> (direction </xsl:text><xsl:value-of select="$direction"/>)</xsl:if>
 				<xsl:call-template name="process-link-annotation">
 					<xsl:with-param name="link-annotation" select="$r1"/>
 					<xsl:with-param name="prefix" select="'; '"/>

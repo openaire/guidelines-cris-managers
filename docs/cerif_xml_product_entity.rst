@@ -54,6 +54,7 @@ Language
 :CERIF: the ResultProduct_Classification linking entity (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_) with the `<http://publications.europa.eu/resource/authority/language>`_ semantics
 
 
+
 Name
 ^^^^
 :Use: optional, possibly multiple (0..*)
@@ -85,7 +86,6 @@ DOI
 :Representation: XML element ``DOI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``10\.\d{4,}(\.\d+)*/[^\s]+`` (as per `<https://www.crossref.org/blog/dois-and-matching-regular-expressions/>`_)
-
 
 
 Handle
@@ -127,6 +127,7 @@ Creator
 :CERIF: the Person_ResultProduct linking entity (`<https://w3id.org/cerif/model#Person_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Creator>`_ semantics; the OrganisationUnit_ResultProduct linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Creator>`_ semantics
 
 
+
 Publishers
 ^^^^^^^^^^
 :Description: The publisher or publishers of this product
@@ -140,6 +141,7 @@ Publisher
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Publisher`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_ResultProduct linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#Publisher>`_ semantics; the Person_ResultProduct linking entity (`<https://w3id.org/cerif/model#Person_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Publisher>`_ semantics
+
 
 
 License
@@ -183,11 +185,13 @@ PartOf
 :CERIF: the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/InterProductRelations#Part>`_ semantics (direction :1)
 
 
+
 OriginatesFrom
 ^^^^^^^^^^^^^^
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``OriginatesFrom`` with embedded XML element ``Project`` or ``Funding``
 :CERIF: the Project_ResultProduct linking entity (`<https://w3id.org/cerif/model#Project_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultProduct_Funding linking entity (`<https://w3id.org/cerif/model#ResultProduct_Funding>`_) with the `<https://w3id.org/cerif/vocab/OutputFundingRoles#Originator>`_ semantics
+
 
 
 GeneratedBy
@@ -198,12 +202,14 @@ GeneratedBy
 :CERIF: the ResultProduct_Equipment linking entity (`<https://w3id.org/cerif/model#ResultProduct_Equipment>`_) with the `<https://w3id.org/cerif/vocab/OutputResearchInfrastructureRelations#Generation>`_ semantics
 
 
+
 PresentedAt
 ^^^^^^^^^^^
 :Description: The event where this product was presented
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``PresentedAt`` with embedded XML element ``Event``
 :CERIF: the ResultProduct_Event linking entity (`<https://w3id.org/cerif/model#ResultProduct_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Presented>`_ semantics
+
 
 
 Coverage
@@ -214,12 +220,14 @@ Coverage
 :CERIF: the ResultProduct_Event linking entity (`<https://w3id.org/cerif/model#ResultProduct_Event>`_) with the `<https://w3id.org/cerif/vocab/EventOutputRelationships#Coverage>`_ semantics
 
 
+
 References
 ^^^^^^^^^^
 :Description: Result outputs that are referenced by this product
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
 :CERIF: the ResultPublication_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultProduct_ResultProduct linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultProduct>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultProduct_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1)
+
 
 
 ns4:Access

@@ -71,7 +71,6 @@ ORCID
 :Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
 
 
-
 AlternativeORCID
 ^^^^^^^^^^^^^^^^
 :Description: The ORCID identifiers in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -79,7 +78,6 @@ AlternativeORCID
 :Representation: XML element ``AlternativeORCID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
-
 
 
 ResearcherID
@@ -91,7 +89,6 @@ ResearcherID
 :Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
 
 
-
 AlternativeResearcherID
 ^^^^^^^^^^^^^^^^^^^^^^^
 :Description: The ResearcherID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -99,7 +96,6 @@ AlternativeResearcherID
 :Representation: XML element ``AlternativeResearcherID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
-
 
 
 ScopusAuthorID
@@ -111,7 +107,6 @@ ScopusAuthorID
 :Format: regular expression ``[0-9]{10,11}`` (as per `<https://www.wikidata.org/wiki/Property:P1153>`_)
 
 
-
 AlternativeScopusAuthorID
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 :Description: The Scopus Author ID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -119,7 +114,6 @@ AlternativeScopusAuthorID
 :Representation: XML element ``AlternativeScopusAuthorID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``[0-9]{10,11}`` (as per `<https://www.wikidata.org/wiki/Property:P1153>`_)
-
 
 
 ISNI
@@ -131,7 +125,6 @@ ISNI
 :Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
 
 
-
 AlternativeISNI
 ^^^^^^^^^^^^^^^
 :Description: The ISNI identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -139,7 +132,6 @@ AlternativeISNI
 :Representation: XML element ``AlternativeISNI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
-
 
 
 DAI
@@ -151,7 +143,6 @@ DAI
 :Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]`` (as per `<https://wiki.surfnet.nl/display/standards/DAI>`_)
 
 
-
 AlternativeDAI
 ^^^^^^^^^^^^^^
 :Description: The Digital Author Identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -159,7 +150,6 @@ AlternativeDAI
 :Representation: XML element ``AlternativeDAI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]`` (as per `<https://wiki.surfnet.nl/display/standards/DAI>`_)
-
 
 
 ElectronicAddress
@@ -177,6 +167,7 @@ Affiliation
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Affiliation`` with embedded XML element ``OrgUnit``
 :CERIF: the Person_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#Person_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/PersonOrganisationRoles#Affiliation>`_ semantics
+
 
 
 

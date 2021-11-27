@@ -69,7 +69,6 @@ StartDate
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
-
 EndDate
 ^^^^^^^
 :Description: The end date of the event
@@ -77,7 +76,6 @@ EndDate
 :Representation: XML element ``EndDate``
 :CERIF: the Event.EndDate attribute (`<https://w3id.org/cerif/model#Event.EndDate>`_)
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
-
 
 
 Description
@@ -114,6 +112,7 @@ Organizer
 :CERIF: the OrganisationUnit_Event linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Organizer>`_ semantics; the Project_Event linking entity (`<https://w3id.org/cerif/model#Project_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Organizer>`_ semantics
 
 
+
 Sponsor
 ^^^^^^^
 :Description: The sponsor of the event
@@ -122,12 +121,14 @@ Sponsor
 :CERIF: the OrganisationUnit_Event linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Sponsor>`_ semantics; the Project_Event linking entity (`<https://w3id.org/cerif/model#Project_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Sponsor>`_ semantics
 
 
+
 Partner
 ^^^^^^^
 :Description: The partner of the event
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Partner`` with embedded XML element ``OrgUnit`` or ``Project``
 :CERIF: the OrganisationUnit_Event linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Partner>`_ semantics; the Project_Event linking entity (`<https://w3id.org/cerif/model#Project_Event>`_) with the `<https://w3id.org/cerif/vocab/EventRelationshipKinds#Partner>`_ semantics
+
 
 
 

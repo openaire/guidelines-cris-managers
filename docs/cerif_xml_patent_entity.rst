@@ -46,20 +46,29 @@ VersionInfo
 
 RegistrationDate
 ^^^^^^^^^^^^^^^^
+:Description: Date on which the application was physically received at the Patent Authority. Also named Filing Date
 :Use: optional (0..1)
 :Representation: XML element ``RegistrationDate``
-:CERIF: the ResultPatent.RegistrationDate attribute (`<https://w3id.org/cerif/model#ResultPatent.RegistrationDate>`_)
+:CERIF: the ResultPatent_Classification.StartDate linking entity attribute (`<https://w3id.org/cerif/model#ResultPatent_Classification.StartDate>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Filed>`_ semantics
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
-
 
 
 ApprovalDate
 ^^^^^^^^^^^^
+:Description: Date on which the application has been granted by the Patent Office
 :Use: optional (0..1)
 :Representation: XML element ``ApprovalDate``
-:CERIF: the ResultPatent.ApprovalDate attribute (`<https://w3id.org/cerif/model#ResultPatent.ApprovalDate>`_)
+:CERIF: the ResultPatent_Classification.StartDate linking entity attribute (`<https://w3id.org/cerif/model#ResultPatent_Classification.StartDate>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Granted>`_ semantics
 :Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
+
+PublicationDate
+^^^^^^^^^^^^^^^
+:Description: Date of making available to the public by printing or similar process of a patent document on which grant has taken place on or before the said date
+:Use: optional (0..1)
+:Representation: XML element ``PublicationDate``
+:CERIF: the ResultPatent_Classification.StartDate linking entity attribute (`<https://w3id.org/cerif/model#ResultPatent_Classification.StartDate>`_) with the `<https://w3id.org/cerif/vocab/PatentStatuses#Published>`_ semantics
+:Format: full date (``YYYY-MM-DD``) with optional time zone indication
 
 
 CountryCode
@@ -76,6 +85,7 @@ Issuer
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Issuer`` with embedded XML element ``OrgUnit``. A ``DisplayName`` may be specified, too.
 :CERIF: the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentIssuer>`_ semantics
+
 
 
 PatentNumber
@@ -110,6 +120,7 @@ Inventor
 :CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#Inventor>`_ semantics
 
 
+
 Holders
 ^^^^^^^
 :Description: The holders of this patent
@@ -124,6 +135,7 @@ Holder
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Holder`` with embedded XML element ``OrgUnit`` or ``Person``. A ``DisplayName`` may be specified, too.
 :CERIF: the Person_ResultPatent linking entity (`<https://w3id.org/cerif/model#Person_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/PersonOutputContributions#PatentHolder>`_ semantics; the OrganisationUnit_ResultPatent linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/OrganisationOutputContributions#PatentHolder>`_ semantics
+
 
 
 Abstract
@@ -158,6 +170,7 @@ OriginatesFrom
 :CERIF: the Project_ResultPatent linking entity (`<https://w3id.org/cerif/model#Project_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/ProjectOutputRoles#Originator>`_ semantics; the ResultPatent_Funding linking entity (`<https://w3id.org/cerif/model#ResultPatent_Funding>`_) with the `<https://w3id.org/cerif/vocab/OutputFundingRoles#Originator>`_ semantics
 
 
+
 Predecessor
 ^^^^^^^^^^^
 :Description: Patents that precede (i.e., have priority over) this patent
@@ -166,12 +179,14 @@ Predecessor
 :CERIF: the ResultPatent_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterPatentRelations#Predecessor>`_ semantics (direction :1)
 
 
+
 References
 ^^^^^^^^^^
 :Description: Result outputs that are referenced by this patent
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``References`` with embedded XML element ``Publication`` or ``Patent`` or ``Product``
 :CERIF: the ResultPublication_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPublication_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultProduct_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultProduct_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1); the ResultPatent_ResultPatent linking entity (`<https://w3id.org/cerif/model#ResultPatent_ResultPatent>`_) with the `<https://w3id.org/cerif/vocab/InterOutputRelations#Reference>`_ semantics (direction :1)
+
 
 
 

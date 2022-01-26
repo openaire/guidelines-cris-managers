@@ -33,13 +33,13 @@
 
   <simpleType name="repositoryIdentifierType">
     <restriction base="string">
-      <pattern value="[a-zA-Z][a-zA-Z0-9\-]*(\.[a-zA-Z][a-zA-Z0-9\-]*)+"/>
+      <pattern value="[a-zA-Z0-9][a-zA-Z0-9\-]*(\.[a-zA-Z0-9][a-zA-Z0-9\-]*)+"/>
     </restriction>
   </simpleType>
 
   <simpleType name="sampleIdentifierType">
     <restriction base="string">
-      <pattern value="oai:[a-zA-Z][a-zA-Z0-9\-]*(\.[a-zA-Z][a-zA-Z0-9\-]*)+:[a-zA-Z0-9\-_\.!~\*&apos;\(\);/\?:@&amp;=\+$,%]+"/>
+      <pattern value="oai:[a-zA-Z0-9][a-zA-Z0-9\-]*(\.[a-zA-Z0-9][a-zA-Z0-9\-]*)+:[a-zA-Z0-9\-_\.!~\*&apos;\(\);/\?:@&amp;=\+$,%]+"/>
       <!--meta ., \, ?, *, +, {, } (, ), [ or ] -->
     </restriction>
   </simpleType>

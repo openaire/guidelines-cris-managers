@@ -11,11 +11,11 @@
            targetNamespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"
            xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
-      <xs:documentation>Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).</xs:documentation>
+      <xs:documentation>Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).</xs:documentation>
       <xs:appinfo>
          <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
             <cf:Term xmlns="en">Patent types extracted from the COAR Resource Types concept scheme</cf:Term>
-            <cf:Description xmlns="en">Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' only).</cf:Description>
+            <cf:Description xmlns="en">Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).</cf:Description>
          </cf:ClassScheme>
       </xs:appinfo>
    </xs:annotation>
@@ -32,38 +32,287 @@
    </xs:element>
    <xs:simpleType name="Enum">
       <xs:restriction base="xs:string">
+         <xs:enumeration value="http://purl.org/coar/resource_type/SB3Y-W4EH">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">PCT application</xs:documentation>
+               <xs:documentation xml:lang="ca">PCT</xs:documentation>
+               <xs:documentation xml:lang="de">Internationale Patentanmeldung</xs:documentation>
+               <xs:documentation xml:lang="es">PCT</xs:documentation>
+               <xs:documentation xml:lang="fi">kansainvälinen patenttihakemus</xs:documentation>
+               <xs:documentation xml:lang="fr">demande PCT</xs:documentation>
+               <xs:documentation xml:lang="it">domanda internazionale di brevetto</xs:documentation>
+               <xs:documentation xml:lang="ja">PCT出願</xs:documentation>
+               <xs:documentation xml:lang="nl">PCT-aanvraag</xs:documentation>
+               <xs:documentation xml:lang="ru">Заявка РСТ</xs:documentation>
+               <xs:documentation xml:lang="sl">patentna prijava</xs:documentation>
+               <xs:documentation xml:lang="tr">PCT başvurusu</xs:documentation>
+               <xs:documentation xml:lang="zh">国际专利合作条约PCT申请</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/SB3Y-W4EH"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
+                     <cf:Term xml:lang="en">PCT application</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">PCT</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Internationale Patentanmeldung</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">PCT</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">kansainvälinen patenttihakemus</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">demande PCT</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">domanda internazionale di brevetto</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">PCT出願</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">PCT-aanvraag</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">Заявка РСТ</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">patentna prijava</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">PCT başvurusu</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">国际专利合作条约PCT申请</cf:Term>
+                     <cf:Definition xml:lang="en">A patent application filed through the WIPO-administered Patent Cooperation Treaty (PCT), also known as an international application. [Source: Adapted from https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/C53B-JCY5">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">design patent</xs:documentation>
+               <xs:documentation xml:lang="ca">patent de disseny</xs:documentation>
+               <xs:documentation xml:lang="de">Eingetragenes Design</xs:documentation>
+               <xs:documentation xml:lang="es">patente de diseño</xs:documentation>
+               <xs:documentation xml:lang="fi">mallipatentti</xs:documentation>
+               <xs:documentation xml:lang="fr">brevet de conception</xs:documentation>
+               <xs:documentation xml:lang="it">brevetto di design</xs:documentation>
+               <xs:documentation xml:lang="ja">意匠特許</xs:documentation>
+               <xs:documentation xml:lang="nl">modelbescherming</xs:documentation>
+               <xs:documentation xml:lang="ru">патент на образец</xs:documentation>
+               <xs:documentation xml:lang="sl">patent za oblikovanje</xs:documentation>
+               <xs:documentation xml:lang="tr">tasarım patenti</xs:documentation>
+               <xs:documentation xml:lang="zh">设计专利</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/C53B-JCY5"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
+                     <cf:Term xml:lang="en">design patent</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">patent de disseny</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Eingetragenes Design</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">patente de diseño</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">mallipatentti</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">brevet de conception</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">brevetto di design</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">意匠特許</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">modelbescherming</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">патент на образец</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">patent za oblikovanje</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">tasarım patenti</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">设计专利</cf:Term>
+                     <cf:Definition xml:lang="en">A patent granted to any person who has invented any new and non-obvious ornamental design for an article of manufacture. The design patent protects only the appearance of an article, but not its structural or functional features. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_15cd">
             <xs:annotation>
                <xs:documentation xml:lang="en">patent</xs:documentation>
-               <xs:documentation xml:lang="zh">专利</xs:documentation>
+               <xs:documentation xml:lang="ar">براءة الاختراع</xs:documentation>
+               <xs:documentation xml:lang="ca">patent</xs:documentation>
+               <xs:documentation xml:lang="cs">patent</xs:documentation>
+               <xs:documentation xml:lang="de">Patent</xs:documentation>
                <xs:documentation xml:lang="es">patente</xs:documentation>
-               <xs:documentation xml:lang="ru">патент</xs:documentation>
+               <xs:documentation xml:lang="fi">patentti</xs:documentation>
                <xs:documentation xml:lang="fr">brevet</xs:documentation>
                <xs:documentation xml:lang="it">brevetto</xs:documentation>
-               <xs:documentation xml:lang="de">Patent</xs:documentation>
-               <xs:documentation xml:lang="ca">patent</xs:documentation>
-               <xs:documentation xml:lang="pt">patente</xs:documentation>
-               <xs:documentation xml:lang="nl">patent</xs:documentation>
                <xs:documentation xml:lang="ja">特許</xs:documentation>
+               <xs:documentation xml:lang="nl">patent</xs:documentation>
+               <xs:documentation xml:lang="pt">patente</xs:documentation>
+               <xs:documentation xml:lang="ru">патент</xs:documentation>
                <xs:documentation xml:lang="tr">patent</xs:documentation>
+               <xs:documentation xml:lang="zh">专利</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
-                     <cf:Term xml:lang="en" trans="o">patent</cf:Term>
-                     <cf:Term xml:lang="zh" trans="h">专利</cf:Term>
+                     <cf:Term xml:lang="en">patent</cf:Term>
+                     <cf:Term xml:lang="ar" trans="h">براءة الاختراع</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">patent</cf:Term>
+                     <cf:Term xml:lang="cs" trans="h">patent</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Patent</cf:Term>
                      <cf:Term xml:lang="es" trans="h">patente</cf:Term>
-                     <cf:Term xml:lang="ru" trans="h">патент</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">patentti</cf:Term>
                      <cf:Term xml:lang="fr" trans="h">brevet</cf:Term>
                      <cf:Term xml:lang="it" trans="h">brevetto</cf:Term>
-                     <cf:Term xml:lang="de" trans="h">Patent</cf:Term>
-                     <cf:Term xml:lang="ca" trans="h">patent</cf:Term>
-                     <cf:Term xml:lang="pt" trans="h">patente</cf:Term>
-                     <cf:Term xml:lang="nl" trans="h">patent</cf:Term>
                      <cf:Term xml:lang="ja" trans="h">特許</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">patent</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">patente</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">патент</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">patent</cf:Term>
-                     <cf:Definition xml:lang="en">A patent or patent application.</cf:Definition>
-                     <cf:Definition xml:lang="ru">Патент или заявка на изобретение. Предоставление эксклюзивного права на эксплуатацию изобретения.</cf:Definition>
-                     
+                     <cf:Term xml:lang="zh" trans="h">专利</cf:Term>
+                     <cf:Definition xml:lang="en">A patent or patent application.
+
+A set of exclusive rights granted by law to applicants for inventions that are
+new, non-obvious and commercially applicable. A patent is valid for a limited
+period (generally 20 years), during which time patent holders can commercially
+exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/Z907-YMBB">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">plant patent</xs:documentation>
+               <xs:documentation xml:lang="ca">patent de plantes</xs:documentation>
+               <xs:documentation xml:lang="de">Pflanzenpatent</xs:documentation>
+               <xs:documentation xml:lang="es">patente de plantas</xs:documentation>
+               <xs:documentation xml:lang="fi">kasvinjalostepatentti</xs:documentation>
+               <xs:documentation xml:lang="fr">brevet de plante</xs:documentation>
+               <xs:documentation xml:lang="it">brevetto di pianta</xs:documentation>
+               <xs:documentation xml:lang="ja">植物特許</xs:documentation>
+               <xs:documentation xml:lang="nl">kwekersrecht</xs:documentation>
+               <xs:documentation xml:lang="ru">патент на растение</xs:documentation>
+               <xs:documentation xml:lang="sl">rastlinska sorta</xs:documentation>
+               <xs:documentation xml:lang="tr">bitki patenti</xs:documentation>
+               <xs:documentation xml:lang="zh">品种专属权</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/Z907-YMBB"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
+                     <cf:Term xml:lang="en">plant patent</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">patent de plantes</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Pflanzenpatent</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">patente de plantas</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">kasvinjalostepatentti</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">brevet de plante</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">brevetto di pianta</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">植物特許</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">kwekersrecht</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">патент на растение</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">rastlinska sorta</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">bitki patenti</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">品种专属权</cf:Term>
+                     <cf:Definition xml:lang="en">A patent granted to anyone who has invented or discovered and asexually reproduced any distinct and new variety of plant, including cultivated sports, mutants, hybrids, and newly found seedlings, other than a tuber-propagated plant or a plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/GPQ7-G5VE">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">plant variety protection</xs:documentation>
+               <xs:documentation xml:lang="ca">protecció de les varietats vegetals</xs:documentation>
+               <xs:documentation xml:lang="de">Sortenschutz</xs:documentation>
+               <xs:documentation xml:lang="es">obtención de variedades vegetales</xs:documentation>
+               <xs:documentation xml:lang="fi">kasvinjalostajanoikeus</xs:documentation>
+               <xs:documentation xml:lang="fr">certificat d'obtention végétale</xs:documentation>
+               <xs:documentation xml:lang="it">privativa di varietà vegetale</xs:documentation>
+               <xs:documentation xml:lang="ja">育成者権</xs:documentation>
+               <xs:documentation xml:lang="nl">plantenras bescherming</xs:documentation>
+               <xs:documentation xml:lang="ru">охрана новых сортов растений</xs:documentation>
+               <xs:documentation xml:lang="sl">žlahniteljska pravica</xs:documentation>
+               <xs:documentation xml:lang="tr">bitki çeşitliliğini koruma</xs:documentation>
+               <xs:documentation xml:lang="zh">植物新品种保护</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/GPQ7-G5VE"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
+                     <cf:Term xml:lang="en">plant variety protection</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">protecció de les varietats vegetals</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Sortenschutz</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">obtención de variedades vegetales</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">kasvinjalostajanoikeus</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">certificat d'obtention végétale</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">privativa di varietà vegetale</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">育成者権</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">plantenras bescherming</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">охрана новых сортов растений</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">žlahniteljska pravica</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">bitki çeşitliliğini koruma</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">植物新品种保护</cf:Term>
+                     <cf:Definition xml:lang="en">Plant variety protection, also called a "plant breeder's right" (PBR), is a form of intellectual property right granted to the breeder of a new plant variety . According to this right, certain acts concerning the exploitation of the protected variety require the prior authorization of the breeder. Plant variety protection is an independent sui generis form of protection, tailored to protect new plant varieties and has certain features in common with other intellectual property rights. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/MW8G-3CR8">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">software patent</xs:documentation>
+               <xs:documentation xml:lang="ca">patent de programari</xs:documentation>
+               <xs:documentation xml:lang="de">Softwarepatent</xs:documentation>
+               <xs:documentation xml:lang="es">patente de software</xs:documentation>
+               <xs:documentation xml:lang="fi">ohjelmistopatentti</xs:documentation>
+               <xs:documentation xml:lang="fr">brevet de logiciel</xs:documentation>
+               <xs:documentation xml:lang="it">brevetto software</xs:documentation>
+               <xs:documentation xml:lang="ja">ソフトウェア特許</xs:documentation>
+               <xs:documentation xml:lang="nl">softwarepatent</xs:documentation>
+               <xs:documentation xml:lang="ru">патент на программное обеспечение</xs:documentation>
+               <xs:documentation xml:lang="sl">patent za programsko opremo</xs:documentation>
+               <xs:documentation xml:lang="tr">yazılım patenti</xs:documentation>
+               <xs:documentation xml:lang="zh">软件著作权</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/MW8G-3CR8"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
+                     <cf:Term xml:lang="en">software patent</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">patent de programari</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Softwarepatent</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">patente de software</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">ohjelmistopatentti</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">brevet de logiciel</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">brevetto software</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">ソフトウェア特許</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">softwarepatent</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">патент на программное обеспечение</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">patent za programsko opremo</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">yazılım patenti</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">软件著作权</cf:Term>
+                     <cf:Definition xml:lang="en">In order to obtain a patent, a software invention must not fall under other non-patentable subject matter (for example, abstract ideas or mathematical theories) and has to fulfill the other substantive patentability criteria (for example, novelty, inventive step [non-obviousness] and industrial applicability [usefulness]). [Source: https://www.wipo.int/patents/en/faq_patents.html]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/9DKX-KSAF">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">utility model</xs:documentation>
+               <xs:documentation xml:lang="ca">model d'utilitat</xs:documentation>
+               <xs:documentation xml:lang="de">Gebrauchsmuster</xs:documentation>
+               <xs:documentation xml:lang="es">modelo de utilidad</xs:documentation>
+               <xs:documentation xml:lang="fi">hyödyllisyysmalli</xs:documentation>
+               <xs:documentation xml:lang="fr">modèle d'utilité</xs:documentation>
+               <xs:documentation xml:lang="it">modello di utilità</xs:documentation>
+               <xs:documentation xml:lang="ja">実用新案</xs:documentation>
+               <xs:documentation xml:lang="nl">gebruiksmodel</xs:documentation>
+               <xs:documentation xml:lang="ru">полезная модель</xs:documentation>
+               <xs:documentation xml:lang="sl">patent s skrajšanim trajanjem</xs:documentation>
+               <xs:documentation xml:lang="tr">faydalı model</xs:documentation>
+               <xs:documentation xml:lang="zh">实用新型专利</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/9DKX-KSAF"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
+                     <cf:Term xml:lang="en">utility model</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">model d'utilitat</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Gebrauchsmuster</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">modelo de utilidad</cf:Term>
+                     <cf:Term xml:lang="fi" trans="h">hyödyllisyysmalli</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">modèle d'utilité</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">modello di utilità</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">実用新案</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">gebruiksmodel</cf:Term>
+                     <cf:Term xml:lang="ru" trans="h">полезная модель</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">patent s skrajšanim trajanjem</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">faydalı model</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">实用新型专利</cf:Term>
+                     <cf:Definition xml:lang="en">A special form of patent right granted by a state or jurisdiction to an inventor or the inventor’s assignee for a fixed period of time. The terms and conditions for granting a utility model are slightly different from those for normal patents (including a shorter term of protection and less stringent patentability requirements). The term can also describe what are known in certain countries as “petty patents,” “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_15cd"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
             </xs:annotation>

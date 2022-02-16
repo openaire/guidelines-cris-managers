@@ -19,8 +19,11 @@
 					<!--https://worldwide.espacenet.com/publicationDetails/biblio?FT=D&date=20170808&DB=EPODOC&locale=en_EP&CC=BR&NR=112016010203A2&KC=A2&ND=4-->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">http://purl.org/coar/resource_type/c_15cd</Type>
 					<Title xml:lang="en">MEDICAL DEVICE, IN PARTICULAR FOR THE SEPARATION OF A FLUID</Title>
-					<RegistrationDate>2016-01-01</RegistrationDate>
-					<ApprovalDate>2014-11-13</ApprovalDate>
+					<!-- Date on which the application was physically received at the Patent Authority. -->
+					<!-- this is usually the older priority date for granted patent -->
+					<RegistrationDate>2013-11-14</RegistrationDate>
+					<!-- the date that appear in the EPODOC Publication field close to the bibliographic data heading -->
+					<PublicationDate>2017-08-08</PublicationDate>
 					<CountryCode>BR</CountryCode>
 					<Issuer>
 						<OrgUnit id="OrgUnits/330001">

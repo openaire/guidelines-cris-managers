@@ -51,7 +51,6 @@ RORID
 :Format: regular expression ``https:\/\/ror\.org\/0[\da-hj-km-np-tv-zA-HJ-KM-NP-TV-Z]{6}\d{2}`` (as per `<https://ror.org/facts/>`_)
 
 
-
 AlternativeRORID
 ^^^^^^^^^^^^^^^^
 :Description: The ROR identifiers in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -59,7 +58,6 @@ AlternativeRORID
 :Representation: XML element ``AlternativeRORID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``https:\/\/ror\.org\/0[\da-hj-km-np-tv-zA-HJ-KM-NP-TV-Z]{6}\d{2}`` (as per `<https://ror.org/facts/>`_)
-
 
 
 GRID
@@ -71,7 +69,6 @@ GRID
 :Format: regular expression ``grid\.\d{4,}\.[0-9a-f]{1,2}`` (as per `<https://www.wikidata.org/wiki/Property_talk:P2427>`_)
 
 
-
 AlternativeGRID
 ^^^^^^^^^^^^^^^
 :Description: The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -79,7 +76,6 @@ AlternativeGRID
 :Representation: XML element ``AlternativeGRID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``grid\.\d{4,}\.[0-9a-f]{1,2}`` (as per `<https://www.wikidata.org/wiki/Property_talk:P2427>`_)
-
 
 
 ISNI
@@ -91,7 +87,6 @@ ISNI
 :Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
 
 
-
 AlternativeISNI
 ^^^^^^^^^^^^^^^
 :Description: The ISNI identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -99,7 +94,6 @@ AlternativeISNI
 :Representation: XML element ``AlternativeISNI``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``\d{4} \d{4} \d{4} \d{3}[\dX]`` (as per `<https://www.wikidata.org/wiki/Property:P213>`_)
-
 
 
 FundRefID
@@ -111,7 +105,6 @@ FundRefID
 :Format: regular expression ``https:\/\/doi.org\/10\.13039\/\d+`` (as per `<https://www.crossref.org/display-guidelines/>`_ `<https://www.wikidata.org/wiki/Q19822542>`_)
 
 
-
 AlternativeFundRefID
 ^^^^^^^^^^^^^^^^^^^^
 :Description: The FundRef Registry Identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
@@ -119,7 +112,6 @@ AlternativeFundRefID
 :Representation: XML element ``AlternativeFundRefID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: regular expression ``https:\/\/doi.org\/10\.13039\/\d+`` (as per `<https://www.crossref.org/display-guidelines/>`_ `<https://www.wikidata.org/wiki/Q19822542>`_)
-
 
 
 Identifier
@@ -145,6 +137,7 @@ PartOf
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``PartOf`` with embedded XML element ``OrgUnit``
 :CERIF: the OrganisationUnit_OrganisationUnit linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_OrganisationUnit>`_) with the `<https://w3id.org/cerif/vocab/InterOrganisationalStructure#Part>`_ semantics (direction :1)
+
 
 
 

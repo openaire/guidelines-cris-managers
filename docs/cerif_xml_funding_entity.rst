@@ -104,6 +104,7 @@ Funder
 :CERIF: the OrganisationUnit_Funding linking entity (`<https://w3id.org/cerif/model#OrganisationUnit_Funding>`_) with the `<https://w3id.org/cerif/vocab/OrganisationFundingRoles#Financier>`_ semantics
 
 
+
 PartOf
 ^^^^^^
 :Description: Chain up to the larger funding that encompasses this funding
@@ -112,12 +113,14 @@ PartOf
 :CERIF: the Funding_Funding linking entity (`<https://w3id.org/cerif/model#Funding_Funding>`_) with the `<https://w3id.org/cerif/vocab/InterFundingRelations#Part>`_ semantics (direction :1)
 
 
+
 Duration
 ^^^^^^^^
 :Description: Duration of the funding
 :Use: optional (0..1)
 :Representation: XML element ``Duration`` *TODO*
 :CERIF: the Funding_Classification linking entity (`<https://w3id.org/cerif/model#Funding_Classification>`_) with the `<https://w3id.org/cerif/vocab/Durations#FundingDuration>`_ semantics
+
 
 
 OAMandate

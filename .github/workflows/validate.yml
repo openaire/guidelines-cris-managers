@@ -1,5 +1,5 @@
 name: Validate the schemas and examples
-on: push
+on: [push, pull_request]
 jobs:
   validate:
     runs-on: ubuntu-latest

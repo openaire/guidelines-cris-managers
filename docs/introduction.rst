@@ -19,6 +19,11 @@ a non-for-profit organisation dedicated to the interoperability of Research Info
 In addition to a domain model and a formal data model, CERIF includes a mechanism to construct XML profiles (specialized subsets) for specific information interchange scenarios. 
 The OpenAIRE profile of CERIF supports harvesting and importing metadata from CRIS systems. 
 
+FAIR enabled
+^^^^^^^^^^^^
+
+The guidelines assist and support the Findable, Accessible, Interoperable, and Re-usable principles. More details could be found in the dedicated section `FAIR enabled`_.
+
 Acknowledgements
 ^^^^^^^^^^^^^^^^
 
@@ -70,3 +75,5 @@ Feedback
 
 We welcome your comments and suggestions. 
 Please see https://github.com/openaire/guidelines-cris-managers#contributing
+
+.. _dedicated section: _fair_enabled

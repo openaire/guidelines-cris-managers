@@ -8,4 +8,5 @@ OpenAIRE Guidelines for CRIS Managers
    introduction
    cris_elements_openaire
    implementation
+   fair_enabled
 

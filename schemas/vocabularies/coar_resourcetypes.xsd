@@ -2076,7 +2076,7 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                      <cf:Term xml:lang="zh" trans="h">学术期刊</cf:Term>
                      <cf:Definition xml:lang="en">A journal is a serial publication devoted to disseminating original research and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_18cf"/>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_2659"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -2153,7 +2153,7 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                            <skos:altLabel xml:lang="es">gacetilla</skos:altLabel>
                            <skos:inScheme rdf:resource="http://purl.org/coar/resource_type"/>
                            <skos:definition xml:lang="en">A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from http://purl.org/spar/fabio/Letter]</skos:definition>
-                           <skos:broader rdf:resource="http://purl.org/coar/resource_type/c_0640"/>
+                           <skos:broader rdf:resource="http://purl.org/coar/resource_type/c_3e5a"/>
                         </skos:Concept>
                      </skos:narrower>
                      <skos:narrower xmlns:skos="http://www.w3.org/2004/02/skos/core#">
@@ -2186,8 +2186,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                            <skos:altLabel xml:lang="de">Leitartikel</skos:altLabel>
                            <skos:altLabel xml:lang="fr">édito</skos:altLabel>
                            <skos:altLabel xml:lang="pt">editorial de revista</skos:altLabel>
-                           <skos:broader rdf:resource="http://purl.org/coar/resource_type/c_0640"/>
                            <skos:inScheme rdf:resource="http://purl.org/coar/resource_type"/>
+                           <skos:broader rdf:resource="http://purl.org/coar/resource_type/c_3e5a"/>
                         </skos:Concept>
                      </skos:narrower>
                      <skos:narrower xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -2195,12 +2195,12 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                      <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">A journal is a serial publication devoted to disseminating original research and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]</skos:definition>
                      <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                     rdf:resource="http://purl.org/coar/resource_type"/>
-                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-                                   rdf:resource="http://purl.org/coar/resource_type/c_18cf"/>
                      <skos:exactMatch xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                       rdf:resource="http://purl.org/spar/fabio/Journal"/>
                      <skos:narrowMatch xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                        rdf:resource="http://purl.org/eprint/type/JournalArticle"/>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_2659"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -3987,6 +3987,9 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="tr" trans="h">fon sağlayıcıya rapor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">给资助机构的报告</cf:Term>
                      <cf:Definition xml:lang="en">A report to a funding agency is a document written by beneficiaries of project grants. The reporting documents can be e.g. periodic reports about progress of scientific and technical work and final report. For deliverables use ‘Project deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm ]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
                <xs:appinfo>
@@ -4021,6 +4024,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:topConceptOf xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                         rdf:resource="http://purl.org/coar/resource_type"/>
                      <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">A report to a funding agency is a document written by beneficiaries of project grants. The reporting documents can be e.g. periodic reports about progress of scientific and technical work and final report. For deliverables use ‘Project deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm ]</skos:definition>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_93fc"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -4141,6 +4146,9 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="tr" trans="h">diğer rapor türü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">其他报告</cf:Term>
                      <cf:Definition xml:lang="en">Other types of report may include Business Plans Technical Specifications, data management plans, recommendation reports, white papers, annual reports, auditor's reports, workplace reports, census reports, trip reports, progress reports, investigative reports, budget reports, policy reports, demographic reports, credit reports, appraisal reports, inspection reports, military reports, bound reports, etc. [Source: https://en.wikipedia.org/wiki/Report]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
                <xs:appinfo>
@@ -4173,6 +4181,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:topConceptOf xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                         rdf:resource="http://purl.org/coar/resource_type"/>
                      <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-03-12</ns0:expires>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_93fc"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -4300,6 +4310,9 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="tr" trans="h">dahili rapor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">内部报告</cf:Term>
                      <cf:Definition xml:lang="en">An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
                <xs:appinfo>
@@ -4329,6 +4342,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                                         rdf:resource="http://purl.org/coar/resource_type"/>
                      <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.</skos:definition>
                      <skos:editorialNote xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Deprecated</skos:editorialNote>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_93fc"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -4449,6 +4464,9 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="tr" trans="h">süreli yayın</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊</cf:Term>
                      <cf:Definition xml:lang="en">A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_18cf"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
                <xs:appinfo>
@@ -4493,6 +4511,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                                       rdf:resource="http://purl.org/spar/fabio/Periodical"/>
                      <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-03-12</ns0:expires>
                      <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]</skos:definition>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_18cf"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -5103,6 +5123,9 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="sl" trans="h">prispevek v reviji</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊文献</cf:Term>
                      <cf:Definition xml:lang="en">A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
                <xs:appinfo>
@@ -5136,6 +5159,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                     rdf:resource="http://purl.org/coar/resource_type"/>
                      <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-03-12</ns0:expires>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_0640"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -5346,7 +5371,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="zh" trans="h">读者来信</cf:Term>
                      <cf:Definition xml:lang="en">A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from http://purl.org/spar/fabio/Letter]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"/>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -5387,7 +5412,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                                     rdf:resource="http://purl.org/coar/resource_type"/>
                      <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from http://purl.org/spar/fabio/Letter]</skos:definition>
                      <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-                                   rdf:resource="http://purl.org/coar/resource_type/c_0640"/>
+                                   rdf:resource="http://purl.org/coar/resource_type/c_3e5a"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -5668,7 +5693,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="zh" trans="h">学术论文</cf:Term>
                      <cf:Definition xml:lang="en">An article, typically the realization of a research paper reporting original research findings, published in a journal issue. [Source: http://purl.org/spar/fabio/JournalArticle]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"/>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -5718,8 +5743,6 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="cs">článek v odborném časopisu</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fi">tieteellinen artikkeli</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="sl">članek v reviji</skos:prefLabel>
-                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-                                   rdf:resource="http://purl.org/coar/resource_type/c_0640"/>
                      <skos:relatedMatch xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                         rdf:resource="http://purl.org/eprint/type/SubmittedJournalArticle"/>
                      <skos:relatedMatch xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -5851,6 +5874,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                                     rdf:resource="http://purl.org/coar/resource_type"/>
                      <skos:exactMatch xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                       rdf:resource="http://purl.org/eprint/type/JournalArticle"/>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_3e5a"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -7402,7 +7427,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="zh" trans="h">社论</cf:Term>
                      <cf:Definition xml:lang="en">A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"/>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"/>
                      </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
@@ -7437,10 +7462,10 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Leitartikel</skos:altLabel>
                      <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">édito</skos:altLabel>
                      <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt">editorial de revista</skos:altLabel>
-                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-                                   rdf:resource="http://purl.org/coar/resource_type/c_0640"/>
                      <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                     rdf:resource="http://purl.org/coar/resource_type"/>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_3e5a"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -7568,6 +7593,9 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="tr" trans="h">rapor bölümü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">报告部分</cf:Term>
                      <cf:Definition xml:lang="en">part of a report</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"/>
+                     </cf:Broader>
                   </cf:Class>
                </xs:appinfo>
                <xs:appinfo>
@@ -7607,6 +7635,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:topConceptOf xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                         rdf:resource="http://purl.org/coar/resource_type"/>
                      <skos:definition xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">part of a report</skos:definition>
+                     <skos:broader xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                                   rdf:resource="http://purl.org/coar/resource_type/c_93fc"/>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>

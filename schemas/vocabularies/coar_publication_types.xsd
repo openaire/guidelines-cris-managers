@@ -730,6 +730,46 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/c_3e5a">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">contribution to journal</xs:documentation>
+               <xs:documentation xml:lang="ar">مساهمة في دورية</xs:documentation>
+               <xs:documentation xml:lang="ca">contribució a revista</xs:documentation>
+               <xs:documentation xml:lang="cs">příspěvek v časopisu</xs:documentation>
+               <xs:documentation xml:lang="de">Zeitschriftenbeitrag</xs:documentation>
+               <xs:documentation xml:lang="es">contribución a revista</xs:documentation>
+               <xs:documentation xml:lang="fr">contribution à un journal</xs:documentation>
+               <xs:documentation xml:lang="it">contributo in rivista</xs:documentation>
+               <xs:documentation xml:lang="ja">学術雑誌掲載記事</xs:documentation>
+               <xs:documentation xml:lang="nl">tijdschrift bijdrage</xs:documentation>
+               <xs:documentation xml:lang="pt">contributo em revista</xs:documentation>
+               <xs:documentation xml:lang="sl">prispevek v reviji</xs:documentation>
+               <xs:documentation xml:lang="zh">期刊文献</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
+                     <cf:Term xml:lang="en">contribution to journal</cf:Term>
+                     <cf:Term xml:lang="ar" trans="h">مساهمة في دورية</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">contribució a revista</cf:Term>
+                     <cf:Term xml:lang="cs" trans="h">příspěvek v časopisu</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Zeitschriftenbeitrag</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">contribución a revista</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">contribution à un journal</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">contributo in rivista</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">学術雑誌掲載記事</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">tijdschrift bijdrage</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">contributo em revista</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">prispevek v reviji</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">期刊文献</cf:Term>
+                     <cf:Definition xml:lang="en">A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_7acd">
             <xs:annotation>
                <xs:documentation xml:lang="en">corrigendum</xs:documentation>
@@ -931,7 +971,49 @@
                      <cf:Term xml:lang="zh" trans="h">社论</cf:Term>
                      <cf:Definition xml:lang="en">A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"
+                        <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/c_18ww">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">internal report (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="ar">تقرير داخلي</xs:documentation>
+               <xs:documentation xml:lang="ca">informe intern</xs:documentation>
+               <xs:documentation xml:lang="cs">interní zpráva</xs:documentation>
+               <xs:documentation xml:lang="de">interner Bericht</xs:documentation>
+               <xs:documentation xml:lang="es">informe interno</xs:documentation>
+               <xs:documentation xml:lang="fr">rapport interne</xs:documentation>
+               <xs:documentation xml:lang="it">rapporto interno</xs:documentation>
+               <xs:documentation xml:lang="ja">内部報告書</xs:documentation>
+               <xs:documentation xml:lang="nl">intern rapport</xs:documentation>
+               <xs:documentation xml:lang="pt">relatório interno</xs:documentation>
+               <xs:documentation xml:lang="sl">interno poročilo</xs:documentation>
+               <xs:documentation xml:lang="tr">dahili rapor</xs:documentation>
+               <xs:documentation xml:lang="zh">内部报告</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18ww"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
+                     <cf:Term xml:lang="en">internal report (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="ar" trans="h">تقرير داخلي</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">informe intern</cf:Term>
+                     <cf:Term xml:lang="cs" trans="h">interní zpráva</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">interner Bericht</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">informe interno</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">rapport interne</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">rapporto interno</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">内部報告書</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">intern rapport</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">relatório interno</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">interno poročilo</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">dahili rapor</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">内部报告</cf:Term>
+                     <cf:Definition xml:lang="en">An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
@@ -977,7 +1059,7 @@
                      <cf:Term xml:lang="zh" trans="h">学术期刊</cf:Term>
                      <cf:Definition xml:lang="en">A journal is a serial publication devoted to disseminating original research and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
+                        <cf:Class id="http://purl.org/coar/resource_type/c_2659"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
@@ -1023,7 +1105,7 @@
                      <cf:Term xml:lang="zh" trans="h">学术论文</cf:Term>
                      <cf:Definition xml:lang="en">An article, typically the realization of a research paper reporting original research findings, published in a journal issue. [Source: http://purl.org/spar/fabio/JournalArticle]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"
+                        <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
@@ -1159,7 +1241,7 @@
                      <cf:Term xml:lang="zh" trans="h">读者来信</cf:Term>
                      <cf:Definition xml:lang="en">A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from http://purl.org/spar/fabio/Letter]</cf:Definition>
                      <cf:Broader>
-                        <cf:Class id="http://purl.org/coar/resource_type/c_0640"
+                        <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>
@@ -1493,6 +1575,48 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/c_18wq">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">other type of report (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="ar">نوع آخر من التقرير</xs:documentation>
+               <xs:documentation xml:lang="ca">altre tipus d'informe</xs:documentation>
+               <xs:documentation xml:lang="cs">jiná zpráva</xs:documentation>
+               <xs:documentation xml:lang="de">sonstiger Report</xs:documentation>
+               <xs:documentation xml:lang="es">otro tipo de informe</xs:documentation>
+               <xs:documentation xml:lang="fr">autre type de rapport</xs:documentation>
+               <xs:documentation xml:lang="it">altro tipo di rapporto</xs:documentation>
+               <xs:documentation xml:lang="ja">その他の報告書</xs:documentation>
+               <xs:documentation xml:lang="nl">rapport overig</xs:documentation>
+               <xs:documentation xml:lang="pt">outro relatório</xs:documentation>
+               <xs:documentation xml:lang="sl">ostale vrste poročil</xs:documentation>
+               <xs:documentation xml:lang="tr">diğer rapor türü</xs:documentation>
+               <xs:documentation xml:lang="zh">其他报告</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18wq"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
+                     <cf:Term xml:lang="en">other type of report (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="ar" trans="h">نوع آخر من التقرير</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">altre tipus d'informe</cf:Term>
+                     <cf:Term xml:lang="cs" trans="h">jiná zpráva</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">sonstiger Report</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">otro tipo de informe</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">autre type de rapport</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">altro tipo di rapporto</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">その他の報告書</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">rapport overig</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">outro relatório</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">ostale vrste poročil</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">diğer rapor türü</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">其他报告</cf:Term>
+                     <cf:Definition xml:lang="en">Other types of report may include Business Plans Technical Specifications, data management plans, recommendation reports, white papers, annual reports, auditor's reports, workplace reports, census reports, trip reports, progress reports, investigative reports, budget reports, policy reports, demographic reports, credit reports, appraisal reports, inspection reports, military reports, bound reports, etc. [Source: https://en.wikipedia.org/wiki/Report]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/H9BQ-739P">
             <xs:annotation>
                <xs:documentation xml:lang="en">peer review</xs:documentation>
@@ -1533,9 +1657,49 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/c_2659">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">periodical</xs:documentation>
+               <xs:documentation xml:lang="ca">publicació en sèrie</xs:documentation>
+               <xs:documentation xml:lang="cs">periodikum</xs:documentation>
+               <xs:documentation xml:lang="de">Periodikum</xs:documentation>
+               <xs:documentation xml:lang="es">publicación periódica</xs:documentation>
+               <xs:documentation xml:lang="fr">périodique</xs:documentation>
+               <xs:documentation xml:lang="it">periodico</xs:documentation>
+               <xs:documentation xml:lang="ja">逐次刊行物</xs:documentation>
+               <xs:documentation xml:lang="nl">periodiek</xs:documentation>
+               <xs:documentation xml:lang="pt">publicação periódica</xs:documentation>
+               <xs:documentation xml:lang="sl">serijska publikacija</xs:documentation>
+               <xs:documentation xml:lang="tr">süreli yayın</xs:documentation>
+               <xs:documentation xml:lang="zh">期刊</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/c_2659"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
+                     <cf:Term xml:lang="en">periodical</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">publicació en sèrie</cf:Term>
+                     <cf:Term xml:lang="cs" trans="h">periodikum</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Periodikum</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">publicación periódica</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">périodique</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">periodico</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">逐次刊行物</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">periodiek</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">publicação periódica</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">serijska publikacija</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">süreli yayın</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">期刊</cf:Term>
+                     <cf:Definition xml:lang="en">A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_186u">
             <xs:annotation>
-               <xs:documentation xml:lang="en">policy report</xs:documentation>
+               <xs:documentation xml:lang="en">policy report (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ar">تقرير عن السياسات</xs:documentation>
                <xs:documentation xml:lang="ca">informe de política</xs:documentation>
                <xs:documentation xml:lang="cs">zpráva k politice nebo strategii</xs:documentation>
@@ -1554,7 +1718,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_186u"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">policy report</cf:Term>
+                     <cf:Term xml:lang="en">policy report (deprecated)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">تقرير عن السياسات</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe de política</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">zpráva k politice nebo strategii</cf:Term>
@@ -1581,7 +1745,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_816b">
             <xs:annotation>
-               <xs:documentation xml:lang="en">preprint</xs:documentation>
+               <xs:documentation xml:lang="en">preprint (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ca">publicació preliminar</xs:documentation>
                <xs:documentation xml:lang="de">Preprint</xs:documentation>
                <xs:documentation xml:lang="es">artículo preliminar</xs:documentation>
@@ -1597,7 +1761,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_816b"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">preprint</cf:Term>
+                     <cf:Term xml:lang="en">preprint (deprecated)</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">publicació preliminar</cf:Term>
                      <cf:Term xml:lang="de" trans="h">Preprint</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo preliminar</cf:Term>
@@ -1705,6 +1869,82 @@
                      <cf:Definition xml:lang="en">A report is a separately published record of research findings, research still in progress, policy developments and events, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency. Also, an official record of the activities of a committee or corporate entity, the proceedings of a government body, or an investigation by an agency, whether published or private, usually archived or submitted to a higher authority, voluntarily or under mandate. In a more general sense, any formal account of facts or information related to a specific event or phenomenon, sometimes given at regular intervals. [Source: http://lu.com/odlis/odlis_R.cfm#report ]</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_18cf"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/c_ba1f">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">report part (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="ca">part d'un informe</xs:documentation>
+               <xs:documentation xml:lang="de">Teilbericht</xs:documentation>
+               <xs:documentation xml:lang="es">parte de un estudio</xs:documentation>
+               <xs:documentation xml:lang="fr">chapitre de rapport</xs:documentation>
+               <xs:documentation xml:lang="it">capitolo di rapporto tecnico</xs:documentation>
+               <xs:documentation xml:lang="ja">報告書（部分）</xs:documentation>
+               <xs:documentation xml:lang="nl">deelrapport</xs:documentation>
+               <xs:documentation xml:lang="pt">capítulo de relatório</xs:documentation>
+               <xs:documentation xml:lang="tr">rapor bölümü</xs:documentation>
+               <xs:documentation xml:lang="zh">报告部分</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/c_ba1f"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
+                     <cf:Term xml:lang="en">report part (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">part d'un informe</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Teilbericht</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">parte de un estudio</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">chapitre de rapport</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">capitolo di rapporto tecnico</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">報告書（部分）</cf:Term>
+                     <cf:Term xml:lang="nl" trans="h">deelrapport</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">capítulo de relatório</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">rapor bölümü</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">报告部分</cf:Term>
+                     <cf:Definition xml:lang="en">part of a report</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
+                                  classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
+                     </cf:Broader>
+                  </cf:Class>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="http://purl.org/coar/resource_type/c_18hj">
+            <xs:annotation>
+               <xs:documentation xml:lang="en">report to funding agency (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="ar">تقرير لوكالة تمويل</xs:documentation>
+               <xs:documentation xml:lang="ca">informe per una agència de finançament</xs:documentation>
+               <xs:documentation xml:lang="cs">zpráva pro poskytovatele podpory</xs:documentation>
+               <xs:documentation xml:lang="de">Bericht an Förderorganisation</xs:documentation>
+               <xs:documentation xml:lang="es">informe a organismo financiador</xs:documentation>
+               <xs:documentation xml:lang="fr">rapport à l'intention du financeur</xs:documentation>
+               <xs:documentation xml:lang="it">rapporto a un'agenzia di finanziamento</xs:documentation>
+               <xs:documentation xml:lang="ja">助成研究成果報告書</xs:documentation>
+               <xs:documentation xml:lang="pt">relatório para organismo financiador</xs:documentation>
+               <xs:documentation xml:lang="sl">poročilo financerjem raziskave</xs:documentation>
+               <xs:documentation xml:lang="tr">fon sağlayıcıya rapor</xs:documentation>
+               <xs:documentation xml:lang="zh">给资助机构的报告</xs:documentation>
+               <xs:appinfo>
+                  <cf:Class id="http://purl.org/coar/resource_type/c_18hj"
+                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
+                     <cf:Term xml:lang="en">report to funding agency (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="ar" trans="h">تقرير لوكالة تمويل</cf:Term>
+                     <cf:Term xml:lang="ca" trans="h">informe per una agència de finançament</cf:Term>
+                     <cf:Term xml:lang="cs" trans="h">zpráva pro poskytovatele podpory</cf:Term>
+                     <cf:Term xml:lang="de" trans="h">Bericht an Förderorganisation</cf:Term>
+                     <cf:Term xml:lang="es" trans="h">informe a organismo financiador</cf:Term>
+                     <cf:Term xml:lang="fr" trans="h">rapport à l'intention du financeur</cf:Term>
+                     <cf:Term xml:lang="it" trans="h">rapporto a un'agenzia di finanziamento</cf:Term>
+                     <cf:Term xml:lang="ja" trans="h">助成研究成果報告書</cf:Term>
+                     <cf:Term xml:lang="pt" trans="h">relatório para organismo financiador</cf:Term>
+                     <cf:Term xml:lang="sl" trans="h">poročilo financerjem raziskave</cf:Term>
+                     <cf:Term xml:lang="tr" trans="h">fon sağlayıcıya rapor</cf:Term>
+                     <cf:Term xml:lang="zh" trans="h">给资助机构的报告</cf:Term>
+                     <cf:Definition xml:lang="en">A report to a funding agency is a document written by beneficiaries of project grants. The reporting documents can be e.g. periodic reports about progress of scientific and technical work and final report. For deliverables use ‘Project deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm ]</cf:Definition>
+                     <cf:Broader>
+                        <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types"/>
                      </cf:Broader>
                   </cf:Class>

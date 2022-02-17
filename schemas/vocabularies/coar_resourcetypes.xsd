@@ -2897,7 +2897,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_186u">
             <xs:annotation>
-               <xs:documentation xml:lang="en">policy report</xs:documentation>
+               <xs:documentation xml:lang="en">policy report (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ar">تقرير عن السياسات</xs:documentation>
                <xs:documentation xml:lang="ca">informe de política</xs:documentation>
                <xs:documentation xml:lang="cs">zpráva k politice nebo strategii</xs:documentation>
@@ -2917,7 +2917,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <cf:Class xmlns:cf="urn:xmlns:org.eurocris.cerif"
                             id="http://purl.org/coar/resource_type/c_186u"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">policy report</cf:Term>
+                     <cf:Term xml:lang="en">policy report (deprecated)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">تقرير عن السياسات</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe de política</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">zpráva k politice nebo strategii</cf:Term>
@@ -2951,7 +2951,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Strategiepapier</skos:altLabel>
                      <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca">informe de gestió</skos:altLabel>
                      <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="es">memoria de protocolo de actuación</skos:altLabel>
-                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">policy report</skos:prefLabel>
+                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">policy report (deprecated)</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ar">تقرير عن السياسات</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="it">informativa politica</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl">beleidsrapport</skos:prefLabel>
@@ -3956,7 +3956,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_18hj">
             <xs:annotation>
-               <xs:documentation xml:lang="en">report to funding agency</xs:documentation>
+               <xs:documentation xml:lang="en">report to funding agency (deprecated since 2021-03-12)</xs:documentation>
                <xs:documentation xml:lang="ar">تقرير لوكالة تمويل</xs:documentation>
                <xs:documentation xml:lang="ca">informe per una agència de finançament</xs:documentation>
                <xs:documentation xml:lang="cs">zpráva pro poskytovatele podpory</xs:documentation>
@@ -3973,7 +3973,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <cf:Class xmlns:cf="urn:xmlns:org.eurocris.cerif"
                             id="http://purl.org/coar/resource_type/c_18hj"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">report to funding agency</cf:Term>
+                     <cf:Term xml:lang="en">report to funding agency (deprecated since 2021-03-12)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">تقرير لوكالة تمويل</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe per una agència de finançament</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">zpráva pro poskytovatele podpory</cf:Term>
@@ -4001,7 +4001,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Bericht an Förderorganisation</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="zh">给资助机构的报告</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt">relatório para organismo financiador</skos:prefLabel>
-                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">report to funding agency</skos:prefLabel>
+                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">report to funding agency (deprecated since 2021-03-12)</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ja">助成研究成果報告書</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="tr">fon sağlayıcıya rapor</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="sl">poročilo financerjem raziskave</skos:prefLabel>
@@ -4108,7 +4108,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_18wq">
             <xs:annotation>
-               <xs:documentation xml:lang="en">other type of report</xs:documentation>
+               <xs:documentation xml:lang="en">other type of report (deprecated since 2021-03-12)</xs:documentation>
                <xs:documentation xml:lang="ar">نوع آخر من التقرير</xs:documentation>
                <xs:documentation xml:lang="ca">altre tipus d'informe</xs:documentation>
                <xs:documentation xml:lang="cs">jiná zpráva</xs:documentation>
@@ -4126,7 +4126,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <cf:Class xmlns:cf="urn:xmlns:org.eurocris.cerif"
                             id="http://purl.org/coar/resource_type/c_18wq"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">other type of report</cf:Term>
+                     <cf:Term xml:lang="en">other type of report (deprecated since 2021-03-12)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">نوع آخر من التقرير</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">altre tipus d'informe</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">jiná zpráva</cf:Term>
@@ -4152,7 +4152,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="tr">diğer rapor türü</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="sl">ostale vrste poročil</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt">outro relatório</skos:prefLabel>
-                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">other type of report</skos:prefLabel>
+                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">other type of report (deprecated since 2021-03-12)</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="cs">jiná zpráva</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="zh">其他报告</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca">altre tipus d'informe</skos:prefLabel>
@@ -4267,7 +4267,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_18ww">
             <xs:annotation>
-               <xs:documentation xml:lang="en">internal report</xs:documentation>
+               <xs:documentation xml:lang="en">internal report (deprecated since 2021-03-12)</xs:documentation>
                <xs:documentation xml:lang="ar">تقرير داخلي</xs:documentation>
                <xs:documentation xml:lang="ca">informe intern</xs:documentation>
                <xs:documentation xml:lang="cs">interní zpráva</xs:documentation>
@@ -4285,7 +4285,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <cf:Class xmlns:cf="urn:xmlns:org.eurocris.cerif"
                             id="http://purl.org/coar/resource_type/c_18ww"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">internal report</cf:Term>
+                     <cf:Term xml:lang="en">internal report (deprecated since 2021-03-12)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">تقرير داخلي</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe intern</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">interní zpráva</cf:Term>
@@ -4318,7 +4318,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="cs">interní zpráva</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ja">内部報告書</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ar">تقرير داخلي</skos:prefLabel>
-                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">internal report</skos:prefLabel>
+                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">internal report (deprecated since 2021-03-12)</skos:prefLabel>
                      <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                                     rdf:resource="http://purl.org/coar/resource_type"/>
                      <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-03-12</ns0:expires>
@@ -6583,7 +6583,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_816b">
             <xs:annotation>
-               <xs:documentation xml:lang="en">preprint</xs:documentation>
+               <xs:documentation xml:lang="en">preprint (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ca">publicació preliminar</xs:documentation>
                <xs:documentation xml:lang="de">Preprint</xs:documentation>
                <xs:documentation xml:lang="es">artículo preliminar</xs:documentation>
@@ -6600,7 +6600,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <cf:Class xmlns:cf="urn:xmlns:org.eurocris.cerif"
                             id="http://purl.org/coar/resource_type/c_816b"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">preprint</cf:Term>
+                     <cf:Term xml:lang="en">preprint (deprecated)</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">publicació preliminar</cf:Term>
                      <cf:Term xml:lang="de" trans="h">Preprint</cf:Term>
                      <cf:Term xml:lang="es" trans="h">artículo preliminar</cf:Term>
@@ -6624,7 +6624,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                                    rdf:about="http://purl.org/coar/resource_type/c_816b">
                      <skos:editorialNote xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Deprecated</skos:editorialNote>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl">preprint</skos:prefLabel>
-                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">preprint</skos:prefLabel>
+                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">preprint (deprecated)</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="tr">ön baskı</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">prépublication</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca">publicació preliminar</skos:prefLabel>
@@ -7170,7 +7170,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                            <skos:altLabel xml:lang="de">Strategiepapier</skos:altLabel>
                            <skos:altLabel xml:lang="ca">informe de gestió</skos:altLabel>
                            <skos:altLabel xml:lang="es">memoria de protocolo de actuación</skos:altLabel>
-                           <skos:prefLabel xml:lang="en">policy report</skos:prefLabel>
+                           <skos:prefLabel xml:lang="en">policy report (deprecated)</skos:prefLabel>
                            <skos:prefLabel xml:lang="ar">تقرير عن السياسات</skos:prefLabel>
                            <skos:prefLabel xml:lang="it">informativa politica</skos:prefLabel>
                            <skos:prefLabel xml:lang="nl">beleidsrapport</skos:prefLabel>
@@ -7541,7 +7541,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_ba1f">
             <xs:annotation>
-               <xs:documentation xml:lang="en">report part</xs:documentation>
+               <xs:documentation xml:lang="en">report part (deprecated since 2021-03-12)</xs:documentation>
                <xs:documentation xml:lang="ca">part d'un informe</xs:documentation>
                <xs:documentation xml:lang="de">Teilbericht</xs:documentation>
                <xs:documentation xml:lang="es">parte de un estudio</xs:documentation>
@@ -7556,7 +7556,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <cf:Class xmlns:cf="urn:xmlns:org.eurocris.cerif"
                             id="http://purl.org/coar/resource_type/c_ba1f"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">report part</cf:Term>
+                     <cf:Term xml:lang="en">report part (deprecated since 2021-03-12)</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">part d'un informe</cf:Term>
                      <cf:Term xml:lang="de" trans="h">Teilbericht</cf:Term>
                      <cf:Term xml:lang="es" trans="h">parte de un estudio</cf:Term>
@@ -7584,7 +7584,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Teilbericht</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="it">capitolo di rapporto tecnico</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr">chapitre de rapport</skos:prefLabel>
-                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">report part</skos:prefLabel>
+                     <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en">report part (deprecated since 2021-03-12)</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="tr">rapor bölümü</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca">part d'un informe</skos:prefLabel>
                      <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl">deelrapport</skos:prefLabel>

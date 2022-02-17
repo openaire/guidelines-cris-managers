@@ -100,7 +100,7 @@
 		</xsl:apply-templates>
 	</xsl:template>
 
-	<xsl:template match="xs:enumeration[ not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_18cf' ) ) ]" mode="product">
+	<xsl:template match="xs:enumeration[ not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_18cf' ) ) and not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ) ]" mode="product">
 		<xsl:param name="scheme-uri" as="xs:string"/>
 		<xsl:apply-templates select="." mode="copy">
 			<xsl:with-param name="scheme-uri" select="$scheme-uri"/>

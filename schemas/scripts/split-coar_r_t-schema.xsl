@@ -43,8 +43,8 @@
 					<xs:documentation><xsl:value-of select="$title"/>: <xsl:value-of select="$descr"/></xs:documentation>
 					<xs:appinfo>
 						<cf:ClassScheme id="{$scheme-uri}">
-							<cf:Term xmlns="en"><xsl:value-of select="$title"/></cf:Term>
-							<cf:Description xmlns="en"><xsl:value-of select="$descr"/></cf:Description>
+							<cf:Term xml:lang="en"><xsl:value-of select="$title"/></cf:Term>
+							<cf:Description xml:lang="en"><xsl:value-of select="$descr"/></cf:Description>
 						</cf:ClassScheme>
 					</xs:appinfo>
 				</xs:annotation>

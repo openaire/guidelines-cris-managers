@@ -11,8 +11,8 @@
       <xs:documentation>Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).</xs:documentation>
       <xs:appinfo>
          <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
-            <cf:Term xmlns="en">Patent types extracted from the COAR Resource Types concept scheme</cf:Term>
-            <cf:Description xmlns="en">Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).</cf:Description>
+            <cf:Term xml:lang="en">Patent types extracted from the COAR Resource Types concept scheme</cf:Term>
+            <cf:Description xml:lang="en">Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).</cf:Description>
          </cf:ClassScheme>
       </xs:appinfo>
    </xs:annotation>

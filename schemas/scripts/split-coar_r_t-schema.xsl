@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:cf="urn:xmlns:org.eurocris.cerif">
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:cf="urn:xmlns:org.eurocris.cerif">
 	<!-- This stylesheet takes the output of skos2xsd.xslt and separates it into three different class schemes in three different namespaces -->
 	
 	<xsl:output method="xml" indent="yes"/>
@@ -37,10 +37,7 @@
 				<xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd</xsl:attribute>
 				<xsl:namespace name="rdf">http://www.w3.org/1999/02/22-rdf-syntax-ns#</xsl:namespace>
 		        <xsl:namespace name="skos">http://www.w3.org/2004/02/skos/core#</xsl:namespace>
-		        <xsl:namespace name="skosxl">http://www.w3.org/2008/05/skos-xl#</xsl:namespace>
 		        <xsl:namespace name="cf">urn:xmlns:org.eurocris.cerif</xsl:namespace>
-				<xsl:namespace name="dc-term">http://purl.org/dc/terms/</xsl:namespace>
-				<xsl:namespace name="vocbench">http://art.uniroma2.it/ontologies/vocbench#</xsl:namespace>
 				
 				<xs:annotation>
 					<xs:documentation><xsl:value-of select="$title"/>: <xsl:value-of select="$descr"/></xs:documentation>

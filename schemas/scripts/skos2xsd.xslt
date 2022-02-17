@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:cf="urn:xmlns:org.eurocris.cerif"
-	xmlns:dc="http://purl.org/dc/terms/" exclude-result-prefixes="#all">
+	xmlns:dc="http://purl.org/dc/terms/" exclude-result-prefixes="skosxl">
 	<!-- This stylesheet takes an RDF+XML file as input and outputs a XML Schema with an enumeration and an XML element in it -->
 
 	<xsl:output method="xml" indent="yes" />

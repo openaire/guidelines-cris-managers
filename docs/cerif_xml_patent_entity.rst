@@ -24,7 +24,6 @@ Type
 :CERIF: the ResultPatent_Classification (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_)
 :Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).
 
-  * **other** (`<http://purl.org/coar/resource_type/c_1843>`_): A resource type that is not included in existing terms. [COAR definition]
   * **patent** (`<http://purl.org/coar/resource_type/c_15cd>`_): A patent or patent application. A set of exclusive rights granted by law to applicants for inventions that are new, non-obvious and commercially applicable. A patent is valid for a limited period (generally 20 years), during which time patent holders can commercially exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]
 
     * **PCT application** (`<http://purl.org/coar/resource_type/SB3Y-W4EH>`_): A patent application filed through the WIPO-administered Patent Cooperation Treaty (PCT), also known as an international application. [Source: Adapted from https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]

@@ -83,21 +83,21 @@
 		</xsl:copy>
 	</xsl:template>
 
-	<xsl:template match="xs:enumeration[ skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) or skos:reaches( ., 'http://purl.org/coar/resource_type/c_1843' ) ]" mode="patent">
+	<xsl:template match="xs:enumeration[ skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ]" mode="patent">
 		<xsl:param name="scheme-uri" as="xs:string"/>
 		<xsl:apply-templates select="." mode="copy-except-broader">
 			<xsl:with-param name="scheme-uri" select="$scheme-uri"/>
 		</xsl:apply-templates>
 	</xsl:template>
 
-	<xsl:template match="xs:enumeration[ skos:reaches( ., 'http://purl.org/coar/resource_type/c_18cf' ) and not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ) or skos:reaches( ., 'http://purl.org/coar/resource_type/c_1843' ) ]" mode="publication">
+	<xsl:template match="xs:enumeration[ skos:reaches( ., 'http://purl.org/coar/resource_type/c_18cf' ) and not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ) ]" mode="publication">
 		<xsl:param name="scheme-uri" as="xs:string"/>
 		<xsl:apply-templates select="." mode="copy">
 			<xsl:with-param name="scheme-uri" select="$scheme-uri"/>
 		</xsl:apply-templates>
 	</xsl:template>
 
-	<xsl:template match="xs:enumeration[ not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_18cf' ) ) and not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ) or skos:reaches( ., 'http://purl.org/coar/resource_type/c_1843' ) ]" mode="product">
+	<xsl:template match="xs:enumeration[ not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_18cf' ) ) and not( skos:reaches( ., 'http://purl.org/coar/resource_type/c_15cd' ) ) ]" mode="product">
 		<xsl:param name="scheme-uri" as="xs:string"/>
 		<xsl:apply-templates select="." mode="copy">
 			<xsl:with-param name="scheme-uri" select="$scheme-uri"/>

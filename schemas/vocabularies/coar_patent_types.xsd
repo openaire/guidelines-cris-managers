@@ -109,48 +109,6 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://purl.org/coar/resource_type/c_1843">
-            <xs:annotation>
-               <xs:documentation xml:lang="en">other</xs:documentation>
-               <xs:documentation xml:lang="ar">آخر</xs:documentation>
-               <xs:documentation xml:lang="ca">altres</xs:documentation>
-               <xs:documentation xml:lang="cs">ostatní</xs:documentation>
-               <xs:documentation xml:lang="de">sonstige</xs:documentation>
-               <xs:documentation xml:lang="es">otros</xs:documentation>
-               <xs:documentation xml:lang="fi">muu</xs:documentation>
-               <xs:documentation xml:lang="fr">autre</xs:documentation>
-               <xs:documentation xml:lang="it">altro</xs:documentation>
-               <xs:documentation xml:lang="ja">その他</xs:documentation>
-               <xs:documentation xml:lang="nl">anders</xs:documentation>
-               <xs:documentation xml:lang="pt">outros</xs:documentation>
-               <xs:documentation xml:lang="ru">другое</xs:documentation>
-               <xs:documentation xml:lang="sl">ostalo</xs:documentation>
-               <xs:documentation xml:lang="tr">diğer</xs:documentation>
-               <xs:documentation xml:lang="zh">其他</xs:documentation>
-               <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_1843"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types">
-                     <cf:Term xml:lang="en">other</cf:Term>
-                     <cf:Term xml:lang="ar" trans="h">آخر</cf:Term>
-                     <cf:Term xml:lang="ca" trans="h">altres</cf:Term>
-                     <cf:Term xml:lang="cs" trans="h">ostatní</cf:Term>
-                     <cf:Term xml:lang="de" trans="h">sonstige</cf:Term>
-                     <cf:Term xml:lang="es" trans="h">otros</cf:Term>
-                     <cf:Term xml:lang="fi" trans="h">muu</cf:Term>
-                     <cf:Term xml:lang="fr" trans="h">autre</cf:Term>
-                     <cf:Term xml:lang="it" trans="h">altro</cf:Term>
-                     <cf:Term xml:lang="ja" trans="h">その他</cf:Term>
-                     <cf:Term xml:lang="nl" trans="h">anders</cf:Term>
-                     <cf:Term xml:lang="pt" trans="h">outros</cf:Term>
-                     <cf:Term xml:lang="ru" trans="h">другое</cf:Term>
-                     <cf:Term xml:lang="sl" trans="h">ostalo</cf:Term>
-                     <cf:Term xml:lang="tr" trans="h">diğer</cf:Term>
-                     <cf:Term xml:lang="zh" trans="h">其他</cf:Term>
-                     <cf:Definition xml:lang="en">A resource type that is not included in existing terms. [COAR definition]</cf:Definition>
-                  </cf:Class>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_15cd">
             <xs:annotation>
                <xs:documentation xml:lang="en">patent</xs:documentation>

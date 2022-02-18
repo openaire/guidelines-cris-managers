@@ -58,3 +58,7 @@ target/
 .project
 /.pydevproject
 /.settings/
+.vscode
+
+# Backup files
+*.bak

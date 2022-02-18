@@ -171,7 +171,7 @@
 			</header>
 			<metadata>
 				<Publication xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Publications/894491">
-					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_3e5a<!-- contribution to journal --></Type>
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">http://purl.org/coar/resource_type/c_b239<!-- editorial --></Type>
 					<Title xml:lang="en">The International Journal of Digital Curation: Special Issue on Open Access Repositories</Title>
 					<PublishedIn>
 						<Publication id="Publications/894490"><!-- Int J Digital Curation -->
@@ -180,17 +180,18 @@
 							<ISSN>1746-8256</ISSN>
 						</Publication>
 					</PublishedIn>
-					<Editors>
-						<Editor>
-							<Person id="Persons/2123452"><!-- Paolo Manghi -->
-								<PersonName>
-									<FamilyNames>Manghi</FamilyNames>
-									<FirstNames>Paolo</FirstNames>
-								</PersonName>
-								<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
-							</Person>
-						</Editor>
-					</Editors>
+					<Authors>
+					   <Author>
+					   	<DisplayName>Paolo Manghi</DisplayName>
+						<Person id="Persons/2123452"><!-- Paolo Manghi -->
+							<PersonName>
+								<FamilyNames>Manghi</FamilyNames>
+								<FirstNames>Paolo</FirstNames>
+							</PersonName>
+							<ORCID>https://orcid.org/0000-0001-7291-3210</ORCID>
+						</Person>
+					   </Author>
+					</Authors>
 					<OriginatesFrom>
 						<Project id="Projects/112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>

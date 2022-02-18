@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:ns0="http://purl.org/coar/resource_type/schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-	<xsl:template match="skos:prefLabel[@xml:lang='en'][../skos:editorialNote[@xml:lang='en']='Deprecated']">
+	<xsl:template match="skos:prefLabel[@xml:lang='en'][../skos:editorialNote[@xml:lang='en']='Deprecated' or ../ns0:expires]">
 		<xsl:copy>
 			<xsl:apply-templates select="@*" />
 			<xsl:apply-templates />
@@ -41,6 +41,10 @@
 			</xsl:choose>
 		</xsl:copy>
 	</xsl:template>
+
+	<xsl:template match="skos:Concept[@rdf:about='http://purl.org/coar/resource_type/c_26e4']"/><!-- "interview" (was introduced in 2.0 and deprecated in 3.0) -->
+
+	<xsl:template match="skos:Concept[@rdf:about='http://purl.org/coar/resource_type/EHVM-H119']"/><!-- "research data" (was introduced after 2.0 was released and deprecated before 3.0 was released) -->
 
 	<xsl:template match="skos:Concept[@rdf:about='http://purl.org/coar/resource_type/c_3e5a']"><!-- "contribution to journal" -->
 		<xsl:copy>

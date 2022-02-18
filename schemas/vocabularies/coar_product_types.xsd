@@ -562,32 +562,6 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://purl.org/coar/resource_type/c_26e4">
-            <xs:annotation>
-               <xs:documentation xml:lang="en">interview</xs:documentation>
-               <xs:documentation xml:lang="ca">entrevista</xs:documentation>
-               <xs:documentation xml:lang="de">Interview</xs:documentation>
-               <xs:documentation xml:lang="it">intervista</xs:documentation>
-               <xs:documentation xml:lang="ja">インタビュー</xs:documentation>
-               <xs:documentation xml:lang="nl">interview</xs:documentation>
-               <xs:documentation xml:lang="sl">intervju</xs:documentation>
-               <xs:documentation xml:lang="tr">Görüşme</xs:documentation>
-               <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_26e4"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">
-                     <cf:Term xml:lang="en">interview</cf:Term>
-                     <cf:Term xml:lang="ca" trans="h">entrevista</cf:Term>
-                     <cf:Term xml:lang="de" trans="h">Interview</cf:Term>
-                     <cf:Term xml:lang="it" trans="h">intervista</cf:Term>
-                     <cf:Term xml:lang="ja" trans="h">インタビュー</cf:Term>
-                     <cf:Term xml:lang="nl" trans="h">interview</cf:Term>
-                     <cf:Term xml:lang="sl" trans="h">intervju</cf:Term>
-                     <cf:Term xml:lang="tr" trans="h">Görüşme</cf:Term>
-                     <cf:Definition xml:lang="en">A discussion between a reporter, host, panel, or audience and a newsmaker, author, or celebrity, recorded (edited or unedited) in print, on film or video, as transcript or as a sound recording. (Adapted from ODLIS)</cf:Definition>
-                  </cf:Class>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/H41Y-FW7B">
             <xs:annotation>
                <xs:documentation xml:lang="en">laboratory notebook</xs:documentation>
@@ -1005,18 +979,6 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                         <cf:Class id="http://purl.org/coar/resource_type/c_ddb1"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types"/>
                      </cf:Broader>
-                  </cf:Class>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://purl.org/coar/resource_type/EHVM-H119">
-            <xs:annotation>
-               <xs:documentation xml:lang="en">research data</xs:documentation>
-               <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/EHVM-H119"
-                            classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">
-                     <cf:Term xml:lang="en">research data</cf:Term>
-                     <cf:Definition xml:lang="en">Data that are used as primary sources to support technical or scientific enquiry, research, scholarship, or artistic activity, and that are used as evidence in the research process and/or are commonly accepted in the research community as necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]</cf:Definition>
                   </cf:Class>
                </xs:appinfo>
             </xs:annotation>

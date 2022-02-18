@@ -51,11 +51,11 @@ Type
 
       * **newspaper article** (`<http://purl.org/coar/resource_type/c_998f>`_): Work consisting of a news item appearing in a general-interest newspaper or other general news periodical, containing information of current and timely interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html )
     * **other periodical** (`<http://purl.org/coar/resource_type/QX5C-AR31>`_): A resource type that is not included in existing terms under the top concept "Text". [COAR definition]
-    * **periodical** (`<http://purl.org/coar/resource_type/c_2659>`_): A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]
+    * **periodical (deprecated since 2021-03-12)** (`<http://purl.org/coar/resource_type/c_2659>`_): A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]
 
       * **journal** (`<http://purl.org/coar/resource_type/c_0640>`_): A journal is a serial publication devoted to disseminating original research and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]
 
-        * **contribution to journal** (`<http://purl.org/coar/resource_type/c_3e5a>`_): A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.
+        * **contribution to journal (deprecated since 2021-03-12)** (`<http://purl.org/coar/resource_type/c_3e5a>`_): A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.
 
           * **editorial** (`<http://purl.org/coar/resource_type/c_b239>`_): A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]
           * **journal article** (`<http://purl.org/coar/resource_type/c_6501>`_): An article, typically the realization of a research paper reporting original research findings, published in a journal issue. [Source: http://purl.org/spar/fabio/JournalArticle]

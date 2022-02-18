@@ -834,27 +834,6 @@
                </xs:appinfo>
             </xs:annotation>
          </xs:enumeration>
-         <xs:enumeration value="http://purl.org/coar/resource_type/EHVM-H119">
-            <xs:annotation>
-               <xs:documentation xml:lang="en">research data</xs:documentation>
-               <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/EHVM-H119"
-                            classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">research data</cf:Term>
-                     <cf:Definition xml:lang="en">Data that are used as primary sources to support technical or scientific enquiry, research, scholarship, or artistic activity, and that are used as evidence in the research process and/or are commonly accepted in the research community as necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]</cf:Definition>
-                  </cf:Class>
-               </xs:appinfo>
-               <xs:appinfo>
-                  <rdf:Description rdf:about="http://purl.org/coar/resource_type/EHVM-H119">
-                     <skos:definition xml:lang="en">Data that are used as primary sources to support technical or scientific enquiry, research, scholarship, or artistic activity, and that are used as evidence in the research process and/or are commonly accepted in the research community as necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]</skos:definition>
-                     <skos:topConceptOf rdf:resource="http://purl.org/coar/resource_type"/>
-                     <skos:prefLabel xml:lang="en">research data</skos:prefLabel>
-                     <skos:inScheme rdf:resource="http://purl.org/coar/resource_type"/>
-                     <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-04-01</ns0:expires>
-                  </rdf:Description>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/FF4C-28RK">
             <xs:annotation>
                <xs:documentation xml:lang="en">observational data</xs:documentation>
@@ -4186,7 +4165,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_2659">
             <xs:annotation>
-               <xs:documentation xml:lang="en">periodical</xs:documentation>
+               <xs:documentation xml:lang="en">periodical (deprecated since 2021-03-12)</xs:documentation>
                <xs:documentation xml:lang="ca">publicació en sèrie</xs:documentation>
                <xs:documentation xml:lang="cs">periodikum</xs:documentation>
                <xs:documentation xml:lang="de">Periodikum</xs:documentation>
@@ -4202,7 +4181,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2659"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">periodical</cf:Term>
+                     <cf:Term xml:lang="en">periodical (deprecated since 2021-03-12)</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">publicació en sèrie</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">periodikum</cf:Term>
                      <cf:Term xml:lang="de" trans="h">Periodikum</cf:Term>
@@ -4252,63 +4231,13 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <skos:prefLabel xml:lang="ja">逐次刊行物</skos:prefLabel>
                      <skos:prefLabel xml:lang="zh">期刊</skos:prefLabel>
                      <skos:prefLabel xml:lang="fr">périodique</skos:prefLabel>
-                     <skos:prefLabel xml:lang="en">periodical</skos:prefLabel>
+                     <skos:prefLabel xml:lang="en">periodical (deprecated since 2021-03-12)</skos:prefLabel>
                      <skos:prefLabel xml:lang="ca">publicació en sèrie</skos:prefLabel>
                      <skos:prefLabel xml:lang="nl">periodiek</skos:prefLabel>
                      <skos:exactMatch rdf:resource="http://purl.org/spar/fabio/Periodical"/>
                      <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-03-12</ns0:expires>
                      <skos:definition xml:lang="en">A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]</skos:definition>
                      <skos:broader rdf:resource="http://purl.org/coar/resource_type/c_18cf"/>
-                  </rdf:Description>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="http://purl.org/coar/resource_type/c_26e4">
-            <xs:annotation>
-               <xs:documentation xml:lang="en">interview</xs:documentation>
-               <xs:documentation xml:lang="ca">entrevista</xs:documentation>
-               <xs:documentation xml:lang="de">Interview</xs:documentation>
-               <xs:documentation xml:lang="it">intervista</xs:documentation>
-               <xs:documentation xml:lang="ja">インタビュー</xs:documentation>
-               <xs:documentation xml:lang="nl">interview</xs:documentation>
-               <xs:documentation xml:lang="sl">intervju</xs:documentation>
-               <xs:documentation xml:lang="tr">Görüşme</xs:documentation>
-               <xs:appinfo>
-                  <cf:Class id="http://purl.org/coar/resource_type/c_26e4"
-                            classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">interview</cf:Term>
-                     <cf:Term xml:lang="ca" trans="h">entrevista</cf:Term>
-                     <cf:Term xml:lang="de" trans="h">Interview</cf:Term>
-                     <cf:Term xml:lang="it" trans="h">intervista</cf:Term>
-                     <cf:Term xml:lang="ja" trans="h">インタビュー</cf:Term>
-                     <cf:Term xml:lang="nl" trans="h">interview</cf:Term>
-                     <cf:Term xml:lang="sl" trans="h">intervju</cf:Term>
-                     <cf:Term xml:lang="tr" trans="h">Görüşme</cf:Term>
-                     <cf:Definition xml:lang="en">A discussion between a reporter, host, panel, or audience and a newsmaker, author, or celebrity, recorded (edited or unedited) in print, on film or video, as transcript or as a sound recording. (Adapted from ODLIS)</cf:Definition>
-                  </cf:Class>
-               </xs:appinfo>
-               <xs:appinfo>
-                  <rdf:Description rdf:about="http://purl.org/coar/resource_type/c_26e4">
-                     <skos:narrowMatch rdf:resource="https://scigraph.springernature.com/things/technical-article-types/interview"/>
-                     <skos:narrowMatch rdf:resource="https://dictionary.casrai.org/Text_Interview"/>
-                     <skos:narrowMatch rdf:resource="https://dictionary.casrai.org/Broadcast_Interview"/>
-                     <skos:topConceptOf rdf:resource="http://purl.org/coar/resource_type"/>
-                     <skos:prefLabel xml:lang="ca">entrevista</skos:prefLabel>
-                     <skos:prefLabel xml:lang="tr">Görüşme</skos:prefLabel>
-                     <skos:prefLabel xml:lang="de">Interview</skos:prefLabel>
-                     <skos:prefLabel xml:lang="ja">インタビュー</skos:prefLabel>
-                     <skos:prefLabel xml:lang="en">interview</skos:prefLabel>
-                     <skos:prefLabel xml:lang="nl">interview</skos:prefLabel>
-                     <skos:prefLabel xml:lang="it">intervista</skos:prefLabel>
-                     <skos:prefLabel xml:lang="sl">intervju</skos:prefLabel>
-                     <skos:altLabel xml:lang="tr">Röportaj</skos:altLabel>
-                     <skos:altLabel xml:lang="tr">Mülakat</skos:altLabel>
-                     <skos:altLabel xml:lang="es">entrevista</skos:altLabel>
-                     <skos:altLabel xml:lang="ca">interviu</skos:altLabel>
-                     <skos:inScheme rdf:resource="http://purl.org/coar/resource_type"/>
-                     <skos:editorialNote xml:lang="en">Published</skos:editorialNote>
-                     <ns0:expires xmlns:ns0="http://purl.org/coar/resource_type/schema#">2021-03-12</ns0:expires>
-                     <skos:definition xml:lang="en">A discussion between a reporter, host, panel, or audience and a newsmaker, author, or celebrity, recorded (edited or unedited) in print, on film or video, as transcript or as a sound recording. (Adapted from ODLIS)</skos:definition>
                   </rdf:Description>
                </xs:appinfo>
             </xs:annotation>
@@ -4795,7 +4724,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_3e5a">
             <xs:annotation>
-               <xs:documentation xml:lang="en">contribution to journal</xs:documentation>
+               <xs:documentation xml:lang="en">contribution to journal (deprecated since 2021-03-12)</xs:documentation>
                <xs:documentation xml:lang="ar">مساهمة في دورية</xs:documentation>
                <xs:documentation xml:lang="ca">contribució a revista</xs:documentation>
                <xs:documentation xml:lang="cs">příspěvek v časopisu</xs:documentation>
@@ -4811,7 +4740,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
                             classSchemeId="http://purl.org/coar/resource_type">
-                     <cf:Term xml:lang="en">contribution to journal</cf:Term>
+                     <cf:Term xml:lang="en">contribution to journal (deprecated since 2021-03-12)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">مساهمة في دورية</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">contribució a revista</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">příspěvek v časopisu</cf:Term>
@@ -4834,7 +4763,7 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                   <rdf:Description rdf:about="http://purl.org/coar/resource_type/c_3e5a">
                      <skos:prefLabel xml:lang="sl">prispevek v reviji</skos:prefLabel>
                      <skos:prefLabel xml:lang="cs">příspěvek v časopisu</skos:prefLabel>
-                     <skos:prefLabel xml:lang="en">contribution to journal</skos:prefLabel>
+                     <skos:prefLabel xml:lang="en">contribution to journal (deprecated since 2021-03-12)</skos:prefLabel>
                      <skos:prefLabel xml:lang="it">contributo in rivista</skos:prefLabel>
                      <skos:prefLabel xml:lang="ca">contribució a revista</skos:prefLabel>
                      <skos:prefLabel xml:lang="pt">contributo em revista</skos:prefLabel>

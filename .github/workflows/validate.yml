@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Supporting Repos
         run: |
           git clone https://github.com/eurocris/CERIF-TG-Tools.git ../CERIF-TG-Tools
-          git clone https://github.com/jdvorak001/openaire-cris-validator.git ../openaire-cris-validator
+          git clone https://github.com/eurocris/openaire-cris-validator.git ../openaire-cris-validator
       - uses: actions/setup-java@v2
         with:
           distribution: 'zulu'

@@ -19,7 +19,7 @@
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#HigherEducation</Type>
 					<Acronym>NKUA</Acronym>
 					<Name xml:lang="el">ΕΘΝΙΚΟ ΚΑΙ ΚΑΠΟΔΙΣΤΡΙΑΚΟ ΠΑΝΕΠΙΣΤΗΜΙΟ ΑΘΗΝΩΝ</Name>
-					<Name xml:lang="en" trans="h">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
+					<Name xml:lang="en">NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS</Name>
 					<ElectronicAddress>http://www.uoa.gr</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
@@ -35,7 +35,7 @@
                     <Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#ResearchInstitute</Type>
 					<Acronym>CNR</Acronym>
 					<Name xml:lang="it">CONSIGLIO NAZIONALE DELLE RICERCHE</Name>
-					<Name xml:lang="en" trans="h">NATIONAL RESEARCH COUNCIL</Name>
+					<Name xml:lang="en">NATIONAL RESEARCH COUNCIL</Name>
 					<ElectronicAddress>http://www.cnr.it</ElectronicAddress>
 				</OrgUnit>
 			</metadata>
@@ -49,7 +49,7 @@
 			<metadata>
 				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/312347">
 					<Acronym>EKT</Acronym>
-					<Name xml:lang="en" trans="h">National Documentation Centre</Name>
+					<Name xml:lang="en">National Documentation Centre</Name>
 					<Name xml:lang="el">Εθνικό Κέντρο Τεκμηρίωσης</Name>
 					<ElectronicAddress>http://www.ekt.gr</ElectronicAddress>
 				</OrgUnit>
@@ -119,6 +119,25 @@
 				</OrgUnit>
 			</metadata>
 		</record>
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:OrgUnits/350001</identifier>
+				<datestamp>2021-06-17T11:56:00Z</datestamp>
+				<setSpec>openaire_cris_orgunits</setSpec>
+			</header>
+			<metadata>
+				<OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/350001">
+					<Type scheme="https://w3id.org/cerif/vocab/OrganisationTypes">https://w3id.org/cerif/vocab/OrganisationTypes#University</Type>
+					<Acronym>UNIBI</Acronym>
+					<Name xml:lang="de">Universität Bielefeld</Name>
+					<Name xml:lang="en">Bielefeld University</Name>
+					<RORID>https://ror.org/02hpadn98</RORID>
+					<GRID>grid.7491.b</GRID>
+					<ElectronicAddress>http://www.uni-bielefeld.de</ElectronicAddress>
+					<ElectronicAddress>mailto:post@uni-bielefeld.de</ElectronicAddress>
+				</OrgUnit>
+			</metadata>
+		</record>		
 		<record>
 			<header>
 				<identifier>oai:cris.example.org:OrgUnits/301248</identifier>

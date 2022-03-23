@@ -8,6 +8,139 @@
 	<responseDate>2018-01-12T14:00:00Z</responseDate>
 	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_funding">http://cris.example.org/openaire/connector</request>
 	<ListRecords>
+
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Fundings/620005</identifier>
+				<datestamp>2021-06-17T21:26:00Z</datestamp>
+				<setSpec>openaire_cris_funding</setSpec>
+			</header>
+			<metadata>
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/620005"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017s / OpenAIRE-Advance -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
+					<Name xml:lang="en">H2020 funding for the OpenAIRE-Advance project</Name>
+					<PartOf>
+						<Funding id="Fundings/620004"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017 -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Call</Type>
+							<Name xml:lang="en">H2020-EINFRA-2017</Name>
+							<PartOf>
+								<Funding id="Fundings/620003"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science  -->
+									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+									<Name xml:lang="en">EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science</Name>
+									<PartOf>
+										<Funding id="Fundings/620002"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  -->
+											<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+											<Name xml:lang="en">H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures</Name>
+											<PartOf>
+												<Funding id="Fundings/620001"><!-- H2020 -->
+													<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+													<Acronym>H2020</Acronym>
+												</Funding>
+											</PartOf>
+										</Funding>
+									</PartOf>
+								</Funding>
+							</PartOf>
+						</Funding>
+					</PartOf>
+					<Duration startDate="2018-01" endDate="2021-02" />
+					<OAMandate mandated="true" uri="http://roarmap.eprints.org/680/"/>
+				</Funding>
+			</metadata>
+		</record>
+		
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Fundings/620004</identifier>
+				<datestamp>2021-06-17T21:26:00Z</datestamp>
+				<setSpec>openaire_cris_funding</setSpec>
+			</header>
+			<metadata>
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/620004"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017 -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Call</Type>
+					<Name xml:lang="en">H2020-EINFRA-2017</Name>
+					<PartOf>
+						<Funding id="Fundings/620003"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science  -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+							<Name xml:lang="en">EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science</Name>
+							<PartOf>
+								<Funding id="Fundings/620002"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  -->
+									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+									<Name xml:lang="en">H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures</Name>
+									<PartOf>
+										<Funding id="Fundings/620001"><!-- H2020 -->
+											<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+											<Acronym>H2020</Acronym>
+										</Funding>
+									</PartOf>
+								</Funding>
+							</PartOf>
+						</Funding>
+					</PartOf>
+				</Funding>
+			</metadata>
+		</record>
+
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Fundings/620003</identifier>
+				<datestamp>2021-06-17T21:26:00Z</datestamp>
+				<setSpec>openaire_cris_funding</setSpec>
+			</header>
+			<metadata>
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/620003"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science  -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+					<Name xml:lang="en">EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science</Name>
+					<PartOf>
+						<Funding id="Fundings/620002"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+							<Name xml:lang="en">H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures</Name>
+							<PartOf>
+								<Funding id="Fundings/620001"><!-- H2020 -->
+									<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+									<Acronym>H2020</Acronym>
+								</Funding>
+							</PartOf>
+						</Funding>
+					</PartOf>
+				</Funding>
+			</metadata>
+		</record>
+
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Fundings/620002</identifier>
+				<datestamp>2021-06-17T21:26:00Z</datestamp>
+				<setSpec>openaire_cris_funding</setSpec>
+			</header>
+			<metadata>
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/620002"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+					<Name xml:lang="en">H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures</Name>
+					<PartOf>
+						<Funding id="Fundings/620001"><!-- H2020 -->
+							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+							<Acronym>H2020</Acronym>
+						</Funding>
+					</PartOf>
+				</Funding>
+			</metadata>
+		</record>
+
+		<record>
+			<header>
+				<identifier>oai:cris.example.org:Fundings/620001</identifier>
+				<datestamp>2021-06-17T21:26:00Z</datestamp>
+				<setSpec>openaire_cris_funding</setSpec>
+			</header>
+			<metadata>
+				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Fundings/620001"><!-- H2020 -->
+					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#FundingProgramme</Type>
+					<Acronym>H2020</Acronym>
+				</Funding>
+			</metadata>
+		</record>
+
 		<record>
 			<header>
 				<identifier>oai:cris.example.org:Fundings/612345</identifier>

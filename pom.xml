@@ -139,10 +139,6 @@
 			      	<schematronProcessingEngine>schematron</schematronProcessingEngine>
 			      	<xmlDirectory>samples</xmlDirectory>
 			      	<svrlErrorDirectory>samples/_schematron_output</svrlErrorDirectory>
-					<catalogs>
-						<catalog>schemas/cached/catalog.xml</catalog>
-						<catalog>schemas/catalog.xml</catalog>
-					</catalogs>
 			      </configuration>
 			    </execution>
 			  </executions>

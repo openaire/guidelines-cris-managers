@@ -109,7 +109,7 @@
 							</Person>
 						</Author>
 					</Authors>
-					<License scheme="https://www.openaire.eu/cerif-profile/vocab/LicenseTypes#">CCAttribution(CCBY)</License>
+					<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-3.0</License>
 					<Abstract xml:lang="en">In this paper, we tackle the challenge of linking scholarly information in multi-disciplinary research infrastructures. There is a trend towards linking
 						publications with research data and other information, but, as it is still emerging, this is handled differently by various initiatives and disciplines. For OpenAIRE, a European
 						cross-disciplinary publication infrastructure, this poses the challenge of supporting these heterogeneous practices. Hence, OpenAIRE wants to contribute to the development of a common approach

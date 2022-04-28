@@ -75,6 +75,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							</Person>
 						</Creator>
 					</Creators>
+					<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
 <!-- 
 					<Contributors>
 						<HostingInstitution startDate="2011">

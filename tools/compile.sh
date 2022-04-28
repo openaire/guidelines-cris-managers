@@ -3,13 +3,15 @@
 echo '================================================================================'
 echo '*  Compiling the CERIF-Model-Tools                                             *'
 echo '================================================================================'
-( cd ../CERIF-TG-Tools/CERIF-Model-Tools/ && mvn --no-transfer-progress package )
+( cd ../CERIF-TG-Tools/CERIF-Model-Tools/ && mvn --no-transfer-progress package ) \
+|| exit 1
 
 echo
 echo '================================================================================'
 echo '*  Running the CERIF-Model-Tools                                               *'
 echo '================================================================================'
-java -jar ../CERIF-TG-Tools/CERIF-Model-Tools/target/cerif-model-tools-*.jar -d conf/openaire-cerif-profile.xml -o schemas/openaire-cerif-profile.xsd
+java -jar ../CERIF-TG-Tools/CERIF-Model-Tools/target/cerif-model-tools-*.jar -d conf/openaire-cerif-profile.xml -o schemas/openaire-cerif-profile.xsd \
+|| exit 1
 
 echo
 echo '================================================================================'

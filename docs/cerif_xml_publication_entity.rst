@@ -388,7 +388,7 @@ Publisher
 
 License
 ^^^^^^^
-:Description: The license of the publication
+:Description: The license of the publication. We recommend using URIs from the SPDX License List (https://spdx.org/licenses/), which includes the Creative Commons licenses.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``License`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
 :CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)

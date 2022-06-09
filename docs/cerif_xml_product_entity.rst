@@ -169,7 +169,7 @@ Publisher
 
 License
 ^^^^^^^
-:Description: The license of the product
+:Description: The license of the product. We recommend using URIs from the SPDX License List (https://spdx.org/licenses/), which includes the licenses commonly used for software and datasets.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``License`` containing the classification identifier and having a ``scheme`` attribute to specify the classification scheme identifier
 :CERIF: the ResultProduct_Classification (`<https://w3id.org/cerif/model#ResultProduct_Classification>`_)

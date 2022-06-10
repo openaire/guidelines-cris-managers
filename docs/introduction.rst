@@ -22,28 +22,37 @@ The OpenAIRE profile of CERIF supports harvesting and importing metadata from CR
 Acknowledgements
 ^^^^^^^^^^^^^^^^
 
-We wish to acknowledge the following contributors and also those who provided feedback outside the formal editing and reviewing work. 
-
-
-**Editors**
+**Editors of this version**
 
 - Jan Dvořák |ORCIDlogo| `https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia + euroCRIS)
-- Andrea Bollini |ORCIDlogo| `https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
-- Laurent Rémy |ORCIDlogo| `https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
-- Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
+- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany + OpenAIRE)
+- Dragan Ivanović |ORCIDlogo| `https://orcid.org/0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ (University of Novi Sad, Serbia + euroCRIS)
 
 .. |ORCIDlogo| image:: _static/orcid_128x128.png
    :height: 10pt
    :width: 10pt
 
+**Editors of earlier versions**
+
+- Andrea Bollini |ORCIDlogo| `https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
+- Laurent Rémy |ORCIDlogo| `https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
+- Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
+- Nikos Houssos |ORCIDlogo| `https://orcid.org/0000-0002-5277-285X <https://orcid.org/0000-0002-5277-285X>`_ (National Documentation Centre (EKT), Greece + euroCRIS)
+- Brigitte Jörg |ORCIDlogo| `https://orcid.org/0000-0001-7941-8108 <https://orcid.org/0000-0001-7941-8108>`_ (JISC Innovation Support Center, UKOLN, University of Bath, United Kingdom)
+
+Organisation names reflect the persons’ affiliations at the time of their contribution to the Guidelines.
 
 **Contributors**
 
-- Wilko Steinhof, DANS, The Netherlands
+We wish to acknowledge the following contributors and also those who provided feedback outside the formal editing and reviewing work. 
+
+- Wilko Steinhof (DANS, The Netherlands)
 
 
 Versions
 ^^^^^^^^
+
+- 1.1.2, ????, doi: ....
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 
@@ -51,6 +60,13 @@ Versions
 
 - 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
 
+
+List of changes in the 1.1.2 version (since 1.1.1)
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.0 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
+2. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0 (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
+3. ...
 
 List of changes in the 1.1.1 version (since 1.1.0)
 """"""""""""""""""""""""""""""""""""""""""""""""""

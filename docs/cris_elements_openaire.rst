@@ -19,7 +19,7 @@ The most notable example is the fact that the types of research outputs are expr
 CERIF has three entities to represent research outputs: Publications, Products and Patents. 
 The COAR vocabulary was broken down into thee separate sub-vocabularies to be used with the respective entities.
 
-.. [#] See https://www.coar-repositories.org/activities/repository-interoperability/coar-vocabularies/deliverables/ 
+.. [#] See https://vocabularies.coar-repositories.org/resource_types/
 
 The following sections define the CERIF data elements for the exchange of data between individual CRIS systems and the OpenAIRE infrastructure. 
 The exclusive use of the defined data elements and vocabularies is mandatory, i.e. no other data elements and vocabularies can be used in the CERIF XML data exposed by CRIS systems to the OpenAIRE infrastructure.

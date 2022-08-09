@@ -58,7 +58,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenAIRE Guidelines for CRIS Managers'
-copyright = u'2017, OpenAIRE. This work is licensed under Creative Commons Attribution 4.0 International'
+copyright = u'2022, OpenAIRE. This work is licensed under Creative Commons Attribution 4.0 International'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

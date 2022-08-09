@@ -62,3 +62,6 @@ target/
 
 # Backup files
 *.bak
+
+# IDEA
+/.idea

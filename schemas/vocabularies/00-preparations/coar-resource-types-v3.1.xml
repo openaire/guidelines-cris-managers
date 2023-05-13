@@ -2934,11 +2934,12 @@
     <skos:altLabel xml:lang="zh">專利</skos:altLabel>
     <skos:exactMatch rdf:resource="http://purl.org/spar/fabio/Patent"/>
     <skos:exactMatch rdf:resource="http://purl.org/eprint/type/Patent"/>
-    <skos:definition xml:lang="en">A set of exclusive rights granted by law to applicants for inventions that are
+    <skos:definition xml:lang="en">A patent or patent application.
+
+A set of exclusive rights granted by law to applicants for inventions that are
 new, non-obvious and commercially applicable. A patent is valid for a limited
 period (generally 20 years), during which time patent holders can commercially
 exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</skos:definition>
-    <skos:definition xml:lang="en">A patent or patent application.</skos:definition>
     <skos:topConceptOf rdf:resource="http://purl.org/coar/resource_type/scheme"/>
     <skos:broadMatch rdf:resource="http://purl.org/dc/dcmitype/Text"/>
     <skos:inScheme rdf:resource="http://purl.org/coar/resource_type/scheme"/>

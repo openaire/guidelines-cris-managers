@@ -71,7 +71,7 @@ Versions
 List of changes in the 1.1.2 version (since 1.1.1)
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.0 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
+1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
 2. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0 (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
 3. ...
 

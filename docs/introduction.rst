@@ -54,6 +54,9 @@ Organisation names reflect the persons’ affiliations at the time of their cont
 We wish to acknowledge the following contributors and also those who provided feedback outside the formal editing and reviewing work. 
 
 - Wilko Steinhof (DANS, The Netherlands)
+- Oliver Goldschmidt, Hamburg University of Technology, Germany
+- Petra Černohlávková, National Library of Technology, Czechia
+- Aenne Löhden, Bielefeld University, Germany
 
 
 Versions
@@ -73,7 +76,9 @@ List of changes in the 1.1.2 version (since 1.1.1)
 
 1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.0 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
 2. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0 (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
-3. ...
+3. Documentation of using the OAI-PMH identifier was improved. (`#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_)
+4. More examples were added. (`#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_)
+5. ...
 
 List of changes in the 1.1.1 version (since 1.1.0)
 """"""""""""""""""""""""""""""""""""""""""""""""""

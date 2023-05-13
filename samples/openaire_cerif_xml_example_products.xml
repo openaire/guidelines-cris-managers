@@ -42,6 +42,9 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 						</Equipment>
 					</GeneratedBy>
                     <Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_16ec<!-- restricted access --></Access>
+                    <Dates>
+                    	<Collected startDate="2010-03-01T16:57:14Z" endDate="2017-07-20T22:59:59Z"/>
+                    </Dates>
             	</Product>
             </metadata>
         </record>
@@ -93,6 +96,9 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 					<Keyword xml:lang="en">Australia</Keyword>
 					<Keyword xml:lang="en">Northeast Queensland</Keyword>
 					<Keyword xml:lang="en">Lampropholis coggeri</Keyword>
+					<Dates>
+						<Available startDate="2011-12-05"/>
+					</Dates>
 				</Product>
         	</metadata>
         </record>

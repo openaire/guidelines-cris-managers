@@ -118,7 +118,7 @@ Duration
 ^^^^^^^^
 :Description: Duration of the funding
 :Use: optional (0..1)
-:Representation: XML element ``Duration`` *TODO*
+:Representation: XML element ``Duration``
 :CERIF: the Funding_Classification linking entity (`<https://w3id.org/cerif/model#Funding_Classification>`_) with the `<https://w3id.org/cerif/vocab/Durations#FundingDuration>`_ semantics
 
 

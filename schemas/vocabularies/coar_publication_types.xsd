@@ -45,6 +45,8 @@
                <xs:documentation xml:lang="pt">anotação</xs:documentation>
                <xs:documentation xml:lang="ru">аннотация</xs:documentation>
                <xs:documentation xml:lang="sl">zaznamek</xs:documentation>
+               <xs:documentation xml:lang="sr">anotacija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">анотација</xs:documentation>
                <xs:documentation xml:lang="tr">açıklama</xs:documentation>
                <xs:documentation xml:lang="zh">标注</xs:documentation>
                <xs:appinfo>
@@ -64,6 +66,8 @@
                      <cf:Term xml:lang="pt" trans="h">anotação</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">аннотация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">zaznamek</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">anotacija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">анотација</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">açıklama</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">标注</cf:Term>
                      <cf:Definition xml:lang="en">An annotation in the sense of a legal note is a legally explanatory comment on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo definition]</cf:Definition>
@@ -91,6 +95,8 @@
                <xs:documentation xml:lang="pt">trabalho de fim de curso</xs:documentation>
                <xs:documentation xml:lang="ru">бакалаврская диссертация</xs:documentation>
                <xs:documentation xml:lang="sl">diplomsko delo</xs:documentation>
+               <xs:documentation xml:lang="sr">diplomski rad</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">дипломски рад</xs:documentation>
                <xs:documentation xml:lang="tr">lisans tezi</xs:documentation>
                <xs:documentation xml:lang="zh">学士学位论文</xs:documentation>
                <xs:appinfo>
@@ -110,6 +116,8 @@
                      <cf:Term xml:lang="pt" trans="h">trabalho de fim de curso</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">бакалаврская диссертация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">diplomsko delo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">diplomski rad</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">дипломски рад</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">lisans tezi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学士学位论文</cf:Term>
                      <cf:Definition xml:lang="en">A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree. [Source: http://purl.org/spar/fabio/BachelorsThesis]</cf:Definition>
@@ -137,6 +145,8 @@
                <xs:documentation xml:lang="pt">bibliografia</xs:documentation>
                <xs:documentation xml:lang="ru">библиография</xs:documentation>
                <xs:documentation xml:lang="sl">bibliografija</xs:documentation>
+               <xs:documentation xml:lang="sr">bibliografija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">библиографија</xs:documentation>
                <xs:documentation xml:lang="tr">kaynakça</xs:documentation>
                <xs:documentation xml:lang="zh">文献目录</xs:documentation>
                <xs:appinfo>
@@ -156,6 +166,8 @@
                      <cf:Term xml:lang="pt" trans="h">bibliografia</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">библиография</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">bibliografija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">bibliografija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">библиографија</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kaynakça</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">文献目录</cf:Term>
                      <cf:Definition xml:lang="en">A list of the books and articles that have been used by someone when writing a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]</cf:Definition>
@@ -180,6 +192,8 @@
                <xs:documentation xml:lang="nl">blog post</xs:documentation>
                <xs:documentation xml:lang="ru">пост</xs:documentation>
                <xs:documentation xml:lang="sl">prispevek na blogu</xs:documentation>
+               <xs:documentation xml:lang="sr">tekst na blogu</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">текст на блогу</xs:documentation>
                <xs:documentation xml:lang="tr">Blog yazısı</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_6947"
@@ -195,6 +209,8 @@
                      <cf:Term xml:lang="nl" trans="h">blog post</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">пост</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">prispevek na blogu</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">tekst na blogu</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">текст на блогу</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Blog yazısı</cf:Term>
                      <cf:Definition xml:lang="en">A piece of writing or other item of content published on a blog. [Source: https://www.lexico.com/definition/blog_post]</cf:Definition>
                      <cf:Broader>
@@ -221,6 +237,8 @@
                <xs:documentation xml:lang="pt">livro</xs:documentation>
                <xs:documentation xml:lang="ru">книга</xs:documentation>
                <xs:documentation xml:lang="sl">monografija</xs:documentation>
+               <xs:documentation xml:lang="sr">knjiga</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">књига</xs:documentation>
                <xs:documentation xml:lang="tr">kitap</xs:documentation>
                <xs:documentation xml:lang="zh">书</xs:documentation>
                <xs:appinfo>
@@ -240,6 +258,8 @@
                      <cf:Term xml:lang="pt" trans="h">livro</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">книга</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">monografija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">knjiga</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">књига</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kitap</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">书</cf:Term>
                      <cf:Definition xml:lang="en">A non-serial publication that is complete in one volume or a designated finite number of volumes. [Source: Adapted from http://purl.org/eprint/type/Book]</cf:Definition>
@@ -267,6 +287,8 @@
                <xs:documentation xml:lang="pt">capítulo de livro</xs:documentation>
                <xs:documentation xml:lang="ru">часть книги</xs:documentation>
                <xs:documentation xml:lang="sl">poglavje v knjigi</xs:documentation>
+               <xs:documentation xml:lang="sr">poglavlje u knjizi</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">поглавље у књизи</xs:documentation>
                <xs:documentation xml:lang="tr">kitap bölümü</xs:documentation>
                <xs:documentation xml:lang="zh">章节</xs:documentation>
                <xs:appinfo>
@@ -286,6 +308,8 @@
                      <cf:Term xml:lang="pt" trans="h">capítulo de livro</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">часть книги</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">poglavje v knjigi</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">poglavlje u knjizi</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">поглавље у књизи</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kitap bölümü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">章节</cf:Term>
                      <cf:Definition xml:lang="en">A defined chapter or section of a book, usually with a separate title or number. [Source: http://purl.org/spar/fabio/BookChapter]</cf:Definition>
@@ -313,6 +337,8 @@
                <xs:documentation xml:lang="pt">recensão de livro</xs:documentation>
                <xs:documentation xml:lang="ru">рецензия на книгу</xs:documentation>
                <xs:documentation xml:lang="sl">recenzija knjige</xs:documentation>
+               <xs:documentation xml:lang="sr">prikaz knjige</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">приказ књиге</xs:documentation>
                <xs:documentation xml:lang="tr">kitap eleştirisi</xs:documentation>
                <xs:documentation xml:lang="zh">书评</xs:documentation>
                <xs:appinfo>
@@ -332,6 +358,8 @@
                      <cf:Term xml:lang="pt" trans="h">recensão de livro</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">рецензия на книгу</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">recenzija knjige</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">prikaz knjige</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">приказ књиге</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kitap eleştirisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">书评</cf:Term>
                      <cf:Definition xml:lang="en">A written review and critical analysis of the content, scope and quality of a book or other monographic work. [Source: http://purl.org/spar/fabio/BookReview]</cf:Definition>
@@ -355,6 +383,8 @@
                <xs:documentation xml:lang="nl">klinische studie</xs:documentation>
                <xs:documentation xml:lang="ru">клиническое исследование</xs:documentation>
                <xs:documentation xml:lang="sl">klinična študija</xs:documentation>
+               <xs:documentation xml:lang="sr">klinička studija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">клиничка студија</xs:documentation>
                <xs:documentation xml:lang="tr">Klinik çalışması</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_7877"
@@ -369,6 +399,8 @@
                      <cf:Term xml:lang="nl" trans="h">klinische studie</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">клиническое исследование</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">klinična študija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">klinička studija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">клиничка студија</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Klinik çalışması</cf:Term>
                      <cf:Definition xml:lang="en">A work that reports on the results of a research study to evaluate interventions or exposures on biomedical or health-related outcomes. The two main types of clinical studies are interventional studies (clinical trials) and observational studies. While most clinical studies concern humans, this publication type may be used for clinical veterinary articles meeting the requisites for humans. [Source: https://www.ncbi.nlm.nih.gov/mesh/2009830]</cf:Definition>
                      <cf:Broader>
@@ -393,6 +425,8 @@
                <xs:documentation xml:lang="pt">комментарий</xs:documentation>
                <xs:documentation xml:lang="ru">комментарий</xs:documentation>
                <xs:documentation xml:lang="sl">komentar</xs:documentation>
+               <xs:documentation xml:lang="sr">komentar</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">коментар</xs:documentation>
                <xs:documentation xml:lang="tr">yorum</xs:documentation>
                <xs:documentation xml:lang="zh">评注</xs:documentation>
                <xs:appinfo>
@@ -410,6 +444,8 @@
                      <cf:Term xml:lang="pt" trans="h">комментарий</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">комментарий</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">komentar</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">komentar</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">коментар</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">yorum</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">评注</cf:Term>
                      <cf:Definition xml:lang="en">A commentary is a more in-depth analysis written to draw attention to a work already published. Commentaries are somewhat like “reviews” in that the author presents his or her analysis of a work and why it  would be of interest to a specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]</cf:Definition>
@@ -434,6 +470,8 @@
                <xs:documentation xml:lang="pt">documento de conferência</xs:documentation>
                <xs:documentation xml:lang="ru">конференц-объект</xs:documentation>
                <xs:documentation xml:lang="sl">rezultat na konferenci</xs:documentation>
+               <xs:documentation xml:lang="sr">konferencijski prilog</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">конференцијски прилог</xs:documentation>
                <xs:documentation xml:lang="tr">konferans çıktısı</xs:documentation>
                <xs:documentation xml:lang="zh">会议对象</xs:documentation>
                <xs:appinfo>
@@ -450,6 +488,8 @@
                      <cf:Term xml:lang="pt" trans="h">documento de conferência</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">конференц-объект</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">rezultat na konferenci</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">konferencijski prilog</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">конференцијски прилог</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">konferans çıktısı</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议对象</cf:Term>
                      <cf:Definition xml:lang="en">All kind of digital resources contributed to a conference, like conference presentation (slides), conference report, conference lecture, abstracts, demonstrations. For conference papers, posters or proceedings the specific sub-concepts should be used. [COAR definition]</cf:Definition>
@@ -477,6 +517,8 @@
                <xs:documentation xml:lang="pt">comunicação em conferência</xs:documentation>
                <xs:documentation xml:lang="ru">конференционный доклад</xs:documentation>
                <xs:documentation xml:lang="sl">članek na konfrenci</xs:documentation>
+               <xs:documentation xml:lang="sr">saopštenje sa konferencije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">саопштење са конференције</xs:documentation>
                <xs:documentation xml:lang="tr">konferans belgesi</xs:documentation>
                <xs:documentation xml:lang="zh">会议论文</xs:documentation>
                <xs:appinfo>
@@ -496,6 +538,8 @@
                      <cf:Term xml:lang="pt" trans="h">comunicação em conferência</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">конференционный доклад</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">članek na konfrenci</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">saopštenje sa konferencije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">саопштење са конференције</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">konferans belgesi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议论文</cf:Term>
                      <cf:Definition xml:lang="en">A paper, published within a conference proceeding, typically the realization of a research paper reporting original research findings. [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]</cf:Definition>
@@ -522,6 +566,8 @@
                <xs:documentation xml:lang="pt">comunicação não publicada nas atas da conferência</xs:documentation>
                <xs:documentation xml:lang="ru">конференционный доклад не включенный в материалы конференции</xs:documentation>
                <xs:documentation xml:lang="sl">neobjavljen članek na konferenci</xs:documentation>
+               <xs:documentation xml:lang="sr">neobjavljeno saopštenje sa konferencije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">необјављено саопштење са конференције</xs:documentation>
                <xs:documentation xml:lang="tr">yayınlanmamış konferans bildirisi</xs:documentation>
                <xs:documentation xml:lang="zh">非会议集里的会议论文</xs:documentation>
                <xs:appinfo>
@@ -540,6 +586,8 @@
                      <cf:Term xml:lang="pt" trans="h">comunicação não publicada nas atas da conferência</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">конференционный доклад не включенный в материалы конференции</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">neobjavljen članek na konferenci</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">neobjavljeno saopštenje sa konferencije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">необјављено саопштење са конференције</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">yayınlanmamış konferans bildirisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">非会议集里的会议论文</cf:Term>
                      <cf:Definition xml:lang="en">A paper, typically the realization of a research paper reporting original research findings. Use this label when the paper is not published in a proceeding. [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]</cf:Definition>
@@ -567,6 +615,8 @@
                <xs:documentation xml:lang="pt">póster em conferência</xs:documentation>
                <xs:documentation xml:lang="ru">стендовый доклад</xs:documentation>
                <xs:documentation xml:lang="sl">poster na konferenci</xs:documentation>
+               <xs:documentation xml:lang="sr">poster sa konferencije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">постер са конференције</xs:documentation>
                <xs:documentation xml:lang="tr">konferans posteri</xs:documentation>
                <xs:documentation xml:lang="zh">会议集里的会议海报/会议板报</xs:documentation>
                <xs:appinfo>
@@ -586,6 +636,8 @@
                      <cf:Term xml:lang="pt" trans="h">póster em conferência</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">стендовый доклад</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">poster na konferenci</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">poster sa konferencije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">постер са конференције</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">konferans posteri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议集里的会议海报/会议板报</cf:Term>
                      <cf:Definition xml:lang="en">A display poster, published within a conference proceeding, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. [Source: Adapted http://purl.org/spar/fabio/ConferencePoster]</cf:Definition>
@@ -612,6 +664,8 @@
                <xs:documentation xml:lang="pt">póster não publicado nas atas da conferência</xs:documentation>
                <xs:documentation xml:lang="ru">стендовый доклад не включенный в материалы конференции</xs:documentation>
                <xs:documentation xml:lang="sl">poster</xs:documentation>
+               <xs:documentation xml:lang="sr">neobjavljen poster sa konferencije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">необјављен постер са конференције</xs:documentation>
                <xs:documentation xml:lang="tr">yayınlanmamış konferans posteri</xs:documentation>
                <xs:documentation xml:lang="zh">非会议集里的会议海报/会议板报</xs:documentation>
                <xs:appinfo>
@@ -630,6 +684,8 @@
                      <cf:Term xml:lang="pt" trans="h">póster não publicado nas atas da conferência</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">стендовый доклад не включенный в материалы конференции</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">poster</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">neobjavljen poster sa konferencije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">необјављен постер са конференције</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">yayınlanmamış konferans posteri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">非会议集里的会议海报/会议板报</cf:Term>
                      <cf:Definition xml:lang="en">A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. Use this label when the poster is not published in a proceeding. [Source: http://purl.org/spar/fabio/ConferencePoster]</cf:Definition>
@@ -654,6 +710,8 @@
                <xs:documentation xml:lang="nl">conferentie presentatie</xs:documentation>
                <xs:documentation xml:lang="ru">конференционная презентация</xs:documentation>
                <xs:documentation xml:lang="sl">predstavitev na konferenci</xs:documentation>
+               <xs:documentation xml:lang="sr">prezentacija sa konferencije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">презентација са конференције</xs:documentation>
                <xs:documentation xml:lang="tr">konferans sunumu</xs:documentation>
                <xs:documentation xml:lang="zh">会议演示报告</xs:documentation>
                <xs:appinfo>
@@ -670,6 +728,8 @@
                      <cf:Term xml:lang="nl" trans="h">conferentie presentatie</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">конференционная презентация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">predstavitev na konferenci</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">prezentacija sa konferencije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">презентација са конференције</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">konferans sunumu</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议演示报告</cf:Term>
                      <cf:Definition xml:lang="en">A set of slides containing text, tables or figures, designed to communicate ideas or research results, for projection and viewing by an audience at a conference, symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted from http://purl.org/spar/fabio/Presentation]</cf:Definition>
@@ -697,6 +757,8 @@
                <xs:documentation xml:lang="pt">atas de conferência</xs:documentation>
                <xs:documentation xml:lang="ru">материалы конференций</xs:documentation>
                <xs:documentation xml:lang="sl">zbornik prispevkov na konferenci</xs:documentation>
+               <xs:documentation xml:lang="sr">zbornik saopštenja sa konferencije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">зборник саопштења са конференције</xs:documentation>
                <xs:documentation xml:lang="tr">konferans bildirileri</xs:documentation>
                <xs:documentation xml:lang="zh">会议论文集</xs:documentation>
                <xs:appinfo>
@@ -716,6 +778,8 @@
                      <cf:Term xml:lang="pt" trans="h">atas de conferência</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">материалы конференций</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">zbornik prispevkov na konferenci</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">zbornik saopštenja sa konferencije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">зборник саопштења са конференције</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">konferans bildirileri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">会议论文集</cf:Term>
                      <cf:Definition xml:lang="en">Conference proceedings is the official record of a conference meeting. It is a collection of documents which corresponds to the presentations given at the conference. It may include additional content. [Source: http://www.ieee.org/documents/confprocdefined.pdf ]</cf:Definition>
@@ -779,6 +843,8 @@
                <xs:documentation xml:lang="nl">corrigendum</xs:documentation>
                <xs:documentation xml:lang="ru">исправление</xs:documentation>
                <xs:documentation xml:lang="sl">popravek članka</xs:documentation>
+               <xs:documentation xml:lang="sr">erratum</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">erratum</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_7acd"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
@@ -792,6 +858,8 @@
                      <cf:Term xml:lang="nl" trans="h">corrigendum</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">исправление</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">popravek članka</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">erratum</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">erratum</cf:Term>
                      <cf:Definition xml:lang="en">A formal correction to an error introduced by the author into a previously published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_6501"
@@ -815,6 +883,8 @@
                <xs:documentation xml:lang="pt">plano de gestão de dados</xs:documentation>
                <xs:documentation xml:lang="ru">план управления данными</xs:documentation>
                <xs:documentation xml:lang="sl">načrt ravnanja s podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">plan upravljanja podacima</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">план управљања подацима</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_ab20"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
@@ -830,6 +900,8 @@
                      <cf:Term xml:lang="pt" trans="h">plano de gestão de dados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">план управления данными</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">načrt ravnanja s podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">plan upravljanja podacima</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">план управљања подацима</cf:Term>
                      <cf:Definition xml:lang="en">A formal statement describing how research data will be managed and documented throughout a research project and the terms regarding the subsequent deposit of the data with a data repository for long-term management and preservation. [Source: https://casrai.org/rdm-glossary]</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_93fc"
@@ -855,6 +927,8 @@
                <xs:documentation xml:lang="pt">artigo de dados</xs:documentation>
                <xs:documentation xml:lang="ru">статья с цифровыми данными</xs:documentation>
                <xs:documentation xml:lang="sl">članek o podatkovni zbirki</xs:documentation>
+               <xs:documentation xml:lang="sr">članak o skupu podataka</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">чланак о скупу података</xs:documentation>
                <xs:documentation xml:lang="zh">数据文章</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_beb9"
@@ -873,6 +947,8 @@
                      <cf:Term xml:lang="pt" trans="h">artigo de dados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">статья с цифровыми данными</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">članek o podatkovni zbirki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">članak o skupu podataka</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">чланак о скупу података</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">数据文章</cf:Term>
                      <cf:Definition xml:lang="en">A data paper is a scholarly publication describing a particular dataset or group of dataset, published in the form of a peer-reviewed article in a scholarly journal. The main purpose of a data paper is to describe data, the circumstances of their collection, and information related to data features, access and potential reuse. Adapted from https://en.wikipedia.org/wiki/Data_paper and http://www.gbif.org/publishing-data/data-papers</cf:Definition>
                      <cf:Broader>
@@ -899,6 +975,8 @@
                <xs:documentation xml:lang="pt">tese de doutoramento</xs:documentation>
                <xs:documentation xml:lang="ru">докторская диссертация</xs:documentation>
                <xs:documentation xml:lang="sl">doktorska disertacija</xs:documentation>
+               <xs:documentation xml:lang="sr">doktorska disertacija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">докторска дисертација</xs:documentation>
                <xs:documentation xml:lang="tr">doktora tezi</xs:documentation>
                <xs:documentation xml:lang="zh">博士学位论文</xs:documentation>
                <xs:appinfo>
@@ -918,6 +996,8 @@
                      <cf:Term xml:lang="pt" trans="h">tese de doutoramento</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">докторская диссертация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">doktorska disertacija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">doktorska disertacija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">докторска дисертација</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">doktora tezi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">博士学位论文</cf:Term>
                      <cf:Definition xml:lang="en">A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree. [Source: http://purl.org/spar/fabio/DoctoralThesis]</cf:Definition>
@@ -945,6 +1025,8 @@
                <xs:documentation xml:lang="pt">editorial</xs:documentation>
                <xs:documentation xml:lang="ru">редакционная</xs:documentation>
                <xs:documentation xml:lang="sl">uvodnik</xs:documentation>
+               <xs:documentation xml:lang="sr">uvodnik</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">уводник</xs:documentation>
                <xs:documentation xml:lang="tr">Editoryal</xs:documentation>
                <xs:documentation xml:lang="zh">社论</xs:documentation>
                <xs:appinfo>
@@ -964,6 +1046,8 @@
                      <cf:Term xml:lang="pt" trans="h">editorial</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">редакционная</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">uvodnik</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">uvodnik</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">уводник</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Editoryal</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">社论</cf:Term>
                      <cf:Definition xml:lang="en">A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]</cf:Definition>
@@ -989,6 +1073,8 @@
                <xs:documentation xml:lang="nl">intern rapport</xs:documentation>
                <xs:documentation xml:lang="pt">relatório interno</xs:documentation>
                <xs:documentation xml:lang="sl">interno poročilo</xs:documentation>
+               <xs:documentation xml:lang="sr">interni izveštaj</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">интерни извештај</xs:documentation>
                <xs:documentation xml:lang="tr">dahili rapor</xs:documentation>
                <xs:documentation xml:lang="zh">内部报告</xs:documentation>
                <xs:appinfo>
@@ -1006,6 +1092,8 @@
                      <cf:Term xml:lang="nl" trans="h">intern rapport</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">relatório interno</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">interno poročilo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">interni izveštaj</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">интерни извештај</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">dahili rapor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">内部报告</cf:Term>
                      <cf:Definition xml:lang="en">An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.</cf:Definition>
@@ -1033,6 +1121,8 @@
                <xs:documentation xml:lang="pt">revista</xs:documentation>
                <xs:documentation xml:lang="ru">журнал</xs:documentation>
                <xs:documentation xml:lang="sl">znanstvena revija</xs:documentation>
+               <xs:documentation xml:lang="sr">časopis</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">часопис</xs:documentation>
                <xs:documentation xml:lang="tr">dergi</xs:documentation>
                <xs:documentation xml:lang="zh">学术期刊</xs:documentation>
                <xs:appinfo>
@@ -1052,6 +1142,8 @@
                      <cf:Term xml:lang="pt" trans="h">revista</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">журнал</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">znanstvena revija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">časopis</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">часопис</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">dergi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学术期刊</cf:Term>
                      <cf:Definition xml:lang="en">A journal is a serial publication devoted to disseminating original research and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]</cf:Definition>
@@ -1079,6 +1171,8 @@
                <xs:documentation xml:lang="pt">artigo</xs:documentation>
                <xs:documentation xml:lang="ru">журнальная статья</xs:documentation>
                <xs:documentation xml:lang="sl">članek v reviji</xs:documentation>
+               <xs:documentation xml:lang="sr">članak u časopisu</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">чланак у часопису</xs:documentation>
                <xs:documentation xml:lang="tr">dergi makalesi</xs:documentation>
                <xs:documentation xml:lang="zh">学术论文</xs:documentation>
                <xs:appinfo>
@@ -1098,6 +1192,8 @@
                      <cf:Term xml:lang="pt" trans="h">artigo</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">журнальная статья</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">članek v reviji</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">članak u časopisu</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">чланак у часопису</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">dergi makalesi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学术论文</cf:Term>
                      <cf:Definition xml:lang="en">An article, typically the realization of a research paper reporting original research findings, published in a journal issue. [Source: http://purl.org/spar/fabio/JournalArticle]</cf:Definition>
@@ -1125,6 +1221,8 @@
                <xs:documentation xml:lang="pt">palestra</xs:documentation>
                <xs:documentation xml:lang="ru">лекция</xs:documentation>
                <xs:documentation xml:lang="sl">predavanje</xs:documentation>
+               <xs:documentation xml:lang="sr">predavanje</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">предавање</xs:documentation>
                <xs:documentation xml:lang="tr">ders</xs:documentation>
                <xs:documentation xml:lang="zh">讲座</xs:documentation>
                <xs:appinfo>
@@ -1144,6 +1242,8 @@
                      <cf:Term xml:lang="pt" trans="h">palestra</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">лекция</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">predavanje</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">predavanje</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">предавање</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">ders</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">讲座</cf:Term>
                      <cf:Definition xml:lang="en">Transcription of an oral presentation/talk intended to present information or teach people about a particular subject, for example by a university or college teacher. [Source: Adopted from https://en.wikipedia.org/wiki/Lecture]</cf:Definition>
@@ -1171,6 +1271,8 @@
                <xs:documentation xml:lang="pt">carta</xs:documentation>
                <xs:documentation xml:lang="ru">письмо</xs:documentation>
                <xs:documentation xml:lang="sl">pismo</xs:documentation>
+               <xs:documentation xml:lang="sr">pismo</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">писмо</xs:documentation>
                <xs:documentation xml:lang="tr">mektup</xs:documentation>
                <xs:documentation xml:lang="zh">信</xs:documentation>
                <xs:appinfo>
@@ -1190,6 +1292,8 @@
                      <cf:Term xml:lang="pt" trans="h">carta</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">письмо</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">pismo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">pismo</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">писмо</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">mektup</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">信</cf:Term>
                      <cf:Definition xml:lang="en">A brief description of important new research, also known as “communication”. [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]</cf:Definition>
@@ -1217,6 +1321,8 @@
                <xs:documentation xml:lang="pt">carta ao editor</xs:documentation>
                <xs:documentation xml:lang="ru">письмо редактору</xs:documentation>
                <xs:documentation xml:lang="sl">pismo uredniku</xs:documentation>
+               <xs:documentation xml:lang="sr">pismo uredniku</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">писмо уреднику</xs:documentation>
                <xs:documentation xml:lang="zh">读者来信</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_545b"
@@ -1235,6 +1341,8 @@
                      <cf:Term xml:lang="pt" trans="h">carta ao editor</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">письмо редактору</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">pismo uredniku</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">pismo uredniku</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">писмо уреднику</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">读者来信</cf:Term>
                      <cf:Definition xml:lang="en">A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from http://purl.org/spar/fabio/Letter]</cf:Definition>
                      <cf:Broader>
@@ -1258,6 +1366,8 @@
                <xs:documentation xml:lang="nl">tijdschrift</xs:documentation>
                <xs:documentation xml:lang="ru">периодическое печатное издание</xs:documentation>
                <xs:documentation xml:lang="sl">informativna revija</xs:documentation>
+               <xs:documentation xml:lang="sr">informativna revija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">информативна ревија</xs:documentation>
                <xs:documentation xml:lang="tr">Magazin</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2cd9"
@@ -1273,6 +1383,8 @@
                      <cf:Term xml:lang="nl" trans="h">tijdschrift</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">периодическое печатное издание</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">informativna revija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">informativna revija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">информативна ревија</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Magazin</cf:Term>
                      <cf:Definition xml:lang="en">A popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style or a trade publication, unlike a consumer publication, covers a specific topic for people who work in that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039 and http://www.abc-clio.com/ODLIS/odlis_m.aspx]</cf:Definition>
                      <cf:Broader>
@@ -1295,6 +1407,8 @@
                <xs:documentation xml:lang="ja">手稿</xs:documentation>
                <xs:documentation xml:lang="nl">manuscript</xs:documentation>
                <xs:documentation xml:lang="ru">рукопись</xs:documentation>
+               <xs:documentation xml:lang="sr">rukopis</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">рукопис</xs:documentation>
                <xs:documentation xml:lang="tr">Yazma eser</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_0040"
@@ -1309,6 +1423,8 @@
                      <cf:Term xml:lang="ja" trans="h">手稿</cf:Term>
                      <cf:Term xml:lang="nl" trans="h">manuscript</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">рукопись</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">rukopis</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">рукопис</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Yazma eser</cf:Term>
                      <cf:Definition xml:lang="en">A manuscript is a work of any kind (text, inscription, music score, map, etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]</cf:Definition>
                      <cf:Broader>
@@ -1335,6 +1451,8 @@
                <xs:documentation xml:lang="pt">dissertação de mestrado</xs:documentation>
                <xs:documentation xml:lang="ru">магистерская диссертация</xs:documentation>
                <xs:documentation xml:lang="sl">magistrsko delo</xs:documentation>
+               <xs:documentation xml:lang="sr">master/magistarska teza</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">мастер/магистарска теза</xs:documentation>
                <xs:documentation xml:lang="tr">yüksek lisans tezi</xs:documentation>
                <xs:documentation xml:lang="zh">硕士学位论文</xs:documentation>
                <xs:appinfo>
@@ -1354,6 +1472,8 @@
                      <cf:Term xml:lang="pt" trans="h">dissertação de mestrado</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">магистерская диссертация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">magistrsko delo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">master/magistarska teza</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">мастер/магистарска теза</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">yüksek lisans tezi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">硕士学位论文</cf:Term>
                      <cf:Definition xml:lang="en">A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree. [Source: http://purl.org/spar/fabio/MastersThesis]</cf:Definition>
@@ -1381,6 +1501,8 @@
                <xs:documentation xml:lang="pt">memorando</xs:documentation>
                <xs:documentation xml:lang="ru">меморандум</xs:documentation>
                <xs:documentation xml:lang="sl">memorandum</xs:documentation>
+               <xs:documentation xml:lang="sr">memorandum</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">меморандум</xs:documentation>
                <xs:documentation xml:lang="tr">bilgi notu</xs:documentation>
                <xs:documentation xml:lang="zh">备忘录</xs:documentation>
                <xs:appinfo>
@@ -1400,6 +1522,8 @@
                      <cf:Term xml:lang="pt" trans="h">memorando</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">меморандум</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">memorandum</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">memorandum</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">меморандум</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">bilgi notu</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">备忘录</cf:Term>
                      <cf:Definition xml:lang="en">A formal note distributed internally to one or more persons in a company, agency, organization, or institution, with a header indicating the date it was sent and stating to whom it is addressed (To:), from whom it is sent (From:), and the subject of the text (Re:). Unlike a letter, a memo does not require a full salutation or signature at the end of the text--the sender may simply initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]</cf:Definition>
@@ -1427,6 +1551,8 @@
                <xs:documentation xml:lang="pt">notação musical</xs:documentation>
                <xs:documentation xml:lang="ru">нотная запись</xs:documentation>
                <xs:documentation xml:lang="sl">note</xs:documentation>
+               <xs:documentation xml:lang="sr">notni zapis</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">нотни запис</xs:documentation>
                <xs:documentation xml:lang="tr">nota</xs:documentation>
                <xs:documentation xml:lang="zh">乐谱</xs:documentation>
                <xs:appinfo>
@@ -1446,6 +1572,8 @@
                      <cf:Term xml:lang="pt" trans="h">notação musical</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">нотная запись</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">note</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">notni zapis</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">нотни запис</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">nota</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">乐谱</cf:Term>
                      <cf:Definition xml:lang="en">Symbols used to write music, as in a music score, and to express mathematical concepts.
@@ -1471,6 +1599,8 @@
                <xs:documentation xml:lang="nl">krant</xs:documentation>
                <xs:documentation xml:lang="ru">газета</xs:documentation>
                <xs:documentation xml:lang="sl">časopis</xs:documentation>
+               <xs:documentation xml:lang="sr">novine</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">новине</xs:documentation>
                <xs:documentation xml:lang="tr">Gazete</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2fe3"
@@ -1486,6 +1616,8 @@
                      <cf:Term xml:lang="nl" trans="h">krant</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">газета</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">časopis</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">novine</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">новине</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Gazete</cf:Term>
                      <cf:Definition xml:lang="en">A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest. [Source: http://purl.org/spar/fabio/Newspaper]</cf:Definition>
                      <cf:Broader>
@@ -1509,6 +1641,8 @@
                <xs:documentation xml:lang="nl">krantenartikel</xs:documentation>
                <xs:documentation xml:lang="ru">газетная статья</xs:documentation>
                <xs:documentation xml:lang="sl">članek v časopisu</xs:documentation>
+               <xs:documentation xml:lang="sr">novinski članak</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">новински чланак</xs:documentation>
                <xs:documentation xml:lang="tr">Gazete kupürü</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_998f"
@@ -1524,6 +1658,8 @@
                      <cf:Term xml:lang="nl" trans="h">krantenartikel</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">газетная статья</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">članek v časopisu</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">novinski članak</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">новински чланак</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Gazete kupürü</cf:Term>
                      <cf:Definition xml:lang="en">Work consisting of a news item appearing in a general-interest newspaper or other general news periodical, containing information of current and timely interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html )</cf:Definition>
                      <cf:Broader>
@@ -1546,6 +1682,8 @@
                <xs:documentation xml:lang="nl">periodieke uitgave</xs:documentation>
                <xs:documentation xml:lang="ru">другое периодическое издание</xs:documentation>
                <xs:documentation xml:lang="sl">ostale serijske publikacije</xs:documentation>
+               <xs:documentation xml:lang="sr">ostale periodične publikacije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">остале периодичне публикације</xs:documentation>
                <xs:documentation xml:lang="tr">diğer süreli yayınlar</xs:documentation>
                <xs:documentation xml:lang="zh">其他连续出版物</xs:documentation>
                <xs:appinfo>
@@ -1561,6 +1699,8 @@
                      <cf:Term xml:lang="nl" trans="h">periodieke uitgave</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">другое периодическое издание</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">ostale serijske publikacije</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">ostale periodične publikacije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">остале периодичне публикације</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">diğer süreli yayınlar</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">其他连续出版物</cf:Term>
                      <cf:Definition xml:lang="en">A resource type that is not included in existing terms under the top concept "Text". [COAR definition]</cf:Definition>
@@ -1586,6 +1726,8 @@
                <xs:documentation xml:lang="nl">rapport overig</xs:documentation>
                <xs:documentation xml:lang="pt">outro relatório</xs:documentation>
                <xs:documentation xml:lang="sl">ostale vrste poročil</xs:documentation>
+               <xs:documentation xml:lang="sr">druge vrste izveštaja</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">друге врсте извештаја</xs:documentation>
                <xs:documentation xml:lang="tr">diğer rapor türü</xs:documentation>
                <xs:documentation xml:lang="zh">其他报告</xs:documentation>
                <xs:appinfo>
@@ -1603,6 +1745,8 @@
                      <cf:Term xml:lang="nl" trans="h">rapport overig</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">outro relatório</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">ostale vrste poročil</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">druge vrste izveštaja</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">друге врсте извештаја</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">diğer rapor türü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">其他报告</cf:Term>
                      <cf:Definition xml:lang="en">Other types of report may include Business Plans Technical Specifications, data management plans, recommendation reports, white papers, annual reports, auditor's reports, workplace reports, census reports, trip reports, progress reports, investigative reports, budget reports, policy reports, demographic reports, credit reports, appraisal reports, inspection reports, military reports, bound reports, etc. [Source: https://en.wikipedia.org/wiki/Report]</cf:Definition>
@@ -1627,6 +1771,8 @@
                <xs:documentation xml:lang="nl">peerreview</xs:documentation>
                <xs:documentation xml:lang="ru">экспертная оценка</xs:documentation>
                <xs:documentation xml:lang="sl">strokovna ocena</xs:documentation>
+               <xs:documentation xml:lang="sr">recenzija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">рецензија</xs:documentation>
                <xs:documentation xml:lang="tr">akran değerlendirmesi</xs:documentation>
                <xs:documentation xml:lang="zh">同行评议</xs:documentation>
                <xs:appinfo>
@@ -1643,6 +1789,8 @@
                      <cf:Term xml:lang="nl" trans="h">peerreview</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">экспертная оценка</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">strokovna ocena</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">recenzija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">рецензија</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">akran değerlendirmesi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">同行评议</cf:Term>
                      <cf:Definition xml:lang="en">An evaluation of scientific, academic, or professional work by others working in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]</cf:Definition>
@@ -1667,6 +1815,8 @@
                <xs:documentation xml:lang="nl">periodiek</xs:documentation>
                <xs:documentation xml:lang="pt">publicação periódica</xs:documentation>
                <xs:documentation xml:lang="sl">serijska publikacija</xs:documentation>
+               <xs:documentation xml:lang="sr">periodična publikacija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">периодична публикација</xs:documentation>
                <xs:documentation xml:lang="tr">süreli yayın</xs:documentation>
                <xs:documentation xml:lang="zh">期刊</xs:documentation>
                <xs:appinfo>
@@ -1683,6 +1833,8 @@
                      <cf:Term xml:lang="nl" trans="h">periodiek</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">publicação periódica</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">serijska publikacija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">periodična publikacija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">периодична публикација</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">süreli yayın</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">期刊</cf:Term>
                      <cf:Definition xml:lang="en">A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]</cf:Definition>
@@ -1710,6 +1862,8 @@
                <xs:documentation xml:lang="pt">relatório de política</xs:documentation>
                <xs:documentation xml:lang="ru">отчет о политике</xs:documentation>
                <xs:documentation xml:lang="sl">strateško poročilo</xs:documentation>
+               <xs:documentation xml:lang="sr">analiza politike</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">анализа политике</xs:documentation>
                <xs:documentation xml:lang="tr">politika raporu</xs:documentation>
                <xs:documentation xml:lang="zh">政策报告</xs:documentation>
                <xs:appinfo>
@@ -1729,6 +1883,8 @@
                      <cf:Term xml:lang="pt" trans="h">relatório de política</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">отчет о политике</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">strateško poročilo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">analiza politike</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">анализа политике</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">politika raporu</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">政策报告</cf:Term>
                      <cf:Definition xml:lang="en">A policy report presents what is known about a particular issue or problem. It assembles facts and evidence to help readers understand complex issues and form a response. It might aim to be neutral, or it might aim to persuade readers in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]</cf:Definition>
@@ -1753,6 +1909,8 @@
                <xs:documentation xml:lang="nl">preprint</xs:documentation>
                <xs:documentation xml:lang="pt">preprint</xs:documentation>
                <xs:documentation xml:lang="ru">препринт</xs:documentation>
+               <xs:documentation xml:lang="sr">preprint</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">препринт</xs:documentation>
                <xs:documentation xml:lang="tr">ön baskı</xs:documentation>
                <xs:documentation xml:lang="zh">预印本</xs:documentation>
                <xs:appinfo>
@@ -1769,6 +1927,8 @@
                      <cf:Term xml:lang="nl" trans="h">preprint</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">preprint</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">препринт</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">preprint</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">препринт</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">ön baskı</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">预印本</cf:Term>
                      <cf:Definition xml:lang="en">A preprint is a scientific manuscript without peer-review and has not yet been accepted by a journal, typicaly submitted to a public server/ repository by the author. [Source: Adapted from https://asapbio.org/preprint-info/preprint-faq#qaef-637]</cf:Definition>
@@ -1796,6 +1956,8 @@
                <xs:documentation xml:lang="pt">entregável de projeto</xs:documentation>
                <xs:documentation xml:lang="ru">результат проекта</xs:documentation>
                <xs:documentation xml:lang="sl">izdelek projekta</xs:documentation>
+               <xs:documentation xml:lang="sr">rezultat projekta</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">резултат пројекта</xs:documentation>
                <xs:documentation xml:lang="tr">proje çıktısı</xs:documentation>
                <xs:documentation xml:lang="zh">项目可交付成果</xs:documentation>
                <xs:appinfo>
@@ -1815,6 +1977,8 @@
                      <cf:Term xml:lang="pt" trans="h">entregável de projeto</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">результат проекта</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">izdelek projekta</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">rezultat projekta</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">резултат пројекта</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">proje çıktısı</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">项目可交付成果</cf:Term>
                      <cf:Definition xml:lang="en">A document containing a project report, intended to be delivered to a customer or funding agency describing the results achieved within a specific project. [Source: http://purl.org/spar/fabio/ProjectReportDocument]</cf:Definition>
@@ -1842,6 +2006,8 @@
                <xs:documentation xml:lang="pt">relatório</xs:documentation>
                <xs:documentation xml:lang="ru">отчет</xs:documentation>
                <xs:documentation xml:lang="sl">poročilo</xs:documentation>
+               <xs:documentation xml:lang="sr">izveštaj</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">извештај</xs:documentation>
                <xs:documentation xml:lang="tr">rapor</xs:documentation>
                <xs:documentation xml:lang="zh">报告</xs:documentation>
                <xs:appinfo>
@@ -1861,6 +2027,8 @@
                      <cf:Term xml:lang="pt" trans="h">relatório</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">отчет</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">poročilo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">izveštaj</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">извештај</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">rapor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">报告</cf:Term>
                      <cf:Definition xml:lang="en">A report is a separately published record of research findings, research still in progress, policy developments and events, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency. Also, an official record of the activities of a committee or corporate entity, the proceedings of a government body, or an investigation by an agency, whether published or private, usually archived or submitted to a higher authority, voluntarily or under mandate. In a more general sense, any formal account of facts or information related to a specific event or phenomenon, sometimes given at regular intervals. [Source: http://lu.com/odlis/odlis_R.cfm#report ]</cf:Definition>
@@ -1961,6 +2129,8 @@
                <xs:documentation xml:lang="nl">onderzoeksartikel</xs:documentation>
                <xs:documentation xml:lang="ru">научная статья</xs:documentation>
                <xs:documentation xml:lang="sl">znanstveni članek</xs:documentation>
+               <xs:documentation xml:lang="sr">naučni članak</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">научни чланак</xs:documentation>
                <xs:documentation xml:lang="tr">araştırma makalesi</xs:documentation>
                <xs:documentation xml:lang="zh">原创研究文章</xs:documentation>
                <xs:appinfo>
@@ -1977,6 +2147,8 @@
                      <cf:Term xml:lang="nl" trans="h">onderzoeksartikel</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">научная статья</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">znanstveni članek</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">naučni članak</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">научни чланак</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">araştırma makalesi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">原创研究文章</cf:Term>
                      <cf:Definition xml:lang="en">A research article is a primary source, that is, it reports the methods and results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)</cf:Definition>
@@ -2004,6 +2176,8 @@
                <xs:documentation xml:lang="pt">proposta de investigação</xs:documentation>
                <xs:documentation xml:lang="ru">исследовательское предложение</xs:documentation>
                <xs:documentation xml:lang="sl">predlog raziskave</xs:documentation>
+               <xs:documentation xml:lang="sr">predlog istraživačkog projekta</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">предлог истраживачког пројекта</xs:documentation>
                <xs:documentation xml:lang="tr">araştırma önerisi</xs:documentation>
                <xs:documentation xml:lang="zh">研究计划</xs:documentation>
                <xs:appinfo>
@@ -2023,6 +2197,8 @@
                      <cf:Term xml:lang="pt" trans="h">proposta de investigação</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">исследовательское предложение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">predlog raziskave</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">predlog istraživačkog projekta</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">предлог истраживачког пројекта</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">araştırma önerisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究计划</cf:Term>
                      <cf:Definition xml:lang="en">A research proposal is a document proposing a research project, generally in the sciences or academia, and generally constitutes a request for sponsorship of that research. [Source: https://en.wikipedia.org/wiki/Research_proposal]</cf:Definition>
@@ -2046,6 +2222,8 @@
                <xs:documentation xml:lang="nl">onderzoeksprotocol</xs:documentation>
                <xs:documentation xml:lang="ru">протокол исследования</xs:documentation>
                <xs:documentation xml:lang="sl">protokol raziskave</xs:documentation>
+               <xs:documentation xml:lang="sr">protokol istraživanja</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">протокол истраживања</xs:documentation>
                <xs:documentation xml:lang="tr">araştırma protokolü</xs:documentation>
                <xs:documentation xml:lang="zh">研究方案</xs:documentation>
                <xs:appinfo>
@@ -2061,6 +2239,8 @@
                      <cf:Term xml:lang="nl" trans="h">onderzoeksprotocol</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">протокол исследования</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">protokol raziskave</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">protokol istraživanja</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">протокол истраживања</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">araştırma protokolü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究方案</cf:Term>
                      <cf:Definition xml:lang="en">The protocol is a detailed plan of the research study including a project summary, project description covering the rationale, objectives, methodology, data management and analysis, ethical considerations, gender issues and references. [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]</cf:Definition>
@@ -2087,6 +2267,8 @@
                <xs:documentation xml:lang="pt">relatório de investigação</xs:documentation>
                <xs:documentation xml:lang="ru">исследовательский отчет</xs:documentation>
                <xs:documentation xml:lang="sl">poročilo o rezultatih raziskav</xs:documentation>
+               <xs:documentation xml:lang="sr">izveštaj o istraživanju</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">извештај о истраживању</xs:documentation>
                <xs:documentation xml:lang="tr">araştırma raporu</xs:documentation>
                <xs:documentation xml:lang="zh">研究报告</xs:documentation>
                <xs:appinfo>
@@ -2105,6 +2287,8 @@
                      <cf:Term xml:lang="pt" trans="h">relatório de investigação</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">исследовательский отчет</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">poročilo o rezultatih raziskav</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">izveštaj o istraživanju</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">извештај о истраживању</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">araştırma raporu</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究报告</cf:Term>
                      <cf:Definition xml:lang="en">It is publication that reports on the findings of a research project or alternatively scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]</cf:Definition>
@@ -2132,6 +2316,8 @@
                <xs:documentation xml:lang="pt">recensão</xs:documentation>
                <xs:documentation xml:lang="ru">рецензия</xs:documentation>
                <xs:documentation xml:lang="sl">recenzija</xs:documentation>
+               <xs:documentation xml:lang="sr">prikaz</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">приказ</xs:documentation>
                <xs:documentation xml:lang="tr">eleştiri</xs:documentation>
                <xs:documentation xml:lang="zh">评论</xs:documentation>
                <xs:appinfo>
@@ -2151,6 +2337,8 @@
                      <cf:Term xml:lang="pt" trans="h">recensão</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">рецензия</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">recenzija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">prikaz</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">приказ</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">eleştiri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">评论</cf:Term>
                      <cf:Definition xml:lang="en">A review of others' published work. [Source: Adapted from http://purl.org/spar/fabio/Review]</cf:Definition>
@@ -2174,6 +2362,8 @@
                <xs:documentation xml:lang="nl">overzichtsartikel</xs:documentation>
                <xs:documentation xml:lang="ru">обзорная статья</xs:documentation>
                <xs:documentation xml:lang="sl">pregledni znanstveni članek</xs:documentation>
+               <xs:documentation xml:lang="sr">pregledni članak</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">прегледни чланак</xs:documentation>
                <xs:documentation xml:lang="zh">综述文章</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_dcae04bc"
@@ -2188,6 +2378,8 @@
                      <cf:Term xml:lang="nl" trans="h">overzichtsartikel</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">обзорная статья</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">pregledni znanstveni članek</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">pregledni članak</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">прегледни чланак</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">综述文章</cf:Term>
                      <cf:Definition xml:lang="en">A review article is a secondary source, that is, it is written about other articles, and does not report original research of its own. [Source: Adapted from http://apus.libanswers.com/faq/2324]</cf:Definition>
                      <cf:Broader>
@@ -2209,6 +2401,8 @@
                <xs:documentation xml:lang="nl">software artikel</xs:documentation>
                <xs:documentation xml:lang="ru">статья по программному обеспечению</xs:documentation>
                <xs:documentation xml:lang="sl">članek o programski opremi</xs:documentation>
+               <xs:documentation xml:lang="sr">članak o računarskom programu</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">чланак о рачунарском програму</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_7bab"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
@@ -2221,6 +2415,8 @@
                      <cf:Term xml:lang="nl" trans="h">software artikel</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">статья по программному обеспечению</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">članek o programski opremi</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">članak o računarskom programu</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">чланак о рачунарском програму</cf:Term>
                      <cf:Definition xml:lang="en">A software paper should include the rationale for the development of the tool and details of the code used for its construction. [Source: Adapted from https://f1000research.com/for-authors/article-guidelines/software-tool-articles ]</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_6501"
@@ -2246,6 +2442,8 @@
                <xs:documentation xml:lang="pt">documentação técnica</xs:documentation>
                <xs:documentation xml:lang="ru">техническая документация</xs:documentation>
                <xs:documentation xml:lang="sl">tehnična dokumentacija</xs:documentation>
+               <xs:documentation xml:lang="sr">tehnička dokumentacija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">техничка документација</xs:documentation>
                <xs:documentation xml:lang="tr">teknik dokümantasyon</xs:documentation>
                <xs:documentation xml:lang="zh">技术资料</xs:documentation>
                <xs:appinfo>
@@ -2265,6 +2463,8 @@
                      <cf:Term xml:lang="pt" trans="h">documentação técnica</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">техническая документация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">tehnična dokumentacija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">tehnička dokumentacija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">техничка документација</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">teknik dokümantasyon</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">技术资料</cf:Term>
                      <cf:Definition xml:lang="en">Technical documentation refers to any type of documentation that describes handling, functionality and architecture of a technical product or a product under development or use. [Source: https://en.wikipedia.org/wiki/Technical_documentation]</cf:Definition>
@@ -2292,6 +2492,8 @@
                <xs:documentation xml:lang="pt">relatório técnico</xs:documentation>
                <xs:documentation xml:lang="ru">технический отчет</xs:documentation>
                <xs:documentation xml:lang="sl">tehnično poročilo</xs:documentation>
+               <xs:documentation xml:lang="sr">tehnički izveštaj</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">технички извештај</xs:documentation>
                <xs:documentation xml:lang="tr">teknik rapor</xs:documentation>
                <xs:documentation xml:lang="zh">技术报告</xs:documentation>
                <xs:appinfo>
@@ -2311,6 +2513,8 @@
                      <cf:Term xml:lang="pt" trans="h">relatório técnico</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">технический отчет</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">tehnično poročilo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">tehnički izveštaj</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">технички извештај</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">teknik rapor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">技术报告</cf:Term>
                      <cf:Definition xml:lang="en">A document that describes the process, progress, or results of technical or scientific research or the state of a technical or scientific research problem. It might also include recommendations and conclusions of the research. [Source: http://guides.library.cornell.edu/ecommons/types]</cf:Definition>
@@ -2338,6 +2542,8 @@
                <xs:documentation xml:lang="pt">texto</xs:documentation>
                <xs:documentation xml:lang="ru">текст</xs:documentation>
                <xs:documentation xml:lang="sl">besedilo</xs:documentation>
+               <xs:documentation xml:lang="sr">tekst</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">текст</xs:documentation>
                <xs:documentation xml:lang="tr">metin</xs:documentation>
                <xs:documentation xml:lang="zh">文本</xs:documentation>
                <xs:appinfo>
@@ -2357,6 +2563,8 @@
                      <cf:Term xml:lang="pt" trans="h">texto</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">текст</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">besedilo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">tekst</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">текст</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">metin</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">文本</cf:Term>
                      <cf:Definition xml:lang="en">A resource consisting primarily of words for reading. Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text. [Source: http://purl.org/dc/dcmitype/Text]</cf:Definition>
@@ -2380,6 +2588,8 @@
                <xs:documentation xml:lang="pt">tese</xs:documentation>
                <xs:documentation xml:lang="ru">диссертация</xs:documentation>
                <xs:documentation xml:lang="sl">zaključno delo študija</xs:documentation>
+               <xs:documentation xml:lang="sr">teza</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">теза</xs:documentation>
                <xs:documentation xml:lang="tr">tez</xs:documentation>
                <xs:documentation xml:lang="zh">学位论文</xs:documentation>
                <xs:appinfo>
@@ -2399,6 +2609,8 @@
                      <cf:Term xml:lang="pt" trans="h">tese</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">диссертация</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">zaključno delo študija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">teza</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">теза</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">tez</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">学位论文</cf:Term>
                      <cf:Definition xml:lang="en">A book authored by a student containing a formal presentations of research outputs submitted for examination in completion of a course of study at an institution of higher education, to fulfil the requirements for an academic degree. Also know as a dissertation. [Source: http://purl.org/spar/fabio/Thesis]</cf:Definition>
@@ -2423,6 +2635,8 @@
                <xs:documentation xml:lang="nl">transcriptie</xs:documentation>
                <xs:documentation xml:lang="ru">транскрипция</xs:documentation>
                <xs:documentation xml:lang="sl">transkripcija</xs:documentation>
+               <xs:documentation xml:lang="sr">transkript</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">транскрипт</xs:documentation>
                <xs:documentation xml:lang="tr">transkripsiyon</xs:documentation>
                <xs:documentation xml:lang="zh">转录资料</xs:documentation>
                <xs:appinfo>
@@ -2439,6 +2653,8 @@
                      <cf:Term xml:lang="nl" trans="h">transcriptie</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">транскрипция</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">transkripcija</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">transkript</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">транскрипт</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">transkripsiyon</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">转录资料</cf:Term>
                      <cf:Definition xml:lang="en">A written record of words spoken in court proceedings or in a speech, interview, broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]</cf:Definition>
@@ -2466,6 +2682,8 @@
                <xs:documentation xml:lang="pt">working paper</xs:documentation>
                <xs:documentation xml:lang="ru">рабочий документ</xs:documentation>
                <xs:documentation xml:lang="sl">delovna verzija članka</xs:documentation>
+               <xs:documentation xml:lang="sr">radni dokument</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">радни документ</xs:documentation>
                <xs:documentation xml:lang="tr">ön rapor</xs:documentation>
                <xs:documentation xml:lang="zh">研究手稿</xs:documentation>
                <xs:appinfo>
@@ -2485,6 +2703,8 @@
                      <cf:Term xml:lang="pt" trans="h">working paper</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">рабочий документ</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">delovna verzija članka</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">radni dokument</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">радни документ</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">ön rapor</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">研究手稿</cf:Term>
                      <cf:Definition xml:lang="en">A working or discussion paper circulated publicly or among a group of peers. Certain disciplines, for example economics, issue working papers in series. [Source: http://www.ukoln.ac.uk/repositories/digirep/index/Eprints_Type_Vocabulary_Encoding_Scheme#:~:text=http%3A//purl.org/eprint/type/WorkingPaper]</cf:Definition>

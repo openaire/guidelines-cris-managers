@@ -43,6 +43,8 @@
                <xs:documentation xml:lang="pt">dados agregados</xs:documentation>
                <xs:documentation xml:lang="ru">агрегированные данные</xs:documentation>
                <xs:documentation xml:lang="sl">agregirani podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">agregirani podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">агрегирани подаци</xs:documentation>
                <xs:documentation xml:lang="tr">birleştirilmiş veri</xs:documentation>
                <xs:documentation xml:lang="zh">聚合数据</xs:documentation>
                <xs:appinfo>
@@ -60,6 +62,8 @@
                      <cf:Term xml:lang="pt" trans="h">dados agregados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">агрегированные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">agregirani podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">agregirani podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">агрегирани подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">birleştirilmiş veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">聚合数据</cf:Term>
                      <cf:Definition xml:lang="en">Statistics that relate to broad classes, groups, or categories. The data are averaged, totaled, or otherwise derived from individual-level data, and it is no longer possible to distinguish the characteristics of individuals within those classes, groups, or categories. For example, the number and age group of the unemployed in specific geographic regions, or national level statistics on the occurrence of specific offences, originally derived from the statistics of individual police districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -87,6 +91,8 @@
                <xs:documentation xml:lang="pt">material cartográfico</xs:documentation>
                <xs:documentation xml:lang="ru">картографический материал</xs:documentation>
                <xs:documentation xml:lang="sl">kartografsko gradivo</xs:documentation>
+               <xs:documentation xml:lang="sr">kartografska građa</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">картографска грађа</xs:documentation>
                <xs:documentation xml:lang="tr">kartografik malzeme</xs:documentation>
                <xs:documentation xml:lang="zh">地图类资料</xs:documentation>
                <xs:appinfo>
@@ -106,6 +112,8 @@
                      <cf:Term xml:lang="pt" trans="h">material cartográfico</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">картографический материал</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">kartografsko gradivo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">kartografska građa</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">картографска грађа</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kartografik malzeme</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">地图类资料</cf:Term>
                      <cf:Definition xml:lang="en">Any material representing the whole or part of the earth or any celestial body at any scale. Cartographic materials include two- and three-dimensional maps and plans (including maps of imaginary places); aeronautical, navigational, and celestial charts; atlases; globes; block diagrams; sections; aerial photographs with a cartographic purpose; bird's-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]</cf:Definition>
@@ -127,6 +135,8 @@
                <xs:documentation xml:lang="pt">dados de ensaios clínicos</xs:documentation>
                <xs:documentation xml:lang="ru">данные клинических испытаний</xs:documentation>
                <xs:documentation xml:lang="sl">podatki kliničnih preskušanj</xs:documentation>
+               <xs:documentation xml:lang="sr">podaci iz kliničkih ispitivanja</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">подаци из клиничких испитивања</xs:documentation>
                <xs:documentation xml:lang="tr">klinik deney verisi</xs:documentation>
                <xs:documentation xml:lang="zh">临床试验数据</xs:documentation>
                <xs:appinfo>
@@ -144,6 +154,8 @@
                      <cf:Term xml:lang="pt" trans="h">dados de ensaios clínicos</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">данные клинических испытаний</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">podatki kliničnih preskušanj</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">podaci iz kliničkih ispitivanja</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">подаци из клиничких испитивања</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">klinik deney verisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">临床试验数据</cf:Term>
                      <cf:Definition xml:lang="en">Data resulting from a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]</cf:Definition>
@@ -169,6 +181,8 @@
                <xs:documentation xml:lang="pt">dados compilados</xs:documentation>
                <xs:documentation xml:lang="ru">компилированные данные</xs:documentation>
                <xs:documentation xml:lang="sl">sestavljeni podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">kompilacija podataka</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">компилација података</xs:documentation>
                <xs:documentation xml:lang="tr">derlenmiş veri</xs:documentation>
                <xs:documentation xml:lang="zh">汇编数据</xs:documentation>
                <xs:appinfo>
@@ -186,6 +200,8 @@
                      <cf:Term xml:lang="pt" trans="h">dados compilados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">компилированные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">sestavljeni podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">kompilacija podataka</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">компилација података</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">derlenmiş veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">汇编数据</cf:Term>
                      <cf:Definition xml:lang="en">Data collected or assembled from multiple, often heterogeneous sources that have one or more reference points in common, and at least one of the sources was originally produced for other purposes. The data are incorporated in a new entity. For example, providing data on the number of universities in the last 150 years using a variety of available sources (e.g. finance documents, official statistics, university registers), combining survey data with information about geographical areas from official statistics (e.g. population density, doctors per capita, etc.), or using RSS to collect blog posts or tweets, etc. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -213,6 +229,8 @@
                <xs:documentation xml:lang="pt">conjunto de dados</xs:documentation>
                <xs:documentation xml:lang="ru">набор данных</xs:documentation>
                <xs:documentation xml:lang="sl">podatkovna zbirka</xs:documentation>
+               <xs:documentation xml:lang="sr">skup podataka</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">скуп података</xs:documentation>
                <xs:documentation xml:lang="tr">veri seti</xs:documentation>
                <xs:documentation xml:lang="zh">数据集</xs:documentation>
                <xs:appinfo>
@@ -232,6 +250,8 @@
                      <cf:Term xml:lang="pt" trans="h">conjunto de dados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">набор данных</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">podatkovna zbirka</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">skup podataka</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">скуп података</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">veri seti</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">数据集</cf:Term>
                      <cf:Definition xml:lang="en">A collection of related facts and data encoded in a defined structure. [Source: Adapted from http://purl.org/spar/fabio/Dataset]</cf:Definition>
@@ -251,6 +271,8 @@
                <xs:documentation xml:lang="nl">ontwerp</xs:documentation>
                <xs:documentation xml:lang="ru">дизайн</xs:documentation>
                <xs:documentation xml:lang="sl">oblikovanje</xs:documentation>
+               <xs:documentation xml:lang="sr">dizajn</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">дизајн</xs:documentation>
                <xs:documentation xml:lang="tr">tasarım</xs:documentation>
                <xs:documentation xml:lang="zh">设计</xs:documentation>
                <xs:appinfo>
@@ -266,6 +288,8 @@
                      <cf:Term xml:lang="nl" trans="h">ontwerp</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">дизайн</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">oblikovanje</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">dizajn</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">дизајн</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">tasarım</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">设计</cf:Term>
                      <cf:Definition xml:lang="en">Plans, drawing or set of drawings showing how something e.g. building, product is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]</cf:Definition>
@@ -287,6 +311,8 @@
                <xs:documentation xml:lang="pt">dados codificados</xs:documentation>
                <xs:documentation xml:lang="ru">кодированные данные</xs:documentation>
                <xs:documentation xml:lang="sl">kodirani podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">kodirani podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">кодирани подаци</xs:documentation>
                <xs:documentation xml:lang="tr">kodlanmış veri</xs:documentation>
                <xs:documentation xml:lang="zh">编码数据</xs:documentation>
                <xs:appinfo>
@@ -304,6 +330,8 @@
                      <cf:Term xml:lang="pt" trans="h">dados codificados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">кодированные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">kodirani podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">kodirani podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">кодирани подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kodlanmış veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">编码数据</cf:Term>
                      <cf:Definition xml:lang="en">Qualitative data (textual, video, audio or still-image) originally produced for other purposes into quantitative data (expressed in unit-by-variable matrices) by using coding techniques in accordance with pre-defined categorization schemes. For example, coded party manifesto data like the "European Parliament Election Study 2009, Manifesto Study" (doi:10.4232/1.10204)". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -329,6 +357,8 @@
                <xs:documentation xml:lang="pt">dados experimentais</xs:documentation>
                <xs:documentation xml:lang="ru">экспериментальные данные</xs:documentation>
                <xs:documentation xml:lang="sl">eksperimentalni podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">eksperimentalni podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">експериментални подаци</xs:documentation>
                <xs:documentation xml:lang="tr">deneysel veri</xs:documentation>
                <xs:documentation xml:lang="zh">实验数据</xs:documentation>
                <xs:appinfo>
@@ -346,6 +376,8 @@
                      <cf:Term xml:lang="pt" trans="h">dados experimentais</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">экспериментальные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">eksperimentalni podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">eksperimentalni podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">експериментални подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">deneysel veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">实验数据</cf:Term>
                      <cf:Definition xml:lang="en">Data resulting from the experimental research method involving the manipulation of some or all of the independent variables included in the hypotheses. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -371,6 +403,8 @@
                <xs:documentation xml:lang="pt">dados genómicos</xs:documentation>
                <xs:documentation xml:lang="ru">геномные данные</xs:documentation>
                <xs:documentation xml:lang="sl">genomski podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">genomski podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">геномски подаци</xs:documentation>
                <xs:documentation xml:lang="tr">genomik veri</xs:documentation>
                <xs:documentation xml:lang="zh">基因组数据</xs:documentation>
                <xs:appinfo>
@@ -388,6 +422,8 @@
                      <cf:Term xml:lang="pt" trans="h">dados genómicos</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">геномные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">genomski podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">genomski podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">геномски подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">genomik veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">基因组数据</cf:Term>
                      <cf:Definition xml:lang="en">Genomic data refers to the genome and DNA data of an organism. They are used in bioinformatics for collecting, storing and processing the genomes of living things. Genomic data is a more extensive term than sequencing data. However genomic data mostly come from sequencing techniques. It may include non-sequencing data such as data from microarrays, data from real-time PCR panels and data from pharmacogenomics studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]</cf:Definition>
@@ -413,6 +449,8 @@
                <xs:documentation xml:lang="pt">dados geoespaciais</xs:documentation>
                <xs:documentation xml:lang="ru">геопространственные данные</xs:documentation>
                <xs:documentation xml:lang="sl">geoprostorski podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">geoprostorni podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">геопросторни подаци</xs:documentation>
                <xs:documentation xml:lang="tr">coğrafi uzamsal veri</xs:documentation>
                <xs:documentation xml:lang="zh">地理空间数据</xs:documentation>
                <xs:appinfo>
@@ -430,9 +468,11 @@
                      <cf:Term xml:lang="pt" trans="h">dados geoespaciais</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">геопространственные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">geoprostorski podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">geoprostorni podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">геопросторни подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">coğrafi uzamsal veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">地理空间数据</cf:Term>
-                     <cf:Definition xml:lang="en">Discrete geospatial data are usually represented using vector data consisting of points, lines and polygons, while continuous geospatial data are usually represented by raster data, consisting of a grid of cells that each has its own value. Any number of applications in a wide range of areas produce geospatial data, such as GIS, Remote Sensing equipment, GPS units, archaeological total stations, manual mapping and computer-aided design (CAD), in a number of formats, including images, vector, text, and tabular data. Vector-based geospatial data include tables listing archaeological sites along with their coordinates, text-based files (e.g., XML) containing coordinates and topology for historic road networks, voting figures for political parties by administrative area. Raster-based geospatial data include satellite images, aerial photographs, scanned maps, and digital maps of elevations, vegetation, land-use, sea surface temperatures, air pollution, soil-types, etc. [Source: https://ddialliance.org/Specification/DDI-CV/GeneralDataFormat_2.0.html]</cf:Definition>
+                     <cf:Definition xml:lang="en">Geospatial data are any type of data with spatial coordinates that allow them to be mapped to the Earth's surface. They can represent physical objects, discrete areas or continuous surfaces. Discrete geospatial data are usually represented using vector data consisting of points, lines and polygons, while continuous geospatial data are usually represented by raster data, consisting of a grid of cells that each has its own value. Any number of applications in a wide range of areas produce geospatial data, such as GIS, Remote Sensing equipment, GPS units, archaeological total stations, manual mapping and computer-aided design (CAD), in a number of formats, including images, vector, text, and tabular data. Vector-based geospatial data include tables listing archaeological sites along with their coordinates, text-based files (e.g., XML) containing coordinates and topology for historic road networks, voting figures for political parties by administrative area. Raster-based geospatial data include satellite images, aerial photographs, scanned maps, and digital maps of elevations, vegetation, land-use, sea surface temperatures, air pollution, soil-types, etc. [Source: https://ddialliance.org/Specification/DDI-CV/GeneralDataFormat_2.0.html]</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/c_ddb1"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types"/>
@@ -451,12 +491,15 @@
                <xs:documentation xml:lang="es">imagen</xs:documentation>
                <xs:documentation xml:lang="fi">kuva</xs:documentation>
                <xs:documentation xml:lang="fr">image</xs:documentation>
+               <xs:documentation xml:lang="hu">test</xs:documentation>
                <xs:documentation xml:lang="it">immagine</xs:documentation>
                <xs:documentation xml:lang="ja">イメージ</xs:documentation>
                <xs:documentation xml:lang="nl">afbeelding</xs:documentation>
                <xs:documentation xml:lang="pt">imagem</xs:documentation>
                <xs:documentation xml:lang="ru">изображение</xs:documentation>
                <xs:documentation xml:lang="sl">slika</xs:documentation>
+               <xs:documentation xml:lang="sr">slika</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">слика</xs:documentation>
                <xs:documentation xml:lang="tr">görüntü</xs:documentation>
                <xs:documentation xml:lang="zh">图像</xs:documentation>
                <xs:appinfo>
@@ -470,12 +513,15 @@
                      <cf:Term xml:lang="es" trans="h">imagen</cf:Term>
                      <cf:Term xml:lang="fi" trans="h">kuva</cf:Term>
                      <cf:Term xml:lang="fr" trans="h">image</cf:Term>
+                     <cf:Term xml:lang="hu" trans="h">test</cf:Term>
                      <cf:Term xml:lang="it" trans="h">immagine</cf:Term>
                      <cf:Term xml:lang="ja" trans="h">イメージ</cf:Term>
                      <cf:Term xml:lang="nl" trans="h">afbeelding</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">imagem</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">изображение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">slika</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">slika</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">слика</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">görüntü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">图像</cf:Term>
                      <cf:Definition xml:lang="en">A visual representation other than text, including all types of moving image and still image. [Source: Adapted from  http://purl.org/dc/dcmitype/Image]</cf:Definition>
@@ -495,6 +541,8 @@
                <xs:documentation xml:lang="nl">industrieel ontwerp</xs:documentation>
                <xs:documentation xml:lang="ru">промышленный дизайн</xs:documentation>
                <xs:documentation xml:lang="sl">industrijsko oblikovanje</xs:documentation>
+               <xs:documentation xml:lang="sr">industrijski dizajn</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">индустријски дизајн</xs:documentation>
                <xs:documentation xml:lang="tr">endüstriyel tasarım</xs:documentation>
                <xs:documentation xml:lang="zh">工业图纸</xs:documentation>
                <xs:appinfo>
@@ -510,6 +558,8 @@
                      <cf:Term xml:lang="nl" trans="h">industrieel ontwerp</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">промышленный дизайн</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">industrijsko oblikovanje</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">industrijski dizajn</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">индустријски дизајн</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">endüstriyel tasarım</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">工业图纸</cf:Term>
                      <cf:Definition xml:lang="en">Industrial designs are applied to a wide variety of industrial products and handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including compositions of lines or colors or any three-dimensional forms that give a special appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
@@ -536,6 +586,8 @@
                <xs:documentation xml:lang="nl">interactieve bron</xs:documentation>
                <xs:documentation xml:lang="pt">recurso interativo</xs:documentation>
                <xs:documentation xml:lang="ru">интерактивный ресурс</xs:documentation>
+               <xs:documentation xml:lang="sr">interaktivna građa</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">интерактивна грађа</xs:documentation>
                <xs:documentation xml:lang="tr">etkileşimli kaynak</xs:documentation>
                <xs:documentation xml:lang="zh">互动资源</xs:documentation>
                <xs:appinfo>
@@ -554,6 +606,8 @@
                      <cf:Term xml:lang="nl" trans="h">interactieve bron</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">recurso interativo</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">интерактивный ресурс</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">interaktivna građa</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">интерактивна грађа</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">etkileşimli kaynak</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">互动资源</cf:Term>
                      <cf:Definition xml:lang="en">A resource requiring interaction from the user to be understood, executed, or experienced. Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments.
@@ -576,6 +630,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">caderno de laboratório</xs:documentation>
                <xs:documentation xml:lang="ru">лабораторный блокнот</xs:documentation>
                <xs:documentation xml:lang="sl">laboratorijska beležka</xs:documentation>
+               <xs:documentation xml:lang="sr">laboratorijske beleške</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">лабораторијске белешке</xs:documentation>
                <xs:documentation xml:lang="tr">laboratuvar defteri</xs:documentation>
                <xs:documentation xml:lang="zh">实验室记录本</xs:documentation>
                <xs:appinfo>
@@ -593,6 +649,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">caderno de laboratório</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">лабораторный блокнот</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">laboratorijska beležka</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">laboratorijske beleške</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">лабораторијске белешке</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">laboratuvar defteri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">实验室记录本</cf:Term>
                      <cf:Definition xml:lang="en">A laboratory notebook (colloq. lab notebook or lab book) is a primary record of research. Researchers use a lab notebook to document their hypotheses, experiments and initial analysis or interpretation of these experiments. This label is used both for traditional and electronic laboratory notebook. [Source: Adapted from https://en.wikipedia.org/wiki/Lab_notebook]</cf:Definition>
@@ -616,6 +674,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="nl">lay-out ontwerp</xs:documentation>
                <xs:documentation xml:lang="ru">компоновка</xs:documentation>
                <xs:documentation xml:lang="sl">načrt postavitve</xs:documentation>
+               <xs:documentation xml:lang="sr">shema konfiguracije</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">схема конфигурације</xs:documentation>
                <xs:documentation xml:lang="tr">topoğrafya</xs:documentation>
                <xs:documentation xml:lang="zh">布图设计</xs:documentation>
                <xs:appinfo>
@@ -631,9 +691,13 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="nl" trans="h">lay-out ontwerp</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">компоновка</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">načrt postavitve</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">shema konfiguracije</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">схема конфигурације</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">topoğrafya</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">布图设计</cf:Term>
-                     <cf:Definition xml:lang="en">Layout-design (topography) means the three-dimensional disposition, however expressed, of the interconnections of an integrated circuit, or such a three-dimensional disposition prepared for an integrated circuit intended for manufacture the elements of an integrated circuit (at least one of which is an active element) and of some or all. [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]</cf:Definition>
+                     <cf:Definition xml:lang="en">Layout-design (topography) means the three-dimensional disposition, however expressed, of 
+the elements of an integrated circuit (at least one of which is an active element) and of some or all of the interconnections of an integrated circuit, or such a three-dimensional disposition prepared for 
+an integrated circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]</cf:Definition>
                      <cf:Broader>
                         <cf:Class id="http://purl.org/coar/resource_type/542X-3S04"
                                   classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types"/>
@@ -655,6 +719,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="nl">leerobject</xs:documentation>
                <xs:documentation xml:lang="ru">учебный объект</xs:documentation>
                <xs:documentation xml:lang="sl">učno gradivo</xs:documentation>
+               <xs:documentation xml:lang="sr">nastavni materijal</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">наставни материјал</xs:documentation>
                <xs:documentation xml:lang="tr">Öğrenim nesnesi</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_e059"
@@ -670,6 +736,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="nl" trans="h">leerobject</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">учебный объект</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">učno gradivo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">nastavni materijal</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">наставни материјал</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Öğrenim nesnesi</cf:Term>
                      <cf:Definition xml:lang="en">A digital resource that can be reused to enhance teaching and learning. [Source: https://icas-ca.org/archive/projects/coerc/oer-glossary]</cf:Definition>
                   </cf:Class>
@@ -692,6 +760,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">mapa</xs:documentation>
                <xs:documentation xml:lang="ru">карта</xs:documentation>
                <xs:documentation xml:lang="sl">zemljevid</xs:documentation>
+               <xs:documentation xml:lang="sr">mapa</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">мапа</xs:documentation>
                <xs:documentation xml:lang="tr">harita</xs:documentation>
                <xs:documentation xml:lang="zh">地图</xs:documentation>
                <xs:appinfo>
@@ -711,6 +781,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">mapa</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">карта</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">zemljevid</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">mapa</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">мапа</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">harita</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">地图</cf:Term>
                      <cf:Definition xml:lang="en">Defined as a representation normally to scale and on a flat medium, of a selection of material or abstract features on, or in relation to, the surface of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]</cf:Definition>
@@ -737,6 +809,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">dados de medição e de ensaio</xs:documentation>
                <xs:documentation xml:lang="ru">данные измерений и испытаний</xs:documentation>
                <xs:documentation xml:lang="sl">merilni in testni podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">podaci merenja i ispitivanja</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">подаци мерења и испитивања</xs:documentation>
                <xs:documentation xml:lang="tr">ölçüm ve test verisi</xs:documentation>
                <xs:documentation xml:lang="zh">测量与测试数据</xs:documentation>
                <xs:appinfo>
@@ -754,6 +828,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">dados de medição e de ensaio</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">данные измерений и испытаний</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">merilni in testni podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">podaci merenja i ispitivanja</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">подаци мерења и испитивања</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">ölçüm ve test verisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">测量与测试数据</cf:Term>
                      <cf:Definition xml:lang="en">Data resulting from assessing specific properties (or characteristics) of beings, things, phenomena, (and/ or processes) by applying pre-established standards and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -781,6 +857,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">imagem animada</xs:documentation>
                <xs:documentation xml:lang="ru">движущееся изображение</xs:documentation>
                <xs:documentation xml:lang="sl">gibljiva slika</xs:documentation>
+               <xs:documentation xml:lang="sr">pokretne slike</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">покретне слике</xs:documentation>
                <xs:documentation xml:lang="tr">hareketli görüntü</xs:documentation>
                <xs:documentation xml:lang="zh">运动图像</xs:documentation>
                <xs:appinfo>
@@ -800,6 +878,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">imagem animada</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">движущееся изображение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">gibljiva slika</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">pokretne slike</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">покретне слике</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">hareketli görüntü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">运动图像</cf:Term>
                      <cf:Definition xml:lang="en">A moving display, either generated dynamically by a computer program or formed from a series of pre-recorded still images imparting an impression of motion when shown in succession. [Source: http://purl.org/spar/fabio/MovingImage]</cf:Definition>
@@ -827,6 +907,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">composição musical</xs:documentation>
                <xs:documentation xml:lang="ru">музыкальное произведение</xs:documentation>
                <xs:documentation xml:lang="sl">skladba</xs:documentation>
+               <xs:documentation xml:lang="sr">muzička kompozicija</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">музичка композиција</xs:documentation>
                <xs:documentation xml:lang="tr">müzikal kompozisyon</xs:documentation>
                <xs:documentation xml:lang="zh">音乐</xs:documentation>
                <xs:appinfo>
@@ -846,6 +928,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">composição musical</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">музыкальное произведение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">skladba</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">muzička kompozicija</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">музичка композиција</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">müzikal kompozisyon</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">音乐</cf:Term>
                      <cf:Definition xml:lang="en">Musical composition can refer to an original piece of music, the structure of a musical piece, or the process of creating a new piece of music. [Source: https://en.wikipedia.org/wiki/Musical_composition ]</cf:Definition>
@@ -871,6 +955,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">dados observacionais</xs:documentation>
                <xs:documentation xml:lang="ru">данные наблюдений</xs:documentation>
                <xs:documentation xml:lang="sl">opazovalni podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">podaci prikupljeni posmatranjem</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">подаци прикупљени посматрањем</xs:documentation>
                <xs:documentation xml:lang="tr">gözlemsel veri</xs:documentation>
                <xs:documentation xml:lang="zh">观测数据</xs:documentation>
                <xs:appinfo>
@@ -888,6 +974,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">dados observacionais</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">данные наблюдений</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">opazovalni podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">podaci prikupljeni posmatranjem</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">подаци прикупљени посматрањем</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">gözlemsel veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">观测数据</cf:Term>
                      <cf:Definition xml:lang="en">Data resulting from observational research, which involves collecting observations as they occur (for example, observing behaviors, events, development of condition or disease, etc.), without attempting to manipulate any of the independent variables. [Source:  Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -915,6 +1003,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">outros</xs:documentation>
                <xs:documentation xml:lang="ru">другое</xs:documentation>
                <xs:documentation xml:lang="sl">ostalo</xs:documentation>
+               <xs:documentation xml:lang="sr">ostalo</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">остало</xs:documentation>
                <xs:documentation xml:lang="tr">diğer</xs:documentation>
                <xs:documentation xml:lang="zh">其他</xs:documentation>
                <xs:appinfo>
@@ -934,6 +1024,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">outros</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">другое</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">ostalo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">ostalo</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">остало</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">diğer</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">其他</cf:Term>
                      <cf:Definition xml:lang="en">A resource type that is not included in existing terms. [COAR definition]</cf:Definition>
@@ -955,6 +1047,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">dados registados</xs:documentation>
                <xs:documentation xml:lang="ru">записанные данные</xs:documentation>
                <xs:documentation xml:lang="sl">posneti podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">snimljeni podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">снимљени подаци</xs:documentation>
                <xs:documentation xml:lang="tr">kaydedilmiş veri</xs:documentation>
                <xs:documentation xml:lang="zh">记录数据</xs:documentation>
                <xs:appinfo>
@@ -972,6 +1066,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">dados registados</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">записанные данные</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">posneti podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">snimljeni podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">снимљени подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kaydedilmiş veri</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">记录数据</cf:Term>
                      <cf:Definition xml:lang="en">Data registered by mechanical or electronic means, in a form that allows the information to be retrieved and/or reproduced. For example, images or sounds on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -995,6 +1091,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="nl">onderzoekssoftware</xs:documentation>
                <xs:documentation xml:lang="ru">исследовательское программное обеспечение</xs:documentation>
                <xs:documentation xml:lang="sl">raziskovalna programska oprema</xs:documentation>
+               <xs:documentation xml:lang="sr">softver za nauku</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">софтвер за науку</xs:documentation>
                <xs:documentation xml:lang="tr">Araştırma yazılımı</xs:documentation>
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_c950"
@@ -1009,6 +1107,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="nl" trans="h">onderzoekssoftware</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">исследовательское программное обеспечение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">raziskovalna programska oprema</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">softver za nauku</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">софтвер за науку</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">Araştırma yazılımı</cf:Term>
                      <cf:Definition xml:lang="en">Software that is used to generate, process or analyse results that you intend to appear in a publication (either in a journal, conference paper, monograph, book or thesis). Research software can be anything from a few lines of code written by yourself, to a professionally developed software package. [Source: https://datashare.ed.ac.uk/handle/10283/785]</cf:Definition>
                      <cf:Broader>
@@ -1033,6 +1133,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">dados de simulação</xs:documentation>
                <xs:documentation xml:lang="ru">данные моделирования</xs:documentation>
                <xs:documentation xml:lang="sl">simulacijski podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">simulacioni podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">симулациони подаци</xs:documentation>
                <xs:documentation xml:lang="tr">simülasyon verisi</xs:documentation>
                <xs:documentation xml:lang="zh">模拟数据</xs:documentation>
                <xs:appinfo>
@@ -1050,6 +1152,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">dados de simulação</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">данные моделирования</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">simulacijski podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">simulacioni podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">симулациони подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">simülasyon verisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">模拟数据</cf:Term>
                      <cf:Definition xml:lang="en">Data resulting from modeling or imitative representation of real-world processes, events, or systems, often using computer programs. For example, a program modeling household consumption responses to indirect tax changes; or a dataset on hypothetical patients and their drug exposure, background conditions, and known adverse events. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]</cf:Definition>
@@ -1077,6 +1181,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">software</xs:documentation>
                <xs:documentation xml:lang="ru">программное обеспечение</xs:documentation>
                <xs:documentation xml:lang="sl">programska oprema</xs:documentation>
+               <xs:documentation xml:lang="sr">računarski program</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">рачунарски програм</xs:documentation>
                <xs:documentation xml:lang="tr">yazılım</xs:documentation>
                <xs:documentation xml:lang="zh">软件</xs:documentation>
                <xs:appinfo>
@@ -1096,6 +1202,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">software</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">программное обеспечение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">programska oprema</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">računarski program</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">рачунарски програм</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">yazılım</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">软件</cf:Term>
                      <cf:Definition xml:lang="en">A computer program in source code (text) or compiled form. [Source: http://purl.org/dc/dcmitype/Software]</cf:Definition>
@@ -1118,6 +1226,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">som</xs:documentation>
                <xs:documentation xml:lang="ru">звук</xs:documentation>
                <xs:documentation xml:lang="sl">zvočni zapis</xs:documentation>
+               <xs:documentation xml:lang="sr">zvučni zapis</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">звучни запис</xs:documentation>
                <xs:documentation xml:lang="tr">ses</xs:documentation>
                <xs:documentation xml:lang="zh">声音</xs:documentation>
                <xs:appinfo>
@@ -1136,6 +1246,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">som</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">звук</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">zvočni zapis</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">zvučni zapis</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">звучни запис</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">ses</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">声音</cf:Term>
                      <cf:Definition xml:lang="en">A resource primarily intended to be heard. Examples include a music playback file format, an audio compact disc, and recorded speech or sounds. [Source: http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]</cf:Definition>
@@ -1157,6 +1269,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">código fonte</xs:documentation>
                <xs:documentation xml:lang="ru">исходный код</xs:documentation>
                <xs:documentation xml:lang="sl">izvorna koda</xs:documentation>
+               <xs:documentation xml:lang="sr">izvorni softverski kod</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">изворни софтверски код</xs:documentation>
                <xs:documentation xml:lang="tr">kaynak kodu</xs:documentation>
                <xs:documentation xml:lang="zh">源代码</xs:documentation>
                <xs:appinfo>
@@ -1174,6 +1288,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">código fonte</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">исходный код</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">izvorna koda</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">izvorni softverski kod</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">изворни софтверски код</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">kaynak kodu</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">源代码</cf:Term>
                      <cf:Definition xml:lang="en">Source code is any collection of code, with or without comments, written using a human-readable programming language, usually as plain text. [Source: https://en.wikipedia.org/wiki/Source_code]</cf:Definition>
@@ -1201,6 +1317,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">imagem estática</xs:documentation>
                <xs:documentation xml:lang="ru">неподвижное изображение</xs:documentation>
                <xs:documentation xml:lang="sl">statična vizualna predstavitev</xs:documentation>
+               <xs:documentation xml:lang="sr">statična slika</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">статична слика</xs:documentation>
                <xs:documentation xml:lang="tr">hareketsiz görüntü</xs:documentation>
                <xs:documentation xml:lang="zh">静态图像</xs:documentation>
                <xs:appinfo>
@@ -1220,6 +1338,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">imagem estática</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">неподвижное изображение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">statična vizualna predstavitev</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">statična slika</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">статична слика</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">hareketsiz görüntü</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">静态图像</cf:Term>
                      <cf:Definition xml:lang="en">A recorded static visual representation. This class of image includes diagrams, drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted from  http://purl.org/spar/fabio/StillImage]</cf:Definition>
@@ -1245,6 +1365,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="pt">dados de inquéritos</xs:documentation>
                <xs:documentation xml:lang="ru">данные опроса</xs:documentation>
                <xs:documentation xml:lang="sl">anketni podatki</xs:documentation>
+               <xs:documentation xml:lang="sr">anketni podaci</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">анкетни подаци</xs:documentation>
                <xs:documentation xml:lang="tr">anket verisi</xs:documentation>
                <xs:documentation xml:lang="zh">调查数据</xs:documentation>
                <xs:appinfo>
@@ -1262,6 +1384,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="pt" trans="h">dados de inquéritos</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">данные опроса</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">anketni podatki</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">anketni podaci</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">анкетни подаци</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">anket verisi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">调查数据</cf:Term>
                      <cf:Definition xml:lang="en">Data resulting from a survey, which is defined as an investigation about the characteristics of a given population by means of collecting data from a sample of that population and estimating their characteristics through the systematic use of statistical methodology. Included are censuses, sample surveys, the collection of data from administrative records and derived statistical activities as well as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]</cf:Definition>
@@ -1286,6 +1410,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                <xs:documentation xml:lang="nl">handelsmerk</xs:documentation>
                <xs:documentation xml:lang="ru">торговая марка</xs:documentation>
                <xs:documentation xml:lang="sl">blagovna znamka</xs:documentation>
+               <xs:documentation xml:lang="sr">zaštitni znak</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">заштитни знак</xs:documentation>
                <xs:documentation xml:lang="tr">marka</xs:documentation>
                <xs:documentation xml:lang="zh">商标</xs:documentation>
                <xs:appinfo>
@@ -1302,6 +1428,8 @@ Source: http://purl.org/dc/dcmitype/InteractiveResource</cf:Definition>
                      <cf:Term xml:lang="nl" trans="h">handelsmerk</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">торговая марка</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">blagovna znamka</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">zaštitni znak</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">заштитни знак</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">marka</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">商标</cf:Term>
                      <cf:Definition xml:lang="en">A sign used to distinguish the goods or services of one undertaking from those
@@ -1328,6 +1456,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                <xs:documentation xml:lang="pt">vídeo</xs:documentation>
                <xs:documentation xml:lang="ru">видео</xs:documentation>
                <xs:documentation xml:lang="sl">video</xs:documentation>
+               <xs:documentation xml:lang="sr">video</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">видео</xs:documentation>
                <xs:documentation xml:lang="tr">video</xs:documentation>
                <xs:documentation xml:lang="zh">视频</xs:documentation>
                <xs:appinfo>
@@ -1347,6 +1477,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                      <cf:Term xml:lang="pt" trans="h">vídeo</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">видео</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">video</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">video</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">видео</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">video</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">视频</cf:Term>
                      <cf:Definition xml:lang="en">A recording of visual images, usually in motion and with sound accompaniment. [Source: http://www.ifla.org/files/assets/cataloguing/isbd/isbd-cons_20110321.pdf ]</cf:Definition>
@@ -1374,6 +1506,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                <xs:documentation xml:lang="pt">sítio web</xs:documentation>
                <xs:documentation xml:lang="ru">вебсайт</xs:documentation>
                <xs:documentation xml:lang="sl">spletna stran</xs:documentation>
+               <xs:documentation xml:lang="sr">veb-sajt</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">веб-сајт</xs:documentation>
                <xs:documentation xml:lang="tr">web sitesi</xs:documentation>
                <xs:documentation xml:lang="zh">网站</xs:documentation>
                <xs:appinfo>
@@ -1393,6 +1527,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                      <cf:Term xml:lang="pt" trans="h">sítio web</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">вебсайт</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">spletna stran</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">veb-sajt</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">веб-сајт</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">web sitesi</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">网站</cf:Term>
                      <cf:Definition xml:lang="en">A collection of related web pages containing text, images, videos and/or other digital assets that are addressed relative to a common Uniform Resource Locator (URL). A web site is hosted on at least one web server, accessible via a network such as the Internet or a private local area network.
@@ -1421,6 +1557,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                <xs:documentation xml:lang="pt">fluxo de trabalho</xs:documentation>
                <xs:documentation xml:lang="ru">рабочий процесс</xs:documentation>
                <xs:documentation xml:lang="sl">delovni tok</xs:documentation>
+               <xs:documentation xml:lang="sr">radni proces</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">радни процес</xs:documentation>
                <xs:documentation xml:lang="tr">iş akışı</xs:documentation>
                <xs:documentation xml:lang="zh">工作流程</xs:documentation>
                <xs:appinfo>
@@ -1440,6 +1578,8 @@ sounds, or, in rare instances, smells or moving images, or a combination thereof
                      <cf:Term xml:lang="pt" trans="h">fluxo de trabalho</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">рабочий процесс</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">delovni tok</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">radni proces</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">радни процес</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">iş akışı</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">工作流程</cf:Term>
                      <cf:Definition xml:lang="en">A recorded sequence of connected steps, which may be automated, specifying a reliably repeatable sequence of operations to be undertaken when conducting a particular job, for example an in silico investigation that extracts and processes information from a number of bioinformatics databases. [Source: Adapted from http://purl.org/spar/fabio/Workflow]</cf:Definition>

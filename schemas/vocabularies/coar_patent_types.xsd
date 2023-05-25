@@ -42,6 +42,8 @@
                <xs:documentation xml:lang="nl">PCT-aanvraag</xs:documentation>
                <xs:documentation xml:lang="ru">Заявка РСТ</xs:documentation>
                <xs:documentation xml:lang="sl">patentna prijava</xs:documentation>
+               <xs:documentation xml:lang="sr">patentna prijava</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">патентна пријава</xs:documentation>
                <xs:documentation xml:lang="tr">PCT başvurusu</xs:documentation>
                <xs:documentation xml:lang="zh">国际专利合作条约PCT申请</xs:documentation>
                <xs:appinfo>
@@ -58,6 +60,8 @@
                      <cf:Term xml:lang="nl" trans="h">PCT-aanvraag</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">Заявка РСТ</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">patentna prijava</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">patentna prijava</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">патентна пријава</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">PCT başvurusu</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">国际专利合作条约PCT申请</cf:Term>
                      <cf:Definition xml:lang="en">A patent application filed through the WIPO-administered Patent Cooperation Treaty (PCT), also known as an international application. [Source: Adapted from https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
@@ -82,6 +86,8 @@
                <xs:documentation xml:lang="nl">modelbescherming</xs:documentation>
                <xs:documentation xml:lang="ru">патент на образец</xs:documentation>
                <xs:documentation xml:lang="sl">patent za oblikovanje</xs:documentation>
+               <xs:documentation xml:lang="sr">patent za dizajn</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">патент за дизајн</xs:documentation>
                <xs:documentation xml:lang="tr">tasarım patenti</xs:documentation>
                <xs:documentation xml:lang="zh">设计专利</xs:documentation>
                <xs:appinfo>
@@ -98,6 +104,8 @@
                      <cf:Term xml:lang="nl" trans="h">modelbescherming</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">патент на образец</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">patent za oblikovanje</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">patent za dizajn</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">патент за дизајн</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">tasarım patenti</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">设计专利</cf:Term>
                      <cf:Definition xml:lang="en">A patent granted to any person who has invented any new and non-obvious ornamental design for an article of manufacture. The design patent protects only the appearance of an article, but not its structural or functional features. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]</cf:Definition>
@@ -124,6 +132,8 @@
                <xs:documentation xml:lang="nl">patent</xs:documentation>
                <xs:documentation xml:lang="pt">patente</xs:documentation>
                <xs:documentation xml:lang="ru">патент</xs:documentation>
+               <xs:documentation xml:lang="sr">patent</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">патент</xs:documentation>
                <xs:documentation xml:lang="tr">patent</xs:documentation>
                <xs:documentation xml:lang="zh">专利</xs:documentation>
                <xs:appinfo>
@@ -142,6 +152,8 @@
                      <cf:Term xml:lang="nl" trans="h">patent</cf:Term>
                      <cf:Term xml:lang="pt" trans="h">patente</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">патент</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">patent</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">патент</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">patent</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">专利</cf:Term>
                      <cf:Definition xml:lang="en">A patent or patent application.
@@ -167,6 +179,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                <xs:documentation xml:lang="nl">kwekersrecht</xs:documentation>
                <xs:documentation xml:lang="ru">патент на растение</xs:documentation>
                <xs:documentation xml:lang="sl">rastlinska sorta</xs:documentation>
+               <xs:documentation xml:lang="sr">patentirana sorta</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">патентирана сорта</xs:documentation>
                <xs:documentation xml:lang="tr">bitki patenti</xs:documentation>
                <xs:documentation xml:lang="zh">品种专属权</xs:documentation>
                <xs:appinfo>
@@ -183,6 +197,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="nl" trans="h">kwekersrecht</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">патент на растение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">rastlinska sorta</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">patentirana sorta</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">патентирана сорта</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">bitki patenti</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">品种专属权</cf:Term>
                      <cf:Definition xml:lang="en">A patent granted to anyone who has invented or discovered and asexually reproduced any distinct and new variety of plant, including cultivated sports, mutants, hybrids, and newly found seedlings, other than a tuber-propagated plant or a plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]</cf:Definition>
@@ -207,6 +223,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                <xs:documentation xml:lang="nl">plantenras bescherming</xs:documentation>
                <xs:documentation xml:lang="ru">охрана новых сортов растений</xs:documentation>
                <xs:documentation xml:lang="sl">žlahniteljska pravica</xs:documentation>
+               <xs:documentation xml:lang="sr">zaštićena biljna sorta</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">заштићена биљна сорта</xs:documentation>
                <xs:documentation xml:lang="tr">bitki çeşitliliğini koruma</xs:documentation>
                <xs:documentation xml:lang="zh">植物新品种保护</xs:documentation>
                <xs:appinfo>
@@ -223,6 +241,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="nl" trans="h">plantenras bescherming</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">охрана новых сортов растений</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">žlahniteljska pravica</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">zaštićena biljna sorta</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">заштићена биљна сорта</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">bitki çeşitliliğini koruma</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">植物新品种保护</cf:Term>
                      <cf:Definition xml:lang="en">Plant variety protection, also called a "plant breeder's right" (PBR), is a form of intellectual property right granted to the breeder of a new plant variety . According to this right, certain acts concerning the exploitation of the protected variety require the prior authorization of the breeder. Plant variety protection is an independent sui generis form of protection, tailored to protect new plant varieties and has certain features in common with other intellectual property rights. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>
@@ -247,6 +267,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                <xs:documentation xml:lang="nl">softwarepatent</xs:documentation>
                <xs:documentation xml:lang="ru">патент на программное обеспечение</xs:documentation>
                <xs:documentation xml:lang="sl">patent za programsko opremo</xs:documentation>
+               <xs:documentation xml:lang="sr">patentirani softver</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">патентирани софтвер</xs:documentation>
                <xs:documentation xml:lang="tr">yazılım patenti</xs:documentation>
                <xs:documentation xml:lang="zh">软件著作权</xs:documentation>
                <xs:appinfo>
@@ -263,6 +285,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="nl" trans="h">softwarepatent</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">патент на программное обеспечение</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">patent za programsko opremo</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">patentirani softver</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">патентирани софтвер</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">yazılım patenti</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">软件著作权</cf:Term>
                      <cf:Definition xml:lang="en">In order to obtain a patent, a software invention must not fall under other non-patentable subject matter (for example, abstract ideas or mathematical theories) and has to fulfill the other substantive patentability criteria (for example, novelty, inventive step [non-obviousness] and industrial applicability [usefulness]). [Source: https://www.wipo.int/patents/en/faq_patents.html]</cf:Definition>
@@ -287,6 +311,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                <xs:documentation xml:lang="nl">gebruiksmodel</xs:documentation>
                <xs:documentation xml:lang="ru">полезная модель</xs:documentation>
                <xs:documentation xml:lang="sl">patent s skrajšanim trajanjem</xs:documentation>
+               <xs:documentation xml:lang="sr">mali patent</xs:documentation>
+               <xs:documentation xml:lang="sr-cyrl">мали патент</xs:documentation>
                <xs:documentation xml:lang="tr">faydalı model</xs:documentation>
                <xs:documentation xml:lang="zh">实用新型专利</xs:documentation>
                <xs:appinfo>
@@ -303,6 +329,8 @@ exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/ed
                      <cf:Term xml:lang="nl" trans="h">gebruiksmodel</cf:Term>
                      <cf:Term xml:lang="ru" trans="h">полезная модель</cf:Term>
                      <cf:Term xml:lang="sl" trans="h">patent s skrajšanim trajanjem</cf:Term>
+                     <cf:Term xml:lang="sr" trans="h">mali patent</cf:Term>
+                     <cf:Term xml:lang="sr-cyrl" trans="h">мали патент</cf:Term>
                      <cf:Term xml:lang="tr" trans="h">faydalı model</cf:Term>
                      <cf:Term xml:lang="zh" trans="h">实用新型专利</cf:Term>
                      <cf:Definition xml:lang="en">A special form of patent right granted by a state or jurisdiction to an inventor or the inventor’s assignee for a fixed period of time. The terms and conditions for granting a utility model are slightly different from those for normal patents (including a shorter term of protection and less stringent patentability requirements). The term can also describe what are known in certain countries as “petty patents,” “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]</cf:Definition>

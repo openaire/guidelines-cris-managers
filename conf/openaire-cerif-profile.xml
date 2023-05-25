@@ -220,6 +220,68 @@
                     <xs:documentation>The open access type of the product</xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:element name="Dates" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Dates or date ranges to describe temporal aspects of the product. Semantically follows the dateType construct from the DataCite Metadata Schema 4.4.
+                    
+If an embargo period is to be expressed, its start should be expressed by the ``startDate`` on ``Submitted`` or ``Accepted`` (as appropriate) and end is represented by the ``startDate`` on ``Available``.
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+	            	<xs:sequence>
+	            		<xs:element name="Accepted" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Accepted)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` attribute for the date the publisher accepted the resource into their system.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Available" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Available)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` and possibly also ``endDate`` attributes for the dates the resource is or was publicly available.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Copyrighted" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Copyrighted)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` attribute to give the specific, documented date at which the resource receives a copyrighted status, if applicable</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Collected" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Collected)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range in which the resource content was collected. To indicate precise or particular timeframes in which research was conducted.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Created" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Created)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range in which the resource itself was put together.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Issued" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Issued)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` attribute for the date the resource was published or distributed, e.g. to a data centre.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Submitted" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Submitted)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` attribute for the date the creator submits the resource to the publisher. This could be different from Accepted if the publisher then applies a selection process.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Updated" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Updated)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range of the last update to the resource, when the resource is being added to.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Valid" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Valid)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to indicate the period in which the dataset or resource is accurate.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            		<xs:element name="Withdrawn" minOccurs="0" type="cfLink__BaseType" cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Withdrawn)">
+			                <xs:annotation>
+			                    <xs:documentation>Use the ``startDate`` attribute for the date the resource is removed.</xs:documentation>
+			                </xs:annotation>
+	            		</xs:element>
+	            	</xs:sequence>
+            	</xs:complexType>
+            </xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts">

@@ -111,7 +111,7 @@
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:restriction base="cfString__Type">
-				<xs:pattern value="https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]">
+				<xs:pattern value="https://orcid\.org/000(0-000(1-[5-9]|2-[0-9]|3-[0-4])|9-000[0-9]-[0-9])[0-9]{3}-[0-9]{3}[0-9X]">
 					<xs:annotation>
 						<xs:documentation source="https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier"/>
 					</xs:annotation>

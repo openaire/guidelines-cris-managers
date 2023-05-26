@@ -290,5 +290,23 @@
             </metadata>
         </record>
 
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2000001</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2000001">
+                	<!-- a sample person to demonstrate the second ISNI subrange assigned to ORCID -->
+                    <PersonName>
+                        <FamilyNames>mustermann</FamilyNames>
+                        <FirstNames>max</FirstNames>
+                    </PersonName>
+                    <ORCID>https://orcid.org/0009-0000-0000-0000</ORCID>
+                </Person>
+            </metadata>
+        </record>
+
 	</ListRecords>
 </OAI-PMH>

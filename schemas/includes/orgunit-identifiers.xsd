@@ -86,7 +86,7 @@
  -->
 
 			<!-- the generic identifier -->
-			<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true">
 				<xs:annotation>
 					<xs:documentation>A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types.</xs:documentation>
 				</xs:annotation>

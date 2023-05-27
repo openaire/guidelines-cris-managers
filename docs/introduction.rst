@@ -62,7 +62,7 @@ We wish to acknowledge the following contributors and also those who provided fe
 Versions
 ^^^^^^^^
 
-- 1.1.2, ????, doi: ....
+- 1.1.2, May 2023, `doi:10.5281/zenodo.7977123 <https://doi.org/10.5281/zenodo.7977123>`_
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 

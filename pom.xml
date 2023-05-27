@@ -13,7 +13,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xml-maven-plugin</artifactId>
-				<version>1.0.1</version>
+				<version>1.0.2</version>
 				<executions>
 					<execution>
 						<goals>
@@ -100,7 +100,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>3.3.1</version>
 				<executions>
 					<execution>
 						<id>copy-resources</id>
@@ -128,7 +128,7 @@
 			<plugin>
 			  <groupId>com.helger.maven</groupId>
 			  <artifactId>ph-schematron-maven-plugin</artifactId>
-			  <version>6.3.0</version>
+			  <version>6.3.4</version>
 			  <executions>
 			    <execution>
 			      <goals>

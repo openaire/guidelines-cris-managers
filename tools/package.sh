@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # extract the current version from the POM file 
-V=$( xpath <pom.xml '/project/version' 2>/dev/null | \
+V=$( xpath -e '/project/version' pom.xml 2>/dev/null | \
 	 sed -ne '/<version>/s/<\/*version>//gp' )
 
 # place the current version in the documentation config file

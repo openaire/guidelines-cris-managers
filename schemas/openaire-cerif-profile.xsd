@@ -16,37 +16,37 @@
             </sch:pattern>
         </xs:appinfo>
     </xs:annotation>
-    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types" schemaLocation="vocabularies/openaire_funding_types.xsd"/>
-    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types" schemaLocation="vocabularies/coar_publication_types.xsd"/>
-    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types" schemaLocation="vocabularies/coar_patent_types.xsd"/>
-    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types" schemaLocation="vocabularies/coar_product_types.xsd"/>
-    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility" schemaLocation="vocabularies/openaire_service_compatibilities.xsd"/>
-    <xs:include schemaLocation="includes/person-identifiers.xsd">
+    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types" schemaLocation="./vocabularies/openaire_funding_types.xsd"/>
+    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types" schemaLocation="./vocabularies/coar_publication_types.xsd"/>
+    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types" schemaLocation="./vocabularies/coar_patent_types.xsd"/>
+    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types" schemaLocation="./vocabularies/coar_product_types.xsd"/>
+    <xs:import namespace="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility" schemaLocation="./vocabularies/openaire_service_compatibilities.xsd"/>
+    <xs:include schemaLocation="./includes/person-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The person identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
-    <xs:include schemaLocation="includes/orgunit-identifiers.xsd">
+    <xs:include schemaLocation="./includes/orgunit-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The orgunit identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
-    <xs:include schemaLocation="includes/publication-identifiers.xsd">
+    <xs:include schemaLocation="./includes/publication-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The publication identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
-    <xs:include schemaLocation="includes/patent-identifiers.xsd">
+    <xs:include schemaLocation="./includes/patent-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The patent identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
-    <xs:include schemaLocation="includes/product-identifiers.xsd">
+    <xs:include schemaLocation="./includes/product-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The product identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
-    <xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
+    <xs:import namespace="http://purl.org/coar/access_right" schemaLocation="./vocabularies/coar_accessrights.xsd"/>
     <xs:include schemaLocation="./includes/cerif-commons.xsd">
         <xs:annotation>
             <xs:documentation>The common building blocks for any CERIF XML Schema.</xs:documentation>

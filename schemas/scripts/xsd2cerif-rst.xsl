@@ -86,6 +86,37 @@
 			<xsl:with-param name="elName" select="'Event'"/>
 			<xsl:with-param name="filename" select="'cerif_xml_event_entity.rst'"/>
 		</xsl:call-template>
+		
+		<xsl:if test="/xs:schema/xs:group">
+			<xsl:result-document href="docs/cerif_xml_common_parts.rst">
+				<xsl:text>.. cerif_xml_common_parts:
+
+Common Parts
+============
+
+.. toctree::
+   :maxdepth: 2
+
+</xsl:text>
+				<xsl:for-each select="/xs:schema/xs:group">
+					<xsl:text>   cerif_xml_common__</xsl:text><xsl:value-of select="lower-case(@name)"/><xsl:text>
+</xsl:text>
+					<xsl:result-document href="docs/cerif_xml_common__{lower-case(@name)}.rst">
+						<xsl:text>
+</xsl:text>
+						<xsl:text>.. _cerif_xml_common__</xsl:text><xsl:value-of select="lower-case(@name)"/><xsl:text>:
+
+</xsl:text>
+						<xsl:value-of select="@name"/><xsl:text>
+</xsl:text>
+
+						<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
+</xsl:text>
+						<xsl:apply-templates select="xs:sequence/xs:element"/>
+					</xsl:result-document>
+				</xsl:for-each>
+			</xsl:result-document>
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template name="document-entity">
@@ -276,8 +307,13 @@ Internal Identifier
 		<xsl:call-template name="make-description"/>
 		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
-        <xsl:if test="descendant::xs:element"><xsl:text> with </xsl:text><xsl:value-of select="@cflink:container"/><xsl:text> embedded XML elements</xsl:text></xsl:if>
-		<xsl:apply-templates select="xs:complexType/xs:sequence/xs:element" mode="link"/>
+		<xsl:variable name="embeddedStuff" select="xs:complexType/xs:sequence/*[self::xs:element or self::xs:group[@ref]]"/>
+        <xsl:if test="$embeddedStuff"><xsl:text> with </xsl:text><xsl:value-of select="@cflink:container"/><xsl:text> embedded XML elements</xsl:text>
+        	<xsl:apply-templates select="$embeddedStuff" mode="link"/>
+        	<xsl:for-each select="xs:complexType/xs:sequence/xs:group[@ref]">
+        		<xsl:text> from the shared structure :ref:`</xsl:text><xsl:value-of select="@ref"/><xsl:text>&lt;cerif_xml_common__</xsl:text><xsl:value-of select="@ref"/><xsl:text>&gt;`</xsl:text>
+        	</xsl:for-each>
+        </xsl:if>
 		<xsl:text>
 </xsl:text>
 		<xsl:call-template name="make-footnotes"/>

@@ -118,7 +118,7 @@ Identifier
 ^^^^^^^^^^
 :Description: A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types.
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
+:Representation: XML element ``Identifier`` with a required ``type`` attribute (the URI of the identifier scheme)
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 

@@ -96,6 +96,14 @@
 			</xs:element>
  -->
 
+			<!-- the generic identifier -->
+			<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true">
+				<xs:annotation>
+					<xs:documentation>A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types.					
+					This in particular applies to various national and service-specific identifiers that can be relevant in some interchange scenarios.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
 		</xs:sequence>
 	</xs:group>
 

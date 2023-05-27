@@ -1512,6 +1512,12 @@ Other Classification specify the type of relationship between two objects (e.g. 
         </xs:complexContent>
     </xs:complexType>
     <xs:group name="DatesStructure__Group">
+        <xs:annotation>
+            <xs:documentation>Dates or date ranges to describe temporal aspects of the product. Semantically follows the dateType construct from the DataCite Metadata Schema 4.4.
+                    
+If an embargo period is to be expressed, its start should be expressed by the ``startDate`` on ``Submitted`` or ``Accepted`` (as appropriate) and end is represented by the ``startDate`` on ``Available``.
+            </xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Accepted)" minOccurs="0" name="Accepted" type="cfLink__BaseType">
                 <xs:annotation>

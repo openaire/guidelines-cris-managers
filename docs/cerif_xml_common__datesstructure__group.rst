@@ -3,6 +3,7 @@
 
 DatesStructure__Group
 ^^^^^^^^^^^^^^^^^^^^^
+:Description: Dates or date ranges to describe temporal aspects of the product. Semantically follows the dateType construct from the DataCite Metadata Schema 4.4. If an embargo period is to be expressed, its start should be expressed by the ``startDate`` on ``Submitted`` or ``Accepted`` (as appropriate) and end is represented by the ``startDate`` on ``Available``.
 
 Accepted
 ========

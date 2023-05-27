@@ -112,6 +112,7 @@ Common Parts
 
 						<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
 </xsl:text>
+						<xsl:call-template name="make-description"/>
 						<xsl:apply-templates select="xs:sequence/xs:element"/>
 					</xsl:result-document>
 				</xsl:for-each>

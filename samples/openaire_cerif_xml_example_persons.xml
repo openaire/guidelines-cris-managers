@@ -290,5 +290,22 @@
             </metadata>
         </record>
 
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/21234823</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/21234823">
+					<PersonName>
+						<FamilyNames>Westwood</FamilyNames>
+						<FirstNames>Giles</FirstNames>
+					</PersonName>
+					<ORCID>https://orcid.org/0000-0003-3980-4287</ORCID>
+                </Person>
+            </metadata>
+        </record>
+
 	</ListRecords>
 </OAI-PMH>

@@ -152,6 +152,15 @@ AlternativeDAI
 :Format: regular expression ``info\:eu\-repo/dai/nl/\d{8}[\dxX]`` (as per `<https://wiki.surfnet.nl/display/standards/DAI>`_)
 
 
+Identifier
+^^^^^^^^^^
+:Description: A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types. This in particular applies to various national and service-specific identifiers that can be relevant in some interchange scenarios.
+:Use: optional, possibly multiple (0..*)
+:Representation: XML element ``Identifier`` with a required ``type`` attribute (the URI of the identifier scheme)
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+
+
+
 ElectronicAddress
 ^^^^^^^^^^^^^^^^^
 :Description: An electronic address associated with the person

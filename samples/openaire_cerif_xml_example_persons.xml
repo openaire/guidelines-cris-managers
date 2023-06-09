@@ -305,6 +305,24 @@
                     </PersonName>
                     <ORCID>https://orcid.org/0009-0000-0000-0000</ORCID>
                 </Person>
+            </metadata>  
+        </record>
+    
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2000002</identifier>
+                <datestamp>2023-05-27T06:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+                <Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2000002">
+                	<!-- a sample person to demonstrate the Peruvian DNI, following https://www.limaeasy.com/peru-guide/glossary-terms-peru/dni-peru-s-national-id-card -->
+                    <PersonName>
+                        <FamilyNames>Contreras Villavicencio</FamilyNames>
+                        <FirstNames>Ana Patricia</FirstNames>
+                    </PersonName>
+                    <Identifier type="https://www.wikidata.org/wiki/Q5797148">70025425-8</Identifier>
+                </Person>
             </metadata>
         </record>
 

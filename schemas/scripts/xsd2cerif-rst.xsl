@@ -343,7 +343,7 @@ Internal Identifier
 		<xsl:call-template name="document-use"/>
 		<xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``</xsl:text>
 		<xsl:if test="@type = 'cfGenericIdentifier__Type'">
-			<xsl:text> with mandatory ``type`` attribute</xsl:text>
+			<xsl:text> with a required ``type`` attribute (the URI of the identifier scheme)</xsl:text>
 		</xsl:if>
 		<xsl:text>
 </xsl:text>

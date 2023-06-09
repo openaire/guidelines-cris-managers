@@ -65,7 +65,7 @@ Identifier
 ^^^^^^^^^^
 :Description: An identifier of the funding
 :Use: optional, possibly multiple (0..*)
-:Representation: XML element ``Identifier`` with mandatory ``type`` attribute
+:Representation: XML element ``Identifier`` with a required ``type`` attribute (the URI of the identifier scheme)
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 
 

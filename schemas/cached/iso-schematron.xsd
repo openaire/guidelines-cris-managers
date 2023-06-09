@@ -31,8 +31,8 @@
   targetNamespace="http://purl.oclc.org/dsdl/schematron"
   xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
   xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:lang="en">
-  <xs:import namespace="http://www.schematron-quickfix.com/validator/process" schemaLocation="schematron-quickFix.xsd"/>
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd">
+  <xs:import namespace="http://www.schematron-quickfix.com/validator/process" schemaLocation="./schematron-quickFix.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="./xml.xsd">
     <xs:annotation>
       <xs:documentation> Get access to the xml: attribute groups for xml:lang </xs:documentation>
     </xs:annotation>

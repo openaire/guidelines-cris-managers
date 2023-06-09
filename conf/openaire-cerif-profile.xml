@@ -182,6 +182,20 @@
 					<xs:documentation>The open access type of the publication</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+            <xs:element name="FileLocations" minOccurs="0" cflink:link="https://w3id.org/cerif/model#ResultPublication_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)">
+                <xs:annotation>
+                    <xs:documentation>The files that this Publication has as contents.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="cfLink__BaseType">
+                            <xs:choice>
+                                <xs:element ref="Medium" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:choice>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
  		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName ReferencedBy Parts">
@@ -233,6 +247,20 @@ If an embargo period is to be expressed, its start should be expressed by the ``
                 	</xs:sequence>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="FileLocations" minOccurs="0" cflink:link="https://w3id.org/cerif/model#ResultProduct_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)">
+                <xs:annotation>
+                    <xs:documentation>The files that this Product has as contents.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="cfLink__BaseType">
+                            <xs:choice>
+                                <xs:element ref="Medium" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:choice>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts">
@@ -256,6 +284,20 @@ If an embargo period is to be expressed, its start should be expressed by the ``
 					<xs:documentation>Result outputs that are referenced by this patent</xs:documentation>
 				</xs:annotation>
 			</Link>
+            <xs:element name="FileLocations" minOccurs="0" cflink:link="https://w3id.org/cerif/model#ResultPatent_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)">
+                <xs:annotation>
+                    <xs:documentation>The files that this Patent has as contents.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="cfLink__BaseType">
+                            <xs:choice>
+                                <xs:element ref="Medium" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:choice>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Equipment" leaveOut="Keyword">
@@ -282,6 +324,26 @@ If an embargo period is to be expressed, its start should be expressed by the ``
 					<xs:documentation>The partner of the event</xs:documentation>
 				</xs:annotation>
 			</Link>
+		</Entity>
+
+		<Entity uri="https://w3id.org/cerif/model#Medium" leaveOut="Keyword Description">
+            <xs:element xmlns="http://purl.org/coar/access_right" ref="Access" cflink:link="https://w3id.org/cerif/model#Medium_Classification(http://purl.org/coar/access_right)" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The open access type</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="License" type="cfGenericURIClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#Medium_Classification">
+                <xs:annotation>
+                    <xs:documentation>The license of the file. We recommend using URIs from the SPDX License List (https://spdx.org/licenses/), which includes the Creative Commons licenses.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+    		<xs:element name="Dates" minOccurs="0">
+    			<xs:complexType>
+    				<xs:sequence>
+                		<xs:group ref="DatesStructure__Group"/>
+                	</xs:sequence>
+                </xs:complexType>
+    		</xs:element>
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Classification">
@@ -353,5 +415,29 @@ If an embargo period is to be expressed, its start should be expressed by the ``
     		</xs:element>
     	</xs:sequence>
 	</xs:group>
-
+<!--
+	<xs:group name="FileLocations__Group">
+		<xs:sequence>
+            <xs:element name="FileLocation" minOccurs="0" maxOccurs="unbounded" cflink:entity="https://w3id.org/cerif/model#Medium">
+                <xs:annotation>
+                    <xs:documentation>A structured description of individual files that make up the ``Publication`` or ``Product`` where this is used.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                	<xs:sequence>
+                		<xs:element name="Filename" minOccurs="0" type="cfString__Type" cflink:attribute="https://w3id.org/cerif/model#Medium.Title">
+			                <xs:annotation>
+			                    <xs:documentation>The system name of the file</xs:documentation>
+			                </xs:annotation>
+                		</xs:element>
+                		<xs:element name="URI" type="cfURI__Type" cflink:attribute="https://w3id.org/cerif/model#Medium.UniformResourceIdentifier">
+			                <xs:annotation>
+			                    <xs:documentation>The URI of the file</xs:documentation>
+			                </xs:annotation>                			
+                		</xs:element>
+                	</xs:sequence>
+                </xs:complexType>
+            </xs:element>
+    	</xs:sequence>
+	</xs:group>
+-->
 </CERIF-profile>

@@ -276,4 +276,13 @@ Dates
 
 
 
+FileLocations
+^^^^^^^^^^^^^
+:Description: The files that this Product has as contents.
+:Use: optional (0..1)
+:Representation: XML element ``FileLocations`` with embedded XML element ``Medium``
+:CERIF: the ResultProduct_Medium linking entity (`<https://w3id.org/cerif/model#ResultProduct_Medium>`_) with the `<https://w3id.org/cerif/vocab/MediaRelations#Contents>`_ semantics
+
+
+
 

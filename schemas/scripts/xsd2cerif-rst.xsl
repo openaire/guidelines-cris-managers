@@ -87,6 +87,11 @@
 			<xsl:with-param name="filename" select="'cerif_xml_event_entity.rst'"/>
 		</xsl:call-template>
 		
+		<xsl:call-template name="document-entity">
+			<xsl:with-param name="elName" select="'Medium'"/>
+			<xsl:with-param name="filename" select="'cerif_xml_medium_entity.rst'"/>
+		</xsl:call-template>
+
 		<xsl:if test="/xs:schema/xs:group">
 			<xsl:result-document href="docs/cerif_xml_common_parts.rst">
 				<xsl:text>.. cerif_xml_common_parts:

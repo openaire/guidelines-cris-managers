@@ -767,6 +767,20 @@ This entity typically represents the granularity level of a single published ite
                                 <xs:documentation>The open access type of the publication</xs:documentation>
                             </xs:annotation>
                         </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)" minOccurs="0" name="FileLocations">
+                            <xs:annotation>
+                                <xs:documentation>The files that this Publication has as contents.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="cfLink__BaseType">
+                                        <xs:choice>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="Medium"/>
+                                        </xs:choice>
+                                    </xs:extension>
+                                </xs:complexContent>
+                            </xs:complexType>
+                        </xs:element>
                         <xs:group ref="__TheRestGroup"/>
                     </xs:sequence>
                 </xs:extension>
@@ -887,6 +901,20 @@ Source: Wikipedia
                                     <xs:extension base="cfLink__BaseType">
                                         <xs:choice>
                                             <xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+                                        </xs:choice>
+                                    </xs:extension>
+                                </xs:complexContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)" minOccurs="0" name="FileLocations">
+                            <xs:annotation>
+                                <xs:documentation>The files that this Patent has as contents.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="cfLink__BaseType">
+                                        <xs:choice>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="Medium"/>
                                         </xs:choice>
                                     </xs:extension>
                                 </xs:complexContent>
@@ -1060,6 +1088,20 @@ If an embargo period is to be expressed, its start should be expressed by the ``
                                 <xs:sequence>
                                     <xs:group ref="DatesStructure__Group"/>
                                 </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)" minOccurs="0" name="FileLocations">
+                            <xs:annotation>
+                                <xs:documentation>The files that this Product has as contents.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="cfLink__BaseType">
+                                        <xs:choice>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="Medium"/>
+                                        </xs:choice>
+                                    </xs:extension>
+                                </xs:complexContent>
                             </xs:complexType>
                         </xs:element>
                         <xs:group ref="__TheRestGroup"/>
@@ -1292,6 +1334,67 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
                             <xs:annotation>
                                 <xs:documentation>The owner of the CRIS: The organisation the research of which the CRIS documents</xs:documentation>
                             </xs:annotation>
+                        </xs:element>
+                        <xs:group ref="__TheRestGroup"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element cflink:entity="https://w3id.org/cerif/model#Medium" name="Medium" substitutionGroup="Individual__SubstitutionGroupHead">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="cfIdAttr__BaseType">
+                    <xs:sequence>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#Medium_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericURIClassification__Type">
+                            <xs:annotation>
+                                <xs:documentation>The type of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.Title" maxOccurs="unbounded" minOccurs="0" name="Title" type="cfMLangString__Type">
+                            <xs:annotation>
+                                <xs:documentation>Name of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.UniformResourceIdenfier" minOccurs="0" name="URI" type="cfURI__Type">
+                            <xs:annotation>
+                                <xs:documentation>An URI of this medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.MimeType" minOccurs="0" name="MimeType" type="cfString__Type">
+                            <xs:annotation>
+                                <xs:documentation>The MIME type of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.Size" minOccurs="0" name="Size" type="cfNonnegativeInteger__Type">
+                            <xs:annotation>
+                                <xs:documentation>The size (in octets) of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
+                            <xs:annotation>
+                                <xs:documentation>An identifier of this medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element xmlns:ns4="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#Medium_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="ns4:Access">
+                            <xs:annotation>
+                                <xs:documentation>The open access type</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#Medium_Classification" maxOccurs="unbounded" minOccurs="0" name="License" type="cfGenericURIClassification__Type">
+                            <xs:annotation>
+                                <xs:documentation>The license of the file. We recommend using URIs from the SPDX License List (https://spdx.org/licenses/), which includes the Creative Commons licenses.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="Dates">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:group ref="DatesStructure__Group"/>
+                                </xs:sequence>
+                            </xs:complexType>
                         </xs:element>
                         <xs:group ref="__TheRestGroup"/>
                     </xs:sequence>

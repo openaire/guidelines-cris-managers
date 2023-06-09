@@ -91,8 +91,8 @@
 			<xsl:result-document href="docs/cerif_xml_common_parts.rst">
 				<xsl:text>.. cerif_xml_common_parts:
 
-Common Parts
-============
+*Common Parts*
+==============
 
 .. toctree::
    :maxdepth: 2
@@ -103,17 +103,26 @@ Common Parts
 </xsl:text>
 					<xsl:result-document href="docs/cerif_xml_common__{lower-case(@name)}.rst">
 						<xsl:text>
-</xsl:text>
-						<xsl:text>.. _cerif_xml_common__</xsl:text><xsl:value-of select="lower-case(@name)"/><xsl:text>:
+.. _cerif_xml_common__</xsl:text><xsl:value-of select="lower-case(@name)"/><xsl:text>:
 
 </xsl:text>
 						<xsl:value-of select="@name"/><xsl:text>
 </xsl:text>
 
 						<xsl:value-of select="my:repeat( '^', string-length(@name) )"/><xsl:text>
+
+.. toctree::
+   :maxdepth: 3
+
+   cerif_xml_common__</xsl:text><xsl:value-of select="lower-case(@name)"/><xsl:text>_contents</xsl:text>
+						<xsl:result-document href="docs/cerif_xml_common__{lower-case(@name)}_contents.rst">
+							<xsl:text>
+.. _cerif_xml_common__</xsl:text><xsl:value-of select="lower-case(@name)"/><xsl:text>_contents:
+
 </xsl:text>
-						<xsl:call-template name="make-description"/>
-						<xsl:apply-templates select="xs:sequence/xs:element"/>
+							<xsl:call-template name="make-description"/>
+							<xsl:apply-templates select="xs:sequence/xs:element"/>
+						</xsl:result-document>
 					</xsl:result-document>
 				</xsl:for-each>
 			</xsl:result-document>

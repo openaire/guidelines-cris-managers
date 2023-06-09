@@ -1,7 +1,7 @@
 .. cerif_xml_common_parts:
 
-Common Parts
-============
+*Common Parts*
+==============
 
 .. toctree::
    :maxdepth: 2

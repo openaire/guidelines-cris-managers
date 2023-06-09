@@ -259,113 +259,70 @@ EUFAR brings together 32 European institutions and companies involved in airborn
         	<metadata>
 				<Product id="Products/723859" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-					<Name xml:lang="en">ORCID Public Data File 2022</Name>
-					<VersionInfo xml:lang="en">6</VersionInfo>
-					<DOI>10.23640/07243.21220892.v6</DOI>
+					<Name xml:lang="en">Altmetric data of the documents from Web of Science with the affiliation to the Czech Republic</Name>
+					<DOI>10.5281/zenodo.6536306</DOI>
 					<Creators>
 						<Creator>
-							<Person id="Persons/21234823">
+							<Person id="Persons/2123484">
 								<PersonName>
-									<FamilyNames>Westwood</FamilyNames>
-									<FirstNames>Giles</FirstNames>
+									<FamilyNames>Květ</FamilyNames>
+									<FirstNames>Jonáš</FirstNames>
 								</PersonName>
-								<ORCID>https://orcid.org/0000-0003-3980-4287</ORCID>
 							</Person>
 						</Creator>
 					</Creators>
-					<Publishers>
-						<Publisher>
-							<OrgUnit id="OrgUnits/345322">
-								<Acronym>ORCID</Acronym>
-								<Name xml:lang="en">ORCID Inc.</Name>
-								<RORID>https://ror.org/04fa4r544</RORID>
-							</OrgUnit>
-						</Publisher>
-					</Publishers>
-					<License scheme="https://spdx.org/licenses/">https://spdx.org/licenses/CC0-1.0</License>
-					<Description>
-These files contain a snapshot of all public data in the ORCID Registry associated with an ORCID record that was created or claimed by an individual as of October 1st, 2022. ORCID publishes this file once per year under a Creative Commons CC0 1.0 Universal public domain dedication. This means that, to the extent possible under law, ORCID has waived all copyright and related or neighbouring rights to the Public Data File. For more information on the file, see https://info.orcid.org/public-data-file-use-policy/
+					<License scheme="https://spdx.org/licenses/">https://spdx.org/licenses/CC-BY-4.0</License>
+					<Description><![CDATA[
+These datasets were generated for the master thesis with the title "Altmetrics and its use in the evaluation of scientific research" (in Czech "Altmetrie a její využití při hodnocení vědeckého výzkumu"), that was submitted in 2022 at the Institute Information Studies and Librarianship, Charles University, Prague, Czech Republic. There are 3 files, where the first one "Příloha_číslo_1-processed_data.xlsx" contains processed and analyzed data from the other two. "Příloha_číslo_2-data_altmetrics_Kvet_1st_download.csv" is the file with raw altmetric data downloaded on the 9/1/2022. "Příloha_číslo_3-data_altmetrics_Kvet_2st_download.csv" are the same data but downloaded two months later to see the difference.
 
-The file contains the public information associated with each user's ORCID record. The data is available in XML format and is further divided into separate files for easier management. One file contains the full record summary for each record. The rest of the data is divided into 11 files which contain the activities for each record including full work data.
+Altmetric data came from PlumX and Altmetric.com aggregators. Before publishing them here there were completely anonymized so there is no possibility to assign them to particular research papers. Dataset contains altmetric data of the research documents published in the period from 2017 to 2021. All documents have affiliation to the Czech Republic.
 
-Below is more complete description of how the data is structured.
+The tool for collection and analyzation is available on Github here: https://github.com/kvetjo/Altmetrics_analyze_tool
 
-Summaries file
+Thesis reference in Czech:
 
-Name: ORCID_2022_10_summaries.tar.gz
-
-Description: Contains all the existing summaries, when extracted, it will generate the following file structure: summaries/[3 digits checksum]/[iD].xml
-
-Example: If you are looking for the summary of iD '0000-0002-7869-831X', decompress the file and you will find the summary under 'summaries/31X/0000-0002-7869-831X.xml'.
-
-Activities files
-
-Named:
-- ORCID_2022_10_activites_0.tar.gz
-- ORCID_2022_10_activites_1.tar.gz
-- ORCID_2022_10_activites_2.tar.gz
-- ORCID_2022_10_activites_3.tar.gz
-- ORCID_2022_10_activites_4.tar.gz
-- ORCID_2022_10_activites_5.tar.gz
-- ORCID_2022_10_activites_6.tar.gz
-- ORCID_2022_10_activites_7.tar.gz
-- ORCID_2022_10_activites_8.tar.gz
-- ORCID_2022_10_activites_9.tar.gz
-- ORCID_2022_10_activites_X.tar.gz
-
-Description: Consists of 11 .tar.gz files, each file contains the public activities that belongs to an iD that contains a given checksum. The file hierarchy is as follows:
-
-[checksum]/[3 digits checksum]/[iD]/[activity type]/[iD]_[activity_type]_[putcode].xml
-
-Examples:
-
-If you are looking for the public activities that belong to `0000-0002-7869-831X:
-
-Decompress the file 'ORCID_2022_10_activites_X.tar.gz'.
-
-You will find all the public activities under 'X/31X/0000-0002-7869-831X/' which are then sub-divided in folders for each activity type.
-
-
-If you are looking for all the employments that belong to '0000-0002-7869-831X':
-
-Decompress the file 'ORCID_2022_10_activites_X.tar.gz',
-
-Navigate to 'X/31X/0000-0002-7869-831X/employments'.
-
-
-If you are looking for the employment with put-code '7923980' that belongs to '0000-0002-7869-831X' :
-
-Decompress the file 'ORCID_2022_10_activites_X.tar.gz'.
-
-You will find that employment under 'X/31X/0000-0002-7869-831X/employments/0000-0002-7869-831X_employments_7923980.xml'.
-
-
-Companion Resources:
-
-https://github.com/ORCID/orcid-model/tree/master/src/main/resources/common_3.0
-
-2021: File: https://doi.org/10.23640/07243.16750535
-
-2020: File: https://doi.org/10.23640/07243.13066970.v1
-
-2019: File: https://doi.org/10.23640/07243.9988322.v2
-
-2018 File: https://doi.org/10.23640/07243.7234028.v1
-
-2017 File: https://doi.org/10.6084/m9.figshare.5479792.v1
-
-2016 File: https://doi.org/10.6084/m9.figshare.4134027
-
-2015 File: https://dx.doi.org/10.6084/m9.figshare.1582705
-
-2014 File: http://dx.doi.org/10.14454/07243.2014.001
-
-2013 File: http://dx.doi.org/10.14454/07243.2013.001
-					</Description>
-					<Keyword xml:lang="en">ORCID</Keyword>
-					<Keyword xml:lang="en">Information Systems</Keyword>
-					<Keyword xml:lang="en">persistent identifier</Keyword>
-					<Keyword xml:lang="en">Open Source Software Development</Keyword>
+KVĚT, Jonáš. Altmetrie a její využití při hodnocení vědeckého výzkumu [online]. Praha, 2022 [cit. 2022-05-03]. Diplomová práce. Univerzita Karlova. Filozofická fakulta. Ústav informačních studií a knihovnictví. Vedoucí práce Jan Dvořák.
+					]]></Description>
+					<Keyword xml:lang="en">Altmetrics</Keyword>
+					<Keyword xml:lang="en">PlumX</Keyword>
+					<Keyword xml:lang="en">Altmetric.com</Keyword>
+					<Keyword xml:lang="en">Scientometrics</Keyword>
+                    <Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
+                    <Dates>
+                    	<Collected startDate="2022-01-09" endDate="2022-03-09"/>
+                    </Dates>
+                    <FileLocations>
+						<Medium>
+							<Title>Popis_datové_sady.pdf</Title>
+							<URI>https://zenodo.org/record/6536306/files/Popis_datov%C3%A9_sady.pdf?download=1</URI>
+							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
+						</Medium>
+						<Medium>
+							<Title>Příloha_číslo_1-processed_data.xlsx</Title>
+							<URI>https://zenodo.org/record/6536306/files/P%C5%99%C3%ADloha_%C4%8D%C3%ADslo_1-processed_data.xlsx?download=1</URI>
+							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
+						</Medium>
+						<Medium>
+							<Title>Příloha_číslo_2-data_altmetrics_Kvet_1st_download.csv</Title>
+							<URI>https://zenodo.org/record/6536306/files/P%C5%99%C3%ADloha_%C4%8D%C3%ADslo_2-data_altmetrics_Kvet_1st_download.csv?download=1</URI>
+							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
+							<Dates>
+								<Collected startDate="2022-01-09" endDate="2022-01-09"/>
+							</Dates>
+						</Medium>
+						<Medium>
+							<Title>Příloha_číslo_3-data_altmetrics_Kvet_2nd_download.csv</Title>
+							<URI>https://zenodo.org/record/6536306/files/P%C5%99%C3%ADloha_%C4%8D%C3%ADslo_3-data_altmetrics_Kvet_2nd_download.csv?download=1</URI>
+							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
+							<Dates>
+								<Collected startDate="2022-03-09" endDate="2022-03-09"/>
+							</Dates>
+						</Medium>
+                    </FileLocations>
 				</Product>
         	</metadata>
         </record>

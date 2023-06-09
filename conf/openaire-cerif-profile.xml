@@ -28,7 +28,7 @@
 			<xs:annotation>
 				<xs:documentation>CRIS compatible with the OpenAIRE Guidelines for CRIS Managers</xs:documentation>
 			</xs:annotation>
-			<Classification kind="Type" schema="vocabularies/openaire_service_compatibilities.xsd" minOccurs="0" maxOccurs="unbounded">
+			<Classification kind="Type" schema="./vocabularies/openaire_service_compatibilities.xsd" minOccurs="0" maxOccurs="unbounded">
 				<xs:annotation>
 					<xs:documentation>OpenAIRE compatibility of the CRIS</xs:documentation>
 				</xs:annotation>
@@ -56,7 +56,7 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Person" leaveOut="Type">
-			<IdentifiersFrom schemaLocation="includes/person-identifiers.xsd">
+			<IdentifiersFrom schemaLocation="./includes/person-identifiers.xsd">
 				<xs:annotation>
 					<xs:documentation>The person identifiers.</xs:documentation>
 				</xs:annotation>
@@ -71,7 +71,7 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#OrganisationUnit" leaveOut="Parts">
-			<IdentifiersFrom schemaLocation="includes/orgunit-identifiers.xsd">
+			<IdentifiersFrom schemaLocation="./includes/orgunit-identifiers.xsd">
 				<xs:annotation>
 					<xs:documentation>The orgunit identifiers.</xs:documentation>
 				</xs:annotation>
@@ -109,7 +109,7 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Funding" leaveOut="Originated Supports">
-			<Classification kind="Type" schema="vocabularies/openaire_funding_types.xsd" minOccurs="1" maxOccurs="1">
+			<Classification kind="Type" schema="./vocabularies/openaire_funding_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the funding</xs:documentation>
 				</xs:annotation>
@@ -141,17 +141,17 @@
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultPublication" leaveOut="Series TotalPages ReferencedBy Parts">
-			<Classification kind="Type" schema="vocabularies/coar_publication_types.xsd" minOccurs="1" maxOccurs="1">
+			<Classification kind="Type" schema="./vocabularies/coar_publication_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the publication</xs:documentation>
 				</xs:annotation>
 			</Classification>
-			<Classification kind="Access" schema="vocabularies/coar_accessrights.xsd" minOccurs="1" maxOccurs="1">
+			<Classification kind="Access" schema="./vocabularies/coar_accessrights.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The open access type of the publication</xs:documentation>
 				</xs:annotation>
 			</Classification>
-            <IdentifiersFrom schemaLocation="includes/publication-identifiers.xsd">
+            <IdentifiersFrom schemaLocation="./includes/publication-identifiers.xsd">
                 <xs:annotation>
                     <xs:documentation>The publication identifiers.</xs:documentation>
                 </xs:annotation>
@@ -185,12 +185,12 @@
  		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultProduct" leaveOut="AlternateName ReferencedBy Parts">
-			<Classification kind="Type" schema="vocabularies/coar_product_types.xsd" minOccurs="1" maxOccurs="1">
+			<Classification kind="Type" schema="./vocabularies/coar_product_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the resulting product (other than publication or patent)</xs:documentation>
 				</xs:annotation>
 			</Classification>
-            <IdentifiersFrom schemaLocation="includes/product-identifiers.xsd">
+            <IdentifiersFrom schemaLocation="./includes/product-identifiers.xsd">
                 <xs:annotation>
                     <xs:documentation>The product identifiers.</xs:documentation>
                 </xs:annotation>
@@ -285,12 +285,12 @@ If an embargo period is to be expressed, its start should be expressed by the ``
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#ResultPatent" leaveOut="ReferencedBy Parts">
-			<Classification kind="Type" schema="vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
+			<Classification kind="Type" schema="./vocabularies/coar_patent_types.xsd" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>The type of the patent (currently just one option)</xs:documentation>
 				</xs:annotation>
 			</Classification>
-            <IdentifiersFrom schemaLocation="includes/patent-identifiers.xsd">
+            <IdentifiersFrom schemaLocation="./includes/patent-identifiers.xsd">
                 <xs:annotation>
                     <xs:documentation>The patent identifiers.</xs:documentation>
                 </xs:annotation>
@@ -339,5 +339,5 @@ If an embargo period is to be expressed, its start should be expressed by the ``
 		</Entity>
 
 	</Entities>
-			<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="vocabularies/coar_accessrights.xsd"/>
+			<xs:import namespace="http://purl.org/coar/access_right" schemaLocation="./vocabularies/coar_accessrights.xsd"/>
 </CERIF-profile>

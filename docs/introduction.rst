@@ -62,7 +62,7 @@ We wish to acknowledge the following contributors and also those who provided fe
 Versions
 ^^^^^^^^
 
-- 1.1.2, May 2023, `doi:10.5281/zenodo.7977123 <https://doi.org/10.5281/zenodo.7977123>`_
+- 1.2.0, June 2023, `doi:10.5281/zenodo.7977123 <https://doi.org/10.5281/zenodo.7977123>`_
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 
@@ -71,14 +71,18 @@ Versions
 - 1.0, June 2015, `doi:10.5281/zenodo.17065 <https://doi.org/10.5281/zenodo.17065>`_
 
 
-List of changes in the 1.1.2 version (since 1.1.1)
+List of changes in the 1.2.0 version (since 1.1.1)
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
 2. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0 (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
 3. Documentation of using the OAI-PMH identifier was improved. (`#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_)
 4. More examples were added. (`#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_)
-5. ...
+5. Published a report on `Compliance of the OpenAIRE Guidelines for CRIS Managers v1.1.1 with the FAIR Principles <https://doi.org/10.5281/zenodo.6627245>`_ (`#98 <https://github.com/openaire/guidelines-cris-managers/issues/98>`_)
+6. Adding a generic **Identifier** (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
+7. Clarify the use of Patent (`#89 <https://github.com/openaire/guidelines-cris-managers/issues/89>`_ , `#106 <https://github.com/openaire/guidelines-cris-managers/issues/106>`_)
+8. Updating outdated links  
+
 
 List of changes in the 1.1.1 version (since 1.1.0)
 """"""""""""""""""""""""""""""""""""""""""""""""""

@@ -81,7 +81,10 @@ List of changes in the 1.2.0 version (since 1.1.1)
 5. Published a report on `Compliance of the OpenAIRE Guidelines for CRIS Managers v1.1.1 with the FAIR Principles <https://doi.org/10.5281/zenodo.6627245>`_ (`#98 <https://github.com/openaire/guidelines-cris-managers/issues/98>`_)
 6. Adding a generic **Identifier** (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
 7. Clarify the use of Patent (`#89 <https://github.com/openaire/guidelines-cris-managers/issues/89>`_ , `#106 <https://github.com/openaire/guidelines-cris-managers/issues/106>`_)
-8. Updating outdated links  
+8. Updating outdated links
+9. Supporting _Dates_ in **Product** entity (`#144 <https://github.com/openaire/guidelines-cris-managers/pull/144>`_
+10. Recommend the use of _SPDX License_  (`#135 <https://github.com/openaire/guidelines-cris-managers/pull/135>`_
+11. Introducing the entity: **Medium**
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

@@ -43,3 +43,7 @@ Extensions are possible in the review phase of these Guidelines.
    cerif_xml_equipment_entity
    
    cerif_xml_event_entity
+
+   cerif_xml_medium_entity
+
+   cerif_xml_common_parts

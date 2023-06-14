@@ -487,4 +487,13 @@ ns4:Access
 
 
 
+FileLocations
+^^^^^^^^^^^^^
+:Description: The files that this Publication has as contents.
+:Use: optional (0..1)
+:Representation: XML element ``FileLocations`` with embedded XML element ``Medium``
+:CERIF: the ResultPublication_Medium linking entity (`<https://w3id.org/cerif/model#ResultPublication_Medium>`_) with the `<https://w3id.org/cerif/vocab/MediaRelations#Contents>`_ semantics
+
+
+
 

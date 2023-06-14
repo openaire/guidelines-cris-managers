@@ -326,5 +326,21 @@
             </metadata>
         </record>
 
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:Persons/2123484</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_persons</setSpec>
+            </header>
+            <metadata>
+				<Person xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Persons/2123484">
+					<PersonName>
+						<FamilyNames>Květ</FamilyNames>
+						<FirstNames>Jonáš</FirstNames>
+					</PersonName>
+				</Person>
+            </metadata>
+        </record>
+
 	</ListRecords>
 </OAI-PMH>

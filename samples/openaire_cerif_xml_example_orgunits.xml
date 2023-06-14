@@ -223,6 +223,20 @@
                 </OrgUnit>
             </metadata>
         </record>
+        <record>
+            <header>
+                <identifier>oai:cris.example.org:OrgUnits/345322</identifier>
+                <datestamp>2018-01-07T14:00:00Z</datestamp>
+                <setSpec>openaire_cris_orgunits</setSpec>
+            </header>
+            <metadata>
+                <OrgUnit xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="OrgUnits/345322">
+					<Acronym>ORCID</Acronym>
+					<Name xml:lang="en">ORCID Inc.</Name>
+					<RORID>https://ror.org/04fa4r544</RORID>
+                </OrgUnit>
+            </metadata>
+        </record>
         
 	</ListRecords>
 </OAI-PMH>

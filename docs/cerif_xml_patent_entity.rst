@@ -196,4 +196,13 @@ References
 
 
 
+FileLocations
+^^^^^^^^^^^^^
+:Description: The files that this Patent has as contents.
+:Use: optional (0..1)
+:Representation: XML element ``FileLocations`` with embedded XML element ``Medium``
+:CERIF: the ResultPatent_Medium linking entity (`<https://w3id.org/cerif/model#ResultPatent_Medium>`_) with the `<https://w3id.org/cerif/vocab/MediaRelations#Contents>`_ semantics
+
+
+
 

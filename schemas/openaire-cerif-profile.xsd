@@ -767,6 +767,20 @@ This entity typically represents the granularity level of a single published ite
                                 <xs:documentation>The open access type of the publication</xs:documentation>
                             </xs:annotation>
                         </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPublication_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)" minOccurs="0" name="FileLocations">
+                            <xs:annotation>
+                                <xs:documentation>The files that this Publication has as contents.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="cfLink__BaseType">
+                                        <xs:choice>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="Medium"/>
+                                        </xs:choice>
+                                    </xs:extension>
+                                </xs:complexContent>
+                            </xs:complexType>
+                        </xs:element>
                         <xs:group ref="__TheRestGroup"/>
                     </xs:sequence>
                 </xs:extension>
@@ -887,6 +901,20 @@ Source: Wikipedia
                                     <xs:extension base="cfLink__BaseType">
                                         <xs:choice>
                                             <xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+                                        </xs:choice>
+                                    </xs:extension>
+                                </xs:complexContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultPatent_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)" minOccurs="0" name="FileLocations">
+                            <xs:annotation>
+                                <xs:documentation>The files that this Patent has as contents.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="cfLink__BaseType">
+                                        <xs:choice>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="Medium"/>
                                         </xs:choice>
                                     </xs:extension>
                                 </xs:complexContent>
@@ -1058,57 +1086,22 @@ If an embargo period is to be expressed, its start should be expressed by the ``
                             </xs:annotation>
                             <xs:complexType>
                                 <xs:sequence>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Accepted)" minOccurs="0" name="Accepted" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` attribute for the date the publisher accepted the resource into their system.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Available)" minOccurs="0" name="Available" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` and possibly also ``endDate`` attributes for the dates the resource is or was publicly available.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Copyrighted)" minOccurs="0" name="Copyrighted" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` attribute to give the specific, documented date at which the resource receives a copyrighted status, if applicable</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Collected)" minOccurs="0" name="Collected" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range in which the resource content was collected. To indicate precise or particular timeframes in which research was conducted.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Created)" minOccurs="0" name="Created" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range in which the resource itself was put together.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Issued)" minOccurs="0" name="Issued" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` attribute for the date the resource was published or distributed, e.g. to a data centre.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Submitted)" minOccurs="0" name="Submitted" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` attribute for the date the creator submits the resource to the publisher. This could be different from Accepted if the publisher then applies a selection process.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Updated)" minOccurs="0" name="Updated" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range of the last update to the resource, when the resource is being added to.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Valid)" minOccurs="0" name="Valid" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to indicate the period in which the dataset or resource is accurate.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
-                                    <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Withdrawn)" minOccurs="0" name="Withdrawn" type="cfLink__BaseType">
-                                        <xs:annotation>
-                                            <xs:documentation>Use the ``startDate`` attribute for the date the resource is removed.</xs:documentation>
-                                        </xs:annotation>
-                                    </xs:element>
+                                    <xs:group ref="DatesStructure__Group"/>
                                 </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Medium(https://w3id.org/cerif/vocab/MediaRelations#Contents)" minOccurs="0" name="FileLocations">
+                            <xs:annotation>
+                                <xs:documentation>The files that this Product has as contents.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:complexContent>
+                                    <xs:extension base="cfLink__BaseType">
+                                        <xs:choice>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="Medium"/>
+                                        </xs:choice>
+                                    </xs:extension>
+                                </xs:complexContent>
                             </xs:complexType>
                         </xs:element>
                         <xs:group ref="__TheRestGroup"/>
@@ -1348,6 +1341,67 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
+    <xs:element cflink:entity="https://w3id.org/cerif/model#Medium" name="Medium" substitutionGroup="Individual__SubstitutionGroupHead">
+        <xs:annotation>
+            <xs:documentation/>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="cfIdAttr__BaseType">
+                    <xs:sequence>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#Medium_Classification" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericURIClassification__Type">
+                            <xs:annotation>
+                                <xs:documentation>The type of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.Title" maxOccurs="unbounded" minOccurs="0" name="Title" type="cfMLangString__Type">
+                            <xs:annotation>
+                                <xs:documentation>Name of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.UniformResourceIdenfier" minOccurs="0" name="URI" type="cfURI__Type">
+                            <xs:annotation>
+                                <xs:documentation>An URI of this medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.MimeType" minOccurs="0" name="MimeType" type="cfString__Type">
+                            <xs:annotation>
+                                <xs:documentation>The MIME type of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:attribute="https://w3id.org/cerif/model#Medium.Size" minOccurs="0" name="Size" type="cfNonnegativeInteger__Type">
+                            <xs:annotation>
+                                <xs:documentation>The size (in octets) of the medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
+                            <xs:annotation>
+                                <xs:documentation>An identifier of this medium</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element xmlns:ns4="http://purl.org/coar/access_right" cflink:link="https://w3id.org/cerif/model#Medium_Classification(http://purl.org/coar/access_right)" minOccurs="0" ref="ns4:Access">
+                            <xs:annotation>
+                                <xs:documentation>The open access type</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element cflink:link="https://w3id.org/cerif/model#Medium_Classification" maxOccurs="unbounded" minOccurs="0" name="License" type="cfGenericURIClassification__Type">
+                            <xs:annotation>
+                                <xs:documentation>The license of the file. We recommend using URIs from the SPDX License List (https://spdx.org/licenses/), which includes the Creative Commons licenses.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="Dates">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:group ref="DatesStructure__Group"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:group ref="__TheRestGroup"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
     <!-- 
 	<xs:element name="" substitutionGroup="Individual__SubstitutionGroupHead" cflink:entity="">
 		<xs:annotation>
@@ -1560,4 +1614,64 @@ Other Classification specify the type of relationship between two objects (e.g. 
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <xs:group name="DatesStructure__Group">
+        <xs:annotation>
+            <xs:documentation>Dates or date ranges to describe temporal aspects of the product. Semantically follows the dateType construct from the DataCite Metadata Schema 4.4.
+                    
+If an embargo period is to be expressed, its start should be expressed by the ``startDate`` on ``Submitted`` or ``Accepted`` (as appropriate) and end is represented by the ``startDate`` on ``Available``.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Accepted)" minOccurs="0" name="Accepted" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` attribute for the date the publisher accepted the resource into their system.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Available)" minOccurs="0" name="Available" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` and possibly also ``endDate`` attributes for the dates the resource is or was publicly available.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Copyrighted)" minOccurs="0" name="Copyrighted" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` attribute to give the specific, documented date at which the resource receives a copyrighted status, if applicable</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Collected)" minOccurs="0" name="Collected" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range in which the resource content was collected. To indicate precise or particular timeframes in which research was conducted.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Created)" minOccurs="0" name="Created" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range in which the resource itself was put together.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Issued)" minOccurs="0" name="Issued" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` attribute for the date the resource was published or distributed, e.g. to a data centre.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Submitted)" minOccurs="0" name="Submitted" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` attribute for the date the creator submits the resource to the publisher. This could be different from Accepted if the publisher then applies a selection process.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Updated)" minOccurs="0" name="Updated" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to describe the date range of the last update to the resource, when the resource is being added to.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Valid)" minOccurs="0" name="Valid" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` and ``endDate`` attributes to indicate the period in which the dataset or resource is accurate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element cflink:link="https://w3id.org/cerif/model#ResultProduct_Classification(https://w3id.org/cerif/vocab/DataCiteMetadataSchema_DateType#Withdrawn)" minOccurs="0" name="Withdrawn" type="cfLink__BaseType">
+                <xs:annotation>
+                    <xs:documentation>Use the ``startDate`` attribute for the date the resource is removed.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
 </xs:schema>

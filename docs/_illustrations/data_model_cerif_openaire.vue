@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2023-05-28 -->
+<!-- Tufts VUE 3.3.0 concept-map (data_model_cerif_openaire.vue) 2023-06-15 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sun May 28 20:26:56 CEST 2023 by jdvorak on platform Mac OS X 10.16 in JVM 1.8.0_172-b11 -->
+<!-- Do Not Remove: Saved date Thu Jun 15 10:15:51 CEST 2023 by jdvorak on platform Mac OS X 10.16 in JVM 1.8.0_172-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="data_model_cerif_openaire.vue" created="1393077696638"
     x="0.0" y="0.0" width="785.0" height="584.10004" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1685298416112" size="111961"
+    <resource referenceCreated="1686816951324" size="111961"
         spec="/Users/jdvorak/workspace/guidelines-cris-managers/docs/_illustrations/data_model_cerif_openaire.vue"
         type="1" xsi:type="URLResource">
         <title>data_model_cerif_openaire.vue</title>
@@ -290,7 +290,7 @@
         <label>Note: The Service entity is used to represent the source CRIS itself. It is placed in the response to the OAI-PMH Identify request. No separate set for harvesting Services is specified.</label>
     </child>
     <child ID="232"
-        label="&#xa0; added in OpenAIRE CERIF Guidelines 1.1.2"
+        label="&#xa0; added in OpenAIRE CERIF Guidelines 1.2"
         layerID="1" created="1685290563720" x="56.23932" y="520.3894"
         width="226.0" height="15.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
@@ -311,12 +311,12 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;p color="#404040" style="color: #404040"&gt;
-      &amp;#160; added in OpenAIRE CERIF Guidelines 1.1.2
+      &amp;#160; added in OpenAIRE CERIF Guidelines 1.2
     &lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </richText>
-        <label>&#xa0; added in OpenAIRE CERIF Guidelines 1.1.2</label>
+        <label>&#xa0; added in OpenAIRE CERIF Guidelines 1.2</label>
     </child>
     <child ID="233" layerID="1" created="1685290580096" x="19.489319"
         y="525.3894" width="38.25" height="3.237732" strokeWidth="3.0"

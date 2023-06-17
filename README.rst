@@ -11,9 +11,9 @@ This repository contains the project of the **OpenAIRE Guidelines for CRIS Manag
 Contents
 ~~~~~~~~
 
-.. image:: https://travis-ci.org/openaire/guidelines-cris-managers.svg?branch=master
-   :target: https://travis-ci.org/openaire/guidelines-cris-managers
-   :alt: Build Status
+.. image:: https://github.com/openaire/guidelines-cris-managers/actions/workflows/validate.yml/badge.svg
+   :target: https://github.com/openaire/guidelines-cris-managers/actions/workflows/validate.yml
+   :alt: Validation Status
 
 .. image:: https://readthedocs.org/projects/openaire-guidelines-for-cris-managers/badge/?version=latest
    :target: https://readthedocs.org/projects/openaire-guidelines-for-cris-managers/?badge=latest

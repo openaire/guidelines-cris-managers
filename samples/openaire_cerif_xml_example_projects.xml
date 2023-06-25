@@ -4,7 +4,7 @@
 	OAI-PMH Set: openaire_cris_projects 
 	Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1 
 -->
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.2/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
 	<responseDate>2018-01-12T14:00:00Z</responseDate>
 	<request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_projects">http://cris.example.org/openaire/connector</request>
 	<ListRecords>
@@ -15,7 +15,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112348"><!-- OpenAIRE-Advance -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="Projects/112348"><!-- OpenAIRE-Advance -->
 					<Acronym>OpenAIRE-Advance</Acronym>
 					<Title xml:lang="en">OpenAIRE Advancing Open Scholarship</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">777541</Identifier>
@@ -121,7 +121,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112345"><!-- OpenAIREplus -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="Projects/112345"><!-- OpenAIREplus -->
 					<Acronym>OpenAIREplus</Acronym>
 					<Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
@@ -204,7 +204,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112346"><!-- OpenAIRE -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="Projects/112346"><!-- OpenAIRE -->
 					<Acronym>OpenAIRE</Acronym>
 					<Title xml:lang="en">Open Access Infrastructure for Research in Europe</Title>
 					<Title xml:lang="el">Υποδομή Ανοικτής Πρόσβασης για την Έρευνα στην Ευρώπη</Title>
@@ -287,7 +287,7 @@
 				<setSpec>openaire_cris_projects</setSpec>
 			</header>
 			<metadata>
-				<Project xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="Projects/112347"><!-- EUFAR -->
+				<Project xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="Projects/112347"><!-- EUFAR -->
 					<Acronym>EUFAR</Acronym>
 					<Title xml:lang="en">European Facility for Airborne Research in Environmental and Geoscience</Title>
 					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">227159</Identifier>

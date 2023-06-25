@@ -4,7 +4,7 @@
 	OAI-PMH Set: openaire_cris_datasets
 	Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1
 -->
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.2/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
     <responseDate>2018-01-12T14:00:00Z</responseDate>
     <request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_datasets">http://cris.example.org/openaire/connector</request>
     <ListRecords>
@@ -15,7 +15,7 @@
                 <setSpec>openaire_cris_datasets</setSpec>
             </header>
             <metadata>
-            	<Product id="Products/7123451" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+            	<Product id="Products/7123451" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
                     <Name xml:lang="en">Airborne In-situ Atmospheric Instruments and Hyperspectral Instruments Data from the Projects Funded Under The European Facility for Airborne Research in Environmental and Geo-sciences (EUFAR) Project</Name>
 					<URL>http://catalogue.ceda.ac.uk/uuid/d40e4067ae0121b31bb1ba57e04707de</URL>
@@ -55,7 +55,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729487" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729487" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -109,7 +109,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729481" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729481" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -158,7 +158,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729482" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729482" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
 					<Name xml:lang="en">Base script used for simulations</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -207,7 +207,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729483" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729483" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -257,7 +257,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/723859" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/723859" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Altmetric data of the documents from Web of Science with the affiliation to the Czech Republic</Name>
 					<DOI>10.5281/zenodo.6536306</DOI>

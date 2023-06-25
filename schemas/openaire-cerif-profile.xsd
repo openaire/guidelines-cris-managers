@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.openaire.eu/cerif-profile/1.1/" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.openaire.eu/cerif-profile/1.2/" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.2/" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
     <xs:annotation>
-        <xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
-			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
+        <xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.2, 
+			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.2 (https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/index.html, https://doi.org/10.5281/zenodo.8050936). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
         <xs:appinfo>
-            <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+            <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.2/"/>
         </xs:appinfo>
         <xs:appinfo>
             <sch:pattern xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">

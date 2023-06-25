@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../CERIF-TG-Tools/CERIF-Model-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
-			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
+		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.2, 
+			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.2 (https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/index.html, https://doi.org/10.5281/zenodo.8050936). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
         <xs:appinfo>
             <!-- oacf = OpenAIRE CERIF -->
-            <sch:ns prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+            <sch:ns prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.2/"/>
         </xs:appinfo>
         <xs:appinfo>
            <sch:pattern>
@@ -19,9 +19,9 @@
         </xs:appinfo>
 	</xs:annotation>
 	
-	<TargetNamespace uri="https://www.openaire.eu/cerif-profile/1.1/"/>
-	<Name>OpenAIRE Guidelines for CRIS Managers 1.1</Name>
-	<Description>The definition of the CERIF profile for the OpenAIRE Guidelines for CRIS Managers 1.1</Description>
+	<TargetNamespace uri="https://www.openaire.eu/cerif-profile/1.2/"/>
+	<Name>OpenAIRE Guidelines for CRIS Managers 1.2</Name>
+	<Description>The definition of the CERIF profile for the OpenAIRE Guidelines for CRIS Managers 1.2</Description>
 	<Entities>
 
 		<Entity uri="https://w3id.org/cerif/model#Service" leaveOut="Keyword">

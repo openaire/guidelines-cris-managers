@@ -61,6 +61,10 @@ OpenAIRE Guidelines 1.2 compatible CRIS shall
 use an OAI-PMH metadata prefix starting with ``oai_cerif_openaire`` and 
 XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.2/>`_ namespace.
 
+OpenAIRE Guidelines 1.1 compatible CRIS shall 
+use an OAI-PMH metadata prefix starting with ``oai_cerif_openaire`` and 
+XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ namespace.
+
 A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
 
 OpenAIRE OAI-PMH Sets

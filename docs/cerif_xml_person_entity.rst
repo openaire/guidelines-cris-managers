@@ -4,14 +4,14 @@
 Person
 ======
 :Description: A human being as an individual. Source: https://en.oxforddictionaries.com/definition/person The kind of involvement of a Person in the research ecosystem is specified in the links with the organisations, the services, etc. This typically includes: (1) researchers (Persons performing research in an Organisation Unit as employees or students); (2) authors and contributors (Persons signing a publication, creators of data sets, software developers, etc.); (3) investigators and project participants (Persons involved in a Project as principal investigators, co investigators, project managers, consultants, etc.); (4) management (directors, rectors, deans, department heads, etc.); (5) support staffs (technicians, responsible for Equipment, librarians and digital asset curators, administrative staff, etc.). One Person typically has many of these relationships.
-:Examples: `openaire_cerif_xml_example_persons.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_persons.xml>`_
+:Examples: `openaire_cerif_xml_example_persons.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_persons.xml>`_
 :Representation: XML element ``Person``; the rest of this section documents children of this element
 :CERIF: the Person entity (`<https://w3id.org/cerif/model#Person>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the PersonIdentifier attribute (`<https://w3id.org/cerif/model#Person.PersonIdentifier>`_)
 

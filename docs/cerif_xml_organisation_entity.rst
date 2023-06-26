@@ -4,14 +4,14 @@
 OrgUnit
 =======
 :Description: Organisation Unit: an organisation, a unit therein, a committee or any other group of people that has a collective goal. Organisation Units are not necessarily formalized as legal entities. In the research information domain Organisation Units typically represents: (1) organisations that perform research (universities, research institutes, corporations) and their subdivisions (faculties, schools, departments, research groups) and other associated bodies (boards, advisory bodies); (2) organisations that fund research (funders, their divisions and evaluation panels); (3) scientific associations and networks; (4) publishers, facility operators and other service providers in the research space; (5) authorities, such as patent offices and standardization or supervision bodies; and (6) other bodies: editorial boards, evaluation panels, or committees of all kinds.
-:Examples: `openaire_cerif_xml_example_orgunits.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_orgunits.xml>`_
+:Examples: `openaire_cerif_xml_example_orgunits.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_orgunits.xml>`_
 :Representation: XML element ``OrgUnit``; the rest of this section documents children of this element
 :CERIF: the OrganisationUnit entity (`<https://w3id.org/cerif/model#OrganisationUnit>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the OrganisationUnitIdentifier attribute (`<https://w3id.org/cerif/model#OrganisationUnit.OrganisationUnitIdentifier>`_)
 

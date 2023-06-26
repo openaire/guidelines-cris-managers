@@ -4,14 +4,14 @@
 Patent
 ======
 :Description: A set of exclusive rights granted by a sovereign state to an inventor or assignee for a limited period of time in exchange for detailed public disclosure of an invention. Source: Wikipedia
-:Examples: `openaire_cerif_xml_example_patents.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_patents.xml>`_
+:Examples: `openaire_cerif_xml_example_patents.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_patents.xml>`_
 :Representation: XML element ``Patent``; the rest of this section documents children of this element
 :CERIF: the ResultPatent entity (`<https://w3id.org/cerif/model#ResultPatent>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the ResultPatentIdentifier attribute (`<https://w3id.org/cerif/model#ResultPatent.ResultPatentIdentifier>`_)
 

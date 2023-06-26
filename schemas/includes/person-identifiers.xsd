@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xml:lang="en"
 	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema component for the OpenAIRE CERIF profile 1.1 which specifies the admissible person identifiers.
+		<xs:documentation>This is the XML Schema component for the OpenAIRE CERIF profile 1.2 which specifies the admissible person identifiers.
 			For further description please see the main schema file.
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>

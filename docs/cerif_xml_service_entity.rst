@@ -4,14 +4,14 @@
 Service
 =======
 :Description: CRIS compatible with the OpenAIRE Guidelines for CRIS Managers
-:Examples: `sample Identify response <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml>`_
+:Examples: `sample Identify response <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_Identify.xml>`_
 :Representation: XML element ``Service``; the rest of this section documents children of this element
 :CERIF: the Service entity (`<https://w3id.org/cerif/model#Service>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2/implementation.html#metadata-representation-in-cerif-xml>`_
 :Representation: XML attribute ``id``
 :CERIF: the ServiceIdentifier attribute (`<https://w3id.org/cerif/model#Service.ServiceIdentifier>`_)
 

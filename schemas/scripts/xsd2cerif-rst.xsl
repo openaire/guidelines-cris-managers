@@ -5,6 +5,9 @@
 	
 	<xsl:key name="import-by-namespace" match="/xs:schema/xs:import" use="@namespace"/>
 	
+	<xsl:variable name="targetNamespace" select="/xs:schema/@targetNamespace"/>
+	<xsl:variable name="version" select="replace( replace( $targetNamespace, '/$', '' ), '.*/', '' )"/>
+
 	<xsl:function name="cf:schema-named-contents">
 		<xsl:param name="schema-node"/>
 		<xsl:sequence select="( for $i in $schema-node/xs:include return cf:schema-named-contents( document( $i/@schemaLocation )/xs:schema ) ) 
@@ -36,6 +39,7 @@
 	<xsl:key name="schema-components-by-name" match="$all-named-schema-components" use="string( @name )" />
 	
 	<xsl:template match="xs:schema">
+		<xsl:message>Schema version: <xsl:value-of select="$version"/></xsl:message>
 		<xsl:message>Schema contents is:</xsl:message>
 		<xsl:for-each select="distinct-values( $all-named-schema-components/local-name() )">
 			<xsl:variable name="type" select="string(.)"/>
@@ -146,11 +150,11 @@
 			<xsl:call-template name="make-description"/>
 			<xsl:variable name="example-uri" select="concat( 'openaire_cerif_xml_example_', lower-case( $elName ), 's.xml' )"/>
 			<xsl:if test="doc-available( concat( '../../samples/', $example-uri ) )">
-<xsl:text>:Examples: `</xsl:text><xsl:value-of select="$example-uri"/><xsl:text> &lt;</xsl:text><xsl:value-of select="concat( 'https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/', $example-uri )"/><xsl:text>&gt;`_
+<xsl:text>:Examples: `</xsl:text><xsl:value-of select="$example-uri"/><xsl:text> &lt;</xsl:text><xsl:value-of select="concat( 'https://github.com/openaire/guidelines-cris-managers/blob/v', $version, '/samples/', $example-uri )"/><xsl:text>&gt;`_
 </xsl:text>
 			</xsl:if>
 			<xsl:if test="$elName = 'Service'">
-<xsl:text>:Examples: `sample Identify response &lt;https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml&gt;`_
+<xsl:text>:Examples: `sample Identify response &lt;https://github.com/openaire/guidelines-cris-managers/blob/v</xsl:text><xsl:value-of select="$version"/><xsl:text>/samples/openaire_oaipmh_example_Identify.xml&gt;`_
 </xsl:text>
 			</xsl:if>
 <xsl:text>:Representation: XML element ``</xsl:text><xsl:value-of select="@name"/><xsl:text>``; the rest of this section documents children of this element
@@ -160,7 +164,7 @@
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML &lt;https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml&gt;`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML &lt;https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v</xsl:text><xsl:value-of select="$version"/><xsl:text>/implementation.html#metadata-representation-in-cerif-xml&gt;`_
 :Representation: XML attribute ``id``
 :CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text>Identifier attribute (`&lt;</xsl:text><xsl:value-of select="concat( @cflink:entity, '.', substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' ), 'Identifier' )"/><xsl:text>&gt;`_)
 

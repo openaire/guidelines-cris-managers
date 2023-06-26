@@ -61,6 +61,9 @@ OpenAIRE uses the OAI-PMH 2.0 protocol [#f2]_ for harvesting metadata from CRIS 
 Metadata Format and Prefix
 """"""""""""""""""""""""""
 
+The OAI-PMH 2.0 metadata prefixes starting with ``oai_cerif_openaire`` are reserved for these Guidelines, 
+including this release and any previous or future ones.
+
 OpenAIRE Guidelines 1.2 compatible CRIS shall 
 use an OAI-PMH metadata prefix starting with ``oai_cerif_openaire`` and 
 XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.2/>`_ namespace.
@@ -68,6 +71,9 @@ XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.2/>`_ n
 OpenAIRE Guidelines 1.1 compatible CRIS shall 
 use an OAI-PMH metadata prefix starting with ``oai_cerif_openaire`` and 
 XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ namespace.
+
+These Guidelines do not restrict other metadata formats, they only need to use a metadata prefix not with starting ``oai_cerif_openaire``.
+The metadata prefixes supported by any OAI-PMH 2.0 endpoint shall be unique.
 
 A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
 
@@ -95,12 +101,12 @@ All of the following OAI-PMH sets shall be recognized by the CRIS, even if not a
 
 **OpenAIRE_CRIS_equipments** (setSpec: ``openaire_cris_equipments``): The list of CERIF XML records for equipment.
 
-A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListSets.xml>`_.
+A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_ListSets.xml>`_.
 
 Referential integrity constraints for all relationships among entities that have an internal identifiers (Id attribute) must be satisfied in the CERIF XML data provided by the CRIS system.
 
 Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
-For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml>`_.
+For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_Identify.xml>`_.
 
 
 OAI identifiers

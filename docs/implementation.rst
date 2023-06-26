@@ -46,8 +46,8 @@ In these cases, in analogy with the Display names section above, the use of an e
 
 .. rubric:: Footnotes
 
-.. [#f0] The XML schema is located at `<https://www.openaire.eu/schema/cris/1.1/openaire-cerif-profile.xsd>`_. This has changed in the 1.1.1 release of these Guidelines.
-.. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.1/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/v1.1/samples>`_
+.. [#f0] The XML schema is located at `<https://www.openaire.eu/schema/cris/1.2/openaire-cerif-profile.xsd>`_.
+.. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.2/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/v1.2/samples>`_
 
 OAI-PMH for Harvesting
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -75,7 +75,7 @@ XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ n
 These Guidelines do not restrict other metadata formats, they only need to use a metadata prefix not with starting ``oai_cerif_openaire``.
 The metadata prefixes supported by any OAI-PMH 2.0 endpoint shall be unique.
 
-A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
+A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
 
 OpenAIRE OAI-PMH Sets
 """""""""""""""""""""

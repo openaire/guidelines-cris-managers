@@ -52,7 +52,11 @@ In these cases, in analogy with the Display names section above, the use of an e
 OAI-PMH for Harvesting
 ^^^^^^^^^^^^^^^^^^^^^^
 
-OpenAIRE uses the OAI-PMH 2.0 protocol for harvesting metadata from CRIS systems.
+OpenAIRE uses the OAI-PMH 2.0 protocol [#f2]_ for harvesting metadata from CRIS systems.
+
+.. rubric:: Footnotes
+
+.. [#f2] Lagoze, C.; Van de Sompel, H.; Nelson, M.; Warner, S.: *The Open Archives Initiative Protocol for Metadata Harvesting*. Open Archives Initiative, 2002-06-14. `<https://www.openarchives.org/OAI/openarchivesprotocol.html>`_
 
 Metadata Format and Prefix
 """"""""""""""""""""""""""

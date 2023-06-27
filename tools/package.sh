@@ -18,6 +18,6 @@ exit 2
 # make the zip files
 ( 
 	cd target || exit 3
-	zip -9jr OpenAIRE_Guidelines_for_CRIS_Managers-samples_v$V.zip samples/*.xml || exit 4
-	find schemas -type f | sort | xargs zip -9r OpenAIRE_Guidelines_for_CRIS_Managers-schemas_v$V.zip || exit 5 
+	( cd samples && zip -9jr ../OpenAIRE_Guidelines_for_CRIS_Managers-samples_v$V.zip *.xml ) || exit 4
+	( cd schemas && find . -type f | sort | xargs zip -9r ../OpenAIRE_Guidelines_for_CRIS_Managers-schemas_v$V.zip ) || exit 5 
 )

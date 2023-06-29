@@ -5,11 +5,13 @@ These guidelines describe the CERIF-XML profile for CRIS managers to be compatib
 
 Aim
 ^^^
-The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure. 
-By implementing the Guidelines, CRIS managers support the inclusion and therefore the reuse of metadata in their systems within the OpenAIRE infrastructure. 
-For developers of CRIS platforms, the Guidelines provide guidance to add supportive functionalities for CRIS managers and users. 
-Exchange of information between individual CRIS systems and the OpenAIRE infrastructure is an example of point-to-point data exchange between CRIS systems, 
-since the OpenAIRE infrastructure is itself a CRIS system.
+The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure as well as the European Open Science Cloud (EOSC). These Guidelines also serve as an example of a standard for information interchange between individual CRISs and other research e-Infrastructures.
+
+By implementing the Guidelines, CRIS managers support the inclusion of metadata from their systems in the OpenAIRE Research Graph and related services.
+
+For developers of CRISs and other research e-Infrastructures, the Guidelines offer orientation on supporting interoperability of research information.
+
+The 1.2.0 release of the Guidelines extends the set of information that can be interchanged, incorporates updated versions of related semantic vocabularies and finetunes several details of the information exposure.
 
 CERIF-CRIS
 ^^^^^^^^^^

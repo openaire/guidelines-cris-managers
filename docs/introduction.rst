@@ -1,11 +1,9 @@
 Introduction
 ------------
 
-These guidelines describe the CERIF-XML profile for CRIS managers to be compatible with OpenAIRE.
-
 Aim
 ^^^
-The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure as well as the European Open Science Cloud (EOSC). These Guidelines also serve as an example of a standard for information interchange between individual CRISs and other research e-Infrastructures.
+The Guidelines provide orientation for managers of Current Research Information Systems (CRISs) to expose their metadata in a way that is compatible with the OpenAIRE infrastructure as well as the European Open Science Cloud (EOSC). These Guidelines also serve as an example of a standard for information interchange between individual CRISs and other research e-Infrastructures.
 
 By implementing the Guidelines, CRIS managers support the inclusion of metadata from their systems in the OpenAIRE Research Graph and related services.
 
@@ -16,16 +14,22 @@ The 1.2.0 release of the Guidelines extends the set of information that can be i
 CERIF-CRIS
 ^^^^^^^^^^
 CERIF (Common European Research Information Format) is a standard data model for research information and a recommendation by the European Union to Member States. 
-The care and custody of CERIF was handed over by the European Union to euroCRIS (http://www.eurocris.org), 
-a non-for-profit organisation dedicated to the interoperability of Research Information Systems (CRISs). 
+The care and custody of CERIF was handed over by the European Union to euroCRIS (https://eurocris.org), 
+a not-for-profit organisation dedicated to fostering cooperation and knowledge-sharing across the research information community 
+and promoting interoperability of research information through the CERIF standard.
+
 In addition to a domain model and a formal data model, CERIF includes a mechanism to construct XML profiles (specialized subsets) for specific information interchange scenarios. 
-The OpenAIRE profile of CERIF supports harvesting and importing metadata from CRIS systems. 
+The OpenAIRE profile of CERIF defined in these Guidelines supports harvesting and importing metadata from CRIS systems.
 
 Compliance to the FAIR Principles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The compliance of these Guidelines to the `FAIR Principles <https://www.go-fair.org/>`_ has been studied 
-and is documented in a separate report that will be made `available on Zenodo <https://doi.org/10.5281/zenodo.6627245>`_.
+and is documented in a separate report. [#f0]_ 
+
+.. rubric:: Footnotes
+
+.. [#f0] Czerniak, A.; Dvořák, J.; Schirrwagen, J.; Ivanović, D. (2023). *Compliance of the OpenAIRE Guidelines for CRIS Managers v1.1.1 with the FAIR Principles* (1.0). Zenodo. `<https://doi.org/10.5281/zenodo.6627245>`_
 
 
 Acknowledgements
@@ -53,18 +57,18 @@ Organisation names reflect the persons’ affiliations at the time of their cont
 
 **Contributors**
 
-We wish to acknowledge the following contributors and also those who provided feedback outside the formal editing and reviewing work. 
+We wish to acknowledge the following contributors who provided valuable feedback:
 
-- Wilko Steinhof (DANS, The Netherlands)
-- Oliver Goldschmidt, Hamburg University of Technology, Germany
-- Petra Černohlávková, National Library of Technology, Czechia
-- Aenne Löhden, Bielefeld University, Germany
+- Wilko Steinhof |ORCIDlogo| `https://orcid.org/0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ (DANS KNAW, The Netherlands)
+- Oliver Goldschmidt (Hamburg University of Technology, Germany)
+- Petra Černohlávková |ORCIDlogo| `https://orcid.org/0000-0001-8683-6156 <https://orcid.org/0000-0001-8683-6156>`_ (National Library of Technology, Czechia)
+- Aenne Löhden (Bielefeld University, Germany)
 
 
 Versions
 ^^^^^^^^
 
-- 1.2.0, June 2023, `doi:10.5281/zenodo.8050936 <https://doi.org/10.5281/zenodo.8050936>`_
+- 1.2.0, July 2023, `doi:10.5281/zenodo.8050936 <https://doi.org/10.5281/zenodo.8050936>`_
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 
@@ -76,17 +80,16 @@ Versions
 List of changes in the 1.2.0 version (since 1.1.1)
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
-2. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0 (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
-3. Documentation of using the OAI-PMH identifier was improved. (`#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_)
-4. More examples were added. (`#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_)
-5. Published a report on `Compliance of the OpenAIRE Guidelines for CRIS Managers v1.1.1 with the FAIR Principles <https://doi.org/10.5281/zenodo.6627245>`_ (`#98 <https://github.com/openaire/guidelines-cris-managers/issues/98>`_)
-6. Adding a generic **Identifier** (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
-7. Clarify the use of Patent (`#89 <https://github.com/openaire/guidelines-cris-managers/issues/89>`_ , `#106 <https://github.com/openaire/guidelines-cris-managers/issues/106>`_)
-8. Updating outdated links
-9. Supporting *Dates* in **Product** entity with a common *DatesStructure__Group* (`#144 <https://github.com/openaire/guidelines-cris-managers/pull/144>`_)
-10. Recommend the use of *SPDX License*  (`#135 <https://github.com/openaire/guidelines-cris-managers/pull/135>`_)
-11. Introducing the entity: **Medium**
+1. The **Medium** CERIF entity is brought into the profile to represent locations of files. It is never used as a top-level entity, so it does not have its own OAI-PMH set. (`#59 <https://github.com/openaire/guidelines-cris-managers/issues/59>`_)
+2. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1. (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_ and `#143 <https://github.com/openaire/guidelines-cris-managers/pull/143>`_)
+3. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0. (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
+4. Support for generic **Person** **Identifier**:s is added. (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
+5. Support for structured **OrgUnit** **Identifiers**:s is added. (`#64 <https://github.com/openaire/guidelines-cris-managers/issues/64>`_)
+6. The meaning of date fields in **Patent**:s is clarified. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
+7. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
+8. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
+9. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
+10. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

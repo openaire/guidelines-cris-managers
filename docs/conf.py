@@ -212,7 +212,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'OpenAIREGuidelines.tex', u'OpenAIRE Guidelines',
+  ('index', 'OpenAIREGuidelines.tex', u'OpenAIRE Guidelines\\\\for CRIS Managers',
    u'OpenAIRE', 'manual'),
 ]
 
@@ -242,7 +242,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'openaireguidelines', u'OpenAIRE Guidelines',
+    ('index', 'openaireguidelines', u'OpenAIRE Guidelines for CRIS Managers',
      [u'OpenAIRE'], 1)
 ]
 
@@ -256,7 +256,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'OpenAIREGuidelines', u'OpenAIRE Guidelines',
+  ('index', 'OpenAIREGuidelines', u'OpenAIRE Guidelines for CRIS Managers',
    u'OpenAIRE', 'OpenAIREGuidelines', 'One line description of project.',
    'Miscellaneous'),
 ]

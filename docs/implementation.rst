@@ -108,6 +108,9 @@ Referential integrity constraints for all relationships among entities that have
 Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
 For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_Identify.xml>`_.
 
+Also note that there is no set of **Medium**:s as these are intended solely as embedded entities, not top-level ones.
+For that reason no internal identifiers (the `id` attributes) are supported on **Medium**:s.
+
 
 OAI identifiers
 """""""""""""""

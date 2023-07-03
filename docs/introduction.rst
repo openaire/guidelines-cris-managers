@@ -37,20 +37,24 @@ Acknowledgements
 
 **Editors of this version**
 
-- Jan Dvořák |ORCIDlogo| `https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia + euroCRIS)
-- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany + `OpenAIRE Nexus <https://doi.org/10.3030/101017452>`_)
-- Dragan Ivanović |ORCIDlogo| `https://orcid.org/0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ (University of Novi Sad, Serbia + euroCRIS)
+- Jan Dvořák |ORCIDlogo| `https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia |RORlogo| `024d6js02 <https://ror.org/024d6js02>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_ + `OpenAIRE Nexus <https://doi.org/10.3030/101017452>`_)
+- Dragan Ivanović |ORCIDlogo| `https://orcid.org/0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ (University of Novi Sad, Serbia |RORlogo| `00xa57a59 <https://ror.org/00xa57a59>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
 
 .. |ORCIDlogo| image:: _static/orcid_128x128.png
    :height: 10pt
    :width: 10pt
 
+.. |RORlogo| image:: _static/ror-icon-rbg-32.png
+   :height: 12pt
+   :width: 16pt
+
 **Editors of earlier versions**
 
-- Andrea Bollini |ORCIDlogo| `https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
-- Laurent Rémy |ORCIDlogo| `https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
-- Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
-- Nikos Houssos |ORCIDlogo| `https://orcid.org/0000-0002-5277-285X <https://orcid.org/0000-0002-5277-285X>`_ (National Documentation Centre (EKT), Greece + euroCRIS)
+- Andrea Bollini |ORCIDlogo| `https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy |RORlogo| `03vb2cr34 <https://ror.org/03vb2cr34>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+- Laurent Rémy |ORCIDlogo| `https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+- Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_ + OpenAIRE)
+- Nikos Houssos |ORCIDlogo| `https://orcid.org/0000-0002-5277-285X <https://orcid.org/0000-0002-5277-285X>`_ (National Documentation Centre (EKT), Greece + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
 - Brigitte Jörg |ORCIDlogo| `https://orcid.org/0000-0001-7941-8108 <https://orcid.org/0000-0001-7941-8108>`_ (JISC Innovation Support Center, UKOLN, University of Bath, United Kingdom)
 
 Organisation names reflect the persons’ affiliations at the time of their contribution to the Guidelines.
@@ -59,10 +63,10 @@ Organisation names reflect the persons’ affiliations at the time of their cont
 
 We wish to acknowledge the following contributors who provided valuable feedback:
 
-- Wilko Steinhof |ORCIDlogo| `https://orcid.org/0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ (DANS KNAW, The Netherlands)
-- Oliver Goldschmidt |ORCIDlogo| `https://orcid.org/0000-0002-5468-401X <https://orcid.org/0000-0002-5468-401X>`_ (Hamburg University of Technology, Germany)
-- Petra Černohlávková |ORCIDlogo| `https://orcid.org/0000-0001-8683-6156 <https://orcid.org/0000-0001-8683-6156>`_ (National Library of Technology, Czechia)
-- Aenne Löhden (Bielefeld University, Germany)
+- Wilko Steinhof |ORCIDlogo| `https://orcid.org/0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ (DANS KNAW, The Netherlands |RORlogo| `008pnp284 <https://ror.org/008pnp284>`_)
+- Oliver Goldschmidt |ORCIDlogo| `https://orcid.org/0000-0002-5468-401X <https://orcid.org/0000-0002-5468-401X>`_ (Hamburg University of Technology, Germany |RORlogo| `04bs1pb34 <https://ror.org/04bs1pb34>`_)
+- Petra Černohlávková |ORCIDlogo| `https://orcid.org/0000-0001-8683-6156 <https://orcid.org/0000-0001-8683-6156>`_ (National Library of Technology, Czechia |RORlogo| `028txef36 <https://ror.org/028txef36>`_)
+- Aenne Löhden (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_)
 
 
 Versions

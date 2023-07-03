@@ -60,7 +60,7 @@ Organisation names reflect the persons’ affiliations at the time of their cont
 We wish to acknowledge the following contributors who provided valuable feedback:
 
 - Wilko Steinhof |ORCIDlogo| `https://orcid.org/0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ (DANS KNAW, The Netherlands)
-- Oliver Goldschmidt (Hamburg University of Technology, Germany)
+- Oliver Goldschmidt |ORCIDlogo| `https://orcid.org/0000-0002-5468-401X <https://orcid.org/0000-0002-5468-401X>`_ (Hamburg University of Technology, Germany)
 - Petra Černohlávková |ORCIDlogo| `https://orcid.org/0000-0001-8683-6156 <https://orcid.org/0000-0001-8683-6156>`_ (National Library of Technology, Czechia)
 - Aenne Löhden (Bielefeld University, Germany)
 

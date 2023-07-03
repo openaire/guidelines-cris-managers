@@ -38,7 +38,7 @@ Acknowledgements
 **Editors of this version**
 
 - Jan Dvořák |ORCIDlogo| `https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia + euroCRIS)
-- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany + OpenAIRE)
+- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany + `OpenAIRE Nexus <https://doi.org/10.3030/101017452>`_)
 - Dragan Ivanović |ORCIDlogo| `https://orcid.org/0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ (University of Novi Sad, Serbia + euroCRIS)
 
 .. |ORCIDlogo| image:: _static/orcid_128x128.png

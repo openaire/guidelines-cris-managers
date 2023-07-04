@@ -793,7 +793,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_3e5a">
             <xs:annotation>
-               <xs:documentation xml:lang="en">contribution to journal (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="en">contribution to journal (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ar">مساهمة في دورية</xs:documentation>
                <xs:documentation xml:lang="ca">contribució a revista</xs:documentation>
                <xs:documentation xml:lang="cs">příspěvek v časopisu</xs:documentation>
@@ -809,7 +809,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_3e5a"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">contribution to journal (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="en">contribution to journal (deprecated)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">مساهمة في دورية</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">contribució a revista</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">příspěvek v časopisu</cf:Term>
@@ -1061,7 +1061,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_18ww">
             <xs:annotation>
-               <xs:documentation xml:lang="en">internal report (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="en">internal report (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ar">تقرير داخلي</xs:documentation>
                <xs:documentation xml:lang="ca">informe intern</xs:documentation>
                <xs:documentation xml:lang="cs">interní zpráva</xs:documentation>
@@ -1080,7 +1080,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18ww"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">internal report (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="en">internal report (deprecated)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">تقرير داخلي</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe intern</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">interní zpráva</cf:Term>
@@ -1714,7 +1714,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_18wq">
             <xs:annotation>
-               <xs:documentation xml:lang="en">other type of report (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="en">other type of report (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ar">نوع آخر من التقرير</xs:documentation>
                <xs:documentation xml:lang="ca">altre tipus d'informe</xs:documentation>
                <xs:documentation xml:lang="cs">jiná zpráva</xs:documentation>
@@ -1733,7 +1733,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18wq"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">other type of report (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="en">other type of report (deprecated)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">نوع آخر من التقرير</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">altre tipus d'informe</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">jiná zpráva</cf:Term>
@@ -1804,7 +1804,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_2659">
             <xs:annotation>
-               <xs:documentation xml:lang="en">periodical (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="en">periodical (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ca">publicació en sèrie</xs:documentation>
                <xs:documentation xml:lang="cs">periodikum</xs:documentation>
                <xs:documentation xml:lang="de">Periodikum</xs:documentation>
@@ -1822,7 +1822,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_2659"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">periodical (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="en">periodical (deprecated)</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">publicació en sèrie</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">periodikum</cf:Term>
                      <cf:Term xml:lang="de" trans="h">Periodikum</cf:Term>
@@ -2042,7 +2042,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_ba1f">
             <xs:annotation>
-               <xs:documentation xml:lang="en">report part (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="en">report part (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ca">part d'un informe</xs:documentation>
                <xs:documentation xml:lang="de">Teilbericht</xs:documentation>
                <xs:documentation xml:lang="es">parte de un estudio</xs:documentation>
@@ -2056,7 +2056,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_ba1f"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">report part (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="en">report part (deprecated)</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">part d'un informe</cf:Term>
                      <cf:Term xml:lang="de" trans="h">Teilbericht</cf:Term>
                      <cf:Term xml:lang="es" trans="h">parte de un estudio</cf:Term>
@@ -2078,7 +2078,7 @@
          </xs:enumeration>
          <xs:enumeration value="http://purl.org/coar/resource_type/c_18hj">
             <xs:annotation>
-               <xs:documentation xml:lang="en">report to funding agency (deprecated since 2021-03-12)</xs:documentation>
+               <xs:documentation xml:lang="en">report to funding agency (deprecated)</xs:documentation>
                <xs:documentation xml:lang="ar">تقرير لوكالة تمويل</xs:documentation>
                <xs:documentation xml:lang="ca">informe per una agència de finançament</xs:documentation>
                <xs:documentation xml:lang="cs">zpráva pro poskytovatele podpory</xs:documentation>
@@ -2094,7 +2094,7 @@
                <xs:appinfo>
                   <cf:Class id="http://purl.org/coar/resource_type/c_18hj"
                             classSchemeId="https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types">
-                     <cf:Term xml:lang="en">report to funding agency (deprecated since 2021-03-12)</cf:Term>
+                     <cf:Term xml:lang="en">report to funding agency (deprecated)</cf:Term>
                      <cf:Term xml:lang="ar" trans="h">تقرير لوكالة تمويل</cf:Term>
                      <cf:Term xml:lang="ca" trans="h">informe per una agència de finançament</cf:Term>
                      <cf:Term xml:lang="cs" trans="h">zpráva pro poskytovatele podpory</cf:Term>

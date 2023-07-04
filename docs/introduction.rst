@@ -43,6 +43,8 @@ Acknowledgements
    :height: 12pt
    :width: 16pt
 
+| Organisation names reflect the persons’ affiliations at the time of their contribution to the Guidelines.
+| 
 | **Editors of this version:**
 | Jan Dvořák |ORCIDlogo| `0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ 
 |  (Charles University, Czechia |RORlogo| `024d6js02 <https://ror.org/024d6js02>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
@@ -62,7 +64,6 @@ Acknowledgements
 |  (National Documentation Centre (EKT), Greece + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
 | Brigitte Jörg |ORCIDlogo| `0000-0001-7941-8108 <https://orcid.org/0000-0001-7941-8108>`_ 
 |  (JISC Innovation Support Center, UKOLN, University of Bath, United Kingdom)
-| *(Organisation names reflect the persons’ affiliations at the time of their contribution to the Guidelines.)*
 |
 | **Contributors.**  We wish to acknowledge the following contributors who provided valuable feedback:
 | Wilko Steinhof |ORCIDlogo| `0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ 

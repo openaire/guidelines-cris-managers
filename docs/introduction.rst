@@ -80,7 +80,7 @@ Acknowledgements
 Versions
 ^^^^^^^^
 
-- 1.2.0, July 2023, `doi:10.5281/zenodo.8050936 <https://doi.org/10.5281/zenodo.8050936>`_
+- 1.2.0, June 2023, `doi:10.5281/zenodo.8050936 <https://doi.org/10.5281/zenodo.8050936>`_
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 

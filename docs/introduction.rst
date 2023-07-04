@@ -73,6 +73,8 @@ Acknowledgements
 |  (National Library of Technology, Czechia |RORlogo| `028txef36 <https://ror.org/028txef36>`_)
 | Aenne Löhden 
 |  (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_)
+| Jordan Piščanc |ORCIDlogo| `0000-0003-3601-8360 <https://orcid.org/0000-0003-3601-8360>`_
+|  (University of Trieste, Italy |RORlogo| `02n742c10 <https://ror.org/02n742c10>`_)
 
 
 Versions

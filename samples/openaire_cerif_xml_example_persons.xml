@@ -304,6 +304,7 @@
                         <FirstNames>max</FirstNames>
                     </PersonName>
                     <ORCID>https://orcid.org/0009-0000-0000-0000</ORCID>
+                    <ResearcherID>XYZ-4201-2023</ResearcherID>
                 </Person>
             </metadata>  
         </record>

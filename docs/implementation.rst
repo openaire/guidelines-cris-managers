@@ -105,7 +105,7 @@ All of the following OAI-PMH sets shall be recognized by the CRIS, even if not a
 
 A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_ListSets.xml>`_.
 
-Referential integrity constraints for all relationships among entities that have an internal identifiers (Id attribute) must be satisfied in the CERIF XML data provided by the CRIS system.
+Referential integrity constraints for all relationships among entities that have an internal identifiers (the ``id`` attribute) must be satisfied in the CERIF XML data provided by the CRIS system.
 
 Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
 For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_Identify.xml>`_.

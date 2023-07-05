@@ -21,3 +21,11 @@ exit 2
 	( cd samples && zip -9jr ../OpenAIRE_Guidelines_for_CRIS_Managers-samples_v$V.zip *.xml ) || exit 4
 	( cd schemas && find . -type f | sort | xargs zip -9r ../OpenAIRE_Guidelines_for_CRIS_Managers-schemas_v$V.zip ) || exit 5 
 )
+
+# run sphinx to create the pdf file and place that in target/ too
+(
+    cd docs
+    make html latexpdf
+    make latexpdf
+    cp -v _build/latex/OpenAIREGuidelines.pdf ../target/OpenAIRE_Guidelines_for_CRIS_Managers-document_v$V.pdf
+)

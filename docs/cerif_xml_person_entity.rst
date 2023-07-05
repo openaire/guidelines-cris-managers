@@ -86,7 +86,7 @@ ResearcherID
 :Use: optional (0..1)
 :Representation: XML element ``ResearcherID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
+:Format: regular expression ``[A-Z]{1,3}-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
 
 
 AlternativeResearcherID
@@ -95,7 +95,7 @@ AlternativeResearcherID
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeResearcherID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
+:Format: regular expression ``[A-Z]{1,3}-[0-9]{4}-(19|20)[0-9][0-9]`` (as per `<https://www.wikidata.org/wiki/Property:P1053>`_)
 
 
 ScopusAuthorID

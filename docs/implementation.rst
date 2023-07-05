@@ -1,6 +1,8 @@
 Technical Implementation Guidelines
 -----------------------------------
 
+.. _metadata representation in cerif xml:
+
 Metadata representation in CERIF XML
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

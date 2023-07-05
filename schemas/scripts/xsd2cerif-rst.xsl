@@ -166,7 +166,7 @@
 <xsl:text>
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML &lt;https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v</xsl:text><xsl:value-of select="$version"/><xsl:text>/implementation.html#metadata-representation-in-cerif-xml&gt;`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See :ref:`Metadata representation in CERIF XML`
 :Representation: XML attribute ``id``
 :CERIF: the </xsl:text><xsl:value-of select="substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' )"/><xsl:text>Identifier attribute (`&lt;</xsl:text><xsl:value-of select="concat( @cflink:entity, '.', substring-after( @cflink:entity, 'https://w3id.org/cerif/model#' ), 'Identifier' )"/><xsl:text>&gt;`_)
 

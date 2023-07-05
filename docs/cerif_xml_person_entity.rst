@@ -68,7 +68,10 @@ ORCID
 :Use: optional (0..1)
 :Representation: XML element ``ORCID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``https://orcid\.org/000(0-000(1-[5-9]|2-[0-9]|3-[0-4])|9-000[0-9]-[0-9])[0-9]{3}-[0-9]{3}[0-9X]`` (as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
+:Format: any of:
+
+  * regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (The original block of 20M identifiers reserved in 2013, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
+  * regular expression ``https://orcid\.org/0009-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]`` (An additional block of 100M identifiers reserved in 2023, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
 
 
 AlternativeORCID
@@ -77,7 +80,10 @@ AlternativeORCID
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeORCID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
-:Format: regular expression ``https://orcid\.org/000(0-000(1-[5-9]|2-[0-9]|3-[0-4])|9-000[0-9]-[0-9])[0-9]{3}-[0-9]{3}[0-9X]`` (as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
+:Format: any of:
+
+  * regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (The original block of 20M identifiers reserved in 2013, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
+  * regular expression ``https://orcid\.org/0009-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]`` (An additional block of 100M identifiers reserved in 2023, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
 
 
 ResearcherID

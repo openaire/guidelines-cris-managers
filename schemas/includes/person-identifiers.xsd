@@ -147,7 +147,7 @@
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:restriction base="cfString__Type">
-				<xs:pattern value="[A-Z]-[0-9]{4}-(19|20)[0-9][0-9]">
+				<xs:pattern value="[A-Z]{1,3}-[0-9]{4}-(19|20)[0-9][0-9]">
 					<xs:annotation>
 						<xs:documentation source="https://www.wikidata.org/wiki/Property:P1053"/>
 					</xs:annotation>

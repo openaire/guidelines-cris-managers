@@ -97,12 +97,13 @@ List of changes in the 1.2.0 version (since 1.1.1)
 2. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1. (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_ and `#143 <https://github.com/openaire/guidelines-cris-managers/pull/143>`_)
 3. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0. (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
 4. Support for generic **Person** **Identifier**:s is added. (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
-5. Support for structured **OrgUnit** **Identifiers**:s is added. (`#64 <https://github.com/openaire/guidelines-cris-managers/issues/64>`_)
-6. The meaning of date fields in **Patent**:s is clarified. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
-7. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
-8. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
-9. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
-10. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
+5. Some constraints in structured **Person** **Identifiers**:s were expanded. (`#146 <https://github.com/openaire/guidelines-cris-managers/issues/146>`_ and `#154 <https://github.com/openaire/guidelines-cris-managers/issues/154>`_)
+6. Support for structured **OrgUnit** **Identifiers**:s is added. (`#64 <https://github.com/openaire/guidelines-cris-managers/issues/64>`_)
+7. The meaning of date fields in **Patent**:s is clarified. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
+8. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
+9. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
+10. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
+11. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

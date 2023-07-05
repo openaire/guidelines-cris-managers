@@ -619,24 +619,24 @@ Internal Identifier
 				</xsl:when>
 			</xsl:choose>
 			<xsl:choose>
-				<xsl:when test="xs:annotation/xs:documentation/@source">
-					<xsl:text> (as per </xsl:text>
-					<xsl:value-of select="cf:formatUrl( xs:annotation/xs:documentation/@source )"/>
-					<xsl:text>)</xsl:text>
-				</xsl:when>
-				<xsl:when test="string-length( xs:annotation/xs:documentation ) &gt; 0">
+				<xsl:when test="xs:annotation/xs:documentation/@source or string-length( xs:annotation/xs:documentation[not(@source)] ) &gt; 0">
 					<xsl:text> (</xsl:text>
-					<xsl:value-of select="xs:annotation/xs:documentation"/>
+					<xsl:value-of select="xs:annotation/xs:documentation[not(@source)]"/>
+					<xsl:if test="string-length( string( xs:annotation/xs:documentation[not(@source)] ) ) &gt; 0 and xs:annotation/xs:documentation/@source"><xsl:text>, </xsl:text></xsl:if>
+					<xsl:if test="xs:annotation/xs:documentation/@source">
+						<xsl:text>as per </xsl:text>
+						<xsl:value-of select="cf:formatUrl( xs:annotation/xs:documentation/@source )"/>
+					</xsl:if>
 					<xsl:text>)</xsl:text>
 				</xsl:when>
-				<xsl:when test="../../xs:annotation/xs:documentation/@source">
-					<xsl:text> (as per </xsl:text>
-					<xsl:value-of select="cf:formatUrl( ../../xs:annotation/xs:documentation/@source )"/>
-					<xsl:text>)</xsl:text>
-				</xsl:when>
-				<xsl:when test="string-length( ../../xs:annotation/xs:documentation ) &gt; 0">
+				<xsl:when test="../../xs:annotation/xs:documentation/@source or string-length( ../../xs:annotation/xs:documentation[not(@source)] ) &gt; 0">
 					<xsl:text> (</xsl:text>
-					<xsl:value-of select="../../xs:annotation/xs:documentation"/>
+					<xsl:value-of select="../../xs:annotation/xs:documentation[not(@source)]"/>
+					<xsl:if test="string-length( ../../xs:annotation/xs:documentation[not(@source)] ) &gt; 0 and ../../xs:annotation/xs:documentation/@source"><xsl:text>, </xsl:text></xsl:if>
+					<xsl:if test="../../xs:annotation/xs:documentation/@source">
+						<xsl:text>as per </xsl:text>
+						<xsl:value-of select="cf:formatUrl( ../../xs:annotation/xs:documentation/@source )"/>
+					</xsl:if>
 					<xsl:text>)</xsl:text>
 				</xsl:when>
 			</xsl:choose>

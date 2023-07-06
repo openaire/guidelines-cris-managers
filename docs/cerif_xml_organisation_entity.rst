@@ -62,7 +62,7 @@ AlternativeRORID
 
 GRID
 ^^^^
-:Description: The GRID identifier in case its value is certain or known to be a preferred one.
+:Description: The GRID identifier in case its value is certain or known to be a preferred one. Please note that GRID has been `discontinued <https://www.digital-science.com/news/grid-passes-torch-to-ror/>`_ with ROR as the recommended successor.
 :Use: optional (0..1)
 :Representation: XML element ``GRID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
@@ -71,7 +71,7 @@ GRID
 
 AlternativeGRID
 ^^^^^^^^^^^^^^^
-:Description: The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.
+:Description: The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred. Please note that GRID has been `discontinued <https://www.digital-science.com/news/grid-passes-torch-to-ror/>`_ with ROR as the recommended successor.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``AlternativeGRID``
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)

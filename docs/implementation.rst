@@ -37,7 +37,7 @@ Where admissible, it shall occur before the ``Person`` or ``OrgUnit`` XML elemen
 In the extreme case where just the display name of a person or an organisation is known, 
 the ``DisplayName`` with an empty ``Person`` or ``OrgUnit`` XML element can be used.
 
-Also intermediate cases are supported such as the case where the CRIS system doesn't maintains an authority for external people but has additional information about it such as an ORCID. In such case an embedded ``Person`` without an Internal Identifier is allowed with the known information about the person.
+Also intermediate cases are supported such as the case where the CRIS system doesn't maintain an authority for external people but has additional information about it such as an ORCID. In such case an embedded ``Person`` without an Internal Identifier is allowed with the known information about the person.
 
 However, it is recommended that CRIS managers keep managed authority lists everywhere where these are feasible.
 

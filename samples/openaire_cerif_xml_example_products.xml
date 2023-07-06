@@ -148,6 +148,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 						</Product>
 					</PartOf>
+                    <FileLocations>
+						<Medium>
+							<Title>lamcoggGenotypes.csv</Title>
+							<URI>http://datadryad.org/stash/downloads/file_stream/18486</URI>
+							<MimeType>text/csv</MimeType>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
+						</Medium>
+					</FileLocations>
 				</Product>
         	</metadata>
         </record>
@@ -197,6 +205,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 						</Product>
 					</PartOf>
+                    <FileLocations>
+						<Medium>
+							<Title>hybridSim.py</Title>
+							<URI>http://datadryad.org/stash/downloads/file_stream/18487</URI>
+							<MimeType>text/x-python</MimeType>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
+						</Medium>
+					</FileLocations>
 				</Product>
         	</metadata>
         </record>
@@ -246,6 +262,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 						</Product>
 					</PartOf>
+                    <FileLocations>
+						<Medium>
+							<Title>lamcoggTransciptome.fa</Title>
+							<URI>http://datadryad.org/stash/downloads/file_stream/18488</URI>
+							<MimeType>text/plain</MimeType>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
+						</Medium>
+					</FileLocations>
 				</Product>
         	</metadata>
         </record>

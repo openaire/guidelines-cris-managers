@@ -306,6 +306,9 @@ If an embargo period is to be expressed, its start should be expressed by the ``
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Equipment" leaveOut="Keyword">
+			<xs:annotation>
+				<xs:documentation>An instrument or other device used to perform research</xs:documentation>
+			</xs:annotation>
 			<xs:element name="Owner" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#Person_Service(https://w3id.org/cerif/vocab/PersonResearchInfrastructureRoles#Owner) https://w3id.org/cerif/model#OrganisationUnit_Service(https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner)">
 				<xs:annotation>
 					<xs:documentation>The owner of the piece of equipment</xs:documentation>

@@ -3,7 +3,7 @@
 
 Equipment
 =========
-:Description: An equipment is an instrumentality needed for an undertaking or to perform a service: Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
+:Description: An instrument or other device used to perform research
 :Examples: `openaire_cerif_xml_example_equipments.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_equipments.xml>`_
 :Representation: XML element ``Equipment``; the rest of this section documents children of this element
 :CERIF: the Equipment entity (`<https://w3id.org/cerif/model#Equipment>`_)

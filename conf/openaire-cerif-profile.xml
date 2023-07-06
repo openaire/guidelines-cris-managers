@@ -114,6 +114,11 @@
 					<xs:documentation>The type of the funding</xs:documentation>
 				</xs:annotation>
 			</Classification>
+			<IdentifiersFrom schemaLocation="./includes/funding-identifiers.xsd">
+				<xs:annotation>
+					<xs:documentation>The funding identifiers.</xs:documentation>
+				</xs:annotation>
+			</IdentifiersFrom>
 			<xs:element name="Duration" minOccurs="0" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/Durations#FundingDuration)" type="cfLink__BaseType">
 				<xs:annotation>
 					<xs:documentation>Duration of the funding</xs:documentation>

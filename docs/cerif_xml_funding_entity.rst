@@ -61,9 +61,18 @@ Amount
 
 
 
+GrantDOI
+^^^^^^^^
+:Description: The persistent identifier for the grant `registered with Crossref <https://www.crossref.org/blog/global-persistent-identifiers-for-grants-awards-and-facilities/>`_ (follows the syntax of DOI, uses certain specific prefixes)
+:Use: optional (0..1)
+:Representation: XML element ``GrantDOI``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``10\.\d{4,}(\.\d+)*/[^\s]+`` (as per `<https://www.crossref.org/blog/dois-and-matching-regular-expressions/>`_)
+
+
 Identifier
 ^^^^^^^^^^
-:Description: An identifier of the funding
+:Description: A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types. This in particular applies to various national and service-specific identifiers that can be relevant in some interchange scenarios.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Identifier`` with a required ``type`` attribute (the URI of the identifier scheme)
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)

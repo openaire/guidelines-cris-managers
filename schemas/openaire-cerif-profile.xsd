@@ -31,6 +31,11 @@
             <xs:documentation>The orgunit identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
+    <xs:include schemaLocation="./includes/funding-identifiers.xsd">
+        <xs:annotation>
+            <xs:documentation>The funding identifiers.</xs:documentation>
+        </xs:annotation>
+    </xs:include>
     <xs:include schemaLocation="./includes/publication-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The publication identifiers.</xs:documentation>
@@ -457,11 +462,7 @@ The Project entity only captures details of the project scope and plan. Informat
                                 <xs:documentation>The amount of the funding and its currency</xs:documentation>
                             </xs:annotation>
                         </xs:element>
-                        <xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
-                            <xs:annotation>
-                                <xs:documentation>An identifier of the funding</xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
+                        <xs:group ref="FundingIdentifiers__Group"/>
                         <xs:element cflink:attribute="https://w3id.org/cerif/model#Funding.Description" maxOccurs="unbounded" minOccurs="0" name="Description" type="cfMLangString__Type">
                             <xs:annotation>
                                 <xs:documentation>A description of the funding</xs:documentation>

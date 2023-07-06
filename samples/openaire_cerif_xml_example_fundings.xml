@@ -19,6 +19,8 @@
 				<Funding xmlns="https://www.openaire.eu/cerif-profile/1.2/" id="Fundings/620005"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017s / OpenAIRE-Advance -->
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Contract</Type>
 					<Name xml:lang="en">H2020 funding for the OpenAIRE-Advance project</Name>
+					<GrantDOI>10.3030/777541</GrantDOI>
+					<Identifier type="https://w3id.org/cerif/vocab/IdentifierTypes#ProjectReference">777541</Identifier>
 					<PartOf>
 						<Funding id="Fundings/620004"><!-- H2020 / H2020-EU.1.4.1.3. - Development, deployment and operation of ICT-based e-infrastructures  / EINFRA-12-2017 - Data and Distributed Computing e-infrastructures for Open Science / H2020-EINFRA-2017 -->
 							<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Funding_Types#Call</Type>

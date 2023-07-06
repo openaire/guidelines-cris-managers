@@ -23,8 +23,7 @@ The COAR vocabulary was broken down into thee separate sub-vocabularies to be us
 
 The following sections define the CERIF data elements for the exchange of data between individual CRIS systems and the OpenAIRE infrastructure. 
 The exclusive use of the defined data elements and vocabularies is mandatory, i.e. no other data elements and vocabularies can be used in the CERIF XML data exposed by CRIS systems to the OpenAIRE infrastructure.
-The vocabularies are sourced from relevant outside sources; some of the vocabularies are based on the CERIF 1.5 Semantics. 
-Extensions are possible in the review phase of these Guidelines.
+The vocabularies are sourced from relevant external sources; the remaining vocabularies are based on the `CERIF Vocabularies <https://github.com/EuroCRIS/CERIF-Vocabularies>`_ project.
 
 .. toctree::
    :maxdepth: 1

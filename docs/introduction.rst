@@ -53,7 +53,7 @@ Acknowledgements
 | Dragan Ivanović |ORCIDlogo| `0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ 
 |  (University of Novi Sad, Serbia |RORlogo| `00xa57a59 <https://ror.org/00xa57a59>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
 |
-| **Editors of earlier versions:**
+| **Editors of earlier versions and contributors:**
 | Andrea Bollini |ORCIDlogo| `0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ 
 |  (4Science, Italy |RORlogo| `03vb2cr34 <https://ror.org/03vb2cr34>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
 | Laurent Rémy |ORCIDlogo| `0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ 
@@ -65,7 +65,7 @@ Acknowledgements
 | Brigitte Jörg |ORCIDlogo| `0000-0001-7941-8108 <https://orcid.org/0000-0001-7941-8108>`_ 
 |  (JISC Innovation Support Center, UKOLN, University of Bath, United Kingdom)
 |
-| **Contributors.**  We wish to acknowledge the following contributors who provided valuable feedback:
+| **Other contributors.**  We wish to also acknowledge the following contributors who provided valuable feedback:
 | Wilko Steinhof |ORCIDlogo| `0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ 
 |  (DANS KNAW, The Netherlands |RORlogo| `008pnp284 <https://ror.org/008pnp284>`_)
 | Oliver Goldschmidt |ORCIDlogo| `0000-0002-5468-401X <https://orcid.org/0000-0002-5468-401X>`_ 
@@ -100,10 +100,13 @@ List of changes in the 1.2.0 version (since 1.1.1)
 5. Some constraints in structured **Person** **Identifiers**:s were expanded. (`#146 <https://github.com/openaire/guidelines-cris-managers/issues/146>`_ and `#154 <https://github.com/openaire/guidelines-cris-managers/issues/154>`_)
 6. Support for structured **OrgUnit** **Identifiers**:s is added. (`#64 <https://github.com/openaire/guidelines-cris-managers/issues/64>`_)
 7. The meaning of date fields in **Patent**:s is clarified. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
+8. ZDB-ID is added among structured identifiers for **Publication**:s (`#66 <https://github.com/openaire/guidelines-cris-managers/pull/66>`_)
 8. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
+9. The ``xml:lang`` attributes are no longer required. (`#61 <https://github.com/openaire/guidelines-cris-managers/issues/61>`_)
 9. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
 10. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
 11. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
+12. Other minor extensions and cleanup.
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

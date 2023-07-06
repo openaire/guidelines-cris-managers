@@ -3,11 +3,11 @@ Introduction
 
 Aim
 ^^^
-The Guidelines provide orientation for managers of Current Research Information Systems (CRISs) to expose their metadata in a way that is compatible with the OpenAIRE infrastructure as well as the European Open Science Cloud (EOSC). These Guidelines also serve as an example of a standard for information interchange between individual CRISs and other research e-Infrastructures.
+The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure as well as the European Open Science Cloud (EOSC). These Guidelines also serve as an example of a CERIF-based (Common European Research Information Format) standard for information interchange between individual CRISs and other research e-Infrastructures.
 
-By implementing the Guidelines, CRIS managers support the inclusion of metadata from their systems in the OpenAIRE Research Graph and related services.
+By implementing the Guidelines, CRIS managers support the inclusion of metadata from their systems in the OpenAIRE Research Graph and related services. For developers of CRISs and other research e-Infrastructures, the Guidelines offer orientation on supporting the interoperability of research information.
 
-For developers of CRISs and other research e-Infrastructures, the Guidelines offer orientation on supporting interoperability of research information.
+The Guidelines support the interchange of information about research outputs (including publications, patents, research datasets and research software), about research projects and their funding, about actors in research (both persons and organizations, including organization units), about events and about instruments or other equipment.
 
 The 1.2.0 release of the Guidelines extends the set of information that can be interchanged, incorporates updated versions of related semantic vocabularies and finetunes several details of the information exposure.
 

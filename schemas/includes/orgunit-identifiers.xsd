@@ -36,12 +36,12 @@
 
 			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#GRID" minOccurs="0" name="GRID" type="GRID__Type">
 				<xs:annotation>
-					<xs:documentation xml:lang="en">The GRID identifier in case its value is certain or known to be a preferred one.</xs:documentation>
+					<xs:documentation xml:lang="en">The GRID identifier in case its value is certain or known to be a preferred one. Please note that GRID has been `discontinued &lt;https://www.digital-science.com/news/grid-passes-torch-to-ror/&gt;`_ with ROR as the recommended successor.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#GRID https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeGRID" type="GRID__Type">
 				<xs:annotation>
-					<xs:documentation xml:lang="en">The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.</xs:documentation>
+					<xs:documentation xml:lang="en">The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred. Please note that GRID has been `discontinued &lt;https://www.digital-science.com/news/grid-passes-torch-to-ror/&gt;`_ with ROR as the recommended successor.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 

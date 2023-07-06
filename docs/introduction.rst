@@ -1,68 +1,87 @@
 Introduction
 ------------
 
-These guidelines describe the CERIF-XML profile for CRIS managers to be compatible with OpenAIRE.
-
 Aim
 ^^^
-The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure. 
-By implementing the Guidelines, CRIS managers support the inclusion and therefore the reuse of metadata in their systems within the OpenAIRE infrastructure. 
-For developers of CRIS platforms, the Guidelines provide guidance to add supportive functionalities for CRIS managers and users. 
-Exchange of information between individual CRIS systems and the OpenAIRE infrastructure is an example of point-to-point data exchange between CRIS systems, 
-since the OpenAIRE infrastructure is itself a CRIS system.
+The Guidelines provide orientation for CRIS managers to expose their metadata in a way that is compatible with the OpenAIRE infrastructure as well as the European Open Science Cloud (EOSC). These Guidelines also serve as an example of a CERIF-based (Common European Research Information Format) standard for information interchange between individual CRISs and other research e-Infrastructures.
+
+By implementing the Guidelines, CRIS managers support the inclusion of metadata from their systems in the OpenAIRE Research Graph and related services. For developers of CRISs and other research e-Infrastructures, the Guidelines offer orientation on supporting the interoperability of research information.
+
+The Guidelines support the interchange of information about research outputs (including publications, patents, research datasets and research software), about research projects and their funding, about actors in research (both persons and organizations, including organization units), about events and about instruments or other equipment.
+
+The 1.2.0 release of the Guidelines extends the set of information that can be interchanged, incorporates updated versions of related semantic vocabularies and finetunes several details of the information exposure.
 
 CERIF-CRIS
 ^^^^^^^^^^
-CERIF (Common European Research Information Format) is a standard data model for research information and a recommendation by the European Union to Member States. 
-The care and custody of CERIF was handed over by the European Union to euroCRIS (http://www.eurocris.org), 
-a non-for-profit organisation dedicated to the interoperability of Research Information Systems (CRISs). 
+`CERIF <https://eurocris.org/services/main-features-cerif>`_ (Common European Research Information Format) is a standard data model for research information and a recommendation by the European Union to Member States. 
+The care and custody of CERIF was handed over by the European Union to euroCRIS (https://eurocris.org), 
+a not-for-profit organisation dedicated to fostering cooperation and knowledge-sharing across the research information community 
+and promoting interoperability of research information through the CERIF standard.
+
 In addition to a domain model and a formal data model, CERIF includes a mechanism to construct XML profiles (specialized subsets) for specific information interchange scenarios. 
-The OpenAIRE profile of CERIF supports harvesting and importing metadata from CRIS systems. 
+The OpenAIRE profile of CERIF defined in these Guidelines supports harvesting and importing metadata from CRIS systems.
 
 Compliance to the FAIR Principles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The compliance of these Guidelines to the `FAIR Principles <https://www.go-fair.org/>`_ has been studied 
-and is documented in a separate report that will be made `available on Zenodo <https://doi.org/10.5281/zenodo.6627245>`_.
+and is documented in a separate report. [#f0]_ 
+
+.. rubric:: Footnotes
+
+.. [#f0] Czerniak, A.; Dvořák, J.; Schirrwagen, J.; Ivanović, D. (2023). *Compliance of the OpenAIRE Guidelines for CRIS Managers v1.1.1 with the FAIR Principles* (1.0). Zenodo. `<https://doi.org/10.5281/zenodo.6627245>`_
 
 
 Acknowledgements
 ^^^^^^^^^^^^^^^^
 
-**Editors of this version**
-
-- Jan Dvořák |ORCIDlogo| `https://orcid.org/0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ (Charles University, Czechia + euroCRIS)
-- Andreas Czerniak |ORCIDlogo| `https://orcid.org/0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ (Bielefeld University, Germany + OpenAIRE)
-- Dragan Ivanović |ORCIDlogo| `https://orcid.org/0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ (University of Novi Sad, Serbia + euroCRIS)
-
 .. |ORCIDlogo| image:: _static/orcid_128x128.png
    :height: 10pt
    :width: 10pt
 
-**Editors of earlier versions**
+.. |RORlogo| image:: _static/ror-icon-rbg-32.png
+   :height: 12pt
+   :width: 16pt
 
-- Andrea Bollini |ORCIDlogo| `https://orcid.org/0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ (4Science, Italy + euroCRIS)
-- Laurent Rémy |ORCIDlogo| `https://orcid.org/0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ (IS4RI, France + euroCRIS)
-- Jochen Schirrwagen |ORCIDlogo| `https://orcid.org/0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ (Bielefeld University, Germany + OpenAIRE)
-- Nikos Houssos |ORCIDlogo| `https://orcid.org/0000-0002-5277-285X <https://orcid.org/0000-0002-5277-285X>`_ (National Documentation Centre (EKT), Greece + euroCRIS)
-- Brigitte Jörg |ORCIDlogo| `https://orcid.org/0000-0001-7941-8108 <https://orcid.org/0000-0001-7941-8108>`_ (JISC Innovation Support Center, UKOLN, University of Bath, United Kingdom)
-
-Organisation names reflect the persons’ affiliations at the time of their contribution to the Guidelines.
-
-**Contributors**
-
-We wish to acknowledge the following contributors and also those who provided feedback outside the formal editing and reviewing work. 
-
-- Wilko Steinhof (DANS, The Netherlands)
-- Oliver Goldschmidt, Hamburg University of Technology, Germany
-- Petra Černohlávková, National Library of Technology, Czechia
-- Aenne Löhden, Bielefeld University, Germany
+| Organisation names reflect the persons’ affiliations at the time of their contribution to the Guidelines.
+| 
+| **Editors of this version:**
+| Jan Dvořák |ORCIDlogo| `0000-0001-8985-152X <https://orcid.org/0000-0001-8985-152X>`_ 
+|  (Charles University, Czechia |RORlogo| `024d6js02 <https://ror.org/024d6js02>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+| Andreas Czerniak |ORCIDlogo| `0000-0003-3883-4169 <https://orcid.org/0000-0003-3883-4169>`_ 
+|  (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_ + `OpenAIRE Nexus <https://doi.org/10.3030/101017452>`_)
+| Dragan Ivanović |ORCIDlogo| `0000-0002-9942-5521 <https://orcid.org/0000-0002-9942-5521>`_ 
+|  (University of Novi Sad, Serbia |RORlogo| `00xa57a59 <https://ror.org/00xa57a59>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+|
+| **Editors of earlier versions:**
+| Andrea Bollini |ORCIDlogo| `0000-0002-9029-1854 <https://orcid.org/0000-0002-9029-1854>`_ 
+|  (4Science, Italy |RORlogo| `03vb2cr34 <https://ror.org/03vb2cr34>`_ + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+| Laurent Rémy |ORCIDlogo| `0000-0003-1143-2645 <https://orcid.org/0000-0003-1143-2645>`_ 
+|  (IS4RI, France + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+| Jochen Schirrwagen |ORCIDlogo| `0000-0002-0458-1004 <https://orcid.org/0000-0002-0458-1004>`_ 
+|  (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_ + OpenAIRE)
+| Nikos Houssos |ORCIDlogo| `0000-0002-5277-285X <https://orcid.org/0000-0002-5277-285X>`_ 
+|  (National Documentation Centre (EKT), Greece + euroCRIS |RORlogo| `04340dw19 <https://ror.org/04340dw19>`_)
+| Brigitte Jörg |ORCIDlogo| `0000-0001-7941-8108 <https://orcid.org/0000-0001-7941-8108>`_ 
+|  (JISC Innovation Support Center, UKOLN, University of Bath, United Kingdom)
+|
+| **Contributors.**  We wish to acknowledge the following contributors who provided valuable feedback:
+| Wilko Steinhof |ORCIDlogo| `0000-0003-1106-8441 <https://orcid.org/0000-0003-1106-8441>`_ 
+|  (DANS KNAW, The Netherlands |RORlogo| `008pnp284 <https://ror.org/008pnp284>`_)
+| Oliver Goldschmidt |ORCIDlogo| `0000-0002-5468-401X <https://orcid.org/0000-0002-5468-401X>`_ 
+|  (Hamburg University of Technology, Germany |RORlogo| `04bs1pb34 <https://ror.org/04bs1pb34>`_)
+| Petra Černohlávková |ORCIDlogo| `0000-0001-8683-6156 <https://orcid.org/0000-0001-8683-6156>`_ 
+|  (National Library of Technology, Czechia |RORlogo| `028txef36 <https://ror.org/028txef36>`_)
+| Aenne Löhden 
+|  (Bielefeld University, Germany |RORlogo| `02hpadn98 <https://ror.org/02hpadn98>`_)
+| Jordan Piščanc |ORCIDlogo| `0000-0003-3601-8360 <https://orcid.org/0000-0003-3601-8360>`_
+|  (University of Trieste, Italy |RORlogo| `02n742c10 <https://ror.org/02n742c10>`_)
 
 
 Versions
 ^^^^^^^^
 
-- 1.2.0, June 2023, `doi:10.5281/zenodo.7977123 <https://doi.org/10.5281/zenodo.7977123>`_
+- 1.2.0, June 2023, `doi:10.5281/zenodo.8050936 <https://doi.org/10.5281/zenodo.8050936>`_
 
 - 1.1.1, December 2018, `doi:10.5281/zenodo.2316420 <https://doi.org/10.5281/zenodo.2316420>`_
 
@@ -74,17 +93,17 @@ Versions
 List of changes in the 1.2.0 version (since 1.1.1)
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-1. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1 (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_)
-2. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0 (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
-3. Documentation of using the OAI-PMH identifier was improved. (`#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_)
-4. More examples were added. (`#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_)
-5. Published a report on `Compliance of the OpenAIRE Guidelines for CRIS Managers v1.1.1 with the FAIR Principles <https://doi.org/10.5281/zenodo.6627245>`_ (`#98 <https://github.com/openaire/guidelines-cris-managers/issues/98>`_)
-6. Adding a generic **Identifier** (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
-7. Clarify the use of Patent (`#89 <https://github.com/openaire/guidelines-cris-managers/issues/89>`_ , `#106 <https://github.com/openaire/guidelines-cris-managers/issues/106>`_)
-8. Updating outdated links
-9. Supporting *Dates* in **Product** entity with a common *DatesStructure__Group* (`#144 <https://github.com/openaire/guidelines-cris-managers/pull/144>`_)
-10. Recommend the use of *SPDX License*  (`#135 <https://github.com/openaire/guidelines-cris-managers/pull/135>`_)
-11. Introducing the entity: **Medium**
+1. The **Medium** CERIF entity is brought into the profile to represent locations of files. It is never used as a top-level entity, so it does not have its own OAI-PMH set. (`#59 <https://github.com/openaire/guidelines-cris-managers/issues/59>`_)
+2. The **COAR Resource Types** controlled vocabulary is upgraded to Version 3.1. (`#99 <https://github.com/openaire/guidelines-cris-managers/issues/99>`_ and `#143 <https://github.com/openaire/guidelines-cris-managers/pull/143>`_)
+3. The **COAR Access Types** controlled vocabulary is upgraded to Version 1.0. (`#86 <https://github.com/openaire/guidelines-cris-managers/issues/86>`_)
+4. Support for generic **Person** **Identifier**:s is added. (`#91 <https://github.com/openaire/guidelines-cris-managers/issues/91>`_)
+5. Some constraints in structured **Person** **Identifiers**:s were expanded. (`#146 <https://github.com/openaire/guidelines-cris-managers/issues/146>`_ and `#154 <https://github.com/openaire/guidelines-cris-managers/issues/154>`_)
+6. Support for structured **OrgUnit** **Identifiers**:s is added. (`#64 <https://github.com/openaire/guidelines-cris-managers/issues/64>`_)
+7. The meaning of date fields in **Patent**:s is clarified. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
+8. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
+9. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
+10. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
+11. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

@@ -1,12 +1,14 @@
 Technical Implementation Guidelines
 -----------------------------------
 
+.. _metadata representation in cerif xml:
+
 Metadata representation in CERIF XML
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The CRIS-to-OpenAIRE information interchange uses the OAI-PMH 2.0 protocol
 with the CERIF XML defined by these Guidelines as the metadata language.
-This CERIF XML uses the namespace `<https://www.openaire.eu/cerif-profile/1.1/>`_. 
+This CERIF XML uses the namespace `<https://www.openaire.eu/cerif-profile/1.2/>`_. 
 Its structure is defined and constrained by the corresponding XML Schema. [#f0]_
 Accompanying these Guidelines is a comprehensive set of examples. [#f1]_
 
@@ -35,7 +37,7 @@ Where admissible, it shall occur before the ``Person`` or ``OrgUnit`` XML elemen
 In the extreme case where just the display name of a person or an organisation is known, 
 the ``DisplayName`` with an empty ``Person`` or ``OrgUnit`` XML element can be used.
 
-Also intermediate cases are supported such as the case where the CRIS system doesn't maintains an authority for external people but has additional information about it such as an ORCID. In such case an embedded ``Person`` without an Internal Identifier is allowed with the known information about the person.
+Also intermediate cases are supported such as the case where the CRIS system doesn't maintain an authority for external people but has additional information about it such as an ORCID. In such case an embedded ``Person`` without an Internal Identifier is allowed with the known information about the person.
 
 However, it is recommended that CRIS managers keep managed authority lists everywhere where these are feasible.
 
@@ -46,20 +48,36 @@ In these cases, in analogy with the Display names section above, the use of an e
 
 .. rubric:: Footnotes
 
-.. [#f0] The XML schema is located at `<https://www.openaire.eu/schema/cris/1.1/openaire-cerif-profile.xsd>`_. This has changed in the 1.1.1 release of these Guidelines.
-.. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.1/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/v1.1/samples>`_
+.. [#f0] The XML schema is located at `<https://www.openaire.eu/schema/cris/1.2/openaire-cerif-profile.xsd>`_.
+.. [#f1] Please see an overview map at `<https://github.com/openaire/guidelines-cris-managers/blob/v1.2/docs/_illustrations/OpenAIRE-examples-map.png>`_; the individual examples as full OAI-PMH 2.0 response messages  `<https://github.com/openaire/guidelines-cris-managers/tree/v1.2/samples>`_
 
 OAI-PMH for Harvesting
 ^^^^^^^^^^^^^^^^^^^^^^
 
-OpenAIRE uses the OAI-PMH 2.0 protocol for harvesting metadata from CRIS systems.
+OpenAIRE uses the OAI-PMH 2.0 protocol [#f2]_ for harvesting metadata from CRIS systems.
+
+.. rubric:: Footnotes
+
+.. [#f2] Lagoze, C.; Van de Sompel, H.; Nelson, M.; Warner, S.: *The Open Archives Initiative Protocol for Metadata Harvesting*. Open Archives Initiative, 2002-06-14. `<https://www.openarchives.org/OAI/openarchivesprotocol.html>`_
 
 Metadata Format and Prefix
 """"""""""""""""""""""""""
 
-OpenAIRE Guidelines 1.1 compatible CRIS should use the OAI-PMH metadata prefix ``oai_cerif_openaire`` and XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ namespace.
+The OAI-PMH 2.0 metadata prefixes starting with ``oai_cerif_openaire`` are reserved for these Guidelines, 
+including this release and any previous or future ones.
 
-A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
+OpenAIRE Guidelines 1.2 compatible CRIS shall 
+use an OAI-PMH metadata prefix starting with ``oai_cerif_openaire`` and 
+XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.2/>`_ namespace.
+
+OpenAIRE Guidelines 1.1 compatible CRIS shall 
+use an OAI-PMH metadata prefix starting with ``oai_cerif_openaire`` and 
+XML metadata contents from the `<https://www.openaire.eu/cerif-profile/1.1/>`_ namespace.
+
+These Guidelines do not restrict other metadata formats, they only need to use a metadata prefix not with starting ``oai_cerif_openaire``.
+The metadata prefixes supported by any OAI-PMH 2.0 endpoint shall be unique.
+
+A sample response to a ListMetadataFormats OAI-PMH request is available in `openaire_oaipmh_example_ListMetadataFormats.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_ListMetadataFormats.xml>`_.
 
 OpenAIRE OAI-PMH Sets
 """""""""""""""""""""
@@ -85,12 +103,15 @@ All of the following OAI-PMH sets shall be recognized by the CRIS, even if not a
 
 **OpenAIRE_CRIS_equipments** (setSpec: ``openaire_cris_equipments``): The list of CERIF XML records for equipment.
 
-A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_ListSets.xml>`_.
+A sample response to a ListSets OAI-PMH request is available in `openaire_oaipmh_example_ListSets.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_ListSets.xml>`_.
 
-Referential integrity constraints for all relationships among entities that have an internal identifiers (Id attribute) must be satisfied in the CERIF XML data provided by the CRIS system.
+Referential integrity constraints for all relationships among entities that have an internal identifiers (the ``id`` attribute) must be satisfied in the CERIF XML data provided by the CRIS system.
 
 Note that there is no set for services. Exactly one Service record, namely the one representing the CRIS, shall be given in the response to an OAI-PMH Identify request.
-For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_oaipmh_example_Identify.xml>`_.
+For an example please see `openaire_oaipmh_example_Identify.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_oaipmh_example_Identify.xml>`_.
+
+Also note that there is no set of **Medium**:s as these are intended solely as embedded entities, not top-level ones.
+For that reason no internal identifiers (the `id` attributes) are supported on **Medium**:s.
 
 
 OAI identifiers

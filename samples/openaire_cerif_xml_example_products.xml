@@ -2,9 +2,9 @@
 <!--
 	Examples of metadata records in OpenAIRE CERIF XML format as OAI-PMH payload. 
 	OAI-PMH Set: openaire_cris_datasets
-	Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.1
+	Provided as accompanying material to the "OpenAIRE Guidelines for CRIS Managers" version 1.2
 -->
-<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.1/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd https://www.openaire.eu/cerif-profile/1.2/ https://www.openaire.eu/schema/cris/current/openaire-cerif-profile.xsd">
     <responseDate>2018-01-12T14:00:00Z</responseDate>
     <request metadataPrefix="cerif_openaire" verb="ListRecords" set="openaire_cris_datasets">http://cris.example.org/openaire/connector</request>
     <ListRecords>
@@ -15,7 +15,7 @@
                 <setSpec>openaire_cris_datasets</setSpec>
             </header>
             <metadata>
-            	<Product id="Products/7123451" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+            	<Product id="Products/7123451" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
                     <Name xml:lang="en">Airborne In-situ Atmospheric Instruments and Hyperspectral Instruments Data from the Projects Funded Under The European Facility for Airborne Research in Environmental and Geo-sciences (EUFAR) Project</Name>
 					<URL>http://catalogue.ceda.ac.uk/uuid/d40e4067ae0121b31bb1ba57e04707de</URL>
@@ -55,7 +55,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729487" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729487" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Data from: Strong selection against hybrids maintains a narrow contact zone between morphologically cryptic lineages in a rainforest lizard</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -109,7 +109,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729481" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729481" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Genotypes for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -148,6 +148,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 						</Product>
 					</PartOf>
+                    <FileLocations>
+						<Medium>
+							<Title>lamcoggGenotypes.csv</Title>
+							<URI>http://datadryad.org/stash/downloads/file_stream/18486</URI>
+							<MimeType>text/csv</MimeType>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
+						</Medium>
+					</FileLocations>
 				</Product>
         	</metadata>
         </record>
@@ -158,7 +166,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729482" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729482" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_5ce6<!-- software --></Type>
 					<Name xml:lang="en">Base script used for simulations</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -197,6 +205,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 						</Product>
 					</PartOf>
+                    <FileLocations>
+						<Medium>
+							<Title>hybridSim.py</Title>
+							<URI>http://datadryad.org/stash/downloads/file_stream/18487</URI>
+							<MimeType>text/x-python</MimeType>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
+						</Medium>
+					</FileLocations>
 				</Product>
         	</metadata>
         </record>
@@ -207,7 +223,7 @@ EUFAR brings together 32 European institutions and companies involved in airborn
                 <setSpec>openaire_cris_datasets</setSpec>
         	</header>
         	<metadata>
-				<Product id="Products/729483" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
+				<Product id="Products/729483" xmlns="https://www.openaire.eu/cerif-profile/1.2/">
 					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
 					<Name xml:lang="en">Transcriptome for Lampropholis coggeri</Name>
 					<VersionInfo xml:lang="en">1</VersionInfo>
@@ -246,83 +262,14 @@ EUFAR brings together 32 European institutions and companies involved in airborn
 							<DOI>10.5061/DRYAD.4GH6HF5G</DOI>
 						</Product>
 					</PartOf>
-				</Product>
-        	</metadata>
-        </record>
-
-        <record>
-        	<header>
-                <identifier>oai:cris.example.org:Products/723859</identifier>
-                <datestamp>2017-05-23T23:00:03Z</datestamp>
-                <setSpec>openaire_cris_datasets</setSpec>
-        	</header>
-        	<metadata>
-				<Product id="Products/723859" xmlns="https://www.openaire.eu/cerif-profile/1.1/">
-					<Type xmlns="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">http://purl.org/coar/resource_type/c_ddb1<!-- dataset --></Type>
-					<Name xml:lang="en">Altmetric data of the documents from Web of Science with the affiliation to the Czech Republic</Name>
-					<DOI>10.5281/zenodo.6536306</DOI>
-					<Creators>
-						<Creator>
-							<Person id="Persons/2123484">
-								<PersonName>
-									<FamilyNames>Květ</FamilyNames>
-									<FirstNames>Jonáš</FirstNames>
-								</PersonName>
-							</Person>
-						</Creator>
-					</Creators>
-					<License scheme="https://spdx.org/licenses/">https://spdx.org/licenses/CC-BY-4.0</License>
-					<Description><![CDATA[
-These datasets were generated for the master thesis with the title "Altmetrics and its use in the evaluation of scientific research" (in Czech "Altmetrie a její využití při hodnocení vědeckého výzkumu"), that was submitted in 2022 at the Institute Information Studies and Librarianship, Charles University, Prague, Czech Republic. There are 3 files, where the first one "Příloha_číslo_1-processed_data.xlsx" contains processed and analyzed data from the other two. "Příloha_číslo_2-data_altmetrics_Kvet_1st_download.csv" is the file with raw altmetric data downloaded on the 9/1/2022. "Příloha_číslo_3-data_altmetrics_Kvet_2st_download.csv" are the same data but downloaded two months later to see the difference.
-
-Altmetric data came from PlumX and Altmetric.com aggregators. Before publishing them here there were completely anonymized so there is no possibility to assign them to particular research papers. Dataset contains altmetric data of the research documents published in the period from 2017 to 2021. All documents have affiliation to the Czech Republic.
-
-The tool for collection and analyzation is available on Github here: https://github.com/kvetjo/Altmetrics_analyze_tool
-
-Thesis reference in Czech:
-
-KVĚT, Jonáš. Altmetrie a její využití při hodnocení vědeckého výzkumu [online]. Praha, 2022 [cit. 2022-05-03]. Diplomová práce. Univerzita Karlova. Filozofická fakulta. Ústav informačních studií a knihovnictví. Vedoucí práce Jan Dvořák.
-					]]></Description>
-					<Keyword xml:lang="en">Altmetrics</Keyword>
-					<Keyword xml:lang="en">PlumX</Keyword>
-					<Keyword xml:lang="en">Altmetric.com</Keyword>
-					<Keyword xml:lang="en">Scientometrics</Keyword>
-                    <Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
-                    <Dates>
-                    	<Collected startDate="2022-01-09" endDate="2022-03-09"/>
-                    </Dates>
                     <FileLocations>
 						<Medium>
-							<Title>Popis_datové_sady.pdf</Title>
-							<URI>https://zenodo.org/record/6536306/files/Popis_datov%C3%A9_sady.pdf?download=1</URI>
-							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
-							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
+							<Title>lamcoggTransciptome.fa</Title>
+							<URI>http://datadryad.org/stash/downloads/file_stream/18488</URI>
+							<MimeType>text/plain</MimeType>
+							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC0-1.0</License>
 						</Medium>
-						<Medium>
-							<Title>Příloha_číslo_1-processed_data.xlsx</Title>
-							<URI>https://zenodo.org/record/6536306/files/P%C5%99%C3%ADloha_%C4%8D%C3%ADslo_1-processed_data.xlsx?download=1</URI>
-							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
-							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
-						</Medium>
-						<Medium>
-							<Title>Příloha_číslo_2-data_altmetrics_Kvet_1st_download.csv</Title>
-							<URI>https://zenodo.org/record/6536306/files/P%C5%99%C3%ADloha_%C4%8D%C3%ADslo_2-data_altmetrics_Kvet_1st_download.csv?download=1</URI>
-							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
-							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
-							<Dates>
-								<Collected startDate="2022-01-09" endDate="2022-01-09"/>
-							</Dates>
-						</Medium>
-						<Medium>
-							<Title>Příloha_číslo_3-data_altmetrics_Kvet_2nd_download.csv</Title>
-							<URI>https://zenodo.org/record/6536306/files/P%C5%99%C3%ADloha_%C4%8D%C3%ADslo_3-data_altmetrics_Kvet_2nd_download.csv?download=1</URI>
-							<Access xmlns="http://purl.org/coar/access_right">http://purl.org/coar/access_right/c_abf2<!-- open access --></Access>
-							<License scheme="https://spdx.org/licenses">https://spdx.org/licenses/CC-BY-4.0</License>
-							<Dates>
-								<Collected startDate="2022-03-09" endDate="2022-03-09"/>
-							</Dates>
-						</Medium>
-                    </FileLocations>
+					</FileLocations>
 				</Product>
         	</metadata>
         </record>

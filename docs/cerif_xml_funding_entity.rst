@@ -3,14 +3,14 @@
 
 Funding
 =======
-:Examples: `openaire_cerif_xml_example_fundings.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_fundings.xml>`_
+:Examples: `openaire_cerif_xml_example_fundings.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_fundings.xml>`_
 :Representation: XML element ``Funding``; the rest of this section documents children of this element
 :CERIF: the Funding entity (`<https://w3id.org/cerif/model#Funding>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See :ref:`Metadata representation in CERIF XML`
 :Representation: XML attribute ``id``
 :CERIF: the FundingIdentifier attribute (`<https://w3id.org/cerif/model#Funding.FundingIdentifier>`_)
 
@@ -61,9 +61,18 @@ Amount
 
 
 
+GrantDOI
+^^^^^^^^
+:Description: The persistent identifier for the grant `registered with Crossref <https://www.crossref.org/blog/global-persistent-identifiers-for-grants-awards-and-facilities/>`_ (follows the syntax of DOI, uses certain specific prefixes)
+:Use: optional (0..1)
+:Representation: XML element ``GrantDOI``
+:CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
+:Format: regular expression ``10\.\d{4,}(\.\d+)*/[^\s]+`` (as per `<https://www.crossref.org/blog/dois-and-matching-regular-expressions/>`_)
+
+
 Identifier
 ^^^^^^^^^^
-:Description: An identifier of the funding
+:Description: A generic identifier, to be used only if your identifier does not fit in any of the above specific identifier types. This in particular applies to various national and service-specific identifiers that can be relevant in some interchange scenarios.
 :Use: optional, possibly multiple (0..*)
 :Representation: XML element ``Identifier`` with a required ``type`` attribute (the URI of the identifier scheme)
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)

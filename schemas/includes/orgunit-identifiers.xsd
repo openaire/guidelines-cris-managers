@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xml:lang="en"
 	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema component for the OpenAIRE CERIF profile 1.1 which specifies the admissible organisation units identifiers.
+		<xs:documentation>This is the XML Schema component for the OpenAIRE CERIF profile 1.2 which specifies the admissible organisation units identifiers.
 			For further description please see the main schema file.
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
@@ -36,12 +36,12 @@
 
 			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#GRID" minOccurs="0" name="GRID" type="GRID__Type">
 				<xs:annotation>
-					<xs:documentation xml:lang="en">The GRID identifier in case its value is certain or known to be a preferred one.</xs:documentation>
+					<xs:documentation xml:lang="en">The GRID identifier in case its value is certain or known to be a preferred one. Please note that GRID has been `discontinued &lt;https://www.digital-science.com/news/grid-passes-torch-to-ror/&gt;`_ with ROR as the recommended successor.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element cflink:identifier="true" cflink:link="https://w3id.org/cerif/vocab/IdentifierTypes#GRID https://w3id.org/cerif/vocab/IdentifierValueMode#Alternative" minOccurs="0" maxOccurs="unbounded" name="AlternativeGRID" type="GRID__Type">
 				<xs:annotation>
-					<xs:documentation xml:lang="en">The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred.</xs:documentation>
+					<xs:documentation xml:lang="en">The GRID identifier in case the value is not certain, e.g. because there is a conflicting statement with a different value. This can also represent deprecated identifiers/profiles that have been merged into a single, current one that is preferred. Please note that GRID has been `discontinued &lt;https://www.digital-science.com/news/grid-passes-torch-to-ror/&gt;`_ with ROR as the recommended successor.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 

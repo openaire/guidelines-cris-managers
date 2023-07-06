@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <CERIF-profile xmlns="https://w3id.org/cerif/profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="https://w3id.org/cerif/annotations#" xsi:schemaLocation="https://w3id.org/cerif/profile ../../CERIF-TG-Tools/CERIF-Model-Tools/src/main/resources/xsd/cerif-profile-definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
-			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
+		<xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.2, 
+			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.2 (https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/index.html, https://doi.org/10.5281/zenodo.8050936). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
         <xs:appinfo>
             <!-- oacf = OpenAIRE CERIF -->
-            <sch:ns prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+            <sch:ns prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.2/"/>
         </xs:appinfo>
         <xs:appinfo>
            <sch:pattern>
@@ -19,9 +19,9 @@
         </xs:appinfo>
 	</xs:annotation>
 	
-	<TargetNamespace uri="https://www.openaire.eu/cerif-profile/1.1/"/>
-	<Name>OpenAIRE Guidelines for CRIS Managers 1.1</Name>
-	<Description>The definition of the CERIF profile for the OpenAIRE Guidelines for CRIS Managers 1.1</Description>
+	<TargetNamespace uri="https://www.openaire.eu/cerif-profile/1.2/"/>
+	<Name>OpenAIRE Guidelines for CRIS Managers 1.2</Name>
+	<Description>The definition of the CERIF profile for the OpenAIRE Guidelines for CRIS Managers 1.2</Description>
 	<Entities>
 
 		<Entity uri="https://w3id.org/cerif/model#Service" leaveOut="Keyword">
@@ -114,6 +114,11 @@
 					<xs:documentation>The type of the funding</xs:documentation>
 				</xs:annotation>
 			</Classification>
+			<IdentifiersFrom schemaLocation="./includes/funding-identifiers.xsd">
+				<xs:annotation>
+					<xs:documentation>The funding identifiers.</xs:documentation>
+				</xs:annotation>
+			</IdentifiersFrom>
 			<xs:element name="Duration" minOccurs="0" cflink:link="https://w3id.org/cerif/model#Funding_Classification(https://w3id.org/cerif/vocab/Durations#FundingDuration)" type="cfLink__BaseType">
 				<xs:annotation>
 					<xs:documentation>Duration of the funding</xs:documentation>
@@ -301,6 +306,9 @@ If an embargo period is to be expressed, its start should be expressed by the ``
 		</Entity>
 
 		<Entity uri="https://w3id.org/cerif/model#Equipment" leaveOut="Keyword">
+			<xs:annotation>
+				<xs:documentation>An instrument or other device used to perform research</xs:documentation>
+			</xs:annotation>
 			<xs:element name="Owner" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="https://w3id.org/cerif/model#Person_Service(https://w3id.org/cerif/vocab/PersonResearchInfrastructureRoles#Owner) https://w3id.org/cerif/model#OrganisationUnit_Service(https://w3id.org/cerif/vocab/OrganisationResearchInfrastructureRoles#Owner)">
 				<xs:annotation>
 					<xs:documentation>The owner of the piece of equipment</xs:documentation>

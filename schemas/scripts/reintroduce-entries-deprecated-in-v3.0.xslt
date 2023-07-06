@@ -5,12 +5,7 @@
 		<xsl:copy>
 			<xsl:apply-templates select="@*" />
 			<xsl:apply-templates />
-			<xsl:text> (deprecated</xsl:text>
-			<xsl:if test="../ns0:expires">
-				<xsl:text> since </xsl:text>
-				<xsl:value-of select="../ns0:expires" />
-			</xsl:if>
-			<xsl:text>)</xsl:text>
+			<xsl:text> (deprecated)</xsl:text>
 			<xsl:message> - deprecating "<xsl:value-of select="."/>"</xsl:message>
 		</xsl:copy>
 	</xsl:template>

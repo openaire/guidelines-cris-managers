@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.openaire.eu/cerif-profile/1.1/" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.1/" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="https://www.openaire.eu/cerif-profile/1.2/" xmlns:cf="urn:xmlns:org.eurocris.cerif" xmlns:cflink="https://w3id.org/cerif/annotations#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.openaire.eu/cerif-profile/1.2/" xml:lang="en" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2001/XMLSchema.xsd">
     <xs:annotation>
-        <xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.1, 
-			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.1 (http://openaire-guidelines-for-cris-managers.readthedocs.io/en/latest/index.html). 
+        <xs:documentation>This is the XML Schema for the OpenAIRE CERIF profile 1.2, 
+			a companion artifact of the OpenAIRE Guidelines for CRIS Managers 1.2 (https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.2.0/index.html, https://doi.org/10.5281/zenodo.8050936). 
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
 		</xs:documentation>
         <xs:appinfo>
-            <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+            <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" prefix="oacf" uri="https://www.openaire.eu/cerif-profile/1.2/"/>
         </xs:appinfo>
         <xs:appinfo>
             <sch:pattern xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
@@ -29,6 +29,11 @@
     <xs:include schemaLocation="./includes/orgunit-identifiers.xsd">
         <xs:annotation>
             <xs:documentation>The orgunit identifiers.</xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="./includes/funding-identifiers.xsd">
+        <xs:annotation>
+            <xs:documentation>The funding identifiers.</xs:documentation>
         </xs:annotation>
     </xs:include>
     <xs:include schemaLocation="./includes/publication-identifiers.xsd">
@@ -457,11 +462,7 @@ The Project entity only captures details of the project scope and plan. Informat
                                 <xs:documentation>The amount of the funding and its currency</xs:documentation>
                             </xs:annotation>
                         </xs:element>
-                        <xs:element cflink:identifier="true" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfGenericIdentifier__Type">
-                            <xs:annotation>
-                                <xs:documentation>An identifier of the funding</xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
+                        <xs:group ref="FundingIdentifiers__Group"/>
                         <xs:element cflink:attribute="https://w3id.org/cerif/model#Funding.Description" maxOccurs="unbounded" minOccurs="0" name="Description" type="cfMLangString__Type">
                             <xs:annotation>
                                 <xs:documentation>A description of the funding</xs:documentation>
@@ -1237,10 +1238,7 @@ Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=event
     </xs:complexType>
     <xs:element cflink:entity="https://w3id.org/cerif/model#Equipment" name="Equipment" substitutionGroup="Infrastructure__SubstitutionGroupHead">
         <xs:annotation>
-            <xs:documentation>An equipment is an instrumentality needed for an undertaking or to perform a service:
-
-Definition Source: http://wordnetweb.princeton.edu/perl/webwn?s=equipment
-</xs:documentation>
+            <xs:documentation>An instrument or other device used to perform research</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

@@ -2,10 +2,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.openaire</groupId>
 	<artifactId>guidelines-cris-managers</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0</version>
 	<packaging>pom</packaging>
 	<properties>
-		<doi>-</doi><!-- the DOI of the release or "-" for no DOI -->
+		<doi>10.5281/zenodo.8050936</doi><!-- the DOI of the release or "-" for no DOI -->
 	</properties>
 	
 	<build>

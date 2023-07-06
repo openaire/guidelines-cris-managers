@@ -4,13 +4,13 @@
             queryBinding="xslt2">
    <sch:ns xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
            xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
-           xmlns="https://www.openaire.eu/cerif-profile/1.1/"
+           xmlns="https://www.openaire.eu/cerif-profile/1.2/"
            xmlns:cf="urn:xmlns:org.eurocris.cerif"
            xmlns:cflink="https://w3id.org/cerif/annotations#"
            
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            prefix="oacf"
-           uri="https://www.openaire.eu/cerif-profile/1.1/"/>
+           uri="https://www.openaire.eu/cerif-profile/1.2/"/>
    <sch:ns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -22,7 +22,7 @@
            uri="http://purl.org/coar/access_right"/>
    <sch:pattern xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
                 xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
-                xmlns="https://www.openaire.eu/cerif-profile/1.1/"
+                xmlns="https://www.openaire.eu/cerif-profile/1.2/"
                 xmlns:cf="urn:xmlns:org.eurocris.cerif"
                 xmlns:cflink="https://w3id.org/cerif/annotations#"
                 

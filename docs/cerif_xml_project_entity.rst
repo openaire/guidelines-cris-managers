@@ -4,14 +4,14 @@
 Project
 =======
 :Description: A temporary endeavor undertaken to create a unique product, service or result. Source: the Project Management Institute, https://www.pmi.org/about/learn-about-pmi/what-is-project-management In the research information domain, one typically tracks: (1) research projects, where the result is an addition to the body of knowledge of the mankind, (2) technology development projects, where the result is a particular technology or product, (3) innovation projects, where the result is an improvement of a product or process, and (4) projects that create or enhance infrastructure for research, technology development or innovation. Depending on the scope one can also track finer levels of granularity: stages, work packages, sometimes even down to individual tasks. All such activities are also modelled using the Project entity and linked using the recursive link relationship. The Project entity only captures details of the project scope and plan. Information about the resources needed to execute the project such as the funding (i.e., the grants received), the people and organisations involved, the supporting infrastructures, the outputs produced, etc. is contained in separate entities (the Funding entity, the Person entity, the OrgUnit entity, the infrastructure entities, the result entities respectively) and is linked to the Project.
-:Examples: `openaire_cerif_xml_example_projects.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_projects.xml>`_
+:Examples: `openaire_cerif_xml_example_projects.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_projects.xml>`_
 :Representation: XML element ``Project``; the rest of this section documents children of this element
 :CERIF: the Project entity (`<https://w3id.org/cerif/model#Project>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See :ref:`Metadata representation in CERIF XML`
 :Representation: XML attribute ``id``
 :CERIF: the ProjectIdentifier attribute (`<https://w3id.org/cerif/model#Project.ProjectIdentifier>`_)
 

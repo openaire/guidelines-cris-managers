@@ -4,14 +4,14 @@
 Patent
 ======
 :Description: A set of exclusive rights granted by a sovereign state to an inventor or assignee for a limited period of time in exchange for detailed public disclosure of an invention. Source: Wikipedia
-:Examples: `openaire_cerif_xml_example_patents.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.1/samples/openaire_cerif_xml_example_patents.xml>`_
+:Examples: `openaire_cerif_xml_example_patents.xml <https://github.com/openaire/guidelines-cris-managers/blob/v1.2/samples/openaire_cerif_xml_example_patents.xml>`_
 :Representation: XML element ``Patent``; the rest of this section documents children of this element
 :CERIF: the ResultPatent entity (`<https://w3id.org/cerif/model#ResultPatent>`_)
 
 
 Internal Identifier
 ^^^^^^^^^^^^^^^^^^^
-:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See `Metadata representation in CERIF XML <https://openaire-guidelines-for-cris-managers.readthedocs.io/en/v1.1.1/implementation.html#metadata-representation-in-cerif-xml>`_
+:Use: mandatory (1) in top level entity. When embedded in other entities the Internal Identifier must be included only for managed information (i.e. entities that have a concrete record in the local CRIS system). See :ref:`Metadata representation in CERIF XML`
 :Representation: XML attribute ``id``
 :CERIF: the ResultPatentIdentifier attribute (`<https://w3id.org/cerif/model#ResultPatent.ResultPatentIdentifier>`_)
 
@@ -22,7 +22,7 @@ Type
 :Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/COAR_Patent_Types>`_
 :CERIF: the ResultPatent_Classification (`<https://w3id.org/cerif/model#ResultPatent_Classification>`_)
-:Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, the term 'patent' and its descendants in the hierarchy).
+:Vocabulary: Patent types extracted from the COAR Resource Types concept scheme: Types of patents as extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/, the term 'patent' and its descendants in the hierarchy).
 
   * **patent** (`<http://purl.org/coar/resource_type/c_15cd>`_): A patent or patent application. A set of exclusive rights granted by law to applicants for inventions that are new, non-obvious and commercially applicable. A patent is valid for a limited period (generally 20 years), during which time patent holders can commercially exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]
 

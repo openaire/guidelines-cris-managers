@@ -8,11 +8,11 @@
            targetNamespace="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types"
            xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd">
    <xs:annotation>
-      <xs:documentation>Product types extracted from the COAR Resource Types concept scheme: Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').</xs:documentation>
+      <xs:documentation>Product types extracted from the COAR Resource Types concept scheme: Types of products as extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/, all types that do not descend from 'text').</xs:documentation>
       <xs:appinfo>
          <cf:ClassScheme id="https://www.openaire.eu/cerif-profile/vocab/COAR_Product_Types">
             <cf:Term xml:lang="en">Product types extracted from the COAR Resource Types concept scheme</cf:Term>
-            <cf:Description xml:lang="en">Types of products as extracted from the COAR Resource Types concept scheme (http://vocabularies.coar-repositories.org/documentation/resource_types/, all types that do not descend from 'text').</cf:Description>
+            <cf:Description xml:lang="en">Types of products as extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/, all types that do not descend from 'text').</cf:Description>
          </cf:ClassScheme>
       </xs:appinfo>
    </xs:annotation>

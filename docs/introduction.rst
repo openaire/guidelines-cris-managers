@@ -101,12 +101,14 @@ List of changes in the 1.2.0 version (since 1.1.1)
 6. Support for structured **OrgUnit** **Identifiers**:s is added. (`#64 <https://github.com/openaire/guidelines-cris-managers/issues/64>`_)
 7. The meaning of date fields in **Patent**:s is clarified. (`#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_)
 8. ZDB-ID is added among structured identifiers for **Publication**:s (`#66 <https://github.com/openaire/guidelines-cris-managers/pull/66>`_)
-8. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
-9. The ``xml:lang`` attributes are no longer required. (`#61 <https://github.com/openaire/guidelines-cris-managers/issues/61>`_)
-9. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
-10. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
-11. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
-12. Other minor extensions and cleanup.
+9. GrantDOI is added as a structured identifier for **Funding**.
+10. Unmanaged entities are allowed without an **Internal Identifier** attribute. (`#56 <https://github.com/openaire/guidelines-cris-managers/issues/56>`_)
+11. The ``xml:lang`` attributes are no longer required. (`#61 <https://github.com/openaire/guidelines-cris-managers/issues/61>`_)
+12. DataCite Metadata Kernel *Dates* are supported in the **Product** (`#84 <https://github.com/openaire/guidelines-cris-managers/issues/84>`_) and **Medium** (`#150 <https://github.com/openaire/guidelines-cris-managers/pull/150>`_) entities with a common *DatesStructure__Group*.
+13. The use of *SPDX License* URIs is recommended. (`#134 <https://github.com/openaire/guidelines-cris-managers/issues/134>`_)
+14. The rules for constructing the OAI identifiers have been relaxed (`#126 <https://github.com/openaire/guidelines-cris-managers/issues/126>`_, `#85 <https://github.com/openaire/guidelines-cris-managers/issues/85>`_)
+15. Examples were added, documentation has been improved. (`#65 <https://github.com/openaire/guidelines-cris-managers/issues/65>`_, `#83 <https://github.com/openaire/guidelines-cris-managers/issues/83>`_, `#88 <https://github.com/openaire/guidelines-cris-managers/issues/88>`_, `#97 <https://github.com/openaire/guidelines-cris-managers/issues/97>`_)
+16. Other minor extensions and cleanup.
 
 
 List of changes in the 1.1.1 version (since 1.1.0)

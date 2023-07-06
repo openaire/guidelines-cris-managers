@@ -13,7 +13,7 @@ The 1.2.0 release of the Guidelines extends the set of information that can be i
 
 CERIF-CRIS
 ^^^^^^^^^^
-CERIF (Common European Research Information Format) is a standard data model for research information and a recommendation by the European Union to Member States. 
+`CERIF <https://eurocris.org/services/main-features-cerif>`_ (Common European Research Information Format) is a standard data model for research information and a recommendation by the European Union to Member States. 
 The care and custody of CERIF was handed over by the European Union to euroCRIS (https://eurocris.org), 
 a not-for-profit organisation dedicated to fostering cooperation and knowledge-sharing across the research information community 
 and promoting interoperability of research information through the CERIF standard.

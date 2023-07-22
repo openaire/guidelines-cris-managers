@@ -119,16 +119,16 @@
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:restriction base="cfString__Type">
-				<xs:pattern value="https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]">
+				<xs:pattern value="https://orcid\.org/0000-000((1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]|3-5000-0001)">
 					<xs:annotation>
 						<xs:documentation>The original block of 20M identifiers reserved in 2013</xs:documentation>
-						<xs:documentation source="https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier"/>
+						<xs:documentation source="https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier"/>
 					</xs:annotation>
 				</xs:pattern>
-				<xs:pattern value="https://orcid\.org/0009-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]">
+				<xs:pattern value="https://orcid\.org/0009-00(0[0-9]-[0-9]{4}-[0-9]{3}[0-9X]|10-0000-0000)">
 					<xs:annotation>
 						<xs:documentation>An additional block of 100M identifiers reserved in 2023</xs:documentation>
-						<xs:documentation source="https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier"/>
+						<xs:documentation source="https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier"/>
 					</xs:annotation>
 				</xs:pattern>
 			</xs:restriction>

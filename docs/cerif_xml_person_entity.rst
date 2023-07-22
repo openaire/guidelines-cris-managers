@@ -70,8 +70,8 @@ ORCID
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: any of:
 
-  * regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (The original block of 20M identifiers reserved in 2013, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
-  * regular expression ``https://orcid\.org/0009-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]`` (An additional block of 100M identifiers reserved in 2023, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
+  * regular expression ``https://orcid\.org/0000-000((1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]|3-5000-0001)`` (The original block of 20M identifiers reserved in 2013, as per `<https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier>`_)
+  * regular expression ``https://orcid\.org/0009-00(0[0-9]-[0-9]{4}-[0-9]{3}[0-9X]|10-0000-0000)`` (An additional block of 100M identifiers reserved in 2023, as per `<https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier>`_)
 
 
 AlternativeORCID
@@ -82,8 +82,8 @@ AlternativeORCID
 :CERIF: the FederatedIdentifier entity (`<https://w3id.org/cerif/model#FederatedIdentifier>`_)
 :Format: any of:
 
-  * regular expression ``https://orcid\.org/0000-000(1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]`` (The original block of 20M identifiers reserved in 2013, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
-  * regular expression ``https://orcid\.org/0009-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]`` (An additional block of 100M identifiers reserved in 2023, as per `<https://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier>`_)
+  * regular expression ``https://orcid\.org/0000-000((1-[5-9]|2-[0-9]|3-[0-4])[0-9]{3}-[0-9]{3}[0-9X]|3-5000-0001)`` (The original block of 20M identifiers reserved in 2013, as per `<https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier>`_)
+  * regular expression ``https://orcid\.org/0009-00(0[0-9]-[0-9]{4}-[0-9]{3}[0-9X]|10-0000-0000)`` (An additional block of 100M identifiers reserved in 2023, as per `<https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier>`_)
 
 
 ResearcherID

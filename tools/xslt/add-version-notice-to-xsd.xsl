@@ -27,7 +27,7 @@
 	</xsl:template>
 
 	<xsl:template match="@xsi:schemaLocation">
-		<xsl:attribute name="xsi:schemaLocation" select="replace( ., 'https://www\.openaire\.eu/schema/cris/current/openaire-cerif-profile\.xsd', concat( 'https://www.openaire.eu/schema/cris/', $version, '/openaire-cerif-profile.xsd' ) )"/>
+		<xsl:attribute name="xsi:schemaLocation" select="replace( ., 'https://www\.openaire\.eu/schema/cris/[^/]*/openaire-cerif-profile\.xsd', concat( 'https://www.openaire.eu/schema/cris/', $version, '/openaire-cerif-profile.xsd' ) )"/>
 	</xsl:template>
 
 	<!-- standard copy template -->

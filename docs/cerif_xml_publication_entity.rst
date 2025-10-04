@@ -22,78 +22,220 @@ Type
 :Use: mandatory (1)
 :Representation: XML element ``Type`` from namespace `<https://www.openaire.eu/cerif-profile/vocab/COAR_Publication_Types>`_
 :CERIF: the ResultPublication_Classification (`<https://w3id.org/cerif/model#ResultPublication_Classification>`_)
-:Vocabulary: Publication types extracted from the COAR Resource Types concept scheme: Types of publications as extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/, the term 'text' and its descendants in the hierarchy except 'patent'). Some terms are marked as deprecated; they can be removed in the next release of these Guidelines.
+:Vocabulary: Publication types extracted from the COAR Resource Types concept scheme (https://vocabularies.coar-repositories.org/resource_types/). 
+  The term *text* and its descendants (except *patent*) are relevant. 
+  Some terms are marked as deprecated and may be removed in future guideline releases.
 
-  * **text** (`<http://purl.org/coar/resource_type/c_18cf>`_): A resource consisting primarily of words for reading. Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text. [Source: http://purl.org/dc/dcmitype/Text]
+**Examples (COAR Types):**
 
-    * **annotation** (`<http://purl.org/coar/resource_type/c_1162>`_): An annotation in the sense of a legal note is a legally explanatory comment on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo definition]
-    * **bibliography** (`<http://purl.org/coar/resource_type/c_86bc>`_): A list of the books and articles that have been used by someone when writing a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]
-    * **blog post** (`<http://purl.org/coar/resource_type/c_6947>`_): A piece of writing or other item of content published on a blog. [Source: https://www.lexico.com/definition/blog_post]
-    * **book** (`<http://purl.org/coar/resource_type/c_2f33>`_): A non-serial publication that is complete in one volume or a designated finite number of volumes. [Source: Adapted from http://purl.org/eprint/type/Book]
+text (``<http://purl.org/coar/resource_type/c_18cf>``_)
+  A resource consisting primarily of words for reading.  
+  Examples: books, letters, dissertations, poems, newspapers, articles, mailing list archives.  
+  [Source: http://purl.org/dc/dcmitype/Text]
 
-      * **book part** (`<http://purl.org/coar/resource_type/c_3248>`_): A defined chapter or section of a book, usually with a separate title or number. [Source: http://purl.org/spar/fabio/BookChapter]
-    * **conference output** (`<http://purl.org/coar/resource_type/c_c94f>`_): All kind of digital resources contributed to a conference, like conference presentation (slides), conference report, conference lecture, abstracts, demonstrations. For conference papers, posters or proceedings the specific sub-concepts should be used. [COAR definition]
+annotation (``<http://purl.org/coar/resource_type/c_1162>``_)
+  A legally explanatory comment on a decision handed down by a court or tribunal.  
+  [Source: DRIVER info:eu-repo definition]
 
-      * **conference paper not in proceedings** (`<http://purl.org/coar/resource_type/c_18cp>`_): A paper, typically the realization of a research paper reporting original research findings. Use this label when the paper is not published in a proceeding. [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]
-      * **conference poster not in proceedings** (`<http://purl.org/coar/resource_type/c_18co>`_): A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. Use this label when the poster is not published in a proceeding. [Source: http://purl.org/spar/fabio/ConferencePoster]
-      * **conference presentation** (`<http://purl.org/coar/resource_type/R60J-J5BD>`_): A set of slides containing text, tables or figures, designed to communicate ideas or research results, for projection and viewing by an audience at a conference, symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted from http://purl.org/spar/fabio/Presentation]
-      * **conference proceedings** (`<http://purl.org/coar/resource_type/c_f744>`_): Conference proceedings is the official record of a conference meeting. It is a collection of documents which corresponds to the presentations given at the conference. It may include additional content. [Source: http://www.ieee.org/documents/confprocdefined.pdf ]
+bibliography (``<http://purl.org/coar/resource_type/c_86bc>``_)
+  A list of the books and articles used when writing a book or article.  
+  [Source: Cambridge Dictionary]
 
-        * **conference paper** (`<http://purl.org/coar/resource_type/c_5794>`_): A paper, published within a conference proceeding, typically the realization of a research paper reporting original research findings. [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]
-        * **conference poster** (`<http://purl.org/coar/resource_type/c_6670>`_): A display poster, published within a conference proceeding, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. [Source: Adapted http://purl.org/spar/fabio/ConferencePoster]
-    * **lecture** (`<http://purl.org/coar/resource_type/c_8544>`_): Transcription of an oral presentation/talk intended to present information or teach people about a particular subject, for example by a university or college teacher. [Source: Adopted from https://en.wikipedia.org/wiki/Lecture]
-    * **letter** (`<http://purl.org/coar/resource_type/c_0857>`_): A brief description of important new research, also known as “communication”. [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]
-    * **magazine** (`<http://purl.org/coar/resource_type/c_2cd9>`_): A popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style or a trade publication, unlike a consumer publication, covers a specific topic for people who work in that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039 and http://www.abc-clio.com/ODLIS/odlis_m.aspx]
-    * **manuscript** (`<http://purl.org/coar/resource_type/c_0040>`_): A manuscript is a work of any kind (text, inscription, music score, map, etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]
-    * **musical notation** (`<http://purl.org/coar/resource_type/c_18cw>`_): Symbols used to write music, as in a music score, and to express mathematical concepts. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_n.aspx]
-    * **newspaper** (`<http://purl.org/coar/resource_type/c_2fe3>`_): A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest. [Source: http://purl.org/spar/fabio/Newspaper]
+blog post (``<http://purl.org/coar/resource_type/c_6947>``_)
+  A piece of writing or content published on a blog.  
+  [Source: Lexico]
 
-      * **newspaper article** (`<http://purl.org/coar/resource_type/c_998f>`_): Work consisting of a news item appearing in a general-interest newspaper or other general news periodical, containing information of current and timely interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html )
-    * **other periodical** (`<http://purl.org/coar/resource_type/QX5C-AR31>`_): A resource type that is not included in existing terms under the top concept "Text". [COAR definition]
-    * **periodical (deprecated)** (`<http://purl.org/coar/resource_type/c_2659>`_): A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]
+book (``<http://purl.org/coar/resource_type/c_2f33>``_)
+  A non-serial publication complete in one or several volumes.  
+  [Source: Adapted from http://purl.org/eprint/type/Book]
 
-      * **journal** (`<http://purl.org/coar/resource_type/c_0640>`_): A journal is a serial publication devoted to disseminating original research and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]
+book part (``<http://purl.org/coar/resource_type/c_3248>``_)
+  A defined chapter or section of a book, usually with a separate title or number.  
+  [Source: http://purl.org/spar/fabio/BookChapter]
 
-        * **contribution to journal (deprecated)** (`<http://purl.org/coar/resource_type/c_3e5a>`_): A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen.
+conference output (``<http://purl.org/coar/resource_type/c_c94f>``_)
+  Digital resources contributed to a conference (presentations, reports, lectures, abstracts, demos).  
+  [COAR definition]
 
-          * **editorial** (`<http://purl.org/coar/resource_type/c_b239>`_): A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]
-          * **journal article** (`<http://purl.org/coar/resource_type/c_6501>`_): An article, typically the realization of a research paper reporting original research findings, published in a journal issue. [Source: http://purl.org/spar/fabio/JournalArticle]
+conference paper not in proceedings (``<http://purl.org/coar/resource_type/c_18cp>``_)
+  A research paper not published in proceedings.  
+  [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]
 
-            * **corrigendum** (`<http://purl.org/coar/resource_type/c_7acd>`_): A formal correction to an error introduced by the author into a previously published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
-            * **data paper** (`<http://purl.org/coar/resource_type/c_beb9>`_): A data paper is a scholarly publication describing a particular dataset or group of dataset, published in the form of a peer-reviewed article in a scholarly journal. The main purpose of a data paper is to describe data, the circumstances of their collection, and information related to data features, access and potential reuse. Adapted from https://en.wikipedia.org/wiki/Data_paper and http://www.gbif.org/publishing-data/data-papers
-            * **research article** (`<http://purl.org/coar/resource_type/c_2df8fbb1>`_): A research article is a primary source, that is, it reports the methods and results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
-            * **review article** (`<http://purl.org/coar/resource_type/c_dcae04bc>`_): A review article is a secondary source, that is, it is written about other articles, and does not report original research of its own. [Source: Adapted from http://apus.libanswers.com/faq/2324]
-            * **software paper** (`<http://purl.org/coar/resource_type/c_7bab>`_): A software paper should include the rationale for the development of the tool and details of the code used for its construction. [Source: Adapted from https://f1000research.com/for-authors/article-guidelines/software-tool-articles ]
-          * **letter to the editor** (`<http://purl.org/coar/resource_type/c_545b>`_): A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from http://purl.org/spar/fabio/Letter]
-    * **preprint (deprecated)** (`<http://purl.org/coar/resource_type/c_816b>`_): A preprint is a scientific manuscript without peer-review and has not yet been accepted by a journal, typicaly submitted to a public server/ repository by the author. [Source: Adapted from https://asapbio.org/preprint-info/preprint-faq#qaef-637]
-    * **report** (`<http://purl.org/coar/resource_type/c_93fc>`_): A report is a separately published record of research findings, research still in progress, policy developments and events, or other technical findings, usually bearing a report number and sometimes a grant number assigned by the funding agency. Also, an official record of the activities of a committee or corporate entity, the proceedings of a government body, or an investigation by an agency, whether published or private, usually archived or submitted to a higher authority, voluntarily or under mandate. In a more general sense, any formal account of facts or information related to a specific event or phenomenon, sometimes given at regular intervals. [Source: http://lu.com/odlis/odlis_R.cfm#report ]
+conference poster not in proceedings (``<http://purl.org/coar/resource_type/c_18co>``_)
+  A poster not published in proceedings, often presenting hypotheses or early results.  
+  [Source: Adapted from http://purl.org/spar/fabio/ConferencePoster]
 
-      * **clinical study** (`<http://purl.org/coar/resource_type/c_7877>`_): A work that reports on the results of a research study to evaluate interventions or exposures on biomedical or health-related outcomes. The two main types of clinical studies are interventional studies (clinical trials) and observational studies. While most clinical studies concern humans, this publication type may be used for clinical veterinary articles meeting the requisites for humans. [Source: https://www.ncbi.nlm.nih.gov/mesh/2009830]
-      * **data management plan** (`<http://purl.org/coar/resource_type/c_ab20>`_): A formal statement describing how research data will be managed and documented throughout a research project and the terms regarding the subsequent deposit of the data with a data repository for long-term management and preservation. [Source: https://casrai.org/rdm-glossary]
-      * **internal report (deprecated)** (`<http://purl.org/coar/resource_type/c_18ww>`_): An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information.
-      * **memorandum** (`<http://purl.org/coar/resource_type/c_18wz>`_): A formal note distributed internally to one or more persons in a company, agency, organization, or institution, with a header indicating the date it was sent and stating to whom it is addressed (To:), from whom it is sent (From:), and the subject of the text (Re:). Unlike a letter, a memo does not require a full salutation or signature at the end of the text--the sender may simply initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]
-      * **other type of report (deprecated)** (`<http://purl.org/coar/resource_type/c_18wq>`_): Other types of report may include Business Plans Technical Specifications, data management plans, recommendation reports, white papers, annual reports, auditor's reports, workplace reports, census reports, trip reports, progress reports, investigative reports, budget reports, policy reports, demographic reports, credit reports, appraisal reports, inspection reports, military reports, bound reports, etc. [Source: https://en.wikipedia.org/wiki/Report]
-      * **policy report (deprecated)** (`<http://purl.org/coar/resource_type/c_186u>`_): A policy report presents what is known about a particular issue or problem. It assembles facts and evidence to help readers understand complex issues and form a response. It might aim to be neutral, or it might aim to persuade readers in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]
-      * **project deliverable** (`<http://purl.org/coar/resource_type/c_18op>`_): A document containing a project report, intended to be delivered to a customer or funding agency describing the results achieved within a specific project. [Source: http://purl.org/spar/fabio/ProjectReportDocument]
-      * **report part (deprecated)** (`<http://purl.org/coar/resource_type/c_ba1f>`_): part of a report
-      * **report to funding agency (deprecated)** (`<http://purl.org/coar/resource_type/c_18hj>`_): A report to a funding agency is a document written by beneficiaries of project grants. The reporting documents can be e.g. periodic reports about progress of scientific and technical work and final report. For deliverables use ‘Project deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm ]
-      * **research protocol** (`<http://purl.org/coar/resource_type/YZ1N-ZFT9>`_): The protocol is a detailed plan of the research study including a project summary, project description covering the rationale, objectives, methodology, data management and analysis, ethical considerations, gender issues and references. [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]
-      * **research report** (`<http://purl.org/coar/resource_type/c_18ws>`_): It is publication that reports on the findings of a research project or alternatively scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]
-      * **technical report** (`<http://purl.org/coar/resource_type/c_18gh>`_): A document that describes the process, progress, or results of technical or scientific research or the state of a technical or scientific research problem. It might also include recommendations and conclusions of the research. [Source: http://guides.library.cornell.edu/ecommons/types]
-    * **research proposal** (`<http://purl.org/coar/resource_type/c_baaf>`_): A research proposal is a document proposing a research project, generally in the sciences or academia, and generally constitutes a request for sponsorship of that research. [Source: https://en.wikipedia.org/wiki/Research_proposal]
-    * **review** (`<http://purl.org/coar/resource_type/c_efa0>`_): A review of others' published work. [Source: Adapted from http://purl.org/spar/fabio/Review]
+conference presentation (``<http://purl.org/coar/resource_type/R60J-J5BD>``_)
+  A set of slides communicating research results at a conference.  
+  [Source: http://purl.org/spar/fabio/Presentation]
 
-      * **book review** (`<http://purl.org/coar/resource_type/c_ba08>`_): A written review and critical analysis of the content, scope and quality of a book or other monographic work. [Source: http://purl.org/spar/fabio/BookReview]
-      * **commentary** (`<http://purl.org/coar/resource_type/D97F-VB57>`_): A commentary is a more in-depth analysis written to draw attention to a work already published. Commentaries are somewhat like “reviews” in that the author presents his or her analysis of a work and why it would be of interest to a specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]
-      * **peer review** (`<http://purl.org/coar/resource_type/H9BQ-739P>`_): An evaluation of scientific, academic, or professional work by others working in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]
-    * **technical documentation** (`<http://purl.org/coar/resource_type/c_71bd>`_): Technical documentation refers to any type of documentation that describes handling, functionality and architecture of a technical product or a product under development or use. [Source: https://en.wikipedia.org/wiki/Technical_documentation]
-    * **thesis** (`<http://purl.org/coar/resource_type/c_46ec>`_): A book authored by a student containing a formal presentations of research outputs submitted for examination in completion of a course of study at an institution of higher education, to fulfil the requirements for an academic degree. Also know as a dissertation. [Source: http://purl.org/spar/fabio/Thesis]
+conference proceedings (``<http://purl.org/coar/resource_type/c_f744>``_)
+  The official record of a conference meeting.  
+  [Source: IEEE]
 
-      * **bachelor thesis** (`<http://purl.org/coar/resource_type/c_7a1f>`_): A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree. [Source: http://purl.org/spar/fabio/BachelorsThesis]
-      * **doctoral thesis** (`<http://purl.org/coar/resource_type/c_db06>`_): A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree. [Source: http://purl.org/spar/fabio/DoctoralThesis]
-      * **master thesis** (`<http://purl.org/coar/resource_type/c_bdcc>`_): A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree. [Source: http://purl.org/spar/fabio/MastersThesis]
-    * **transcription** (`<http://purl.org/coar/resource_type/6NC7-GK9S>`_): A written record of words spoken in court proceedings or in a speech, interview, broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]
-    * **working paper** (`<http://purl.org/coar/resource_type/c_8042>`_): A working or discussion paper circulated publicly or among a group of peers. Certain disciplines, for example economics, issue working papers in series. [Source: http://www.ukoln.ac.uk/repositories/digirep/index/Eprints_Type_Vocabulary_Encoding_Scheme#:~:text=http%3A//purl.org/eprint/type/WorkingPaper]
+conference paper (``<http://purl.org/coar/resource_type/c_5794>``_)
+  A research paper published within a conference proceeding.  
+  [Source: http://purl.org/spar/fabio/ConferencePaper]
+
+conference poster (``<http://purl.org/coar/resource_type/c_6670>``_)
+  A display poster published within a conference proceeding.  
+  [Source: http://purl.org/spar/fabio/ConferencePoster]
+
+lecture (``<http://purl.org/coar/resource_type/c_8544>``_)
+  Transcription of an oral presentation or talk.  
+  [Source: Wikipedia]
+
+letter (``<http://purl.org/coar/resource_type/c_0857>``_)
+  A brief description of important new research, also known as “communication”.  
+  [Source: CERIF]
+
+magazine (``<http://purl.org/coar/resource_type/c_2cd9>``_)
+  A popular interest periodical or trade publication.  
+  [Source: Adapted from The Balance / ODLIS]
+
+manuscript (``<http://purl.org/coar/resource_type/c_0040>``_)
+  A work of any kind written entirely by hand.  
+  [Source: ODLIS]
+
+musical notation (``<http://purl.org/coar/resource_type/c_18cw>``_)
+  Symbols used to write music or express mathematical concepts.  
+  [Source: ODLIS]
+
+newspaper (``<http://purl.org/coar/resource_type/c_2fe3>``_)
+  A non-peer-reviewed periodical published daily or weekly.  
+  [Source: http://purl.org/spar/fabio/Newspaper]
+
+newspaper article (``<http://purl.org/coar/resource_type/c_998f>``_)
+  A news item appearing in a general-interest newspaper.  
+  [Source: reference.md]
+
+other periodical (``<http://purl.org/coar/resource_type/QX5C-AR31>``_)
+  A periodical not included in the top concept “Text”.  
+  [COAR definition]
+
+journal (``<http://purl.org/coar/resource_type/c_0640>``_)
+  A serial publication devoted to original research.  
+  [Source: ODLIS]
+
+editorial (``<http://purl.org/coar/resource_type/c_b239>``_)
+  An essay expressing the opinion of the editor(s).  
+  [Source: ODLIS]
+
+journal article (``<http://purl.org/coar/resource_type/c_6501>``_)
+  A research article published in a journal.  
+  [Source: http://purl.org/spar/fabio/JournalArticle]
+
+corrigendum (``<http://purl.org/coar/resource_type/c_7acd>``_)
+  A correction to a previously published document.  
+  [Source: FaBiO]
+
+data paper (``<http://purl.org/coar/resource_type/c_beb9>``_)
+  A peer-reviewed article describing a dataset.  
+  [Source: Wikipedia]
+
+research article (``<http://purl.org/coar/resource_type/c_2df8fbb1>``_)
+  A primary source reporting original research.  
+  [Source: Apus Library]
+
+review article (``<http://purl.org/coar/resource_type/c_dcae04bc>``_)
+  A secondary source summarizing other research.  
+  [Source: Apus Library]
+
+software paper (``<http://purl.org/coar/resource_type/c_7bab>``_)
+  An article describing a software tool.  
+  [Source: F1000Research]
+
+letter to the editor (``<http://purl.org/coar/resource_type/c_545b>``_)
+  A letter commenting on previously published work.  
+  [Source: FaBiO]
+
+preprint (``<http://purl.org/coar/resource_type/c_816b>``_)
+  A manuscript without peer review.  
+  [Source: ASAPbio]
+
+report (``<http://purl.org/coar/resource_type/c_93fc>``_)
+  A published record of research findings or technical results.  
+  [Source: ODLIS]
+
+clinical study (``<http://purl.org/coar/resource_type/c_7877>``_)
+  Reports results of biomedical or health-related studies.  
+  [Source: PubMed]
+
+data management plan (``<http://purl.org/coar/resource_type/c_ab20>``_)
+  A statement describing how data will be managed.  
+  [Source: CASRAI]
+
+internal report (``<http://purl.org/coar/resource_type/c_18ww>``_)
+  Findings collected for internal use only.  
+
+memorandum (``<http://purl.org/coar/resource_type/c_18wz>``_)
+  A formal note distributed internally.  
+  [Source: ODLIS]
+
+other type of report (``<http://purl.org/coar/resource_type/c_18wq>``_)
+  Other workplace or technical reports.  
+
+policy report (``<http://purl.org/coar/resource_type/c_186u>``_)
+  Presents facts/evidence on a specific issue.  
+
+project deliverable (``<http://purl.org/coar/resource_type/c_18op>``_)
+  A document containing a project report.  
+  [Source: FaBiO]
+
+research protocol (``<http://purl.org/coar/resource_type/YZ1N-ZFT9>``_)
+  A detailed plan of a research study.  
+  [Source: WHO]
+
+research report (``<http://purl.org/coar/resource_type/c_18ws>``_)
+  A publication reporting on research findings.  
+  [Source: Wikipedia]
+
+technical report (``<http://purl.org/coar/resource_type/c_18gh>``_)
+  A document describing scientific or technical research.  
+  [Source: Cornell]
+
+research proposal (``<http://purl.org/coar/resource_type/c_baaf>``_)
+  A proposal for a research project.  
+  [Source: Wikipedia]
+
+review (``<http://purl.org/coar/resource_type/c_efa0>``_)
+  A review of others’ published work.  
+
+book review (``<http://purl.org/coar/resource_type/c_ba08>``_)
+  A critical analysis of a book.  
+  [Source: FaBiO]
+
+commentary (``<http://purl.org/coar/resource_type/D97F-VB57>``_)
+  An in-depth analysis drawing attention to a work.  
+  [Source: Enago]
+
+peer review (``<http://purl.org/coar/resource_type/H9BQ-739P>``_)
+  Evaluation of academic or professional work by peers.  
+
+technical documentation (``<http://purl.org/coar/resource_type/c_71bd>``_)
+  Documentation describing technical products.  
+  [Source: Wikipedia]
+
+thesis (``<http://purl.org/coar/resource_type/c_46ec>``_)
+  A formal research output submitted for an academic degree.  
+  [Source: FaBiO]
+
+bachelor thesis (``<http://purl.org/coar/resource_type/c_7a1f>``_)
+  A thesis for a bachelor’s degree.  
+
+doctoral thesis (``<http://purl.org/coar/resource_type/c_db06>``_)
+  A thesis for a doctoral degree.  
+
+master thesis (``<http://purl.org/coar/resource_type/c_bdcc>``_)
+  A thesis for a master’s degree.  
+
+transcription (``<http://purl.org/coar/resource_type/6NC7-GK9S>``_)
+  A written record of words spoken.  
+  [Source: ODLIS]
+
+working paper (``<http://purl.org/coar/resource_type/c_8042>``_)
+  A working or discussion paper circulated among peers.  
+  [Source: UKOLN]
 
 
 
